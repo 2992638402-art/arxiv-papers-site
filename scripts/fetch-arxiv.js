@@ -14,11 +14,14 @@ const CONFIG = {
     categories: [
         'cs.AI',      // 人工智能
         'cs.LG',      // 机器学习
-        'cs.CL',      // 计算语言学
+        'cs.CL',      // 计算语言学/NLP
         'cs.CV',      // 计算机视觉
         'cs.RO',      // 机器人
+        'cs.NE',      // 神经与进化计算
+        'cs.MA',      // 多智能体系统
+        'stat.ML',    // 统计机器学习
     ],
-    maxResults: 10,  // 每个分类抓取的论文数
+    maxResults: 25,  // 每个分类抓取的论文数（8类 x 25 = 200篇）
     outputDir: path.join(__dirname, '..', 'data'),
 };
 
@@ -278,7 +281,7 @@ async function main() {
     const categorized = savePapers(uniquePapers, date);
 
     // 选择最有趣的论文
-    const topPapers = selectTopPapers(categorized, 5);
+    const topPapers = selectTopPapers(categorized, 150);
     console.log(`\n🌟 选出 ${topPapers.length} 篇最有趣的论文:`);
     topPapers.forEach((p, i) => {
         console.log(`   ${i + 1}. ${p.title.substring(0, 60)}...`);
