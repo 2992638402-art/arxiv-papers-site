@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "fetch": "node scripts/fetch-arxiv.js",
+    "summarize": "node scripts/summarize-papers.js",
+    "update": "node scripts/update-site.js",
+    "daily": "./scripts/run-daily-update.sh",
+    "convert": "node convert.js",
+    "serve": "python3 -m http.server 8080",
+    "test": "echo \"No tests configured\""
   },
   "keywords": [],
   "author": "",
