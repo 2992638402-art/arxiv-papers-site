@@ -177,7 +177,15 @@ async function main() {
         console.log('⚠️  基础信息生成失败，继续...');
     }
 
-    // 2. 转换 markdown 为 HTML
+    // 2. 生成精选5篇
+    console.log('\n⭐ 生成精选论文...');
+    try {
+        execSync('node scripts/generate-featured.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+    } catch (err) {
+        console.log('⚠️  精选生成失败，继续...');
+    }
+
+    // 3. 转换 markdown 为 HTML
     console.log('\n📄 转换 markdown 为 HTML...');
     try {
         execSync('node convert.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
@@ -185,7 +193,23 @@ async function main() {
         console.log('⚠️  HTML 转换失败，继续...');
     }
 
-    // 3. 更新首页
+    // 4. 转换精选页面
+    console.log('\n⭐ 生成精选HTML页面...');
+    try {
+        execSync('node scripts/convert-featured.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+    } catch (err) {
+        console.log('⚠️  精选页面生成失败，继续...');
+    }
+
+    // 5. 生成全部论文页面
+    console.log('\n📚 生成全部论文页面...');
+    try {
+        execSync('node scripts/generate-all-papers.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+    } catch (err) {
+        console.log('⚠️  全部论文页面生成失败，继续...');
+    }
+
+    // 6. 更新首页
     console.log('\n🏠 更新首页...');
     try {
         execSync('node scripts/update-index.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
