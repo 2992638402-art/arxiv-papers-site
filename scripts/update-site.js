@@ -168,31 +168,30 @@ async function main() {
 
     const date = new Date().toISOString().split('T')[0];
 
-    // 加载今日数据
-    const todayData = loadTodayPapers();
-    if (!todayData) {
-        console.log('❌ 没有找到今日论文数据');
-        return;
+    // 1. 生成基础 markdown（如果还没有 AI 总结）
+    console.log('📝 生成基础论文信息...');
+    const { execSync } = require('child_process');
+    try {
+        execSync('node scripts/generate-basic-summaries.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+    } catch (err) {
+        console.log('⚠️  基础信息生成失败，继续...');
     }
 
-    console.log(`📊 今日共有 ${todayData.count} 篇论文\n`);
+    // 2. 转换 markdown 为 HTML
+    console.log('\n📄 转换 markdown 为 HTML...');
+    try {
+        execSync('node convert.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+    } catch (err) {
+        console.log('⚠️  HTML 转换失败，继续...');
+    }
 
-    // 转换论文详情页
-    console.log('📝 生成论文详情页:');
-    todayData.papers.forEach(paper => {
-        const mdPath = path.join(CONFIG.knowledgeDir, `summary_${paper.id.replace('/', '_')}.md`);
-        if (fs.existsSync(mdPath)) {
-            convertPaperToHTML(mdPath, paper.id, date);
-        }
-    });
-
-    // 转换每日总结
-    console.log('\n📅 生成每日总结页:');
-    convertDailySummaryToHTML(date);
-
-    // 更新首页
-    console.log('\n🏠 更新首页:');
-    updateIndexPage(todayData);
+    // 3. 更新首页
+    console.log('\n🏠 更新首页...');
+    try {
+        execSync('node scripts/update-index.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+    } catch (err) {
+        console.log('⚠️  首页更新失败，继续...');
+    }
 
     console.log('\n✨ 网站更新完成！');
     console.log('\n💡 下一步:');

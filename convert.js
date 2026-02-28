@@ -135,42 +135,62 @@ function convertMarkdownToHTML(mdFilePath, outputDir, type, metadata = {}) {
 }
 
 // Main conversion process
-const knowledgeDir = path.join(__dirname, '..', 'knowledge');
+const knowledgeDir = path.join(__dirname, 'knowledge');
 const siteDir = __dirname;
 
-// Convert paper summaries
+// Ensure output directories exist
+const papersDir = path.join(siteDir, 'papers');
+const dailyDir = path.join(siteDir, 'daily');
+if (!fs.existsSync(papersDir)) fs.mkdirSync(papersDir, { recursive: true });
+if (!fs.existsSync(dailyDir)) fs.mkdirSync(dailyDir, { recursive: true });
+
+// Convert all paper summaries
 console.log('Converting paper summaries...');
-convertMarkdownToHTML(
-    path.join(knowledgeDir, 'summary_model_agreement.md'),
-    path.join(siteDir, 'papers'),
-    'paper',
-    {
-        title: 'Model Agreement via Anchoring',
-        arxivId: '2602.23360',
-        date: '2026-02-28'
-    }
-);
+if (fs.existsSync(knowledgeDir)) {
+    const files = fs.readdirSync(knowledgeDir);
 
-convertMarkdownToHTML(
-    path.join(knowledgeDir, 'summary_vision_language_alignment.md'),
-    path.join(siteDir, 'papers'),
-    'paper',
-    {
-        title: 'SOTAlign: Semi-Supervised Vision-Language Alignment',
-        arxivId: '2602.23353',
-        date: '2026-02-28'
-    }
-);
+    files.forEach(file => {
+        if (file.startsWith('summary_') && file.endsWith('.md')) {
+            const mdPath = path.join(knowledgeDir, file);
+            const mdContent = fs.readFileSync(mdPath, 'utf-8');
 
-// Convert daily summary
-console.log('Converting daily summary...');
-convertMarkdownToHTML(
-    path.join(knowledgeDir, 'arxiv_daily_2026-02-28.md'),
-    path.join(siteDir, 'daily'),
-    'daily',
-    {
-        date: '2026-02-28'
-    }
-);
+            // Extract title and arxivId from markdown
+            const titleMatch = mdContent.match(/^#\s+(.+)$/m);
+            const arxivMatch = mdContent.match(/\*\*arXiv ID:\*\*\s+(\S+)/);
 
-console.log('✨ All files converted successfully!');
+            const title = titleMatch ? titleMatch[1] : 'Paper Summary';
+            const arxivId = arxivMatch ? arxivMatch[1] : 'unknown';
+
+            convertMarkdownToHTML(
+                mdPath,
+                papersDir,
+                'paper',
+                {
+                    title,
+                    arxivId,
+                    date: '2026-02-28'
+                }
+            );
+        }
+    });
+
+    // Convert daily summaries
+    console.log('\nConverting daily summaries...');
+    files.forEach(file => {
+        if (file.startsWith('arxiv_daily_') && file.endsWith('.md')) {
+            const dateMatch = file.match(/arxiv_daily_(\d{4}-\d{2}-\d{2})\.md/);
+            const date = dateMatch ? dateMatch[1] : '2026-02-28';
+
+            convertMarkdownToHTML(
+                path.join(knowledgeDir, file),
+                dailyDir,
+                'daily',
+                { date }
+            );
+        }
+    });
+} else {
+    console.log('⚠️  Knowledge directory not found');
+}
+
+console.log('\n✨ All files converted successfully!');

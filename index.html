@@ -6,6 +6,47 @@
     <meta name="description" content="每日精选 arXiv AI/ML 论文总结，关注机器人、多模态学习、机器学习理论等前沿研究">
     <title>arXiv AI 论文每日精选</title>
     <link rel="stylesheet" href="css/style.css">
+    <style>
+        .refresh-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(102, 126, 234, 0.3);
+        }
+        .refresh-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+        }
+        .refresh-btn svg {
+            width: 20px;
+            height: 20px;
+        }
+        .refresh-section {
+            text-align: center;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea10 0%, #764ba210 100%);
+            border-radius: 12px;
+            margin-bottom: 2rem;
+        }
+        .refresh-section h3 {
+            margin-bottom: 1rem;
+            color: #2d3748;
+        }
+        .refresh-section p {
+            color: #718096;
+            margin-bottom: 1.5rem;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,55 +59,69 @@
     <nav>
         <ul>
             <li><a href="index.html" class="active">🏠 首页</a></li>
-            <li><a href="#daily">📅 每日总结</a></li>
+            <li><a href="daily/arxiv_daily_2026-02-28.html">📅 每日总结</a></li>
             <li><a href="#categories">🏷️ 分类浏览</a></li>
-            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+            <li><a href="https://github.com/2992638402-art/arxiv-papers-site" target="_blank">💻 GitHub</a></li>
         </ul>
     </nav>
 
     <main>
+        <!-- Manual Refresh Section -->
+        <section class="refresh-section">
+            <h3>🔄 手动刷新论文</h3>
+            <p>点击下方按钮手动触发最新论文抓取和 AI 总结（大约需要 3-5 分钟）</p>
+            <a href="https://github.com/2992638402-art/arxiv-papers-site/actions/workflows/daily-update.yml"
+               target="_blank"
+               class="refresh-btn">
+                <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                </svg>
+                手动刷新论文
+            </a>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #a0aec0;">
+                提示：点击后会跳转到 GitHub Actions 页面，点击 "Run workflow" 按钮启动
+            </p>
+        </section>
+
         <!-- Hero Section -->
         <section class="daily-section">
             <h2>🔥 今日精选 (2026-02-28)</h2>
-            <p>今天为您精选了 <strong>2 篇</strong>高质量 AI/ML 论文，涵盖<strong>机器学习理论</strong>和<strong>多模态学习</strong>两大热门方向。</p>
+            <p>今天为您精选了 <strong>5 篇</strong>高质量 AI/ML 论文，涵盖<strong>多模态学习</strong>、<strong>机器人</strong>、<strong>机器学习理论</strong>等热门方向。</p>
             <p>
-                <a href="daily/2026-02-28.html" class="btn">查看今日完整总结 →</a>
+                <a href="daily/arxiv_daily_2026-02-28.html" class="btn">查看今日完整总结 →</a>
             </p>
         </section>
 
         <!-- Today's Papers -->
         <section id="today-papers">
             <h2 style="margin-bottom: 1.5rem;">今日论文</h2>
-
+            
             <!-- Paper 1 -->
             <article class="paper-card">
                 <div class="paper-header">
                     <div>
                         <h3 class="paper-title">
-                            <a href="papers/2602.23360.html">Model Agreement via Anchoring</a>
+                            <a href="papers/summary_2602_23363v1.html">MediX-R1: Open Ended Medical Reinforcement Learning</a>
                         </h3>
                         <div class="paper-meta">
-                            <span>📅 2026-02-28</span>
-                            <span>🏛️ UPenn & Johns Hopkins</span>
-                            <span>📄 arXiv:2602.23360</span>
+                            <span>📅 2026-02-26</span>
+                            <span>📄 arXiv:2602.23363</span>
                         </div>
                         <div>
-                            <span class="tag theory">机器学习理论</span>
-                            <span class="tag">模型稳定性</span>
-                            <span class="tag">可复现性</span>
+                            <span class="tag multimodal">多模态学习</span>
+                            <span class="tag">cs.CV</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="paper-summary">
-                    <p><strong>核心创新：</strong> "中点锚定"技术 — 证明当学习曲线变平时，独立训练的模型自然会达成一致。</p>
-                    <p><strong>关键发现：</strong> 不需要特殊算法或假设就能实现模型稳定性，适用于 stacking、gradient boosting、神经网络、回归树等主流算法。为 LLM 的运行一致性提供了理论基础。</p>
-                    <p><strong>实践启示：</strong> 监控学习曲线，当曲线变平时，你同时获得了准确性优化和预测稳定性。</p>
+                    <p>We introduce MediX-R1, an open-ended Reinforcement Learning (RL) framework for medical multimodal large language models (MLLMs) that enables clinically grounded, free-form answers beyond multiple-choice formats. MediX-R1 fine-tunes a baseline vision-language backbone with Group Based RL and a compos...</p>
                 </div>
 
                 <div class="paper-links">
-                    <a href="papers/2602.23360.html" class="btn">📖 阅读详细总结</a>
-                    <a href="https://arxiv.org/abs/2602.23360" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
+                    <a href="papers/summary_2602_23363v1.html" class="btn">📖 阅读详细总结</a>
+                    <a href="https://arxiv.org/abs/2602.23363" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
                 </div>
             </article>
 
@@ -75,70 +130,144 @@
                 <div class="paper-header">
                     <div>
                         <h3 class="paper-title">
-                            <a href="papers/2602.23353.html">SOTAlign: 半监督视觉-语言对齐</a>
+                            <a href="papers/summary_2602_23351v1.html">Scale Can't Overcome Pragmatics: The Impact of Reporting Bias on Vision-Language Reasoning</a>
                         </h3>
                         <div class="paper-meta">
-                            <span>📅 2026-02-28</span>
-                            <span>🏛️ Helmholtz Munich & TU Munich</span>
-                            <span>📄 arXiv:2602.23353</span>
+                            <span>📅 2026-02-26</span>
+                            <span>📄 arXiv:2602.23351</span>
                         </div>
                         <div>
                             <span class="tag multimodal">多模态学习</span>
-                            <span class="tag">半监督学习</span>
-                            <span class="tag">最优传输</span>
+                            <span class="tag">cs.CL</span><span class="tag">cs.CV</span>
                         </div>
                     </div>
                 </div>
 
                 <div class="paper-summary">
-                    <p><strong>核心创新：</strong> 用 1000 倍更少的配对数据（几千对 vs. 数百万对）实现强大的视觉-语言对齐。</p>
-                    <p><strong>关键技术：</strong> 两阶段方法 — (1) 线性对齐（仅用少量配对数据，效果惊人！）(2) 最优传输细化（利用未配对数据传递几何结构）。</p>
-                    <p><strong>实践启示：</strong> 不需要数百万配对样本。用几千对 + 大量未配对数据就能构建竞争力的视觉-语言模型。注释成本从 ~$100K 降低到 ~$1K。</p>
+                    <p>The lack of reasoning capabilities in Vision-Language Models (VLMs) has remained at the forefront of research discourse. We posit that this behavior stems from a reporting bias in their training data. That is, how people communicate about visual content by default omits tacit information needed to s...</p>
                 </div>
 
                 <div class="paper-links">
-                    <a href="papers/2602.23353.html" class="btn">📖 阅读详细总结</a>
-                    <a href="https://arxiv.org/abs/2602.23353" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
+                    <a href="papers/summary_2602_23351v1.html" class="btn">📖 阅读详细总结</a>
+                    <a href="https://arxiv.org/abs/2602.23351" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
+                </div>
+            </article>
+
+            <!-- Paper 3 -->
+            <article class="paper-card">
+                <div class="paper-header">
+                    <div>
+                        <h3 class="paper-title">
+                            <a href="papers/summary_2602_23253v1.html">SPARR: Simulation-based Policies with Asymmetric Real-world Residuals for Assembly</a>
+                        </h3>
+                        <div class="paper-meta">
+                            <span>📅 2026-02-26</span>
+                            <span>📄 arXiv:2602.23253</span>
+                        </div>
+                        <div>
+                            <span class="tag robotics">机器人</span>
+                            <span class="tag">cs.RO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-summary">
+                    <p>Robotic assembly presents a long-standing challenge due to its requirement for precise, contact-rich manipulation. While simulation-based learning has enabled the development of robust assembly policies, their performance often degrades when deployed in real-world settings due to the sim-to-real gap...</p>
+                </div>
+
+                <div class="paper-links">
+                    <a href="papers/summary_2602_23253v1.html" class="btn">📖 阅读详细总结</a>
+                    <a href="https://arxiv.org/abs/2602.23253" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
+                </div>
+            </article>
+
+            <!-- Paper 4 -->
+            <article class="paper-card">
+                <div class="paper-header">
+                    <div>
+                        <h3 class="paper-title">
+                            <a href="papers/summary_2602_23330v1.html">Toward Expert Investment Teams:A Multi-Agent LLM System with Fine-Grained Trading Tasks</a>
+                        </h3>
+                        <div class="paper-meta">
+                            <span>📅 2026-02-26</span>
+                            <span>📄 arXiv:2602.23330</span>
+                        </div>
+                        <div>
+                            <span class="tag theory">机器学习理论</span>
+                            <span class="tag">cs.AI</span><span class="tag">q-fin.TR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-summary">
+                    <p>The advancement of large language models (LLMs) has accelerated the development of autonomous financial trading systems. While mainstream approaches deploy multi-agent systems mimicking analyst and manager roles, they often rely on abstract instructions that overlook the intricacies of real-world wo...</p>
+                </div>
+
+                <div class="paper-links">
+                    <a href="papers/summary_2602_23330v1.html" class="btn">📖 阅读详细总结</a>
+                    <a href="https://arxiv.org/abs/2602.23330" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
+                </div>
+            </article>
+
+            <!-- Paper 5 -->
+            <article class="paper-card">
+                <div class="paper-header">
+                    <div>
+                        <h3 class="paper-title">
+                            <a href="papers/summary_2602_23283v1.html">Simple Models, Real Swimming: Digital Twins for Tendon-Driven Underwater Robots</a>
+                        </h3>
+                        <div class="paper-meta">
+                            <span>📅 2026-02-26</span>
+                            <span>📄 arXiv:2602.23283</span>
+                        </div>
+                        <div>
+                            <span class="tag robotics">机器人</span>
+                            <span class="tag">cs.RO</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-summary">
+                    <p>Mimicking the graceful motion of swimming animals remains a core challenge in soft robotics due to the complexity of fluid-structure interaction and the difficulty of controlling soft, biomimetic bodies. Existing modeling approaches are often computationally expensive and impractical for complex con...</p>
+                </div>
+
+                <div class="paper-links">
+                    <a href="papers/summary_2602_23283v1.html" class="btn">📖 阅读详细总结</a>
+                    <a href="https://arxiv.org/abs/2602.23283" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
                 </div>
             </article>
         </section>
 
         <!-- Categories Section -->
-        <section id="categories" style="margin-top: 4rem;">
-            <h2 class="text-center mb-4">🏷️ 分类浏览</h2>
-
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-icon">🤖</div>
-                    <h3>机器人相关</h3>
-                    <p>机器人学习、操控、导航、具身智能等</p>
-                    <a href="categories/robotics.html">浏览论文 (0) →</a>
-                </div>
-
-                <div class="category-card">
-                    <div class="category-icon">🎨</div>
-                    <h3>多模态学习</h3>
-                    <p>视觉-语言模型、跨模态对齐、多模态融合</p>
-                    <a href="categories/multimodal.html">浏览论文 (1) →</a>
-                </div>
-
-                <div class="category-card">
-                    <div class="category-icon">📊</div>
-                    <h3>机器学习理论</h3>
-                    <p>学习理论、优化、泛化、模型分析</p>
-                    <a href="categories/ml-theory.html">浏览论文 (1) →</a>
-                </div>
+        <section id="categories" class="categories-section">
+            <h2>🏷️ 按分类浏览</h2>
+            <div class="category-grid">
+                <a href="categories/robotics.html" class="category-card robotics">
+                    <h3>🤖 机器人</h3>
+                    <p>机器人学习、控制、具身智能</p>
+                    <span class="count">2 篇</span>
+                </a>
+                <a href="categories/multimodal.html" class="category-card multimodal">
+                    <h3>🎨 多模态学习</h3>
+                    <p>视觉-语言模型、跨模态对齐</p>
+                    <span class="count">2 篇</span>
+                </a>
+                <a href="categories/ml-theory.html" class="category-card theory">
+                    <h3>🧮 机器学习理论</h3>
+                    <p>优化、泛化、理论分析</p>
+                    <span class="count">1 篇</span>
+                </a>
             </div>
         </section>
 
         <!-- Daily Archive -->
-        <section id="daily" style="margin-top: 4rem;">
-            <h2 class="text-center mb-4">📅 每日总结归档</h2>
-
-            <div class="paper-card">
-                <h3><a href="daily/2026-02-28.html">2026年2月28日</a></h3>
-                <p class="paper-summary">今日精选 2 篇论文：Model Agreement via Anchoring（模型一致性理论）、SOTAlign（半监督多模态对齐）</p>
-                <a href="daily/2026-02-28.html" class="btn btn-secondary">查看详情 →</a>
+        <section id="daily" class="archive-section">
+            <h2>📅 每日归档</h2>
+            <div class="archive-grid">
+                <a href="daily/arxiv_daily_2026-02-28.html" class="archive-card">
+                    <div class="date">2026-02-28</div>
+                    <div class="count">5 篇论文</div>
+                </a>
             </div>
         </section>
     </main>
@@ -146,9 +275,8 @@
     <footer>
         <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
         <p style="margin-top: 0.5rem; font-size: 0.9rem;">
-            本站由 Claude Code 自动生成 |
-            <a href="https://github.com" target="_blank">查看源码</a> |
-            <a href="#" onclick="alert('联系方式：your@email.com')">联系我们</a>
+            🤖 由 Claude AI 自动生成总结 |
+            <a href="https://github.com/2992638402-art/arxiv-papers-site" target="_blank">GitHub 仓库</a>
         </p>
     </footer>
 
