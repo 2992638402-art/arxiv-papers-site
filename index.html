@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="每日精选 arXiv AI/ML 论文总结，关注机器人、多模态学习、机器学习理论等前沿研究">
+    <title>arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html" class="active">🏠 首页</a></li>
+            <li><a href="#daily">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="daily-section">
+            <h2>🔥 今日精选 (2026-02-28)</h2>
+            <p>今天为您精选了 <strong>2 篇</strong>高质量 AI/ML 论文，涵盖<strong>机器学习理论</strong>和<strong>多模态学习</strong>两大热门方向。</p>
+            <p>
+                <a href="daily/2026-02-28.html" class="btn">查看今日完整总结 →</a>
+            </p>
+        </section>
+
+        <!-- Today's Papers -->
+        <section id="today-papers">
+            <h2 style="margin-bottom: 1.5rem;">今日论文</h2>
+
+            <!-- Paper 1 -->
+            <article class="paper-card">
+                <div class="paper-header">
+                    <div>
+                        <h3 class="paper-title">
+                            <a href="papers/2602.23360.html">Model Agreement via Anchoring</a>
+                        </h3>
+                        <div class="paper-meta">
+                            <span>📅 2026-02-28</span>
+                            <span>🏛️ UPenn & Johns Hopkins</span>
+                            <span>📄 arXiv:2602.23360</span>
+                        </div>
+                        <div>
+                            <span class="tag theory">机器学习理论</span>
+                            <span class="tag">模型稳定性</span>
+                            <span class="tag">可复现性</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-summary">
+                    <p><strong>核心创新：</strong> "中点锚定"技术 — 证明当学习曲线变平时，独立训练的模型自然会达成一致。</p>
+                    <p><strong>关键发现：</strong> 不需要特殊算法或假设就能实现模型稳定性，适用于 stacking、gradient boosting、神经网络、回归树等主流算法。为 LLM 的运行一致性提供了理论基础。</p>
+                    <p><strong>实践启示：</strong> 监控学习曲线，当曲线变平时，你同时获得了准确性优化和预测稳定性。</p>
+                </div>
+
+                <div class="paper-links">
+                    <a href="papers/2602.23360.html" class="btn">📖 阅读详细总结</a>
+                    <a href="https://arxiv.org/abs/2602.23360" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
+                </div>
+            </article>
+
+            <!-- Paper 2 -->
+            <article class="paper-card">
+                <div class="paper-header">
+                    <div>
+                        <h3 class="paper-title">
+                            <a href="papers/2602.23353.html">SOTAlign: 半监督视觉-语言对齐</a>
+                        </h3>
+                        <div class="paper-meta">
+                            <span>📅 2026-02-28</span>
+                            <span>🏛️ Helmholtz Munich & TU Munich</span>
+                            <span>📄 arXiv:2602.23353</span>
+                        </div>
+                        <div>
+                            <span class="tag multimodal">多模态学习</span>
+                            <span class="tag">半监督学习</span>
+                            <span class="tag">最优传输</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="paper-summary">
+                    <p><strong>核心创新：</strong> 用 1000 倍更少的配对数据（几千对 vs. 数百万对）实现强大的视觉-语言对齐。</p>
+                    <p><strong>关键技术：</strong> 两阶段方法 — (1) 线性对齐（仅用少量配对数据，效果惊人！）(2) 最优传输细化（利用未配对数据传递几何结构）。</p>
+                    <p><strong>实践启示：</strong> 不需要数百万配对样本。用几千对 + 大量未配对数据就能构建竞争力的视觉-语言模型。注释成本从 ~$100K 降低到 ~$1K。</p>
+                </div>
+
+                <div class="paper-links">
+                    <a href="papers/2602.23353.html" class="btn">📖 阅读详细总结</a>
+                    <a href="https://arxiv.org/abs/2602.23353" class="btn btn-secondary" target="_blank">🔗 arXiv 原文</a>
+                </div>
+            </article>
+        </section>
+
+        <!-- Categories Section -->
+        <section id="categories" style="margin-top: 4rem;">
+            <h2 class="text-center mb-4">🏷️ 分类浏览</h2>
+
+            <div class="categories-grid">
+                <div class="category-card">
+                    <div class="category-icon">🤖</div>
+                    <h3>机器人相关</h3>
+                    <p>机器人学习、操控、导航、具身智能等</p>
+                    <a href="categories/robotics.html">浏览论文 (0) →</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">🎨</div>
+                    <h3>多模态学习</h3>
+                    <p>视觉-语言模型、跨模态对齐、多模态融合</p>
+                    <a href="categories/multimodal.html">浏览论文 (1) →</a>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-icon">📊</div>
+                    <h3>机器学习理论</h3>
+                    <p>学习理论、优化、泛化、模型分析</p>
+                    <a href="categories/ml-theory.html">浏览论文 (1) →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Daily Archive -->
+        <section id="daily" style="margin-top: 4rem;">
+            <h2 class="text-center mb-4">📅 每日总结归档</h2>
+
+            <div class="paper-card">
+                <h3><a href="daily/2026-02-28.html">2026年2月28日</a></h3>
+                <p class="paper-summary">今日精选 2 篇论文：Model Agreement via Anchoring（模型一致性理论）、SOTAlign（半监督多模态对齐）</p>
+                <a href="daily/2026-02-28.html" class="btn btn-secondary">查看详情 →</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+        <p style="margin-top: 0.5rem; font-size: 0.9rem;">
+            本站由 Claude Code 自动生成 |
+            <a href="https://github.com" target="_blank">查看源码</a> |
+            <a href="#" onclick="alert('联系方式：your@email.com')">联系我们</a>
+        </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SOTAlign: Semi-Supervised Vision-Language Alignment - arXiv 2602.23353 论文总结">
+    <title>SOTAlign: Semi-Supervised Vision-Language Alignment | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SOTAlign: Semi-Supervised Vision-Language Alignment via Optimal Transport</h1>
+<p><strong>arXiv ID:</strong> 2602.23353<br><strong>Authors:</strong> Simon Roschmann, Paul Krzakala, Sonia Mazelet, Quentin Bouniot, Zeynep Akata<br><strong>Institution:</strong> Helmholtz Munich, Technical University of Munich, Télécom Paris, École Polytechnique<br><strong>Date:</strong> February 28, 2026</p>
+<h2>TL;DR</h2>
+<p>CLIP-style vision-language models need hundreds of millions of paired image-text samples. <strong>SOTAlign shows you can achieve strong alignment with just a few thousand pairs + lots of unpaired data</strong>, using a two-stage approach: (1) linear alignment from few pairs, (2) refinement via optimal transport that transfers geometric structure from unpaired data. Key innovation: explicit gradient computation for OT-based loss, removing memory bottlenecks.</p>
+<h2>The Problem</h2>
+<p><strong>Current paradigm (CLIP, ALIGN, SigLIP):</strong></p>
+<ul>
+<li>Train contrastive models on 400M–10B paired image-text samples</li>
+<li>Works great... but requires massive paired supervision</li>
+<li>Breaks down in specialized domains (medical, scientific, industrial) where paired data is expensive/scarce</li>
+</ul>
+<p><strong>The question:</strong> Can you align pretrained vision and language encoders using:</p>
+<ul>
+<li>A small number of paired samples (~1K–10K)</li>
+<li>Large amounts of unpaired images and unpaired text?</li>
+</ul>
+<h2>The Platonic Hypothesis Connection</h2>
+<p><strong>Platonic Representation Hypothesis</strong> (Huh et al., 2024): Neural networks trained on different modalities naturally converge toward compatible semantic structures.</p>
+<p><strong>Implication:</strong> Pretrained unimodal encoders (e.g., DINOv2 for images, BERT for text) should already encode similar semantic relationships — we just need to &quot;align&quot; them with minimal supervision.</p>
+<h2>SOTAlign: The Method</h2>
+<h3>Two-Stage Framework</h3>
+<p><strong>Stage 1: Linear Teacher (Paired Data Only)</strong></p>
+<ul>
+<li>Input: Small set of paired samples (A, B) where nₚ = 1K–10K</li>
+<li>Learn simple linear projections: Wₓ ∈ ℝ^(dₓ×d&#39;), Wᵧ ∈ ℝ^(dᵧ×d&#39;)</li>
+<li><strong>Surprising finding:</strong> Linear alignment alone yields surprisingly strong results!</li>
+</ul>
+<p><strong>Stage 2: Nonlinear Refinement (Paired + Unpaired Data)</strong></p>
+<ul>
+<li>Input: Paired (A,B) + unpaired images X + unpaired text Y</li>
+<li>Learn nonlinear alignment layers f_θ₁: ℝ^dₓ → ℝ^d and g_θ₂: ℝ^dᵧ → ℝ^d</li>
+<li>Use linear teacher to define target geometry for unpaired data</li>
+</ul>
+<h3>Training Objective</h3>
+<pre><code>ℒ_α(θ; A,B,X,Y) = ℒ(θ; A,B) + α·Ω(θ; X,Y)
+                   ↑              ↑
+              supervised    regularization
+                 loss      (pseudo-labeling)
+</code></pre>
+<p>where the regularization transfers geometric structure:</p>
+<pre><code>Ω(θ; X,Y) = DIV(K[f(X), g(Y)], K[XWₓ, YWᵧ])
+</code></pre>
+<p><strong>Key insight:</strong> Use linear teacher&#39;s similarity structure as &quot;target geometry&quot; even for unpaired data.</p>
+<h2>KLOT: The Optimal Transport Divergence</h2>
+<h3>The Innovation</h3>
+<p>Previous OT-based methods (e.g., OT-CLIP) had <strong>memory bottlenecks</strong> — couldn&#39;t scale beyond small batches.</p>
+<p><strong>SOTAlign contribution:</strong> Derive <strong>explicit gradient</strong> of KLOT divergence (Theorem in paper), enabling:</p>
+<ul>
+<li>Large batch training</li>
+<li>Efficient GPU computation</li>
+<li>Scalability to millions of unpaired samples</li>
+</ul>
+<h3>Why Optimal Transport?</h3>
+<p>OT naturally transfers <strong>relational structure</strong>:</p>
+<ul>
+<li>Preserves within-modality similarities</li>
+<li>Allows flexibility (doesn&#39;t overconstraint target space)</li>
+<li>Handles distribution shift (can mix data from different sources)</li>
+</ul>
+<h2>Key Results</h2>
+<h3>1. Few Pairs → Strong Alignment</h3>
+<p>With just <strong>1,000 pairs</strong> (vs. CLIP&#39;s 400M):</p>
+<ul>
+<li>Linear method alone gets surprisingly good zero-shot performance</li>
+<li>SOTAlign further improves by leveraging unpaired data</li>
+</ul>
+<h3>2. Unpaired Data Matters</h3>
+<p>Adding unpaired images + text significantly boosts performance:</p>
+<ul>
+<li>More unpaired data → better alignment</li>
+<li>Works even with <strong>distribution shift</strong> (e.g., ImageNet images + CC12M captions → improves COCO performance)</li>
+</ul>
+<h3>3. Robust Across Settings</h3>
+<p>SOTAlign is robust to:</p>
+<ul>
+<li>Number of paired samples (1K–100K)</li>
+<li>Amount of unpaired data</li>
+<li>Choice of pretrained encoders (DINOv2, CLIP, BERT, etc.)</li>
+<li>Downstream tasks (zero-shot classification, retrieval, etc.)</li>
+</ul>
+<h3>4. Beats Baselines</h3>
+<p>Outperforms:</p>
+<ul>
+<li>Supervised methods (InfoNCE trained only on pairs)</li>
+<li>Semi-supervised baselines (S-CLIP, STRUCTURE, etc.)</li>
+<li>Unsupervised alignment methods</li>
+</ul>
+<h2>Why This Matters</h2>
+<h3>For Practitioners</h3>
+<p><strong>1. Data-Efficient VLMs</strong></p>
+<ul>
+<li>Don&#39;t need millions of paired samples</li>
+<li>Can leverage abundant unimodal data (ImageNet, Wikipedia, etc.)</li>
+<li>Applicable to specialized domains (medical imaging + PubMed text)</li>
+</ul>
+<p><strong>2. Domain Adaptation</strong></p>
+<ul>
+<li>Adapt CLIP to new domains with minimal paired data</li>
+<li>Mix data from multiple sources to improve robustness</li>
+</ul>
+<p><strong>3. Cost Reduction</strong></p>
+<ul>
+<li>Annotation cost: ~$0.10–1.00 per image-text pair</li>
+<li>Going from 1M pairs to 10K pairs = <strong>$100K→$1K</strong> (~100× savings)</li>
+</ul>
+<h3>For Researchers</h3>
+<p><strong>1. Validates Platonic Hypothesis</strong></p>
+<ul>
+<li>Linear alignment works surprisingly well</li>
+<li>Pretrained encoders already have compatible structures</li>
+</ul>
+<p><strong>2. Scales Optimal Transport</strong></p>
+<ul>
+<li>Explicit gradients remove memory bottlenecks</li>
+<li>Opens door to OT-based methods at CLIP scale</li>
+</ul>
+<p><strong>3. Semi-Supervised Learning</strong></p>
+<ul>
+<li>Shows how to define training signals for unpaired cross-modal data</li>
+<li>Pseudo-labeling via geometric structure transfer</li>
+</ul>
+<h2>Technical Deep Dive</h2>
+<h3>Why Linear Alignment Works</h3>
+<p>Given paired embeddings (A, B):</p>
+<pre><code>minimize ||AWₓ - BWᵧ||²_F
+</code></pre>
+<p>This works because:</p>
+<ul>
+<li>Pretrained encoders already encode semantic relationships</li>
+<li>Linear transformation can &quot;rotate&quot; one space to match the other</li>
+<li>Surprisingly effective even without fine-tuning</li>
+</ul>
+<h3>From Linear to Nonlinear</h3>
+<p>The nonlinear refinement:</p>
+<ul>
+<li><strong>Preserves</strong> geometric structure from linear teacher</li>
+<li><strong>Adds capacity</strong> to handle complex relationships</li>
+<li><strong>Leverages</strong> unpaired data to avoid overfitting</li>
+</ul>
+<p>The regularization term acts as <strong>pseudo-labeling</strong>:</p>
+<ul>
+<li>Linear teacher defines &quot;soft targets&quot; for unpaired pairs</li>
+<li>Nonlinear student matches these targets while fitting paired data</li>
+<li>Balance controlled by α hyperparameter</li>
+</ul>
+<h3>Handling Distribution Shift</h3>
+<p><strong>Key capability:</strong> SOTAlign can combine:</p>
+<ul>
+<li>Unpaired images from distribution P_X</li>
+<li>Unpaired text from distribution P_Y</li>
+<li>Paired samples from distribution P_{XY}</li>
+</ul>
+<p>where P_X, P_Y, P_{XY} can be <strong>different</strong>!</p>
+<p>Example: ImageNet images + CC12M captions → improve COCO alignment.</p>
+<h2>Practical Recommendations</h2>
+<h3>Data Strategy</h3>
+<ol>
+<li><p><strong>Start with linear alignment:</strong></p>
+<ul>
+<li>Collect 1K–10K high-quality pairs</li>
+<li>Train linear projections</li>
+<li>Evaluate zero-shot performance</li>
+</ul>
+</li>
+<li><p><strong>Add unpaired data:</strong></p>
+<ul>
+<li>Use existing large-scale unimodal datasets</li>
+<li>ImageNet (14M images), CC12M (12M captions), etc.</li>
+<li>Don&#39;t worry about distribution mismatch</li>
+</ul>
+</li>
+<li><p><strong>Tune hyperparameters:</strong></p>
+<ul>
+<li>α controls regularization strength</li>
+<li>Start with α = 1.0, sweep around it</li>
+<li>Higher α = stronger structure preservation</li>
+</ul>
+</li>
+</ol>
+<h3>Architecture Choices</h3>
+<ol>
+<li><strong>Frozen encoders:</strong> DINOv2 (vision), BERT/T5 (language)</li>
+<li><strong>Alignment layers:</strong> Simple MLPs work well (2–3 layers)</li>
+<li><strong>Shared embedding dimension:</strong> d = 512 or 768</li>
+</ol>
+<h3>Training Tips</h3>
+<ol>
+<li>Use large batches (enabled by explicit gradient computation)</li>
+<li>Mix paired and unpaired batches (ratio ~1:10)</li>
+<li>Monitor both supervised loss and regularization term</li>
+<li>Early stopping on validation retrieval task</li>
+</ol>
+<h2>Comparison to Related Work</h2>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Paired Data</th>
+<th>Unpaired Data</th>
+<th>Scalability</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>CLIP</td>
+<td>✓✓✓ (millions)</td>
+<td>✗</td>
+<td>✓✓✓</td>
+</tr>
+<tr>
+<td>S-CLIP</td>
+<td>✓</td>
+<td>✓ (images only)</td>
+<td>✓</td>
+</tr>
+<tr>
+<td>SUE</td>
+<td>✓</td>
+<td>✓</td>
+<td>✗ (single task)</td>
+</tr>
+<tr>
+<td>STRUCTURE</td>
+<td>✓</td>
+<td>✗</td>
+<td>✓✓</td>
+</tr>
+<tr>
+<td><strong>SOTAlign</strong></td>
+<td>✓ (few)</td>
+<td>✓✓ (both modalities)</td>
+<td>✓✓✓</td>
+</tr>
+</tbody></table>
+<h2>Limitations &amp; Future Work</h2>
+<h3>Current Limitations</h3>
+<ol>
+<li><strong>Two-stage training:</strong> Could linear and nonlinear alignment be learned jointly?</li>
+<li><strong>Hyperparameter tuning:</strong> α needs to be set carefully</li>
+<li><strong>Computational cost:</strong> OT-based methods still more expensive than InfoNCE</li>
+</ol>
+<h3>Future Directions</h3>
+<ol>
+<li><strong>Scale to billions:</strong> Can SOTAlign scale to CLIP-level data with better efficiency?</li>
+<li><strong>More modalities:</strong> Extend to audio, video, 3D, etc.</li>
+<li><strong>Online learning:</strong> Adapt to new data streams without retraining</li>
+<li><strong>Theory:</strong> Formal analysis of when/why minimal supervision suffices</li>
+</ol>
+<h2>Connection to Broader Trends</h2>
+<h3>1. Foundation Model Alignment</h3>
+<p>Similar ideas apply to:</p>
+<ul>
+<li>LLM alignment (RLHF with limited human feedback)</li>
+<li>Multimodal LLMs (GPT-4V, Gemini) — could reduce paired data requirements</li>
+<li>Cross-lingual NLP (align languages with few parallel sentences)</li>
+</ul>
+<h3>2. Data Efficiency</h3>
+<p>Part of broader push toward:</p>
+<ul>
+<li>Few-shot learning</li>
+<li>Self-supervised learning</li>
+<li>Transfer learning from foundation models</li>
+</ul>
+<h3>3. Optimal Transport in ML</h3>
+<p>Growing trend:</p>
+<ul>
+<li>Domain adaptation (WGAN, OT-DA)</li>
+<li>Generative models (flow matching)</li>
+<li>Fair ML (fairness constraints via OT)</li>
+</ul>
+<h2>Bottom Line</h2>
+<p><strong>SOTAlign demonstrates that strong vision-language alignment doesn&#39;t require massive paired supervision.</strong> By leveraging the Platonic Hypothesis (pretrained encoders already compatible) and optimal transport (transfer geometric structure), you can achieve compelling results with 100–1000× less paired data.</p>
+<p><strong>Practical impact:</strong></p>
+<ul>
+<li>Makes VLMs accessible for specialized domains</li>
+<li>Reduces annotation costs by orders of magnitude</li>
+<li>Enables rapid prototyping and domain adaptation</li>
+</ul>
+<p><strong>Technical contribution:</strong></p>
+<ul>
+<li>Validates Platonic Hypothesis empirically</li>
+<li>Solves scalability issues in OT-based alignment</li>
+<li>Provides strong baselines for semi-supervised VLM research</li>
+</ul>
+<p>This is essential reading for anyone building multimodal AI systems in data-constrained settings or looking to understand the minimal supervision needed for cross-modal alignment.</p>
+<h2>Quick Start</h2>
+<pre><code class="language-python"># Pseudo-code for SOTAlign
+# Stage 1: Linear alignment
+W_x, W_y = linear_align(paired_images, paired_text)
+
+# Stage 2: Nonlinear refinement
+f, g = train_alignment_layers(
+    paired_data=(paired_images, paired_text),
+    unpaired_images=imagenet,
+    unpaired_text=cc12m,
+    teacher=(W_x, W_y),
+    alpha=1.0  # regularization strength
+)
+
+# Use aligned embeddings
+img_emb = f(vision_encoder(image))
+txt_emb = g(language_encoder(text))
+similarity = cosine_similarity(img_emb, txt_emb)
+</code></pre>
+<p><strong>Key takeaway:</strong> With just a few thousand pairs + lots of unpaired data, you can build competitive vision-language models. The era of requiring hundreds of millions of paired samples may be ending.</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2602.23353" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Model Agreement via Anchoring - arXiv 2602.23360 论文总结">
+    <title>Model Agreement via Anchoring | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Model Agreement via Anchoring</h1>
+<p><strong>arXiv ID:</strong> 2602.23360<br><strong>Authors:</strong> Eric Eaton, Surbhi Goel, Marcel Hussing, Michael Kearns, Aaron Roth, Sikata Sengupta, Jessica Sorrell<br><strong>Institution:</strong> University of Pennsylvania, Johns Hopkins University<br><strong>Date:</strong> February 28, 2026</p>
+<h2>TL;DR</h2>
+<p>This paper tackles <strong>model disagreement</strong> — when two ML models trained independently on the same distribution make wildly different predictions. The authors introduce a <strong>&quot;midpoint anchoring&quot;</strong> technique that proves strong disagreement bounds for popular algorithms (stacking, gradient boosting, neural networks, regression trees) <strong>without needing any realizability assumptions</strong>. Key insight: you can achieve high agreement even with high error, as long as the learning curve flattens out.</p>
+<h2>The Problem</h2>
+<p>When you train two models independently on data from the same distribution, they often disagree significantly in their predictions — even if both models have similar accuracy. This creates:</p>
+<ul>
+<li><strong>Ambiguity</strong> in decision-making (which prediction to trust?)</li>
+<li><strong>Model churn</strong> in production (disrupts downstream systems)</li>
+<li><strong>Fairness concerns</strong> (arbitrary decisions in high-stakes settings)</li>
+<li><strong>Replicability issues</strong> (can&#39;t reproduce results)</li>
+</ul>
+<p>Previous solutions either required:</p>
+<ul>
+<li>Test-time interaction between models (costly)</li>
+<li>Custom-designed algorithms (impractical)</li>
+<li>Perfect or near-perfect accuracy (unrealistic)</li>
+</ul>
+<h2>The Core Technique: Midpoint Anchoring</h2>
+<p>The authors leverage a simple identity for squared loss:</p>
+<pre><code>D(f₁, f₂) = 2(MSE(f₁) + MSE(f₂) - 2·MSE(f̄))
+</code></pre>
+<p>where <code>f̄ = (f₁ + f₂)/2</code> is the average model, and <code>D(f₁, f₂) = 𝔼[(f₁(x) - f₂(x))²]</code> measures disagreement.</p>
+<p><strong>Key insight:</strong> You don&#39;t need to achieve low error — you just need the error gap between your models and their average to be small. This happens naturally when the &quot;local learning curve&quot; flattens out.</p>
+<h2>Applications &amp; Results</h2>
+<h3>1. Stacking (Stacked Aggregation)</h3>
+<ul>
+<li><strong>Setup:</strong> Ensemble k independently trained models</li>
+<li><strong>Result:</strong> <code>𝔼[D(f₁, f₂)] ≤ 4(R̄ₖ - R̄₂ₖ)</code> where R̄ₖ is expected MSE with k models</li>
+<li><strong>Takeaway:</strong> Disagreement = local training curve gap. When you can&#39;t improve much by doubling models, you have agreement.</li>
+</ul>
+<h3>2. Gradient Boosting</h3>
+<ul>
+<li><strong>Setup:</strong> Iteratively build model by adding weak learners correlated with residuals</li>
+<li><strong>Result:</strong> <code>D(f₁, f₂) ≤ O((τ*)²/k)</code> after k iterations</li>
+<li><strong>Takeaway:</strong> Agreement improves at rate 1/k, independent of distributional assumptions</li>
+</ul>
+<h3>3. Neural Networks (with Architecture Search)</h3>
+<ul>
+<li><strong>Setup:</strong> Train over all ReLU networks of size n</li>
+<li><strong>Result:</strong> Agreement driven to 0 as function of network size n</li>
+<li><strong>Surprising:</strong> High agreement in prediction space despite arbitrary disagreement in parameter space (non-convex optimization!)</li>
+</ul>
+<h3>4. Regression Trees</h3>
+<ul>
+<li><strong>Setup:</strong> Train over all trees of depth d</li>
+<li><strong>Result:</strong> Agreement driven to 0 as function of tree depth d</li>
+<li><strong>Key:</strong> Average of two depth-d trees is representable as depth-2d tree</li>
+</ul>
+<h2>Why This Matters for Practice</h2>
+<h3>Actionable Insights</h3>
+<ol>
+<li><p><strong>Monitor your learning curves:</strong> Plot error vs. complexity (# models, network size, depth). When the curve flattens, you have both:</p>
+<ul>
+<li>Local optimality (can&#39;t improve much without more resources)</li>
+<li>High stability (independent retraining will agree)</li>
+</ul>
+</li>
+<li><p><strong>No tradeoff between accuracy and stability:</strong> If you can substantially improve accuracy by increasing complexity, you <em>should</em> — and when you can&#39;t, you automatically get stability.</p>
+</li>
+<li><p><strong>Works &quot;out of the box&quot;:</strong> No need for:</p>
+<ul>
+<li>Special replicability-focused algorithms</li>
+<li>Differential privacy constraints</li>
+<li>Test-time coordination between models</li>
+<li>Realizability assumptions</li>
+</ul>
+</li>
+</ol>
+<h3>Connection to Scaling Laws</h3>
+<p>Empirical neural scaling laws show <code>R(n) ≈ R* + cn^(-γ)</code> (power law). Under this:</p>
+<pre><code>R(n) - R(2n) = O(n^(-γ))
+⟹ D(f₁, f₂) = O(n^(-γ))
+</code></pre>
+<p>This explains why larger models show greater run-to-run consistency — and provides theoretical grounding for empirical observations about LLM agreement.</p>
+<h2>Tightness</h2>
+<p>The bounds are <strong>tight even in constants</strong>. For stacking:</p>
+<ul>
+<li>Upper bound: <code>𝔼[D] ≤ 4(R̄ₖ - R̄₂ₖ)</code></li>
+<li>Lower bound: For every ε ≥ 0, there exists instance with <code>𝔼[D] ≥ (4-ε)(R̄ₖ - R̄₂ₖ)</code></li>
+</ul>
+<p>The technique cannot be generically improved.</p>
+<h2>Practical Recommendations</h2>
+<ol>
+<li><p><strong>For model deployment:</strong></p>
+<ul>
+<li>Empirically trace the learning curve (error vs complexity)</li>
+<li>Choose complexity where curve is locally flat</li>
+<li>Expect high agreement at that point</li>
+</ul>
+</li>
+<li><p><strong>For architecture search:</strong></p>
+<ul>
+<li>Don&#39;t worry about non-convexity causing disagreement in parameter space</li>
+<li>Prediction-space agreement emerges from optimization alone</li>
+</ul>
+</li>
+<li><p><strong>For ensembling:</strong></p>
+<ul>
+<li>Even with large errors, you can have strong agreement</li>
+<li>Agreement doesn&#39;t require near-perfect predictors</li>
+</ul>
+</li>
+</ol>
+<h2>Limitations &amp; Extensions</h2>
+<ul>
+<li><strong>Main results</strong> for 1D regression with squared loss (but generalize to multi-dimensional strongly convex losses)</li>
+<li><strong>Frank-Wolfe variant</strong> for gradient boosting removes dependence on problem-specific constant τ*</li>
+<li><strong>Agnostic bounds:</strong> No distributional or realizability assumptions needed</li>
+</ul>
+<h2>Relevance to Modern AI Systems</h2>
+<p>This work is particularly relevant for:</p>
+<ol>
+<li><strong>LLM deployment:</strong> Explains why independently trained large models tend to agree</li>
+<li><strong>Production ML:</strong> Justifies model updates (low churn when learning curves flatten)</li>
+<li><strong>Fairness:</strong> Reduces arbitrariness in high-stakes predictions</li>
+<li><strong>Debugging:</strong> Local learning curve monitoring as health metric</li>
+</ol>
+<h2>Bottom Line</h2>
+<p><strong>The paper shows that model agreement comes &quot;for free&quot; when you optimize properly.</strong> You don&#39;t need special algorithms, assumptions, or coordination — just train models in the regime where your learning curve has flattened out. This is exactly where you&#39;d want to deploy anyway (local optimality for accuracy), making stability and accuracy perfectly aligned goals.</p>
+<p>The &quot;midpoint anchoring&quot; technique is elegant, widely applicable, and provides tight bounds for real algorithms used in practice. Essential reading for anyone concerned about model reproducibility, fairness, or production stability.</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2602.23360" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
