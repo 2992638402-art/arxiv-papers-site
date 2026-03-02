@@ -13,24 +13,44 @@ const outputFile = path.join(__dirname, '..', 'index.html');
 
 // 获取精选5篇论文（如果有的话）
 const today = new Date().toISOString().split('T')[0];
-const featuredFile = path.join(featuredDir, `featured_${today}.json`);
 
+// 尝试查找最新的精选文件
+let featuredFile = null;
+let featuredDate = today;
 let papers = [];
 let isFeatured = false;
 
-if (fs.existsSync(featuredFile)) {
-    // 使用精选论文
-    const featuredData = JSON.parse(fs.readFileSync(featuredFile, 'utf8'));
-    papers = featuredData.papers || [];
-    isFeatured = true;
-    console.log(`📌 使用精选论文: ${papers.length} 篇`);
-} else {
-    // 降级：使用所有论文
+if (fs.existsSync(featuredDir)) {
+    const files = fs.readdirSync(featuredDir)
+        .filter(f => f.startsWith('featured_') && f.endsWith('.json'))
+        .sort()
+        .reverse();
+
+    if (files.length > 0) {
+        featuredFile = path.join(featuredDir, files[0]);
+        const featuredData = JSON.parse(fs.readFileSync(featuredFile, 'utf8'));
+        papers = featuredData.papers || [];
+        isFeatured = true;
+
+        // 提取日期
+        const dateMatch = files[0].match(/featured_(\d{4}-\d{2}-\d{2})/);
+        if (dateMatch) {
+            featuredDate = dateMatch[1];
+        }
+
+        console.log(`📌 使用精选论文: ${papers.length} 篇 (${files[0]})`);
+    }
+}
+
+// 降级：使用所有论文的前5篇
+if (!isFeatured) {
     const papersFile = path.join(dataDir, `papers_to_summarize_${today}.json`);
     if (fs.existsSync(papersFile)) {
         const data = JSON.parse(fs.readFileSync(papersFile, 'utf8'));
-        papers = (data.papers || []).slice(0, 5); // 最多显示5篇
+        papers = (data.papers || []).slice(0, 5);
         console.log(`📚 使用前5篇论文`);
+    } else {
+        console.log(`⚠️  未找到论文数据，首页将为空`);
     }
 }
 
@@ -168,25 +188,27 @@ const html = `<!DOCTYPE html>
         <!-- Manual Refresh Section -->
         <section class="refresh-section">
             <h3>🔄 手动刷新论文</h3>
-            <p>点击下方按钮手动触发最新论文抓取和 AI 总结</p>
-            <button onclick="triggerWorkflow()" class="refresh-btn" id="refreshBtn">
+            <p>点击下方按钮触发最新论文抓取和 AI 总结</p>
+            <a href="https://github.com/2992638402-art/arxiv-papers-site/actions/workflows/daily-update.yml"
+               target="_blank"
+               class="refresh-btn">
                 <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
                 </svg>
-                <span id="refreshText">手动刷新论文</span>
-            </button>
-            <p id="refreshStatus" style="margin-top: 1rem; font-size: 0.9rem; color: #a0aec0;">
-                自动抓取 150+ 篇论文，AI 精选 5 篇深度解读
+                手动刷新论文
+            </a>
+            <p style="margin-top: 1rem; font-size: 0.9rem; color: #a0aec0;">
+                点击后在 GitHub 页面点击 "Run workflow" 按钮启动更新
             </p>
         </section>
 
         <!-- Hero Section -->
         <section class="daily-section">
-            <h2>🔥 每日精选 TOP ${papers.length} (${today})</h2>
+            <h2>🔥 每日精选 TOP ${papers.length} (${featuredDate})</h2>
             <p>${isFeatured ? '从 150+ 篇论文中' : ''}精选 <strong>${papers.length} 篇</strong>最有价值的 AI/ML 研究${categoriesText ? '，涵盖' + categoriesText + '等方向' : ''}。</p>
             <p>
-                <a href="featured/featured_${today}.html" class="btn">查看精选总结 →</a>
+                <a href="featured/featured_${featuredDate}.html" class="btn">查看精选总结 →</a>
                 <a href="#all-papers" class="btn btn-secondary" style="margin-left: 1rem;">浏览全部 150 篇 →</a>
             </p>
         </section>
@@ -247,63 +269,6 @@ const html = `<!DOCTYPE html>
         </p>
     </footer>
 
-    <script>
-        async function triggerWorkflow() {
-            const btn = document.getElementById('refreshBtn');
-            const text = document.getElementById('refreshText');
-            const status = document.getElementById('refreshStatus');
-
-            // 禁用按钮
-            btn.disabled = true;
-            btn.style.opacity = '0.6';
-            btn.style.cursor = 'not-allowed';
-            text.textContent = '正在触发...';
-
-            try {
-                // 使用GitHub Actions workflow dispatch API
-                const response = await fetch('https://api.github.com/repos/2992638402-art/arxiv-papers-site/actions/workflows/daily-update.yml/dispatches', {
-                    method: 'POST',
-                    headers: {
-                        'Accept': 'application/vnd.github+json',
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        ref: 'main'
-                    })
-                });
-
-                if (response.status === 204 || response.status === 200) {
-                    text.textContent = '✅ 已触发！';
-                    status.innerHTML = '✅ 更新任务已启动！预计 3-5 分钟后完成。<br><a href="https://github.com/2992638402-art/arxiv-papers-site/actions" target="_blank" style="color: #667eea;">查看进度 →</a>';
-                    status.style.color = '#10b981';
-
-                    setTimeout(() => {
-                        btn.disabled = false;
-                        btn.style.opacity = '1';
-                        btn.style.cursor = 'pointer';
-                        text.textContent = '手动刷新论文';
-                        status.innerHTML = '自动抓取 150+ 篇论文，AI 精选 5 篇深度解读';
-                        status.style.color = '#a0aec0';
-                    }, 5000);
-                } else {
-                    throw new Error('触发失败');
-                }
-            } catch (error) {
-                text.textContent = '触发失败';
-                status.innerHTML = '❌ 自动触发暂不可用，请<a href="https://github.com/2992638402-art/arxiv-papers-site/actions/workflows/daily-update.yml" target="_blank" style="color: #667eea;">手动触发 →</a>';
-                status.style.color = '#ef4444';
-
-                setTimeout(() => {
-                    btn.disabled = false;
-                    btn.style.opacity = '1';
-                    btn.style.cursor = 'pointer';
-                    text.textContent = '手动刷新论文';
-                    status.innerHTML = '自动抓取 150+ 篇论文，AI 精选 5 篇深度解读';
-                    status.style.color = '#a0aec0';
-                }, 5000);
-            }
-        }
-    </script>
     <script src="js/main.js"></script>
 </body>
 </html>`;

@@ -185,6 +185,18 @@ async function main() {
         console.log('⚠️  精选生成失败，继续...');
     }
 
+    // 2.5. AI 总结精选论文（如果有 API key）
+    if (process.env.ANTHROPIC_API_KEY) {
+        console.log('\n🤖 AI 总结精选论文...');
+        try {
+            execSync('node scripts/summarize-featured.js', { cwd: path.join(__dirname, '..'), stdio: 'inherit' });
+        } catch (err) {
+            console.log('⚠️  AI 总结失败，继续...');
+        }
+    } else {
+        console.log('\n⚠️  未设置 ANTHROPIC_API_KEY，跳过 AI 总结');
+    }
+
     // 3. 转换 markdown 为 HTML
     console.log('\n📄 转换 markdown 为 HTML...');
     try {
