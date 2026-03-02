@@ -1,0 +1,125 @@
+{
+  "date": "2026-03-02",
+  "papers": [
+    {
+      "id": "2602.23937v1",
+      "title": "Enhancing Vision-Language Navigation with Multimodal Event Knowledge from Real-World Indoor Tour Videos",
+      "summary": "Vision-Language Navigation (VLN) agents often struggle with long-horizon reasoning in unseen environments, particularly when facing ambiguous, coarse-grained instructions. While recent advances use knowledge graph to enhance reasoning, the potential of multimodal event knowledge inspired by human episodic memory remains underexplored. In this work, we propose an event-centric knowledge enhancement strategy for automated process knowledge mining and feature fusion to solve coarse-grained instruction and long-horizon reasoning in VLN task. First, we construct YE-KG, the first large-scale multimodal spatiotemporal knowledge graph, with over 86k nodes and 83k edges, derived from real-world indoor videos. By leveraging multimodal large language models (i.e., LLaVa, GPT4), we extract unstructured video streams into structured semantic-action-effect events to serve as explicit episodic memory. Second, we introduce STE-VLN, which integrates the above graph into VLN models via a Coarse-to-Fine Hierarchical Retrieval mechanism. This allows agents to retrieve causal event sequences and dynamically fuse them with egocentric visual observations. Experiments on REVERIE, R2R, and R2R-CE benchmarks demonstrate the efficiency of our event-centric strategy, outperforming state-of-the-art approaches across diverse action spaces. Our data and code are available on the project website https://sites.google.com/view/y-event-kg/.",
+      "authors": [
+        "Haoxuan Xu",
+        "Tianfu Li",
+        "Wenbo Chen",
+        "Yi Liu",
+        "Xingxing Zuo",
+        "Yaoxian Song",
+        "Haoang Li"
+      ],
+      "published": "2026-02-27T11:38:06Z",
+      "updated": "2026-02-27T11:38:06Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2602.23937v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2602.23896v1",
+      "title": "TSC: Topology-Conditioned Stackelberg Coordination for Multi-Agent Reinforcement Learning in Interactive Driving",
+      "summary": "Safe and efficient autonomous driving in dense traffic is fundamentally a decentralized multi-agent coordination problem, where interactions at conflict points such as merging and weaving must be resolved reliably under partial observability. With only local and incomplete cues, interaction patterns can change rapidly, often causing unstable behaviors such as oscillatory yielding or unsafe commitments. Existing multi-agent reinforcement learning (MARL) approaches either adopt synchronous decision-making, which exacerbate non-stationarity, or depend on centralized sequencing mechanisms that scale poorly as traffic density increases. To address these limitations, we propose Topology-conditioned Stackelberg Coordination (TSC), a learning framework for decentralized interactive driving under communication-free execution, which extracts a time-varying directed priority graph from braid-inspired weaving relations between trajectories, thereby defining local leader-follower dependencies without constructing a global order of play. Conditioned on this graph, TSC endogenously factorizes dense interactions into graph-local Stackelberg subgames and, under centralized training and decentralized execution (CTDE), learns a sequential coordination policy that anticipates leaders via action prediction and trains followers through action-conditioned value learning to approximate local best responses, improving training stability and safety in dense traffic. Experiments across four dense traffic scenarios show that TSC achieves superior performance over representative MARL baselines across key metrics, most notably reducing collisions while maintaining competitive traffic efficiency and control smoothness.",
+      "authors": [
+        "Xiaotong Zhang",
+        "Gang Xiong",
+        "Yuanjing Wang",
+        "Siyu Teng",
+        "Alois Knoll",
+        "Long Chen"
+      ],
+      "published": "2026-02-27T10:46:41Z",
+      "updated": "2026-02-27T10:46:41Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2602.23896v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2602.24286v1",
+      "title": "CUDA Agent: Large-Scale Agentic RL for High-Performance CUDA Kernel Generation",
+      "summary": "GPU kernel optimization is fundamental to modern deep learning but remains a highly specialized task requiring deep hardware expertise. Despite strong performance in general programming, large language models (LLMs) remain uncompetitive with compiler-based systems such as torch.compile for CUDA kernel generation. Existing CUDA code generation approaches either rely on training-free refinement or fine-tune models within fixed multi-turn execution-feedback loops, but both paradigms fail to fundamentally improve the model's intrinsic CUDA optimization ability, resulting in limited performance gains. We present CUDA Agent, a large-scale agentic reinforcement learning system that develops CUDA kernel expertise through three components: a scalable data synthesis pipeline, a skill-augmented CUDA development environment with automated verification and profiling to provide reliable reward signals, and reinforcement learning algorithmic techniques enabling stable training. CUDA Agent achieves state-of-the-art results on KernelBench, delivering 100\\%, 100\\%, and 92\\% faster rate over torch.compile on KernelBench Level-1, Level-2, and Level-3 splits, outperforming the strongest proprietary models such as Claude Opus 4.5 and Gemini 3 Pro by about 40\\% on the hardest Level-3 setting.",
+      "authors": [
+        "Weinan Dai",
+        "Hanlin Wu",
+        "Qiying Yu",
+        "Huan-ang Gao",
+        "Jiahao Li",
+        "Chengquan Jiang",
+        "Weiqiang Lou",
+        "Yufan Song",
+        "Hongli Yu",
+        "Jiaze Chen",
+        "Wei-Ying Ma",
+        "Ya-Qin Zhang",
+        "Jingjing Liu",
+        "Mingxuan Wang",
+        "Xin Liu",
+        "Hao Zhou"
+      ],
+      "published": "2026-02-27T18:58:05Z",
+      "updated": "2026-02-27T18:58:05Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2602.24286v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2602.21351v1",
+      "title": "A Hierarchical Multi-Agent System for Autonomous Discovery in Geoscientific Data Archives",
+      "summary": "The rapid accumulation of Earth science data has created a significant scalability challenge; while repositories like PANGAEA host vast collections of datasets, citation metrics indicate that a substantial portion remains underutilized, limiting data reusability. Here we present PANGAEA-GPT, a hierarchical multi-agent framework designed for autonomous data discovery and analysis. Unlike standard Large Language Model (LLM) wrappers, our architecture implements a centralized Supervisor-Worker topology with strict data-type-aware routing, sandboxed deterministic code execution, and self-correction via execution feedback, enabling agents to diagnose and resolve runtime errors. Through use-case scenarios spanning physical oceanography and ecology, we demonstrate the system's capacity to execute complex, multi-step workflows with minimal human intervention. This framework provides a methodology for querying and analyzing heterogeneous repository data through coordinated agent workflows.",
+      "authors": [
+        "Dmitrii Pantiukhin",
+        "Ivan Kuznetsov",
+        "Boris Shapkin",
+        "Antonia Anna Jost",
+        "Thomas Jung",
+        "Nikolay Koldunov"
+      ],
+      "published": "2026-02-24T20:37:38Z",
+      "updated": "2026-02-24T20:37:38Z",
+      "categories": [
+        "cs.AI",
+        "cs.IR",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2602.21351v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2602.24068v1",
+      "title": "A Novel Hierarchical Multi-Agent System for Payments Using LLMs",
+      "summary": "Large language model (LLM) agents, such as OpenAI's Operator and Claude's Computer Use, can automate workflows but unable to handle payment tasks. Existing agentic solutions have gained significant attention; however, even the latest approaches face challenges in implementing end-to-end agentic payment workflows. To address this gap, this research proposes the Hierarchical Multi-Agent System for Payments (HMASP), which provides an end-to-end agentic method for completing payment workflows. The proposed HMASP leverages either open-weight or proprietary LLMs and employs a modular architecture consisting of the Conversational Payment Agent (CPA - first agent level), Supervisor agents (second agent level), Routing agents (third agent level), and the Process summary agent (fourth agent level). The CPA serves as the central entry point, handling all external requests and coordinating subsequent tasks across hierarchical levels. HMASP incorporates architectural patterns that enable modular task execution across agents and levels for payment operations, including shared state variables, decoupled message states, and structured handoff protocols that facilitate coordination across agents and workflows. Experimental results demonstrate the feasibility of the proposed HMASP. To our knowledge, HMASP is the first LLM-based multi-agent system to implement end-to-end agentic payment workflows. This work lays a foundation for extending agentic capabilities into the payment domain.",
+      "authors": [
+        "Joon Kiat Chua",
+        "Donghao Huang",
+        "Zhaoxia Wang"
+      ],
+      "published": "2026-02-27T14:58:13Z",
+      "updated": "2026-02-27T14:58:13Z",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2602.24068v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2602.23937v1",
+    "2602.23896v1",
+    "2602.24286v1",
+    "2602.21351v1",
+    "2602.24068v1"
+  ]
+}
