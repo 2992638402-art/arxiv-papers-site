@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PonderLM-3: Adaptive Token-Wise Pondering with Differentiable Masking - arXiv 2603.02023 论文总结">
+    <title>PonderLM-3: Adaptive Token-Wise Pondering with Differentiable Masking | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>PonderLM-3: Adaptive Token-Wise Pondering with Differentiable Masking</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.02023<br><strong>分类:</strong> cs.CL<br><strong>发布时间:</strong> 2026-03-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> He Li, Feichen Song, Boyi Zeng, Shixiang Song, Zhiqin John Xu, Ziwei He, Zhouhan Lin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.02023">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.02023">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Test-time scaling has shown that allocating more additional computation at inference can improve generation quality, motivating a natural follow-up question: where should this computation be spent? Building on this insight, we introduce PonderLM-3, a pretraining framework for token-wise adaptive pondering that learns to selectively allocate additional computation under purely self-supervised objectives, built on top of the PonderLM-2 backbone. This makes additional inference computation an allocatable per-token resource, so tokens receive more computation only when it is beneficial, rather than paying a uniform extra cost. To make this allocation learnable while maintaining train-inference consistency, PonderLM-3 injects a differentiable attention mask during pretraining and pairs it with a matching hard pruning rule at inference. PonderLM-3 defines a stronger Pareto frontier: compared with existing recursive or adaptive baselines, it achieves lower pretraining perplexity at equal inference FLOPs. On downstream benchmarks, PonderLM-3 attains comparable performance to fixed-step PonderLM-2 under the same maximum number of additional computation steps, while using fewer inference FLOPs in practice. Overall, PonderLM-3 provides an end-to-end differentiable and train-inference consistent framework for token-wise adaptive computation, enabling additional inference compute to be allocated where it is most useful rather than paid uniformly by every token.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.02023" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
