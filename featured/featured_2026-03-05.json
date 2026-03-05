@@ -1,0 +1,128 @@
+{
+  "date": "2026-03-05",
+  "papers": [
+    {
+      "id": "2603.04029v1",
+      "title": "Self-adapting Robotic Agents through Online Continual Reinforcement Learning with World Model Feedback",
+      "summary": "As learning-based robotic controllers are typically trained offline and deployed with fixed parameters, their ability to cope with unforeseen changes during operation is limited. Biologically inspired, this work presents a framework for online Continual Reinforcement Learning that enables automated adaptation during deployment. Building on DreamerV3, a model-based Reinforcement Learning algorithm, the proposed method leverages world model prediction residuals to detect out-of-distribution events and automatically trigger finetuning. Adaptation progress is monitored using both task-level performance signals and internal training metrics, allowing convergence to be assessed without external supervision and domain knowledge. The approach is validated on a variety of contemporary continuous control problems, including a quadruped robot in high-fidelity simulation, and a real-world model vehicle. Relevant metrics and their interpretation are presented and discussed, as well as resulting trade-offs described. The results sketch out how autonomous robotic agents could once move beyond static training regimes toward adaptive systems capable of self-reflection and -improvement during operation, just like their biological counterparts.",
+      "authors": [
+        "Fabian Domberg",
+        "Georg Schildbach"
+      ],
+      "published": "2026-03-04T13:07:42Z",
+      "updated": "2026-03-04T13:07:42Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.04029v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2603.02637v1",
+      "title": "StitchCUDA: An Automated Multi-Agents End-to-End GPU Programing Framework with Rubric-based Agentic Reinforcement Learning",
+      "summary": "Modern machine learning (ML) workloads increasingly rely on GPUs, yet achieving high end-to-end performance remains challenging due to dependencies on both GPU kernel efficiency and host-side settings. Although LLM-based methods show promise on automated GPU kernel generation, prior works mainly focus on single-kernel optimization and do not extend to end-to-end programs, hindering practical deployment. To address the challenge, in this work, we propose StitchCUDA, a multi-agent framework for end-to-end GPU program generation, with three specialized agents: a Planner to orchestrate whole system design, a Coder dedicated to implementing it step-by-step, and a Verifier for correctness check and performance profiling using Nsys/NCU. To fundamentally improve the Coder's ability in end-to-end GPU programming, StitchCUDA integrates rubric-based agentic reinforcement learning over two atomic skills, task-to-code generation and feedback-driven code optimization, with combined rubric reward and rule-based reward from real executions. Therefore, the Coder learns how to implement advanced CUDA programming techniques (e.g., custom kernel fusion, cublas epilogue), and we also effectively prevent Coder's reward hacking (e.g., just copy PyTorch code or hardcoding output) during benchmarking. Experiments on KernelBench show that StitchCUDA achieves nearly 100% success rate on end-to-end GPU programming tasks, with 1.72x better speedup over the multi-agent baseline and 2.73x than the RL model baselines.",
+      "authors": [
+        "Shiyang Li",
+        "Zijian Zhang",
+        "Winson Chen",
+        "Yuebo Luo",
+        "Mingyi Hong",
+        "Caiwen Ding"
+      ],
+      "published": "2026-03-03T06:04:49Z",
+      "updated": "2026-03-03T06:04:49Z",
+      "categories": [
+        "cs.MA",
+        "cs.CL",
+        "cs.PL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.02637v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.04363v1",
+      "title": "ManipulationNet: An Infrastructure for Benchmarking Real-World Robot Manipulation with Physical Skill Challenges and Embodied Multimodal Reasoning",
+      "summary": "Dexterous manipulation enables robots to purposefully alter the physical world, transforming them from passive observers into active agents in unstructured environments. This capability is the cornerstone of physical artificial intelligence. Despite decades of advances in hardware, perception, control, and learning, progress toward general manipulation systems remains fragmented due to the absence of widely adopted standard benchmarks. The central challenge lies in reconciling the variability of the real world with the reproducibility and authenticity required for rigorous scientific evaluation. To address this, we introduce ManipulationNet, a global infrastructure that hosts real-world benchmark tasks for robotic manipulation. ManipulationNet delivers reproducible task setups through standardized hardware kits, and enables distributed performance evaluation via a unified software client that delivers real-time task instructions and collects benchmarking results. As a persistent and scalable infrastructure, ManipulationNet organizes benchmark tasks into two complementary tracks: 1) the Physical Skills Track, which evaluates low-level physical interaction skills, and 2) the Embodied Reasoning Track, which tests high-level reasoning and multimodal grounding abilities. This design fosters the systematic growth of an interconnected network of real-world abilities and skills, paving the path toward general robotic manipulation. By enabling comparable manipulation research in the real world at scale, this infrastructure establishes a sustainable foundation for measuring long-term scientific progress and identifying capabilities ready for real-world deployment.",
+      "authors": [
+        "Yiting Chen",
+        "Kenneth Kimble",
+        "Edward H. Adelson",
+        "Tamim Asfour",
+        "Podshara Chanrungmaneekul",
+        "Sachin Chitta",
+        "Yash Chitambar",
+        "Ziyang Chen",
+        "Ken Goldberg",
+        "Danica Kragic",
+        "Hui Li",
+        "Xiang Li",
+        "Yunzhu Li",
+        "Aaron Prather",
+        "Nancy Pollard",
+        "Maximo A. Roa-Garzon",
+        "Robert Seney",
+        "Shuo Sha",
+        "Shihefeng Wang",
+        "Yu Xiang",
+        "Kaifeng Zhang",
+        "Yuke Zhu",
+        "Kaiyu Hang"
+      ],
+      "published": "2026-03-04T18:29:28Z",
+      "updated": "2026-03-04T18:29:28Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.04363v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2603.04257v1",
+      "title": "Memex(RL): Scaling Long-Horizon LLM Agents via Indexed Experience Memory",
+      "summary": "Large language model (LLM) agents are fundamentally bottlenecked by finite context windows on long-horizon tasks. As trajectories grow, retaining tool outputs and intermediate reasoning in-context quickly becomes infeasible: the working context becomes prohibitively long, eventually exceeds the context budget, and makes distant evidence harder to use even when it is still present. Existing solutions typically shorten context through truncation or running summaries, but these methods are fundamentally lossy because they compress or discard past evidence itself. We introduce Memex, an indexed experience memory mechanism that instead compresses context without discarding evidence. Memex maintains a compact working context consisting of concise structured summaries and stable indices, while storing full-fidelity underlying interactions in an external experience database under those indices. The agent can then decide when to dereference an index and recover the exact past evidence needed for the current subgoal. We optimize both write and read behaviors with our reinforcement learning framework MemexRL, using reward shaping tailored to indexed memory usage under a context budget, so the agent learns what to summarize, what to archive, how to index it, and when to retrieve it. This yields a substantially less lossy form of long-horizon memory than summary-only approaches. We further provide a theoretical analysis showing the potential of the Memex loop to preserve decision quality with bounded dereferencing while keeping effective in-context computation bounded as history grows. Empirically, on challenging long-horizon tasks, Memex agent trained with MemexRL improves task success while using a significantly smaller working context.",
+      "authors": [
+        "Zhenting Wang",
+        "Huancheng Chen",
+        "Jiayun Wang",
+        "Wei Wei"
+      ],
+      "published": "2026-03-04T16:45:06Z",
+      "updated": "2026-03-04T16:45:06Z",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.04257v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.02345v1",
+      "title": "RIVA: Leveraging LLM Agents for Reliable Configuration Drift Detection",
+      "summary": "Infrastructure as code (IaC) tools automate cloud provisioning but verifying that deployed systems remain consistent with the IaC specifications remains challenging. Such configuration drift occurs because of bugs in the IaC specification, manual changes, or system updates. Large language model (LLM)-based agentic AI systems can automate the analysis of large volumes of telemetry data, making them suitable for the detection of configuration drift. However, existing agentic systems implicitly assume that the tools they invoke always return correct outputs, making them vulnerable to erroneous tool responses. Since agents cannot distinguish whether an anomalous tool output reflects a real infrastructure problem or a broken tool, such errors may cause missed drift or false alarms, reducing reliability precisely when it is most needed. We introduce RIVA (Robust Infrastructure by Verification Agents), a novel multi-agent system that performs robust IaC verification even when tools produce incorrect or misleading outputs. RIVA employs two specialized agents, a verifier agent and a tool generation agent, that collaborate through iterative cross-validation, multi-perspective verification, and tool call history tracking. Evaluation on the AIOpsLab benchmark demonstrates that RIVA, in the presence of erroneous tool responses, recovers task accuracy from 27.3% when using a baseline ReAct agent to 50.0% on average. RIVA also improves task accuracy 28% to 43.8% without erroneous tool responses. Our results show that cross-validation of diverse tool calls enables more reliable autonomous infrastructure verification in production cloud environments.",
+      "authors": [
+        "Sami Abuzakuk",
+        "Lucas Crijns",
+        "Anne-Marie Kermarrec",
+        "Rafael Pires",
+        "Martijn de Vos"
+      ],
+      "published": "2026-03-02T19:28:27Z",
+      "updated": "2026-03-02T19:28:27Z",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.02345v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2603.04029v1",
+    "2603.02637v1",
+    "2603.04363v1",
+    "2603.04257v1",
+    "2603.02345v1"
+  ]
+}
