@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Frequency-Aware Error-Bounded Caching for Accelerating Diffusion Transformers - arXiv 2603.05315 论文总结">
+    <title>Frequency-Aware Error-Bounded Caching for Accelerating Diffusion Transformers | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Frequency-Aware Error-Bounded Caching for Accelerating Diffusion Transformers</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.05315<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-03-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Guandong Li</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.05315">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.05315">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Diffusion Transformers (DiTs) have emerged as the dominant architecture for high-quality image and video generation, yet their iterative denoising process incurs substantial computational cost during inference. Existing caching methods accelerate DiTs by reusing intermediate computations across timesteps, but they share a common limitation: treating the denoising process as uniform across time,depth, and feature dimensions. In this work, we identify three orthogonal axes of non-uniformity in DiT denoising: (1) temporal -- sensitivity to caching errors varies dramatically across the denoising trajectory; (2) depth -- consecutive caching decisions lead to cascading approximation errors; and (3) feature -- different components of the hidden state exhibit heterogeneous temporal dynamics. Based on these observations, we propose SpectralCache, a unified caching framework comprising Timestep-Aware Dynamic Scheduling (TADS), Cumulative Error Budgets (CEB), and Frequency-Decomposed Caching (FDC). On FLUX.1-schnell at 512x512 resolution, SpectralCache achieves 2.46x speedup with LPIPS 0.217 and SSIM 0.727, outperforming TeaCache (2.12x, LPIPS 0.215, SSIM 0.734) by 16% in speed while maintaining comparable quality (LPIPS difference &lt; 1%). Our approach is training-free, plug-and-play, and compatible with existing DiT architectures.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.05315" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
