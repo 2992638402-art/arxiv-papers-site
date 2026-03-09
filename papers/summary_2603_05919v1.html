@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Design Experiments to Compare Multi-armed Bandit Algorithms - arXiv 2603.05919 论文总结">
+    <title>Design Experiments to Compare Multi-armed Bandit Algorithms | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Design Experiments to Compare Multi-armed Bandit Algorithms</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.05919<br><strong>分类:</strong> cs.LG, math.ST, stat.ML<br><strong>发布时间:</strong> 2026-03-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Huiling Meng, Ningyuan Chen, Xuefeng Gao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.05919">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.05919">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Online platforms routinely compare multi-armed bandit algorithms, such as UCB and Thompson Sampling, to select the best-performing policy. Unlike standard A/B tests for static treatments, each run of a bandit algorithm over $T$ users produces only one dependent trajectory, because the algorithm&#39;s decisions depend on all past interactions. Reliable inference therefore demands many independent restarts of the algorithm, making experimentation costly and delaying deployment decisions. We propose Artificial Replay (AR) as a new experimental design for this problem. AR first runs one policy and records its trajectory. When the second policy is executed, it reuses a recorded reward whenever it selects an action the first policy already took, and queries the real environment only otherwise. We develop a new analytical framework for this design and prove three key properties of the resulting estimator: it is unbiased; it requires only $T + o(T)$ user interactions instead of $2T$ for a run of the treatment and control policies, nearly halving the experimental cost when both policies have sub-linear regret; and its variance grows sub-linearly in $T$, whereas the estimator from a naïve design has a linearly-growing variance. Numerical experiments with UCB, Thompson Sampling, and $ε$-greedy policies confirm these theoretical gains.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.05919" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

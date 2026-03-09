@@ -1,0 +1,121 @@
+{
+  "date": "2026-03-09",
+  "papers": [
+    {
+      "id": "2603.04474v1",
+      "title": "From Spark to Fire: Modeling and Mitigating Error Cascades in LLM-Based Multi-Agent Collaboration",
+      "summary": "Large Language Model-based Multi-Agent Systems (LLM-MAS) are increasingly applied to complex collaborative scenarios. However, their collaborative mechanisms may cause minor inaccuracies to gradually solidify into system-level false consensus through iteration. Such risks are difficult to trace since errors can propagate and amplify through message dependencies. Existing protections often rely on single-agent validation or require modifications to the collaboration architecture, which can weaken effective information flow and may not align with natural collaboration processes in real tasks. To address this, we propose a propagation dynamics model tailored for LLM-MAS that abstracts collaboration as a directed dependency graph and provides an early-stage risk criterion to characterize amplification risk. Through experiments on six mainstream frameworks, we identify three vulnerability classes: cascade amplification, topological sensitivity, and consensus inertia. We further instantiate an attack where injecting just a single atomic error seed leads to widespread failure. In response, we introduce a genealogy-graph-based governance layer, implemented as a message-layer plugin, that suppresses both endogenous and exogenous error amplification without altering the collaboration architecture. Experiments show that this approach raises the defense success rate from a baseline of 0.32 to over 0.89 and significantly mitigates the cascading spread of minor errors.",
+      "authors": [
+        "Yizhe Xie",
+        "Congcong Zhu",
+        "Xinyue Zhang",
+        "Tianqing Zhu",
+        "Dayong Ye",
+        "Minfeng Qi",
+        "Huajie Chen",
+        "Wanlei Zhou"
+      ],
+      "published": "2026-03-04T11:45:27Z",
+      "updated": "2026-03-04T11:45:27Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.04474v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2603.06007v1",
+      "title": "MASFactory: A Graph-centric Framework for Orchestrating LLM-Based Multi-Agent Systems with Vibe Graphing",
+      "summary": "Large language model-based (LLM-based) multi-agent systems (MAS) are increasingly used to extend agentic problem solving via role specialization and collaboration. MAS workflows can be naturally modeled as directed computation graphs, where nodes execute agents/sub-workflows and edges encode dependencies and message passing. However, implementing complex graph workflows in current frameworks still requires substantial manual effort, offers limited reuse, and makes it difficult to integrate heterogeneous external context sources. To overcome these limitations, we present MASFactory, a graph-centric framework for orchestrating LLM-based MAS. It introduces Vibe Graphing, a human-in-the-loop approach that compiles natural-language intent into an editable workflow specification and then into an executable graph. In addition, the framework provides reusable components and pluggable context integration, as well as a visualizer for topology preview, runtime tracing, and human-in-the-loop interaction. We evaluate MASFactory on seven public benchmarks, validating both reproduction consistency for representative MAS methods and the effectiveness of Vibe Graphing. Our code (https://github.com/BUPT-GAMMA/MASFactory) and video (https://youtu.be/ANynzVfY32k) are publicly available.",
+      "authors": [
+        "Yang Liu",
+        "Jinxuan Cai",
+        "Yishen Li",
+        "Qi Meng",
+        "Zedi Liu",
+        "Xin Li",
+        "Chen Qian",
+        "Chuan Shi",
+        "Cheng Yang"
+      ],
+      "published": "2026-03-06T08:04:12Z",
+      "updated": "2026-03-06T08:04:12Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.06007v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.04833v1",
+      "title": "SCoUT: Scalable Communication via Utility-Guided Temporal Grouping in Multi-Agent Reinforcement Learning",
+      "summary": "Communication can improve coordination in partially observed multi-agent reinforcement learning (MARL), but learning \\emph{when} and \\emph{who} to communicate with requires choosing among many possible sender-recipient pairs, and the effect of any single message on future reward is hard to isolate. We introduce \\textbf{SCoUT} (\\textbf{S}calable \\textbf{Co}mmunication via \\textbf{U}tility-guided \\textbf{T}emporal grouping), which addresses both these challenges via temporal and agent abstraction within traditional MARL. During training, SCoUT resamples \\textit{soft} agent groups every \\(K\\) environment steps (macro-steps) via Gumbel-Softmax; these groups are latent clusters that induce an affinity used as a differentiable prior over recipients. Using the same assignments, a group-aware critic predicts values for each agent group and maps them to per-agent baselines through the same soft assignments, reducing critic complexity and variance. Each agent is trained with a three-headed policy: environment action, send decision, and recipient selection. To obtain precise communication learning signals, we derive counterfactual communication advantages by analytically removing each sender's contribution from the recipient's aggregated messages. This counterfactual computation enables precise credit assignment for both send and recipient-selection decisions. At execution time, all centralized training components are discarded and only the per-agent policy is run, preserving decentralized execution. Project website, videos and code: \\hyperlink{https://scout-comm.github.io/}{https://scout-comm.github.io/}",
+      "authors": [
+        "Manav Vora",
+        "Gokul Puthumanaillam",
+        "Hiroyasu Tsukamoto",
+        "Melkior Ornik"
+      ],
+      "published": "2026-03-05T05:33:28Z",
+      "updated": "2026-03-05T05:33:28Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.04833v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2603.06503v1",
+      "title": "Beyond Rows to Reasoning: Agentic Retrieval for Multimodal Spreadsheet Understanding and Editing",
+      "summary": "Recent advances in multimodal Retrieval-Augmented Generation (RAG) enable Large Language Models (LLMs) to analyze enterprise spreadsheet workbooks containing millions of cells, cross-sheet dependencies, and embedded visual artifacts. However, state-of-the-art approaches exclude critical context through single-pass retrieval, lose data resolution through compression, and exceed LLM context windows through naive full-context injection, preventing reliable multi-step reasoning over complex enterprise workbooks. We introduce Beyond Rows to Reasoning (BRTR), a multimodal agentic framework for spreadsheet understanding that replaces single-pass retrieval with an iterative tool-calling loop, supporting end-to-end Excel workflows from complex analysis to structured editing. Supported by over 200 hours of expert human evaluation, BRTR achieves state-of-the-art performance across three frontier spreadsheet understanding benchmarks, surpassing prior methods by 25 percentage points on FRTR-Bench, 7 points on SpreadsheetLLM, and 32 points on FINCH. We evaluate five multimodal embedding models, identifying NVIDIA NeMo Retriever 1B as the top performer for mixed tabular and visual data, and vary nine LLMs. Ablation experiments confirm that the planner, retrieval, and iterative reasoning each contribute substantially, and cost analysis shows GPT-5.2 achieves the best efficiency-accuracy trade-off. Throughout all evaluations, BRTR maintains full auditability through explicit tool-call traces.",
+      "authors": [
+        "Anmol Gulati",
+        "Sahil Sen",
+        "Waqar Sarguroh",
+        "Kevin Paul"
+      ],
+      "published": "2026-03-06T17:36:39Z",
+      "updated": "2026-03-06T17:36:39Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.06503v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.04549v1",
+      "title": "Adaptive Memory Admission Control for LLM Agents",
+      "summary": "LLM-based agents increasingly rely on long-term memory to support multi-session reasoning and interaction, yet current systems provide little control over what information is retained. In practice, agents either accumulate large volumes of conversational content, including hallucinated or obsolete facts, or depend on opaque, fully LLM-driven memory policies that are costly and difficult to audit. As a result, memory admission remains a poorly specified and weakly controlled component in agent architectures. To address this gap, we propose Adaptive Memory Admission Control (A-MAC), a framework that treats memory admission as a structured decision problem. A-MAC decomposes memory value into five complementary and interpretable factors: future utility, factual confidence, semantic novelty, temporal recency, and content type prior. The framework combines lightweight rule-based feature extraction with a single LLM-assisted utility assessment, and learns domain-adaptive admission policies through cross-validated optimization. This design enables transparent and efficient control over long-term memory. Experiments on the LoCoMo benchmark show that A-MAC achieves a superior precision-recall tradeoff, improving F1 to 0.583 while reducing latency by 31% compared to state-of-the-art LLM-native memory systems. Ablation results identify content type prior as the most influential factor for reliable memory admission. These findings demonstrate that explicit and interpretable admission control is a critical design principle for scalable and reliable memory in LLM-based agents.",
+      "authors": [
+        "Guilin Zhang",
+        "Wei Jiang",
+        "Xiejiashan Wang",
+        "Aisha Behr",
+        "Kai Zhao",
+        "Jeffrey Friedman",
+        "Xu Chu",
+        "Amine Anoun"
+      ],
+      "published": "2026-03-04T19:32:02Z",
+      "updated": "2026-03-04T19:32:02Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.04549v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2603.04474v1",
+    "2603.06007v1",
+    "2603.04833v1",
+    "2603.06503v1",
+    "2603.04549v1"
+  ]
+}
