@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Generative Drifting is Secretly Score Matching: a Spectral and Variational Perspective - arXiv 2603.09936 论文总结">
+    <title>Generative Drifting is Secretly Score Matching: a Spectral and Variational Perspective | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Generative Drifting is Secretly Score Matching: a Spectral and Variational Perspective</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.09936<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-03-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Erkan Turan, Maks Ovsjanikov</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.09936">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.09936">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Generative Modeling via Drifting has recently achieved state-of-the-art one-step image generation through a kernel-based drift operator, yet the success is largely empirical and its theoretical foundations remain poorly understood. In this paper, we make the following observation: \emph{under a Gaussian kernel, the drift operator is exactly a score difference on smoothed distributions}. This insight allows us to answer all three key questions left open in the original work: (1) whether a vanishing drift guarantees equality of distributions ($V_{p,q}=0\Rightarrow p=q$), (2) how to choose between kernels, and (3) why the stop-gradient operator is indispensable for stable training. Our observations position drifting within the well-studied score-matching family and enable a rich theoretical perspective. By linearizing the McKean-Vlasov dynamics and probing them in Fourier space, we reveal frequency-dependent convergence timescales comparable to \emph{Landau damping} in plasma kinetic theory: the Gaussian kernel suffers an exponential high-frequency bottleneck, explaining the empirical preference for the Laplacian kernel. We also propose an exponential bandwidth annealing schedule $σ(t)=σ_0 e^{-rt}$ that reduces convergence time from $\exp(O(K_{\max}^2))$ to $O(\log K_{\max})$. Finally, by formalizing drifting as a Wasserstein gradient flow of the smoothed KL divergence, we prove that the stop-gradient operator is derived directly from the frozen-field discretization mandated by the JKO scheme, and removing it severs training from any gradient-flow guarantee. This variational perspective further provides a general template for constructing novel drift operators, demonstrated with a Sinkhorn divergence drift.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.09936" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
