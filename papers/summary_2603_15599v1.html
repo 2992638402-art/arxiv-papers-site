@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval - arXiv 2603.15599 论文总结">
+    <title>SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SmartSearch: How Ranking Beats Structure for Conversational Memory Retrieval</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.15599<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-03-16</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jesper Derehag, Carlos Calva, Timmy Ghiurau</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.15599">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.15599">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Recent conversational memory systems invest heavily in LLM-based structuring at ingestion time and learned retrieval policies at query time. We show that neither is necessary. SmartSearch retrieves from raw, unstructured conversation history using a fully deterministic pipeline: NER-weighted substring matching for recall, rule-based entity discovery for multi-hop expansion, and a CrossEncoder+ColBERT rank fusion stage -- the only learned component -- running on CPU in ~650ms. Oracle analysis on two benchmarks identifies a compilation bottleneck: retrieval recall reaches 98.6%, but without intelligent ranking only 22.5% of gold evidence survives truncation to the token budget. With score-adaptive truncation and no per-dataset tuning, SmartSearch achieves 93.5% on LoCoMo and 88.4% on LongMemEval-S, exceeding all known memory systems under the same evaluation protocol on both benchmarks while using 8.5x fewer tokens than full-context baselines.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.15599" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
