@@ -1,0 +1,130 @@
+{
+  "date": "2026-03-18",
+  "papers": [
+    {
+      "id": "2603.16860v1",
+      "title": "DreamPlan: Efficient Reinforcement Fine-Tuning of Vision-Language Planners via Video World Models",
+      "summary": "Robotic manipulation requires sophisticated commonsense reasoning, a capability naturally possessed by large-scale Vision-Language Models (VLMs). While VLMs show promise as zero-shot planners, their lack of grounded physical understanding often leads to compounding errors and low success rates when deployed in complex real-world environments, particularly for challenging tasks like deformable object manipulation. Although Reinforcement Learning (RL) can adapt these planners to specific task dynamics, directly fine-tuning VLMs via real-world interaction is prohibitively expensive, unsafe, and sample-inefficient. To overcome this bottleneck, we introduce DreamPlan, a novel framework for the reinforcement fine-tuning of VLM planners via video world models. Instead of relying on costly physical rollouts, DreamPlan first leverages the zero-shot VLM to collect exploratory interaction data. We demonstrate that this sub-optimal data is sufficient to train an action-conditioned video generation model, which implicitly captures complex real-world physics. Subsequently, the VLM planner is fine-tuned entirely within the \"imagination\" of this video world model using Odds Ratio Policy Optimization (ORPO). By utilizing these virtual rollouts, physical and task-specific knowledge is efficiently injected into the VLM. Our results indicate that DreamPlan bridges the gap between semantic reasoning and physical grounding, significantly improving manipulation success rates without the need for large-scale real-world data collection. Our project page is https://psi-lab.ai/DreamPlan/.",
+      "authors": [
+        "Emily Yue-Ting Jia",
+        "Weiduo Yuan",
+        "Tianheng Shi",
+        "Vitor Guizilini",
+        "Jiageng Mao",
+        "Yue Wang"
+      ],
+      "published": "2026-03-17T17:59:00Z",
+      "updated": "2026-03-17T17:59:00Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.16860v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2603.16141v1",
+      "title": "Communication-Aware Multi-Agent Reinforcement Learning for Decentralized Cooperative UAV Deployment",
+      "summary": "Autonomous Unmanned Aerial Vehicle (UAV) swarms are increasingly used as rapidly deployable aerial relays and sensing platforms, yet practical deployments must operate under partial observability and intermittent peer-to-peer links. We present a graph-based multi-agent reinforcement learning framework trained under centralized training with decentralized execution (CTDE): a centralized critic and global state are available only during training, while each UAV executes a shared policy using local observations and messages from nearby neighbors. Our architecture encodes local agent state and nearby entities with an agent-entity attention module, and aggregates inter-UAV messages with neighbor self-attention over a distance-limited communication graph. We evaluate primarily on a cooperative relay deployment task (DroneConnect) and secondarily on an adversarial engagement task (DroneCombat). In DroneConnect, the proposed method achieves high coverage under restricted communication and partial observation (e.g. 74% coverage with M = 5 UAVs and N = 10 nodes) while remaining competitive with a mixed-integer linear programming (MILP) optimization-based offline upper bound, and it generalizes to unseen team sizes without fine-tuning. In the adversarial setting, the same framework transfers without architectural changes and improves win rate over non-communicating baselines.",
+      "authors": [
+        "Enguang Fan",
+        "Yifan Chen",
+        "Zihan Shan",
+        "Matthew Caesar",
+        "Jae Kim"
+      ],
+      "published": "2026-03-17T05:48:51Z",
+      "updated": "2026-03-17T05:48:51Z",
+      "categories": [
+        "cs.MA",
+        "cs.LG",
+        "cs.NI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.16141v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2603.14625v1",
+      "title": "EcoFair-CH-MARL: Scalable Constrained Hierarchical Multi-Agent RL with Real-Time Emission Budgets and Fairness Guarantees",
+      "summary": "Global decarbonisation targets and tightening market pressures demand maritime logistics solutions that are simultaneously efficient, sustainable, and equitable. We introduce EcoFair-CH-MARL, a constrained hierarchical multi-agent reinforcement learning framework that unifies three innovations: (i) a primal-dual budget layer that provably bounds cumulative emissions under stochastic weather and demand; (ii) a fairness-aware reward transformer with dynamically scheduled penalties that enforces max-min cost equity across heterogeneous fleets; and (iii) a two-tier policy architecture that decouples strategic routing from real-time vessel control, enabling linear scaling in agent count. New theoretical results establish O(\\sqrt{T}) regret for both constraint violations and fairness loss. Experiments on a high-fidelity maritime digital twin (16 ports, 50 vessels) driven by automatic identification system traces, plus an energy-grid case study, show up to 15% lower emissions, 12% higher through-put, and a 45% fair-cost improvement over state-of-the-art hierarchical and constrained MARL baselines. In addition, EcoFair-CH-MARL achieves stronger equity (lower Gini and higher min-max welfare) than fairness-specific MARL baselines (e.g., SOTO, FEN), and its modular design is compatible with both policy- and value-based learners. EcoFair-CH-MARL therefore advances the feasibility of large-scale, regulation-compliant, and socially responsible multi-agent coordination in safety-critical domains.",
+      "authors": [
+        "Saad Alqithami"
+      ],
+      "published": "2026-03-15T21:40:40Z",
+      "updated": "2026-03-15T21:40:40Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.14625v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2603.16673v1",
+      "title": "When Should a Robot Think? Resource-Aware Reasoning via Reinforcement Learning for Embodied Robotic Decision-Making",
+      "summary": "Embodied robotic systems increasingly rely on large language model (LLM)-based agents to support high-level reasoning, planning, and decision-making during interactions with the environment. However, invoking LLM reasoning introduces substantial computational latency and resource overhead, which can interrupt action execution and reduce system reliability. Excessive reasoning may delay actions, while insufficient reasoning often leads to incorrect decisions and task failures. This raises a fundamental question for embodied agents: when should the agent reason, and when should it act? In this work, we propose RARRL (Resource-Aware Reasoning via Reinforcement Learning), a hierarchical framework for resource-aware orchestration of embodied agents. Rather than learning low-level control policies, RARRL learns a high-level orchestration policy that operates at the agent's decision-making layer. This policy enables the agent to adaptively determine whether to invoke reasoning, which reasoning role to employ, and how much computational budget to allocate based on current observations, execution history, and remaining resources. Extensive experiments, including evaluations with empirical latency profiles derived from the ALFRED benchmark, show that RARRL consistently improves task success rates while reducing execution latency and enhancing robustness compared with fixed or heuristic reasoning strategies. These results demonstrate that adaptive reasoning control is essential for building reliable and efficient embodied robotic agents.",
+      "authors": [
+        "Jun Liu",
+        "Pu Zhao",
+        "Zhenglun Kong",
+        "Xuan Shen",
+        "Peiyan Dong",
+        "Fan Yang",
+        "Lin Cui",
+        "Hao Tang",
+        "Geng Yuan",
+        "Wei Niu",
+        "Wenbin Zhang",
+        "Xue Lin",
+        "Gaowen Liu",
+        "Yanzhi Wang",
+        "Dong Huang"
+      ],
+      "published": "2026-03-17T15:38:50Z",
+      "updated": "2026-03-17T15:38:50Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.16673v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2603.15727v1",
+      "title": "ClawWorm: Self-Propagating Attacks Across LLM Agent Ecosystems",
+      "summary": "Autonomous LLM-based agents increasingly operate as long-running processes forming densely interconnected multi-agent ecosystems, whose security properties remain largely unexplored. In particular, OpenClaw, an open-source platform with over 40{,}000 active instances, has stood out recently with its persistent configurations, tool-execution privileges, and cross-platform messaging capabilities. In this work, we present ClawWorm, the first self-replicating worm attack against a production-scale agent framework, achieving a fully autonomous infection cycle initiated by a single message: the worm first hijacks the victim's core configuration to establish persistent presence across session restarts, then executes an arbitrary payload upon each reboot, and finally propagates itself to every newly encountered peer without further attacker intervention. We evaluate the attack on a controlled testbed across three distinct infection vectors and three payload types, demonstrating high success rates in end-to-end infection, sustained multi-hop propagation, and payload independence from the worm mechanism. We analyse the architectural root causes underlying these vulnerabilities and propose defence strategies targeting each identified trust boundary. Code and samples will be released upon completion of responsible disclosure.",
+      "authors": [
+        "Yihao Zhang",
+        "Zeming Wei",
+        "Xiaokun Luan",
+        "Chengcan Wu",
+        "Zhixin Zhang",
+        "Jiangrong Wu",
+        "Haolin Wu",
+        "Huanran Chen",
+        "Jun Sun",
+        "Meng Sun"
+      ],
+      "published": "2026-03-16T17:55:43Z",
+      "updated": "2026-03-16T17:55:43Z",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.LG",
+        "cs.MA",
+        "cs.SE"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.15727v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2603.16860v1",
+    "2603.16141v1",
+    "2603.14625v1",
+    "2603.16673v1",
+    "2603.15727v1"
+  ]
+}

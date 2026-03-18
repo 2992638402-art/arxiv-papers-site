@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Unifying Optimization and Dynamics to Parallelize Sequential Computation: A Guide to Parallel Newton Methods for Breaking Sequential Bottlenecks - arXiv 2603.16850 论文总结">
+    <title>Unifying Optimization and Dynamics to Parallelize Sequential Computation: A Guide to Parallel Newton Methods for Breaking Sequential Bottlenecks | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Unifying Optimization and Dynamics to Parallelize Sequential Computation: A Guide to Parallel Newton Methods for Breaking Sequential Bottlenecks</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.16850<br><strong>分类:</strong> math.NA, cs.AI, cs.DC, math.DS, math.OC<br><strong>发布时间:</strong> 2026-03-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xavier Gonzalez</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.16850">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.16850">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Massively parallel hardware (GPUs) and long sequence data have made parallel algorithms essential for machine learning at scale. Yet dynamical systems, like recurrent neural networks and Markov chain Monte Carlo, were thought to suffer from sequential bottlenecks. Recent work showed that dynamical systems can in fact be parallelized across the sequence length by reframing their evaluation as a system of nonlinear equations, which can be solved with Newton&#39;s method using a parallel associative scan. However, these parallel Newton methods struggled with limitations, primarily inefficiency, instability, and lack of convergence guarantees. This thesis addresses these limitations with methodological and theoretical contributions, drawing particularly from optimization. Methodologically, we develop scalable and stable parallel Newton methods, based on quasi-Newton and trust-region approaches. The quasi-Newton methods are faster and more memory efficient, while the trust-region approaches are significantly more stable. Theoretically, we unify many fixed-point methods into our parallel Newton framework, including Picard and Jacobi iterations. We establish a linear convergence rate for these techniques that depends on the method&#39;s approximation accuracy and stability. Moreover, we give a precise condition, rooted in dynamical stability, that characterizes when parallelization provably accelerates a dynamical system and when it cannot. Specifically, the sign of the Largest Lyapunov Exponent of a dynamical system determines whether or not parallel Newton methods converge quickly. In sum, this thesis unlocks scalable and stable methods for parallelizing sequential computation, and provides a firm theoretical basis for when such techniques will and will not work. This thesis also serves as a guide to parallel Newton methods for researchers who want to write the next chapter in this ongoing story.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.16850" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
