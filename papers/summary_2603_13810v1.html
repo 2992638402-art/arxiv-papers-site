@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Collapse or Preserve: Data-Dependent Temporal Aggregation for Spiking Neural Network Acceleration - arXiv 2603.13810 论文总结">
+    <title>Collapse or Preserve: Data-Dependent Temporal Aggregation for Spiking Neural Network Acceleration | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Collapse or Preserve: Data-Dependent Temporal Aggregation for Spiking Neural Network Acceleration</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.13810<br><strong>分类:</strong> cs.LG, cs.AI, cs.NE<br><strong>发布时间:</strong> 2026-03-14</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jiahao Qin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.13810">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.13810">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Spike sparsity is widely believed to enable efficient spiking neural network (SNN) inference on GPU hardware. We demonstrate this is an illusion: five distinct sparse computation strategies on Apple M3 Max all fail to outperform dense convolution, because SIMD architectures cannot exploit the fine-grained, unstructured sparsity of i.i.d. binary spikes. Instead, we propose Temporal Aggregated Convolution (TAC), which exploits convolution linearity to pre-aggregate $K$ spike frames before a single convolution call, reducing $T$ calls to $T/K$. On rate-coded data, TAC achieves 13.8times speedup with +1.6% accuracy on MNIST and +5.4% on Fashion-MNIST -- a simultaneous improvement in both speed and accuracy. However, on event-based data where the temporal dimension carries genuine motion information, TAC&#39;s temporal collapse is harmful. We therefore introduce TAC-TP (Temporal Preservation), which shares each group&#39;s convolution output across K independent LIF steps, preserving full temporal resolution for downstream layers. On DVS128-Gesture, TAC-TP achieves 95.1% accuracy (vs. 96.3% baseline) with 50% fewer convolution calls, while standard TAC drops to 91.3%. Our key finding is that the optimal temporal aggregation strategy is data-dependent: collapse the temporal dimension for rate-coded data (noise reduction) but preserve it for event data (information retention). Speedup is hardware-agnostic: TAC achieves 11.0times on NVIDIA V100, confirming the mechanism transfers across GPU architectures. All operators in the mlx-snn library are open source.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.13810" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
