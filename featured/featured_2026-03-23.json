@@ -1,0 +1,121 @@
+{
+  "date": "2026-03-23",
+  "papers": [
+    {
+      "id": "2603.19685v1",
+      "title": "A Subgoal-driven Framework for Improving Long-Horizon LLM Agents",
+      "summary": "Large language model (LLM)-based agents have emerged as powerful autonomous controllers for digital environments, including mobile interfaces, operating systems, and web browsers. Web navigation, for example, requires handling dynamic content and long sequences of actions, making it particularly challenging. Existing LLM-based agents struggle with long-horizon planning in two main ways. During online execution, they often lose track as new information arrives, lacking a clear and adaptive path toward the final goal. This issue is further exacerbated during reinforcement learning (RL) fine-tuning, where sparse and delayed rewards make it difficult for agents to identify which actions lead to success, preventing them from maintaining coherent reasoning over extended tasks. To address these challenges, we propose two contributions. First, we introduce an agent framework that leverages proprietary models for online planning through subgoal decomposition. Second, we present MiRA (Milestoning your Reinforcement Learning Enhanced Agent), an RL training framework that uses dense, milestone-based reward signals. The real-time planning mechanism improves proprietary models such as Gemini by approximately a 10% absolute increase in success rate (SR) on the WebArena-Lite benchmark. Meanwhile, applying MiRA to the open Gemma3-12B model increases its success rate from 6.4% to 43.0%. This performance surpasses proprietary systems such as GPT-4-Turbo (17.6%) and GPT-4o (13.9%), as well as the previous open-model state of the art, WebRL (38.4%). Overall, our findings demonstrate that combining explicit inference-time planning with milestone-based rewards significantly improves an agent's long-horizon capabilities, paving the way for more robust and general-purpose autonomous systems.",
+      "authors": [
+        "Taiyi Wang",
+        "Sian Gooding",
+        "Florian Hartmann",
+        "Oriana Riva",
+        "Edward Grefenstette"
+      ],
+      "published": "2026-03-20T06:32:16Z",
+      "updated": "2026-03-20T06:32:16Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.19685v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2603.19677v1",
+      "title": "GoAgent: Group-of-Agents Communication Topology Generation for LLM-based Multi-Agent Systems",
+      "summary": "Large language model (LLM)-based multi-agent systems (MAS) have demonstrated exceptional capabilities in solving complex tasks, yet their effectiveness depends heavily on the underlying communication topology that coordinates agent interactions. Within these systems, successful problem-solving often necessitates task-specific group structures to divide and conquer subtasks. However, most existing approaches generate communication topologies in a node-centric manner, leaving group structures to emerge implicitly from local connectivity decisions rather than modeling them explicitly, often leading to suboptimal coordination and unnecessary communication overhead. To address this limitation, we propose GoAgent (Group-of-Agents), a communication topology generation method that explicitly treats collaborative groups as the atomic units of MAS construction. Specifically, GoAgent first enumerates task-relevant candidate groups through an LLM and then autoregressively selects and connects these groups as atomic units to construct the final communication graph, jointly capturing intra-group cohesion and inter-group coordination. To mitigate communication redundancy and noise propagation inherent in expanding topologies, we further introduce a conditional information bottleneck (CIB) objective that compresses inter-group communication, preserving task-relevant signals while filtering out redundant historical noise. Extensive experiments on six benchmarks demonstrate the state-of-the-art performance of GoAgent with 93.84% average accuracy while reducing token consumption by about 17%.",
+      "authors": [
+        "Hongjiang Chen",
+        "Xin Zheng",
+        "Yixin Liu",
+        "Pengfei Jiao",
+        "Shiyuan Li",
+        "Huan Liu",
+        "Zhidong Zhao",
+        "Ziqi Xu",
+        "Ibrahim Khalil",
+        "Shirui Pan"
+      ],
+      "published": "2026-03-20T06:21:32Z",
+      "updated": "2026-03-20T06:21:32Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.19677v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2603.17417v2",
+      "title": "Is Your LLM-as-a-Recommender Agent Trustable? LLMs' Recommendation is Easily Hacked by Biases (Preferences)",
+      "summary": "Current Large Language Models (LLMs) are gradually exploited in practically valuable agentic workflows such as Deep Research, E-commerce recommendation, and job recruitment. In these applications, LLMs need to select some optimal solutions from massive candidates, which we term as \\textit{LLM-as-a-Recommender} paradigm. However, the reliability of using LLM agents for recommendations is underexplored. In this work, we introduce a \\textbf{Bias} \\textbf{Rec}ommendation \\textbf{Bench}mark (\\textbf{BiasRecBench}) to highlight the critical vulnerability of such agents to biases in high-value real-world tasks. The benchmark includes three practical domains: paper review, e-commerce, and job recruitment. We construct a \\textsc{Bias Synthesis Pipeline with Calibrated Quality Margins} that 1) synthesizes evaluation data by controlling the quality gap between optimal and sub-optimal options to provide a calibrated testbed to elicit the vulnerability to biases; 2) injects contextual biases that are logical and suitable for option contexts. Extensive experiments on both SOTA (Gemini-{2.5,3}-pro, GPT-4o, DeepSeek-R1) and small-scale LLMs reveal that agents frequently succumb to injected biases despite having sufficient reasoning capabilities to identify the ground truth. These findings expose a significant reliability bottleneck in current agentic workflows, calling for specialized alignment strategies for LLM-as-a-Recommender. The complete code and evaluation datasets will be made publicly available shortly.",
+      "authors": [
+        "Zichen Tang",
+        "Zirui Zhang",
+        "Qian Wang",
+        "Zhenheng Tang",
+        "Bo Li",
+        "Xiaowen Chu"
+      ],
+      "published": "2026-03-18T06:50:48Z",
+      "updated": "2026-03-20T13:11:53Z",
+      "categories": [
+        "cs.CY",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.17417v2.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2603.19931v1",
+      "title": "SAGE: Sustainable Agent-Guided Expert-tuning for Culturally Attuned Translation in Low-Resource Southeast Asia",
+      "summary": "The vision of an inclusive World Wide Web is impeded by a severe linguistic divide, particularly for communities in low-resource regions of Southeast Asia. While large language models (LLMs) offer a potential solution for translation, their deployment in data-poor contexts faces a dual challenge: the scarcity of high-quality, culturally relevant data and the prohibitive energy costs of training on massive, noisy web corpora. To resolve the tension between digital inclusion and environmental sustainability, we introduce Sustainable Agent-Guided Expert-tuning (SAGE). This framework pioneers an energy-aware paradigm that prioritizes the \"right data\" over \"big data\". Instead of carbon-intensive training on unfiltered datasets, SAGE employs a reinforcement learning (RL) agent, optimized via Group Relative Policy Optimization (GRPO), to autonomously curate a compact training set. The agent utilizes a semantic reward signal derived from a small, expert-constructed set of community dialogues to filter out noise and cultural misalignment. We then efficiently fine-tune open-source LLMs on this curated data using Low-Rank Adaptation (LoRA). We applied SAGE to translation tasks between English and seven low-resource languages (LRLs) in Southeast Asia. Our approach establishes new state-of-the-art performance on BLEU-4 and COMET-22 metrics, effectively capturing local linguistic nuances. Crucially, SAGE surpasses baselines trained on full datasets while reducing data usage by 97.1% and training energy consumption by 95.2%. By delivering high-performance models with a minimal environmental footprint, SAGE offers a scalable and responsible pathway to bridge the digital divide in the Global South.",
+      "authors": [
+        "Zhixiang Lu",
+        "Chong Zhang",
+        "Yulong Li",
+        "Angelos Stefanidis",
+        "Anh Nguyen",
+        "Imran Razzak",
+        "Jionglong Su",
+        "Zhengyong Jiang"
+      ],
+      "published": "2026-03-20T13:18:08Z",
+      "updated": "2026-03-20T13:18:08Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.19931v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.19858v1",
+      "title": "Beyond detection: cooperative multi-agent reasoning for rapid onboard EO crisis response",
+      "summary": "Rapid identification of hazardous events is essential for next-generation Earth Observation (EO) missions supporting disaster response. However, current monitoring pipelines remain largely ground-centric, introducing latency due to downlink limitations, multi-source data fusion constraints, and the computational cost of exhaustive scene analysis. This work proposes a hierarchical multi-agent architecture for onboard EO processing under strict resource and bandwidth constraints. The system enables the exploitation of complementary multimodal observations by coordinating specialized AI agents within an event-driven decision pipeline. AI agents can be deployed across multiple nodes in a distributed setting, such as satellite platforms. An Early Warning agent generates fast hypotheses from onboard observations and selectively activates domain-specific analysis agents, while a Decision agent consolidates the evidence to issue a final alert. The architecture combines vision-language models, traditional remote sensing analysis tools, and role-specialized agents to enable structured reasoning over multimodal observations while minimizing unnecessary computation. A proof-of-concept implementation was executed on the engineering model of an edge-computing platform currently deployed in orbit, using representative satellite data. Experiments on wildfire and flood monitoring scenarios show that the proposed routing-based pipeline significantly reduces computational overhead while maintaining coherent decision outputs, demonstrating the feasibility of distributed agent-based reasoning for future autonomous EO constellations.",
+      "authors": [
+        "Alejandro D. Mousist",
+        "Pedro Delgado de Robles Martín",
+        "Raquel Lladró Climent",
+        "Julian Cobos Aparicio"
+      ],
+      "published": "2026-03-20T11:20:03Z",
+      "updated": "2026-03-20T11:20:03Z",
+      "categories": [
+        "cs.RO",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.19858v1.pdf",
+      "category": "robotics"
+    }
+  ],
+  "ids": [
+    "2603.19685v1",
+    "2603.19677v1",
+    "2603.17417v2",
+    "2603.19931v1",
+    "2603.19858v1"
+  ]
+}
