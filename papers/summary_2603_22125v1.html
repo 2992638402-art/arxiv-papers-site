@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DA-VAE: Plug-in Latent Compression for Diffusion via Detail Alignment - arXiv 2603.22125 论文总结">
+    <title>DA-VAE: Plug-in Latent Compression for Diffusion via Detail Alignment | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>DA-VAE: Plug-in Latent Compression for Diffusion via Detail Alignment</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.22125<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-03-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xin Cai, Zhiyuan You, Zhoutong Zhang, Tianfan Xue</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.22125">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.22125">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Reducing token count is crucial for efficient training and inference of latent diffusion models, especially at high resolution. A common strategy is to build high-compression image tokenizers with more channels per token. However, when trained only for reconstruction, high-dimensional latent spaces often lose meaningful structure, making diffusion training harder. Existing methods address this with extra objectives such as semantic alignment or selective dropout, but usually require costly diffusion retraining. Pretrained diffusion models, however, already exhibit a structured, lower-dimensional latent space; thus, a simpler idea is to expand the latent dimensionality while preserving this structure. We therefore propose \textbf{D}etail-\textbf{A}ligned VAE, which increases the compression ratio of a pretrained VAE with only lightweight adaptation of the pretrained diffusion backbone. DA-VAE uses an explicit latent layout: the first $C$ channels come directly from the pretrained VAE at a base resolution, while an additional $D$ channels encode higher-resolution details. A simple detail-alignment mechanism encourages the expanded latent space to retain the structure of the original one. With a warm-start fine-tuning strategy, our method enables $1024 \times 1024$ image generation with Stable Diffusion 3.5 using only $32 \times 32$ tokens, $4\times$ fewer than the original model, within 5 H100-days. It further unlocks $2048 \times 2048$ generation with SD3.5, achieving a $6\times$ speedup while preserving image quality. We also validate the method and its design choices quantitatively on ImageNet.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.22125" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
