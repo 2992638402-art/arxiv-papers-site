@@ -1,0 +1,107 @@
+{
+  "date": "2026-03-25",
+  "papers": [
+    {
+      "id": "2603.23271v1",
+      "title": "A Multimodal Framework for Human-Multi-Agent Interaction",
+      "summary": "Human-robot interaction is increasingly moving toward multi-robot, socially grounded environments. Existing systems struggle to integrate multimodal perception, embodied expression, and coordinated decision-making in a unified framework. This limits natural and scalable interaction in shared physical spaces. We address this gap by introducing a multimodal framework for human-multi-agent interaction in which each robot operates as an autonomous cognitive agent with integrated multimodal perception and Large Language Model (LLM)-driven planning grounded in embodiment. At the team level, a centralized coordination mechanism regulates turn-taking and agent participation to prevent overlapping speech and conflicting actions. Implemented on two humanoid robots, our framework enables coherent multi-agent interaction through interaction policies that combine speech, gesture, gaze, and locomotion. Representative interaction runs demonstrate coordinated multimodal reasoning across agents and grounded embodied responses. Future work will focus on larger-scale user studies and deeper exploration of socially grounded multi-agent interaction dynamics.",
+      "authors": [
+        "Shaid Hasan",
+        "Breenice Lee",
+        "Sujan Sarker",
+        "Tariq Iqbal"
+      ],
+      "published": "2026-03-24T14:35:40Z",
+      "updated": "2026-03-24T14:35:40Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.23271v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2603.23483v1",
+      "title": "SpecEyes: Accelerating Agentic Multimodal LLMs via Speculative Perception and Planning",
+      "summary": "Agentic multimodal large language models (MLLMs) (e.g., OpenAI o3 and Gemini Agentic Vision) achieve remarkable reasoning capabilities through iterative visual tool invocation. However, the cascaded perception, reasoning, and tool-calling loops introduce significant sequential overhead. This overhead, termed agentic depth, incurs prohibitive latency and seriously limits system-level concurrency. To this end, we propose SpecEyes, an agentic-level speculative acceleration framework that breaks this sequential bottleneck. Our key insight is that a lightweight, tool-free MLLM can serve as a speculative planner to predict the execution trajectory, enabling early termination of expensive tool chains without sacrificing accuracy. To regulate this speculative planning, we introduce a cognitive gating mechanism based on answer separability, which quantifies the model's confidence for self-verification without requiring oracle labels. Furthermore, we design a heterogeneous parallel funnel that exploits the stateless concurrency of the small model to mask the stateful serial execution of the large model, maximizing system throughput. Extensive experiments on V* Bench, HR-Bench, and POPE demonstrate that SpecEyes achieves 1.1-3.35x speedup over the agentic baseline while preserving or even improving accuracy (up to +6.7%), thereby boosting serving throughput under concurrent workloads.",
+      "authors": [
+        "Haoyu Huang",
+        "Jinfa Huang",
+        "Zhongwei Wan",
+        "Xiawu Zheng",
+        "Rongrong Ji",
+        "Jiebo Luo"
+      ],
+      "published": "2026-03-24T17:45:47Z",
+      "updated": "2026-03-24T17:45:47Z",
+      "categories": [
+        "cs.CV",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.23483v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.20670v2",
+      "title": "Towards Intelligent Geospatial Data Discovery: a knowledge graph-driven multi-agent framework powered by large language models",
+      "summary": "The rapid growth in the volume, variety, and velocity of geospatial data has created data ecosystems that are highly distributed, heterogeneous, and semantically inconsistent. Existing data catalogs, portals, and infrastructures still rely largely on keyword-based search with limited semantic support, which often fails to capture user intent and leads to weak retrieval performance. To address these challenges, this study proposes a knowledge graph-driven multi-agent framework for intelligent geospatial data discovery, powered by large language models. The framework introduces a unified geospatial metadata ontology as a semantic mediation layer to align heterogeneous metadata standards across platforms and constructs a geospatial metadata knowledge graph to explicitly model datasets and their multidimensional relationships. Building on the structured representation, the framework adopts a multi-agent collaborative architecture to perform intent parsing, knowledge graph retrieval, and answer synthesis, forming an interpretable and closed-loop discovery process from user queries to results. Results from representative use cases and performance evaluation show that the framework substantially improves intent matching accuracy, ranking quality, recall, and discovery transparency compared with traditional systems. This study advances geospatial data discovery toward a more semantic, intent-aware, and intelligent paradigm, providing a practical foundation for next-generation intelligent and autonomous spatial data infrastructures and contributing to the broader vision of Autonomous GIS.",
+      "authors": [
+        "Ruixiang Liu",
+        "Zhenlong Li",
+        "Ali Khosravi Kazazi"
+      ],
+      "published": "2026-03-21T06:16:56Z",
+      "updated": "2026-03-24T16:03:39Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.20670v2.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.22567v1",
+      "title": "TrustTrade: Human-Inspired Selective Consensus Reduces Decision Uncertainty in LLM Trading Agents",
+      "summary": "Large language models (LLMs) are increasingly deployed as autonomous agents in financial trading. However, they often exhibit a hazardous behavioral bias that we term uniform trust, whereby retrieved information is implicitly assumed to be factual and heterogeneous sources are treated as equally informative. This assumption stands in sharp contrast to human decision-making, which relies on selective filtering, cross-validation, and experience-driven weighting of information sources. As a result, LLM-based trading systems are particularly vulnerable to multi-source noise and misinformation, amplifying factual hallucinations and leading to unstable risk-return performance. To bridge this behavioral gap, we introduce TrustTrade (Trust-Rectified Unified Selective Trader), a multi-agent selective consensus framework inspired by human epistemic heuristics. TrustTrade replaces uniform trust with cross-agent consistency by aggregating information from multiple independent LLM agents and dynamically weighting signals based on their semantic and numerical agreement. Consistent signals are prioritized, while divergent, weakly grounded, or temporally inconsistent inputs are selectively discounted. To further stabilize decision-making, TrustTrade incorporates deterministic temporal signals as reproducible anchors and a reflective memory mechanism that adapts risk preferences at test time without additional training. Together, these components suppress noise amplification and hallucination-driven volatility, yielding more stable and risk-aware trading behavior. Across controlled backtesting in high-noise market environments (2024 Q1 and 2026 Q1), the proposed TrustTrade calibrates LLM trading behavior from extreme risk-return regimes toward a human-aligned, mid-risk and mid-return profile.",
+      "authors": [
+        "Minghan Li",
+        "Rachel Gonsalves",
+        "Weiyue Li",
+        "Sunghoon Yoon",
+        "Mengyu Wang"
+      ],
+      "published": "2026-03-23T20:54:50Z",
+      "updated": "2026-03-23T20:54:50Z",
+      "categories": [
+        "cs.CE",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.22567v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2603.21691v1",
+      "title": "Strategic Infrastructure Design via Multi-Agent Congestion Games with Joint Placement and Pricing",
+      "summary": "Real-world infrastructure planning increasingly involves strategic interactions among autonomous agents competing over congestible, limited resources. Applications such as Electric Vehicle (EV) charging, emergency response, and intelligent transportation require coordinated resource placement and pricing decisions, while anticipating the adaptive behaviour of decentralised, self-interested agents. We propose a novel multi-agent framework for joint placement and pricing under such interactions, formalised as a bi-level optimisation model. The upper level represents a central planner, while the lower level captures agent responses via coupled non-atomic congestion games. Motivated by the EV charging domain, we study a setting where a central planner provisions chargers and road capacity under budget and profitability constraints. The agent population includes both EV drivers and non-charging drivers (NCDs), who respond to congestion, delays, and costs. To solve the resulting NP-hard problem, we introduce ABO-MPN, a double-layer approximation framework that decouples agent types, applies integer adjustment and rounding, and targets high-impact placement and pricing decisions. Experiments on benchmark networks show that our model reduces social cost by up to 40% compared to placement- or pricing-only baselines, and generalises to other MAS-relevant domains.",
+      "authors": [
+        "Niloofar Aminikalibar",
+        "Farzaneh Farhadi",
+        "Maria Chli"
+      ],
+      "published": "2026-03-23T08:24:55Z",
+      "updated": "2026-03-23T08:24:55Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.21691v1.pdf",
+      "category": "other"
+    }
+  ],
+  "ids": [
+    "2603.23271v1",
+    "2603.23483v1",
+    "2603.20670v2",
+    "2603.22567v1",
+    "2603.21691v1"
+  ]
+}
