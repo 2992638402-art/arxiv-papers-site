@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uncertainty-Guided Label Rebalancing for CPS Safety Monitoring - arXiv 2603.25670 论文总结">
+    <title>Uncertainty-Guided Label Rebalancing for CPS Safety Monitoring | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Uncertainty-Guided Label Rebalancing for CPS Safety Monitoring</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.25670<br><strong>分类:</strong> cs.LG, cs.SE<br><strong>发布时间:</strong> 2026-03-26</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> John Ayotunde, Qinghua Xu, Guancheng Wang, Lionel C. Briand</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.25670">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.25670">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Safety monitoring is essential for Cyber-Physical Systems (CPSs). However, unsafe events are rare in real-world CPS operations, creating an extreme class imbalance that degrades safety predictors. Standard rebalancing techniques perform poorly on time-series CPS telemetry, either generating unrealistic synthetic samples or overfitting on the minority class. Meanwhile, behavioral uncertainty in CPS operations, defined as the degree of doubt or uncertainty in CPS decisions , is often correlated with safety outcomes but unexplored in safety monitoring. To that end, we propose U-Balance, a supervised approach that leverages behavioral uncertainty to rebalance imbalanced datasets prior to training a safety predictor. U-Balance first trains a GatedMLP-based uncertainty predictor that summarizes each telemetry window into distributional kinematic features and outputs an uncertainty score. It then applies an uncertainty-guided label rebalancing (uLNR) mechanism that probabilistically relabels \textit{safe}-labeled windows with unusually high uncertainty as \textit{unsafe}, thereby enriching the minority class with informative boundary samples without synthesizing new data. Finally, a safety predictor is trained on the rebalanced dataset for safety monitoring. We evaluate U-Balance on a large-scale UAV benchmark with a 46:1 safe-to-unsafe ratio. Results confirm a moderate but significant correlation between behavioral uncertainty and safety. We then identify uLNR as the most effective strategy to exploit uncertainty information, compared to direct early and late fusion. U-Balance achieves a 0.806 F1 score, outperforming the strongest baseline by 14.3 percentage points, while maintaining competitive inference efficiency. Ablation studies confirm that both the GatedMLP-based uncertainty predictor and the uLNR mechanism contribute significantly to U-Balance&#39;s effectiveness.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.25670" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
