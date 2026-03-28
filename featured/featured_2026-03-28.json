@@ -1,0 +1,123 @@
+{
+  "date": "2026-03-28",
+  "papers": [
+    {
+      "id": "2603.25322v1",
+      "title": "AD-CARE: A Guideline-grounded, Modality-agnostic LLM Agent for Real-world Alzheimer's Disease Diagnosis with Multi-cohort Assessment, Fairness Analysis, and Reader Study",
+      "summary": "Alzheimer's disease (AD) is a growing global health challenge as populations age, and timely, accurate diagnosis is essential to reduce individual and societal burden. However, real-world AD assessment is hampered by incomplete, heterogeneous multimodal data and variability across sites and patient demographics. Although large language models (LLMs) have shown promise in biomedicine, their use in AD has largely been confined to answering narrow, disease-specific questions rather than generating comprehensive diagnostic reports that support clinical decision-making. Here we expand LLM capabilities for clinical decision support by introducing AD-CARE, a modality-agnostic agent that performs guideline-grounded diagnostic assessment from incomplete, heterogeneous inputs without imputing missing modalities. By dynamically orchestrating specialized diagnostic tools and embedding clinical guidelines into LLM-driven reasoning, AD-CARE generates transparent, report-style outputs aligned with real-world clinical workflows. Across six cohorts comprising 10,303 cases, AD-CARE achieved 84.9% diagnostic accuracy, delivering 4.2%-13.7% relative improvements over baseline methods. Despite cohort-level differences, dataset-specific accuracies remain robust (80.4%-98.8%), and the agent consistently outperforms all baselines. AD-CARE reduced performance disparities across racial and age subgroups, decreasing the average dispersion of four metrics by 21%-68% and 28%-51%, respectively. In a controlled reader study, the agent improved neurologist and radiologist accuracy by 6%-11% and more than halved decision time. The framework yielded 2.29%-10.66% absolute gains over eight backbone LLMs and converges their performance. These results show that AD-CARE is a scalable, practically deployable framework that can be integrated into routine clinical workflows for multimodal decision support in AD.",
+      "authors": [
+        "Wenlong Hou",
+        "Sheng Bi",
+        "Guangqian Yang",
+        "Lihao Liu",
+        "Ye Du",
+        "Hanxiao Xue",
+        "Juncheng Wang",
+        "Yuxiang Feng",
+        "Yue Xun",
+        "Nanxi Yu",
+        "Ning Mao",
+        "Mo Yang",
+        "Yi Wah Eva Cheung",
+        "Ling Long",
+        "Kay Chen Tan",
+        "Lequan Yu",
+        "Xiaomeng Ma",
+        "Shaozhen Yan",
+        "Shujun Wang"
+      ],
+      "published": "2026-03-26T11:10:01Z",
+      "updated": "2026-03-26T11:10:01Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.25322v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2603.25685v1",
+      "title": "Persistent Robot World Models: Stabilizing Multi-Step Rollouts via Reinforcement Learning",
+      "summary": "Action-conditioned robot world models generate future video frames of the manipulated scene given a robot action sequence, offering a promising alternative for simulating tasks that are difficult to model with traditional physics engines. However, these models are optimized for short-term prediction and break down when deployed autoregressively: each predicted clip feeds back as context for the next, causing errors to compound and visual quality to rapidly degrade. We address this through the following contributions. First, we introduce a reinforcement learning (RL) post-training scheme that trains the world model on its own autoregressive rollouts rather than on ground-truth histories. We achieve this by adapting a recent contrastive RL objective for diffusion models to our setting and show that its convergence guarantees carry over exactly. Second, we design a training protocol that generates and compares multiple candidate variable-length futures from the same rollout state, reinforcing higher-fidelity predictions over lower-fidelity ones. Third, we develop efficient, multi-view visual fidelity rewards that combine complementary perceptual metrics across camera views and are aggregated at the clip level for dense, low-variance training signal. Fourth, we show that our approach establishes a new state-of-the-art for rollout fidelity on the DROID dataset, outperforming the strongest baseline on all metrics (e.g., LPIPS reduced by 14% on external cameras, SSIM improved by 9.1% on the wrist camera), winning 98% of paired comparisons, and achieving an 80% preference rate in a blind human study.",
+      "authors": [
+        "Jai Bardhan",
+        "Patrik Drozdik",
+        "Josef Sivic",
+        "Vladimir Petrik"
+      ],
+      "published": "2026-03-26T17:36:08Z",
+      "updated": "2026-03-26T17:36:08Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.25685v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2603.23875v1",
+      "title": "Self-Evolving Multi-Agent Framework for Efficient Decision Making in Real-Time Strategy Scenarios",
+      "summary": "Large language models (LLMs) have demonstrated exceptional potential in complex reasoning,pioneering a new paradigm for autonomous agent decision making in dynamic settings. However, in Real-Time Strategy (RTS) scenarios, LLMs suffer from a critical speed-quality trade-off. Specifically expansive state spaces and time limits render inference delays prohibitive, while stochastic planning errors undermine logical consistency. To address these challenges, we present SEMA (Self-Evolving Multi-Agent), a novel framework designed for high-performance, low-latency decision-making in RTS environments. This collaborative multi-agent framework facilitates self-evolution by adaptively calibrating model bias through in-episode assessment and cross-episode analysis. We further incorporate dynamic observation pruning based on structural entropy to model game states topologically. By distilling high dimensional data into core semantic information, this approach significantly reduces inference time. We also develop a hybrid knowledge-memory mechanism that integrates micro-trajectories, macro-experience, and hierarchical domain knowledge, thereby enhancing both strategic adaptability and decision consistency. Experiments across multiple StarCraft II maps demonstrate that SEMA achieves superior win rates while reducing average decision latency by over 50%, validating its efficiency and robustness in complex RTS scenarios.",
+      "authors": [
+        "Li Ma",
+        "Hao Peng",
+        "Yiming Wang",
+        "Hongbin Luo",
+        "Jie Liu",
+        "Kongjing Gu",
+        "Guanlin Wu",
+        "Hui Lin",
+        "Lei Ren"
+      ],
+      "published": "2026-03-25T03:05:29Z",
+      "updated": "2026-03-25T03:05:29Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.23875v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2603.24973v1",
+      "title": "Belief-Driven Multi-Agent Collaboration via Approximate Perfect Bayesian Equilibrium for Social Simulation",
+      "summary": "High-fidelity social simulation is pivotal for addressing complex Web societal challenges, yet it demands agents capable of authentically replicating the dynamic spectrum of human interaction. Current LLM-based multi-agent frameworks, however, predominantly adhere to static interaction topologies, failing to capture the fluid oscillation between cooperative knowledge synthesis and competitive critical reasoning seen in real-world scenarios. This rigidity often leads to unrealistic ``groupthink'' or unproductive deadlocks, undermining the credibility of simulations for decision support. To bridge this gap, we propose \\textit{BEACOF}, a \\textit{belief-driven adaptive collaboration framework} inspired by Perfect Bayesian Equilibrium (PBE). By modeling social interaction as a dynamic game of incomplete information, BEACOF rigorously addresses the circular dependency between collaboration type selection and capability estimation. Agents iteratively refine probabilistic beliefs about peer capabilities and autonomously modulate their collaboration strategy, thereby ensuring sequentially rational decisions under uncertainty. Validated across adversarial (judicial), open-ended (social) and mixed (medical) scenarios, BEACOF prevents coordination failures and fosters robust convergence toward high-quality solutions, demonstrating superior potential for reliable social simulation. Source codes and datasets are publicly released at: https://github.com/WUT-IDEA/BEACOF.",
+      "authors": [
+        "Weiwei Fang",
+        "Lin Li",
+        "Kaize Shi",
+        "Yu Yang",
+        "Jianwei Zhang"
+      ],
+      "published": "2026-03-26T03:06:36Z",
+      "updated": "2026-03-26T03:06:36Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.24973v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2603.23722v1",
+      "title": "Dual-Gated Epistemic Time-Dilation: Autonomous Compute Modulation in Asynchronous MARL",
+      "summary": "While Multi-Agent Reinforcement Learning (MARL) algorithms achieve unprecedented successes across complex continuous domains, their standard deployment strictly adheres to a synchronous operational paradigm. Under this paradigm, agents are universally forced to execute deep neural network inferences at every micro-frame, regardless of immediate necessity. This dense throughput acts as a fundamental barrier to physical deployment on edge-devices where thermal and metabolic budgets are highly constrained. We propose Epistemic Time-Dilation MAPPO (ETD-MAPPO), augmented with a Dual-Gated Epistemic Trigger. Instead of depending on rigid frame-skipping (macro-actions), agents autonomously modulate their execution frequency by interpreting aleatoric uncertainty (via Shannon entropy of their policy) and epistemic uncertainty (via state-value divergence in a Twin-Critic architecture). To format this, we structure the environment as a Semi-Markov Decision Process (SMDP) and build the SMDP-Aligned Asynchronous Gradient Masking Critic to ensure proper credit assignment. Empirical findings demonstrate massive improvements (&gt; 60% relative baseline acquisition leaps) over current temporal models. By assessing LBF, MPE, and the 115-dimensional state space of Google Research Football (GRF), ETD correctly prevented premature policy collapse. Remarkably, this unconstrained approach leads to emergent Temporal Role Specialization, reducing computational overhead by a statistically dominant 73.6% entirely during off-ball execution without deteriorating centralized task dominance.",
+      "authors": [
+        "Igor Jankowski"
+      ],
+      "published": "2026-03-24T21:19:06Z",
+      "updated": "2026-03-24T21:19:06Z",
+      "categories": [
+        "cs.MA",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.23722v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2603.25322v1",
+    "2603.25685v1",
+    "2603.23875v1",
+    "2603.24973v1",
+    "2603.23722v1"
+  ]
+}
