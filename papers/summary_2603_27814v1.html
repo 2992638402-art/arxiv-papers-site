@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RG-TTA: Regime-Guided Meta-Control for Test-Time Adaptation in Streaming Time Series - arXiv 2603.27814 论文总结">
+    <title>RG-TTA: Regime-Guided Meta-Control for Test-Time Adaptation in Streaming Time Series | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>RG-TTA: Regime-Guided Meta-Control for Test-Time Adaptation in Streaming Time Series</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.27814<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-03-29</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Indar Kumar, Akanksha Tiwari, Sai Krishna Jasti, Ankit Hemant Lade</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.27814">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.27814">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Test-time adaptation (TTA) enables neural forecasters to adapt to distribution shifts in streaming time series, but existing methods apply the same adaptation intensity regardless of the nature of the shift. We propose Regime-Guided Test-Time Adaptation (RG-TTA), a meta-controller that continuously modulates adaptation intensity based on distributional similarity to previously-seen regimes. Using an ensemble of Kolmogorov-Smirnov, Wasserstein-1, feature-distance, and variance-ratio metrics, RG-TTA computes a similarity score for each incoming batch and uses it to (i) smoothly scale the learning rate -- more aggressive for novel distributions, conservative for familiar ones -- and (ii) control gradient effort via loss-driven early stopping rather than fixed budgets, allowing the system to allocate exactly the effort each batch requires. As a supplementary mechanism, RG-TTA gates checkpoint reuse from a regime memory, loading stored specialist models only when they demonstrably outperform the current model (loss improvement &gt;= 30%). RG-TTA is model-agnostic and strategy-composable: it wraps any forecaster exposing train/predict/save/load interfaces and enhances any gradient-based TTA method. We demonstrate three compositions -- RG-TTA, RG-EWC, and RG-DynaTTA -- and evaluate 6 update policies (3 baselines + 3 regime-guided variants) across 4 compact architectures (GRU, iTransformer, PatchTST, DLinear), 14 datasets (6 real-world multivariate benchmarks + 8 synthetic regime scenarios), and 4 forecast horizons (96, 192, 336, 720) under a streaming evaluation protocol with 3 random seeds (672 experiments total). Regime-guided policies achieve the lowest MSE in 156 of 224 seed-averaged experiments (69.6%), with RG-EWC winning 30.4% and RG-TTA winning 29.0%. Overall, RG-TTA reduces MSE by 5.7% vs TTA while running 5.5% faster; RG-EWC reduces MSE by 14.1% vs standalone EWC.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.27814" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

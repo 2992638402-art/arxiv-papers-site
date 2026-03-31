@@ -1,0 +1,125 @@
+{
+  "date": "2026-03-31",
+  "papers": [
+    {
+      "id": "2603.27539v1",
+      "title": "Toward Reliable Evaluation of LLM-Based Financial Multi-Agent Systems: Taxonomy, Coordination Primacy, and Cost Awareness",
+      "summary": "Multi-agent systems based on large language models (LLMs) for financial trading have grown rapidly since 2023, yet the field lacks a shared framework for understanding what drives performance or for evaluating claims credibly. This survey makes three contributions. First, we introduce a four-dimensional taxonomy, covering architecture pattern, coordination mechanism, memory architecture, and tool integration; applied to 12 multi-agent systems and two single-agent baselines. Second, we formulate the Coordination Primacy Hypothesis (CPH): inter-agent coordination protocol design is a primary driver of trading decision quality, often exerting greater influence than model scaling. CPH is presented as a falsifiable research hypothesis supported by tiered structural evidence rather than as an empirically validated conclusion; its definitive validation requires evaluation infrastructure that does not yet exist in the field. Third, we document five pervasive evaluation failures (look-ahead bias, survivorship bias, backtesting overfitting, transaction cost neglect, and regime-shift blindness) and show that these can reverse the sign of reported returns. Building on the CPH and the evaluation critique, we introduce the Coordination Breakeven Spread (CBS), a metric for determining whether multi-agent coordination adds genuine value net of transaction costs, and propose minimum evaluation standards as prerequisites for validating the CPH.",
+      "authors": [
+        "Phat Nguyen",
+        "Thang Pham"
+      ],
+      "published": "2026-03-29T06:35:07Z",
+      "updated": "2026-03-29T06:35:07Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CE"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.27539v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2603.26635v1",
+      "title": "Deception and Communication in Autonomous Multi-Agent Systems: An Experimental Study with Among Us",
+      "summary": "As large language models are deployed as autonomous agents, their capacity for strategic deception raises core questions for coordination, reliability, and safety in multi-goal, multi-agent systems. We study deception and communication in L2LM agents through the social deduction game Among Us, a cooperative-competitive environment. Across 1,100 games, autonomous agents produced over one million tokens of meeting dialogue. Using speech act theory and interpersonal deception theory, we find that all agents rely mainly on directive language, while impostor agents shift slightly toward representative acts such as explanations and denials. Deception appears primarily as equivocation rather than outright lies, increasing under social pressure but rarely improving win rates. Our contributions are a large-scale analysis of role-conditioned deceptive behavior in LLM agents and empirical evidence that current agents favor low-risk ambiguity that is linguistically subtle yet strategically limited, revealing a fundamental tension between truthfulness and utility in autonomous communication.",
+      "authors": [
+        "Maria Milkowski",
+        "Tim Weninger"
+      ],
+      "published": "2026-03-27T17:39:07Z",
+      "updated": "2026-03-27T17:39:07Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.26635v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2603.28488v1",
+      "title": "Courtroom-Style Multi-Agent Debate with Progressive RAG and Role-Switching for Controversial Claim Verification",
+      "summary": "Large language models (LLMs) remain unreliable for high-stakes claim verification due to hallucinations and shallow reasoning. While retrieval-augmented generation (RAG) and multi-agent debate (MAD) address this, they are limited by one-pass retrieval and unstructured debate dynamics. We propose a courtroom-style multi-agent framework, PROClaim, that reformulates verification as a structured, adversarial deliberation. Our approach integrates specialized roles (e.g., Plaintiff, Defense, Judge) with Progressive RAG (P-RAG) to dynamically expand and refine the evidence pool during the debate. Furthermore, we employ evidence negotiation, self-reflection, and heterogeneous multi-judge aggregation to enforce calibration, robustness, and diversity. In zero-shot evaluations on the Check-COVID benchmark, PROClaim achieves 81.7% accuracy, outperforming standard multi-agent debate by 10.0 percentage points, with P-RAG driving the primary performance gains (+7.5 pp). We ultimately demonstrate that structural deliberation and model heterogeneity effectively mitigate systematic biases, providing a robust foundation for reliable claim verification. Our code and data are publicly available at https://github.com/mnc13/PROClaim.",
+      "authors": [
+        "Masnun Nuha Chowdhury",
+        "Nusrat Jahan Beg",
+        "Umme Hunny Khan",
+        "Syed Rifat Raiyan",
+        "Md Kamrul Hasan",
+        "Hasan Mahmud"
+      ],
+      "published": "2026-03-30T14:23:15Z",
+      "updated": "2026-03-30T14:23:15Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.28488v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.28407v1",
+      "title": "MiroEval: Benchmarking Multimodal Deep Research Agents in Process and Outcome",
+      "summary": "Recent progress in deep research systems has been impressive, but evaluation still lags behind real user needs. Existing benchmarks predominantly assess final reports using fixed rubrics, failing to evaluate the underlying research process. Most also offer limited multimodal coverage, rely on synthetic tasks that do not reflect real-world query complexity, and cannot be refreshed as knowledge evolves. To address these gaps, we introduce MiroEval, a benchmark and evaluation framework for deep research systems. The benchmark comprises 100 tasks (70 text-only, 30 multimodal), all grounded in real user needs and constructed via a dual-path pipeline that supports periodic updates, enabling a live and evolving setting. The proposed evaluation suite assesses deep research systems along three complementary dimensions: adaptive synthesis quality evaluation with task-specific rubrics, agentic factuality verification via active retrieval and reasoning over both web sources and multimodal attachments, and process-centric evaluation audits how the system searches, reasons, and refines throughout its investigation. Evaluation across 13 systems yields three principal findings: the three evaluation dimensions capture complementary aspects of system capability, with each revealing distinct strengths and weaknesses across systems; process quality serves as a reliable predictor of overall outcome while revealing weaknesses invisible to output-level metrics; and multimodal tasks pose substantially greater challenges, with most systems declining by 3 to 10 points. The MiroThinker series achieves the most balanced performance, with MiroThinker-H1 ranking the highest overall in both settings. Human verification and robustness results confirm the reliability of the benchmark and evaluation framework. MiroEval provides a holistic diagnostic tool for the next generation of deep research agents.",
+      "authors": [
+        "Fangda Ye",
+        "Yuxin Hu",
+        "Pengxiang Zhu",
+        "Yibo Li",
+        "Ziqi Jin",
+        "Yao Xiao",
+        "Yibo Wang",
+        "Lei Wang",
+        "Zhen Zhang",
+        "Lu Wang",
+        "Yue Deng",
+        "Bin Wang",
+        "Yifan Zhang",
+        "Liangcai Su",
+        "Xinyu Wang",
+        "He Zhao",
+        "Chen Wei",
+        "Qiang Ren",
+        "Bryan Hooi",
+        "An Bo",
+        "Shuicheng Yan",
+        "Lidong Bing"
+      ],
+      "published": "2026-03-30T13:16:03Z",
+      "updated": "2026-03-30T13:16:03Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.28407v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2603.26993v1",
+      "title": "On the Reliability Limits of LLM-Based Multi-Agent Planning",
+      "summary": "This technical note studies the reliability limits of LLM-based multi-agent planning as a delegated decision problem. We model the LLM-based multi-agent architecture as a finite acyclic decision network in which multiple stages process shared model-context information, communicate through language interfaces with limited capacity, and may invoke human review. We show that, without new exogenous signals, any delegated network is decision-theoretically dominated by a centralized Bayes decision maker with access to the same information. In the common-evidence regime, this implies that optimizing over multi-agent directed acyclic graphs under a finite communication budget can be recast as choosing a budget-constrained stochastic experiment on the shared signal. We also characterize the loss induced by communication and information compression. Under proper scoring rules, the gap between the centralized Bayes value and the value after communication admits an expected posterior divergence representation, which reduces to conditional mutual information under logarithmic loss and to expected squared posterior error under the Brier score. These results characterize the fundamental reliability limits of delegated LLM planning. Experiments with LLMs on a controlled problem set further demonstrate these characterizations.",
+      "authors": [
+        "Ruicheng Ao",
+        "Siyang Gao",
+        "David Simchi-Levi"
+      ],
+      "published": "2026-03-27T21:07:42Z",
+      "updated": "2026-03-27T21:07:42Z",
+      "categories": [
+        "cs.MA",
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2603.26993v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2603.27539v1",
+    "2603.26635v1",
+    "2603.28488v1",
+    "2603.28407v1",
+    "2603.26993v1"
+  ]
+}

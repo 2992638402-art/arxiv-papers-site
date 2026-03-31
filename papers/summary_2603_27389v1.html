@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diagnosing Non-Markovian Observations in Reinforcement Learning via Prediction-Based Violation Scoring - arXiv 2603.27389 论文总结">
+    <title>Diagnosing Non-Markovian Observations in Reinforcement Learning via Prediction-Based Violation Scoring | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Diagnosing Non-Markovian Observations in Reinforcement Learning via Prediction-Based Violation Scoring</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2603.27389<br><strong>分类:</strong> cs.LG, cs.AI, stat.ML<br><strong>发布时间:</strong> 2026-03-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Naveen Mysore</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2603.27389">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2603.27389">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Reinforcement learning algorithms assume that observations satisfy the Markov property, yet real-world sensors frequently violate this assumption through correlated noise, latency, or partial observability. Standard performance metrics conflate Markov breakdowns with other sources of suboptimality, leaving practitioners without diagnostic tools for such violations. This paper introduces a prediction-based scoring method that quantifies non-Markovian structure in observation trajectories. A random forest first removes nonlinear Markov-compliant dynamics; ridge regression then tests whether historical observations reduce prediction error on the residuals beyond what the current observation provides. The resulting score is bounded in [0, 1] and requires no causal graph construction. Evaluation spans six environments (CartPole, Pendulum, Acrobot, HalfCheetah, Hopper, Walker2d), three algorithms (PPO, A2C, SAC), controlled AR(1) noise at six intensity levels, and 10 seeds per condition. In post-hoc detection, 7 of 16 environment-algorithm pairs, primarily high-dimensional locomotion tasks, show significant positive monotonicity between noise intensity and the violation score (Spearman rho up to 0.78, confirmed under repeated-measures analysis); under training-time noise, 13 of 16 pairs exhibit statistically significant reward degradation. An inversion phenomenon is documented in low-dimensional environments where the random forest absorbs the noise signal, causing the score to decrease as true violations grow, a failure mode analyzed in detail. A practical utility experiment demonstrates that the proposed score correctly identifies partial observability and guides architecture selection, fully recovering performance lost to non-Markovian observations. Source code to reproduce all results is provided at <a href="https://github.com/NAVEENMN/Markovianes">https://github.com/NAVEENMN/Markovianes</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2603.27389" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
