@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Behavioral Score Diffusion: Model-Free Trajectory Planning via Kernel-Based Score Estimation from Data - arXiv 2604.00391 论文总结">
+    <title>Behavioral Score Diffusion: Model-Free Trajectory Planning via Kernel-Based Score Estimation from Data | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Behavioral Score Diffusion: Model-Free Trajectory Planning via Kernel-Based Score Estimation from Data</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2604.00391<br><strong>分类:</strong> cs.RO, eess.SY<br><strong>发布时间:</strong> 2026-04-01</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Shihao Li, Jiachen Li, Jiamin Xu, Dongmei Chen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.00391">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2604.00391">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Diffusion-based trajectory optimization has emerged as a powerful planning paradigm, but existing methods require either learned score networks trained on large datasets or analytical dynamics models for score computation. We introduce \emph{Behavioral Score Diffusion} (BSD), a training-free and model-free trajectory planner that computes the diffusion score function directly from a library of trajectory data via kernel-weighted estimation. At each denoising step, BSD retrieves relevant trajectories using a triple-kernel weighting scheme -- diffusion proximity, state context, and goal relevance -- and computes a Nadaraya-Watson estimate of the denoised trajectory. The diffusion noise schedule naturally controls kernel bandwidths, creating a multi-scale nonparametric regression: broad averaging of global behavioral patterns at high noise, fine-grained local interpolation at low noise. This coarse-to-fine structure handles nonlinear dynamics without linearization or parametric assumptions. Safety is preserved by applying shielded rollout on kernel-estimated state trajectories, identical to existing model-based approaches. We evaluate BSD on four robotic systems of increasing complexity (3D--6D state spaces) in a parking scenario. BSD with fixed bandwidth achieves 98.5% of the model-based baseline&#39;s average reward across systems while requiring no dynamics model, using only 1{,}000 pre-collected trajectories. BSD substantially outperforms nearest-neighbor retrieval (18--63% improvement), confirming that the diffusion denoising mechanism is essential for effective data-driven planning.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2604.00391" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

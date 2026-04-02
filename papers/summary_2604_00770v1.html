@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Thinking Wrong in Silence: Backdoor Attacks on Continuous Latent Reasoning - arXiv 2604.00770 论文总结">
+    <title>Thinking Wrong in Silence: Backdoor Attacks on Continuous Latent Reasoning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Thinking Wrong in Silence: Backdoor Attacks on Continuous Latent Reasoning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2604.00770<br><strong>分类:</strong> cs.LG, cs.AI<br><strong>发布时间:</strong> 2026-04-01</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Swapnil Parekh</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.00770">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2604.00770">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A new generation of language models reasons entirely in continuous hidden states, producing no tokens and leaving no audit trail. We show that this silence creates a fundamentally new attack surface. ThoughtSteer perturbs a single embedding vector at the input layer; the model&#39;s own multi-pass reasoning amplifies this perturbation into a hijacked latent trajectory that reliably produces the attacker&#39;s chosen answer, while remaining structurally invisible to every token-level defense. Across two architectures (Coconut and SimCoT), three reasoning benchmarks, and model scales from 124M to 3B parameters, ThoughtSteer achieves &gt;=99% attack success rate with near-baseline clean accuracy, transfers to held-out benchmarks without retraining (94-100%), evades all five evaluated active defenses, and survives 25 epochs of clean fine-tuning. We trace these results to a unifying mechanism: Neural Collapse in the latent space pulls triggered representations onto a tight geometric attractor, explaining both why defenses fail and why any effective backdoor must leave a linearly separable signature (probe AUC&gt;=0.999). Yet a striking paradox emerges: individual latent vectors still encode the correct answer even as the model outputs the wrong one. The adversarial information is not in any single vector but in the collective trajectory, establishing backdoor perturbations as a new lens for mechanistic interpretability of continuous reasoning. Code and checkpoints are available.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2604.00770" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
