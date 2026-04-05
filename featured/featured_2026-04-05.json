@@ -1,0 +1,119 @@
+{
+  "date": "2026-04-05",
+  "papers": [
+    {
+      "id": "2604.00430v1",
+      "title": "Secure Forgetting: A Framework for Privacy-Driven Unlearning in Large Language Model (LLM)-Based Agents",
+      "summary": "Large language model (LLM)-based agents have recently gained considerable attention due to the powerful reasoning capabilities of LLMs. Existing research predominantly focuses on enhancing the task performance of these agents in diverse scenarios. However, as LLM-based agents become increasingly integrated into real-world applications, significant concerns emerge regarding their accumulation of sensitive or outdated knowledge. Addressing these concerns requires the development of mechanisms that allow agents to selectively forget previously learned knowledge, giving rise to a new term LLM-based agent unlearning. This paper initiates research on unlearning in LLM-based agents. Specifically, we propose a novel and comprehensive framework that categorizes unlearning scenarios into three contexts: state unlearning (forgetting specific states or items), trajectory unlearning (forgetting sequences of actions) and environment unlearning (forgetting entire environments or categories of tasks). Within this framework, we introduce a natural language-based unlearning method that trains a conversion model to transform high-level unlearning requests into actionable unlearning prompts, guiding agents through a controlled forgetting process. Moreover, to evaluate the robustness of the proposed framework, we introduce an unlearning inference adversary capable of crafting prompts, querying agents, and observing their behaviors in an attempt to infer the forgotten knowledge. Experimental results show that our approach effectively enables agents to forget targeted knowledge while preserving performance on untargeted tasks, and prevents the adversary from inferring the forgotten knowledge.",
+      "authors": [
+        "Dayong Ye",
+        "Tainqing Zhu",
+        "Congcong Zhu",
+        "Feng He",
+        "Qi He",
+        "Shang Wang",
+        "Bo Liu",
+        "Wanlei Zhou"
+      ],
+      "published": "2026-04-01T03:17:35Z",
+      "updated": "2026-04-01T03:17:35Z",
+      "categories": [
+        "cs.MA",
+        "cs.CR"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.00430v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.02241v1",
+      "title": "UAV-Track VLA: Embodied Aerial Tracking via Vision-Language-Action Models",
+      "summary": "Embodied visual tracking is crucial for Unmanned Aerial Vehicles (UAVs) executing complex real-world tasks. In dynamic urban scenarios with complex semantic requirements, Vision-Language-Action (VLA) models show great promise due to their cross-modal fusion and continuous action generation capabilities. To benchmark multimodal tracking in such environments, we construct a dedicated evaluation benchmark and a large-scale dataset encompassing over 890K frames, 176 tasks, and 85 diverse objects. Furthermore, to address temporal feature redundancy and the lack of spatial geometric priors in existing VLA models, we propose an improved VLA tracking model, UAV-Track VLA. Built upon the $π_{0.5}$ architecture, our model introduces a temporal compression net to efficiently capture inter-frame dynamics. Additionally, a parallel dual-branch decoder comprising a spatial-aware auxiliary grounding head and a flow matching action expert is designed to decouple cross-modal features and generate fine-grained continuous actions. Systematic experiments in the CARLA simulator validate the superior end-to-end performance of our method. Notably, in challenging long-distance pedestrian tracking tasks, UAV-Track VLA achieves a 61.76\\% success rate and 269.65 average tracking frames, significantly outperforming existing baselines. Furthermore, it demonstrates robust zero-shot generalization in unseen environments and reduces single-step inference latency by 33.4\\% (to 0.0571s) compared to the original $π_{0.5}$, enabling highly efficient, real-time UAV control. Data samples and demonstration videos are available at: https://github.com/Hub-Tian/UAV-Track\\_VLA.",
+      "authors": [
+        "Qiyao Zhang",
+        "Shuhua Zheng",
+        "Jianli Sun",
+        "Chengxiang Li",
+        "Xianke Wu",
+        "Zihan Song",
+        "Zhiyong Cui",
+        "Yisheng Lv",
+        "Yonglin Tian"
+      ],
+      "published": "2026-04-02T16:33:38Z",
+      "updated": "2026-04-02T16:33:38Z",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.02241v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2604.02211v1",
+      "title": "Multi-Agent Video Recommenders: Evolution, Patterns, and Open Challenges",
+      "summary": "Video recommender systems are among the most popular and impactful applications of AI, shaping content consumption and influencing culture for billions of users. Traditional single-model recommenders, which optimize static engagement metrics, are increasingly limited in addressing the dynamic requirements of modern platforms. In response, multi-agent architectures are redefining how video recommender systems serve, learn, and adapt to both users and datasets. These agent-based systems coordinate specialized agents responsible for video understanding, reasoning, memory, and feedback, to provide precise, explainable recommendations. In this survey, we trace the evolution of multi-agent video recommendation systems (MAVRS). We combine ideas from multi-agent recommender systems, foundation models, and conversational AI, culminating in the emerging field of large language model (LLM)-powered MAVRS. We present a taxonomy of collaborative patterns and analyze coordination mechanisms across diverse video domains, ranging from short-form clips to educational platforms. We discuss representative frameworks, including early multi-agent reinforcement learning (MARL) systems such as MMRF and recent LLM-driven architectures like MACRec and Agent4Rec, to illustrate these patterns. We also outline open challenges in scalability, multimodal understanding, incentive alignment, and identify research directions such as hybrid reinforcement learning-LLM systems, lifelong personalization and self-improving recommender systems.",
+      "authors": [
+        "Srivaths Ranganathan",
+        "Abhishek Dharmaratnakar",
+        "Anushree Sinha",
+        "Debanshu Das"
+      ],
+      "published": "2026-04-02T16:04:52Z",
+      "updated": "2026-04-02T16:04:52Z",
+      "categories": [
+        "cs.IR",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.02211v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.02268v1",
+      "title": "SKILL0: In-Context Agentic Reinforcement Learning for Skill Internalization",
+      "summary": "Agent skills, structured packages of procedural knowledge and executable resources that agents dynamically load at inference time, have become a reliable mechanism for augmenting LLM agents. Yet inference-time skill augmentation is fundamentally limited: retrieval noise introduces irrelevant guidance, injected skill content imposes substantial token overhead, and the model never truly acquires the knowledge it merely follows. We ask whether skills can instead be internalized into model parameters, enabling zero-shot autonomous behavior without any runtime skill retrieval. We introduce SKILL0, an in-context reinforcement learning framework designed for skill internalization. SKILL0 introduces a training-time curriculum that begins with full skill context and progressively withdraws it. Skills are grouped offline by category and rendered with interaction history into a compact visual context, teaching he model tool invocation and multi-turn task completion. A Dynamic Curriculum then evaluates each skill file's on-policy helpfulness, retaining only those from which the current policy still benefits within a linearly decaying budget, until the agent operates in a fully zero-shot setting. Extensive agentic experiments demonstrate that SKILL0 achieves substantial improvements over the standard RL baseline (+9.7\\% for ALFWorld and +6.6\\% for Search-QA), while maintaining a highly efficient context of fewer than 0.5k tokens per step. Our code is available at https://github.com/ZJU-REAL/SkillZero.",
+      "authors": [
+        "Zhengxi Lu",
+        "Zhiyuan Yao",
+        "Jinyang Wu",
+        "Chengcheng Han",
+        "Qi Gu",
+        "Xunliang Cai",
+        "Weiming Lu",
+        "Jun Xiao",
+        "Yueting Zhuang",
+        "Yongliang Shen"
+      ],
+      "published": "2026-04-02T17:03:05Z",
+      "updated": "2026-04-02T17:03:05Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.02268v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.00249v1",
+      "title": "A Safety-Aware Role-Orchestrated Multi-Agent LLM Framework for Behavioral Health Communication Simulation",
+      "summary": "Single-agent large language model (LLM) systems struggle to simultaneously support diverse conversational functions and maintain safety in behavioral health communication. We propose a safety-aware, role-orchestrated multi-agent LLM framework designed to simulate supportive behavioral health dialogue through coordinated, role-differentiated agents. Conversational responsibilities are decomposed across specialized agents, including empathy-focused, action-oriented, and supervisory roles, while a prompt-based controller dynamically activates relevant agents and enforces continuous safety auditing. Using semi-structured interview transcripts from the DAIC-WOZ corpus, we evaluate the framework with scalable proxy metrics capturing structural quality, functional diversity, and computational characteristics. Results illustrate clear role differentiation, coherent inter-agent coordination, and predictable trade-offs between modular orchestration, safety oversight, and response latency when compared to a single-agent baseline. This work emphasizes system design, interpretability, and safety, positioning the framework as a simulation and analysis tool for behavioral health informatics and decision-support research rather than a clinical intervention.",
+      "authors": [
+        "Ha Na Cho"
+      ],
+      "published": "2026-03-31T21:21:31Z",
+      "updated": "2026-03-31T21:21:31Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.00249v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2604.00430v1",
+    "2604.02241v1",
+    "2604.02211v1",
+    "2604.02268v1",
+    "2604.00249v1"
+  ]
+}
