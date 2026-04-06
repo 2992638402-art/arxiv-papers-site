@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gram-MMD: A Texture-Aware Metric for Image Realism Assessment - arXiv 2604.03064 论文总结">
+    <title>Gram-MMD: A Texture-Aware Metric for Image Realism Assessment | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Gram-MMD: A Texture-Aware Metric for Image Realism Assessment</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2604.03064<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-04-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Joé Napolitano, Pascal Nguyen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.03064">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2604.03064">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Evaluating the realism of generated images remains a fundamental challenge in generative modeling. Existing distributional metrics such as the Frechet Inception Distance (FID) and CLIP-MMD (CMMD) compare feature distributions at a semantic level but may overlook fine-grained textural information that can be relevant for distinguishing real from generated images. We introduce Gram-MMD (GMMD), a realism metric that leverages Gram matrices computed from intermediate activations of pretrained backbone networks to capture correlations between feature maps. By extracting the upper-triangular part of these symmetric Gram matrices and measuring the Maximum Mean Discrepancy (MMD) between an anchor distribution of real images and an evaluation distribution, GMMD produces a representation that encodes textural and structural characteristics at a finer granularity than global embeddings. To select the hyperparameters of the metric, we employ a meta-metric protocol based on controlled degradations applied to MS-COCO images, measuring monotonicity via Spearman&#39;s rank correlation and Kendall&#39;s tau. We conduct experiments on both the KADID-10k database and the RAISE realness assessment dataset using various backbone architectures, including DINOv2, DC-AE, Stable Diffusion&#39;s VAE encoder, VGG19, and the AlexNet backbone from LPIPS, among others. We also demonstrate on a cross-domain driving scenario (KITTI / Virtual KITTI / Stanford Cars) that CMMD can incorrectly rank real images as less realistic than synthetic ones due to its semantic bias, while GMMD preserves the correct ordering. Our results suggest that GMMD captures complementary information to existing semantic-level metrics.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2604.03064" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
