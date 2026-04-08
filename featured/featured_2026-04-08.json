@@ -1,0 +1,122 @@
+{
+  "date": "2026-04-08",
+  "papers": [
+    {
+      "id": "2604.05846v1",
+      "title": "AgentGL: Towards Agentic Graph Learning with LLMs via Reinforcement Learning",
+      "summary": "Large Language Models (LLMs) increasingly rely on agentic capabilities-iterative retrieval, tool use, and decision-making-to overcome the limits of static, parametric knowledge. Yet existing agentic frameworks treat external information as unstructured text and fail to leverage the topological dependencies inherent in real-world data. To bridge this gap, we introduce Agentic Graph Learning (AGL), a paradigm that reframes graph learning as an interleaved process of topology-aware navigation and LLM-based inference. Specifically, we propose AgentGL, the first reinforcement learning (RL)-driven framework for AGL. AgentGL equips an LLM agent with graph-native tools for multi-scale exploration, regulates tool usage via search-constrained thinking to balance accuracy and efficiency, and employs a graph-conditioned curriculum RL strategy to stabilize long-horizon policy learning without step-wise supervision. Across diverse Text-Attributed Graph (TAG) benchmarks and multiple LLM backbones, AgentGL substantially outperforms strong GraphLLMs and GraphRAG baselines, achieving absolute improvements of up to 17.5% in node classification and 28.4% in link prediction. These results demonstrate that AGL is a promising frontier for enabling LLMs to autonomously navigate and reason over complex relational environments. The code is publicly available at https://github.com/sunyuanfu/AgentGL.",
+      "authors": [
+        "Yuanfu Sun",
+        "Kang Li",
+        "Dongzhe Fan",
+        "Jiajin Liu",
+        "Qiaoyu Tan"
+      ],
+      "published": "2026-04-07T13:11:17Z",
+      "updated": "2026-04-07T13:11:17Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.05846v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.04442v1",
+      "title": "Explainable Autonomous Cyber Defense using Adversarial Multi-Agent Reinforcement Learning",
+      "summary": "Autonomous agents are increasingly deployed in both offensive and defensive cyber operations, creating high-speed, closed-loop interactions in critical infrastructure environments. Advanced Persistent Threat (APT) actors exploit \"Living off the Land\" techniques and targeted telemetry perturbations to induce ambiguity in monitoring systems, causing automated defenses to overreact or misclassify benign behavior as malicious activity. Existing monolithic and multi-agent defense pipelines largely operate on correlation-based signals, lack structural constraints on response actions, and are vulnerable to reasoning drift under ambiguous or adversarial inputs. We present the Causal Multi-Agent Decision Framework (C-MADF), a structurally constrained architecture for autonomous cyber defense that integrates causal modeling with adversarial dual-policy control. C-MADF first learns a Structural Causal Model (SCM) from historical telemetry and compiles it into an investigation-level Directed Acyclic Graph (DAG) that defines admissible response transitions. This roadmap is formalized as a Markov Decision Process (MDP) whose action space is explicitly restricted to causally consistent transitions. Decision-making within this constrained space is performed by a dual-agent reinforcement learning system in which a threat-optimizing Blue-Team policy is counterbalanced by a conservatively shaped Red-Team policy. Inter-policy disagreement is quantified through a Policy Divergence Score and exposed via a human-in-the-loop interface equipped with an Explainability-Transparency Score that serves as an escalation signal under uncertainty. On the real-world CICIoT2023 dataset, C-MADF reduces the false-positive rate from 11.2%, 9.7%, and 8.4% in three cutting-edge literature baselines to 1.8%, while achieving 0.997 precision, 0.961 recall, and 0.979 F1-score.",
+      "authors": [
+        "Yiyao Zhang",
+        "Diksha Goel",
+        "Hussain Ahmad"
+      ],
+      "published": "2026-04-06T05:40:43Z",
+      "updated": "2026-04-06T05:40:43Z",
+      "categories": [
+        "cs.CR",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.04442v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.04664v1",
+      "title": "ROSClaw: A Hierarchical Semantic-Physical Framework for Heterogeneous Multi-Agent Collaboration",
+      "summary": "The integration of large language models (LLMs) with embodied agents has improved high-level reasoning capabilities; however, a critical gap remains between semantic understanding and physical execution. While vision-language-action (VLA) and vision-language-navigation (VLN) systems enable robots to perform manipulation and navigation tasks from natural language instructions, they still struggle with long-horizon sequential and temporally structured tasks. Existing frameworks typically adopt modular pipelines for data collection, skill training, and policy deployment, resulting in high costs in experimental validation and policy optimization. To address these limitations, we propose ROSClaw, an agent framework for heterogeneous robots that integrates policy learning and task execution within a unified vision-language model (VLM) controller. The framework leverages e-URDF representations of heterogeneous robots as physical constraints to construct a sim-to-real topological mapping, enabling real-time access to the physical states of both simulated and real-world agents. We further incorporate a data collection and state accumulation mechanism that stores robot states, multimodal observations, and execution trajectories during real-world execution, enabling subsequent iterative policy optimization. During deployment, a unified agent maintains semantic continuity between reasoning and execution, and dynamically assigns task-specific control to different agents, thereby improving robustness in multi-policy execution. By establishing an autonomous closed-loop framework, ROSClaw minimizes the reliance on robot-specific development workflows. The framework supports hardware-level validation, automated generation of SDK-level control programs, and tool-based execution, enabling rapid cross-platform transfer and continual improvement of robotic skills. Ours project page: https://www.rosclaw.io/.",
+      "authors": [
+        "Rongfeng Zhao",
+        "Xuanhao Zhang",
+        "Zhaochen Guo",
+        "Xiang Shao",
+        "Zhongpan Zhu",
+        "Bin He",
+        "Jie Chen"
+      ],
+      "published": "2026-04-06T13:16:24Z",
+      "updated": "2026-04-06T13:16:24Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.04664v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2604.05808v1",
+      "title": "Hierarchical Reinforcement Learning with Augmented Step-Level Transitions for LLM Agents",
+      "summary": "Large language model (LLM) agents have demonstrated strong capabilities in complex interactive decision-making tasks. However, existing LLM agents typically rely on increasingly long interaction histories, resulting in high computational cost and limited scalability. In this paper, we propose STEP-HRL, a hierarchical reinforcement learning (HRL) framework that enables step-level learning by conditioning only on single-step transitions rather than full interaction histories. STEP-HRL structures tasks hierarchically, using completed subtasks to represent global progress of overall task. By introducing a local progress module, it also iteratively and selectively summarizes interaction history within each subtask to produce a compact summary of local progress. Together, these components yield augmented step-level transitions for both high-level and low-level policies. Experimental results on ScienceWorld and ALFWorld benchmarks consistently demonstrate that STEP-HRL substantially outperforms baselines in terms of performance and generalization while reducing token usage. Our code is available at https://github.com/TonyStark042/STEP-HRL.",
+      "authors": [
+        "Shuai Zhen",
+        "Yanhua Yu",
+        "Ruopei Guo",
+        "Nan Cheng",
+        "Yang Deng"
+      ],
+      "published": "2026-04-07T12:44:33Z",
+      "updated": "2026-04-07T12:44:33Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.05808v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.05484v1",
+      "title": "CoEnv: Driving Embodied Multi-Agent Collaboration via Compositional Environment",
+      "summary": "Multi-agent embodied systems hold promise for complex collaborative manipulation, yet face critical challenges in spatial coordination, temporal reasoning, and shared workspace awareness. Inspired by human collaboration where cognitive planning occurs separately from physical execution, we introduce the concept of compositional environment -- a synergistic integration of real-world and simulation components that enables multiple robotic agents to perceive intentions and operate within a unified decision-making space. Building on this concept, we present CoEnv, a framework that leverages simulation for safe strategy exploration while ensuring reliable real-world deployment. CoEnv operates through three stages: real-to-sim scene reconstruction that digitizes physical workspaces, VLM-driven action synthesis supporting both real-time planning with high-level interfaces and iterative planning with code-based trajectory generation, and validated sim-to-real transfer with collision detection for safe deployment. Extensive experiments on challenging multi-arm manipulation benchmarks demonstrate CoEnv's effectiveness in achieving high task success rates and execution efficiency, establishing a new paradigm for multi-agent embodied AI.",
+      "authors": [
+        "Li Kang",
+        "Yutao Fan",
+        "Rui Li",
+        "Heng Zhou",
+        "Yiran Qin",
+        "Zhemeng Zhang",
+        "Songtao Huang",
+        "Xiufeng Song",
+        "Zaibin Zhang",
+        "Bruno N. Y. Chen",
+        "Zhenfei Yin",
+        "Dongzhan Zhou",
+        "Wangmeng Zuo",
+        "Lei Bai"
+      ],
+      "published": "2026-04-07T06:24:41Z",
+      "updated": "2026-04-07T06:24:41Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.05484v1.pdf",
+      "category": "robotics"
+    }
+  ],
+  "ids": [
+    "2604.05846v1",
+    "2604.04442v1",
+    "2604.04664v1",
+    "2604.05808v1",
+    "2604.05484v1"
+  ]
+}
