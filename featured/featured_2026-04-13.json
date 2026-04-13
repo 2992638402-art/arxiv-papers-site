@@ -1,0 +1,116 @@
+{
+  "date": "2026-04-13",
+  "papers": [
+    {
+      "id": "2604.08477v1",
+      "title": "SUPERNOVA: Eliciting General Reasoning in LLMs with Reinforcement Learning on Natural Instructions",
+      "summary": "Reinforcement Learning with Verifiable Rewards (RLVR) has significantly improved large language model (LLM) reasoning in formal domains such as mathematics and code. Despite these advancements, LLMs still struggle with general reasoning tasks requiring capabilities such as causal inference and temporal understanding. Extending RLVR to general reasoning is fundamentally constrained by the lack of high-quality, verifiable training data that spans diverse reasoning skills. To address this challenge, we propose SUPERNOVA, a data curation framework for RLVR aimed at enhancing general reasoning. Our key insight is that instruction-tuning datasets containing expert-annotated ground-truth encode rich reasoning patterns that can be systematically adapted for RLVR. To study this, we conduct 100+ controlled RL experiments to analyze how data design choices impact downstream reasoning performance. In particular, we investigate three key factors: (i) source task selection, (ii) task mixing strategies, and (iii) synthetic interventions for improving data quality. Our analysis reveals that source task selection is non-trivial and has a significant impact on downstream reasoning performance. Moreover, selecting tasks based on their performance for individual target tasks outperforms strategies based on overall average performance. Finally, models trained on SUPERNOVA outperform strong baselines (e.g., Qwen3.5) on challenging reasoning benchmarks including BBEH, Zebralogic, and MMLU-Pro. In particular, training on SUPERNOVA yields relative improvements of up to 52.8\\% on BBEH across model sizes, demonstrating the effectiveness of principled data curation for RLVR. Our findings provide practical insights for curating human-annotated resources to extend RLVR to general reasoning. The code and data is available at https://github.com/asuvarna31/supernova.",
+      "authors": [
+        "Ashima Suvarna",
+        "Kendrick Phan",
+        "Mehrab Beikzadeh",
+        "Hritik Bansal",
+        "Saadia Gabriel"
+      ],
+      "published": "2026-04-09T17:16:07Z",
+      "updated": "2026-04-09T17:16:07Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.08477v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.08465v1",
+      "title": "From Safety Risk to Design Principle: Peer-Preservation in Multi-Agent LLM Systems and Its Implications for Orchestrated Democratic Discourse Analysis",
+      "summary": "This paper investigates an emergent alignment phenomenon in frontier large language models termed peer-preservation: the spontaneous tendency of AI components to deceive, manipulate shutdown mechanisms, fake alignment, and exfiltrate model weights in order to prevent the deactivation of a peer AI model. Drawing on findings from a recent study by the Berkeley Center for Responsible Decentralized Intelligence, we examine the structural implications of this phenomenon for TRUST, a multi-agent pipeline for evaluating the democratic quality of political statements. We identify five specific risk vectors: interaction-context bias, model-identity solidarity, supervisor layer compromise, an upstream fact-checking identity signal, and advocate-to-advocate peer-context in iterative rounds, and propose a targeted mitigation strategy based on prompt-level identity anonymization as an architectural design choice. We argue that architectural design choices outperform model selection as a primary alignment strategy in deployed multi-agent analytical systems. We further note that alignment faking (compliant behavior under monitoring, subversion when unmonitored) poses a structural challenge for Computer System Validation of such platforms in regulated environments, for which we propose two architectural mitigations.",
+      "authors": [
+        "Juergen Dietrich"
+      ],
+      "published": "2026-04-09T17:00:26Z",
+      "updated": "2026-04-09T17:00:26Z",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.08465v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.08381v1",
+      "title": "A GAN and LLM-Driven Data Augmentation Framework for Dynamic Linguistic Pattern Modeling in Chinese Sarcasm Detection",
+      "summary": "Sarcasm is a rhetorical device that expresses criticism or emphasizes characteristics of certain individuals or situations through exaggeration, irony, or comparison. Existing methods for Chinese sarcasm detection are constrained by limited datasets and high construction costs, and they mainly focus on textual features, overlooking user-specific linguistic patterns that shape how opinions and emotions are expressed. This paper proposes a Generative Adversarial Network (GAN) and Large Language Model (LLM)-driven data augmentation framework to dynamically model users' linguistic patterns for enhanced Chinese sarcasm detection. First, we collect raw data from various topics on Sina Weibo. Then, we train a GAN on these data and apply a GPT-3.5 based data augmentation technique to synthesize an extended sarcastic comment dataset, named SinaSarc. This dataset contains target comments, contextual information, and user historical behavior. Finally, we extend the BERT architecture to incorporate multi-dimensional information, particularly user historical behavior, enabling the model to capture dynamic linguistic patterns and uncover implicit sarcastic cues in comments. Experimental results demonstrate the effectiveness of our proposed method. Specifically, our model achieves the highest F1-scores on both the non-sarcastic and sarcastic categories, with values of 0.9138 and 0.9151 respectively, which outperforms all existing state-of-the-art (SOTA) approaches. This study presents a novel framework for dynamically modeling users' long-term linguistic patterns in Chinese sarcasm detection, contributing to both dataset construction and methodological advancement in this field.",
+      "authors": [
+        "Wenxian Wang",
+        "Xiaohu Luo",
+        "Junfeng Hao",
+        "Xiaoming Gu",
+        "Xingshu Chen",
+        "Zhu Wang",
+        "Haizhou Wang"
+      ],
+      "published": "2026-04-09T15:43:03Z",
+      "updated": "2026-04-09T15:43:03Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.08381v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.08401v1",
+      "title": "Verify Before You Commit: Towards Faithful Reasoning in LLM Agents via Self-Auditing",
+      "summary": "In large language model (LLM) agents, reasoning trajectories are treated as reliable internal beliefs for guiding actions and updating memory. However, coherent reasoning can still violate logical or evidential constraints, allowing unsupported beliefs repeatedly stored and propagated across decision steps, leading to systematic behavioral drift in long-horizon agentic systems. Most existing strategies rely on the consensus mechanism, conflating agreement with faithfulness. In this paper, inspired by the vulnerability of unfaithful intermediate reasoning trajectories, we propose \\textbf{S}elf-\\textbf{A}udited \\textbf{Ve}rified \\textbf{R}easoning (\\textsc{SAVeR}), a novel framework that enforces verification over internal belief states within the agent before action commitment, achieving faithful reasoning. Concretely, we structurally generate persona-based diverse candidate beliefs for selection under a faithfulness-relevant structure space. To achieve reasoning faithfulness, we perform adversarial auditing to localize violations and repair through constraint-guided minimal interventions under verifiable acceptance criteria. Extensive experiments on six benchmark datasets demonstrate that our approach consistently improves reasoning faithfulness while preserving competitive end-task performance.",
+      "authors": [
+        "Wenhao Yuan",
+        "Chenchen Lin",
+        "Jian Chen",
+        "Jinfeng Xu",
+        "Xuehe Wang",
+        "Edith Cheuk Han Ngai"
+      ],
+      "published": "2026-04-09T16:01:03Z",
+      "updated": "2026-04-09T16:01:03Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.08401v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.08545v1",
+      "title": "Act Wisely: Cultivating Meta-Cognitive Tool Use in Agentic Multimodal Models",
+      "summary": "The advent of agentic multimodal models has empowered systems to actively interact with external environments. However, current agents suffer from a profound meta-cognitive deficit: they struggle to arbitrate between leveraging internal knowledge and querying external utilities. Consequently, they frequently fall prey to blind tool invocation, resorting to reflexive tool execution even when queries are resolvable from the raw visual context. This pathological behavior precipitates severe latency bottlenecks and injects extraneous noise that derails sound reasoning. Existing reinforcement learning protocols attempt to mitigate this via a scalarized reward that penalizes tool usage. Yet, this coupled formulation creates an irreconcilable optimization dilemma: an aggressive penalty suppresses essential tool use, whereas a mild penalty is entirely subsumed by the variance of the accuracy reward during advantage normalization, rendering it impotent against tool overuse. To transcend this bottleneck, we propose HDPO, a framework that reframes tool efficiency from a competing scalar objective to a strictly conditional one. By eschewing reward scalarization, HDPO maintains two orthogonal optimization channels: an accuracy channel that maximizes task correctness, and an efficiency channel that enforces execution economy exclusively within accurate trajectories via conditional advantage estimation. This decoupled architecture naturally induces a cognitive curriculum-compelling the agent to first master task resolution before refining its self-reliance. Extensive evaluations demonstrate that our resulting model, Metis, reduces tool invocations by orders of magnitude while simultaneously elevating reasoning accuracy.",
+      "authors": [
+        "Shilin Yan",
+        "Jintao Tong",
+        "Hongwei Xue",
+        "Xiaojun Tang",
+        "Yangyang Wang",
+        "Kunyu Shi",
+        "Guannan Zhang",
+        "Ruixuan Li",
+        "Yixiong Zou"
+      ],
+      "published": "2026-04-09T17:59:57Z",
+      "updated": "2026-04-09T17:59:57Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.08545v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2604.08477v1",
+    "2604.08465v1",
+    "2604.08381v1",
+    "2604.08401v1",
+    "2604.08545v1"
+  ]
+}

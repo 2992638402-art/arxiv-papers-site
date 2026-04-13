@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quantization Impact on the Accuracy and Communication Efficiency Trade-off in Federated Learning for Aerospace Predictive Maintenance - arXiv 2604.08474 论文总结">
+    <title>Quantization Impact on the Accuracy and Communication Efficiency Trade-off in Federated Learning for Aerospace Predictive Maintenance | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Quantization Impact on the Accuracy and Communication Efficiency Trade-off in Federated Learning for Aerospace Predictive Maintenance</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2604.08474<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-04-09</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Abdelkarim Loukili</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.08474">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2604.08474">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Federated learning (FL) enables privacy-preserving predictive maintenance across distributed aerospace fleets, but gradient communication overhead constrains deployment on bandwidth-limited IoT nodes. This paper investigates the impact of symmetric uniform quantization ($b \in {32,8,4,2}$ bits) on the accuracy--efficiency trade-off of a custom-designed lightweight 1-D convolutional model (AeroConv1D, 9,697 parameters) trained via FL on the NASA C-MAPSS benchmark under a realistic Non-IID client partition. Using a rigorous multi-seed evaluation ($N=10$ seeds), we show that INT4 achieves accuracy \emph{statistically indistinguishable} from FP32 on both FD001 ($p=0.341$) and FD002 ($p=0.264$ MAE, $p=0.534$ NASA score) while delivering an $8\times$ reduction in gradient communication cost (37.88<del>KiB $\to$ 4.73</del>KiB per round). A key methodological finding is that naïve IID client partitioning artificially suppresses variance; correct Non-IID evaluation reveals the true operational instability of extreme quantization, demonstrated via a direct empirical IID vs.\ Non-IID comparison. INT2 is empirically characterized as unsuitable: while it achieves lower MAE on FD002 through extreme quantization-induced over-regularization, this apparent gain is accompanied by catastrophic NASA score instability (CV,=,45.8% vs.\ 22.3% for FP32), confirming non-reproducibility under heterogeneous operating conditions. Analytical FPGA resource projections on the Xilinx ZCU102 confirm that INT4 fits within hardware constraints (85.5% DSP utilization), potentially enabling a complete FL pipeline on a single SoC. The full simulation codebase and FPGA estimation scripts are publicly available at <a href="https://github.com/therealdeadbeef/aerospace-fl-quantization">https://github.com/therealdeadbeef/aerospace-fl-quantization</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2604.08474" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
