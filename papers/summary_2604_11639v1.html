@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inter-Layer Hessian Analysis of Neural Networks with DAG Architectures - arXiv 2604.11639 论文总结">
+    <title>Inter-Layer Hessian Analysis of Neural Networks with DAG Architectures | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Inter-Layer Hessian Analysis of Neural Networks with DAG Architectures</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2604.11639<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-04-13</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Maxim Bolshim, Alexander Kugaevskikh</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.11639">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2604.11639">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Modern automatic differentiation frameworks (JAX, PyTorch) return the Hessian of the loss function as a monolithic tensor, without exposing the internal structure of inter-layer interactions. This paper presents an analytical formalism that explicitly decomposes the full Hessian into blocks indexed by the DAG of an arbitrary architecture. The canonical decomposition $H = H^{GN} + H^T$ separates the Gauss--Newton component (convex part) from the tensor component (residual curvature responsible for saddle points). For piecewise-linear activations (ReLU), the tensor component of the input Hessian vanishes ($H^{T}<em>{v,w}!\equiv!0$ a.e., $H^f</em>{v,w}!=!H^{GN}_{v,w}!\succeq!0$); the full parametric Hessian contains residual terms that do not reduce to the GGN. Building on this decomposition, we introduce diagnostic metrics (inter-layer resonance<del>$\mathcal{R}$, geometric coupling</del>$\mathcal{C}$, stable rank<del>$\mathcal{D}$, GN-Gap) that are estimated stochastically in $O(P)$ time and reveal structural curvature interactions between layers. The theoretical analysis explains exponential decay of resonance in vanilla networks and its preservation under skip connections; empirical validation spans fully connected MLPs (Exp.,1--5) and convolutional architectures (ResNet-18, ${\sim}11$M</del>parameters, Exp.,6). When the architecture reduces to a single node, all definitions collapse to the standard Hessian $\nabla^2_θ\mathcal{L}(θ)\in\mathbb{R}^{p\times p}$.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2604.11639" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

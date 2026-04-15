@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SCNO: Spiking Compositional Neural Operator -- Towards a Neuromorphic Foundation Model for Nuclear PDE Solving - arXiv 2604.11625 论文总结">
+    <title>SCNO: Spiking Compositional Neural Operator -- Towards a Neuromorphic Foundation Model for Nuclear PDE Solving | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SCNO: Spiking Compositional Neural Operator -- Towards a Neuromorphic Foundation Model for Nuclear PDE Solving</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2604.11625<br><strong>分类:</strong> cs.LG, cs.AI<br><strong>发布时间:</strong> 2026-04-13</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Samrendra Roy, Souvik Chakraborty, Rizwan-uddin, Syed Bahauddin Alam</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2604.11625">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2604.11625">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Neural operators have emerged as powerful surrogates for partial differential equation (PDE) solvers, yet they are typically trained as monolithic models for individual PDEs, require energy-intensive GPU hardware, and must be retrained from scratch when new physics emerge. We introduce the Spiking Compositional Neural Operator (SCNO), a modular architecture combining spiking and conventional components that addresses all three limitations. SCNO maintains a library of small spiking neural operator blocks, each trained on a single elementary differential operator (convection, diffusion, reaction), and composes them through a lightweight input-conditioned aggregator to solve coupled PDEs not seen during block training. A small correction network learns cross-coupling residuals while keeping all blocks and the aggregator frozen, preserving zero-forgetting modular expansion by construction. We evaluate SCNO on eight PDE families including five coupled systems and a nuclear-relevant 1-group neutron diffusion equation. SCNO with correction achieves the lowest relative $L^2$ error on four of five coupled PDEs, outperforming both a monolithic spiking DeepONet (by up to 62%, mean over 3 seeds) and a standard ANN DeepONet (by up to 65%), while requiring only 95K trainable parameters versus 462K for the monolithic baseline. To our knowledge, this is the first compositional spiking neural operator and the first proof-of-concept for modular neuromorphic PDE solving with built-in forgetting-free expansion.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2604.11625" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
