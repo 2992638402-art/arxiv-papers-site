@@ -1,0 +1,513 @@
+{
+  "date": "2026-04-21",
+  "papers": [
+    {
+      "id": "2604.16279v1",
+      "title": "Evaluating the Progression of Large Language Model Capabilities for Small-Molecule Drug Design",
+      "summary": "Large Language Models (LLMs) have the potential to accelerate small molecule drug design due to their ability to reason about information from diverse sources and formats. However, their practical utility remains unclear due to the lack of benchmarks that reflect real-world scenarios. In this work, we introduce a suite of chemically-grounded tasks spanning molecular property prediction, molecular representation transformations, and molecular design. Importantly, we formulate these tasks as reinforcement learning (RL) environments, enabling a unified approach for evaluation and post-training. Across three model families, we find that frontier models are increasingly proficient at chemical tasks, but that there is significant room for improvement, especially in experimental settings with low data. Critically, we show that RL-based post-training can substantially improve performance. A smaller model post-trained on our environments becomes competitive with state-of-the-art frontier models, despite a significantly weaker base model. This suggests a practical route toward employing LLMs in drug discovery; by combining carefully-designed evaluation tasks with targeted post-training, we can both elucidate and close critical capability gaps.",
+      "authors": [
+        "Shriram Chennakesavalu",
+        "Kirill Shmilovich",
+        "Hayley Weir",
+        "Colin Grambow",
+        "John Bradshaw",
+        "Patricia Suriana",
+        "Chen Cheng",
+        "Kangway Chuang"
+      ],
+      "published": "2026-04-17T17:40:26Z",
+      "updated": "2026-04-17T17:40:26Z",
+      "categories": [
+        "cs.LG",
+        "physics.chem-ph"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16279v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16158v1",
+      "title": "AtManRL: Towards Faithful Reasoning via Differentiable Attention Saliency",
+      "summary": "Large language models (LLMs) increasingly rely on chain-of-thought (CoT) reasoning to solve complex tasks. Yet ensuring that the reasoning trace both contributes to and faithfully reflects the processes underlying the model's final answer, rather than merely accompanying it, remains challenging. We introduce AtManRL, a method that leverages differentiable attention manipulation to learn more faithful reasoning through reinforcement learning. By training an additive attention mask that identifies tokens in the CoT crucial for producing correct answers, we derive a saliency reward signal that encourages the model to generate reasoning traces that genuinely influence its final predictions. We integrate this saliency reward with outcome-based rewards within the GRPO framework to jointly optimize for correctness and interpretability. Experiments on GSM8K and MMLU with Llama-3.2-3B-Instruct demonstrate that our approach can identify influential reasoning tokens and enable training more transparent reasoning models.",
+      "authors": [
+        "Max Henning Höth",
+        "Kristian Kersting",
+        "Björn Deiseroth",
+        "Letitia Parcalabescu"
+      ],
+      "published": "2026-04-17T15:27:35Z",
+      "updated": "2026-04-17T15:27:35Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16158v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16197v1",
+      "title": "Sketching the Readout of Large Language Models for Scalable Data Attribution and Valuation",
+      "summary": "Data attribution and valuation are critical for understanding data-model synergy for Large Language Models (LLMs), yet existing gradient-based methods suffer from scalability challenges on LLMs. Inspired by human cognition, where decision making relies on a focused readout of relevant memories rather than replaying all pathways, we introduce RISE (Readout Influence Sketching Estimator). Instead of computing and indexing gradients across the entire LLM, RISE focuses on influence hotspots at the output layer, where influence signals concentrate, and the gradient admits a decomposed outer-product form. This enables a dual-channel representation combining a lexical residual channel (RH) and a semantic projected-error channel (GH). Applying CountSketch projections to these channels achieves strong compression while maintaining accurate attribution. Across the OLMo (1B-32B) and Pythia (14M-6.9B) families, RISE reduces index storage by up to 112$\\times$ compared to RapidIn and scales to 32B parameters LLM, where gradient-based baselines such as RapidIn and ZO-Inf become memory-infeasible. We evaluate RISE on two paradigms: (1) retrospective attribution, retrieving influential training examples for specific predictions, and (2) prospective valuation, scoring candidate data utility zero-shot. We validate RISE on three tasks: Howdy backdoor data detection, Finance-Medical domain separation, and Brain Rot high-quality data selection. In a closed-loop Brain Rot study, continued pretraining on RISE-selected data yields consistent downstream improvements. Overall, RISE provides a practical and scalable primitive for influence analysis and training-data selection in modern large language models.",
+      "authors": [
+        "Yide Ran",
+        "Jianwen Xie",
+        "Minghui Wang",
+        "Wenjin Zheng",
+        "Denghui Zhang",
+        "Chuan Li",
+        "Zhaozhuo Xu"
+      ],
+      "published": "2026-04-17T16:07:11Z",
+      "updated": "2026-04-17T16:07:11Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16197v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16171v1",
+      "title": "JumpLoRA: Sparse Adapters for Continual Learning in Large Language Models",
+      "summary": "Adapter-based methods have become a cost-effective approach to continual learning (CL) for Large Language Models (LLMs), by sequentially learning a low-rank update matrix for each task. To mitigate catastrophic forgetting, state-of-the-art approaches impose constraints on new adapters with respect to the previous ones, by targeting either subspace or coordinate-wise interference. In this paper, we propose JumpLoRA, a novel framework to adaptively induce sparsity in the Low-Rank Adaptation (LoRA) blocks through the use of JumpReLU gating. The method achieves dynamic parameter isolation, which helps prevent task interference. We demonstrate that our method is highly modular and compatible with LoRA-based CL approaches. Specifically, it significantly boosts the performance of IncLoRA and outperforms the leading state-of-the-art CL method, ELLA.",
+      "authors": [
+        "Alexandra Dragomir",
+        "Ioana Pintilie",
+        "Antonio Barbalau",
+        "Marius Dragoi",
+        "Florin Brad",
+        "Cristian Daniel Paduraru",
+        "Alexandru Tifrea",
+        "Elena Burceanu",
+        "Radu Tudor Ionescu"
+      ],
+      "published": "2026-04-17T15:38:37Z",
+      "updated": "2026-04-17T15:38:37Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16171v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16264v1",
+      "title": "Information Router for Mitigating Modality Dominance in Vision-Language Models",
+      "summary": "Vision Language models (VLMs) have demonstrated strong performance across a wide range of benchmarks, yet they often suffer from modality dominance, where predictions rely disproportionately on a single modality. Prior approaches primarily address this issue by steering model's attention allocation, implicitly assuming that all modalities provide sufficient information. However, attention only determines where the model focuses, and cannot enrich information that is missing or ambiguous. In the real world, input modalities often differ in information density and their signal-to-noise ratios. In such cases, simply adjusting model's attention does not resolve the underlying lack of information. In this paper, we propose \\textsc{MoIR}: \\textit{Multi-modal Information Router}, an information-level fusion method that explicitly reduces information disparity prior to fusion. \\textsc{MoIR} identifies less informative tokens and routes complementary information from a stronger modality, constructing information-dense token representations before they are processed by a large language model. By modifying information availability, \\textsc{MoIR} enables reliable shifts in modality dominance, even when one modality is degraded. We evaluate \\textsc{MoIR} on three widely used multi-modal benchmarks across multiple model backbones. Experimental results show that \\textsc{MoIR} consistently demonstrates more balanced modality contribution, and improves robustness and downstream performance, particularly even under modality degradation. These findings demonstrate that explicitly modifying cross-modal information is an effective and complementary strategy for mitigating modality dominance in multi-modal reasoning models.",
+      "authors": [
+        "Seulgi Kim",
+        "Mohit Prabhushankar",
+        "Ghassan AlRegib"
+      ],
+      "published": "2026-04-17T17:20:42Z",
+      "updated": "2026-04-17T17:20:42Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16264v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16278v1",
+      "title": "Learning to Reason with Insight for Informal Theorem Proving",
+      "summary": "Although most of the automated theorem-proving approaches depend on formal proof systems, informal theorem proving can align better with large language models' (LLMs) strength in natural language processing. In this work, we identify a primary bottleneck in informal theorem proving as a lack of insight, namely the difficulty of recognizing the core techniques required to solve complex problems. To address this, we propose a novel framework designed to cultivate this essential reasoning skill and enable LLMs to perform insightful reasoning. We propose $\\mathtt{DeepInsightTheorem}$, a hierarchical dataset that structures informal proofs by explicitly extracting core techniques and proof sketches alongside the final proof. To fully exploit this dataset, we design a Progressive Multi-Stage SFT strategy that mimics the human learning process, guiding the model from basic proof writing to insightful thinking. Our experiments on challenging mathematical benchmarks demonstrate that this insight-aware generation strategy significantly outperforms baselines. These results demonstrate that teaching models to identify and apply core techniques can substantially improve their mathematical reasoning.",
+      "authors": [
+        "Yunhe Li",
+        "Hao Shi",
+        "Bowen Deng",
+        "Wei Wang",
+        "Mengzhe Ruan",
+        "Hanxu Hou",
+        "Zhongxiang Dai",
+        "Siyang Gao",
+        "Chao Wang",
+        "Shuang Qiu",
+        "Linqi Song"
+      ],
+      "published": "2026-04-17T17:36:21Z",
+      "updated": "2026-04-17T17:36:21Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16278v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16182v1",
+      "title": "Synthetic data in cryptocurrencies using generative models",
+      "summary": "Data plays a fundamental role in consolidating markets, services, and products in the digital financial ecosystem. However, the use of real data, especially in the financial context, can lead to privacy risks and access restrictions, affecting institutions, research, and modeling processes. Although not all financial datasets present such limitations, this work proposes the use of deep learning techniques for generating synthetic data applied to cryptocurrency price time series. The approach is based on Conditional Generative Adversarial Networks (CGANs), combining an LSTM-type recurrent generator and an MLP discriminator to produce statistically consistent synthetic data. The experiments consider different crypto-assets and demonstrate that the model is capable of reproducing relevant temporal patterns, preserving market trends and dynamics. The generation of synthetic series through GANs is an efficient alternative for simulating financial data, showing potential for applications such as market behavior analysis and anomaly detection, with lower computational cost compared to more complex generative approaches.",
+      "authors": [
+        "André Saimon S. Sousa",
+        "Otto Pires",
+        "Frank Acasiete",
+        "Oscar M. Granados",
+        "Valéria Loureiro da Silva",
+        "Hugo Saba"
+      ],
+      "published": "2026-04-17T15:48:05Z",
+      "updated": "2026-04-17T15:48:05Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16182v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16239v1",
+      "title": "Adaptive multi-fidelity optimization with fast learning rates",
+      "summary": "In multi-fidelity optimization, biased approximations of varying costs of the target function are available. This paper studies the problem of optimizing a locally smooth function with a limited budget, where the learner has to make a tradeoff between the cost and the bias of these approximations. We first prove lower bounds for the simple regret under different assumptions on the fidelities, based on a cost-to-bias function. We then present the Kometo algorithm which achieves, with additional logarithmic factors, the same rates without any knowledge of the function smoothness and fidelity assumptions, and improves previously proven guarantees. We finally empirically show that our algorithm outperforms previous multi-fidelity optimization methods without the knowledge of problem-dependent parameters.",
+      "authors": [
+        "Come Fiegel",
+        "Victor Gabillon",
+        "Michal Valko"
+      ],
+      "published": "2026-04-17T16:59:07Z",
+      "updated": "2026-04-17T16:59:07Z",
+      "categories": [
+        "stat.ML",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16239v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16282v1",
+      "title": "Geometric regularization of autoencoders via observed stochastic dynamics",
+      "summary": "Stochastic dynamical systems with slow or metastable behavior evolve, on long time scales, on an unknown low-dimensional manifold in high-dimensional ambient space. Building a reduced simulator from short-burst ambient ensembles is a long-standing problem: local-chart methods like ATLAS suffer from exponential landmark scaling and per-step reprojection, while autoencoder alternatives leave tangent-bundle geometry poorly constrained, and the errors propagate into the learned drift and diffusion. We observe that the ambient covariance~$Λ$ already encodes coordinate-invariant tangent-space information, its range spanning the tangent bundle. Using this, we construct a tangent-bundle penalty and an inverse-consistency penalty for a three-stage pipeline (chart learning, latent drift, latent diffusion) that learns a single nonlinear chart and the latent SDE. The penalties induce a function-space metric, the $ρ$-metric, strictly weaker than the Sobolev $H^1$ norm yet achieving the same chart-quality generalization rate up to logarithmic factors. For the drift, we derive an encoder-pullback target via Itô's formula on the learned encoder and prove a bias decomposition showing the standard decoder-side formula carries systematic error for any imperfect chart. Under a $W^{2,\\infty}$ chart-convergence assumption, chart-level error propagates controllably to weak convergence of the ambient dynamics and to convergence of radial mean first-passage times. Experiments on four surfaces embedded in up to $201$ ambient dimensions reduce radial MFPT error by $50$--$70\\%$ under rotation dynamics and achieve the lowest inter-well MFPT error on most surface--transition pairs under metastable Müller--Brown Langevin dynamics, while reducing end-to-end ambient coefficient errors by up to an order of magnitude relative to an unregularized autoencoder.",
+      "authors": [
+        "Sean Hill",
+        "Felix X. -F. Ye"
+      ],
+      "published": "2026-04-17T17:44:02Z",
+      "updated": "2026-04-17T17:44:02Z",
+      "categories": [
+        "cs.LG",
+        "math.DS",
+        "math.PR"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16282v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16242v1",
+      "title": "Detecting and Suppressing Reward Hacking with Gradient Fingerprints",
+      "summary": "Reinforcement learning with verifiable rewards (RLVR) typically optimizes for outcome rewards without imposing constraints on intermediate reasoning. This leaves training susceptible to reward hacking, where models exploit loopholes (e.g., spurious patterns in training data) in the reward function to achieve high scores without solving the intended task. These reward-hacking behaviors are often implicit, as the intermediate chain-of-thought (CoT) may appear plausible on the surface, limiting the effectiveness of purely text-based monitoring. We propose Gradient Fingerprint (GRIFT), a method for detecting reward hacking using models' internal computations. Given a prompt and a model-generated CoT, GRIFT computes gradients of the CoT conditioned on the prompt and compresses them into a compact representation, which is then used to assess whether the CoT reflects reward hacking behavior. Across verifiable reasoning benchmarks spanning math, code, and logical reasoning, GRIFT substantially outperforms strong baselines, including CoT Monitor and TRACE, achieving over 25% relative improvement in detecting reward hacking behavior. Moreover, integrating GRIFT into the rejection fine-tuning pipeline for reasoning tasks reduces reward hacking and improves performance on the true task objective. Our results highlight a promising direction of leveraging gradient level representations for assessing the quality of CoT reasoning traces. Our code is available at: https://github.com/songtao-x/reward_hack.",
+      "authors": [
+        "Songtao Wang",
+        "Quang Hieu Pham",
+        "Fangcong Yin",
+        "Xinpeng Wang",
+        "Jocelyn Qiaochu Chen",
+        "Greg Durrett",
+        "Xi Ye"
+      ],
+      "published": "2026-04-17T17:01:24Z",
+      "updated": "2026-04-17T17:01:24Z",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16242v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16238v1",
+      "title": "Enhancing AI and Dynamical Subseasonal Forecasts with Probabilistic Bias Correction",
+      "summary": "Decision-makers rely on weather forecasts to plant crops, manage wildfires, allocate water and energy, and prepare for weather extremes. Today, such forecasts enjoy unprecedented accuracy out to two weeks thanks to steady advances in physics-based dynamical models and data-driven artificial intelligence (AI) models. However, model skill drops precipitously at subseasonal timescales (2 - 6 weeks ahead), due to compounding errors and persistent biases. To counter this degradation, we introduce probabilistic bias correction (PBC), a machine learning framework that substantially reduces systematic error by learning to correct historical probabilistic forecasts. When applied to the leading dynamical and AI models from the European Centre for Medium-Range Weather Forecasts (ECMWF), PBC doubles the subseasonal skill of the AI Forecasting System and improves the skill of the operationally-debiased dynamical model for 91% of pressure, 92% of temperature, and 98% of precipitation targets. We designed PBC for operational deployment, and, in ECMWF's 2025 real-time forecasting competition, its global forecasts placed first for all weather variables and lead times, outperforming the dynamical models from six operational forecasting centers, an international dynamical multi-model ensemble, ECMWF's AI Forecasting System, and the forecasting systems of 34 teams worldwide. These probabilistic skill gains translate into more accurate prediction of extreme events and have the potential to improve agricultural planning, energy management, and disaster preparedness in vulnerable communities.",
+      "authors": [
+        "Hannah Guan",
+        "Soukayna Mouatadid",
+        "Paulo Orenstein",
+        "Judah Cohen",
+        "Haiyu Dong",
+        "Zekun Ni",
+        "Jeremy Berman",
+        "Genevieve Flaspohler",
+        "Alex Lu",
+        "Jakob Schloer",
+        "Joshua Talib",
+        "Jonathan A. Weyn",
+        "Lester Mackey"
+      ],
+      "published": "2026-04-17T16:58:06Z",
+      "updated": "2026-04-17T16:58:06Z",
+      "categories": [
+        "cs.LG",
+        "physics.ao-ph",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16238v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16123v1",
+      "title": "Tabular foundation models for in-context prediction of molecular properties",
+      "summary": "Accurate molecular property prediction is central to drug discovery, catalysis, and process design, yet real-world applications are often limited by small datasets. Molecular foundation models provide a promising direction by learning transferable molecular representations; however, they typically involve task-specific fine-tuning, require machine learning expertise, and often fail to outperform classical baselines. Tabular foundation models (TFMs) offer a fundamentally different paradigm: they perform predictions through in-context learning, enabling inference without task-specific training. Here, we evaluate TFMs in the low- to medium-data regime across both standardized pharmaceutical benchmarks and chemical engineering datasets. We evaluate both frozen molecular foundation model representations, as well as classical descriptors and fingerprints. Across the benchmarks, the approach shows excellent predictive performance while reducing computational cost, compared to fine-tuning, with these advantages also transferring to practical engineering data settings. In particular, combining TFMs with CheMeleon embeddings yields up to 100\\% win rates on 30 MoleculeACE tasks, while compact RDKit2d and Mordred descriptors provide strong descriptor-based alternatives. Molecular representation emerges as a key determinant in TFM performance, with molecular foundation model embeddings and 2D descriptor sets both providing substantial gains over classic molecular fingerprints on many tasks. These results suggest that in-context learning with TFMs provides a highly accurate and cost-efficient alternative for property prediction in practical applications.",
+      "authors": [
+        "Karim K. Ben Hicham",
+        "Jan G. Rittig",
+        "Martin Grohe",
+        "Alexander Mitsos"
+      ],
+      "published": "2026-04-17T14:58:43Z",
+      "updated": "2026-04-17T14:58:43Z",
+      "categories": [
+        "cs.LG",
+        "physics.chem-ph"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16123v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16259v1",
+      "title": "Beyond Distribution Sharpening: The Importance of Task Rewards",
+      "summary": "Frontier models have demonstrated exceptional capabilities following the integration of task-reward-based reinforcement learning (RL) into their training pipelines, enabling systems to evolve from pure reasoning models into sophisticated agents. However, debate persists regarding whether RL genuinely instills new skills within a base model or merely sharpens its existing distribution to elicit latent capabilities. To address this dichotomy, we present an explicit comparison between distribution sharpening and task-reward-based learning, utilizing RL as a tool to implement both paradigms. Our analysis reveals the inherent limitations of distribution sharpening, demonstrating from first principles how and why the optima can be unfavorable and the approach fundamentally unstable. Furthermore, our experiments using Llama-3.2-3B-Instruct, Qwen2.5-3B-Instruct and Qwen3-4B-Instruct-2507 on math datasets confirm that sharpening yields limited gains, whereas incorporating task-based reward signal can greatly help achieve robust performance improvements and stable learning.",
+      "authors": [
+        "Sarthak Mittal",
+        "Leo Gagnon",
+        "Guillaume Lajoie"
+      ],
+      "published": "2026-04-17T17:17:55Z",
+      "updated": "2026-04-17T17:17:55Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16259v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16117v1",
+      "title": "SCRIPT: Implementing an Intelligent Tutoring System for Programming in a German University Context",
+      "summary": "Practice and extensive exercises are essential in programming education. Intelligent tutoring systems (ITSs) are a viable option to provide individualized hints and advice to programming students even when human tutors are not available. However, prior ITS for programming rarely support the Python programming language, mostly focus on introductory programming, and rarely take recent developments in generative models into account. We aim to establish a novel ITS for Python programming that is highly adaptable, serves both as a teaching and research platform, provides interfaces to plug in hint mechanisms (e.g.\\ via large language models), and works inside the particularly challenging regulatory environment of Germany, that is, conforming to the European data protection regulation, the European AI act, and ethical framework of the German Research Foundation. In this paper, we present the description of the current state of the ITS along with future development directions, as well as discuss the challenges and opportunities for improving the system.",
+      "authors": [
+        "Alina Deriyeva",
+        "Jesper Dannath",
+        "Benjamin Paassen"
+      ],
+      "published": "2026-04-17T14:53:38Z",
+      "updated": "2026-04-17T14:53:38Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16117v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16084v1",
+      "title": "Unveiling Stochasticity: Universal Multi-modal Probabilistic Modeling for Traffic Forecasting",
+      "summary": "Traffic forecasting is a challenging spatio-temporal modeling task and a critical component of urban transportation management. Current studies mainly focus on deterministic predictions, with limited considerations on the uncertainty and stochasticity in traffic dynamics. Therefore, this paper proposes an elegant yet universal approach that transforms existing models into probabilistic predictors by replacing only the final output layer with a novel Gaussian Mixture Model (GMM) layer. The modified model requires no changes to the training pipeline and can be trained using only the Negative Log-Likelihood (NLL) loss, without any auxiliary or regularization terms. Experiments on multiple traffic datasets show that our approach generalizes from classic to modern model architectures while preserving deterministic performance. Furthermore, we propose a systematic evaluation procedure based on cumulative distributions and confidence intervals, and demonstrate that our approach is considerably more accurate and informative than unimodal or deterministic baselines. Finally, a more detailed study on a real-world dense urban traffic network is presented to examine the impact of data quality on uncertainty quantification and to show the robustness of our approach under imperfect data conditions. Code available at https://github.com/Weijiang-Xiong/OpenSkyTraffic",
+      "authors": [
+        "Weijiang Xiong",
+        "Robert Fonod",
+        "Nikolas Geroliminis"
+      ],
+      "published": "2026-04-17T14:10:16Z",
+      "updated": "2026-04-17T14:10:16Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16084v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16138v1",
+      "title": "Sentiment Analysis of German Sign Language Fairy Tales",
+      "summary": "We present a dataset and a model for sentiment analysis of German sign language (DGS) fairy tales. First, we perform sentiment analysis for three levels of valence (negative, neutral, positive) on German fairy tales text segments using four large language models (LLMs) and majority voting, reaching an inter-annotator agreement of 0.781 Krippendorff's alpha. Second, we extract face and body motion features from each corresponding DGS video segment using MediaPipe. Finally, we train an explainable model (based on XGBoost) to predict negative, neutral or positive sentiment from video features. Results show an average balanced accuracy of 0.631. A thorough analysis of the most important features reveal that, in addition to eyebrows and mouth motion on the face, also the motion of hips, elbows, and shoulders considerably contribute in the discrimination of the conveyed sentiment, indicating an equal importance of face and body for sentiment communication in sign language.",
+      "authors": [
+        "Fabrizio Nunnari",
+        "Siddhant Jain",
+        "Patrick Gebhard"
+      ],
+      "published": "2026-04-17T15:10:59Z",
+      "updated": "2026-04-17T15:10:59Z",
+      "categories": [
+        "cs.CL",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16138v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16119v1",
+      "title": "Univariate Channel Fusion for Multivariate Time Series Classification",
+      "summary": "Multivariate time series classification (MTSC) plays a crucial role in various domains, including biomedical signal analysis and motion monitoring. However, existing approaches, particularly deep learning models, often require high computational resources, making them unsuitable for real-time applications or deployment on low-cost hardware, such as IoT devices and wearable systems. In this paper, we propose the Univariate Channel Fusion (UCF) method to deal with MTSC efficiently. UCF transforms multivariate time series into a univariate representation through simple channel fusion strategies such as the mean, median, or dynamic time warping barycenter. This transformation enables the use of any classifier originally designed for univariate time series, providing a flexible and computationally lightweight alternative to complex models. We evaluate UCF in five case studies covering diverse application domains, including chemical monitoring, brain-computer interfaces, and human activity analysis. The results demonstrate that UCF often outperforms baseline methods and state-of-the-art algorithms tailored for MTSC, while achieving substantial gains in computational efficiency, being particularly effective in problems with high inter-channel correlation.",
+      "authors": [
+        "Fernando Moro",
+        "Vinicius M. A. Souza"
+      ],
+      "published": "2026-04-17T14:54:18Z",
+      "updated": "2026-04-17T14:54:18Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16119v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16145v1",
+      "title": "Training Time Prediction for Mixed Precision-based Distributed Training",
+      "summary": "Accurate prediction of training time in distributed deep learning is crucial for resource allocation, cost estimation, and job scheduling. We observe that the floating-point precision setting is a key determinant of training time, leading to training time variations of ~2.4x over its minimum. However, existing studies on distributed training time prediction rely on static model computation graphs that do not capture precision variations, including mixed precision. According to our experiments, training time prediction without considering precision results in significant prediction errors - reaching up to 147.85% in mean absolute percentage error (MAPE). To address this issue, we propose a precision-aware distributed training time predictor that achieves robust accuracy across diverse precision settings, including mixed precision, with 9.8% MAPE.",
+      "authors": [
+        "Minchul Kang",
+        "Changyong Shin",
+        "Jinwoo Jeong",
+        "Hyunho Lee",
+        "Younghun Go",
+        "Gyeongmin Kim",
+        "Gyeongsik Yang",
+        "Chuck Yoo"
+      ],
+      "published": "2026-04-17T15:18:01Z",
+      "updated": "2026-04-17T15:18:01Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.DC",
+        "cs.PF"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16145v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16247v1",
+      "title": "Joint-Centric Dual Contrastive Alignment with Structure-Preserving and Information-Balanced Regularization",
+      "summary": "We propose HILBERT (HIerarchical Long-sequence Balanced Embedding with Reciprocal contrastive Training), a cross-attentive multimodal framework for learning document-level audio-text representations from long, segmented sequences in low-resource data settings. HILBERT leverages frozen pre-trained speech and language encoders to extract segment-level features, which are aggregated via cross-modal attention and self-attentive pooling to form modality-specific document representations and a joint cross-attentive embedding. To align modalities while preserving modality-specific structure under severe audio-text dimensional imbalance, we introduce a reciprocal dual contrastive objective that simultaneously aligns audio-to-joint and text-to-joint representations, rather than directly contrasting audio and text alone. Two auxiliary regularizers further stabilize long-sequence fusion: a Centered Kernel Alignment (CKA) loss that preserves structural consistency between each modality and the joint embedding, and a mutual information balancing loss that prevents dominance of a single modality by equalizing information flow from audio and text into the joint space. For downstream prediction, HILBERT employs a Mixture-of-Experts (MoE) classifier over concatenated audio, text, and joint representations to accommodate heterogeneous label regimes. Extensive evaluation across multiple audio-text backbone combinations demonstrates that HILBERT learns semantically meaningful long-sequence representations and achieves superior performance on highly imbalanced multi-class settings.",
+      "authors": [
+        "Habibeh Naderi",
+        "Behrouz Haji Soleimani",
+        "Stan Matwin"
+      ],
+      "published": "2026-04-17T17:07:35Z",
+      "updated": "2026-04-17T17:07:35Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16247v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16220v1",
+      "title": "OT on the Map: Quantifying Domain Shifts in Geographic Space",
+      "summary": "In computer vision and machine learning for geographic data, out-of-domain generalization is a pervasive challenge, arising from uneven global data coverage and distribution shifts across geographic regions. Though models are frequently trained in one region and deployed in another, there is no principled method for determining when this cross-region adaptation will be successful. A well-defined notion of distance between distributions can effectively quantify how different a new target domain is compared to the domains used for model training, which in turn could support model training and deployment decisions. In this paper, we propose a strategy for computing distances between geospatial domains that leverages geographic information with Optimal Transport methods (GeoSpOT). In our experiments, GeoSpOT distances emerge as effective predictors of cross-domain transfer difficulty. We further demonstrate that embeddings from pretrained location encoders provide information comparable to image/text embeddings, despite relying solely on longitude-latitude pairs as input. This allows users to get an approximation of out-of-domain performance for geospatial models, even when the exact downstream task is unknown, or no task-specific data is available. Building on these findings, we show that GeoSpOT distances can preemptively guide data selection and enable predictive tools to analyze regions where a model is likely to underperform.",
+      "authors": [
+        "Haoran Zhang",
+        "Livia Betti",
+        "Konstantin Klemmer",
+        "Esther Rolf",
+        "David Alvarez-Melis"
+      ],
+      "published": "2026-04-17T16:33:38Z",
+      "updated": "2026-04-17T16:33:38Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16220v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16087v1",
+      "title": "The Harder Path: Last Iterate Convergence for Uncoupled Learning in Zero-Sum Games with Bandit Feedback",
+      "summary": "We study the problem of learning in zero-sum matrix games with repeated play and bandit feedback. Specifically, we focus on developing uncoupled algorithms that guarantee, without communication between players, the convergence of the last-iterate to a Nash equilibrium. Although the non-bandit case has been studied extensively, this setting has only been explored recently, with a bound of $\\mathcal{O}(T^{-1/8})$ on the exploitability gap. We show that, for uncoupled algorithms, guaranteeing convergence of the policy profiles to a Nash equilibrium is detrimental to the performance, with the best attainable rate being $Ω(T^{-1/4})$ in contrast to the usual $Ω(T^{-1/2})$ rate for convergence of the average iterates. We then propose two algorithms that achieve this optimal rate up to constant and logarithmic factors. The first algorithm leverages a straightforward trade-off between exploration and exploitation, while the second employs a regularization technique based on a two-step mirror descent approach.",
+      "authors": [
+        "Côme Fiegel",
+        "Pierre Ménard",
+        "Tadashi Kozuno",
+        "Michal Valko",
+        "Vianney Perchet"
+      ],
+      "published": "2026-04-17T14:17:09Z",
+      "updated": "2026-04-17T14:17:09Z",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16087v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16086v1",
+      "title": "Stylistic-STORM (ST-STORM) : Perceiving the Semantic Nature of Appearance",
+      "summary": "One of the dominant paradigms in self-supervised learning (SSL), illustrated by MoCo or DINO, aims to produce robust representations by capturing features that are insensitive to certain image transformations such as illumination, or geometric changes. This strategy is appropriate when the objective is to recognize objects independently of their appearance. However, it becomes counterproductive as soon as appearance itself constitutes the discriminative signal. In weather analysis, for example, rain streaks, snow granularity, atmospheric scattering, as well as reflections and halos, are not noise: they carry the essential information. In critical applications such as autonomous driving, ignoring these cues is risky, since grip and visibility depend directly on ground conditions and atmospheric conditions. We introduce ST-STORM, a hybrid SSL framework that treats appearance (style) as a semantic modality to be disentangled from content. Our architecture explicitly separates two latent streams, regulated by gating mechanisms. The Content branch aims at a stable semantic representation through a JEPA scheme coupled with a contrastive objective, promoting invariance to appearance variations. In parallel, the Style branch is constrained to capture appearance signatures (textures, contrasts, scattering) through feature prediction and reconstruction under an adversarial constraint. We evaluate ST-STORM on several tasks, including object classification (ImageNet-1K), fine-grained weather characterization, and melanoma detection (ISIC 2024 Challenge). The results show that the Style branch effectively isolates complex appearance phenomena (F1=97% on Multi-Weather and F1=94% on ISIC 2024 with 10% labeled data), without degrading the semantic performance (F1=80% on ImageNet-1K) of the Content branch, and improves the preservation of critical appearance",
+      "authors": [
+        "Hamed Ouattara",
+        "Pierre Duthon",
+        "Pascal Houssam Salmane",
+        "Frédéric Bernardin",
+        "Omar Ait Aider"
+      ],
+      "published": "2026-04-17T14:15:12Z",
+      "updated": "2026-04-17T14:15:12Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16086v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16265v1",
+      "title": "FL-MHSM: Spatially-adaptive Fusion and Ensemble Learning for Flood-Landslide Multi-Hazard Susceptibility Mapping at Regional Scale",
+      "summary": "Existing multi-hazard susceptibility mapping (MHSM) studies often rely on spatially uniform models, treat hazards independently, and provide limited representation of cross-hazard dependence and uncertainty. To address these limitations, this study proposes a deep learning (DL) workflow for joint flood-landslide multi-hazard susceptibility mapping (FL-MHSM) that combines two-level spatial partitioning, probabilistic Early Fusion (EF), a tree-based Late Fusion (LF) baseline, and a soft-gating Mixture of Experts (MoE) model, with MoE serving as final predictive model. The proposed design preserves spatial heterogeneity through zonal partitions and enables data-parallel large-area prediction using overlapping lattice grids. In Kerala, EF remained competitive with LF, improving flood recall from 0.816 to 0.840 and reducing Brier score from 0.092 to 0.086, while MoE provided strongest performance for flood susceptibility, achieving an AUC-ROC of 0.905, recall of 0.930, and F1-score of 0.722. In Nepal, EF similarly improved flood recall from 0.820 to 0.858 and reduced Brier score from 0.057 to 0.049 relative to LF, while MoE outperformed both EF and LF for landslide susceptibility, achieving an AUC-ROC of 0.914, recall of 0.901, and F1-score of 0.559. GeoDetector analysis of MoE outputs further showed that dominant factors varied more across zones in Kerala, where susceptibility was shaped by different combinations of topographic, land-cover, and drainage-related controls, while Nepal showed a more consistent influence of topographic and glacier-related factors across zones. These findings show that EF and LF provide complementary predictive behavior, and that their spatially adaptive integration through MoE yields robust overall predictive performance for FL-MHSM while supporting interpretable characterization of multi-hazard susceptibility in spatially heterogeneous landscapes.",
+      "authors": [
+        "Aswathi Mundayatt",
+        "Jaya Sreevalsan-Nair"
+      ],
+      "published": "2026-04-17T17:23:55Z",
+      "updated": "2026-04-17T17:23:55Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16265v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16111v1",
+      "title": "Sample Complexity Bounds for Stochastic Shortest Path with a Generative Model",
+      "summary": "We study the sample complexity of learning an $ε$-optimal policy in the Stochastic Shortest Path (SSP) problem. We first derive sample complexity bounds when the learner has access to a generative model. We show that there exists a worst-case SSP instance with $S$ states, $A$ actions, minimum cost $c_{\\min}$, and maximum expected cost of the optimal policy over all states $B_{\\star}$, where any algorithm requires at least $Ω(SAB_{\\star}^3/(c_{\\min}ε^2))$ samples to return an $ε$-optimal policy with high probability. Surprisingly, this implies that whenever $c_{\\min} = 0$ an SSP problem may not be learnable, thus revealing that learning in SSPs is strictly harder than in the finite-horizon and discounted settings. We complement this lower bound with an algorithm that matches it, up to logarithmic factors, in the general case, and an algorithm that matches it up to logarithmic factors even when $c_{\\min} = 0$, but only under the condition that the optimal policy has a bounded hitting time to the goal state.",
+      "authors": [
+        "Jean Tarbouriech",
+        "Matteo Pirotta",
+        "Michal Valko",
+        "Alessandro Lazaric"
+      ],
+      "published": "2026-04-17T14:47:52Z",
+      "updated": "2026-04-17T14:47:52Z",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16111v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.16232v1",
+      "title": "Neuro-Symbolic ODE Discovery with Latent Grammar Flow",
+      "summary": "Understanding natural and engineered systems often relies on symbolic formulations, such as differential equations, which provide interpretability and transferability beyond black-box models. We introduce Latent Grammar Flow (LGF), a neuro-symbolic generative framework for discovering ordinary differential equations from data. LGF embeds equations as grammar-based representations into a discrete latent space and forces semantically similar equations to be positioned closer together with a behavioural loss. Then, a discrete flow model guides the sampling process to recursively generate candidate equations that best fit the observed data. Domain knowledge and constraints, such as stability, can be either embedded into the rules or used as conditional predictors.",
+      "authors": [
+        "Karin Yu",
+        "Eleni Chatzi",
+        "Georgios Kissas"
+      ],
+      "published": "2026-04-17T16:46:23Z",
+      "updated": "2026-04-17T16:46:23Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CE",
+        "cs.SC"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16232v1.pdf",
+      "category": "ml-theory"
+    }
+  ]
+}

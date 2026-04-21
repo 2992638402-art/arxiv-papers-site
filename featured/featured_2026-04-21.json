@@ -1,0 +1,119 @@
+{
+  "date": "2026-04-21",
+  "papers": [
+    {
+      "id": "2604.16279v1",
+      "title": "Evaluating the Progression of Large Language Model Capabilities for Small-Molecule Drug Design",
+      "summary": "Large Language Models (LLMs) have the potential to accelerate small molecule drug design due to their ability to reason about information from diverse sources and formats. However, their practical utility remains unclear due to the lack of benchmarks that reflect real-world scenarios. In this work, we introduce a suite of chemically-grounded tasks spanning molecular property prediction, molecular representation transformations, and molecular design. Importantly, we formulate these tasks as reinforcement learning (RL) environments, enabling a unified approach for evaluation and post-training. Across three model families, we find that frontier models are increasingly proficient at chemical tasks, but that there is significant room for improvement, especially in experimental settings with low data. Critically, we show that RL-based post-training can substantially improve performance. A smaller model post-trained on our environments becomes competitive with state-of-the-art frontier models, despite a significantly weaker base model. This suggests a practical route toward employing LLMs in drug discovery; by combining carefully-designed evaluation tasks with targeted post-training, we can both elucidate and close critical capability gaps.",
+      "authors": [
+        "Shriram Chennakesavalu",
+        "Kirill Shmilovich",
+        "Hayley Weir",
+        "Colin Grambow",
+        "John Bradshaw",
+        "Patricia Suriana",
+        "Chen Cheng",
+        "Kangway Chuang"
+      ],
+      "published": "2026-04-17T17:40:26Z",
+      "updated": "2026-04-17T17:40:26Z",
+      "categories": [
+        "cs.LG",
+        "physics.chem-ph"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16279v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16171v1",
+      "title": "JumpLoRA: Sparse Adapters for Continual Learning in Large Language Models",
+      "summary": "Adapter-based methods have become a cost-effective approach to continual learning (CL) for Large Language Models (LLMs), by sequentially learning a low-rank update matrix for each task. To mitigate catastrophic forgetting, state-of-the-art approaches impose constraints on new adapters with respect to the previous ones, by targeting either subspace or coordinate-wise interference. In this paper, we propose JumpLoRA, a novel framework to adaptively induce sparsity in the Low-Rank Adaptation (LoRA) blocks through the use of JumpReLU gating. The method achieves dynamic parameter isolation, which helps prevent task interference. We demonstrate that our method is highly modular and compatible with LoRA-based CL approaches. Specifically, it significantly boosts the performance of IncLoRA and outperforms the leading state-of-the-art CL method, ELLA.",
+      "authors": [
+        "Alexandra Dragomir",
+        "Ioana Pintilie",
+        "Antonio Barbalau",
+        "Marius Dragoi",
+        "Florin Brad",
+        "Cristian Daniel Paduraru",
+        "Alexandru Tifrea",
+        "Elena Burceanu",
+        "Radu Tudor Ionescu"
+      ],
+      "published": "2026-04-17T15:38:37Z",
+      "updated": "2026-04-17T15:38:37Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16171v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16197v1",
+      "title": "Sketching the Readout of Large Language Models for Scalable Data Attribution and Valuation",
+      "summary": "Data attribution and valuation are critical for understanding data-model synergy for Large Language Models (LLMs), yet existing gradient-based methods suffer from scalability challenges on LLMs. Inspired by human cognition, where decision making relies on a focused readout of relevant memories rather than replaying all pathways, we introduce RISE (Readout Influence Sketching Estimator). Instead of computing and indexing gradients across the entire LLM, RISE focuses on influence hotspots at the output layer, where influence signals concentrate, and the gradient admits a decomposed outer-product form. This enables a dual-channel representation combining a lexical residual channel (RH) and a semantic projected-error channel (GH). Applying CountSketch projections to these channels achieves strong compression while maintaining accurate attribution. Across the OLMo (1B-32B) and Pythia (14M-6.9B) families, RISE reduces index storage by up to 112$\\times$ compared to RapidIn and scales to 32B parameters LLM, where gradient-based baselines such as RapidIn and ZO-Inf become memory-infeasible. We evaluate RISE on two paradigms: (1) retrospective attribution, retrieving influential training examples for specific predictions, and (2) prospective valuation, scoring candidate data utility zero-shot. We validate RISE on three tasks: Howdy backdoor data detection, Finance-Medical domain separation, and Brain Rot high-quality data selection. In a closed-loop Brain Rot study, continued pretraining on RISE-selected data yields consistent downstream improvements. Overall, RISE provides a practical and scalable primitive for influence analysis and training-data selection in modern large language models.",
+      "authors": [
+        "Yide Ran",
+        "Jianwen Xie",
+        "Minghui Wang",
+        "Wenjin Zheng",
+        "Denghui Zhang",
+        "Chuan Li",
+        "Zhaozhuo Xu"
+      ],
+      "published": "2026-04-17T16:07:11Z",
+      "updated": "2026-04-17T16:07:11Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16197v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16158v1",
+      "title": "AtManRL: Towards Faithful Reasoning via Differentiable Attention Saliency",
+      "summary": "Large language models (LLMs) increasingly rely on chain-of-thought (CoT) reasoning to solve complex tasks. Yet ensuring that the reasoning trace both contributes to and faithfully reflects the processes underlying the model's final answer, rather than merely accompanying it, remains challenging. We introduce AtManRL, a method that leverages differentiable attention manipulation to learn more faithful reasoning through reinforcement learning. By training an additive attention mask that identifies tokens in the CoT crucial for producing correct answers, we derive a saliency reward signal that encourages the model to generate reasoning traces that genuinely influence its final predictions. We integrate this saliency reward with outcome-based rewards within the GRPO framework to jointly optimize for correctness and interpretability. Experiments on GSM8K and MMLU with Llama-3.2-3B-Instruct demonstrate that our approach can identify influential reasoning tokens and enable training more transparent reasoning models.",
+      "authors": [
+        "Max Henning Höth",
+        "Kristian Kersting",
+        "Björn Deiseroth",
+        "Letitia Parcalabescu"
+      ],
+      "published": "2026-04-17T15:27:35Z",
+      "updated": "2026-04-17T15:27:35Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16158v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.16264v1",
+      "title": "Information Router for Mitigating Modality Dominance in Vision-Language Models",
+      "summary": "Vision Language models (VLMs) have demonstrated strong performance across a wide range of benchmarks, yet they often suffer from modality dominance, where predictions rely disproportionately on a single modality. Prior approaches primarily address this issue by steering model's attention allocation, implicitly assuming that all modalities provide sufficient information. However, attention only determines where the model focuses, and cannot enrich information that is missing or ambiguous. In the real world, input modalities often differ in information density and their signal-to-noise ratios. In such cases, simply adjusting model's attention does not resolve the underlying lack of information. In this paper, we propose \\textsc{MoIR}: \\textit{Multi-modal Information Router}, an information-level fusion method that explicitly reduces information disparity prior to fusion. \\textsc{MoIR} identifies less informative tokens and routes complementary information from a stronger modality, constructing information-dense token representations before they are processed by a large language model. By modifying information availability, \\textsc{MoIR} enables reliable shifts in modality dominance, even when one modality is degraded. We evaluate \\textsc{MoIR} on three widely used multi-modal benchmarks across multiple model backbones. Experimental results show that \\textsc{MoIR} consistently demonstrates more balanced modality contribution, and improves robustness and downstream performance, particularly even under modality degradation. These findings demonstrate that explicitly modifying cross-modal information is an effective and complementary strategy for mitigating modality dominance in multi-modal reasoning models.",
+      "authors": [
+        "Seulgi Kim",
+        "Mohit Prabhushankar",
+        "Ghassan AlRegib"
+      ],
+      "published": "2026-04-17T17:20:42Z",
+      "updated": "2026-04-17T17:20:42Z",
+      "categories": [
+        "cs.CV",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.16264v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2604.16279v1",
+    "2604.16171v1",
+    "2604.16197v1",
+    "2604.16158v1",
+    "2604.16264v1"
+  ]
+}
