@@ -1,0 +1,969 @@
+{
+  "date": "2026-04-23",
+  "total": 25,
+  "papers": [
+    {
+      "id": "2604.19740v1",
+      "title": "Generalization at the Edge of Stability",
+      "summary": "Training modern neural networks often relies on large learning rates, operating at the edge of stability, where the optimization dynamics exhibit oscillatory and chaotic behavior. Empirically, this regime often yields improved generalization performance, yet the underlying mechanism remains poorly understood. In this work, we represent stochastic optimizers as random dynamical systems, which often converge to a fractal attractor set (rather than a point) with a smaller intrinsic dimension. Building on this connection and inspired by Lyapunov dimension theory, we introduce a novel notion of dimension, coined the `sharpness dimension', and prove a generalization bound based on this dimension. Our results show that generalization in the chaotic regime depends on the complete Hessian spectrum and the structure of its partial determinants, highlighting a complexity that cannot be captured by the trace or spectral norm considered in prior work. Experiments across various MLPs and transformers validate our theory while also providing new insights into the recently observed phenomenon of grokking.",
+      "authors": [
+        "Mario Tuci",
+        "Caner Korkmaz",
+        "Umut Şimşekli",
+        "Tolga Birdal"
+      ],
+      "published": "2026-04-21T17:59:02Z",
+      "updated": "2026-04-21T17:59:02Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CV",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19740v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.19738v1",
+      "title": "Phase Transitions in the Fluctuations of Functionals of Random Neural Networks",
+      "summary": "We establish central and non-central limit theorems for sequences of functionals of the Gaussian output of an infinitely-wide random neural network on the d-dimensional sphere . We show that the asymptotic behaviour of these functionals as the depth of the network increases depends crucially on the fixed points of the covariance function, resulting in three distinct limiting regimes: convergence to the same functional of a limiting Gaussian field, convergence to a Gaussian distribution, convergence to a distribution in the Qth Wiener chaos. Our proofs exploit tools that are now classical (Hermite expansions, Diagram Formula, Stein-Malliavin techniques), but also ideas which have never been used in similar contexts: in particular, the asymptotic behaviour is determined by the fixed-point structure of the iterative operator associated with the covariance, whose nature and stability governs the different limiting regimes.",
+      "authors": [
+        "Simmaco Di Lillo",
+        "Leonardo Maini",
+        "Domenico Marinucci"
+      ],
+      "published": "2026-04-21T17:58:39Z",
+      "updated": "2026-04-21T17:58:39Z",
+      "categories": [
+        "math.PR",
+        "cs.LG",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19738v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19737v1",
+      "title": "Safe Continual Reinforcement Learning in Non-stationary Environments",
+      "summary": "Reinforcement learning (RL) offers a compelling data-driven paradigm for synthesizing controllers for complex systems when accurate physical models are unavailable; however, most existing control-oriented RL methods assume stationarity and, therefore, struggle in real-world non-stationary deployments where system dynamics and operating conditions can change unexpectedly. Moreover, RL controllers acting in physical environments must satisfy safety constraints throughout their learning and execution phases, rendering transient violations during adaptation unacceptable. Although continual RL and safe RL have each addressed non-stationarity and safety, respectively, their intersection remains comparatively unexplored, motivating the study of safe continual RL algorithms that can adapt over the system's lifetime while preserving safety. In this work, we systematically investigate safe continual reinforcement learning by introducing three benchmark environments that capture safety-critical continual adaptation and by evaluating representative approaches from safe RL, continual RL, and their combinations. Our empirical results reveal a fundamental tension between maintaining safety constraints and preventing catastrophic forgetting under non-stationary dynamics, with existing methods generally failing to achieve both objectives simultaneously. To address this shortcoming, we examine regularization-based strategies that partially mitigate this trade-off and characterize their benefits and limitations. Finally, we outline key open challenges and research directions toward developing safe, resilient learning-based controllers capable of sustained autonomous operation in changing environments.",
+      "authors": [
+        "Austin Coursey",
+        "Abel Diaz-Gonzalez",
+        "Marcos Quinones-Grueiro",
+        "Gautam Biswas"
+      ],
+      "published": "2026-04-21T17:58:32Z",
+      "updated": "2026-04-21T17:58:32Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19737v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19730v1",
+      "title": "FASTER: Value-Guided Sampling for Fast RL",
+      "summary": "Some of the most performant reinforcement learning algorithms today can be prohibitively expensive as they use test-time scaling methods such as sampling multiple action candidates and selecting the best one. In this work, we propose FASTER, a method for getting the benefits of sampling-based test-time scaling of diffusion-based policies without the computational cost by tracing the performance gain of action samples back to earlier in the denoising process. Our key insight is that we can model the denoising of multiple action candidates and selecting the best one as a Markov Decision Process (MDP) where the goal is to progressively filter action candidates before denoising is complete. With this MDP, we can learn a policy and value function in the denoising space that predicts the downstream value of action candidates in the denoising process and filters them while maximizing returns. The result is a method that is lightweight and can be plugged into existing generative RL algorithms. Across challenging long-horizon manipulation tasks in online and batch-online RL, FASTER consistently improves the underlying policies and achieves the best overall performance among the compared methods. Applied to a pretrained VLA, FASTER achieves the same performance while substantially reducing training and inference compute requirements. Code is available at https://github.com/alexanderswerdlow/faster .",
+      "authors": [
+        "Perry Dong",
+        "Alexander Swerdlow",
+        "Dorsa Sadigh",
+        "Chelsea Finn"
+      ],
+      "published": "2026-04-21T17:52:17Z",
+      "updated": "2026-04-21T17:52:17Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19730v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19729v1",
+      "title": "FB-NLL: A Feature-Based Approach to Tackle Noisy Labels in Personalized Federated Learning",
+      "summary": "Personalized Federated Learning (PFL) aims to learn multiple task-specific models rather than a single global model across heterogeneous data distributions. Existing PFL approaches typically rely on iterative optimization-such as model update trajectories-to cluster users that need to accomplish the same tasks together. However, these learning-dynamics-based methods are inherently vulnerable to low-quality data and noisy labels, as corrupted updates distort clustering decisions and degrade personalization performance. To tackle this, we propose FB-NLL, a feature-centric framework that decouples user clustering from iterative training dynamics. By exploiting the intrinsic heterogeneity of local feature spaces, FB-NLL characterizes each user through the spectral structure of the covariances of their feature representations and leverages subspace similarity to identify task-consistent user groupings. This geometry-aware clustering is label-agnostic and is performed in a one-shot manner prior to training, significantly reducing communication overhead and computational costs compared to iterative baselines. Complementing this, we introduce a feature-consistency-based detection and correction strategy to address noisy labels within clusters. By leveraging directional alignment in the learned feature space and assigning labels based on class-specific feature subspaces, our method mitigates corrupted supervision without requiring estimation of stochastic noise transition matrices. In addition, FB-NLL is model-independent and integrates seamlessly with existing noise-robust training techniques. Extensive experiments across diverse datasets and noise regimes demonstrate that our framework consistently outperforms state-of-the-art baselines in terms of average accuracy and performance stability.",
+      "authors": [
+        "Abdulmoneam Ali",
+        "Ahmed Arafa"
+      ],
+      "published": "2026-04-21T17:51:58Z",
+      "updated": "2026-04-21T17:51:58Z",
+      "categories": [
+        "cs.LG",
+        "cs.IT",
+        "eess.SP"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19729v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19728v1",
+      "title": "VLA Foundry: A Unified Framework for Training Vision-Language-Action Models",
+      "summary": "We present VLA Foundry, an open-source framework that unifies LLM, VLM, and VLA training in a single codebase. Most open-source VLA efforts specialize on the action training stage, often stitching together incompatible pretraining pipelines. VLA Foundry instead provides a shared training stack with end-to-end control, from language pretraining to action-expert fine-tuning. VLA Foundry supports both from-scratch training and pretrained backbones from Hugging Face. To demonstrate the utility of our framework, we train and release two types of models: the first trained fully from scratch through our LLM--&gt;VLM--&gt;VLA pipeline and the second built on the pretrained Qwen3-VL backbone. We evaluate closed-loop policy performance of both models on LBM Eval, an open-data, open-source simulator. We also contribute usability improvements to the simulator and the STEP analysis tools for easier public use. In the nominal evaluation setting, our fully-open from-scratch model is on par with our prior closed-source work and substituting in the Qwen3-VL backbone leads to a strong multi-task table top manipulation policy outperforming our baseline by a wide margin. The VLA Foundry codebase is available at https://github.com/TRI-ML/vla_foundry and all multi-task model weights are released on https://huggingface.co/collections/TRI-ML/vla-foundry. Additional qualitative videos are available on the project website https://tri-ml.github.io/vla_foundry.",
+      "authors": [
+        "Jean Mercat",
+        "Sedrick Keh",
+        "Kushal Arora",
+        "Isabella Huang",
+        "Paarth Shah",
+        "Haruki Nishimura",
+        "Shun Iwase",
+        "Katherine Liu"
+      ],
+      "published": "2026-04-21T17:51:51Z",
+      "updated": "2026-04-21T17:51:51Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG",
+        "cs.SE"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19728v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2604.19724v1",
+      "title": "Benign Overfitting in Adversarial Training for Vision Transformers",
+      "summary": "Despite the remarkable success of Vision Transformers (ViTs) across a wide range of vision tasks, recent studies have revealed that they remain vulnerable to adversarial examples, much like Convolutional Neural Networks (CNNs). A common empirical defense strategy is adversarial training, yet the theoretical underpinnings of its robustness in ViTs remain largely unexplored. In this work, we present the first theoretical analysis of adversarial training under simplified ViT architectures. We show that, when trained under a signal-to-noise ratio that satisfies a certain condition and within a moderate perturbation budget, adversarial training enables ViTs to achieve nearly zero robust training loss and robust generalization error under certain regimes. Remarkably, this leads to strong generalization even in the presence of overfitting, a phenomenon known as \\emph{benign overfitting}, previously only observed in CNNs (with adversarial training). Experiments on both synthetic and real-world datasets further validate our theoretical findings.",
+      "authors": [
+        "Jiaming Zhang",
+        "Meng Ding",
+        "Shaopeng Fu",
+        "Jingfeng Zhang",
+        "Di Wang"
+      ],
+      "published": "2026-04-21T17:48:51Z",
+      "updated": "2026-04-21T17:48:51Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19724v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.19722v1",
+      "title": "Adaptive MSD-Splitting: Enhancing C4.5 and Random Forests for Skewed Continuous Attributes",
+      "summary": "The discretization of continuous numerical attributes remains a persistent computational bottleneck in the induction of decision trees, particularly as dataset dimensions scale. Building upon the recently proposed MSD-Splitting technique -- which bins continuous data using the empirical mean and standard deviation to dramatically improve the efficiency and accuracy of the C4.5 algorithm -- we introduce Adaptive MSD-Splitting (AMSD). While standard MSD-Splitting is highly effective for approximately symmetric distributions, its rigid adherence to fixed one-standard-deviation cutoffs can lead to catastrophic information loss in highly skewed data, a common artifact in real-world biomedical and financial datasets. AMSD addresses this by dynamically adjusting the standard deviation multiplier based on feature skewness, narrowing intervals in dense regions to preserve discriminative resolution. Furthermore, we integrate AMSD into ensemble methods, specifically presenting the Random Forest-AMSD (RF-AMSD) framework. Empirical evaluations on the Census Income, Heart Disease, Breast Cancer, and Forest Covertype datasets demonstrate that AMSD yields a 2-4% accuracy improvement over standard MSD-Splitting, while maintaining near-identical O(N) time complexity reductions compared to the O(N log N) exhaustive search. Our Random Forest extension achieves state-of-the-art accuracy at a fraction of standard computational costs, confirming the viability of adaptive statistical binning in large-scale ensemble learning architectures.",
+      "authors": [
+        "Jake Lee"
+      ],
+      "published": "2026-04-21T17:48:27Z",
+      "updated": "2026-04-21T17:48:27Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19722v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19712v1",
+      "title": "Ultrametric OGP - parametric RDT \\emph{symmetric} binary perceptron connection",
+      "summary": "In [97,99,100], an fl-RDT framework is introduced to characterize \\emph{statistical computational gaps} (SCGs). Studying \\emph{symmetric binary perceptrons} (SBPs), [100] obtained an \\emph{algorithmic} threshold estimate $α_a\\approx α_c^{(7)}\\approx 1.6093$ at the 7th lifting level (for $κ=1$ margin), closely approaching $1.58$ local entropy (LE) prediction [18]. In this paper, we further connect parametric RDT to overlap gap properties (OGPs), another key geometric feature of the solution space. Specifically, for any positive integer $s$, we consider $s$-level ultrametric OGPs ($ult_s$-OGPs) and rigorously upper-bound the associated constraint densities $α_{ult_s}$. To achieve this, we develop an analytical union-bounding program consisting of combinatorial and probabilistic components. By casting the combinatorial part as a convex problem and the probabilistic part as a nested integration, we conduct numerical evaluations and obtain that the tightest bounds at the first two levels, $\\barα_{ult_1} \\approx 1.6578$ and $\\barα_{ult_2} \\approx 1.6219$, closely approach the 3rd and 4th lifting level parametric RDT estimates, $α_c^{(3)} \\approx 1.6576$ and $α_c^{(4)} \\approx 1.6218$. We also observe excellent agreement across other key parameters, including overlap values and the relative sizes of ultrametric clusters. Based on these observations, we propose several conjectures linking $ult$-OGP and parametric RDT. Specifically, we conjecture that algorithmic threshold $α_a=\\lim_{s\\rightarrow\\infty} α_{ult_s} = \\lim_{s\\rightarrow\\infty} \\barα{ult_s} = \\lim_{r\\rightarrow\\infty} α_{c}^{(r)}$, and $α_{ult_s} \\leq α_{c}^{(s+2)}$ (with possible equality for some (maybe even all) $s$). Finally, we discuss the potential existence of a full isomorphism connecting all key parameters of $ult$-OGP and parametric RDT.",
+      "authors": [
+        "Mihailo Stojnic"
+      ],
+      "published": "2026-04-21T17:36:33Z",
+      "updated": "2026-04-21T17:36:33Z",
+      "categories": [
+        "cs.LG",
+        "cond-mat.dis-nn",
+        "cs.IT",
+        "math.PR",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19712v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19698v1",
+      "title": "On two ways to use determinantal point processes for Monte Carlo integration",
+      "summary": "The standard Monte Carlo estimator $\\widehat{I}_N^{\\mathrm{MC}}$ of $\\int fdω$ relies on independent samples from $ω$ and has variance of order $1/N$. Replacing the samples with a determinantal point process (DPP), a repulsive distribution, makes the estimator consistent, with variance rates that depend on how the DPP is adapted to $f$ and $ω$. We examine two existing DPP-based estimators: one by Bardenet &amp; Hardy (2020) with a rate of $\\mathcal{O}(N^{-(1+1/d)})$ for smooth $f$, but relying on a fixed DPP. The other, by Ermakov &amp; Zolotukhin (1960), is unbiased with rate of order $1/N$, like Monte Carlo, but its DPP is tailored to $f$. We revisit these estimators, generalize them to continuous settings, and provide sampling algorithms.",
+      "authors": [
+        "Guillaume Gautier",
+        "Rémi Bardenet",
+        "Michal Valko"
+      ],
+      "published": "2026-04-21T17:17:43Z",
+      "updated": "2026-04-21T17:17:43Z",
+      "categories": [
+        "cs.LG",
+        "math.ST"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19698v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19695v1",
+      "title": "Planning in entropy-regularized Markov decision processes and games",
+      "summary": "We propose SmoothCruiser, a new planning algorithm for estimating the value function in entropy-regularized Markov decision processes and two-player games, given a generative model of the environment. SmoothCruiser makes use of the smoothness of the Bellman operator promoted by the regularization to achieve problem-independent sample complexity of order O~(1/epsilon^4) for a desired accuracy epsilon, whereas for non-regularized settings there are no known algorithms with guaranteed polynomial sample complexity in the worst case.",
+      "authors": [
+        "Jean-Bastien Grill",
+        "Omar Darwiche Domingues",
+        "Pierre Ménard",
+        "Rémi Munos",
+        "Michal Valko"
+      ],
+      "published": "2026-04-21T17:17:33Z",
+      "updated": "2026-04-21T17:17:33Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19695v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19684v1",
+      "title": "PREF-XAI: Preference-Based Personalized Rule Explanations of Black-Box Machine Learning Models",
+      "summary": "Explainable artificial intelligence (XAI) has predominantly focused on generating model-centric explanations that approximate the behavior of black-box models. However, such explanations often overlook a fundamental aspect of interpretability: different users require different explanations depending on their goals, preferences, and cognitive constraints. Although recent work has explored user-centric and personalized explanations, most existing approaches rely on heuristic adaptations or implicit user modeling, lacking a principled framework for representing and learning individual preferences. In this paper, we consider Preference-Based Explainable Artificial Intelligence (PREF-XAI), a novel perspective that reframes explanation as a preference-driven decision problem. Within PREF-XAI, explanations are not treated as fixed outputs, but as alternatives to be evaluated and selected according to user-specific criteria. In the PREF-XAI perspective, here we propose a methodology that combines rule-based explanations with formal preference learning. User preferences are elicited through a ranking of a small set of candidate explanations and modeled via an additive utility function inferred using robust ordinal regression. Experimental results on real-world datasets show that PREF-XAI can accurately reconstruct user preferences from limited feedback, identify highly relevant explanations, and discover novel explanatory rules not initially considered by the user. Beyond the proposed methodology, this work establishes a connection between XAI and preference learning, opening new directions for interactive and adaptive explanation systems.",
+      "authors": [
+        "Salvatore Greco",
+        "Jacek Karolczak",
+        "Roman Słowiński",
+        "Jerzy Stefanowski"
+      ],
+      "published": "2026-04-21T17:07:04Z",
+      "updated": "2026-04-21T17:07:04Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19684v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19677v1",
+      "title": "Learning Hybrid-Control Policies for High-Precision In-Contact Manipulation Under Uncertainty",
+      "summary": "Reinforcement learning-based control policies have been frequently demonstrated to be more effective than analytical techniques for many manipulation tasks. Commonly, these methods learn neural control policies that predict end-effector pose changes directly from observed state information. For tasks like inserting delicate connectors which induce force constraints, pose-based policies have limited explicit control over force and rely on carefully tuned low-level controllers to avoid executing damaging actions. In this work, we present hybrid position-force control policies that learn to dynamically select when to use force or position control in each control dimension. To improve learning efficiency of these policies, we introduce Mode-Aware Training for Contact Handling (MATCH) which adjusts policy action probabilities to explicitly mirror the mode selection behavior in hybrid control. We validate MATCH's learned policy effectiveness using fragile peg-in-hole tasks under extreme localization uncertainty. We find MATCH substantially outperforms pose-control policies -- solving these tasks with up to 10% higher success rates and 5x fewer peg breaks than pose-only policies under common types of state estimation error. MATCH also demonstrates data efficiency equal to pose-control policies, despite learning in a larger and more complex action space. In over 1600 sim-to-real experiments, we find MATCH succeeds twice as often as pose policies in high noise settings (33% vs.~68%) and applies ~30% less force on average compared to variable impedance policies on a Franka FR3 in laboratory conditions.",
+      "authors": [
+        "Hunter L. Brown",
+        "Geoffrey Hollinger",
+        "Stefan Lee"
+      ],
+      "published": "2026-04-21T16:55:48Z",
+      "updated": "2026-04-21T16:55:48Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19677v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2604.19672v1",
+      "title": "Budgeted Online Influence Maximization",
+      "summary": "We introduce a new budgeted framework for online influence maximization, considering the total cost of an advertising campaign instead of the common cardinality constraint on a chosen influencer set. Our approach better models the real-world setting where the cost of influencers varies and advertisers want to find the best value for their overall social advertising budget. We propose an algorithm assuming an independent cascade diffusion model and edge level semi-bandit feedback, and provide both theoretical and experimental results. Our analysis is also valid for the cardinality constraint setting and improves the state of the art regret bound in this case.",
+      "authors": [
+        "Pierre Perrault",
+        "Jennifer Healey",
+        "Zheng Wen",
+        "Michal Valko"
+      ],
+      "published": "2026-04-21T16:51:57Z",
+      "updated": "2026-04-21T16:51:57Z",
+      "categories": [
+        "cs.LG",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19672v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19669v1",
+      "title": "HardNet++: Nonlinear Constraint Enforcement in Neural Networks",
+      "summary": "Enforcing constraint satisfaction in neural network outputs is critical for safety, reliability, and physical fidelity in many control and decision-making applications. While soft-constrained methods penalize constraint violations during training, they do not guarantee constraint adherence during inference. Other approaches guarantee constraint satisfaction via specific parameterizations or a projection layer, but are tailored to specific forms (e.g., linear constraints), limiting their utility in other general problem settings. Many real-world problems of interest are nonlinear, motivating the development of methods that can enforce general nonlinear constraints. To this end, we introduce HardNet++, a constraint-enforcement method that simultaneously satisfies linear and nonlinear equality and inequality constraints. Our approach iteratively adjusts the network output via damped local linearizations. Each iteration is differentiable, admitting an end-to-end training framework, where the constraint satisfaction layer is active during training. We show that under certain regularity conditions, this procedure can enforce nonlinear constraint satisfaction to arbitrary tolerance. Finally, we demonstrate tight constraint adherence without loss of optimality in a learning-for-optimization context, where we apply this method to a model predictive control problem with nonlinear state constraints.",
+      "authors": [
+        "Andrea Goertzen",
+        "Kaveh Alim",
+        "Navid Azizan"
+      ],
+      "published": "2026-04-21T16:49:37Z",
+      "updated": "2026-04-21T16:49:37Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19669v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19667v1",
+      "title": "Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language",
+      "summary": "At present, executable visual workflows have emerged as a mainstream paradigm in real-world industrial deployments, offering strong reliability and controllability. However, in current practice, such workflows are almost entirely constructed through manual engineering: developers must carefully design workflows, write prompts for each step, and repeatedly revise the logic as requirements evolve-making development costly, time-consuming, and error-prone. To study whether large language models can automate this multi-round interaction process, we introduce Chat2Workflow, a benchmark for generating executable visual workflows directly from natural language, and propose a robust agentic framework to mitigate recurrent execution errors. Chat2Workflow is built from a large collection of real-world business workflows, with each instance designed so that the generated workflow can be transformed and directly deployed to practical workflow platforms such as Dify and Coze. Experimental results show that while state-of-the-art language models can often capture high-level intent, they struggle to generate correct, stable, and executable workflows, especially under complex or changing requirements. Although our agentic framework yields up to 5.34% resolve rate gains, the remaining real-world gap positions Chat2Workflow as a foundation for advancing industrial-grade automation. Code is available at https://github.com/zjunlp/Chat2Workflow.",
+      "authors": [
+        "Yi Zhong",
+        "Buqiang Xu",
+        "Yijun Wang",
+        "Zifei Shan",
+        "Shuofei Qiao",
+        "Guozhou Zheng",
+        "Ningyu Zhang"
+      ],
+      "published": "2026-04-21T16:49:11Z",
+      "updated": "2026-04-21T16:49:11Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19667v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.19663v1",
+      "title": "From Top-1 to Top-K: A Reproducibility Study and Benchmarking of Counterfactual Explanations for Recommender Systems",
+      "summary": "Counterfactual explanations (CEs) provide an intuitive way to understand recommender systems by identifying minimal modifications to user-item interactions that alter recommendation outcomes. Existing CE methods for recommender systems, however, have been evaluated under heterogeneous protocols, using different datasets, recommenders, metrics, and even explanation formats, which hampers reproducibility and fair comparison. Our paper systematically reproduces, re-implement, and re-evaluate eleven state-of-the-art CE methods for recommender systems, covering both native explainers (e.g., LIME-RS, SHAP, PRINCE, ACCENT, LXR, GREASE) and specific graph-based explainers originally proposed for GNNs. Here, a unified benchmarking framework is proposed to assess explainers along three dimensions: explanation format (implicit vs. explicit), evaluation level (item-level vs. list-level), and perturbation scope (user interaction vectors vs. user-item interaction graphs). Our evaluation protocol includes effectiveness, sparsity, and computational complexity metrics, and extends existing item-level assessments to top-K list-level explanations. Through extensive experiments on three real-world datasets and six representative recommender models, we analyze how well previously reported strengths of CE methods generalize across diverse setups. We observe that the trade-off between effectiveness and sparsity depends strongly on the specific method and evaluation setting, particularly under the explicit format; in addition, explainer performance remains largely consistent across item level and list level evaluations, and several graph-based explainers exhibit notable scalability limitations on large recommender graphs. Our results refine and challenge earlier conclusions about the robustness and practicality of CE generation methods in recommender systems: https://github.com/L2R-UET/CFExpRec.",
+      "authors": [
+        "Quang-Huy Nguyen",
+        "Thanh-Hai Nguyen",
+        "Khac-Manh Thai",
+        "Duc-Hoang Pham",
+        "Huy-Son Nguyen",
+        "Cam-Van Thi Nguyen",
+        "Masoud Mansoury",
+        "Duc-Trong Le",
+        "Hoang-Quynh Le"
+      ],
+      "published": "2026-04-21T16:48:13Z",
+      "updated": "2026-04-21T16:48:13Z",
+      "categories": [
+        "cs.IR",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19663v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19658v1",
+      "title": "Disentangling Damage from Operational Variability: A Label-Free Self-Supervised Representation Learning Framework for Output-Only Structural Damage Identification",
+      "summary": "Damage identification is a core task in structural health monitoring. In practice, however, its reliability is often compromised by confounding non-damage effects, such as variations in excitation and environmental conditions, which can induce changes comparable to or larger than those caused by structural damage. To address this challenge, this study proposes a self-supervised label-free disentangled representation learning framework for robust vibration-based structural damage identification. The proposed framework employs an autoencoder with two latent representations to learn directly from raw vibration acceleration signals. A self-supervised invariance regularization, implemented via Variance-Invariance-Covariance Regularization (VICReg), is imposed on one latent representation using baseline data where structural damage is assumed constant but operational and environmental conditions vary. In addition, a frequency-domain constraint is introduced to enforce agreement between the power spectral density reconstructed from the latent representation and that computed from the corresponding input time series. Together, these mechanisms promote disentanglement, enabling the learned representation to be sensitive to damage-related characteristics while remaining invariant to nuisance variability. The framework is trained in a fully end-to-end and label-free manner, requiring no prior information on damage, excitation, or environmental conditions, making it well-suited for real-world applications. Its effectiveness is validated on two distinct real-world vibration datasets, including a bridge and a gearbox. The results demonstrate robustness to operational variability, strong generalization capability, and good performance in both damage detection and quantification.",
+      "authors": [
+        "Xudong Jian",
+        "Charikleia Stoura",
+        "Simon Scandella",
+        "Eleni Chatzi"
+      ],
+      "published": "2026-04-21T16:45:38Z",
+      "updated": "2026-04-21T16:45:38Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19658v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19623v1",
+      "title": "SAGE: Training-Free Semantic Evidence Composition for Edge-Cloud Inference under Hard Uplink Budgets",
+      "summary": "Edge-cloud hybrid inference offloads difficult inputs to a powerful remote model, but the uplink channel imposes hard per-request constraints on the number of bits that can be transmitted. We show that selecting transmitted content based solely on attention-based importance, the standard approach in collaborative inference, is inherently limited under hard budgets. Two findings support this claim. First, replacing high-importance units with low-importance but complementary ones improves server accuracy. This shows that what matters is not individual importance but how well the transmitted set covers diverse aspects of the input. Second, spatially uniform selection without any content information achieves competitive accuracy at moderate budgets. This confirms that spatial coverage alone carries independent value. Based on this analysis, we propose SAGE (Semantic Attention-Guided Evidence), a principled, training-free method that combines importance filtering with embedding-diversity sampling. SAGE achieves 93% of the server ceiling in offloaded accuracy while transmitting fewer than half of the available evidence units on ImageNet-1K, substantially outperforming importance-only composition.",
+      "authors": [
+        "Inhyeok Choi",
+        "Hyuncheol Park"
+      ],
+      "published": "2026-04-21T16:11:56Z",
+      "updated": "2026-04-21T16:11:56Z",
+      "categories": [
+        "cs.LG",
+        "cs.CV",
+        "eess.SP"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19623v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.19593v1",
+      "title": "RoLegalGEC: Legal Domain Grammatical Error Detection and Correction Dataset for Romanian",
+      "summary": "The importance of clear and correct text in legal documents cannot be understated, and, consequently, a grammatical error correction tool meant to assist a professional in the law must have the ability to understand the possible errors in the context of a legal environment, correcting them accordingly, and implicitly needs to be trained in the same environment, using realistic legal data. However, the manually annotated data required by such a process is in short supply for languages such as Romanian, much less for a niche domain. The most common approach is the synthetic generation of parallel data; however, it requires a structured understanding of the Romanian grammar. In this paper, we introduce, to our knowledge, the first Romanian-language parallel dataset for the detection and correction of grammatical errors in the legal domain, RoLegalGEC, which aggregates 350,000 examples of errors in legal passages, along with error annotations. Moreover, we evaluate several neural network models that transform the dataset into a valuable tool for both detecting and correcting grammatical errors, including knowledge-distillation Transformers, sequence tagging architectures for detection, and a variety of pre-trained text-to-text Transformer models for correction. We consider that the set of models, together with the novel RoLegalGEC dataset, will enrich the resource base for further research on Romanian.",
+      "authors": [
+        "Mircea Timpuriu",
+        "Dumitru-Clementin Cercel"
+      ],
+      "published": "2026-04-21T15:43:33Z",
+      "updated": "2026-04-21T15:43:33Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19593v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.19592v1",
+      "title": "An Efficient Black-Box Reduction from Online Learning to Multicalibration, and a New Route to $Φ$-Regret Minimization",
+      "summary": "We give a Gordon-Greenwald-Marks (GGM) style black-box reduction from online learning to online multicalibration. Concretely, we show that to achieve high-dimensional multicalibration with respect to a class of functions H, it suffices to combine any no-regret learner over H with an expected variational inequality (EVI) solver. We also prove a converse statement showing that efficient multicalibration implies efficient EVI solving, highlighting how EVIs in multicalibration mirror the role of fixed points in the GGM result for $Φ$-regret. This first set of results resolves the main open question in Garg, Jung, Reingold, and Roth (SODA '24), showing that oracle-efficient online multicalibration with $\\sqrt{T}$-type guarantees is possible in full generality. Furthermore, our GGM-style reduction unifies the analyses of existing online multicalibration algorithms, enables new algorithms for challenging environments with delayed observations or censored outcomes, and yields the first efficient black-box reduction between online learning and multiclass omniprediction. Our second main result is a fine-grained reduction from high-dimensional online multicalibration to (contextual) $Φ$-regret minimization. Together with our first result, this establishes a new route from external regret to Phi-regret that bypasses sophisticated fixed-point or semi-separation machinery, dramatically simplifies a result of Daskalakis, Farina, Fishelson, Pipis, and Schneider (STOC '25) while improving rates, and yields new algorithms that are robust to richer deviation classes, such as those belonging to any reproducing kernel Hilbert space.",
+      "authors": [
+        "Gabriele Farina",
+        "Juan Carlos Perdomo"
+      ],
+      "published": "2026-04-21T15:43:22Z",
+      "updated": "2026-04-21T15:43:22Z",
+      "categories": [
+        "cs.LG",
+        "cs.GT"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19592v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19569v1",
+      "title": "Lyapunov-Certified Direct Switching Theory for Q-Learning",
+      "summary": "Q-learning is one of the most fundamental algorithms in reinforcement learning. We analyze constant-stepsize Q-learning through a direct stochastic switching system representation. The key observation is that the Bellman maximization error can be represented exactly by a stochastic policy. Therefore, the Q-learning error admits a switched linear conditional-mean recursion with martingale-difference noise. The intrinsic drift rate is the joint spectral radius (JSR) of the direct switching family, which can be strictly smaller than the standard row-sum rate. Using this representation, we derive a finite-time final-iterate bound via a JSR-induced Lyapunov function and then give a computable quadratic-certificate version.",
+      "authors": [
+        "Donghwan Lee"
+      ],
+      "published": "2026-04-21T15:22:42Z",
+      "updated": "2026-04-21T15:22:42Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19569v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19565v1",
+      "title": "Detecting Hallucinations in SpeechLLMs at Inference Time Using Attention Maps",
+      "summary": "Hallucinations in Speech Large Language Models (SpeechLLMs) pose significant risks, yet existing detection methods typically rely on gold-standard outputs that are costly or impractical to obtain. Moreover, hallucination detection methods developed for text-based LLMs do not directly capture audio-specific signals. We investigate four attention-derived metrics: AUDIORATIO, AUDIOCONSISTENCY, AUDIOENTROPY, and TEXTENTROPY, designed to capture pathological attention patterns associated with hallucination, and train lightweight logistic regression classifiers on these features for efficient inference-time detection. Across automatic speech recognition and speech-to-text translation tasks, evaluations on Qwen-2-Audio and Voxtral-3B show that our approach outperforms uncertainty-based and prior attention-based baselines on in-domain data, achieving improvements of up to +0.23 PR-AUC, and generalises to out-of-domain ASR settings. We further find that strong performance can be achieved with approximately 100 attention heads, improving out-of-domain generalisation compared to using all heads. While effectiveness is model-dependent and task-specific training is required, our results demonstrate that attention patterns provide a valuable tool for hallucination detection in SpeechLLMs.",
+      "authors": [
+        "Jonas Waldendorf",
+        "Bashar Awwad Shiekh Hasan",
+        "Evgenii Tsymbalov"
+      ],
+      "published": "2026-04-21T15:18:10Z",
+      "updated": "2026-04-21T15:18:10Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19565v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.19562v1",
+      "title": "Structure-guided molecular design with contrastive 3D protein-ligand learning",
+      "summary": "Structure-based drug discovery faces the dual challenge of accurately capturing 3D protein-ligand interactions while navigating ultra-large chemical spaces to identify synthetically accessible candidates. In this work, we present a unified framework that addresses these challenges by combining contrastive 3D structure encoding with autoregressive molecular generation conditioned on commercial compound spaces. First, we introduce an SE(3)-equivariant transformer that encodes ligand and pocket structures into a shared embedding space via contrastive learning, achieving competitive results in zero-shot virtual screening. Second, we integrate these embeddings into a multimodal Chemical Language Model (MCLM). The model generates target-specific molecules conditioned on either pocket or ligand structures, with a learned dataset token that steers the output toward targeted chemical spaces, yielding candidates with favorable predicted binding properties across diverse targets.",
+      "authors": [
+        "Carles Navarro",
+        "Philipp Tholke",
+        "Gianni de Fabritiis"
+      ],
+      "published": "2026-04-21T15:13:41Z",
+      "updated": "2026-04-21T15:13:41Z",
+      "categories": [
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19562v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.19560v1",
+      "title": "Separating Geometry from Probability in the Analysis of Generalization",
+      "summary": "The goal of machine learning is to find models that minimize prediction error on data that has not yet been seen. Its operational paradigm assumes access to a dataset $S$ and articulates a scheme for evaluating how well a given model performs on an arbitrary sample. The sample can be $S$ (in which case we speak of ``in-sample'' performance) or some entirely new $S'$ (in which case we speak of ``out-of-sample'' performance). Traditional analysis of generalization assumes that both in- and out-of-sample data are i.i.d.\\ draws from an infinite population. However, these probabilistic assumptions cannot be verified even in principle. This paper presents an alternative view of generalization through the lens of sensitivity analysis of solutions of optimization problems to perturbations in the problem data. Under this framework, generalization bounds are obtained by purely deterministic means and take the form of variational principles that relate in-sample and out-of-sample evaluations through an error term that quantifies how close out-of-sample data are to in-sample data. Statistical assumptions can then be used \\textit{ex post} to characterize the situations when this error term is small (either on average or with high probability).",
+      "authors": [
+        "Maxim Raginsky",
+        "Benjamin Recht"
+      ],
+      "published": "2026-04-21T15:13:28Z",
+      "updated": "2026-04-21T15:13:28Z",
+      "categories": [
+        "cs.LG",
+        "math.OC",
+        "stat.ML"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.19560v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "byCategory": {
+    "robotics": [
+      {
+        "id": "2604.19728v1",
+        "title": "VLA Foundry: A Unified Framework for Training Vision-Language-Action Models",
+        "summary": "We present VLA Foundry, an open-source framework that unifies LLM, VLM, and VLA training in a single codebase. Most open-source VLA efforts specialize on the action training stage, often stitching together incompatible pretraining pipelines. VLA Foundry instead provides a shared training stack with end-to-end control, from language pretraining to action-expert fine-tuning. VLA Foundry supports both from-scratch training and pretrained backbones from Hugging Face. To demonstrate the utility of our framework, we train and release two types of models: the first trained fully from scratch through our LLM--&gt;VLM--&gt;VLA pipeline and the second built on the pretrained Qwen3-VL backbone. We evaluate closed-loop policy performance of both models on LBM Eval, an open-data, open-source simulator. We also contribute usability improvements to the simulator and the STEP analysis tools for easier public use. In the nominal evaluation setting, our fully-open from-scratch model is on par with our prior closed-source work and substituting in the Qwen3-VL backbone leads to a strong multi-task table top manipulation policy outperforming our baseline by a wide margin. The VLA Foundry codebase is available at https://github.com/TRI-ML/vla_foundry and all multi-task model weights are released on https://huggingface.co/collections/TRI-ML/vla-foundry. Additional qualitative videos are available on the project website https://tri-ml.github.io/vla_foundry.",
+        "authors": [
+          "Jean Mercat",
+          "Sedrick Keh",
+          "Kushal Arora",
+          "Isabella Huang",
+          "Paarth Shah",
+          "Haruki Nishimura",
+          "Shun Iwase",
+          "Katherine Liu"
+        ],
+        "published": "2026-04-21T17:51:51Z",
+        "updated": "2026-04-21T17:51:51Z",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.CV",
+          "cs.LG",
+          "cs.SE"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19728v1.pdf",
+        "category": "robotics"
+      },
+      {
+        "id": "2604.19677v1",
+        "title": "Learning Hybrid-Control Policies for High-Precision In-Contact Manipulation Under Uncertainty",
+        "summary": "Reinforcement learning-based control policies have been frequently demonstrated to be more effective than analytical techniques for many manipulation tasks. Commonly, these methods learn neural control policies that predict end-effector pose changes directly from observed state information. For tasks like inserting delicate connectors which induce force constraints, pose-based policies have limited explicit control over force and rely on carefully tuned low-level controllers to avoid executing damaging actions. In this work, we present hybrid position-force control policies that learn to dynamically select when to use force or position control in each control dimension. To improve learning efficiency of these policies, we introduce Mode-Aware Training for Contact Handling (MATCH) which adjusts policy action probabilities to explicitly mirror the mode selection behavior in hybrid control. We validate MATCH's learned policy effectiveness using fragile peg-in-hole tasks under extreme localization uncertainty. We find MATCH substantially outperforms pose-control policies -- solving these tasks with up to 10% higher success rates and 5x fewer peg breaks than pose-only policies under common types of state estimation error. MATCH also demonstrates data efficiency equal to pose-control policies, despite learning in a larger and more complex action space. In over 1600 sim-to-real experiments, we find MATCH succeeds twice as often as pose policies in high noise settings (33% vs.~68%) and applies ~30% less force on average compared to variable impedance policies on a Franka FR3 in laboratory conditions.",
+        "authors": [
+          "Hunter L. Brown",
+          "Geoffrey Hollinger",
+          "Stefan Lee"
+        ],
+        "published": "2026-04-21T16:55:48Z",
+        "updated": "2026-04-21T16:55:48Z",
+        "categories": [
+          "cs.RO",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19677v1.pdf",
+        "category": "robotics"
+      }
+    ],
+    "multimodal": [
+      {
+        "id": "2604.19740v1",
+        "title": "Generalization at the Edge of Stability",
+        "summary": "Training modern neural networks often relies on large learning rates, operating at the edge of stability, where the optimization dynamics exhibit oscillatory and chaotic behavior. Empirically, this regime often yields improved generalization performance, yet the underlying mechanism remains poorly understood. In this work, we represent stochastic optimizers as random dynamical systems, which often converge to a fractal attractor set (rather than a point) with a smaller intrinsic dimension. Building on this connection and inspired by Lyapunov dimension theory, we introduce a novel notion of dimension, coined the `sharpness dimension', and prove a generalization bound based on this dimension. Our results show that generalization in the chaotic regime depends on the complete Hessian spectrum and the structure of its partial determinants, highlighting a complexity that cannot be captured by the trace or spectral norm considered in prior work. Experiments across various MLPs and transformers validate our theory while also providing new insights into the recently observed phenomenon of grokking.",
+        "authors": [
+          "Mario Tuci",
+          "Caner Korkmaz",
+          "Umut Şimşekli",
+          "Tolga Birdal"
+        ],
+        "published": "2026-04-21T17:59:02Z",
+        "updated": "2026-04-21T17:59:02Z",
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "cs.CV",
+          "stat.ML"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19740v1.pdf",
+        "category": "multimodal"
+      },
+      {
+        "id": "2604.19724v1",
+        "title": "Benign Overfitting in Adversarial Training for Vision Transformers",
+        "summary": "Despite the remarkable success of Vision Transformers (ViTs) across a wide range of vision tasks, recent studies have revealed that they remain vulnerable to adversarial examples, much like Convolutional Neural Networks (CNNs). A common empirical defense strategy is adversarial training, yet the theoretical underpinnings of its robustness in ViTs remain largely unexplored. In this work, we present the first theoretical analysis of adversarial training under simplified ViT architectures. We show that, when trained under a signal-to-noise ratio that satisfies a certain condition and within a moderate perturbation budget, adversarial training enables ViTs to achieve nearly zero robust training loss and robust generalization error under certain regimes. Remarkably, this leads to strong generalization even in the presence of overfitting, a phenomenon known as \\emph{benign overfitting}, previously only observed in CNNs (with adversarial training). Experiments on both synthetic and real-world datasets further validate our theoretical findings.",
+        "authors": [
+          "Jiaming Zhang",
+          "Meng Ding",
+          "Shaopeng Fu",
+          "Jingfeng Zhang",
+          "Di Wang"
+        ],
+        "published": "2026-04-21T17:48:51Z",
+        "updated": "2026-04-21T17:48:51Z",
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19724v1.pdf",
+        "category": "multimodal"
+      },
+      {
+        "id": "2604.19667v1",
+        "title": "Chat2Workflow: A Benchmark for Generating Executable Visual Workflows with Natural Language",
+        "summary": "At present, executable visual workflows have emerged as a mainstream paradigm in real-world industrial deployments, offering strong reliability and controllability. However, in current practice, such workflows are almost entirely constructed through manual engineering: developers must carefully design workflows, write prompts for each step, and repeatedly revise the logic as requirements evolve-making development costly, time-consuming, and error-prone. To study whether large language models can automate this multi-round interaction process, we introduce Chat2Workflow, a benchmark for generating executable visual workflows directly from natural language, and propose a robust agentic framework to mitigate recurrent execution errors. Chat2Workflow is built from a large collection of real-world business workflows, with each instance designed so that the generated workflow can be transformed and directly deployed to practical workflow platforms such as Dify and Coze. Experimental results show that while state-of-the-art language models can often capture high-level intent, they struggle to generate correct, stable, and executable workflows, especially under complex or changing requirements. Although our agentic framework yields up to 5.34% resolve rate gains, the remaining real-world gap positions Chat2Workflow as a foundation for advancing industrial-grade automation. Code is available at https://github.com/zjunlp/Chat2Workflow.",
+        "authors": [
+          "Yi Zhong",
+          "Buqiang Xu",
+          "Yijun Wang",
+          "Zifei Shan",
+          "Shuofei Qiao",
+          "Guozhou Zheng",
+          "Ningyu Zhang"
+        ],
+        "published": "2026-04-21T16:49:11Z",
+        "updated": "2026-04-21T16:49:11Z",
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.CV",
+          "cs.LG",
+          "cs.MA"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19667v1.pdf",
+        "category": "multimodal"
+      },
+      {
+        "id": "2604.19623v1",
+        "title": "SAGE: Training-Free Semantic Evidence Composition for Edge-Cloud Inference under Hard Uplink Budgets",
+        "summary": "Edge-cloud hybrid inference offloads difficult inputs to a powerful remote model, but the uplink channel imposes hard per-request constraints on the number of bits that can be transmitted. We show that selecting transmitted content based solely on attention-based importance, the standard approach in collaborative inference, is inherently limited under hard budgets. Two findings support this claim. First, replacing high-importance units with low-importance but complementary ones improves server accuracy. This shows that what matters is not individual importance but how well the transmitted set covers diverse aspects of the input. Second, spatially uniform selection without any content information achieves competitive accuracy at moderate budgets. This confirms that spatial coverage alone carries independent value. Based on this analysis, we propose SAGE (Semantic Attention-Guided Evidence), a principled, training-free method that combines importance filtering with embedding-diversity sampling. SAGE achieves 93% of the server ceiling in offloaded accuracy while transmitting fewer than half of the available evidence units on ImageNet-1K, substantially outperforming importance-only composition.",
+        "authors": [
+          "Inhyeok Choi",
+          "Hyuncheol Park"
+        ],
+        "published": "2026-04-21T16:11:56Z",
+        "updated": "2026-04-21T16:11:56Z",
+        "categories": [
+          "cs.LG",
+          "cs.CV",
+          "eess.SP"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19623v1.pdf",
+        "category": "multimodal"
+      },
+      {
+        "id": "2604.19593v1",
+        "title": "RoLegalGEC: Legal Domain Grammatical Error Detection and Correction Dataset for Romanian",
+        "summary": "The importance of clear and correct text in legal documents cannot be understated, and, consequently, a grammatical error correction tool meant to assist a professional in the law must have the ability to understand the possible errors in the context of a legal environment, correcting them accordingly, and implicitly needs to be trained in the same environment, using realistic legal data. However, the manually annotated data required by such a process is in short supply for languages such as Romanian, much less for a niche domain. The most common approach is the synthetic generation of parallel data; however, it requires a structured understanding of the Romanian grammar. In this paper, we introduce, to our knowledge, the first Romanian-language parallel dataset for the detection and correction of grammatical errors in the legal domain, RoLegalGEC, which aggregates 350,000 examples of errors in legal passages, along with error annotations. Moreover, we evaluate several neural network models that transform the dataset into a valuable tool for both detecting and correcting grammatical errors, including knowledge-distillation Transformers, sequence tagging architectures for detection, and a variety of pre-trained text-to-text Transformer models for correction. We consider that the set of models, together with the novel RoLegalGEC dataset, will enrich the resource base for further research on Romanian.",
+        "authors": [
+          "Mircea Timpuriu",
+          "Dumitru-Clementin Cercel"
+        ],
+        "published": "2026-04-21T15:43:33Z",
+        "updated": "2026-04-21T15:43:33Z",
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19593v1.pdf",
+        "category": "multimodal"
+      },
+      {
+        "id": "2604.19565v1",
+        "title": "Detecting Hallucinations in SpeechLLMs at Inference Time Using Attention Maps",
+        "summary": "Hallucinations in Speech Large Language Models (SpeechLLMs) pose significant risks, yet existing detection methods typically rely on gold-standard outputs that are costly or impractical to obtain. Moreover, hallucination detection methods developed for text-based LLMs do not directly capture audio-specific signals. We investigate four attention-derived metrics: AUDIORATIO, AUDIOCONSISTENCY, AUDIOENTROPY, and TEXTENTROPY, designed to capture pathological attention patterns associated with hallucination, and train lightweight logistic regression classifiers on these features for efficient inference-time detection. Across automatic speech recognition and speech-to-text translation tasks, evaluations on Qwen-2-Audio and Voxtral-3B show that our approach outperforms uncertainty-based and prior attention-based baselines on in-domain data, achieving improvements of up to +0.23 PR-AUC, and generalises to out-of-domain ASR settings. We further find that strong performance can be achieved with approximately 100 attention heads, improving out-of-domain generalisation compared to using all heads. While effectiveness is model-dependent and task-specific training is required, our results demonstrate that attention patterns provide a valuable tool for hallucination detection in SpeechLLMs.",
+        "authors": [
+          "Jonas Waldendorf",
+          "Bashar Awwad Shiekh Hasan",
+          "Evgenii Tsymbalov"
+        ],
+        "published": "2026-04-21T15:18:10Z",
+        "updated": "2026-04-21T15:18:10Z",
+        "categories": [
+          "cs.CL",
+          "cs.AI",
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19565v1.pdf",
+        "category": "multimodal"
+      }
+    ],
+    "ml-theory": [
+      {
+        "id": "2604.19738v1",
+        "title": "Phase Transitions in the Fluctuations of Functionals of Random Neural Networks",
+        "summary": "We establish central and non-central limit theorems for sequences of functionals of the Gaussian output of an infinitely-wide random neural network on the d-dimensional sphere . We show that the asymptotic behaviour of these functionals as the depth of the network increases depends crucially on the fixed points of the covariance function, resulting in three distinct limiting regimes: convergence to the same functional of a limiting Gaussian field, convergence to a Gaussian distribution, convergence to a distribution in the Qth Wiener chaos. Our proofs exploit tools that are now classical (Hermite expansions, Diagram Formula, Stein-Malliavin techniques), but also ideas which have never been used in similar contexts: in particular, the asymptotic behaviour is determined by the fixed-point structure of the iterative operator associated with the covariance, whose nature and stability governs the different limiting regimes.",
+        "authors": [
+          "Simmaco Di Lillo",
+          "Leonardo Maini",
+          "Domenico Marinucci"
+        ],
+        "published": "2026-04-21T17:58:39Z",
+        "updated": "2026-04-21T17:58:39Z",
+        "categories": [
+          "math.PR",
+          "cs.LG",
+          "stat.ML"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19738v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19737v1",
+        "title": "Safe Continual Reinforcement Learning in Non-stationary Environments",
+        "summary": "Reinforcement learning (RL) offers a compelling data-driven paradigm for synthesizing controllers for complex systems when accurate physical models are unavailable; however, most existing control-oriented RL methods assume stationarity and, therefore, struggle in real-world non-stationary deployments where system dynamics and operating conditions can change unexpectedly. Moreover, RL controllers acting in physical environments must satisfy safety constraints throughout their learning and execution phases, rendering transient violations during adaptation unacceptable. Although continual RL and safe RL have each addressed non-stationarity and safety, respectively, their intersection remains comparatively unexplored, motivating the study of safe continual RL algorithms that can adapt over the system's lifetime while preserving safety. In this work, we systematically investigate safe continual reinforcement learning by introducing three benchmark environments that capture safety-critical continual adaptation and by evaluating representative approaches from safe RL, continual RL, and their combinations. Our empirical results reveal a fundamental tension between maintaining safety constraints and preventing catastrophic forgetting under non-stationary dynamics, with existing methods generally failing to achieve both objectives simultaneously. To address this shortcoming, we examine regularization-based strategies that partially mitigate this trade-off and characterize their benefits and limitations. Finally, we outline key open challenges and research directions toward developing safe, resilient learning-based controllers capable of sustained autonomous operation in changing environments.",
+        "authors": [
+          "Austin Coursey",
+          "Abel Diaz-Gonzalez",
+          "Marcos Quinones-Grueiro",
+          "Gautam Biswas"
+        ],
+        "published": "2026-04-21T17:58:32Z",
+        "updated": "2026-04-21T17:58:32Z",
+        "categories": [
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19737v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19730v1",
+        "title": "FASTER: Value-Guided Sampling for Fast RL",
+        "summary": "Some of the most performant reinforcement learning algorithms today can be prohibitively expensive as they use test-time scaling methods such as sampling multiple action candidates and selecting the best one. In this work, we propose FASTER, a method for getting the benefits of sampling-based test-time scaling of diffusion-based policies without the computational cost by tracing the performance gain of action samples back to earlier in the denoising process. Our key insight is that we can model the denoising of multiple action candidates and selecting the best one as a Markov Decision Process (MDP) where the goal is to progressively filter action candidates before denoising is complete. With this MDP, we can learn a policy and value function in the denoising space that predicts the downstream value of action candidates in the denoising process and filters them while maximizing returns. The result is a method that is lightweight and can be plugged into existing generative RL algorithms. Across challenging long-horizon manipulation tasks in online and batch-online RL, FASTER consistently improves the underlying policies and achieves the best overall performance among the compared methods. Applied to a pretrained VLA, FASTER achieves the same performance while substantially reducing training and inference compute requirements. Code is available at https://github.com/alexanderswerdlow/faster .",
+        "authors": [
+          "Perry Dong",
+          "Alexander Swerdlow",
+          "Dorsa Sadigh",
+          "Chelsea Finn"
+        ],
+        "published": "2026-04-21T17:52:17Z",
+        "updated": "2026-04-21T17:52:17Z",
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19730v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19729v1",
+        "title": "FB-NLL: A Feature-Based Approach to Tackle Noisy Labels in Personalized Federated Learning",
+        "summary": "Personalized Federated Learning (PFL) aims to learn multiple task-specific models rather than a single global model across heterogeneous data distributions. Existing PFL approaches typically rely on iterative optimization-such as model update trajectories-to cluster users that need to accomplish the same tasks together. However, these learning-dynamics-based methods are inherently vulnerable to low-quality data and noisy labels, as corrupted updates distort clustering decisions and degrade personalization performance. To tackle this, we propose FB-NLL, a feature-centric framework that decouples user clustering from iterative training dynamics. By exploiting the intrinsic heterogeneity of local feature spaces, FB-NLL characterizes each user through the spectral structure of the covariances of their feature representations and leverages subspace similarity to identify task-consistent user groupings. This geometry-aware clustering is label-agnostic and is performed in a one-shot manner prior to training, significantly reducing communication overhead and computational costs compared to iterative baselines. Complementing this, we introduce a feature-consistency-based detection and correction strategy to address noisy labels within clusters. By leveraging directional alignment in the learned feature space and assigning labels based on class-specific feature subspaces, our method mitigates corrupted supervision without requiring estimation of stochastic noise transition matrices. In addition, FB-NLL is model-independent and integrates seamlessly with existing noise-robust training techniques. Extensive experiments across diverse datasets and noise regimes demonstrate that our framework consistently outperforms state-of-the-art baselines in terms of average accuracy and performance stability.",
+        "authors": [
+          "Abdulmoneam Ali",
+          "Ahmed Arafa"
+        ],
+        "published": "2026-04-21T17:51:58Z",
+        "updated": "2026-04-21T17:51:58Z",
+        "categories": [
+          "cs.LG",
+          "cs.IT",
+          "eess.SP"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19729v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19722v1",
+        "title": "Adaptive MSD-Splitting: Enhancing C4.5 and Random Forests for Skewed Continuous Attributes",
+        "summary": "The discretization of continuous numerical attributes remains a persistent computational bottleneck in the induction of decision trees, particularly as dataset dimensions scale. Building upon the recently proposed MSD-Splitting technique -- which bins continuous data using the empirical mean and standard deviation to dramatically improve the efficiency and accuracy of the C4.5 algorithm -- we introduce Adaptive MSD-Splitting (AMSD). While standard MSD-Splitting is highly effective for approximately symmetric distributions, its rigid adherence to fixed one-standard-deviation cutoffs can lead to catastrophic information loss in highly skewed data, a common artifact in real-world biomedical and financial datasets. AMSD addresses this by dynamically adjusting the standard deviation multiplier based on feature skewness, narrowing intervals in dense regions to preserve discriminative resolution. Furthermore, we integrate AMSD into ensemble methods, specifically presenting the Random Forest-AMSD (RF-AMSD) framework. Empirical evaluations on the Census Income, Heart Disease, Breast Cancer, and Forest Covertype datasets demonstrate that AMSD yields a 2-4% accuracy improvement over standard MSD-Splitting, while maintaining near-identical O(N) time complexity reductions compared to the O(N log N) exhaustive search. Our Random Forest extension achieves state-of-the-art accuracy at a fraction of standard computational costs, confirming the viability of adaptive statistical binning in large-scale ensemble learning architectures.",
+        "authors": [
+          "Jake Lee"
+        ],
+        "published": "2026-04-21T17:48:27Z",
+        "updated": "2026-04-21T17:48:27Z",
+        "categories": [
+          "cs.LG",
+          "cs.AI"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19722v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19712v1",
+        "title": "Ultrametric OGP - parametric RDT \\emph{symmetric} binary perceptron connection",
+        "summary": "In [97,99,100], an fl-RDT framework is introduced to characterize \\emph{statistical computational gaps} (SCGs). Studying \\emph{symmetric binary perceptrons} (SBPs), [100] obtained an \\emph{algorithmic} threshold estimate $α_a\\approx α_c^{(7)}\\approx 1.6093$ at the 7th lifting level (for $κ=1$ margin), closely approaching $1.58$ local entropy (LE) prediction [18]. In this paper, we further connect parametric RDT to overlap gap properties (OGPs), another key geometric feature of the solution space. Specifically, for any positive integer $s$, we consider $s$-level ultrametric OGPs ($ult_s$-OGPs) and rigorously upper-bound the associated constraint densities $α_{ult_s}$. To achieve this, we develop an analytical union-bounding program consisting of combinatorial and probabilistic components. By casting the combinatorial part as a convex problem and the probabilistic part as a nested integration, we conduct numerical evaluations and obtain that the tightest bounds at the first two levels, $\\barα_{ult_1} \\approx 1.6578$ and $\\barα_{ult_2} \\approx 1.6219$, closely approach the 3rd and 4th lifting level parametric RDT estimates, $α_c^{(3)} \\approx 1.6576$ and $α_c^{(4)} \\approx 1.6218$. We also observe excellent agreement across other key parameters, including overlap values and the relative sizes of ultrametric clusters. Based on these observations, we propose several conjectures linking $ult$-OGP and parametric RDT. Specifically, we conjecture that algorithmic threshold $α_a=\\lim_{s\\rightarrow\\infty} α_{ult_s} = \\lim_{s\\rightarrow\\infty} \\barα{ult_s} = \\lim_{r\\rightarrow\\infty} α_{c}^{(r)}$, and $α_{ult_s} \\leq α_{c}^{(s+2)}$ (with possible equality for some (maybe even all) $s$). Finally, we discuss the potential existence of a full isomorphism connecting all key parameters of $ult$-OGP and parametric RDT.",
+        "authors": [
+          "Mihailo Stojnic"
+        ],
+        "published": "2026-04-21T17:36:33Z",
+        "updated": "2026-04-21T17:36:33Z",
+        "categories": [
+          "cs.LG",
+          "cond-mat.dis-nn",
+          "cs.IT",
+          "math.PR",
+          "stat.ML"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19712v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19698v1",
+        "title": "On two ways to use determinantal point processes for Monte Carlo integration",
+        "summary": "The standard Monte Carlo estimator $\\widehat{I}_N^{\\mathrm{MC}}$ of $\\int fdω$ relies on independent samples from $ω$ and has variance of order $1/N$. Replacing the samples with a determinantal point process (DPP), a repulsive distribution, makes the estimator consistent, with variance rates that depend on how the DPP is adapted to $f$ and $ω$. We examine two existing DPP-based estimators: one by Bardenet &amp; Hardy (2020) with a rate of $\\mathcal{O}(N^{-(1+1/d)})$ for smooth $f$, but relying on a fixed DPP. The other, by Ermakov &amp; Zolotukhin (1960), is unbiased with rate of order $1/N$, like Monte Carlo, but its DPP is tailored to $f$. We revisit these estimators, generalize them to continuous settings, and provide sampling algorithms.",
+        "authors": [
+          "Guillaume Gautier",
+          "Rémi Bardenet",
+          "Michal Valko"
+        ],
+        "published": "2026-04-21T17:17:43Z",
+        "updated": "2026-04-21T17:17:43Z",
+        "categories": [
+          "cs.LG",
+          "math.ST"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19698v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19695v1",
+        "title": "Planning in entropy-regularized Markov decision processes and games",
+        "summary": "We propose SmoothCruiser, a new planning algorithm for estimating the value function in entropy-regularized Markov decision processes and two-player games, given a generative model of the environment. SmoothCruiser makes use of the smoothness of the Bellman operator promoted by the regularization to achieve problem-independent sample complexity of order O~(1/epsilon^4) for a desired accuracy epsilon, whereas for non-regularized settings there are no known algorithms with guaranteed polynomial sample complexity in the worst case.",
+        "authors": [
+          "Jean-Bastien Grill",
+          "Omar Darwiche Domingues",
+          "Pierre Ménard",
+          "Rémi Munos",
+          "Michal Valko"
+        ],
+        "published": "2026-04-21T17:17:33Z",
+        "updated": "2026-04-21T17:17:33Z",
+        "categories": [
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19695v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19684v1",
+        "title": "PREF-XAI: Preference-Based Personalized Rule Explanations of Black-Box Machine Learning Models",
+        "summary": "Explainable artificial intelligence (XAI) has predominantly focused on generating model-centric explanations that approximate the behavior of black-box models. However, such explanations often overlook a fundamental aspect of interpretability: different users require different explanations depending on their goals, preferences, and cognitive constraints. Although recent work has explored user-centric and personalized explanations, most existing approaches rely on heuristic adaptations or implicit user modeling, lacking a principled framework for representing and learning individual preferences. In this paper, we consider Preference-Based Explainable Artificial Intelligence (PREF-XAI), a novel perspective that reframes explanation as a preference-driven decision problem. Within PREF-XAI, explanations are not treated as fixed outputs, but as alternatives to be evaluated and selected according to user-specific criteria. In the PREF-XAI perspective, here we propose a methodology that combines rule-based explanations with formal preference learning. User preferences are elicited through a ranking of a small set of candidate explanations and modeled via an additive utility function inferred using robust ordinal regression. Experimental results on real-world datasets show that PREF-XAI can accurately reconstruct user preferences from limited feedback, identify highly relevant explanations, and discover novel explanatory rules not initially considered by the user. Beyond the proposed methodology, this work establishes a connection between XAI and preference learning, opening new directions for interactive and adaptive explanation systems.",
+        "authors": [
+          "Salvatore Greco",
+          "Jacek Karolczak",
+          "Roman Słowiński",
+          "Jerzy Stefanowski"
+        ],
+        "published": "2026-04-21T17:07:04Z",
+        "updated": "2026-04-21T17:07:04Z",
+        "categories": [
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19684v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19672v1",
+        "title": "Budgeted Online Influence Maximization",
+        "summary": "We introduce a new budgeted framework for online influence maximization, considering the total cost of an advertising campaign instead of the common cardinality constraint on a chosen influencer set. Our approach better models the real-world setting where the cost of influencers varies and advertisers want to find the best value for their overall social advertising budget. We propose an algorithm assuming an independent cascade diffusion model and edge level semi-bandit feedback, and provide both theoretical and experimental results. Our analysis is also valid for the cardinality constraint setting and improves the state of the art regret bound in this case.",
+        "authors": [
+          "Pierre Perrault",
+          "Jennifer Healey",
+          "Zheng Wen",
+          "Michal Valko"
+        ],
+        "published": "2026-04-21T16:51:57Z",
+        "updated": "2026-04-21T16:51:57Z",
+        "categories": [
+          "cs.LG",
+          "stat.ML"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19672v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19669v1",
+        "title": "HardNet++: Nonlinear Constraint Enforcement in Neural Networks",
+        "summary": "Enforcing constraint satisfaction in neural network outputs is critical for safety, reliability, and physical fidelity in many control and decision-making applications. While soft-constrained methods penalize constraint violations during training, they do not guarantee constraint adherence during inference. Other approaches guarantee constraint satisfaction via specific parameterizations or a projection layer, but are tailored to specific forms (e.g., linear constraints), limiting their utility in other general problem settings. Many real-world problems of interest are nonlinear, motivating the development of methods that can enforce general nonlinear constraints. To this end, we introduce HardNet++, a constraint-enforcement method that simultaneously satisfies linear and nonlinear equality and inequality constraints. Our approach iteratively adjusts the network output via damped local linearizations. Each iteration is differentiable, admitting an end-to-end training framework, where the constraint satisfaction layer is active during training. We show that under certain regularity conditions, this procedure can enforce nonlinear constraint satisfaction to arbitrary tolerance. Finally, we demonstrate tight constraint adherence without loss of optimality in a learning-for-optimization context, where we apply this method to a model predictive control problem with nonlinear state constraints.",
+        "authors": [
+          "Andrea Goertzen",
+          "Kaveh Alim",
+          "Navid Azizan"
+        ],
+        "published": "2026-04-21T16:49:37Z",
+        "updated": "2026-04-21T16:49:37Z",
+        "categories": [
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19669v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19663v1",
+        "title": "From Top-1 to Top-K: A Reproducibility Study and Benchmarking of Counterfactual Explanations for Recommender Systems",
+        "summary": "Counterfactual explanations (CEs) provide an intuitive way to understand recommender systems by identifying minimal modifications to user-item interactions that alter recommendation outcomes. Existing CE methods for recommender systems, however, have been evaluated under heterogeneous protocols, using different datasets, recommenders, metrics, and even explanation formats, which hampers reproducibility and fair comparison. Our paper systematically reproduces, re-implement, and re-evaluate eleven state-of-the-art CE methods for recommender systems, covering both native explainers (e.g., LIME-RS, SHAP, PRINCE, ACCENT, LXR, GREASE) and specific graph-based explainers originally proposed for GNNs. Here, a unified benchmarking framework is proposed to assess explainers along three dimensions: explanation format (implicit vs. explicit), evaluation level (item-level vs. list-level), and perturbation scope (user interaction vectors vs. user-item interaction graphs). Our evaluation protocol includes effectiveness, sparsity, and computational complexity metrics, and extends existing item-level assessments to top-K list-level explanations. Through extensive experiments on three real-world datasets and six representative recommender models, we analyze how well previously reported strengths of CE methods generalize across diverse setups. We observe that the trade-off between effectiveness and sparsity depends strongly on the specific method and evaluation setting, particularly under the explicit format; in addition, explainer performance remains largely consistent across item level and list level evaluations, and several graph-based explainers exhibit notable scalability limitations on large recommender graphs. Our results refine and challenge earlier conclusions about the robustness and practicality of CE generation methods in recommender systems: https://github.com/L2R-UET/CFExpRec.",
+        "authors": [
+          "Quang-Huy Nguyen",
+          "Thanh-Hai Nguyen",
+          "Khac-Manh Thai",
+          "Duc-Hoang Pham",
+          "Huy-Son Nguyen",
+          "Cam-Van Thi Nguyen",
+          "Masoud Mansoury",
+          "Duc-Trong Le",
+          "Hoang-Quynh Le"
+        ],
+        "published": "2026-04-21T16:48:13Z",
+        "updated": "2026-04-21T16:48:13Z",
+        "categories": [
+          "cs.IR",
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19663v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19658v1",
+        "title": "Disentangling Damage from Operational Variability: A Label-Free Self-Supervised Representation Learning Framework for Output-Only Structural Damage Identification",
+        "summary": "Damage identification is a core task in structural health monitoring. In practice, however, its reliability is often compromised by confounding non-damage effects, such as variations in excitation and environmental conditions, which can induce changes comparable to or larger than those caused by structural damage. To address this challenge, this study proposes a self-supervised label-free disentangled representation learning framework for robust vibration-based structural damage identification. The proposed framework employs an autoencoder with two latent representations to learn directly from raw vibration acceleration signals. A self-supervised invariance regularization, implemented via Variance-Invariance-Covariance Regularization (VICReg), is imposed on one latent representation using baseline data where structural damage is assumed constant but operational and environmental conditions vary. In addition, a frequency-domain constraint is introduced to enforce agreement between the power spectral density reconstructed from the latent representation and that computed from the corresponding input time series. Together, these mechanisms promote disentanglement, enabling the learned representation to be sensitive to damage-related characteristics while remaining invariant to nuisance variability. The framework is trained in a fully end-to-end and label-free manner, requiring no prior information on damage, excitation, or environmental conditions, making it well-suited for real-world applications. Its effectiveness is validated on two distinct real-world vibration datasets, including a bridge and a gearbox. The results demonstrate robustness to operational variability, strong generalization capability, and good performance in both damage detection and quantification.",
+        "authors": [
+          "Xudong Jian",
+          "Charikleia Stoura",
+          "Simon Scandella",
+          "Eleni Chatzi"
+        ],
+        "published": "2026-04-21T16:45:38Z",
+        "updated": "2026-04-21T16:45:38Z",
+        "categories": [
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19658v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19592v1",
+        "title": "An Efficient Black-Box Reduction from Online Learning to Multicalibration, and a New Route to $Φ$-Regret Minimization",
+        "summary": "We give a Gordon-Greenwald-Marks (GGM) style black-box reduction from online learning to online multicalibration. Concretely, we show that to achieve high-dimensional multicalibration with respect to a class of functions H, it suffices to combine any no-regret learner over H with an expected variational inequality (EVI) solver. We also prove a converse statement showing that efficient multicalibration implies efficient EVI solving, highlighting how EVIs in multicalibration mirror the role of fixed points in the GGM result for $Φ$-regret. This first set of results resolves the main open question in Garg, Jung, Reingold, and Roth (SODA '24), showing that oracle-efficient online multicalibration with $\\sqrt{T}$-type guarantees is possible in full generality. Furthermore, our GGM-style reduction unifies the analyses of existing online multicalibration algorithms, enables new algorithms for challenging environments with delayed observations or censored outcomes, and yields the first efficient black-box reduction between online learning and multiclass omniprediction. Our second main result is a fine-grained reduction from high-dimensional online multicalibration to (contextual) $Φ$-regret minimization. Together with our first result, this establishes a new route from external regret to Phi-regret that bypasses sophisticated fixed-point or semi-separation machinery, dramatically simplifies a result of Daskalakis, Farina, Fishelson, Pipis, and Schneider (STOC '25) while improving rates, and yields new algorithms that are robust to richer deviation classes, such as those belonging to any reproducing kernel Hilbert space.",
+        "authors": [
+          "Gabriele Farina",
+          "Juan Carlos Perdomo"
+        ],
+        "published": "2026-04-21T15:43:22Z",
+        "updated": "2026-04-21T15:43:22Z",
+        "categories": [
+          "cs.LG",
+          "cs.GT"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19592v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19569v1",
+        "title": "Lyapunov-Certified Direct Switching Theory for Q-Learning",
+        "summary": "Q-learning is one of the most fundamental algorithms in reinforcement learning. We analyze constant-stepsize Q-learning through a direct stochastic switching system representation. The key observation is that the Bellman maximization error can be represented exactly by a stochastic policy. Therefore, the Q-learning error admits a switched linear conditional-mean recursion with martingale-difference noise. The intrinsic drift rate is the joint spectral radius (JSR) of the direct switching family, which can be strictly smaller than the standard row-sum rate. Using this representation, we derive a finite-time final-iterate bound via a JSR-induced Lyapunov function and then give a computable quadratic-certificate version.",
+        "authors": [
+          "Donghwan Lee"
+        ],
+        "published": "2026-04-21T15:22:42Z",
+        "updated": "2026-04-21T15:22:42Z",
+        "categories": [
+          "cs.LG",
+          "cs.AI",
+          "eess.SY"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19569v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19562v1",
+        "title": "Structure-guided molecular design with contrastive 3D protein-ligand learning",
+        "summary": "Structure-based drug discovery faces the dual challenge of accurately capturing 3D protein-ligand interactions while navigating ultra-large chemical spaces to identify synthetically accessible candidates. In this work, we present a unified framework that addresses these challenges by combining contrastive 3D structure encoding with autoregressive molecular generation conditioned on commercial compound spaces. First, we introduce an SE(3)-equivariant transformer that encodes ligand and pocket structures into a shared embedding space via contrastive learning, achieving competitive results in zero-shot virtual screening. Second, we integrate these embeddings into a multimodal Chemical Language Model (MCLM). The model generates target-specific molecules conditioned on either pocket or ligand structures, with a learned dataset token that steers the output toward targeted chemical spaces, yielding candidates with favorable predicted binding properties across diverse targets.",
+        "authors": [
+          "Carles Navarro",
+          "Philipp Tholke",
+          "Gianni de Fabritiis"
+        ],
+        "published": "2026-04-21T15:13:41Z",
+        "updated": "2026-04-21T15:13:41Z",
+        "categories": [
+          "cs.LG"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19562v1.pdf",
+        "category": "ml-theory"
+      },
+      {
+        "id": "2604.19560v1",
+        "title": "Separating Geometry from Probability in the Analysis of Generalization",
+        "summary": "The goal of machine learning is to find models that minimize prediction error on data that has not yet been seen. Its operational paradigm assumes access to a dataset $S$ and articulates a scheme for evaluating how well a given model performs on an arbitrary sample. The sample can be $S$ (in which case we speak of ``in-sample'' performance) or some entirely new $S'$ (in which case we speak of ``out-of-sample'' performance). Traditional analysis of generalization assumes that both in- and out-of-sample data are i.i.d.\\ draws from an infinite population. However, these probabilistic assumptions cannot be verified even in principle. This paper presents an alternative view of generalization through the lens of sensitivity analysis of solutions of optimization problems to perturbations in the problem data. Under this framework, generalization bounds are obtained by purely deterministic means and take the form of variational principles that relate in-sample and out-of-sample evaluations through an error term that quantifies how close out-of-sample data are to in-sample data. Statistical assumptions can then be used \\textit{ex post} to characterize the situations when this error term is small (either on average or with high probability).",
+        "authors": [
+          "Maxim Raginsky",
+          "Benjamin Recht"
+        ],
+        "published": "2026-04-21T15:13:28Z",
+        "updated": "2026-04-21T15:13:28Z",
+        "categories": [
+          "cs.LG",
+          "math.OC",
+          "stat.ML"
+        ],
+        "pdfUrl": "http://arxiv.org/pdf/2604.19560v1.pdf",
+        "category": "ml-theory"
+      }
+    ],
+    "other": []
+  }
+}
