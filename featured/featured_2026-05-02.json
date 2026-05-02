@@ -1,0 +1,121 @@
+{
+  "date": "2026-05-02",
+  "papers": [
+    {
+      "id": "2604.28123v1",
+      "title": "PRISM: Pre-alignment via Black-box On-policy Distillation for Multimodal Reinforcement Learning",
+      "summary": "The standard post-training recipe for large multimodal models (LMMs) applies supervised fine-tuning (SFT) on curated demonstrations followed by reinforcement learning with verifiable rewards (RLVR). However, SFT introduces distributional drift that neither preserves the model's original capabilities nor faithfully matches the supervision distribution. This problem is further amplified in multimodal reasoning, where perception errors and reasoning failures follow distinct drift patterns that compound during subsequent RL. We introduce PRISM, a three-stage pipeline that mitigates this drift by inserting an explicit distribution-alignment stage between SFT and RLVR. Building on the principle of on-policy distillation (OPD), PRISM casts alignment as a black-box, response-level adversarial game between the policy and a Mixture-of-Experts (MoE) discriminator with dedicated perception and reasoning experts, providing disentangled corrective signals that steer the policy toward the supervision distribution without requiring access to teacher logits. While 1.26M public demonstrations suffice for broad SFT initialization, distribution alignment demands higher-fidelity supervision; we therefore curate 113K additional demonstrations from Gemini 3 Flash, featuring dense visual grounding and step-by-step reasoning on the hardest unsolved problems. Experiments on Qwen3-VL show that PRISM consistently improves downstream RLVR performance across multiple RL algorithms (GRPO, DAPO, GSPO) and diverse multimodal benchmarks, improving average accuracy by +4.4 and +6.0 points over the SFT-to-RLVR baseline on 4B and 8B, respectively. Our code, data, and model checkpoints are publicly available at https://github.com/XIAO4579/PRISM.",
+      "authors": [
+        "Sudong Wang",
+        "Weiquan Huang",
+        "Xiaomin Yu",
+        "Zuhao Yang",
+        "Hehai Lin",
+        "Keming Wu",
+        "Chaojun Xiao",
+        "Chen Chen",
+        "Wenxuan Wang",
+        "Beier Zhu",
+        "Yunjian Zhang",
+        "Chengwei Qin"
+      ],
+      "published": "2026-04-30T17:12:53Z",
+      "updated": "2026-04-30T17:12:53Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.28123v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2604.28139v1",
+      "title": "Claw-Eval-Live: A Live Agent Benchmark for Evolving Real-World Workflows",
+      "summary": "LLM agents are expected to complete end-to-end units of work across software tools, business services, and local workspaces. Yet many agent benchmarks freeze a curated task set at release time and grade mainly the final response, making it difficult to evaluate agents against evolving workflow demand or verify whether a task was executed. We introduce Claw-Eval-Live, a live benchmark for workflow agents that separates a refreshable signal layer, updated across releases from public workflow-demand signals, from a reproducible, time-stamped release snapshot. Each release is constructed from public workflow-demand signals, with ClawHub Top-500 skills used in the current release, and materialized as controlled tasks with fixed fixtures, services, workspaces, and graders. For grading, Claw-Eval-Live records execution traces, audit logs, service state, and post-run workspace artifacts, using deterministic checks when evidence is sufficient and structured LLM judging only for semantic dimensions. The release contains 105 tasks spanning controlled business services and local workspace repair, and evaluates 13 frontier models under a shared public pass rule. Experiments reveal that reliable workflow automation remains far from solved: the leading model passes only 66.7% of tasks and no model reaches 70%. Failures are structured by task family and execution surface, with HR, management, and multi-system business workflows as persistent bottlenecks and local workspace repair comparatively easier but unsaturated. Leaderboard rank alone is insufficient because models with similar pass rates can diverge in overall completion, and task-level discrimination concentrates in a middle band of tasks. Claw-Eval-Live suggests that workflow-agent evaluation should be grounded twice, in fresh external demand and in verifiable agent action.",
+      "authors": [
+        "Chenxin Li",
+        "Zhengyang Tang",
+        "Huangxin Lin",
+        "Yunlong Lin",
+        "Shijue Huang",
+        "Shengyuan Liu",
+        "Bowen Ye",
+        "Rang Li",
+        "Lei Li",
+        "Benyou Wang",
+        "Yixuan Yuan"
+      ],
+      "published": "2026-04-30T17:23:19Z",
+      "updated": "2026-04-30T17:23:19Z",
+      "categories": [
+        "cs.SE",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.28139v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.28056v1",
+      "title": "RHyVE: Competence-Aware Verification and Phase-Aware Deployment for LLM-Generated Reward Hypotheses",
+      "summary": "Large language models (LLMs) make reward design in reinforcement learning substantially more scalable, but generated rewards are not automatically reliable training objectives. Existing work has focused primarily on generating, evolving, or selecting reward candidates, while paying less attention to when such candidates can be verified and deployed during policy optimization. We study this deployment-time problem by treating generated rewards as reward hypotheses whose utility depends on the competence of the current policy and the phase of training. We propose \\textsc{RHyVE}, a competence-aware verification and phase-aware deployment protocol that compares small sets of reward hypotheses from shared policy checkpoints using short-horizon fork verification. Our experiments show that reward rankings are unreliable at low competence but become informative after task-dependent thresholds. On a sparse manipulation task, phase-aware deployment improves peak and retained performance under a locked protocol. Updated LLM-generated reward-candidate experiments show candidate-family-dependent behavior: generated pools can exhibit phase-dependent winner changes, but no fixed warm-up schedule is universally optimal. Held-out schedule selection, conservative selector baselines, compute-matched controls, and scale controls further show that \\textsc{RHyVE} is best understood as a verification-informed deployment protocol rather than a universal scheduler. Dense and all-failure boundary experiments delimit the scope of the method. Together, these results suggest that reward generation and reward deployment should be studied as coupled problems: generated rewards must be verified and deployed under changing policy competence.",
+      "authors": [
+        "Feiyu Wu",
+        "Xu Zheng",
+        "Zhuocheng Wang",
+        "Yi ming Dai",
+        "Hui Li"
+      ],
+      "published": "2026-04-30T16:01:51Z",
+      "updated": "2026-04-30T16:01:51Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.28056v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.28138v1",
+      "title": "Crab: A Semantics-Aware Checkpoint/Restore Runtime for Agent Sandboxes",
+      "summary": "Autonomous agents act through sandboxed containers and microVMs whose state spans filesystems, processes, and runtime artifacts. Checkpoint and restore (C/R) of this state is needed for fault tolerance, spot execution, RL rollout branching, and safe rollback-yet existing approaches fall into two extremes: application-level recovery preserves chat history but misses OS-side effects, while full per-turn checkpointing is correct but too expensive under dense co-location. The root cause is an agent-OS semantic gap: agent frameworks see tool calls but not their OS effects; the OS sees state changes but lacks turn-level context to judge recovery relevance. This gap hides massive sparsity: over 75% of agent turns produce no recovery-relevant state, so most checkpoints are unnecessary. Crab (Checkpoint-and-Restore for Agent SandBoxes) is a transparent host-side runtime that bridges this gap without modifying agents or C/R backends. An eBPF-based inspector classifies each turn's OS-visible effects to decide checkpoint granularity; a coordinator aligns checkpoints with turn boundaries and overlaps C/R with LLM wait time; and a host-scoped engine schedules checkpoint traffic across co-located sandboxes. On shell-intensive and code-repair workloads, Crab raises recovery correctness from 8% (chat-only) to 100%, cuts checkpoint traffic by up to 87%, and stays within 1.9% of fault-free execution time.",
+      "authors": [
+        "Tianyuan Wu",
+        "Chaokun Chang",
+        "Lunxi Cao",
+        "Wei Gao",
+        "Wei Wang"
+      ],
+      "published": "2026-04-30T17:20:19Z",
+      "updated": "2026-04-30T17:20:19Z",
+      "categories": [
+        "cs.OS",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.28138v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.28049v1",
+      "title": "Agent-Agnostic Evaluation of SQL Accuracy in Production Text-to-SQL Systems",
+      "summary": "Text-to-SQL (T2SQL) evaluation in production environments poses fundamental challenges that existing benchmarks do not address. Current evaluation methodologies whether rule-based SQL matching or schema-dependent semantic parsers assume access to ground-truth queries and structured database schema, constraints that are rarely satisfied in real-world deployments. This disconnect leaves production T2SQL agents largely unevaluated beyond developer-time testing, creating silent quality degradation with no feedback mechanism for continuous improvement. We present STEF (Schema-agnostic Text-to-SQL Evaluation Framework), a production-native evaluation system that operates exclusively on natural language inputs the user question, an enriched reformulation, and the generated SQL without requiring database schema or reference queries. STEF extracts semantic specifications from both natural language and SQL representations, performs normalized feature alignment, and produces an interpretable 0 to 100 accuracy score via a composite metric that encompasses filter alignment, semantic verdict, and confidence of the evaluator. Key contributions include: enriched question quality validation as a first-class evaluation signal, configurable application-specific rule injection via prompt templating, and production-robust normalization handling GROUP BY tolerance, ORDER BY defaults, and LIMIT heuristics. Empirical results demonstrate that STEF enables continuous production monitoring and agent improvement feedback loops without schema dependency, making structured query evaluation viable at scale for the first time.",
+      "authors": [
+        "Taslim Jamal Arif",
+        "Kuldeep Singh"
+      ],
+      "published": "2026-04-30T15:59:28Z",
+      "updated": "2026-04-30T15:59:28Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.28049v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2604.28123v1",
+    "2604.28139v1",
+    "2604.28056v1",
+    "2604.28138v1",
+    "2604.28049v1"
+  ]
+}
