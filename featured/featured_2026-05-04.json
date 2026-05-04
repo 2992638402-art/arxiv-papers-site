@@ -1,0 +1,111 @@
+{
+  "date": "2026-05-04",
+  "papers": [
+    {
+      "id": "2604.27616v1",
+      "title": "RoadMapper: A Multi-Agent System for Roadmap Generation of Solving Complex Research Problems",
+      "summary": "People commonly leverage structured content to accelerate knowledge acquisition and research problem solving. Among these, roadmaps guide researchers through hierarchical subtasks to solve complex research problems step by step. Despite progress in structured content generation, the roadmap generation task has remained unexplored. To bridge this gap, we introduce RoadMap, a novel benchmark designed to evaluate the ability of large language models (LLMs) to construct high-quality roadmaps for solving complex research problems. Based on this, we identify three limitations of LLMs: (1) lack of professional knowledge, (2) unreasonable task decomposition, and (3) disordered logical relationships. To address these challenges, we propose RoadMapper, an LLM-based multi-agent system that decomposes the research roadmap generation task into three key stages (i.e., initial generation, knowledge augmentation, and iterative \"critique-revise-evaluate\"). Extensive experiments demonstrate that RoadMapper can improve LLMs' ability for roadmap generation, while enhancing average performance by more than 8% and saving 84% of the time required by human experts, highlighting its effectiveness and application potential.",
+      "authors": [
+        "Jiacheng Liu",
+        "Zichen Tang",
+        "Zhongjun Yang",
+        "Xinyi Hu",
+        "Xueyuan Lin",
+        "Linwei Jia",
+        "Ruofei Bai",
+        "Rongjin Li",
+        "Shiyao Peng",
+        "Haocheng Gao",
+        "Haihong E"
+      ],
+      "published": "2026-04-30T09:08:14Z",
+      "updated": "2026-04-30T09:08:14Z",
+      "categories": [
+        "cs.CL",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.27616v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2605.00412v1",
+      "title": "Physically Native World Models: A Hamiltonian Perspective on Generative World Modeling",
+      "summary": "World models have recently re-emerged as a central paradigm for embodied intelligence, robotics, autonomous driving, and model-based reinforcement learning. However, current world model research is often dominated by three partially separated routes: 2D video-generative models that emphasize visual future synthesis, 3D scene-centric models that emphasize spatial reconstruction, and JEPA-like latent models that emphasize abstract predictive representations. While each route has made important progress, they still struggle to provide physically reliable, action-controllable, and long-horizon stable predictions for embodied decision making. In this paper, we argue that the bottleneck of world models is no longer only whether they can generate realistic futures, but whether those futures are physically meaningful and useful for action. We propose \\emph{Hamiltonian World Models} as a physically grounded perspective on world modeling. The key idea is to encode observations into a structured latent phase space, evolve the latent state through Hamiltonian-inspired dynamics with control, dissipation, and residual terms, decode the predicted trajectory into future observations, and use the resulting rollouts for planning. We discuss how Hamiltonian structure may improve interpretability, data efficiency, and long-horizon stability, while also noting practical challenges in real-world robotic scenes involving friction, contact, non-conservative forces, and deformable objects.",
+      "authors": [
+        "Sen Cui",
+        "Jingheng Ma"
+      ],
+      "published": "2026-05-01T05:09:32Z",
+      "updated": "2026-05-01T05:09:32Z",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.00412v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2604.27162v1",
+      "title": "A High-Throughput Compute-Efficient POMDP Hide-And-Seek-Engine (HASE) for Multi-Agent Operations",
+      "summary": "Reinforcement Learning (RL) algorithms exhibit high sample complexity, particularly when applied to Decentralized Partially Observable Markov Decision Processes (Dec-POMDPs). As a response, projects such as SampleFactory, EnvPool, Brax, and IsaacLab migrate parallel execution of classic environments such as MuJoCo and Atari into C++ thread pools or the GPU to decrease the computational cost of environment steps. We are interested in optimizing the decision-level of human-AI joint operations, so we introduce a compute-efficient Dec-POMDP engine natively architected in C++ called Hide-And-Seek-Engine. By employing Data-Oriented Design (DOD) principles, explicit 64-byte cache-line alignment to remove false sharing, and a zero-copy PyTorch memory bridge using pinned memory and Direct Memory Access (DMA), our engine sustains throughput of up to 33,000,000 steps per second (SPS) in a single-agent, 1024-environment, decentralized observations on an AMD Ryzen 9950X (16 cores). Ten agents reduces FPS to 7M SPS with generating random actions contributing 1/3rd the total runtime for reference. The engine achieves a throughput increase of approximately 3,500$\\times$ over the baseline single threaded vectorized NumPy implementation and successfully trains cooperative multi-agent policies via PPO, DQN, and SAC in minutes, validating both its performance and generality.",
+      "authors": [
+        "Timothy Flavin",
+        "Sandip Sen"
+      ],
+      "published": "2026-04-29T20:09:13Z",
+      "updated": "2026-04-29T20:09:13Z",
+      "categories": [
+        "cs.MA",
+        "cs.LG",
+        "cs.PF"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.27162v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2604.26561v1",
+      "title": "Preserving Disagreement: Architectural Heterogeneity and Coherence Validation in Multi-Agent Policy Simulation",
+      "summary": "Multi-agent deliberation systems using large language models (LLMs) are increasingly proposed for policy simulation, yet they suffer from artificial consensus: evaluator agents converge on the same option regardless of their assigned value perspectives. We present the AI Council, a three-phase deliberation framework, and conduct 120 deliberations across two policy scenarios to test two interventions. First, architectural heterogeneity (assigning a different 7-9B parameter model to each value perspective) significantly reduces first-choice concentration compared to a homogeneous baseline (child welfare: 70.9% to 46.1%, p &lt; 0.001, r = 0.58; housing: 46.0% to 22.9%, p &lt; 0.001, r = 0.50). This contrasts with accuracy-oriented multi-agent debate, where heterogeneity does not reduce convergence, suggesting model diversity operates differently when no objectively correct answer exists. Second, coherence validation (using a frontier model to assess whether each evaluator's reasoning is grounded in its assigned values) reveals a fidelity-diversity tradeoff: on a scenario with a dominant option, it further reduces concentration (46.1% to 40.8%, p = 0.004), but on a scenario with genuinely competitive options, it increases concentration (22.9% to 26.6%, p = 0.96) by amplifying high-coherence evaluators who cluster on one option. This tradeoff may be a general property of multi-agent systems employing quality weighting. We report negative results from three failed Delphi designs, demonstrate that 8B models exhibit binary rather than graded responses to counter-arguments, and propose the trustworthy tension rate as a diagnostic measure of small-model deliberation capabilities.",
+      "authors": [
+        "Ariel Sela"
+      ],
+      "published": "2026-04-29T11:47:28Z",
+      "updated": "2026-04-29T11:47:28Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2604.26561v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2605.00706v1",
+      "title": "FinSafetyBench: Evaluating LLM Safety in Real-World Financial Scenarios",
+      "summary": "Large language models (LLMs) are increasingly applied in financial scenarios. However, they may produce harmful outputs, including facilitating illegal activities or unethical behavior, posing serious compliance risks. To systematically evaluate LLM safety in finance, we propose FinSafetyBench, a bilingual (English-Chinese) red-teaming benchmark designed to test an LLM's refusal of requests that violate financial compliance. Grounded in real-world financial crime cases and ethics standards, the benchmark comprises 14 subcategories spanning financial crimes and ethical violations. Through extensive experiments on general-purpose and finance-specialized LLMs under three representative attack settings, we identify critical vulnerabilities that allow adversarial prompts to bypass compliance safeguards. Further analysis reveals stronger susceptibility in Chinese contexts and highlights the limitations of prompt-level defenses against sophisticated or implicit manipulation strategies.",
+      "authors": [
+        "Yutao Hou",
+        "Yihan Jiang",
+        "Yuhan Xie",
+        "Jian Yang",
+        "Liwen Zhang",
+        "Hailiang Huang",
+        "Guanhua Chen",
+        "Yun Chen"
+      ],
+      "published": "2026-05-01T14:51:24Z",
+      "updated": "2026-05-01T14:51:24Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.00706v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2604.27616v1",
+    "2605.00412v1",
+    "2604.27162v1",
+    "2604.26561v1",
+    "2605.00706v1"
+  ]
+}
