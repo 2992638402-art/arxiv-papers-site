@@ -1,0 +1,113 @@
+{
+  "date": "2026-05-05",
+  "papers": [
+    {
+      "id": "2605.01799v1",
+      "title": "Embody4D: A Generalist 4D World Model for Embodied AI",
+      "summary": "World models have made significant progress in modeling dynamic environments; however, most embodied world models are still restricted to 2D representations, lacking the comprehensive multi-view information essential for embodied spatial reasoning. Bridging this gap is non-trivial, primarily due to challenges from severe scarcity of paired multi-view data, the difficulty of maintaining spatiotemporal consistency in generated 3D geometries, and the tendency to hallucinate manipulation details. To address these challenges, we propose Embody4D, a dedicated video-to-video world model for embodied scenarios, capable of synthesizing arbitrary novel views from a monocular video. First, to tackle data scarcity, we introduce a 3D-aware compositional synthesis pipeline to curate a heterogeneous dataset compositing cross-embodiment robotic arms with diverse backgrounds, guaranteeing broad generalization. Second, to enforce geometric stability, we devise an adaptive noise injection strategy; by leveraging confidence disparities across image regions, this method selectively regularizes the diffusion process to ensure strict spatiotemporal consistency. Finally, to guarantee manipulation fidelity, we incorporate an interaction-aware attention mechanism that explicitly attends to the robotic interaction regions. Extensive experiments demonstrate that Embody4D achieves state-of-the-art performance, serving as a robust world model that synthesizes high-fidelity, view-consistent videos to empower downstream robotic planning and learning.",
+      "authors": [
+        "Peiyan Tu",
+        "Hanxin Zhu",
+        "Jingwen Sun",
+        "Shaojie Ren",
+        "Cong Wang",
+        "Jiayi Luo",
+        "Xiaoqian Cheng",
+        "Zhibo Chen"
+      ],
+      "published": "2026-05-03T09:39:44Z",
+      "updated": "2026-05-03T09:39:44Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.01799v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.01371v1",
+      "title": "ESARBench: A Benchmark for Agentic UAV Embodied Search and Rescue",
+      "summary": "The rapid advancement of Multimodal Large Language Models (MLLMs) has empowered Unmanned Aerial Vehicle (UAV) with exceptional capabilities in spatial reasoning, semantic understanding, and complex decision-making, making them inherently suited for UAV Search and Rescue (SAR). However, existing UAV SAR research is dominated by traditional vision and path-planning methods and lacks a comprehensive and unified benchmark for embodied agents. To bridge this gap, we first propose the novel task of \\textbf{Embodied Search and Rescue (ESAR)}, which requires aerial agents to autonomously explore complex environments, identify rescue clues, and reason about victim locations to execute informed decision-making. Additionally, we present \\textbf{ESARBench}, the first comprehensive benchmark designed to evaluate MLLM-driven UAV agents in highly realistic SAR scenarios. Leveraging Unreal Engine 5 and AirSim, we construct four high-fidelity, large-scale open environments mapped directly from real-world Geographic Information System (GIS) data to ensure photorealistic landscapes. To rigorously simulate actual rescue operations, our benchmark incorporates dynamic variables including weather conditions, time of day, and stochastic clue placement. Furthermore, we create a dataset of 600 tasks modeled after real-world rescue cases and propose a robust set of evaluation metrics. We evaluate diverse baselines, ranging from traditional heuristics to advanced ground and aerial MLLM-based ObjectNav agents. Experimental results highlight the challenges in ESAR, revealing critical bottlenecks in spatial memory, aerial adaptation, and the trade-off between search efficiency and flight safety. We hope ESARBench serves as a valuable resource to advance research on Embodied Search and Rescue domain. Source code and project page: https://4amgodvzx.github.io/ESAR.github.io.",
+      "authors": [
+        "Daoxuan Zhang",
+        "Ping Chen",
+        "Jianyi Zhou",
+        "Shuo Yang"
+      ],
+      "published": "2026-05-02T10:30:42Z",
+      "updated": "2026-05-02T10:30:42Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.01371v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.01805v1",
+      "title": "MAGIC: Multi-Step Advantage-Gated Causal Influence for Multi-agent Reinforcement Learning",
+      "summary": "A key challenge in multi-agent reinforcement learning (MARL) lies in designing learning signals that effectively promote coordination among agents. Designing such signals necessitates the ability to quantify the true, long-term causal influence between agents. To address this, we introduce Multi-step Advantage-Gated Interventional Causal MARL (MAGIC), a framework that extracts multi-step causal influences between agents and selectively converts them into intrinsic rewards. MAGIC uses causal intervention with conditional mutual information to quantify long-horizon agent influence, and introduces an advantage-based gating mechanism to ensure exploration is directed toward beneficial, goal-aligned behaviors. Experiments across multiple standard MARL benchmarks and task families, including MPE and SMAC/SMACv2, demonstrate that MAGIC outperforms state-of-the-art methods by a significant margin, achieving an improvement of at least 10.1% in the main evaluation metric.",
+      "authors": [
+        "Haohan Yu",
+        "Jinmiao Cong",
+        "Shengzhi Wang",
+        "Lu Wang",
+        "Chanjuan Liu"
+      ],
+      "published": "2026-05-03T10:05:48Z",
+      "updated": "2026-05-03T10:05:48Z",
+      "categories": [
+        "cs.MA",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.01805v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2605.01133v1",
+      "title": "When Embedding-Based Defenses Fail: Rethinking Safety in LLM-Based Multi-Agent Systems",
+      "summary": "Large language model (LLM)-powered multi-agent systems (MAS) enable agents to communicate and share information, achieving strong performance on complex tasks. However, this communication also creates an attack surface where malicious agents can propagate misinformation and manipulate group decisions, undermining MAS safety. Existing embedding-based defenses aim to detect and prune suspicious agents, but their effectiveness depends on a clear separation between the text embeddings of malicious and benign messages. Attackers can circumvent such defenses by crafting messages whose embeddings lie close to benign ones. We analyze this failure mode theoretically and validate it empirically with three attacks, Slow Drift, Benign Wrapper, and Chaos Seeding. Our analysis further reveals a fundamental limitation of embedding-based defenses: because they rely solely on the text embeddings, they ignore token-level confidence signals such as logits, which can remain informative when embeddings are not distinguishable under attack. We propose using confidence scores to prune or down-weight messages during MAS communication. Experiments show improved robustness across models, datasets, and communication topologies. Moreover, we find that the effectiveness of confidence signals decays over communication rounds, highlighting the importance of early intervention. This insights can inform and inspire future work on MAS attacks and defenses.",
+      "authors": [
+        "Lingxi Zhang",
+        "Guangtao Zheng",
+        "Hanjie Chen"
+      ],
+      "published": "2026-05-01T22:15:11Z",
+      "updated": "2026-05-01T22:15:11Z",
+      "categories": [
+        "cs.CR",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.01133v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2605.00946v1",
+      "title": "Breaking the Communication-Accuracy Trade-off: A Sparsified Information Diffusion Framework for Multi-Agent Collaborative Perception",
+      "summary": "The growing relevance of multi-agent systems has drawn increasing focus on communication-efficient filters for collaborative perception to alleviate the system's communication burden. While the event-triggered (ET) mechanism can improve communication efficiency in collaborative state estimation, an inevitable trade-off exists between estimation accuracy and communication cost in ET filters. This paper proposes a fast and accurate ET diffusion-based filter for real-time multi-agent collaborative target tracking, aiming to reduce the system's data transmission without compromise in tracking performance. The proposed filter achieves improved tracking accuracy, reduced data transmission, and accelerated convergence using an error-minimized ET cubature information filter (CIF) for local estimation, and a correlation-aware diffusion strategy for global fusion. The experimental results confirm the scalability of the proposed EDC-CIF algorithm and demonstrate its efficacy in simultaneously reducing estimation error and computation time while significantly enhancing communication efficiency.",
+      "authors": [
+        "Jirong Zha",
+        "Chenyu Zhao",
+        "Nan Zhou",
+        "Zhenyu Liu",
+        "Tao Sun",
+        "Bin Zhang",
+        "Xiaochun Zhang",
+        "Xinlei Chen"
+      ],
+      "published": "2026-05-01T10:06:10Z",
+      "updated": "2026-05-01T10:06:10Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.00946v1.pdf",
+      "category": "other"
+    }
+  ],
+  "ids": [
+    "2605.01799v1",
+    "2605.01371v1",
+    "2605.01805v1",
+    "2605.01133v1",
+    "2605.00946v1"
+  ]
+}
