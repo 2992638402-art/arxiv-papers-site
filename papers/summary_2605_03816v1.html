@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The Manokhin Probability Matrix: A Diagnostic Framework for Classifier Probability Quality - arXiv 2605.03816 论文总结">
+    <title>The Manokhin Probability Matrix: A Diagnostic Framework for Classifier Probability Quality | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>The Manokhin Probability Matrix: A Diagnostic Framework for Classifier Probability Quality</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.03816<br><strong>分类:</strong> stat.ML, cs.LG<br><strong>发布时间:</strong> 2026-05-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Valery Manokhin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.03816">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.03816">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>The Brier score conflates two distinct properties of probabilistic predictions: reliability (calibration error) and resolution (discriminatory power). We introduce the Manokhin Probability Matrix, a BCG-style two-dimensional diagnostic framework that separates them. Classifiers are placed on a 2x2 grid by Spiegelhalter Z-statistic and AUC-ROC expected rank, then assigned to one of four archetypes: Eagle (good on both axes), Bull (strong discrimination, poor calibration), Sloth (well-calibrated, weak discriminator), and Mole (poor on both). Each archetype carries a distinct prescription. We populate the matrix from a large-scale empirical study spanning 21 classifiers, 5 post-hoc calibrators, and 30 real-world binary classification tasks from the TabArena-v0.1 suite. The assignment is unambiguous. CatBoost, TabICL, EBM, TabPFN, GBC, and Random Forest are Eagles. XGBoost, LightGBM, and HGB are Bulls; Venn-Abers calibration cuts log-loss by 6.5 to 12.6% on Bulls but degrades Eagles by 2.1%. SVM, LR, LDA, and the empirical base-rate predictor are Sloths. MLP, KNN, Naive Bayes, and ExtraTrees are Moles. A theoretical asymmetry follows: no order-preserving post-hoc calibrator can add discriminatory power (Proposition 1), so calibration is the fixable part and discrimination is the hard part. The practical rule is direct: do not optimise aggregate Brier score without first decomposing it; optimise discrimination first, then fix calibration post-hoc. Code and raw experimental data are available at <a href="https://github.com/valeman/classifier_calibration">https://github.com/valeman/classifier_calibration</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.03816" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
