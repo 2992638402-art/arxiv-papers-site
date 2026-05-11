@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Gradient Starvation in Binary-Reward GRPO: Why Group-Mean Centering Fails and Why the Simplest Fix Works - arXiv 2605.07689 论文总结">
+    <title>Gradient Starvation in Binary-Reward GRPO: Why Group-Mean Centering Fails and Why the Simplest Fix Works | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Gradient Starvation in Binary-Reward GRPO: Why Group-Mean Centering Fails and Why the Simplest Fix Works</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.07689<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-05-08</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Wenhua Nie, Jianan Wu, Junlin Liu, Ziwei Li, Zheng Lin, Zhang Zijian, Yilong Fan, Haoran Zheng, Jyh-Shing Roger Jang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07689">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.07689">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Group Relative Policy Optimization (GRPO) is a standard algorithm for reinforcement learning from verifiable rewards, but its group-mean-centered advantage can fail under binary rewards. The failure mode is gradient starvation: when every response in a group is correct or every response is wrong, the centered advantage is exactly zero and the policy receives no learning signal. We prove that the true degeneracy rate always exceeds the i.i.d. Bernoulli prediction by Jensen&#39;s inequality, and observe a 0.69 degeneracy rate at group size four in logged Qwen3.5-9B GSM8K training. We then show that the fixed-reference Sign advantage, $A=2r-1$, performs pass@$G$ failure descent by increasing the probability that at least one sample in the group succeeds. On the full GSM8K test set across seven seeds, Sign reaches 73.8% accuracy versus 28.4% for standard normalized group-mean DrGRPO at group size four, a 45.4 point gain with $p&lt;0.0001$. The effect is directionally consistent on Llama-3.1-8B and positive but underpowered on a MATH-500 transfer check. Pass@$k$ analysis indicates that the main benefit is search compression rather than large capacity expansion, aligning the empirical gains with recent RLVR ceiling observations.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.07689" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

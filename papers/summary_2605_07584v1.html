@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parallel Lifted Planning via Semi-Naive Datalog Evaluation - arXiv 2605.07584 论文总结">
+    <title>Parallel Lifted Planning via Semi-Naive Datalog Evaluation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Parallel Lifted Planning via Semi-Naive Datalog Evaluation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.07584<br><strong>分类:</strong> cs.AI<br><strong>发布时间:</strong> 2026-05-08</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Dominik Drexler, Oliver Joergensen, Jendrik Seipp</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07584">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.07584">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Lifted classical planners operate directly on first-order planning tasks to avoid the computationally demanding grounding step. However, lifted planning is typically slower, as planners must repeatedly instantiate ground structures during search. Many core components of lifted classical planning, such as successor generation, axiom evaluation, task grounding, and delete-relaxed heuristics, have previously been studied through the lens of Datalog evaluation. We build upon this line of work and extend it by developing and analyzing an execution model with two levels of parallelism: rule-level parallelism and grounding parallelism. We further specialize this solver for planning-specific workloads with a grounder based on clique enumeration, which we extend to support semi-naive Datalog evaluation. Our experimental evaluation using greedy best-first search with the FF heuristic shows that our implementation already solves more tasks than the baselines on a single core, and the gap widens as additional cores are used. Moreover, on hard-to-ground tasks where on average 97.6% of the total runtime is spent in Datalog execution, the proposed execution model exhibits an average parallel fraction of 92.4%, while achieving up to a 6-fold speedup on 8 cores in practice.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.07584" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ProteinJEPA: Latent prediction complements protein language models - arXiv 2605.07554 论文总结">
+    <title>ProteinJEPA: Latent prediction complements protein language models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>ProteinJEPA: Latent prediction complements protein language models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.07554<br><strong>分类:</strong> cs.LG, cs.AI, q-bio.BM, stat.ML<br><strong>发布时间:</strong> 2026-05-08</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Dan Ofer, Dafna Shahaf, Michal Linial</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07554">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.07554">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Protein language models are trained primarily with masked language modeling (MLM), which predicts amino-acid identities at masked positions. We ask whether latent-space prediction can complement these token-level objectives under matched wall-clock budget. Across pretrained and random-init protein sequence encoders at 35--150M parameters, we find that the best protein-JEPA design is not all-position latent prediction but a variant: predicting latent targets only at masked positions, and retaining the MLM cross-entropy. We call this recipe masked-position MLM+JEPA. On a 16-task downstream suite (15 frozen linear probes plus SCOPe-40 zero-shot fold retrieval), under matched wall-clock budgets, this recipe wins more tasks than it loses against MLM-only continuation: 10 wins / 3 losses / 3 ties (hereafter W/L/T) on pretrained ESM2-35M, 11/2/3 on ESM2-150M while results in pretraining from scratch are mixed (6/8/2). Gains are seen for multiple models on 11 of 16 tasks, including stability, \b{eta}β\b{eta}-lactamase fitness, variant effect, intrinsic disorder, remote homology, enzyme classification, and SCOPe-40 fold retrieval. Tasks with more losses than wins are Fluorescence (TAPE) and Peptide-HLA Binding. All-position MLM+JEPA matches MLM-only overall but does not reproduce the masked-position gains. JEPA-only (no MLM) collapses in nearly every experiment. We conclude that JEPA, when combined with MLM, is competitive and can outperform pure MLM in pretraining and continued training, even under matched wall-clock budgets.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.07554" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

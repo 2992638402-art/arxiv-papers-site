@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robust stochastic first order methods in heavy-tailed noise via medoid mini-batch gradient sampling - arXiv 2605.07634 论文总结">
+    <title>Robust stochastic first order methods in heavy-tailed noise via medoid mini-batch gradient sampling | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Robust stochastic first order methods in heavy-tailed noise via medoid mini-batch gradient sampling</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.07634<br><strong>分类:</strong> math.OC, cs.LG, math.ST<br><strong>发布时间:</strong> 2026-05-08</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Manojlo Vukovic, Dusan Jakovetic</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07634">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.07634">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>We consider a first order stochastic optimization framework where, at each iteration, $K$ independent identically distributed (i.i.d.) data point samples are drawn, based on which stochastic gradients can be queried. We allow gradient noise to be heavy-tailed, with possibly infinite variances. For the considered heavy-tailed setting, many algorithmic variants have recently been proposed based on gradient clipping or other nonlinear operators (e.g., normalization) applied over noisy gradients. In this paper, we take an alternative approach and propose a novel stochastic first order method dubbed Robust Stochastic Gradient Descent with medoid mini-batch gradient sampling, R-SGD-Mini for short. The core idea of R-SGD-Mini is to split the $K$-sized data batch into $M$ distinct data chunks, form for each chunk the stochastic gradient, and update the solution estimate with respect to the stochastic gradient direction of the chunk that is medoid of gradients of all data-chunks. Under a general class of symmetric heavy-tailed gradient noises and a standard non-convex setting, we establish explicit bounds on the expected time-averaged squared gradient norm. More precisely, we show that the latter quantity converges at rate $\mathcal{O}(T^{-1})$ to a small neighborhood of zero; we explicitly characterize this neighborhood in terms of noise and algorithm&#39;s parameters. Moreover, if the time horizon is known in advance, we establish the rate of $\mathcal{O}(T^{-\frac{1}{2}}).$ Furthermore, when clipping is incorporated, we obtain convergence guaranties in the high-probability sense and recover the same rate. Experimental results indicate that R-SGD-Mini and its clipped variant consistently perform favorably compared to SGD, clipped SGD and Median-of-Means based methods.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.07634" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

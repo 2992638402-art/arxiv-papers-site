@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Not All Tokens Learn Alike: Attention Entropy Reveals Heterogeneous Signals in RL Reasoning - arXiv 2605.07660 论文总结">
+    <title>Not All Tokens Learn Alike: Attention Entropy Reveals Heterogeneous Signals in RL Reasoning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Not All Tokens Learn Alike: Attention Entropy Reveals Heterogeneous Signals in RL Reasoning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.07660<br><strong>分类:</strong> cs.CL<br><strong>发布时间:</strong> 2026-05-08</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Gengyang Li, Zheng-Fan Wu, Siqi Bao, Yunfang Wu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.07660">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.07660">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Reinforcement-learning-based post-training has become a key approach for improving the reasoning ability of large language models, but its token-level learning signals remain poorly understood. This work studies their heterogeneity through attention entropy, which measures how concentrated or diffuse the contextual support is for each response token. We first show that token-level RL objectives are sparsely estimable: uniformly random 20 percent token subsets preserve much of the full-token held-out performance, suggesting substantial redundancy in token-level updates. However, entropy-structured subsets behave very differently. Low-attention-entropy tokens, which we call anchors, rely on concentrated support, produce stable gradients aligned with full-token updates, and provide a reliable optimization backbone, but tend to plateau on harder benchmarks. High-attention-entropy tokens, which we call explorers, aggregate more diffuse context and induce larger but more volatile gradients. Explorer-only training is unstable on average, though rare successful runs suggest that these tokens may contain useful hard-reasoning signals when optimization remains stable. We support this anchor-explorer spectrum with evidence-gathering analyses, entropy dynamics, gradient-geometry diagnostics, and controls showing that position, predictive entropy, and loss normalization do not explain the observed asymmetry. Finally, a dynamic entropy-aware soft-reweighting intervention improves Qwen3-8B-Base from 34.39 to 37.40 held-out average in the strongest setting. These findings suggest that attention entropy reveals optimization-relevant structure in token-level RL signals, and that uniform token averaging can obscure meaningful heterogeneity in reasoning post-training.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.07660" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
