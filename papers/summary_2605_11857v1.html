@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beyond Parameter Aggregation: Semantic Consensus for Federated Fine-Tuning of LLMs - arXiv 2605.11857 论文总结">
+    <title>Beyond Parameter Aggregation: Semantic Consensus for Federated Fine-Tuning of LLMs | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Beyond Parameter Aggregation: Semantic Consensus for Federated Fine-Tuning of LLMs</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.11857<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-05-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Amr Abourayya, Jens Kleesiek, Michael Kamp</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.11857">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.11857">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Federated fine-tuning of large language models is commonly formulated as a parameter aggregation problem. However, even parameter-efficient methods require transmitting large collections of trainable weights, assume aligned architectures, and rely on white-box access to model parameters. As model sizes continue to grow and deployments become increasingly heterogeneous, these assumptions become progressively misaligned with practical constraints. We consider an alternative formulation in which collaboration is mediated through model behavior rather than parameters. Clients fine-tune local models on private data and exchange generated outputs on a shared, public prompt set. The server maps these outputs into a semantic representation space, forms a per-prompt semantic consensus, and returns pseudo-labels for further local fine-tuning. This formulation fundamentally changes the communication scaling of federated LLM fine-tuning. The amount of information exchanged depends only on the public prompt budget and the size of the communicated behaviors, independent of model size. As a consequence, the protocol naturally accommodates heterogeneous architectures and applies directly to open-ended text generation. We present a theoretical analysis and empirical results demonstrating that this approach can match strong federated fine-tuning baselines while substantially reducing communication by orders of magnitude (e.g., analytically by a factor of $1006$ for Llama3.1-405B), as well as reductions in runtime and energy consumption. These results suggest that, for generative foundation models, behavior-level consensus provides a more appropriate abstraction for federated adaptation than parameter aggregation.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.11857" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

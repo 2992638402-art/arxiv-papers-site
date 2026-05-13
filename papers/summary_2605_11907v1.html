@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Procedural-skill SFT across capacity tiers: A W-Shaped pre-SFT Trajectory and Regime-Asymmetric Mechanism on 0.8B-4B Qwen3.5 Models - arXiv 2605.11907 论文总结">
+    <title>Procedural-skill SFT across capacity tiers: A W-Shaped pre-SFT Trajectory and Regime-Asymmetric Mechanism on 0.8B-4B Qwen3.5 Models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Procedural-skill SFT across capacity tiers: A W-Shaped pre-SFT Trajectory and Regime-Asymmetric Mechanism on 0.8B-4B Qwen3.5 Models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.11907<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-05-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Igor Strozzi</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.11907">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.11907">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>We measure procedural-skill SFT contribution across three Qwen3.5 dense scales (0.8B, 2B, 4B) on a 200-task / 40-skill holdout, with Claude Haiku 4.5 as a frontier reference. The corpus is 353 rows of (task + procedural-skill block, Opus chain-of-thought, judge-pass) demonstrations. \textbf{Main finding.} Under matched-path LLM-only scoring, the SFT-attributable procedural-$Δ$ lift is roughly uniform across sizes: $+0.070$ / $+0.040$ / $+0.075$ at 0.8B / 2B / 4B. Variation in post-SFT $Δ$ ($-0.005$, $+0.100$, $+0.065$) is dominated by a W-shaped pre-SFT base trajectory ($-0.075$, $+0.060$, $-0.010$, Haiku-4-5 at $+0.030$): the 5-step procedure hurts 0.8B and 4B, helps 2B, and helps frontier Haiku modestly. SFT works hardest in absolute terms where the base struggles with the procedure -- a regime-asymmetric pattern with a falsifiable prediction at 8B/14B. \textbf{Methodology.} (i) A bench format-compliance artifact: 83.5% of the holdout uses a deterministic \texttt{ANSWER}-line extractor that under-counts free-form conclusions; an LLM-only re-judge reveals it was systematically biased against \CU. (ii) A negative-iteration sequence at 0.8B: five recipe variants cluster post-SFT \CU{} pass-rate within a 2,pp band, constraining the absolute-pass-rate ceiling to base capacity rather than recipe. \textbf{Cross-family validation.} GPT-5.4 via OpenRouter on all 7 configurations (2800 paired episodes) agrees on the direction of every per-student finding: Cohen&#39;s $κ\geq 0.754$, agreement $\geq 93.25%$. Earlier <code>format-only at 0.8B&#39;&#39; and </code>shrinking SFT at 4B&#39;&#39; framings were path-mismatch artifacts; this paper supersedes both (Appendix~\ref{sec:appendix-path}). Single-seed; threats in §\ref{sec:threats}.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.11907" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
