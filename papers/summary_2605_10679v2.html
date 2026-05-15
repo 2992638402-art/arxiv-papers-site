@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Energy-Efficient Implementation of Spiking Recurrent Cells on FPGA - arXiv 2605.10679 论文总结">
+    <title>Energy-Efficient Implementation of Spiking Recurrent Cells on FPGA | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Energy-Efficient Implementation of Spiking Recurrent Cells on FPGA</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.10679<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-05-11</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Pascal Harmeling, Florent De Geeter, Guillaume Drion</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.10679">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.10679">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Spiking Neural Networks (SNNs) can reduce energy consumption compared to conventional Artificial Neural Networks (ANNs) when spiking activity is sparse and the neuron model is hardware-friendly. However, biologically faithful models are often too costly to implement on FPGAs, whereas very simple models (e.g., IR/LIF) sacrifice part of the neuronal dynamics. In this work, we present an FPGA accelerator for an SNN using Spiking Recurrent Cell (SRC) neurons, providing a trade-off between biological plausibility and hardware cost. We propose a set of mathematical simplifications that remove costly unary operators (\textit{tanh}, \textit{exp}) and avoid floating-point arithmetic through scaling and piecewise-defined approximations. The complete network is implemented in VHDL and validated using spiking traces derived from the MNIST dataset. The weight matrices computed off-line are stored directly in LUT-registers without any adaptation. This demonstrates the robustness of SRC cells. Experiments were conducted on an Artix-7 XC7A200T clocked at 100 MHz. The reference implementation achieves 96.31% accuracy with a 220-image spiking trace and a processing time of 1.7424 ms per digit. We then investigate accuracy/energy trade-offs by reducing the spiking trace length and quantizing synaptic weights down to 4 bits, achieving 93.32% accuracy at 0.55 mJ per digit (55 images, 5-bit weights) and 92.89% at 0.45 mJ (44 images, 4-bit weights). These results show that SRC-based SNNs can deliver competitive performance with reduced energy consumption, while preserving richer neuronal dynamics than standard LIF/IR models.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.10679" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
