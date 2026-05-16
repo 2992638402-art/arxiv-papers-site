@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Computational Imaging Priors for Wireless Capsule Endoscopy: Monte Carlo-Guided Hemoglobin Mapping for Rare-Anomaly Detection - arXiv 2605.15062 论文总结">
+    <title>Computational Imaging Priors for Wireless Capsule Endoscopy: Monte Carlo-Guided Hemoglobin Mapping for Rare-Anomaly Detection | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Computational Imaging Priors for Wireless Capsule Endoscopy: Monte Carlo-Guided Hemoglobin Mapping for Rare-Anomaly Detection</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.15062<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-05-14</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Chengshuai Yang, Lei Xing, Gregory Entin, Roopa Vemulapalli, Lisa Casey, Raiyan Tripti Zaman</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.15062">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.15062">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Background. RGB-trained capsule-endoscopy classifiers underperform on small-vessel vascular findings by conflating hemoglobin contrast with bile and illumination falloff. Thus, here we test whether a Monte Carlo-inspired analytic model can compute hemoglobin from RGB signal built upon extracted classifier. Methods. On Kvasir-Capsule (47,238 frames, video-level 70/15/15 split, 11 evaluable classes) we evaluate two software-only configurations against RGB-only EfficientNet-B0 across 6 seeds: (i) a prior P_blood = sigma(alpha * (H_norm - 0.5)) * Phi(r) fused as 2 zero-init auxiliary channels; (ii) a distillation head training a 3-channel RGB backbone to predict P_blood. Significance: paired DeLong, McNemar, bootstrap CIs with Bonferroni correction. Results. Across 6 seeds (n=6,423), the analytic prior provides a small but direction-consistent macro-AUC improvement: RGB-only 0.760 +/- 0.027, input-fusion 0.783 +/- 0.024 (paired Delta = +0.023, sign-positive on 5/6 seeds), distillation 0.773 +/- 0.028. The largest robust per-class lift is on Lymphangiectasia, where AUC rises from RGB 0.238 +/- 0.057 to input-fusion 0.337 +/- 0.019, sign-consistent across all 6 seeds. On rare focal-vascular classes (Angiectasia, Blood - fresh) the prior&#39;s per-seed effects are bimodal: seed=42 reaches Angiectasia AUC 0.528 -&gt; 0.916, but the cross-seed mean is 0.646 -&gt; 0.608 with sigma_PI = 0.23 - reported as a high-variance per-seed exemplar. Conclusion. A Monte Carlo-inspired analytic prior provides a small, direction-consistent macro-AUC improvement on Kvasir-Capsule across 6 seeds with the largest robust per-class lift on Lymphangiectasia; the distillation variant runs on plain 3-channel RGB and yields a free interpretability heatmap.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.15062" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
