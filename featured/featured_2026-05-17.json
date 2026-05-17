@@ -1,0 +1,124 @@
+{
+  "date": "2026-05-17",
+  "papers": [
+    {
+      "id": "2605.15155v1",
+      "title": "Self-Distilled Agentic Reinforcement Learning",
+      "summary": "Reinforcement learning (RL) has emerged as a central paradigm for post-training LLM agents, yet its trajectory-level reward signal provides only coarse supervision for long-horizon interaction. On-Policy Self-Distillation (OPSD) complements RL by introducing dense token-level guidance from a teacher branch augmented with privileged context. However, transferring OPSD to multi-turn agents proves problematic: compounding multi-turn instability destabilizes supervision, while skill-conditioned privileged guidance requires asymmetric treatment for negative teacher rejections may arise from imperfect skills retrieval or utilization. We introduce SDAR (Self-Distilled Agentic Reinforcement Learning), which treats OPSD as a gated auxiliary objective while keeping RL as the primary optimization backbone. SDAR maps detached token-level signals into a sigmoid gate, strengthening distillation on teacher-endorsed positive-gap tokens and softly attenuating negative teacher rejections. Across the Qwen2.5 and Qwen3 families on ALFWorld, WebShop, and Search-QA, SDAR substantially improves over GRPO (+9.4% on ALFWorld, +7.0% on Search-QA, +10.2% on WebShop-Acc), avoids the instability of naive GRPO+OPSD, and consistently outperforms hybrid RL--OPSD baselines across model scales.",
+      "authors": [
+        "Zhengxi Lu",
+        "Zhiyuan Yao",
+        "Zhuowen Han",
+        "Zi-Han Wang",
+        "Jinyang Wu",
+        "Qi Gu",
+        "Xunliang Cai",
+        "Weiming Lu",
+        "Jun Xiao",
+        "Yueting Zhuang",
+        "Yongliang Shen"
+      ],
+      "published": "2026-05-14T17:51:26Z",
+      "updated": "2026-05-14T17:51:26Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.15155v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2605.15132v1",
+      "title": "APWA: A Distributed Architecture for Parallelizable Agentic Workflows",
+      "summary": "Autonomous multi-agent systems based on large language models (LLMs) have demonstrated remarkable abilities in independently solving complex tasks in a wide breadth of application domains. However, these systems hit critical reasoning, coordination, and computational scaling bottlenecks as the size and complexity of their tasks grow. These limitations hinder multi-agent systems from achieving high-throughput processing for highly parallelizable tasks, despite the availability of parallel computing and reasoning primitives in the underlying LLMs. We introduce the Agent-Parallel Workload Architecture (APWA), a distributed multi-agent system architecture designed for the efficient processing of heavily parallelizable agentic workloads. APWA facilitates parallel execution by decomposing workflows into non-interfering subproblems that can be processed using independent resources without cross-communication. It supports heterogeneous data and parallel processing patterns, and it accommodates tasks from a wide breadth of domains. In our evaluation, we demonstrate that APWA can dynamically decompose complex queries into parallelizable workflows and scales on larger tasks in settings where prior systems fail completely.",
+      "authors": [
+        "Evan Rose",
+        "Tushin Mallick",
+        "Matthew D. Laws",
+        "Cristina Nita-Rotaru",
+        "Alina Oprea"
+      ],
+      "published": "2026-05-14T17:40:20Z",
+      "updated": "2026-05-14T17:40:20Z",
+      "categories": [
+        "cs.AI",
+        "cs.DC",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.15132v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2605.15188v1",
+      "title": "FutureSim: Replaying World Events to Evaluate Adaptive Agents",
+      "summary": "AI agents are being increasingly deployed in dynamic, open-ended environments that require adapting to new information as it arrives. To efficiently measure this capability for realistic use-cases, we propose building grounded simulations that replay real-world events in the order they occurred. We build FutureSim, where agents forecast world events beyond their knowledge cutoff while interacting with a chronological replay of the world: real news articles arriving and questions resolving over the simulated period. We evaluate frontier agents in their native harness, testing their ability to predict world events over a three-month period from January to March 2026. FutureSim reveals a clear separation in their capabilities, with the best agent's accuracy being 25%, and many having worse Brier skill score than making no prediction at all. Through careful ablations, we show how FutureSim offers a realistic setting to study emerging research directions like long-horizon test-time adaptation, search, memory, and reasoning about uncertainty. Overall, we hope our benchmark design paves the way to measure AI progress on open-ended adaptation spanning long time-horizons in the real world.",
+      "authors": [
+        "Shashwat Goel",
+        "Nikhil Chandak",
+        "Arvindh Arun",
+        "Ameya Prabhu",
+        "Steffen Staab",
+        "Moritz Hardt",
+        "Maksym Andriushchenko",
+        "Jonas Geiping"
+      ],
+      "published": "2026-05-14T17:59:28Z",
+      "updated": "2026-05-14T17:59:28Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.15188v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2605.15185v1",
+      "title": "Quantitative Video World Model Evaluation for Geometric-Consistency",
+      "summary": "Generative video models are increasingly studied as implicit world models, yet evaluating whether they produce physically plausible 3D structure and motion remains challenging. Most existing video evaluation pipelines rely heavily on human judgment or learned graders, which can be subjective and weakly diagnostic for geometric failures. We introduce PDI-Bench (Perspective Distortion Index), a quantitative framework for auditing geometric coherence in generated videos. Given a generated clip, we obtain object-centric observations via segmentation and point tracking (e.g., SAM 2, MegaSaM, and CoTracker3), lift them to 3D world-space coordinates via monocular reconstruction, and compute a set of projective-geometry residuals capturing three failure dimensions: scale-depth alignment, 3D motion consistency, and 3D structural rigidity. To support systematic evaluation, we build PDI-Dataset, covering diverse scenarios designed to stress these geometric constraints. Across state-of-the-art video generators, PDI reveals consistent geometry-specific failure modes that are not captured by common perceptual metrics, and provides a diagnostic signal for progress toward physically grounded video generation and physical world model. Our code and dataset can be found at https://pdi-bench.github.io/.",
+      "authors": [
+        "Jiaxin Wu",
+        "Yihao Pi",
+        "Yinling Zhang",
+        "Yuheng Li",
+        "Xueyan Zou"
+      ],
+      "published": "2026-05-14T17:59:04Z",
+      "updated": "2026-05-14T17:59:04Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.15185v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2605.15152v1",
+      "title": "Widening the Gap: Exploiting LLM Quantization via Outlier Injection",
+      "summary": "LLM quantization has become essential for memory-efficient deployment. Recent work has shown that quantization schemes can pose critical security risks: an adversary may release a model that appears benign in full precision but exhibits malicious behavior once quantized by users. However, existing quantization-conditioned attacks have been limited to relatively simple quantization methods, where the attacker can estimate weight regions that remain invariant under the target quantization. Notably, prior attacks have consistently failed to compromise more popular and sophisticated schemes, limiting their practical impact. In this work, we introduce the first quantization-conditioned attack that consistently induces malicious behavior that can be triggered by a broad range of advanced quantization techniques, including AWQ, GPTQ, and GGUF I-quants. Our attack exploits a simple property shared by many modern quantization methods: large outliers can cause other weights to be rounded to zero. Consequently, by injecting outliers into specific weight blocks, an adversary can therefore induce a targeted, predictable weight collapse in the model. This effect can be used to craft seemingly benign full-precision models that exhibit a wide range of malicious behaviors after quantization. Through extensive evaluation across three attack scenarios and LLMs, we show that our attack achieves high success rates against a broad range of quantization methods on which prior attacks fail. Our results demonstrate, for the first time, that the security risks of quantization are not restricted to simpler schemes but are broadly relevant across complex, widely-used quantization methods.",
+      "authors": [
+        "Xiaohua Zhan",
+        "Kazuki Egashira",
+        "Robin Staab",
+        "Mark Vero",
+        "Martin Vechev"
+      ],
+      "published": "2026-05-14T17:50:39Z",
+      "updated": "2026-05-14T17:50:39Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.15152v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2605.15155v1",
+    "2605.15132v1",
+    "2605.15188v1",
+    "2605.15185v1",
+    "2605.15152v1"
+  ]
+}
