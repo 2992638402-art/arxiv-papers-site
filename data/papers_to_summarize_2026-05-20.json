@@ -1,0 +1,519 @@
+{
+  "date": "2026-05-20",
+  "papers": [
+    {
+      "id": "2605.19919v1",
+      "title": "Beyond Action Residuals: Real-World Robot Policy Steering via Bottleneck Latent Reinforcement Learning",
+      "summary": "Pretrained imitation policies have become a strong foundation for robot manipulation, but they often require online improvement to overcome execution errors, limited dataset coverage, and deployment mismatch. A central question is therefore how reinforcement learning (RL) should adapt policies after offline pretraining. Existing lightweight methods commonly apply residual corrections directly in action space, but this often leads to noisy and poorly structured exploration. In this work, we propose Z-Perturbation Reinforcement Learning (ZPRL), an approach that steers pretrained policies through a compact bottleneck latent rather than through policy weights or output actions. During offline training, we augment the policy with a plug-and-play variational information bottleneck (VIB) module to extract a task-relevant latent interface from observation embeddings. During online finetuning, the base policy is frozen and RL learns only a residual perturbation on this latent, whose decoded representation conditions the frozen action generator. We instantiate ZPRL on flow-matching policies and evaluate it on eight simulation tasks and four real-world tasks. Across diverse manipulation settings, ZPRL improves both sample efficiency and final performance over strong post-training baselines. In the real world, ZPRL improves the average success rate on four tasks by 33.7% over imitation base policies while producing smoother exploration behaviors than an action residual counterpart. These results suggest that a compact, task-aligned bottleneck latent provides an effective interface for online RL adaptation. More videos can be found at https://manutdmoon.github.io/ZPRL/.",
+      "authors": [
+        "Dongjie Yu",
+        "Kun Lei",
+        "Zhennan Jiang",
+        "Jia Pan",
+        "Huazhe Xu"
+      ],
+      "published": "2026-05-19T14:43:26Z",
+      "updated": "2026-05-19T14:43:26Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19919v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19600v1",
+      "title": "FlyMirage: A Fully Automated Generation Pipeline for Diverse and Scalable UAV Flight Data via Generative World Model",
+      "summary": "In the field of Vision-Language Navigation (VLN), aerial datasets remain limited in their ability to combine scale, diversity, and realism, often relying on either costly real-world scenes or visually limited simulations. To address these challenges, we introduce FlyMirage, a highly scalable and fully automated data generation pipeline for aerial VLN. Our approach leverages large language models (LLM) as an environment designer to promote scene diversity, paired with a generative world model that instantiates these designs into high-fidelity 3D Gaussian Splatting (3DGS) scenes. To substantially reduce human labor and ensure the feasibility of flight data, FlyMirage automates scene exploration and semantic information acquisition, and further integrates a dynamically feasible planner for uncrewed aerial vehicle (UAV) trajectory generation. Utilizing this toolchain, we generate a large-scale, diverse, and photorealistic aerial VLN dataset, with dynamically feasible flying trajectories, designed to support the development of next-generation embodied navigation models.",
+      "authors": [
+        "Jinhan Li",
+        "Xijie Huang",
+        "Zhaoqi Wang",
+        "Yijin Wang",
+        "Weiqi Ge",
+        "Qiyi He",
+        "Mo Zhu",
+        "Fei Gao",
+        "Yuze Wu",
+        "Xin Zhou"
+      ],
+      "published": "2026-05-19T09:41:04Z",
+      "updated": "2026-05-19T09:41:04Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19600v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19924v1",
+      "title": "RoHIL: Robust Human-in-the-Loop Robotic Reinforcement Learning Against Illumination Variations",
+      "summary": "Human-in-the-loop reinforcement learning systems achieve near-perfect success on the workstation where they are trained, but collapse when the same robot is moved to a workstation a few meters away due to shifts in the visual input distribution caused by new lamp positions and window light. Re-collecting demonstrations and re-running HIL on every workstation is incompatible with deployment, and naively fine-tuning on shifted-light data triggers catastrophic forgetting of the source workstation. To close this cross-domain gap, we present RoHIL, an offline fine-tuning framework that uses no extra real-robot interaction. RoHIL combines (i) a world-model-based image relighter that re-synthesises the visual stream of source-workstation trajectories under multiple virtual HDRI environments, leaving actions and rewards real; (ii) Illumination-Retention Replay (IRR), a data-level anti-forgetting mechanism that interleaves relit adaptation transitions with original-light retention transitions to preserve source-workstation Bellman coverage; and (iii) an anchored Bellman-actor regulariser that constrains representation and policy drift from the original source-workstation policy. Across four real-robot manipulation tasks under significant cross-workstation illumination variations, RoHIL substantially improves shifted-light performance where standard HIL-RL collapses, while preserving source-workstation performance, eliminating the need to re-collect data and retrain for every new workstation and environment. Project page: https://anonymous4365.github.io/RoHIL/",
+      "authors": [
+        "Shuoqin Zhang",
+        "Yixin Xiong",
+        "Xiru Gao",
+        "Kai Liu",
+        "Ke Wang",
+        "Xichuan Zhou",
+        "Zhe Hu"
+      ],
+      "published": "2026-05-19T14:47:38Z",
+      "updated": "2026-05-19T14:47:38Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19924v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.20055v1",
+      "title": "Towards LLM-Assisted Architecture Recovery for Real-World ROS~2 Systems: An Agent-Based Multi-Level Approach to Hierarchical Structural Architecture Reconstruction",
+      "summary": "Explicit software architecture models are essential artifacts for communicating, analyzing, and evolving complex software-intensive systems. In ROS~2-based robotic systems, however, structural (de-)composition and integration semantics are often only implicitly encoded across distributed artifacts such as source code and launch files, making recovery of hierarchical architecture particularly difficult. Existing approaches mainly focus on node-level entities and communication wiring, while providing limited support for recovering hierarchical structural (de-)composition across multiple abstraction levels. In this paper, we extend our previously proposed blueprint-guided LLM-assisted architecture recovery pipeline for ROS~2 systems through two major enhancements: (1) refined prompting to improve the consistency and controllability of architecture synthesis, and (2) a staged recovery strategy based on multi-level intermediate architectural representations that incorporate the atomic ROS node list and launch file dependencies, thereby enabling structurally constrained reconstruction across multiple abstraction levels. The approach is evaluated on a real-world automated product disassembly system based on cooperative robotic arms and heterogeneous ROS~2 artifacts. Compared to our previous work, the considered case study exhibits substantially higher integration complexity and richer functionality. The results demonstrate improved structural consistency, scalability, and robustness of architecture recovery, while also revealing remaining challenges related to dynamic integration semantics in large-scale ROS~2 systems.",
+      "authors": [
+        "Dominique Briechle",
+        "Raj Chanchad",
+        "Tobias Geger",
+        "Ruidi He",
+        "Dhruv Jajadiya",
+        "Dhruv Kapadiya",
+        "Andreas Rausch",
+        "Meng Zhang"
+      ],
+      "published": "2026-05-19T16:14:33Z",
+      "updated": "2026-05-19T16:14:33Z",
+      "categories": [
+        "cs.SE",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.20055v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19957v1",
+      "title": "World-Ego Modeling for Long-Horizon Evolution in Hybrid Embodied Tasks",
+      "summary": "World models are widely explored in embodied intelligence, yet they typically predict distinct evolutions of the world and the ego within a single stream, where the world captures persistent instruction-agnostic scene regularities and the ego captures robot-centric instruction-conditioned dynamics. This world-ego entanglement leads to a degradation in long-horizon embodied scenarios, particularly in hybrid tasks with interleaved navigation and manipulation behaviors. In this paper, we introduce \\emph{World-Ego Modeling}, a new conceptual paradigm that decomposes future evolution into world and ego components. We define the world-ego boundary from three perspectives, i.e., motion-, semantic-, and intention-based views, and analyze three disentanglement strategies with post-, pre-, and full disentanglement. Further, we instantiate this paradigm as the World-Ego Model (WEM), a unified embodied world model that couples an implicit separate world-ego planner with a cascade-parallel mixture-of-experts (CP-MoE) diffusion generator. To enable rigorous evaluation, we further construct HTEWorld, the first benchmark for long-horizon world modeling with hybrid navigation-manipulation tasks, providing 125K video clips (over 4.5M frames) with fine-grained action annotations and 300 multi-turn evaluation trajectories (over 2K instructions). Extensive experiments show that WEM achieves state-of-the-art performance on HTEWorld while remaining competitive on existing manipulation-only benchmarks.",
+      "authors": [
+        "Zuyao Lin",
+        "Jianhui Zhang",
+        "Peidong Jia",
+        "Xiaoguang Zhao",
+        "Shanghang Zhang",
+        "Xingyu Chen"
+      ],
+      "published": "2026-05-19T15:10:27Z",
+      "updated": "2026-05-19T15:10:27Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19957v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19678v1",
+      "title": "RoVLA: Multi-Consistency Constraints for Robust Vision-Language-Action Models",
+      "summary": "Vision-Language-Action (VLA) models have shown strong performance on embodied manipulation, yet they remain brittle under visual observation changes, paraphrased language instructions, and compounded perturbations. This limitation suggests that existing methods still rely heavily on shallow correlations in the training distribution, rather than learning stable couplings among task semantics, environment states, and action generation. Although recent efforts improve robustness through larger-scale training, post-training adaptation, or enhanced predictive modeling, they rarely enforce invariance-oriented consistency within the end-to-end policy itself. To address this issue, we propose RoVLA, a robust vision-language-action framework with multi-consistency constraints. RoVLA enforces consistency under three complementary transformations: instruction semantics, trajectory evolution, and observation perturbation. Specifically, Instructional Consistency (IC) promotes stable grounding under semantically equivalent instruction rewrites, Evolutionary Consistency (EC) preserves coherent action intent throughout the generation process, and Observational Consistency (OC) improves robustness to visual and proprioceptive perturbations by enforcing consistent predictions before and after targeted disturbances. By explicitly modeling these invariances during training, RoVLA reduces reliance on superficial correlations and improves robustness and generalization. Experiments on LIBERO-Plus, RoboTwin 2.0, and real-world manipulation tasks show that RoVLA consistently outperforms strong baseline methods and exhibits superior robustness under diverse task and observation shifts. These results demonstrate the effectiveness of multi-consistency learning for robust embodied control. Codes will be available at https://github.com/HCPLab-SYSU/RoVLA.",
+      "authors": [
+        "Jingzhou Luo",
+        "Yifan Wen",
+        "Yongjie Bai",
+        "Xinshuai Song",
+        "Yang Liu",
+        "Liang Lin"
+      ],
+      "published": "2026-05-19T11:10:20Z",
+      "updated": "2026-05-19T11:10:20Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19678v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19631v1",
+      "title": "HEAT: Heterogeneous End-to-End Autonomous Driving via Trajectory-Guided World Models",
+      "summary": "End-to-end autonomous driving has emerged as a compelling alternative to traditional modular pipelines by directly mapping raw sensor data to driving actions. While recent approaches achieve strong performance on single-domain datasets, their performance degrades significantly when trained jointly across multiple heterogeneous domains. In practice, however, autonomous systems must operate across diverse environments with heterogeneous distributions, including different cities, sensor configurations, and traffic patterns, without domain-specific retraining. This gap highlights a key challenge in multi-domain learning: domain-specific variations across heterogeneous domains introduce conflicting learning signals, driving models toward compromised solutions that are suboptimal across domains. To address this, we propose a trajectory-driven learning paradigm that organizes training around planning trajectories, enabling the model to capture domain-invariant representations of driving intent. Furthermore, we incorporate a world model that predicts future latent features conditioned on ego actions, improving feature consistency and mitigating domain-induced biases. We evaluate our approach on three benchmarks, nuScenes, NAVSIM, and the Waymo end-to-end dataset, and show substantial improvements over existing methods across all domains. Our results demonstrate that a single unified model can be trained on heterogeneous datasets while maintaining strong performance within each domain, highlighting a step toward scalable real-world deployment. We will make our code publicly available.",
+      "authors": [
+        "Hoonhee Cho",
+        "Giwon Lee",
+        "Jae-Young Kang",
+        "Hyemin Yang",
+        "Heejun Park",
+        "Kuk-Jin Yoon"
+      ],
+      "published": "2026-05-19T10:12:01Z",
+      "updated": "2026-05-19T10:12:01Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19631v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.20072v1",
+      "title": "Probing Embodied LLMs: When Higher Observation Fidelity Hurts Problem Solving",
+      "summary": "Large Language Models are increasingly proposed as cognitive components for robotic systems, yet their opaque decision processes make it difficult to explain success or failure in closed-loop embodied tasks. Following an empirical AI methodology, we study embodied LLM agents behaviorally by varying the information available to the agent and measuring the resulting changes in behavior. Using the Lockbox, a sequential mechanical puzzle with hidden interdependencies, we evaluate LLMs across RGB, RGB-D, and ground-truth symbolic observations in a physical robotic setup and use controlled simulation to probe the resulting behavior. Counterintuitively, agents perform best under raw RGB input and worst under perfect ground-truth observations. In simulation, we probe this effect by randomly flipping perceived action outcomes and find that moderate noise improves performance, peaking at a 40% flip probability with a 2.85-fold success rate increase over the noise-free baseline. Further analysis links this gain to a reduction in repetitive action loops. These findings suggest that success rates alone are insufficient for evaluating LLMs, as measured performance may reflect the interaction between perceptual errors and reasoning failures rather than robust problem solving.",
+      "authors": [
+        "Oussama Zenkri",
+        "Oliver Brock"
+      ],
+      "published": "2026-05-19T16:27:00Z",
+      "updated": "2026-05-19T16:27:00Z",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.20072v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19940v1",
+      "title": "Robotics-Inspired Guardrails for Foundation Models in Socially Sensitive Domains",
+      "summary": "Foundation models are increasingly deployed in socially sensitive domains such as education, mental health, and caregiving, where failures are often cumulative and context-dependent. Existing guardrail approaches -- ranging from training-time alignment to prompting, decoding constraints, and post-hoc moderation -- primarily provide empirical risk reduction rather than enforceable behavioral guarantees, and largely treat safety as a property of individual outputs rather than interaction trajectories. We reframe guardrails as a problem of runtime behavioral control over interaction trajectories, drawing on robotics to introduce formal constructs for constraint enforcement in uncertain, closed-loop systems. We instantiate these ideas in the Grounded Observer framework and apply it across three real-world deployments: small talk, in-home autism therapy, and behavioral de-escalation in schools. Across settings, the framework enables runtime interventions that mitigate drift into undesirable interaction regimes while adapting to diverse social contexts. We discuss extensions to the framework and propose research directions toward stronger guarantees.",
+      "authors": [
+        "Rebecca Ramnauth",
+        "Drazen Brscic",
+        "Brian Scassellati"
+      ],
+      "published": "2026-05-19T15:00:06Z",
+      "updated": "2026-05-19T15:00:06Z",
+      "categories": [
+        "cs.AI",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19940v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19840v1",
+      "title": "Justifying bio-inspired robotics research: A taxonomy of strategies",
+      "summary": "For most of human history, we have not thought systematically about how and why we incorporate aspects of the natural world into our designs. The lack of a systematic approach has resulted in inconsistencies in motivations and methods that make it difficult to predict or evaluate the success of bio-inspired design. This mismatch between expectations and results can lead to disappointment when a reader considers a bio-inspired design to be superficial, weak, or incomplete. This is especially true in the field of Robotics, in which similarity to a biological system might be the driving motivation for construction. In an effort to assist robotics researchers justify their specific bio-inspired approach and to assist funding program managers with discerning the value of different bio-inspired approaches, here we propose a taxonomy of motivations for bio-inspired design and describe the potential significant contributions that are likely to result from different approaches.",
+      "authors": [
+        "Margaret J. Zhang",
+        "Justin Ting",
+        "Talia Y. Moore"
+      ],
+      "published": "2026-05-19T13:35:14Z",
+      "updated": "2026-05-19T13:35:14Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19840v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19958v1",
+      "title": "TravExplorer: Cross-Floor Embodied Exploration via Traversability-Aware 3-D Planning",
+      "summary": "Zero-shot Object Navigation (ZSON) has shown promise for open-vocabulary target search in unseen environments, yet most existing systems remain tied to planar representations and single-floor assumptions. These assumptions become inadequate in real buildings, where navigation involves floors, stairs, landings, and vertically overlapping spaces. This article presents TravExplorer, a cross-floor embodied exploration framework that couples zero-shot semantic guidance with traversability-aware 3-D planning. TravExplorer maintains a unified volumetric map that distinguishes occupied structures from robot-reachable support surfaces and extracts traversable frontiers from connected support surfaces, including floors, stairs, and landings. A FOV-aware active perception strategy further resolves incomplete observations during cross-floor traversal. To reduce semantic-reasoning latency, a lightweight guidance module aligns a probabilistic instance map from online open-vocabulary segmentation with a spatial value map from fast image-to-text matching. Based on these geometric and semantic memories, a hierarchical planner performs target-aware frontier touring over object hypotheses, traversable frontiers, and stair landmarks, and generates executable cross-floor motions through foothold-guided 3-D search and vertically constrained local trajectory optimization. Experiments over 4,195 simulated episodes on HM3D and MP3D demonstrate consistent advantages over representative ObjectNav baselines. Fifty real-world trials on a Unitree Go2 further validate open-vocabulary target search across single-floor and cross-floor indoor environments without prior maps or human intervention. The code will be released at https://github.com/wuyi2121/TravExplorer.",
+      "authors": [
+        "Han Zheng",
+        "Zhe Chen",
+        "Yudong Huang",
+        "Haoran Liu",
+        "Jinghao Wang",
+        "Ming Yang",
+        "Tong Qin"
+      ],
+      "published": "2026-05-19T15:11:29Z",
+      "updated": "2026-05-19T15:11:29Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19958v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19824v1",
+      "title": "From Prompts to Pavement Through Time: Temporal Grounding in Agentic Scene-to-Plan Reasoning",
+      "summary": "Recent attempts to support high-level scene interpretation and planning in Autonomous Vehicles (AVs) using ensembles of Large Language Models (LLMs) and Large Multimodal Models (LMMs) continue to treat time as a secondary property. This lack of temporal grounding leads to inconsistencies in reasoning about continuous actions, undermining both safety and interpretability. This work explores whether temporal conditioning within inter-agent communication can preserve or enhance coherence without introducing degradation in semantic or logical consistency. To investigate this, we introduce three planner architectures with progressively increasing temporal integration and evaluate them on curated subsets of the BDD-X dataset using semantic, syntactic, and logical metrics. Results show that while temporal conditioning reshapes reasoning style, it yields no statistically significant improvements in standard NLP-based correctness metrics. However, qualitative analysis reveals predictive hazard reasoning, stable corrective behavior, and strategic divergence in the Sentinel. These findings clarify the limits of prompt-based temporal grounding and establish the first empirical benchmark for temporal scene-to-plan reasoning.",
+      "authors": [
+        "Ahmed Y. Gado",
+        "Omar Y. Goba",
+        "Alaa Hassanein",
+        "Catherine M. Elias",
+        "Ahmed Hussein"
+      ],
+      "published": "2026-05-19T13:18:35Z",
+      "updated": "2026-05-19T13:18:35Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.CV",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19824v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19990v1",
+      "title": "Minimalist Visual Inertial Odometry",
+      "summary": "Visual-Inertial Odometry(VIO), which is critical to mobile robot navigation, uses cameras with a large number of pixels. Capturing and processing camera images requires significant resources. This work presents a minimalist approach to planar odometry, demonstrating that just four visual measurements and an IMU can provide robust motion estimation for differential-drive robots. Our key insight is that four downward-facing photodiodes that sense the world through optical Gabor masks produce signals that encode speed. Based on this, we jointly optimize the mask parameters alongside a Temporal Convolutional Network (TCN) using a physically-grounded simulator. The resulting model decodes speed from just the four measurements produced by the photodiodes. Pairing these estimates with the angular speed from an IMU yields a continuous planar trajectory. We validate our approach with a prototype sensor mounted on a differential drive robot. Across diverse indoor and outdoor terrains, our system closely tracks the reference ground truth without any real-world fine-tuning. Our work shows that minimalist sensing enables efficient and accurate planar odometry.",
+      "authors": [
+        "Francesco Pasti",
+        "Jeremy Klotz",
+        "Nicola Bellotto",
+        "Shree K. Nayar"
+      ],
+      "published": "2026-05-19T15:27:28Z",
+      "updated": "2026-05-19T15:27:28Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19990v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19986v1",
+      "title": "Beyond Binary Success: A Diagnostic Meta-Evaluation Framework for Fine-Grained Manipulation",
+      "summary": "Fine-grained manipulation marks a regime where global scene context no longer suffices, and success hinges on the tight coupling of local attribute grounding, high-fidelity spatial perception, and constraint-respecting motor execution. However, current embodied AI benchmarks collapse these capacities into binary success rates, systematically inflating reported capabilities by up to 70% and masking the architectural bottlenecks that impede real-world deployment. We introduce MetaFine, a diagnostic meta-evaluation framework that disentangles manipulation competency along three axes: understanding, perception, and controlled behavior. Built on a compositional task graph, MetaFine absorbs heterogeneous external benchmarks and reconstructs them into diagnostic scenarios of varying complexity under a unified protocol. Evaluating state-of-the-art vision-language-action (VLA) models through this lens exposes severe dimension-specific failures invisible to conventional metrics. Through targeted causal intervention, we identify the visual encoder's ability to preserve local spatial structure as a key bottleneck for fine-grained precision: improving it directly unlocks previously inaccessible manipulation capabilities without modifying downstream policies. MetaFine further supports hybrid real-sim validation, using limited paired real-world rollouts to calibrate scalable simulation-based estimates for more stable physical benchmarking. By shifting evaluation from ranking to diagnosis, MetaFine turns benchmarking into an actionable compass for repairing the layered capacities underlying genuine physical dexterity. The MetaFine framework, benchmarks, and supporting resources will be publicly released at our project page: https://metafine.github.io/.",
+      "authors": [
+        "He-Yang Xu",
+        "Pengyuan Zhang",
+        "Zongyuan Ge",
+        "Xiaoshuai Hao",
+        "Serge Belongie",
+        "Xin Geng",
+        "Yuxin Peng",
+        "Xiu-Shen Wei"
+      ],
+      "published": "2026-05-19T15:25:13Z",
+      "updated": "2026-05-19T15:25:13Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19986v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19981v1",
+      "title": "CEER: Compliant End-Effector and Root Control as a Unified Interface for Hierarchical Humanoid Loco-Manipulation",
+      "summary": "Humanoid robots have achieved impressive locomotion performance, yet contact-rich and long-horizon manipulation remains a major bottleneck. Manipulation is inherently contact-rich and demands compliant whole-body control for stable interaction, while its diversity and long-horizon nature favor modular, planner-compatible interfaces over joint-space tracking. We propose CEER, a compliant end-effector-root (EE-root) control abstraction for modular humanoid loco-manipulation within a hierarchical planning framework. CEER enables compliance-aware whole-body control in an interpretable task space defined by root motion commands and end-effector pose targets, and supports plug-and-play integration with heterogeneous high-level planners. A teacher-student framework is adopted to distill a general motion-tracking controller into a low-level policy that consumes only EE-root commands. We further construct a hierarchical system that integrates heterogeneous planners and task modules through the EE-root interface, enabling diverse manipulation tasks without retraining the underlying whole-body policy. Experiments in simulation and on hardware demonstrate 3.3 cm end-effector tracking accuracy with substantially reduced jerk compared to baselines, stable contact-rich manipulation under teleoperation, and up to 70% success in simulated single-object loco-manipulation tasks within a room-scale environment. These results indicate that compliant EE-root control provides a practical abstraction for humanoid loco-manipulation, enabling modular and scalable integration of diverse skills.",
+      "authors": [
+        "Xinyuan Luo",
+        "Xingrui Chen",
+        "Xunjian Yin",
+        "Hongxuan Wu",
+        "Boxi Xia",
+        "Zhuoqun Chen",
+        "Jinzhou Li",
+        "Boyuan Chen",
+        "Xianyi Cheng"
+      ],
+      "published": "2026-05-19T15:23:40Z",
+      "updated": "2026-05-19T15:23:40Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19981v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19771v1",
+      "title": "Beyond Imitation: Learning Safe End-to-End Autonomous Driving from Hard Negatives",
+      "summary": "Existing imitation learning methods for end-to-end autonomous driving predominantly learn from successful demonstrations by minimizing geometric deviations from expert trajectories. This paradigm implicitly assumes that spatial proximity implies behavioral safety, leading to a critical objective mismatch: trajectories with nearly identical imitation losses may exhibit drastically different safety outcomes, where one remains recoverable while the other results in collision. To address this limitation, we propose BeyondDrive, a failure-aware imitation learning framework that jointly learns from successful and failed driving behaviors. First, we introduce a flow matching-based negative trajectory generator that synthesizes safety-critical yet expert-proximate trajectories, enabling explicit modeling of safety asymmetry. Second, we develop a diversity-aware sampling strategy that mitigates mode collapse and improves coverage of diverse failure modes during negative trajectory generation. Third, we propose a Repulsive Distance Loss that simultaneously attracts predictions toward expert demonstrations while repelling them from hard negative trajectories, thereby establishing discriminative safety boundaries in trajectory space. Applied to the uni-modal baseline Latent TransFuser, BeyondDrive achieves 89.7 PDMS on the NAVSIMv1 closed-loop benchmark, outperforming prior state-of-the-art methods. Moreover, BeyondDrive generalizes effectively across different autonomous driving architectures, including multi-modal planners, and further demonstrates strong zero-shot transferability on the HUGSIM benchmark.",
+      "authors": [
+        "Junli Wang",
+        "Zhihua Hua",
+        "Xueyi Liu",
+        "Zebin Xing",
+        "Haochen Tian",
+        "Kun Ma",
+        "Hangjun Ye",
+        "Guang Chen",
+        "Long Chen",
+        "Qichao Zhang"
+      ],
+      "published": "2026-05-19T12:41:47Z",
+      "updated": "2026-05-19T12:41:47Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19771v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19594v1",
+      "title": "MCNav: Memory-Aware Dynamic Cognitive Map for Zero-shot Goal-oriented Navigation",
+      "summary": "Navigating to instance-level targets in complex environments is a challenging problem. Many existing zero-shot methods achieve strong performance by modeling the entire environment and leveraging large language models for scene understanding. However, such strategies primarily focus on exploring new regions while lacking a deeper exploitation of information from previously explored areas. Consequently, when targets are missed or misidentified within previously visited regions, navigation failures occur frequently. To address these limitations, we propose MCNav, a memory-aware navigation framework with a dynamic cognitive map. This map stores efficiently queryable information about relevant objects in explored areas. Building on this memory structure, MCNav introduces two memory-aware exploration strategies: goal re-validation, which re-assesses previously seen objects to correct matching failures, and missed goal re-exploration, which estimates the likelihood that a target is present in an explored region from contextual cues. These strategies are further stabilized by a blacklist mechanism to prevent repeated errors and a double-check mechanism for high-confidence confirmation. We evaluate MCNav on the HM3Dv1 and HM3Dv2 datasets across three different tasks, where it achieves state-of-the-art performance, particularly on the instance-level goal navigation task.",
+      "authors": [
+        "Jingyu Li",
+        "Zhe Liu",
+        "Wenxiao Wu",
+        "Li Zhang"
+      ],
+      "published": "2026-05-19T09:39:51Z",
+      "updated": "2026-05-19T09:39:51Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19594v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19887v1",
+      "title": "DAG-Based QoS-Aware Dynamic Task Placement for Networked Multi-Stage Control Pipelines",
+      "summary": "Current Physical AI (PAI) relies heavily on closed-loop visual-servoing pipelines, whose perception and planning stages may become computationally intensive onboard due to complex models embedded on robots. In practice, offloading the perception task to on-site edges statically is inappropriate for latency-sensitive, precise industrial settings over a standardized industrial network. This emphasizes the importance of Control-Communication-Computing (3C) co-design in industrial automation: monolithic local execution saturates AI-accelerated machine and robot hardware, while static edge offloading exposes the control loop to network jitter. Existing adaptive task placement (ATP) controllers can partially address the gap by relocating a single pipeline stage on binary threshold rules, without a multi-stage model and an explicit cost on placement switching. In this Work-in-Progress (WiP) paper, we propose a directed acyclic graph (DAG) based quality-of-service (QoS)-aware dynamic task placement (DTP) framework for sensing-perception-planning-control pipelines in networked robotics. This pipeline is formalized as a DAG with task-level and node-level attributes for compute cost, communication delay, and feasible placement sets; over a small interpretable candidate set (fully local, static offload, hybrid), a window-based cost function combines tail end-to-end latency, deadline violation rate, hardware utilization, and a Hamming-distance switching penalty, and a DTP algorithm with hysteresis and a minimum dwell-time bounds placement chatter. Our WiP paper presents the theoretical framework, a structured qualitative analysis, and a two-phase simulation plus hardware-in-the-loop validation roadmap.",
+      "authors": [
+        "Thien Tran",
+        "Jonathan Kua",
+        "Thuong Hoang",
+        "Minh Tran",
+        "Yuemin Ding",
+        "Jiong Jin"
+      ],
+      "published": "2026-05-19T14:17:02Z",
+      "updated": "2026-05-19T14:17:02Z",
+      "categories": [
+        "cs.DC",
+        "cs.MA",
+        "cs.RO",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19887v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19881v1",
+      "title": "Trajectory Planning and Control near the Limits: an Open Experimental Benchmark on the RoboRacer Platform",
+      "summary": "We present a modular framework to benchmark new and existing methods for trajectory planning and control in high-acceleration maneuvers that push autonomous driving to the limits. Our framework includes time-optimal raceline generation, online time-optimal velocity replanning, geometric path tracking controllers, and a new model-structured neural network (MS-NN) to learn the inverse dynamics for steering control. We deploy our framework on a 1:10-scale RoboRacer platform, using two circuits. Through several ablations with cautious and aggressive racelines, we study the performance of single modules and their combinations. We show that our MS-NN significantly improves tracking accuracy, decreases steering oscillations, and is physically interpretable. Moreover, online velocity replanning improves lap times by compensating for execution errors, and enables the vehicle to safely reach higher speeds and accelerations. To support future research, our code, datasets, videos and results are publicly available at https://roboracer-benchmark.github.io/planning_control_benchmark/.",
+      "authors": [
+        "Mattia Piccinini",
+        "Patrick Zambiasi",
+        "Aniello Mungiello",
+        "Mattia Piazza",
+        "Felix Jahncke",
+        "Johannnes Betz"
+      ],
+      "published": "2026-05-19T14:14:07Z",
+      "updated": "2026-05-19T14:14:07Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19881v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19703v1",
+      "title": "KIO-planner: Attention-Guided Single-Stage Motion Planning with Dual Mapping for UAV Navigation",
+      "summary": "Autonomous UAV flight in confined, wall-dense environments requires low-latency and reliable motion planning under strict safety constraints. Traditional optimization-based planners suffer from mapping latency and easily fall into local minima when navigating through dense structural obstacles. Meanwhile, existing end-to-end learning methods struggle to extract fine-grained geometric features from raw depth images and lack hard kinodynamic constraints, leading to unpredictable collisions near walls. To address these issues, we propose KIO-planner, an attention-guided single-stage trajectory planning framework. First, we integrate a Convolutional Block Attention Module (CBAM) into the perception backbone to adaptively focus on critical structural edges and traversable space. Second, we introduce a novel Dual Mapping mechanism--comprising physical bounds activation and a deterministic Geometric Safety Shield in the depth-pixel space--to enforce kinodynamic feasibility and collision-free flight without global map fusion. Extensive high-fidelity simulated experiments demonstrate that KIO-planner enables highly agile navigation at speeds up to 3.0 m/s. Compared to the state-of-the-art baseline, KIO-planner achieves lower inference latency (approximately 24 ms) and generates significantly smoother trajectories, reducing control cost by 28.4%. Most notably, our Dual Mapping substantially increases the worst-case safety margin, measured by minimum distance to obstacles, from 0.48 m to 0.76 m, ensuring fast, smooth, and safer navigation in highly constrained environments.",
+      "authors": [
+        "Dexing Yao",
+        "Haochen Li",
+        "Junhao Wei",
+        "Yifu Zhao",
+        "Yanxiao Li",
+        "Jiahui Xu",
+        "Jinxuan Hu",
+        "Lele Tian",
+        "Baili Lu",
+        "Zikun Li",
+        "Xu Yang",
+        "Sio-Kei Im",
+        "Dingcheng Yang",
+        "Yapeng Wang"
+      ],
+      "published": "2026-05-19T11:41:23Z",
+      "updated": "2026-05-19T11:41:23Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19703v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19690v1",
+      "title": "D-CLING: Prior-Preserving Depth-Conditioned Fine-Tuning for Navigation Foundation Models",
+      "summary": "Navigation Foundation Models (NFMs) trained on large cross-embodied datasets have demonstrated powerful generalizability in various scenarios. Adopting in-domain fine-tuning for an NFM efficiently calibrates the visuomotor policy, promising further improvement even in a novel scenario. However, the fine-tuned models still suffer from poor obstacle avoidance or fail to properly reach the provided goals. Furthermore, model updates using a small subset of data typically erode the pre-trained prior, compromising the pre-training generalization. Consequently, fine-tuning deteriorates the capability of the model for robust and accurate navigation. In this work, we present a novel fine-tuning method that leverages large-scale pre-training while efficiently learning in novel setups, such as environments or camera configurations. In particular, inspired by ControlNet, we fine-tune an NFM by attaching a trainable copy of the pre-trained backbone using zero-initialized residual pathways, thereby learning geometric cues. This design enables the model to efficiently acquire in-domain geometry while preserving pre-trained knowledge across various behaviors. Despite its simplicity, our comprehensive evaluation of real-world navigation suggests that our proposal effectively enables robust long-horizon navigation with minimal collisions and human intervention. Additionally, our offline analysis shows that the proposed method maintains or further improves action prediction capabilities beyond the fine-tuned dataset, providing a key insight into continual learning for general navigation. The project page: https://toyotafrc.github.io/DCLING-Proj/",
+      "authors": [
+        "Shintaro Nakaoka",
+        "Takayuki Kanai",
+        "Kazuhito Tanaka"
+      ],
+      "published": "2026-05-19T11:23:04Z",
+      "updated": "2026-05-19T11:23:04Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19690v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.20138v1",
+      "title": "Hamilton--Jacobi Reachability for Spacecraft Collision Avoidance",
+      "summary": "This article presents a Hamilton--Jacobi (HJ) reachability framework for a two--satellite collision avoidance problem operating in the same circular orbit, where relative motion is modeled in the radial--tangential--normal (RTN) frame using planar Hill--Clohessy--Wiltshire (HCW) dynamics. We define the target state space as unsafe relative configurations in the orbit plane corresponding to minimum separation requirements consistent with Federal Communications Commission (FCC) orbital standards. The interaction between spacecraft is formulated as a zero--sum differential game, where Player 1 is the controlled satellite and Player 2 is modeled as a bounded adversarial disturbance with unknown intent. We present the HJ formulation and compute backward reachable sets that characterize relative states from which collision cannot be avoided under worst-case disturbances, while states outside this set admit provably collision-free trajectories. These reachable sets are integrated with supervisory hybrid control logic to determine when evasive maneuvers must be initiated, enabling mathematically grounded safety guarantees for scalability.",
+      "authors": [
+        "Larry Hui",
+        "Jordan Kam",
+        "William Su",
+        "Jianshu Zhou"
+      ],
+      "published": "2026-05-19T17:22:16Z",
+      "updated": "2026-05-19T17:22:16Z",
+      "categories": [
+        "cs.RO",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.20138v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19837v1",
+      "title": "CADENet: Condition-Adaptive Asynchronous Dual-Stream Enhancement Network for Adverse Weather Perception in Autonomous Driving",
+      "summary": "Adverse weather (rain, fog, sand, and snow) degrades camera-based object detection in autonomous vehicles. Existing enhancement-then-detect approaches stall the safety-critical perception loop, violating hard real-time requirements. Progress on this problem is also constrained by an under-recognized evaluation ceiling: ground truth annotated on degraded images cannot credit a detector that recovers objects the annotators themselves could not see, so a genuinely useful enhancement can register as a near-flat F1 gain. This paper presents CADENet (Condition-Adaptive Asynchronous Dual-stream Enhancement Network), a training-free three-thread system: Thread S (YOLOv11n) delivers detections at full frame rate with zero added latency; Thread Q applies condition-adaptive enhancement (CAPE) and fuses results via entropy-guided NMS (EG-NMS) without blocking Thread S; Thread E provides CLIP zero-shot weather classification, so new weather categories require only a new text prompt, with no labeled data and no retraining. Evaluated on 1327 DAWN images (YOLOv11m, IoU = 0.5, confidence = 0.25), CADENet achieves Recall = 0.0103 (micro), F1 = 0.0230 on snow, and F1 = 0.0038 on rain. We formalize the annotation completeness bias on DAWN-class data, so the reported F1 values are lower bounds on the true gain; recall is the annotation-gap-immune headline metric. Thread S sustains approximately 44 FPS regardless of enhancement load. No model retraining or additional sensor hardware is required.",
+      "authors": [
+        "Sherif Khairy",
+        "Catherine M. Elias"
+      ],
+      "published": "2026-05-19T13:30:28Z",
+      "updated": "2026-05-19T13:30:28Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.CL",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19837v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.19701v1",
+      "title": "Multi-Session Ground Texture SLAM in Low-Dynamic Environments",
+      "summary": "The simultaneous localization and mapping community has introduced a growing number of systems adapted for multi-session operations where the operational environment features low-dynamic changes that impact mapping, such as surface wear, weather phenomena, or seasonal change. These systems allow for lifelong operations by a robot within these environments. There is also growing interest in operations in environments where the unique ground texture is the only mapping feature available for use. These ground texture systems are not yet targeted for multi-session low-dynamic-change environments though. This work explores the impact of three different techniques on trajectory estimation accuracy in these multi-session low-dynamic ground texture environments. Of the three, the use of Kullback-Leibler Divergence, as a similarity score and a bias influencing loop closure confidence, is found to have the most success. We show an analysis of all three methods and a deeper exploration of the impact of Kullback-Leibler Divergence. We also introduce a dataset for use by the robotics community that contains multi-session images where the ground changes between sessions and also high-accuracy pose information for use in evaluation.",
+      "authors": [
+        "Kyle M. Hart",
+        "Brendan Englot"
+      ],
+      "published": "2026-05-19T11:37:40Z",
+      "updated": "2026-05-19T11:37:40Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.19701v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.20101v1",
+      "title": "Topology-Optimized Pneumatic Soft Actuator: Design and Experimental Validation",
+      "summary": "This paper demonstrates the computational design of soft elastomeric pneumatic actuators using nonlinear topology optimization. An existing density- and porohyperelasticity-based topology optimization framework was extended from 2D to 3D and used to generate two manufacturable actuator designs, which were then studied numerically and experimentally. For both designs, the objective was to maximize the bending response for a prescribed actuation pressure under two different allowable strain limits. A key advantage of the employed topology optimization framework is that it can consistently, during the optimization, account for the very large deformations induced upon pressurization. The two optimized 3D designs were fabricated using stereolithography and experimentally tested to validate their performance.",
+      "authors": [
+        "Sumit Mehta",
+        "Konstantinos Poulios"
+      ],
+      "published": "2026-05-19T16:52:49Z",
+      "updated": "2026-05-19T16:52:49Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.20101v1.pdf",
+      "category": "robotics"
+    }
+  ]
+}
