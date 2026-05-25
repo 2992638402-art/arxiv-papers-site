@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DualMem: Bypassing the Objectness Bottleneck for Calibrated Unknown-Stream Filtering in Open-World Object Detection - arXiv 2605.23634 论文总结">
+    <title>DualMem: Bypassing the Objectness Bottleneck for Calibrated Unknown-Stream Filtering in Open-World Object Detection | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>DualMem: Bypassing the Objectness Bottleneck for Calibrated Unknown-Stream Filtering in Open-World Object Detection</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2605.23634<br><strong>分类:</strong> cs.CV, cs.AI<br><strong>发布时间:</strong> 2026-05-22</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yingjun Xiao, Xi Chen, Gang Fang, Siyuan Chen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2605.23634">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2605.23634">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Open-world object detection (OWOD) requires detectors to localize known classes while identifying unknown objects for future incremental learning. We find that the unknown prediction streams of strong OWOD detectors are heavily polluted: on M-OWODB, across PROB, OW-DETR, and HypOW, future-task positive unknowns make up less than 10% of unknown predictions, whereas background false positives account for 46-71%. We show that this is not a missing-information problem, but an information bottleneck at the objectness head. On PROB Task 1, a linear probe on the 256-D decoder query achieves an AUROC of 0.908 for positive-versus-negative unknown discrimination, but the final one-dimensional objectness scalar drops to 0.642. A frozen SigLIP feature, without access to the detector, independently recovers much of this proposal-level separability at the filtering stage (AUROC = 0.871). Motivated by this finding, we propose DualMem, a calibrated post-hoc filter that assumes a small image-disjoint annotated calibration split of held-out future-task objects and performs a non-parametric likelihood ratio test in frozen SigLIP feature space. DualMem uses a k-nearest-neighbor positive memory to protect future-task objects and a negative memory to suppress background-like proposals. Its decision threshold is chosen by Neyman-Pearson calibration, giving users an explicit trade-off between false-unknown suppression and novel recall. Across PROB, OW-DETR, and HypOW on M-OWODB Task 1, DualMem reduces background-type false unknown proposals per image by 44.9%-66.3%, with a mean reduction of 56.6%. On PROB Task 1, it more than doubles the reduction achieved by a natural K-means prototype baseline, while leaving known-class mAP unchanged because known detections bypass the filter.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2605.23634" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
