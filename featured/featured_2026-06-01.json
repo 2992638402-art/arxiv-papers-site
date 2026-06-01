@@ -1,0 +1,138 @@
+{
+  "date": "2026-06-01",
+  "papers": [
+    {
+      "id": "2605.31361v1",
+      "title": "Dreaming Of Others: Latent Teammate Modeling In World Models For Multi-Agent Reinforcement Learning",
+      "summary": "In cooperative multi-agent reinforcement learning (MARL), agents must coordinate with partners whose internal policies and intentions are not directly observable. While world models such as Dreamer have demonstrated strong generalization and sample efficiency in single-agent settings, their application to MARL remains limited by an inability to handle teammate-induced uncertainty. We propose a new perspective: treat teammates as structured, learnable components within the agent's world model. We introduce an architecture that factorizes the latent state of a Dreamer-style recurrent state-space model (RSSM) into environment and teammate components, and learns an auxiliary Theory-of-Mind (ToM) head to infer latent embeddings of partner behavior such as character, intent, and predicted actions from partial trajectories. These teammate latents condition the actor and critic, enabling the agent to imagine and adapt to diverse collaborators. We outline how this approach can support zero-shot and few-shot coordination in partially observable settings and propose a set of benchmarks and evaluation protocols to assess its impact. This work positions world models as not only predictors of environmental dynamics, but as simulators of social behavior, opening new directions for generalizable, human-compatible AI.",
+      "authors": [
+        "Tomas Leroy-Stone"
+      ],
+      "published": "2026-05-29T14:34:50Z",
+      "updated": "2026-05-29T14:34:50Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.31361v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2605.31256v1",
+      "title": "Before Parc Fermé: RL-Time Pruning for Efficient Embodied LLMs in Autonomous Driving",
+      "summary": "Embodied Large Language Models (LLMs) are increasingly used as reasoning modules in robotic control pipelines to improve human-robot interaction, but their memory and generation latency make real-time deployment difficult. Pruning can reduce these costs, but for controllers that undergo multiple pre- and post-training phases, the crucial question is not only how much to prune, but when pruning should occur. In this work, we propose Before Parc Fermé (BPF), a pruning strategy performed during RL that compresses embodied LLM controllers while they are still being optimized for closed-loop behavior. This allows pruning decisions to account for the task-specific supervision and closed-loop feedback that shape the final controller. We propose two variants: BPF-RL, which performs iterative pruning during RL by removing part of the model at predefined training intervals, and BPF-SFT/RL, which first prunes part of the model structure during SFT and then further compresses it during RL using the same iterative strategy as BPF-RL until the target pruning ratio is reached. We evaluate BPF on RobotxR1, an LLM-based autonomous-driving control pipeline, using an established LLM pruning framework (LLM-Pruner), and compare it against post-training pruning, post-training pruning with RL recovery, SFT-stage pruning, and smaller dense models from the same family. Our results show that BPF provides the best task-performance vs. memory and throughput trade-off among the considered pruning strategies. When compressing the larger RobotxR1 models, BPF-SFT/RL achieves a $1.69\\times$ better size-end-to-end performance trade-off than directly selecting a smaller dense model from the same family, measured as removed parameters per lost percentage point of control adaptability. On the Jetson AGX Orin mounted on the target robotic platform, the compact models improve decode throughput by up to $27\\%$.",
+      "authors": [
+        "Luca Benfenati",
+        "Ali Azimi",
+        "Matteo Risso",
+        "Fabio Carapellese",
+        "Daniele Jahier Pagliari",
+        "Alessio Burrello"
+      ],
+      "published": "2026-05-29T12:53:33Z",
+      "updated": "2026-05-29T12:53:33Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.31256v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2605.30144v1",
+      "title": "AgentSchool: An LLM-Powered Multi-Agent Simulation for Education",
+      "summary": "Despite the rapid deployment of LLMs into classrooms, validating educational AI remains uniquely intractable: interventions act on developing learners whose cognitive and social trajectories are irreversibly shaped, while real-world trials are slow, ethically constrained, and institutionally locked. LLM-based educational simulators have emerged as a potential remedy, but many still collapse learning into persona-conditioned role-play and, when optimized only to reproduce existing classrooms, can structurally penalize the institutional novelty that pedagogical reform requires. In this work, we introduce AgentSchool, an LLM-driven multi-agent simulator that models learning as state transition rather than prompted behavior. AgentSchool couples cognitively growable student agents -- equipped with weighted subject knowledge graphs, thinking-workflow pools, and explicit misconceptions -- with adaptive teacher agents that plan, scaffold, and reflect along the Zone of Proximal Development, embedded in a configurable scenery generator that situates instruction within both formal and informal learning fields, and a multi-scale simulator that decouples interaction scale, temporal granularity, and simulation duration. Experiments show that structured student agents produce more differentiated mastery and misconception traces than a baseline simulator, while teacher-agent comparisons show backbone-dependent patterns consistent with ZPD-informed adaptation. Further, AgentSchool generates plausible traces of peripheral participation, clique formation, aggressor-induced cohesion, and opinion-leader emergence consistent with classroom social theories. Beyond its role as an educational research instrument, AgentSchool frames education as a socially meaningful testbed for long-horizon memory, multi-agent coordination, and future institutional reasoning under organizational pressure.",
+      "authors": [
+        "Yulei Ye",
+        "Wenhao Li",
+        "Zhong Wen",
+        "Yunshu Huang",
+        "Yichen Hu",
+        "Zifan Wei",
+        "Yige Wang",
+        "Xinyu Xie",
+        "Haoxuan Yang",
+        "Yanjun Huang",
+        "Ruijia Li",
+        "Hong Qian",
+        "Yu Song",
+        "Bo Jiang",
+        "Bingdong Li",
+        "Lijun Li",
+        "Bo Zhang",
+        "Pinlong Cai",
+        "Xingcheng Xu",
+        "Shuangye Chen",
+        "Xia Hu",
+        "Liang He",
+        "Aimin Zhou",
+        "Jingjing Qu",
+        "Jing Shao",
+        "Xiangfeng Wang"
+      ],
+      "published": "2026-05-28T16:05:58Z",
+      "updated": "2026-05-28T16:05:58Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.30144v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2605.29790v1",
+      "title": "Evolve as a Team: Collaborative Self-Evolution for LLM-based Multi-Agent Systems",
+      "summary": "LLM-based multi-agent systems (MAS) have emerged as an effective paradigm for complex and long-horizon tasks. However, in real-world tasks, MAS often exhibit various failures during execution and such failures are difficult to eliminate during design. This motivates experience-driven MAS evolution, where a system improves based on its own execution experience. Yet such evolution is challenging because MAS experience is prolonged and intricate, interleaving multiple agents' execution chains and communication messages, which makes it difficult to identify what should be improved. To address this challenge, we propose Meta-Team, an experience-driven MAS evolution framework based on collaborative self-evolution. Meta-Team preserves the execution context of each agent and coordinates post-task communication, enabling agents to exchange distributed evidence for evolution. Building on this design, Meta-Team conducts multi-scale self-evolution, transforming execution experience into reusable improvements to agent behaviors, inter-agent coordination, and team-level organization. Across six long-horizon agent benchmarks, Meta-Team consistently outperforms single-agent systems, hand-crafted MAS, and prior MAS evolution methods; further analyses demonstrate that Meta-Team enables more reliable and scalable MAS self-evolution.",
+      "authors": [
+        "Zhezheng Hao",
+        "Tianfu Wang",
+        "Huanshuo Dong",
+        "Ziyan Liu",
+        "Hong Wang",
+        "Xiankun Lin",
+        "Qiang Lin",
+        "Can Wang",
+        "Hande Dong",
+        "Jiawei Chen"
+      ],
+      "published": "2026-05-28T11:40:16Z",
+      "updated": "2026-05-28T11:40:16Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.29790v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2605.29744v1",
+      "title": "Why Specialist Models Still Matter: A Heterogeneous Multi-Agent Paradigm for Medical Artificial Intelligence",
+      "summary": "The impressive performance of generalist large language models (LLMs) such as GPT and Claude in healthcare raises a critical question: will domain-specific medical specialist models become obsolete? We argue that the future of medical artificial intelligence (AI) lies not in building monolithic medical foundation models, nor in replacing human expertise, but in orchestrating collaboration among generalist LLMs, domain-specific specialist models, and clinicians. We propose HetMedAgent, a heterogeneous medical multi-agent framework that enables conflict-aware evidence fusion, uncertainty-based clinician intervention triggering, and adaptive threshold calibration. Experiments on three real-world clinical decision-making tasks demonstrate that the synergy between generalist LLMs and domain-specific specialist models significantly outperforms using either type of model alone, validating the irreplaceable value of specialist models in modality-specific analysis. HetMedAgent represents a shift from building medical LLMs or foundation models to multi-agent collaboration, achieving a balance between general reasoning capabilities and domain-specific precision.",
+      "authors": [
+        "Yanan Wang",
+        "Shuaicong Hu",
+        "Jian Liu",
+        "Guohui Zhou",
+        "Aiguo Wang",
+        "Cuiwei Yang"
+      ],
+      "published": "2026-05-28T10:42:44Z",
+      "updated": "2026-05-28T10:42:44Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2605.29744v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2605.31361v1",
+    "2605.31256v1",
+    "2605.30144v1",
+    "2605.29790v1",
+    "2605.29744v1"
+  ]
+}
