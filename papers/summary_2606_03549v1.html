@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How Many Trees in a Random Forest? A Revisited Approach with Plateau Search and Optuna Integration - arXiv 2606.03549 论文总结">
+    <title>How Many Trees in a Random Forest? A Revisited Approach with Plateau Search and Optuna Integration | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>How Many Trees in a Random Forest? A Revisited Approach with Plateau Search and Optuna Integration</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.03549<br><strong>分类:</strong> cs.LG, math.PR<br><strong>发布时间:</strong> 2026-06-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Vadim Porvatov, Andrey Dukhovny, Andrey Lange</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.03549">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.03549">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Hyperparameter optimization (HPO) for Random Forest faces a specific difficulty in tuning the number of trees: the predictive score typically improves monotonically with ensemble size, so standard methods such as Tree-structured Parzen Estimator (TPE) and Hyperband require a predefined search range and often drive the estimate toward its right boundary. Early-stopping strategies avoid fixing such a range, but can be sensitive to score noise and prone to premature stopping. To address this, we propose an integrated triplet-based plateau-search algorithm that removes the number of trees from the direct TPE search space and still exploits information accumulated across HPO trials. The method adaptively tracks a near-minimal sufficient ensemble size by monitoring relative changes in the out-of-bag (OOB) score across a triplet of forest sizes and shifting this triplet accordingly. This yields an automated and user-interpretable procedure based on a tolerance parameter. We also provide a theoretical analysis: we relate the proposed relative OOB-score criterion to the gap between the current and limiting scores, and derive an asymptotic variance estimate for the corresponding OOB-based absolute relative difference. Experiments show that the selected number of trees can differ substantially from the common heuristic: for most classical benchmark datasets it is smaller, whereas for some high-dimensional bioinformatics datasets, such as Arcene and Dorothea, it is larger. The source code and reproducible experiments are available at <a href="https://github.com/lange-am/rf_plateau_hpo">https://github.com/lange-am/rf_plateau_hpo</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.03549" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
