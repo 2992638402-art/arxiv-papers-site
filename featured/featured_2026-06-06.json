@@ -1,0 +1,125 @@
+{
+  "date": "2026-06-06",
+  "papers": [
+    {
+      "id": "2606.06399v1",
+      "title": "CollabSim: A CSCW-Grounded Methodology for Investigating Collaborative Competence of LLM Agents through Controlled Multi-Agent Experiments",
+      "summary": "Multi-agent systems (MAS) built on large language models have shown growing promise, with their effectiveness resting on agents' ability to coordinate through text-based channels much as human teams do. Yet recent study suggests that MAS often falter not because agents lack individual task-solving ability, but because they lack collaborative competence: the capacity to establish common ground, maintain shared task understanding, balance individual and collective incentives, and repair misalignment as interaction unfolds. Decades of research in Computer-Supported Cooperative Work have characterized these requirements for human teams coordinating under constrained communication, yet existing MAS evaluations focus mainly on task outcomes or single-agent proficiency in reasoning, planning, and tool use. To enable a systematic analysis of agents' collaborative competence in MAS, we introduce CollabSim, a configurable simulation framework that combines a theory-grounded definition of collaborative capabilities, controlled manipulation of interaction conditions, and action-level probing of agents' internal states. Experiments across four LLMs show that CollabSim can capture condition effects, separate model performance patterns, and reveal task-dependent effects of agent design.",
+      "authors": [
+        "Jiaju Chen",
+        "Bo Sun",
+        "Yuxuan Lu",
+        "Yun Wang",
+        "Dakuo Wang",
+        "Bingsheng Yao"
+      ],
+      "published": "2026-06-04T17:06:22Z",
+      "updated": "2026-06-04T17:06:22Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.06399v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2606.06350v1",
+      "title": "EDIT: Evidence-Diagnosed Intervention Training for Rule-Faithful LLM Grading",
+      "summary": "Reliable rubric grading requires more than accurate score prediction. Each judgement must be grounded in the mark scheme and evidence from the student answer. Existing credit-assignment and intervention methods, primarily designed for self-contained reasoning tasks such as mathematics reasoning, struggle in this setting because they do not identify where grading reasoning goes wrong or how the model's belief about the final mark changes during reasoning. We propose Evidence-Diagnosed Intervention Training (EDIT), a two-phase framework for training more rubric-faithful LLM graders. First, EDIT-SFT locates problematic reasoning steps using internal model signals: posterior belief over the final mark and input-grounding scores. It then revises only these local steps with help from a rubric checklist. Second, EDIT-RL calibrates the grader with belief-guided reward shaping, penalising large harmful belief drifts while still allowing helpful exploration. Experiments on two real-world, multi-subject grading benchmarks demonstrate that EDIT consistently outperforms strong supervised fine-tuning and reinforcement learning baselines on both in-domain and out-of-domain splits, with ablation studies confirming that internal-state diagnostics drive these gains.",
+      "authors": [
+        "Zhihao Wu",
+        "Linhai Zhang",
+        "Taiyi Wang",
+        "Runcong Zhao",
+        "Peter Andrews",
+        "Cesare Aloisi",
+        "Yulan He"
+      ],
+      "published": "2026-06-04T16:20:17Z",
+      "updated": "2026-06-04T16:20:17Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.06350v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2606.06428v1",
+      "title": "Reinforcement Learning Elicits Contextual Learning of Unseen Language Translation",
+      "summary": "Prior work has shown that large language models (LLMs) can translate unseen or low-resource languages by undergoing continued training or even by encoding a grammar book in their context. However, both methods typically overfit specific languages, with limited zero-shot transfer at test time. To translate extremely low-resource languages at scale, we argue that LLMs must acquire the meta-skill of utilizing in-context linguistic knowledge rather than memorizing specific languages. In this paper, we propose a reinforcement learning (RL) approach to unseen language translation given rich linguistic context, using a surface-level translation metric (chrF) as the reward. Empirically, despite the lightweight reward, our RL-trained models effectively extract and apply relevant linguistic information from the provided context, leading to better translations on completely unseen languages than in-context learning or supervised fine-tuning. Our analyses suggest that outcome-based RL can extend beyond conventional reasoning tasks like math and coding to serve as a recipe for language learning from context.",
+      "authors": [
+        "Hanxu Hu",
+        "Zdeněk Šnajdr",
+        "Pinzhen Chen",
+        "Jannis Vamvas",
+        "Rico Sennrich"
+      ],
+      "published": "2026-06-04T17:32:06Z",
+      "updated": "2026-06-04T17:32:06Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.06428v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2606.06473v1",
+      "title": "MLEvolve: A Self-Evolving Framework for Automated Machine Learning Algorithm Discovery",
+      "summary": "Large language model (LLM) agents are increasingly applied to long-horizon tasks such as scientific discovery and machine learning engineering (MLE), where sustained self-evolution becomes a key capability. However, existing MLE agents suffer from inter-branch information isolation, memoryless search, and lack of hierarchical control, which together hinder long-horizon optimization. We present MLEvolve, an LLM-based self-evolving multi-agent framework for end-to-end machine learning algorithm discovery. By extending tree search to Progressive MCGS, MLEvolve enables cross-branch information flow through graph-based reference edges and gradually shifts the search from broad exploration to focused exploitation with an entropy-inspired progressive schedule. To allow the agent to evolve with accumulated experience, we introduce Retrospective Memory, which combines a cold-start domain knowledge base with a dynamic global memory for task-specific experience retrieval and reuse. For stable long-horizon iteration, we further decouple strategic planning from code generation with adaptive coding modes. Evaluation on MLE-Bench shows that MLEvolve achieves state-of-the-art performance across multiple dimensions including average medal rate and valid submission rate under a 12-hour budget (half the standard runtime). Moreover, MLEvolve also outperforms specialized algorithm discovery methods including AlphaEvolve on mathematical algorithm optimization tasks, demonstrating strong cross-domain generalization. Our code is available at https://github.com/InternScience/MLEvolve.",
+      "authors": [
+        "Shangheng Du",
+        "Xiangchao Yan",
+        "Jinxin Shi",
+        "Zongsheng Cao",
+        "Shiyang Feng",
+        "Zichen Liang",
+        "Boyuan Sun",
+        "Tianshuo Peng",
+        "Yifan Zhou",
+        "Xin Li",
+        "Jie Zhou",
+        "Liang He",
+        "Bo Zhang",
+        "Lei Bai"
+      ],
+      "published": "2026-06-04T17:55:59Z",
+      "updated": "2026-06-04T17:55:59Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.06473v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2606.06493v1",
+      "title": "HANDOFF: Humanoid Agentic Task-Space Whole-Body Control via Distilled Complementary Teachers",
+      "summary": "For a humanoid robot to be deployed in the real world, the choice of command space (i.e., the interface between task planning and whole-body control) is crucial. Existing whole-body controllers typically demand dense kinematic or spatial references that planners struggle to synthesize from task semantics. We instead propose a compact, explicit interface that is intuitive, general, modular, and expressive enough for diverse manipulation skills. To this end, we introduce HANDOFF, a single humanoid whole-body controller that follows this interface and is distilled via multi-teacher KL distillation under a context-conditioned gating scheme into a mixture-of-experts student from three complementary specialists: whole-body motion tracking with safety-filtered data, locomotion, and fall-recovery. On the Unitree G1, HANDOFF matches state-of-the-art velocity tracking and offers one of the largest robust manipulation workspaces. We further demonstrate hardware feasibility through multiple natural-language-driven task roll-outs, powered by a VLM-driven agentic planner with no task-specific data or controller fine-tuning.",
+      "authors": [
+        "Lizhi Yang",
+        "Junheng Li",
+        "Nehar Poddar",
+        "Yiling Hou",
+        "Gio Huh",
+        "Robert Griffin",
+        "Georgia Gkioxari",
+        "Aaron Ames"
+      ],
+      "published": "2026-06-04T17:59:50Z",
+      "updated": "2026-06-04T17:59:50Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.06493v1.pdf",
+      "category": "robotics"
+    }
+  ],
+  "ids": [
+    "2606.06399v1",
+    "2606.06350v1",
+    "2606.06428v1",
+    "2606.06473v1",
+    "2606.06493v1"
+  ]
+}
