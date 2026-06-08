@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PrimeSVT: An Automated Memory-aware Pruning Framework with Prioritized Compression Policy for Spiking Vision Transformers - arXiv 2606.03428 论文总结">
+    <title>PrimeSVT: An Automated Memory-aware Pruning Framework with Prioritized Compression Policy for Spiking Vision Transformers | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>PrimeSVT: An Automated Memory-aware Pruning Framework with Prioritized Compression Policy for Spiking Vision Transformers</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.03428<br><strong>分类:</strong> cs.NE, cs.AI, cs.LG<br><strong>发布时间:</strong> 2026-06-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Rachmad Vidya Wicaksana Putra, Achyuta Muthuvelan, Alberto Marchisio, Muhammad Shafique</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.03428">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.03428">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>The large sizes of Spiking Vision Transformers (SViTs) still hinder their embedded implementation, highlighting the need for model compression. State-of-the-art works compress SViT models through unstructured pruning, which needs specialized hardware accelerators for their specific sparsity patterns to maximize efficiency gains. Moreover, their manual approach requires a huge design time to find an appropriate pruning setting for each network, thus making this approach not scalable. To address this limitation, we propose PrimeSVT, a novel framework that performs automated memory-aware structured pruning on pre-trained SViT models, thereby maximizing their efficiency gains during inference amenable to widely-used computing architectures. To achieve this, PrimeSVT first sorts the SViT layers based on their sizes (i.e., number of parameters), identifies the targeted pruning layers based on their robustness under different pruning rates, then leverages this order for compressing the model layer-by-layer sequentially from the largest one to the smallest one (i.e., so-called prioritized compression policy), while considering the user-defined constraints (i.e., acceptable accuracy and memory saving). In each layer, PrimeSVT employs channel-wise filter pruning based on their L2-norm values to structurally remove the non-significant weights. Experimental results show that PrimeSVT saves 26.68% memory through automated single-shot pruning, while preserving accuracy within 3% (70.3% without fine-tuning and 72.9% with fine-tuning) from the original unpruned SViT model (73.3%), thus meeting the accuracy and memory constraints. These show that our PrimeSVT framework enables design automation for SViTs and their embedded implementation.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.03428" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
