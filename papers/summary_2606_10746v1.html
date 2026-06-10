@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ros2probe: Non-intrusive, Kernel-selective Observability for Robot Operating System 2 Middleware - arXiv 2606.10746 论文总结">
+    <title>ros2probe: Non-intrusive, Kernel-selective Observability for Robot Operating System 2 Middleware | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>ros2probe: Non-intrusive, Kernel-selective Observability for Robot Operating System 2 Middleware</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.10746<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-06-09</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jisang Yu, Sanghoon Lee, Yeonwoo Choi, Kyung-Joon Park</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.10746">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.10746">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Robot Operating System 2 (ROS 2), the de facto standard middleware framework for robots, runs each robot as a graph of nodes communicating over the Data Distribution Service (DDS), a publish/subscribe substrate. Observing this inter-node communication in real time is essential to robot development, yet it has a price. A tool can receive data only by joining the DDS domain as a subscriber that discovery has matched to the publisher, so observing folds the tool into the system it measures and perturbs it. We define this protocol-inherent perturbation as the observer&#39;s probe effect. It inflates the discovery plane, adds deserialization cost on the observer, makes the loss it reports diverge from what the subscriber actually received, and near saturation displaces the subscriber&#39;s messages. The only escape, capturing all wire traffic passively, discards ROS 2 message semantics and scales with total traffic, not what is observed. We present ros2probe, a non-intrusive observation framework that removes the probe effect. It reconstructs the full ROS 2 communication state from the domain&#39;s discovery packets at no bandwidth cost, then drives an in-kernel filter restricted to the topics the user asks for, lifting only those packets at minimal cost and observing what the real subscriber receives. Its interfaces and recordings match the standard ROS 2 tools. Across three hardware platforms (laptop, Jetson, and Raspberry Pi), two DDS implementations, and seven robot-operation workloads, ros2probe holds the discovery graph within 0.5% of an unobserved system, whereas domain-joining tools inflate discovery up to 2.6$\times$ and drop 38.5% of the subscriber&#39;s messages at saturation while ros2probe drops none. It reports loss with a recall of 1.0, cuts observer CPU and memory by up to 7$\times$ and 28$\times$, and stays practical on the embedded robots where existing tools overload the system.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.10746" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
