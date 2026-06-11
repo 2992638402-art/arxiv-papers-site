@@ -1,0 +1,122 @@
+{
+  "date": "2026-06-11",
+  "papers": [
+    {
+      "id": "2606.12372v1",
+      "title": "UniIntervene: Agentic Intervention for Efficient Real-World Reinforcement Learning",
+      "summary": "Human-in-the-loop reinforcement learning (HiL-RL) has emerged as an effective paradigm for real-world robotic manipulation, enabling online policy improvement with human guidance. However, current HiL-RL frameworks remain intervention-intensive, relying on frequent human corrections to redirect the policy out of unproductive exploration, which incurs high labor cost and limits real-world scalability. To address this, we propose UniIntervene, an agentic intervention model that detects unproductive exploration and autonomously recovers the policy toward high-value states, taking over the bulk of interventions from human operators. Specifically, UniIntervene first performs future-conditioned action-value estimation, predicting the latent consequence of the current action and evaluating its induced value, which provides a more stable progress signal. Building on this, a temporal value-risk critic aggregates recent value dynamics and triggers intervention when the estimated value exhibits sustained stagnation or degradation. When intervention is required, UniIntervene retrieves a high-value recovery target from a memory of past intervention episodes and produces executable corrective actions through a goal-conditioned recovery policy. In this way, UniIntervene turns intervention from passive human correction into a value-aware recovery process for efficient real-world RL. Extensive experiments on diverse real-world manipulation tasks demonstrate that UniIntervene improves the average success rate by 8.6% while reducing human interventions by 57% relative to state-of-the-art HiL-RL baselines.",
+      "authors": [
+        "Haoyuan Deng",
+        "Yitong Gao",
+        "Yudong Lin",
+        "Haichao Liu",
+        "Zhenyu Wu",
+        "Ziwei Wang"
+      ],
+      "published": "2026-06-10T17:38:24Z",
+      "updated": "2026-06-10T17:38:24Z",
+      "categories": [
+        "cs.RO",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.12372v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2606.12018v1",
+      "title": "MODF-SIR: A Multi-agent Omni-modal Distilled Framework for Social Intelligence Reasoning",
+      "summary": "We propose a multi-agent collaborative framework built upon a lightweight Multimodal Large Language Model (MLLM), specifically designed for social intelligence reasoning. A key feature of our approach is that both the training and inference phases are augmented via knowledge distillation. Within this architecture, multi-modal data pertinent to social intelligence is precisely localized. Furthermore, relevant long-tail events are identified, extracted, and rendered as formatted, explicit text. This formatting strategy prevents critical long-tail information from being overshadowed by head events and environmental noise during the tokenization process. Specifically, we integrate Test-Time Adaptation (TTA) across the entire reasoning pipeline, encompassing the extraction and representation of long-tail events, Chain-of-Thought (CoT) prompting, and self-reflection. This TTA mechanism is also distillation-enhanced, utilizing Low-Rank Adaptation (LoRA) to fine-tune the foundation model exclusively for instance-level reasoning. Extensive evaluations against various open-source and proprietary AI models across multiple benchmarks demonstrate the effectiveness of the proposed framework. With around 30% of training data from IntentTrain, we achieve state-of-the-art results. Codes are available at https://github.com/eeee-sys/MODF-SIR, demo is available at https://huggingface.co/spaces/Harry-1234/MODF-SIR, LoRA is available at https://huggingface.co/Harry-1234/MODF-SIR and the dataset for training router is available at https://huggingface.co/datasets/Harry-1234/IntentRouterTrain.",
+      "authors": [
+        "Shang Ma",
+        "Jisheng Dang",
+        "Wencan Zhang",
+        "Yifan Zhang",
+        "Bimei Wang",
+        "Hong Peng",
+        "Bin Hu",
+        "Qi Tian",
+        "Tat-Seng Chua"
+      ],
+      "published": "2026-06-10T12:44:02Z",
+      "updated": "2026-06-10T12:44:02Z",
+      "categories": [
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.12018v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2606.08878v1",
+      "title": "PerspectiveGap: A Benchmark for Multi-Agent Orchestration Prompting",
+      "summary": "Real-world LLM applications are moving beyond single-agent workflows toward orchestrated multi-agent systems, yet current models still struggle to determine what each sub-agent needs to know. To measure this, we introduce PerspectiveGap, a benchmark for evaluating LLMs' ability to compose orchestration prompts for multi-agent systems. PerspectiveGap contains 110 scenarios, each evaluated through two distractor-mixed task formats: role-fragment assignment and free-form prompt writing. These scenarios are organized into 10 topologies, which are distilled from the authors' real-world engineering practice and framed by the Prompt Economy principle: building loop-centered orchestrations that maximize utility with minimal role and engineering overhead. In experiments with 27 commercial models from 10 companies, GPT-5.5 substantially outperforms all competitors, whereas Opus 4.7 shows a notable weakness in orchestration prompting despite its strong coding performance. Nevertheless, PerspectiveGap remains challenging: the evaluated models achieve an average combined pass rate of only 14.9\\% (GPT-5.5 62.0\\%) and an average overall leakage rate of 246.5\\% (a per-scenario information leak-event count, not a proportion; GPT-5.5 49.1\\%). These findings suggest that multi-agent orchestration prompting is a distinct and under-evaluated capability, and PerspectiveGap provides a foundation for measuring and improving it systematically.",
+      "authors": [
+        "Youran Sun",
+        "Xingyu Ren",
+        "Kejia Zhang",
+        "Xinpeng Liu",
+        "Jiaxuan Guo"
+      ],
+      "published": "2026-06-07T23:26:12Z",
+      "updated": "2026-06-07T23:26:12Z",
+      "categories": [
+        "cs.CL",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.08878v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2606.12142v1",
+      "title": "AerialClaw: An Open-Source Framework for LLM-Driven Autonomous Aerial Agents",
+      "summary": "Unmanned aerial vehicles (UAVs) are increasingly used in inspection, search and rescue, environmental monitoring, and emergency response. However, most UAV applications still rely on pre-defined command sequences or task-specific pipelines, where developers manually connect perception, planning, flight control, simulation, logging, and safety modules. This limits the flexibility, reproducibility, and extensibility of autonomous aerial systems. This paper presents AerialClaw, an open-source software framework that enables UAVs to operate as decision-making aerial agents rather than merely command-following platforms. Given a natural-language mission, AerialClaw allows an LLM-based agent to understand the task, maintain context, invoke executable aerial skills, observe perception and runtime feedback, and iteratively update its decisions in a closed loop. The framework adopts a modular brain-skill-runtime architecture, combining hard skills for atomic UAV operations, Markdown-based soft skills for reusable task strategies, document-driven agent state and capability boundaries, memory-driven reflection, safety-oriented runtime validation, and platform-agnostic execution adapters. AerialClaw supports lightweight mock execution, PX4 SITL with Gazebo, and AirSim-based simulation, together with a web console, pluggable model backends, example missions, simulation assets, and staged deployment scripts. By combining standardized aerial skills, document-driven agent state, memory, and closed-loop LLM decision-making, AerialClaw provides a reproducible and extensible open-source framework for building UAV systems that can interpret missions, make decisions, execute skills, and adapt their behavior from feedback.",
+      "authors": [
+        "Ke Li",
+        "Jianfei Yang",
+        "Luyao Zhang",
+        "Guo Yu",
+        "Chengwei Yan",
+        "Yuan Ding",
+        "Di Wang",
+        "Nan Luo",
+        "Gang Liu",
+        "Xiao Gao",
+        "Quan Wang"
+      ],
+      "published": "2026-06-10T14:34:24Z",
+      "updated": "2026-06-10T14:34:24Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.12142v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2606.10322v1",
+      "title": "Game-Theoretic Multi-Agent Control for Robust Contextual Reasoning in LLMs",
+      "summary": "Large Language Models (LLMs) in multi-turn interactions maintain evolving context rather than generating isolated responses, making them vulnerable to prompt-injection and context-poisoning attacks in which locally plausible adversarial fragments gradually distort reasoning trajectories. Existing defenses mainly filter individual outputs and often ignore context evolution across turns, leaving long-horizon reasoning exposed. Although the Model Context Protocol (MCP) standardizes context exchange and tool invocation, it functions as a passive routing layer and does not enforce contextual stability. To address these limitations, we introduce the Game-Theoretic Secure Model Context Protocol (GT-MCP), a controller-driven multi-agent method that treats context management as a closed-loop dynamical process. GT-MCP coordinates three heterogeneous LLM agents and selects outputs through a trust function that jointly evaluates causal consistency against a validated context graph, semantic agreement among agents, and distributional drift over time. When instability is detected, a rollback-based self-healing mechanism restores the validated context and prevents unsupported fragments from propagating. Empirical evaluation over 500 interaction turns under an adaptive adversarial threat model shows that contextual drift remains bounded in 99.6% of turns, with recovery required in only 0.4%. Per-turn utility remains tightly concentrated, with median = -0.19, P05 = -0.72, and P95 = 0.30; severe degradation below -1 occurs in only 0.4% of cases, and no injection attempt succeeds at the controller level. Selected outputs maintain stable win rates above 98%, and computational overhead remains predictable, with latency per token = 1.63e-3 s.",
+      "authors": [
+        "Saeid Jamshidi",
+        "Amin Nikanjam",
+        "Arghavan Moradi Dakhel",
+        "Kawser Wazed Nafi",
+        "Foutse Khomh"
+      ],
+      "published": "2026-06-09T02:18:44Z",
+      "updated": "2026-06-09T02:18:44Z",
+      "categories": [
+        "cs.CR",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.10322v1.pdf",
+      "category": "other"
+    }
+  ],
+  "ids": [
+    "2606.12372v1",
+    "2606.12018v1",
+    "2606.08878v1",
+    "2606.12142v1",
+    "2606.10322v1"
+  ]
+}
