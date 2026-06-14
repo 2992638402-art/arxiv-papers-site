@@ -1,0 +1,118 @@
+{
+  "date": "2026-06-14",
+  "papers": [
+    {
+      "id": "2606.13679v1",
+      "title": "InterleaveThinker: Reinforcing Agentic Interleaved Generation",
+      "summary": "Recent image generators have demonstrated impressive photorealism and instruction-following capabilities in single-image generation and editing. However, constrained by their architectures, they cannot achieve interleaved generation (text-image sequence), which has crucial applications in visual narratives, guidance, and embodied manipulation. Even the latest open-source Unified Multimodal Models (UMMs) exhibit limited performance in this regard. In this paper, we introduce InterleaveThinker, the first multi-agent pipeline designed to endow any existing image generator with interleaved generation capabilities. Specifically, we employ a planner agent to organize the image-text input sequence, instructing the image generator on the required execution at each step. Subsequently, we introduce a critic agent to evaluate the generator's outputs, identify samples that deviate from the planned instructions, and refine the instructions for regeneration. To implement this pipeline, we construct the Interleave-Planner-SFT-80k and Interleave-Critic-SFT-112k to perform a format cold-start. Then we develop Interleave-Critic-RL-13k to reinforce the step-wise instruction correction capability within a generation trajectory using GRPO. Since a single interleaved generation trajectory may involve over 25 generator calls, optimizing the entire trajectory is computationally impractical. Therefore, we propose accuracy reward and step-wise reward, allowing single-step RL to effectively guide the entire generation trajectory. The results show that InterleaveThinker improves performance across various image generators. On interleaved generation benchmarks, it achieves performance comparable to Nano Banana and GPT-5. Surprisingly, it also significantly enhances the base model on reasoning-based benchmarks; for example, on 4-step FLUX.2-klein, we observe substantial gains on WISE and RISE.",
+      "authors": [
+        "Dian Zheng",
+        "Harry Lee",
+        "Manyuan Zhang",
+        "Kaituo Feng",
+        "Zoey Guo",
+        "Ray Zhang",
+        "Hongsheng Li"
+      ],
+      "published": "2026-06-11T17:59:50Z",
+      "updated": "2026-06-11T17:59:50Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.13679v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2606.13572v1",
+      "title": "ArogyaSutra: A Multi-Agent Framework for Multimodal Medical Reasoning in Indic Languages",
+      "summary": "Multimodal Large Language Models (MLLMs) have shown promising reasoning capabilities in general domains, yet their performance remains limited in specialized settings such as healthcare, especially in multilingual and low-resource scenarios. This gap is critical in regions like rural India, where patients often express complex medical queries in native Indic languages and rely on multimodal inputs such as medical images. Existing English-centric MLLMs struggle to support such use cases, limiting equitable access to AI-driven healthcare assistance. To address this challenge, we introduce ArogyaBodha, a large-scale multilingual multimodal medical question-answer dataset constructed from eight heterogeneous sources, covering 31 body systems, six imaging modalities, and 21 clinical domains across English and seven major Indian languages. We further propose ArogyaSutra, an actor-critic-based multi-agent framework that integrates tool grounding with dual-memory mechanisms for step-wise, reasoning-aware decision making, and uses stored actor-critic simulation trajectories for distillation. Experiments show that our dataset and framework improve multilingual medical reasoning accuracy across all Indic languages, with ablations validating the contribution of each component. The source code and dataset are available at: https://iitp-cse.github.io/ ArogyaSutra/",
+      "authors": [
+        "Tanmoy Kanti Halder",
+        "Akash Ghosh",
+        "Subhadip Baidya",
+        "Arijit Roy",
+        "Sriparna Saha"
+      ],
+      "published": "2026-06-11T16:59:42Z",
+      "updated": "2026-06-11T16:59:42Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.13572v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2606.13190v1",
+      "title": "Multi-Modal Multi-Agent Robotic Cognitive Alignment enabled by Non-Invasive Consumer Brain Computer Interfaces: A Proof of Concept Exploration",
+      "summary": "While non-verbal behaviors and expressive movements are essential for natural human-robot interaction, existing methods often overlook a crucial element: the human's internal cognitive state. Frequently, proactive multi-agent systems can interrupt humans at inopportune moments, leading to cognitive overload and decreased task performance. This paper introduces a framework for generating \"cognitively aligned\" multi-agent interactions, enhancing the ability of robotic systems to contextually defer communications to the user of an agent system during moments of high human mental workload and engagement. We present the design and implementation of a closed-loop architecture that explores the interplay between autonomous task execution and real-time neurophysiological focus. Using a consumer-grade Brain-Computer Interface (BCI), our approach continuously monitors Electroencephalography (EEG) spectral band powers while a human performs an engagement-inducing task. We propose an engagement-driven pipeline where an HTTP-based signaling mechanism places a primary agent's sensory inputs and audio outputs into a holding state upon detecting high engagement. This allows secondary agents to seamlessly process complex, delegated tasks in the background. Once the human's cognitive state returns to a lower cognitive load baseline, the primary agent releases the queued agent message. Our preliminary results demonstrate the feasibility of leveraging real-time signal processing, Large Language Models (LLMs), and physical robotic embodiments to create cognitively-aware, non-intrusive multi-agent systems.",
+      "authors": [
+        "Nataliya Kosmyna",
+        "Liz Jenkins",
+        "Anoop K. Sinha"
+      ],
+      "published": "2026-06-11T10:58:31Z",
+      "updated": "2026-06-11T10:58:31Z",
+      "categories": [
+        "cs.RO",
+        "cs.HC"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.13190v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2606.13681v1",
+      "title": "EvoArena: Tracking Memory Evolution for Robust LLM Agents in Dynamic Environments",
+      "summary": "Large language model (LLM) agents have achieved strong performance on a wide range of benchmarks, yet most evaluations assume static environments. In contrast, real-world deployment is inherently dynamic, requiring agents to continually align their knowledge, skills, and behavior with changing environments and updated task conditions. To address this gap, we introduce EvoArena, a benchmark suite that models environment changes as sequences of progressive updates across terminal, software, and social domains. We further propose EvoMem, a patch-based memory paradigm that records memory evolution as structured update histories, enabling agents to reason about environmental evolution through changes in their memory. Experiments show that current agents struggle on EvoArena, achieving an average accuracy of 39.6% across evolving terminal, software, and social-preference domains. EvoMem consistently improves performance, yielding an average gain of 1.5% on EvoArena and also improving standard benchmarks such as GAIA and LoCoMo by 6.1% and 4.8%. Beyond individual tasks, EvoMem further improves chain-level accuracy by 3.7% on EvoArena, where success requires completing a consecutive sequence of related evolutionary subtasks. Mechanistic analysis shows that EvoMem improves evidence capture in the memory, indicating better preservation of complete evolving environment states. Our results highlight the importance of modeling evolution in both evaluation and memory for reliable agent deployment.",
+      "authors": [
+        "Jundong Xu",
+        "Qingchuan Li",
+        "Jiaying Wu",
+        "Yihuai Lan",
+        "Shuyue Stella Li",
+        "Huichi Zhou",
+        "Bowen Jiang",
+        "Lei Wang",
+        "Jun Wang",
+        "Anh Tuan Luu",
+        "Caiming Xiong",
+        "Hae Won Park",
+        "Bryan Hooi",
+        "Zhiyuan Hu"
+      ],
+      "published": "2026-06-11T17:59:59Z",
+      "updated": "2026-06-11T17:59:59Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.13681v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2606.11274v1",
+      "title": "Multi-agent rendezvous in fluid flows via reinforcement learning",
+      "summary": "Rendezvous is a critical task for multi-agent systems, requiring agents to coordinate to meet at an unspecified location. However, achieving this in fluid environments presents a challenge, as it remains unclear how agents can exploit underlying fluid kinematics to facilitate convergence. In this study, we adopt a multi-agent reinforcement learning (MARL) approach to develop physics-informed rendezvous strategies in vortical flows. Compared to a naive strategy, where agents navigate toward their counterparts, MARL strategies significantly improve the rendezvous rate. MARL strategies also show transferability across varying vortex intensities, vortex scales, and swarm sizes. By breaking the symmetry of the state-action map, MARL strategy leverages a non-intuitive mechanism that prevents agents from becoming trapped in separate vortices, thereby enhancing rendezvous success. Additionally, a heuristic strategy is extracted from the learned strategy and also outperforms the naive strategy. Furthermore, a theoretical analysis demonstrates that fluid deformation impedes the rendezvous process. Large finite-time Lyapunov exponents identify where fluid effects separate adjacent agents, suggesting that targets should be planned in weak-deformation regions. Our findings reveal the important role that agent-fluid interactions play in multi-agent tasks and highlight the MARL capability to explore swarm intelligence in complex flow environments.",
+      "authors": [
+        "Bocheng Li",
+        "Jingran Qiu",
+        "Lihao Zhao"
+      ],
+      "published": "2026-06-09T09:44:53Z",
+      "updated": "2026-06-09T09:44:53Z",
+      "categories": [
+        "cs.MA",
+        "cs.LG",
+        "physics.flu-dyn"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.11274v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2606.13679v1",
+    "2606.13572v1",
+    "2606.13190v1",
+    "2606.13681v1",
+    "2606.11274v1"
+  ]
+}
