@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neither Parallel Nor Sequential: How DiffusionGemma Actually Commits Tokens - arXiv 2606.14620 论文总结">
+    <title>Neither Parallel Nor Sequential: How DiffusionGemma Actually Commits Tokens | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Neither Parallel Nor Sequential: How DiffusionGemma Actually Commits Tokens</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.14620<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-06-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ali Asaria, Tony Salomone, Deep Gandhi</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.14620">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.14620">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Open diffusion language models are marketed as parallel, non-autoregressive decoders, yet the order in which a shipped checkpoint actually commits its tokens is almost never measured. We instrument DiffusionGemma 26B, a masked discrete-diffusion mixture-of-experts model built on Gemma 4, hooking its sampler&#39;s accept step to record which canvas positions commit, when, and at what confidence. Across a 686-prompt, six-regime probe suite we find that its decoding is neither parallel nor block-autoregressive: it follows a partial left-to-right commit bias whose apparent strength depends almost entirely on the granularity at which you look. Order is weak token by token and strengthens smoothly as the analysis is coarsened, so the model&#39;s &quot;block size&quot; turns out to be an artifact of the measuring ruler rather than the architecture. The model commits in large simultaneous batches, leaving much of the within-batch order genuinely undefined rather than merely unobserved. The behaviour is regime-dependent: structured JSON is committed in essentially arbitrary order, and a position&#39;s commit confidence tracks correctness on mathematical reasoning but carries no signal on factual recall. Commitment is aggressive, finishing in a short late burst well inside the step budget, while task accuracy matches the model&#39;s autoregressive Gemma-4 sibling. Beyond these findings, our central contribution is methodological: measuring decoding order honestly demands handling trailing-EOS padding, within-regime confounding, commit non-monotonicity, block-size sensitivity, and large commit-batch ties, each of which can otherwise manufacture a decoding-order result that is not really there.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.14620" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

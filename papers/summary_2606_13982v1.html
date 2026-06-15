@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adaptive Nucleus Truncation for Long-Form Reasoning - arXiv 2606.13982 论文总结">
+    <title>Adaptive Nucleus Truncation for Long-Form Reasoning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Adaptive Nucleus Truncation for Long-Form Reasoning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.13982<br><strong>分类:</strong> stat.ML, cs.LG<br><strong>发布时间:</strong> 2026-06-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ousmane Amadou Dia</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.13982">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.13982">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Sampling plays an important role in long-form language-model reasoning. Over thousands of decoding steps, small changes in the candidate token set can compound into different reasoning trajectories, stability profiles, and final answers. Existing truncation methods such as top-$p$, min-$p$, and fixed top-$nσ$ sampling improve over unrestricted sampling, but they rely on fixed thresholds that cannot adapt to changes in entropy, task difficulty, training stage, or generation budget. We introduce Adaptive Nucleus Truncation Sampling (ANTS), which extends top-(nσ) sampling from a fixed decoding rule into an adaptive rollout-control mechanism for long-form generation. ANTS selects standardized neighborhoods around the maximum logit before temperature scaling, adapts the truncation width using an entropy-conditioned controller, and retains a no-truncation fallback arm to stabilize training when truncation becomes unsafe. On a 33B-total / 4B-active sparse Mixture-of-Experts reasoning model, ANTS improves average performance over percentage-based benchmarks by +1.9, +3.8, and +5.2 points at 8K, 16K, and 32K generation budgets, respectively. The strongest gains appear on instruction following and mathematical reasoning, with IFBench improving by more than 10 points at 32K and AIME 2025 improving by 7 points. Code generation reveals an important budget interaction. On Codeforces, ANTS trails the baseline at 8K, but reverses this gap and substantially improves ELO at 16K and 32K. These results suggest that sampler design should be treated not just as a decoding hyperparameter, but as part of how we stabilize and scale long-budget reasoning.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.13982" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
