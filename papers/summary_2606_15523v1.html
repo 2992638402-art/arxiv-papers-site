@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AQ4SViT: An Automated Quantization Framework with Search Gating Policy for Compressing Spiking Vision Transformers - arXiv 2606.15523 论文总结">
+    <title>AQ4SViT: An Automated Quantization Framework with Search Gating Policy for Compressing Spiking Vision Transformers | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>AQ4SViT: An Automated Quantization Framework with Search Gating Policy for Compressing Spiking Vision Transformers</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.15523<br><strong>分类:</strong> cs.NE, cs.AI, cs.LG<br><strong>发布时间:</strong> 2026-06-14</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Rachmad Vidya Wicaksana Putra, Saad Iftikhar, Muhammad Shafique</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.15523">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.15523">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Spiking Vision Transformers (SViTs) have emerged as alternative low-power ViT models, but their large sizes hinder their deployments on resource-constrained embedded AI systems. To address this, state-of-the-art works proposed quantization techniques to compress SViT models, but their manual, human-guided approach needs a huge design time and power/energy consumption to find the appropriate quantization setting for each given network, making this approach not scalable for quantizing multiple networks. Toward this, we propose AQ4SViT, a novel automated quantization framework for SViTs that can provide quick quantization settings with good trade-offs between accuracy and memory. To achieve this, AQ4SViT employs the following key ideas: quantization search strategy that evaluates the quantization setting candidates while considering the accuracy constraint; and search gating policy that quickly evaluates and selects promising quantization candidates by leveraging membrane potential drift as a performance proxy. In the search gating policy, AQSViT employs two search algorithm variants to provide trade-off options: Greedy search, which performs fast but may lead to local optima; and Beam search, which performs slower but has better performance in finding global optima selection due to a wider search space. Experimental results show that AQ4SViT-Greedy quickly finds the appropriate quantization settings, achieving up to 6.6x faster search time and up to 82.5% memory saving compared to the state-of-the-art; while AQ4SViT-Beam further reduces the memory footprint by up to 90% compared to the state-of-the-art, but with 4.5x longer search time; all these results are obtained while maintaining high accuracy within 1.5% from the original/non-quantized models on the ImageNet dataset. These results highlight that AQ4SViT framework offers advancements toward SViT deployments on embedded AI systems.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.15523" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

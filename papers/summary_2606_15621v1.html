@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Re-feeding Is Not Replaying: Measuring Replay Noise in Counterfactual Token-Credit Estimation - arXiv 2606.15621 论文总结">
+    <title>Re-feeding Is Not Replaying: Measuring Replay Noise in Counterfactual Token-Credit Estimation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Re-feeding Is Not Replaying: Measuring Replay Noise in Counterfactual Token-Credit Estimation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.15621<br><strong>分类:</strong> cs.LG, cs.CL<br><strong>发布时间:</strong> 2026-06-14</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Nils Matteson</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.15621">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.15621">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Per-token counterfactual credit estimation asks which token in a language-model rollout caused the final answer to be right or wrong: cut the transcript at a pivot, substitute an alternative token, replay continuations, and compare outcomes. Published methods re-feed the transcript prefix as a fresh prompt, assuming this reproduces the state the model passed through during generation. We measure what that assumption costs on a stock inference engine, with a three-pass design: continuations resumed from the verified decode-time KV state, an identical second exact pass (a replica noise floor), and a re-feed pass. Across six configurations and three models (including a GRPO-trained checkpoint), at low-margin decision tokens, re-feeding changes the credit estimate at rates 14-28 percentage points above the replica floor (7-21pp under a treatment-independent conditioning; problem-clustered t = 2.9-6.4). Most changes are zero-boundary crossings of the quantized estimator rather than polarity reversals, and the perturbation is consistent with mean-zero, so averaged quantities are largely safe; but selection is not: a critical-token set chosen by thresholding $|\hat{A}_t|$ under re-feed overlaps the exact-resume selection at Jaccard 0.34-0.90, versus a 0.63-0.96 replica ceiling. A causal confirmation closes the loop: under vLLM&#39;s batch-invariant kernels all three passes are identical on every measured channel, with both disagreement rates exactly zero. Replica passes themselves disagree on 9-23% of eligible estimates: single-sample credit measurements at decision tokens are unreliable under any replay. Settings were fixed in advance; exact-pass cache hits in the second campaign are instrumented (100% hit rate, 3,434 pivots); total compute was under 10 USD. We recommend that counterfactual credit studies resume decoder state or use batch-invariant kernels, and report a replica floor.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.15621" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
