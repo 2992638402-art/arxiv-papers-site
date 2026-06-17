@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From Compression to Deployment: Real-Time and Energy-Efficient FastGRNN on Ultra-Constrained Microcontrollers - arXiv 2606.17249 论文总结">
+    <title>From Compression to Deployment: Real-Time and Energy-Efficient FastGRNN on Ultra-Constrained Microcontrollers | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>From Compression to Deployment: Real-Time and Energy-Efficient FastGRNN on Ultra-Constrained Microcontrollers</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.17249<br><strong>分类:</strong> cs.AR, cs.LG, cs.NE, eess.SP<br><strong>发布时间:</strong> 2026-06-15</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Emre Can Kizilates</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.17249">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.17249">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>The dominant trajectory of modern machine learning has been to scale up: larger models, larger accelerators, larger memory budgets. Yet a multi-year global semiconductor supply constraint and the growing energy and carbon cost of always-online inference expose the fragility of this trajectory and motivate the opposite direction: refactoring AI and ML algorithms to fit the small, ubiquitous microcontrollers already in mass production in wearables, sensors, and edge appliances. We present an end-to-end open-source reproduction of FastGRNN, a compact gated recurrent cell, deployed on two bare-metal targets: the 8-bit Arduino (ATmega328P) and the 16-bit MSP430 (no hardware multiplier; 16 KB Flash; 512 B SRAM). Our compression pipeline combines low-rank weight factorization, iterative hard-thresholding sparsity, and per-tensor Q15 post-training quantization with explicit activation calibration. The deployed model occupies 566 bytes of weights and achieves macro F1 = 0.918 (seed 0; five-seed Q15 mean 0.853+-0.107) on the HAPT test set. It matches a PyTorch reference at 100% prediction agreement across 3,399 test windows (MCU seed 0; 99.91-100% C-equivalent across five seeds). Both platforms sustain real-time 50 Hz streaming inference (9.21 ms per sample on Arduino; 13 ms on MSP430), where a 256-entry sigmoid/tanh look-up table delivers a 30.5x speedup on the multiplier-less MSP430. Four contributions extend the original FastGRNN paper: (i) cross-platform bit-equivalent deterministic inference; (ii) characterization of recurrent warm-up latency (median 74 samples, 1.48 s; worst-case 125 samples, 2.50 s over 100 test windows); (iii) a deployable look-up-table recipe for multiplier-less embedded targets; and (iv) hardware energy characterization showing 17.7 mW active inference power, &lt;0.09 mW idle power, and 96.7% energy reduction with the LUT.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.17249" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
