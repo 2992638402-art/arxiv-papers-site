@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How Fragile Are Training-Free AI-Generated Image Detectors? A Controlled Audit of Score Direction, Preprocessing, and Compression - arXiv 2606.20488 论文总结">
+    <title>How Fragile Are Training-Free AI-Generated Image Detectors? A Controlled Audit of Score Direction, Preprocessing, and Compression | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>How Fragile Are Training-Free AI-Generated Image Detectors? A Controlled Audit of Score Direction, Preprocessing, and Compression</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.20488<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-06-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jingwen Zhou, Mingzhe Wang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.20488">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.20488">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Training-free detectors of AI-generated images promise generator-agnostic deployment without classifier training, yet their reported numbers are rarely compared under a single controlled protocol. We audit two representative training-free scores -- an autoencoder-reconstruction score (AEROBLADE-style) and a noise-perturbation feature-similarity score (RIGID-style) -- plus a naive feature-kNN control, on a common 1,500-image GenImage-derived benchmark spanning seven generators and JPEG compression at quality 70 and 50. The audit yields three cautionary findings. (i) Implementation details masquerade as method differences: replacing the LPIPS backbone (AlexNet -&gt; VGG-16) changes overall AUROC by +0.085, and switching between resize-to-512 and native-resolution preprocessing flips per-generator conclusions by up to 0.38 AUROC. (ii) Score direction is not a property of the method but of its hyperparameters: the RIGID-style score is inverted (AUROC &lt; 0.5) on SD1.5 and Wukong at noise level sigma=0.05, recovers to &gt;0.5 for every generator at sigma=0.01, and collapses to 0.15 at sigma=0.3. (iii) Dataset format bias inflates robustness claims: without unified re-encoding, AUROC under JPEG-50 exceeds the clean condition for the AlexNet-backbone reconstruction score; after bias correction the residual anomaly localizes to a single generator (BigGAN). The audited scores have complementary per-generator failure sets, but naive z-score fusion does not beat the best single score, indicating that exploiting complementarity requires direction-aware combination.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.20488" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
