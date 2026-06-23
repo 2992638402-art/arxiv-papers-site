@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fast-TurboQuant: A Multiplier-Free Online Vector Quantization Approach - arXiv 2606.21448 论文总结">
+    <title>Fast-TurboQuant: A Multiplier-Free Online Vector Quantization Approach | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Fast-TurboQuant: A Multiplier-Free Online Vector Quantization Approach</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.21448<br><strong>分类:</strong> cs.LG, cs.IT, eess.SP<br><strong>发布时间:</strong> 2026-06-19</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Pedro M. R. Pereira, Felipe A. P. de Figueiredo, Rausley A. A. de Souza</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.21448">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.21448">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>As large language models scale, memory bandwidth for key-value caches and retrieval-augmented generation systems becomes a critical bottleneck. While 1-bit quantization addresses this constraint, recent TurboQuant relies on dense random rotation matrices to condition the vector distribution before quantization. This projection demands millions of floating-point multiplications per embedding, making it difficult to deploy on constrained edge silicon. We introduce Fast-TurboQuant, a multiplier-free projection architecture that replaces the dense matrix with a structured fast Johnson-Lindenstrauss transform. By applying a Rademacher phase inversion followed by a fast Walsh-Hadamard transform (FWHT), the method leverages sub-Gaussian concentration to satisfy the prerequisites of scalar Lloyd-Max quantization without Gaussian projections. This substitution reduces the arithmetic complexity to only additions, eliminating hardware multipliers. Evaluation on DBpedia OpenAI-3 Large embeddings demonstrates a 19.7 times algorithmic speedup under sequential execution. Furthermore, the dimension expansion due to the FWHT zero-padding reduces the mean squared error and improves Recall@10.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.21448" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Towards Understanding the Power and Limits of the Muon Optimizer: A River-Valley Perspective - arXiv 2606.21514 论文总结">
+    <title>Towards Understanding the Power and Limits of the Muon Optimizer: A River-Valley Perspective | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Towards Understanding the Power and Limits of the Muon Optimizer: A River-Valley Perspective</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.21514<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-06-19</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Tianqi Shen, Jinji Yang, Runze Shi, Jianhao Ma, Jiaye Teng, Ziye Ma</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.21514">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.21514">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Recently, Muon has gained substantial attention as an appealing alternative to Adam-like optimizers, with many works highlighting its advantages through spectral normalization and improved conditioning. Yet this positive theoretical narrative contrasts with its empirical performance in large language model (LLM) training, where Muon&#39;s gains over Adam/AdamW are often mixed, schedule-sensitive, and not uniformly superior. To address this gap, we develop a trajectory-level theory characterizing both the strengths and limitations of Muon. We introduce a mixed-spiked matrix sensing model whose sensing operator decomposes into signal, spike, and bulk components, capturing a mixture of anisotropic structure and long-tail information reminiscent of LLM training. On top of it, we adopted a river-valley perspective in which we view the landscape as composed of a river direction flowing to the desired solution and hill directions encoding nuisance or task-irrelevant information. In the momentum-free setting, we show that Muon moves faster along the information-bearing river direction during early optimization, but can converge much more slowly near the river bottom than gradient descent. We then extend the river-valley perspective to general nonconvex objectives with momentum by studying points on the spectral river. There, while Muon converges faster early on, its orthogonalized update removes residual scale information, making it prone to overshooting and oscillation near the target solution. Together, these results suggest that our characterizations extend beyond spiked matrix sensing and motivate switching to GD-like refinement optimizers in the final phase, rather than relying only on a fixed learning-rate schedule for Muon. We also provide preliminary evidence supporting this two-stage approach in language model training experiments.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.21514" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

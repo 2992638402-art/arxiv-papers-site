@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Does Mixture-of-Experts Actually Help Inference on Consumer and Edge Hardware? An Empirical Study - arXiv 2606.21428 论文总结">
+    <title>Does Mixture-of-Experts Actually Help Inference on Consumer and Edge Hardware? An Empirical Study | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Does Mixture-of-Experts Actually Help Inference on Consumer and Edge Hardware? An Empirical Study</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.21428<br><strong>分类:</strong> cs.PF, cs.AI<br><strong>发布时间:</strong> 2026-06-19</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Alfarizy Alfarizy, Hung Truong Thanh Nguyen, René Richard, Roozbeh Razavi-Far, Hung Cao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.21428">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.21428">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Mixture-of-Experts (MoE) language models are often described as ideal for resource-constrained inference. Each token activates only a small subset of experts, so the per-token compute cost, in floating-point operations (FLOPs), resembles that of a much smaller dense model. Whether that FLOP advantage survives in practice is far less clear. We ask whether MoE models actually run faster and cheaper than comparable dense models on consumer-grade and edge hardware. We benchmark OLMoE-1B-7B (1.3 B active of 6.9 B total) against three dense baselines on an Apple M2 Pro and an NVIDIA Jetson Orin Nano 8 GB through llama.cpp, measuring throughput, memory, and on-device energy. The answer is device-dependent: OLMoE&#39;s active-parameter advantage is only partly realised on the laptop (<del>10% behind the same-active Llama-3.2-1B) and erodes on the edge device (</del>31% behind, at 2.1$\times$ the energy per token, with peak memory at the 8 GB ceiling). Patching llama.cpp to time the decode graph node-by-node shows routing accounts for under 9% of MoE-block compute on the cleaner edge backend, so the gap reflects total-parameter memory footprint, expert dispatch, and KV-cache pressure rather than routing. The implication is that on bandwidth-bound edge hardware, inference cost tracks total parameters, not active ones, and sparse activation does not buy back what the device is constrained on. These findings are bounded to one MoE model at this parameter scale and two devices, and we release the full measurement harness and per-run data.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.21428" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
