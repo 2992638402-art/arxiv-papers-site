@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="What Do Flow-Based Inverse Solvers Approximate? A Posterior-Transport View - arXiv 2606.24516 论文总结">
+    <title>What Do Flow-Based Inverse Solvers Approximate? A Posterior-Transport View | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>What Do Flow-Based Inverse Solvers Approximate? A Posterior-Transport View</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.24516<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-06-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jian Xu, Delu Zeng, John Paisley, Qibin Zhao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.24516">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.24516">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A growing family of training-free solvers -- FlowDPS, FLOWER, PnP-Flow and their diffusion ancestors (DPS, DAPS) -- repurpose a pretrained flow-matching prior to solve imaging inverse problems by adding a measurement-guidance term to the deterministic probability-flow ODE. Despite strong empirical results, what these per-step corrections actually approximate -- and how far the resulting samples are from the true posterior $p(x\mid y)$ -- has not been characterized. We give a posterior-transport account of flow-based inverse problem solving. Our starting point is a simple but consequential fact: for a \emph{deterministic} flow prior, Bayesian conditioning is realized entirely by a \emph{reweighting of the source distribution}, not by a drift correction; pushing the reweighted source through the \emph{unmodified} velocity field yields exact posterior samples. From this we show that trajectory-guidance solvers can be read as the minimum-kinetic-energy \emph{correction} field needed to morph the unconditional source into the posterior, and that FlowDPS / FLOWER / PnP-Flow correspond to distinct zeroth-order / Gaussian / proximal approximations of this single object; we bound the resulting posterior bias in Wasserstein distance. A controlled $2$D study with a closed-form posterior confirms the theory decisively: source reweighting matches the true posterior to the Monte-Carlo floor on every metric, whereas trajectory guidance incurs $200$--$800\times$ larger error and collapses posterior modes, \emph{regardless of guidance strength}. Guided by the analysis we propose a cheap, principled velocity-correction solver that is competitive across two in-domain priors (AFHQ, CelebA) and two out-of-distribution settings while, unlike point-estimate source-space optimizers, producing diverse posterior samples with uncertainty that correlates with reconstruction error.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.24516" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
