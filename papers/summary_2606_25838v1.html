@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Edges Before Embeddings: A Confidence-Aware Blur Gate for Vision-Language Pipelines - arXiv 2606.25838 论文总结">
+    <title>Edges Before Embeddings: A Confidence-Aware Blur Gate for Vision-Language Pipelines | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Edges Before Embeddings: A Confidence-Aware Blur Gate for Vision-Language Pipelines</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.25838<br><strong>分类:</strong> cs.CV, cs.AI<br><strong>发布时间:</strong> 2026-06-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Duy Tran Thanh</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.25838">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.25838">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Production vision pipelines silently degrade on blurry input, wasting compute on downstream OCR, retrieval, and vision-language model (VLM) calls that cannot recover a usable output. We present MagikaDocumentFromPixel, a lightweight, CPU-friendly image quality gate that classifies a single image as sharp, blurred, or uncertain in roughly 7 ms on a single CPU core. The contributions are (i) a recipe selected from a 46-configuration, 8-sweep empirical search that isolates input resolution as the dominant lever and shows architecture capacity only pays off at &gt;= 384 px; (ii) a confidence-aware routing formalism grounded in classical selective prediction; (iii) the Edge Prior Module (EPM), a Laplacian-magnitude auxiliary input channel that gives the network direct access to the spectral evidence that classical blur heuristics rely on and that lifts test F1 by +1.3 points in a matched-env comparison; and (iv) an observation that the gate is one instance of a recurring design pattern that appears independently in Magika content-type detection, risk-controlled OCR with VLMs, and DocVLM. The final recipe MobileNetV3-Large with the EPM trained at 384x384 on paired GoPro Large frames, evaluated with 5-scale test-time augmentation reaches F1 = 0.9803 (AUC 0.9989) with a 17 MB ONNX artifact, improving over our fixed-scale baseline on the same hardware (F1 = 0.9672) by +1.31 points. We are explicit about limitations: results are on a single motion-blur distribution, numbers are from a single seed, and calibration is qualitative rather than measured.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.25838" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
