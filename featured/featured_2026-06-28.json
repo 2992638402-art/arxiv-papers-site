@@ -1,0 +1,110 @@
+{
+  "date": "2026-06-28",
+  "papers": [
+    {
+      "id": "2606.25526v1",
+      "title": "Low Variance Trust Region Optimization with Independent Actors and Sequential Updates in Cooperative Multi-agent Reinforcement Learning",
+      "summary": "Cooperative multi-agent reinforcement learning assumes each agent shares the same reward function and can be trained effectively using the Trust Region framework of single-agent. Instead of relying on other agents' actions, the independent actors setting considers each agent to act based only on its local information, thus having more flexible applications. However, in the sequential update framework, it is required to re-estimate the joint advantage function after each individual agent's policy step. Despite the practical success of importance sampling, the updated advantage function suffers from exponentially high variance problems, which likely result in unstable convergence. In this work, we first analyze the high variance advantage both empirically and theoretically. To overcome this limitation, we introduce a clipping objective to control the upper bounds of the advantage fluctuation in sequential updates. With the proposed objective, we provide a monotonic bound with sub-linear convergence to $ε$-Nash Equilibria. We further derive two new practical algorithms using our clipping objective. The experiment results on three popular multi-agent reinforcement learning benchmarks show that our proposed method outperforms the tested baselines in most environments. By carefully analyzing different training settings, our proposed method is highlighted with both stable convergence properties and the desired low advantage variance estimation. For reproducibility purposes, our source code is publicly available at https://github.com/giangbang/Low-Variance-Trust-Region-MARL.",
+      "authors": [
+        "Bang Giang Le",
+        "Viet Cuong Ta"
+      ],
+      "published": "2026-06-24T08:05:11Z",
+      "updated": "2026-06-24T08:05:11Z",
+      "categories": [
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.25526v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2606.25073v1",
+      "title": "GCT-MARL: Graph-Based Contrastive Transfer for Sample-Efficient Cooperative Multi-Agent Reinforcement Learning",
+      "summary": "In cooperative multi-agent reinforcement learning (MARL), from a deployment perspective, it is challenging and expensive to train agents from scratch for each new environment or task. In this work, we propose GCT-MARL, a transfer learning framework that builds on the multi-view graph contrastive backbone of MAIL and augments it with a per-view, adaptively weighted alignment loss and a two-phase training protocol specifically designed for transfer across populations of varying sizes and compositions. We empirically demonstrate that the proposed framework markedly accelerates convergence on the target task relative to from-scratch training, in both homogeneous (within-faction, varying N) and heterogeneous (cross-faction and mixed unit-type) transfer scenarios. Furthermore, we show that the framework naturally supports continual learning by sequentially chaining the two-phase transfer protocol across a series of related tasks. Overall, this work provides a unified approach to mitigating key limitations in current MARL transfer methods with new insights at both methodological and empirical levels.",
+      "authors": [
+        "Animesh Animesh",
+        "Satheesh K Perepu",
+        "Kaushik Dey"
+      ],
+      "published": "2026-06-23T18:31:27Z",
+      "updated": "2026-06-23T18:31:27Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.25073v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2606.27009v1",
+      "title": "Semantic Early-Stopping for Iterative LLM Agent Loops",
+      "summary": "Multi-agent large language model (LLM) loops, for example a Writer that drafts and a Critic that revises, are almost always terminated by a fixed iteration cap (max_iterations). This is a syntactic kill-switch: it is blind to whether the answer is still improving, so it over-spends tokens on easy inputs and truncates hard ones. We study semantic early-stopping: the loop halts when consecutive draft embeddings stop changing in meaning (cosine distance with a patience window) and the answer's measured quality stops improving. Our work makes three contributions. First, an honest theoretical footing: we prove deterministic termination and well-definedness and machine-check these claims, while treating the convergence of the distance sequence as an empirically tested conjecture rather than a (previously over-claimed) Banach contraction. Second, a judge-efficient evaluation protocol: we generate each question's full trajectory once, replay every stopping policy over the identical drafts, and cache every LLM-judge call, yielding a strictly paired efficiency-versus-quality comparison at low cost; we further separate operational tokens (charged to a policy) from evaluation tokens (a measurement instrument). Third, an empirical study on multi-hop retrieval-augmented question answering (HotpotQA). On the 60-question test split, a judge-free semantic stopper reduces operational tokens by 38% relative to max_iterations at parity quality (Delta-IS = -0.004, p = 0.81), whereas the full quality-gated variant is counter-productive because its per-round judging dominates cost. An oracle that selects the best round attains +0.115 Information Score over every practical policy (p ~ 4e-11), reframing the problem from \"when to stop\" (easy) to \"which round is best\" (open).",
+      "authors": [
+        "Sahil Shrivastava"
+      ],
+      "published": "2026-06-25T13:24:21Z",
+      "updated": "2026-06-25T13:24:21Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.27009v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2606.26922v1",
+      "title": "Risk-Aware Selective Multimodal Driver Monitoring with Driver-State World Modeling",
+      "summary": "Continuous driver monitoring in automated vehicles requires low-latency inference while avoiding unsafe decisions under uncertain driver states. Large vision-language models provide broad multimodal priors, but their latency and limited reliability in this setting make them unsuitable as always-on in-cabin monitors. We propose a cost-aware selective inference framework for deployable multimodal driver monitoring. The core system is a lightweight RGB-physiological student that combines in-cabin visual observations with window-level HR/EDA signals, and a learned gate that decides when to accept the fast prediction or abstain for safety intervention. Additional controls show that the learned scores contain sample-level information beyond scenario priors, while exact physiological synchronization remains a limitation. To incorporate predictive evidence, we further study a compact driver-state world modeling module that rolls out latent driver-state features and estimates future fast-model errors and counterfactual system-level action costs. On scenario-induced driver-demand recognition, the RGB-physiological student improves over RGB-only and physiology-only baselines, reaching 0.7440 Macro-F1 and 0.9099 balanced accuracy with 11.39M parameters and 3.08ms inference latency. Cost-aware selective inference reduces unsafe false negatives from 17.37% under always-fast inference to approximately 5% across seeds, while maintaining deployment-level latency. While driver-state world modeling offers valuable predictive signals, worst-group evaluations highlight persistent operating-point calibration drift. Ultimately, reliable edge driver monitoring requires advancing not only perception backbones, but also risk-aware selective control and group-robust calibration.",
+      "authors": [
+        "Daosheng Qiu",
+        "Haozhuang Chi",
+        "Hao Su",
+        "Shu Long",
+        "Xinyue Miao",
+        "Yongle Dong",
+        "Wei Zhang"
+      ],
+      "published": "2026-06-25T11:59:21Z",
+      "updated": "2026-06-25T11:59:21Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.26922v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2606.27330v1",
+      "title": "Empowering GUI Agents via Autonomous Experience Exploration and Hindsight Experience Utilization for Task Planning",
+      "summary": "Multimodal web agents can assist humans in operating repetitive GUI tasks, where effective task planning is essential for decomposing complex tasks into executable actions. While small open source MLLMs are cost efficient and privacy preserving compared with commercial large models, they suffer from weak planning and limited cross website generalization. To address these limitations, we introduce the planning experience exploration and utilization (PEEU) method, which autonomously explores environments to discover experiences and utilizes hindsight experience to synthesize strictly aligned, high level training data. To quantitatively analyze the generalization behaviors driving this performance, we propose the task decomposition hierarchical analysis framework (TDHAF) to systematically study compositional generalization across three task granularities: low, middle and high levels. Our analysis reveals that mastering low level atomic skills does not guarantee high level planning competence, while high level task training yields stronger OOD generalization. Experiments on real world benchmarks demonstrate PEEU's superior effectiveness: our 7B model achieves 30.6% accuracy, outperforming the much larger Qwen2.5-VL-32B model. These demonstrate constructing hindsight high level tasks and leveraging experiences is crucial for OOD planning abilities of small MLLMs.",
+      "authors": [
+        "Tianyi Men",
+        "Zhuoran Jin",
+        "Pengfei Cao",
+        "Yubo Chen",
+        "Kang Liu",
+        "Jun Zhao"
+      ],
+      "published": "2026-06-25T17:44:48Z",
+      "updated": "2026-06-25T17:44:48Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2606.27330v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2606.25526v1",
+    "2606.25073v1",
+    "2606.27009v1",
+    "2606.26922v1",
+    "2606.27330v1"
+  ]
+}
