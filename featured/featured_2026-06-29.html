@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2026-06-29 arXiv 每日精选 TOP 5 论文">
+    <title>每日精选 TOP 5 | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">2026-06-29 精选 TOP 5</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="#" class="active">⭐ 精选论文</a></li>
+            <li><a href="../all-papers.html">📚 全部论文</a></li>
+            <li><a href="https://github.com/2992638402-art/arxiv-papers-site" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>🌟 arXiv 每日精选 TOP 5 - 2026-06-29</h1>
+<blockquote>
+<p>从 150+ 篇最新论文中精选出 5 篇最有价值的研究</p>
+</blockquote>
+<hr>
+<h2>1. LLawCo: Learning Laws of Cooperation for Modeling Embodied Multi-Agent Behavior</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2606.28182">2606.28182</a>
+<strong>分类:</strong> cs.LG, cs.AI, cs.CV, cs.RO
+<strong>作者:</strong> Qinhong Zhou, Chuang Gan, Anoop Cherian</p>
+<h3>📄 论文摘要</h3>
+<p>Embodied agents operating in decentralized and partially observable environments have attracted growing attention in recent years. However, existing large language model (LLM)-based agents often exhibit behaviors that are misaligned with their partners or inconsistent with the environment state, leading to inefficient cooperation and poor task success. To address this challenge, we propose a novel framework, Learning Laws of Cooperation (LLawCo), that enables embodied agents to autonomously align with both their partners and task objectives. Our framework allows agents to reflect on past failures to extract misaligned behavioral patterns, which are used to derive high-level behavioral laws, such as &quot;Talk when necessary&quot; and &quot;Wait for partner.&quot; These laws are explicitly incorporated into the agents&#39; chains of thought via supervised fine-tuning, aligning their reasoning with task requirements and the behavior of other agents. To evaluate our approach, we introduce PARTNR-Dialog, a large-scale multi-agent communicative and cooperative planning benchmark built on the PARTNR environment. Experiments on existing tasks and our new benchmark demonstrate significant improvements in cooperative efficiency and task success rates. Across four backbone LLMs, our method achieves average success rate improvements of 4.5% on the PARTNR-Dialog benchmark and 6.8% on the TDW-MAT benchmark over state-of-the-art open-source communicative agent frameworks. See the LLawCo project page for details: <a href="https://www.merl.com/research/highlights/LLawCo">https://www.merl.com/research/highlights/LLawCo</a></p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2606.28182">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2606.28182">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>2. Semantic Early-Stopping for Iterative LLM Agent Loops</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2606.27009">2606.27009</a>
+<strong>分类:</strong> cs.AI, cs.LG, cs.MA
+<strong>作者:</strong> Sahil Shrivastava</p>
+<h3>📄 论文摘要</h3>
+<p>Multi-agent large language model (LLM) loops, for example a Writer that drafts and a Critic that revises, are almost always terminated by a fixed iteration cap (max_iterations). This is a syntactic kill-switch: it is blind to whether the answer is still improving, so it over-spends tokens on easy inputs and truncates hard ones. We study semantic early-stopping: the loop halts when consecutive draft embeddings stop changing in meaning (cosine distance with a patience window) and the answer&#39;s measured quality stops improving. Our work makes three contributions. First, an honest theoretical footing: we prove deterministic termination and well-definedness and machine-check these claims, while treating the convergence of the distance sequence as an empirically tested conjecture rather than a (previously over-claimed) Banach contraction. Second, a judge-efficient evaluation protocol: we generate each question&#39;s full trajectory once, replay every stopping policy over the identical drafts, and cache every LLM-judge call, yielding a strictly paired efficiency-versus-quality comparison at low cost; we further separate operational tokens (charged to a policy) from evaluation tokens (a measurement instrument). Third, an empirical study on multi-hop retrieval-augmented question answering (HotpotQA). On the 60-question test split, a judge-free semantic stopper reduces operational tokens by 38% relative to max_iterations at parity quality (Delta-IS = -0.004, p = 0.81), whereas the full quality-gated variant is counter-productive because its per-round judging dominates cost. An oracle that selects the best round attains +0.115 Information Score over every practical policy (p ~ 4e-11), reframing the problem from &quot;when to stop&quot; (easy) to &quot;which round is best&quot; (open).</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2606.27009">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2606.27009">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>3. RSICCLLM: A Multimodal Large Language Model for Remote Sensing Image Change Captioning</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2606.28266">2606.28266</a>
+<strong>分类:</strong> cs.CV
+<strong>作者:</strong> Yelin Wang, Zijia Song, Shuo Ye, Chuanguang Yang, Miaoyu Wang et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Remote Sensing Image Change Captioning (RSICC) aims to describe changes between bi-temporal remote sensing images and holds significant research and application value. However, most existing methods rely on conventional deep learning architectures, and the limited model capacity constrains performance. Although large-model post-training techniques have achieved great success in general domains, their direct transfer to RSICC remains challenging due to data scarcity and the need for fine-grained change understanding. To address this, we propose RSICCLLM, the first post-training framework for large vision-language models in RSICC. Specifically, we design a data generation paradigm, release the instruction dataset RSICI, and establish a task-specific RSICC benchmark. We further introduce Difference-aware Supervised Fine-tuning to explicitly extract change representations and guide the model in perceiving and understanding temporal differences. In addition, we propose Dual-Negative Preference Optimization (DNPO), which employs two complementary negative-sample construction strategies to construct the preference dataset RSICP and further refine model performance. Extensive experiments validate the superior capability of RSICCLLM, which achieves outstanding results with only 7B parameters, surpassing models of substantially larger scales. The code and dataset will be made publicly available at <a href="https://github.com/keaill/RSICCLLM">https://github.com/keaill/RSICCLLM</a>.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2606.28266">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2606.28266">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>4. AirGroundBench: Probing Spatial Intelligence in Multimodal Large Models under Heterogeneous Multi-View Embodied Collaboration</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2606.28049">2606.28049</a>
+<strong>分类:</strong> cs.CV
+<strong>作者:</strong> Haotian Li, Yida Wang, Leyuan Wang, Jinshan Lai, Keyang Wang et al.</p>
+<h3>📄 论文摘要</h3>
+<p>In recent years, multimodal large language models (MLLMs) have shown strong potential for embodied intelligence, yet their ability to maintain geometrically consistent spatial understanding across heterogeneous views remains under-evaluated. Existing benchmarks largely focus on single-agent, single-view perception, leaving a gap in the systematic assessment of collaborative air-ground settings, where multi-scale observations are complementary but introduce scale mismatch, asymmetric occlusion, and reference-frame inconsistencies. We present AirGroundBench, a diagnostic benchmark for evaluating multi-view spatial intelligence in heterogeneous UAV-UGV collaboration. AirGroundBench is built from 11 high-fidelity simulated environments with 1,021 synchronized air-ground observation pairs, yielding approximately 62,000 dual-view, four-option single-choice visual question answering instances and 115 closed-loop vision-language navigation episodes. It covers 10 task types organized into four progressively demanding capability dimensions: spatial perception, cross-view alignment, spatial transformation and reasoning, and embodied decision-making. To support geometry-grounded evaluation and analysis, we provide structured spatial annotations, including cross-view object identities and metric 2D and 3D bounding boxes. Evaluations of 13 representative MLLMs under UAV-only, UGV-only, and dual-view input settings reveal consistent bottlenecks: models perform relatively well on spatial perception but struggle with cross-view alignment and transformation-intensive reasoning, and these deficits propagate to sequential decision-making in vision-language navigation. Although dual-view inputs provide measurable gains over single-view variants, a persistent gap from human performance remains, highlighting geometric consistency as a key limitation of current embodied MLLMs.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2606.28049">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2606.28049">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>5. From Tokens to States: LLMs as a Special Case of World Models and the Continuous Path Beyond</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2606.28127">2606.28127</a>
+<strong>分类:</strong> cs.CL, cs.AI, cs.LG
+<strong>作者:</strong> Paul Dubois</p>
+<h3>📄 论文摘要</h3>
+<p>The AI community has framed the relationship between large language models (LLMs) and world models as a dichotomy: LLMs predict tokens; world models simulate reality. Yann LeCun argues in 2022 that reaching general intelligence requires abandoning autoregressive token prediction in favour of latent-space architectures. This framing is unnecessarily binary. Two claims will be defended. First, LLMs are a degenerate special case of world models: the state space is the set of all token sequences, the only action is appending one token, and world models are therefore a strict generalisation of LLMs, not a replacement. Second, there is a natural continuous spectrum from NTP to JEPA, with multi-token prediction, future-summary prediction, and next-latent prediction as intermediate stations already populated by current research. Moving along this spectrum relaxes the LLM constraints one by one. It also progressively surrenders the two practical advantages that make LLMs trainable at scale: internet-scale self-supervised data, and a transformer architecture co-designed for discrete token prediction. Both are examined as open research questions: the data question (the cliff from self-supervised text to instrumented action-labelled environments) and the architecture question (whether the transformer generalises to continuous-state prediction, or whether a new primitive is needed).</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2606.28127">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2606.28127">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>生成时间:</strong> 2026/6/29 10:17:57</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="../all-papers.html" class="btn">浏览全部 150 篇 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
