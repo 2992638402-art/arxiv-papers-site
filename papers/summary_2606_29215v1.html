@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Multi-Block Diffusion Language Models - arXiv 2606.29215 论文总结">
+    <title>Multi-Block Diffusion Language Models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Multi-Block Diffusion Language Models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.29215<br><strong>分类:</strong> cs.LG, cs.CL<br><strong>发布时间:</strong> 2026-06-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yijie Jin, Jiajun Xu, Yuxuan Liu, Chenkai Xu, Yi Tu, Jiajun Li, Dandan Tu, Xiaohui Yan, Kai Yu, Pengfei Liu, Zhijie Deng</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.29215">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.29215">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Block Diffusion Language Models (BD-LMs) improve diffusion-based text generation with KV caching and flexible-length generation. A natural next step is to extend them from Single-Block Diffusion (SingleBD) to Multi-Block Diffusion (MultiBD), where a \textit{running-set} of consecutive blocks is decoded concurrently for inter-block parallelism. However, existing BD-LMs are mostly trained under teacher forcing, where the model observes only one noisy block conditioned on a clean prefix. While the recent diffusion forcing strategy introduces visibility among multiple noisy blocks, its training states still differ from MultiBD inference, where decoding operates on a bounded \textit{running-set} with heterogeneous slot-wise noise patterns. To bridge this gap, we propose \textit{Multi-Block Diffusion Language Models} (MBD-LMs), obtained by post-training BD-LMs with \textit{Multi-block Teacher Forcing} (MultiTF). MultiTF integrates teacher forcing and diffusion forcing by training on bounded \textit{noise-groups} conditioned on clean prefixes, with randomized \textit{noise-schedulers} that better match MultiBD inference states. To make MultiBD practically executable, we further introduce an optimized decoding algorithm based on the \textit{Block Buffer} mechanism that preserves prefix-cache reuse, keeps input shapes static, and translates increased decoding parallelism into wall-clock acceleration. Empirically, MBD-LLaDA2-Mini increases average Tokens Per Forward pass (TPF) from 3.47 to \textbf{6.19} and improves average accuracy from 79.95% to \textbf{81.03%}; when combined with DMax, MBD-LLaDA2-Mini-DMax reaches an average TPF of \textbf{9.34} with only a 1.02% accuracy drop on math and code benchmarks.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.29215" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

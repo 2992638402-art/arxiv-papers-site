@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Multivariate Varying-Coefficient BART with Graphical Horseshoe Priors - arXiv 2606.29114 论文总结">
+    <title>Multivariate Varying-Coefficient BART with Graphical Horseshoe Priors | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Multivariate Varying-Coefficient BART with Graphical Horseshoe Priors</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.29114<br><strong>分类:</strong> stat.ME, math.ST, stat.ML<br><strong>发布时间:</strong> 2026-06-27</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Soham Ghosh, Sameer K. Deshpande</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.29114">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.29114">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Modern multivariate regression problems involve several related outcomes whose regression effects are not only nonlinear, heterogeneous, and outcome-specific, but also where the residual dependence among outcomes is scientifically meaningful. Existing multivariate Bayesian tree-based methods typically address only part of this problem: some impose substantial sharing of tree architecture across outcomes, which is overly restrictive when responses depend on distinct predictors or effect modifiers, while others accommodate residual dependence but retain simpler mean structures. This paper develops multiVCBART, a multivariate varying-coefficient Bayesian additive regression tree framework that jointly models flexible outcome-specific coefficient surfaces and a sparse residual precision matrix. Each entry of the coefficient matrix $B(x)$ is represented by an independent BART ensemble, allowing predictor effects to vary nonlinearly with modifiers $x$ across outcomes, while a Graphical Horseshoe prior on the precision matrix $Ω$ captures parsimonious residual conditional dependence. To permit efficient computation, we introduce a sampler that reduces the multivariate Gaussian likelihood to a sequence of scalar pseudo-response updates, decoupling the tree backfitting from the Graphical Horseshoe step. Theoretically, we establish the first posterior contraction rates for a multivariate BART model with jointly estimated residual dependence, proving near-minimax adaptation to underlying smoothness and structural sparsity. Empirically, multiVCBART outperforms existing multivariate tree models and Bayesian SUR competitors on sparse, high-dimensional datasets. Finally, in a re-analysis of the Genomics of Drug Sensitivity in Cancer dataset, our method identifies distinct biomarker signals and recovers a coherent residual pharmacologic network.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.29114" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

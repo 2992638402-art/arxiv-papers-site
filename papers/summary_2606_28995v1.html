@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HJ-SafeDMP: Hamilton-Jacobi Reachability-Guided Dynamic Movement Primitives for Provably Safe Robot Motion - arXiv 2606.28995 论文总结">
+    <title>HJ-SafeDMP: Hamilton-Jacobi Reachability-Guided Dynamic Movement Primitives for Provably Safe Robot Motion | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>HJ-SafeDMP: Hamilton-Jacobi Reachability-Guided Dynamic Movement Primitives for Provably Safe Robot Motion</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.28995<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-06-27</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Siddhanth Ramesh, Ravi Prakash</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.28995">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.28995">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Robots deployed in safety-critical environments must execute motions that are simultaneously robust to disturbances and provably safe from collisions. Dynamic Movement Primitives (DMPs) offer inherent stability, temporal flexibility, and efficient trajectory generalization from single demonstrations, but they lack formal safety certificates. Conversely, Hamilton-Jacobi (HJ) Reachability analysis provides a principled framework for computing worst-case safety margins and forward-invariant safe sets, but classical grid-based methods suffer from the curse of dimensionality and are impractical for real-time control. This paper introduces HJ-SafeDMP, a framework that integrates DMPs with learned HJ Reachability-based safety value functions to achieve provably safe, robust, and computationally efficient robot motion. We learn a Control Barrier Value Function (CBVF) from offline demonstration data using a model-free, finite-difference HJ recursion and deploy it as a real-time safety filter via a closed-form control law that modulates the DMP output. Unlike optimization-based CBF-QP approaches, our method achieves safety filtering without online quadratic program solves, preserving the computational efficiency of DMPs. We further incorporate an expectile-based offline learning objective that avoids querying out-of-distribution actions, and a conformal prediction calibration step that provides finite-sample probabilistic safety coverage. Experimental evaluation on a 7-DOF robot manipulator demonstrates that HJ-SafeDMP achieves formal safety guarantees with orders-of-magnitude faster execution than optimization-based baselines, while maintaining the robustness and adaptability of DMPs for human-robot interaction.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.28995" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

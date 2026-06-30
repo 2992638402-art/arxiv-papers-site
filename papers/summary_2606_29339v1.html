@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Two kinds of robustness are not the same: disentangling fault tolerance and low-SNR robustness in multi-domain event detection on real data - arXiv 2606.29339 论文总结">
+    <title>Two kinds of robustness are not the same: disentangling fault tolerance and low-SNR robustness in multi-domain event detection on real data | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Two kinds of robustness are not the same: disentangling fault tolerance and low-SNR robustness in multi-domain event detection on real data</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.29339<br><strong>分类:</strong> physics.geo-ph, cs.LG, eess.SP<br><strong>发布时间:</strong> 2026-06-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Isao Kurosawa</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.29339">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.29339">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Reliable event detection underpins induced-seismicity monitoring for Carbon dioxide Capture and Storage (CCS) and geothermal operations, distributed acoustic sensing (DAS), and industrial condition monitoring. In each setting a detector must stay reliable both when sensors fail and when the signal is buried in noise. These two failure modes are routinely conflated, and architectural complexity is often credited with robustness it may not deserve. We assemble a unified binary event-detection benchmark from three physically distinct real sources -- Hi-net seismic waveforms, Utah FORGE 2024 borehole DAS, and MAFAULDA industrial vibration -- each mapped to a common 8-channel, 256-sample representation, and evaluate a fault-tolerant detector (CEPHALON) trained with per-sample sensor-dropout against standard detectors (a 1D convolutional network, a temporal convolutional network, and a compact Transformer) trained with an identical recipe. On clean data every model is near-perfect (AUC ~ 0.99). Under progressive sensor loss, simple models with sensor-dropout are already robust and CEPHALON holds no advantage. Under additive noise, however, CEPHALON degrades far more gracefully: at -2.5 dB its overall AUC is 0.939 versus 0.532-0.572 for the convolutional baselines. Same-architecture ablations isolate the cause: disabling internal redundancy at inference reduces the low-SNR advantage only modestly, whereas removing sensor-dropout training collapses it (0.899 to 0.603 at -5 dB). The training recipe is therefore the dominant cause and parallel redundancy only secondary. We release a complete, numbered, reproducible pipeline so that every figure can be regenerated.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.29339" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

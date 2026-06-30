@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dead-Direction Conditioners: Gauge-Equivariant Preconditioning for Deep Networks - arXiv 2606.29176 论文总结">
+    <title>Dead-Direction Conditioners: Gauge-Equivariant Preconditioning for Deep Networks | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Dead-Direction Conditioners: Gauge-Equivariant Preconditioning for Deep Networks</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.29176<br><strong>分类:</strong> cs.LG, math.DG, math.OC, stat.ML<br><strong>发布时间:</strong> 2026-06-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Tejas Pradeep Shirodkar</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.29176">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.29176">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A deep network&#39;s loss is invariant to continuous symmetries of its parameters: the logit shift, the ReLU rescaling, the LayerNorm scale, the per-head attention rotation. Adam&#39;s per-coordinate preconditioner drifts along each symmetry orbit, which pulls the trajectory off the symmetry quotient where the optimization lives and blurs the singular-learning rate the quotient makes readable. We build DDC, a Dead-Direction Conditioner that lifts a base optimizer into a $G$-equivariant one: it conditions the optimizer&#39;s state in the orbit decomposition of a $G$-invariant metric, so the trajectory stays a preconditioned gradient flow on the quotient $\barΘ= Θ/G$. The construction carries four architectural gauges (cross-entropy shift, ReLU and SwiGLU rescaling, LayerNorm and RMSNorm scale, and a per-head $O(d_{\rm head})$ attention rotation matched to RoPE), proves exactly equivariant on an Adam base, and composes with a Muon base through a gauge-equivariant orthogonaliser. Respecting the symmetry changes both the minimum the optimizer reaches and what it leaves measurable there. On a language model trained past the point of fit, DDCAdam resists the over-training collapse AdamW falls into, holding a validation-train loss gap of 0.67 against 5.88, and reads the dead-direction rate in 32 of 65 layer-by-observable cells where AdamW reads it in 7. A vision transformer trained from scratch reaches lower validation loss (1.71 against 2.12) while compressing spare feed-forward capacity a matched AdamW leaves intact. On a Muon base, where the rotation gauge composes exactly, DDCMuon groks ten of eleven seeds at depth 24 that a plain Muon never reaches. Built into the optimizer, a network&#39;s gauge symmetry sharpens the minimum it finds and turns that minimum&#39;s geometry into something the trajectory can measure.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.29176" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

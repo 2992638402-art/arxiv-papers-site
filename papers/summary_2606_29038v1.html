@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Metric Aggregation Divergence: A Hidden Validity Threat in Agent-Based Policy Optimization and a Contractual Remedy - arXiv 2606.29038 论文总结">
+    <title>Metric Aggregation Divergence: A Hidden Validity Threat in Agent-Based Policy Optimization and a Contractual Remedy | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Metric Aggregation Divergence: A Hidden Validity Threat in Agent-Based Policy Optimization and a Contractual Remedy</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.29038<br><strong>分类:</strong> cs.MA, cs.AI<br><strong>发布时间:</strong> 2026-06-27</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ruiyu Zhang, Lin Nie, Xin Zhao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.29038">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.29038">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Metric aggregation divergence (MAD) is the silent inconsistency that arises when distinct pipeline stages in an agent-based model coupled with a multi-objective evolutionary algorithm (ABM+MOEA) independently re-implement how an outcome metric is extracted from simulation trajectories. Unlike deliberate analytical choices, MAD operates at the level of pipeline architecture: each stage is internally coherent, and the inconsistency becomes visible only when cross-stage outputs are compared. Code inspection of EpidemiOptim, a JAIR-published epidemic policy toolbox, reveals three structurally independent aggregation paths in peer-reviewed code. A faithful replication of this structure produces champion disagreement in 64.2% of independent runs (n=500, 95% CI: [59.9%, 68.3%]). In a 300-seed policy-flip experiment, divergent aggregation causes the optimizer to recommend the wrong champion in 83% of replications, with a mean welfare gap of 2.19 units and a Gini inequality gap of 0.050 units. In a follow-up inference audit, 3 of 249 flipped seeds cross the significance boundary itself. A complementary enterprise follow-up produces the predicted null under near-commensurable rankings (rho = 0.991), while a public upstream rerun of the Lake Problem DPS workflow shows that the archived published-path recommendation reaches joint-threshold success 0.401 whereas a shared contract-path rule reaches 0.552. We introduce the metric contract - a single shared callable enforced at dispatch time across all pipeline stages - as the remedy. Framed as standard engineering discipline applied to the cross-stage metric interface, the contract eliminates divergence by construction with approximately 3% runtime overhead.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.29038" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
