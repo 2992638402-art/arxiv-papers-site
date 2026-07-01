@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FlexViT: A Flexible FPGA-based Accelerator for Edge Vision Transformers - arXiv 2606.31938 论文总结">
+    <title>FlexViT: A Flexible FPGA-based Accelerator for Edge Vision Transformers | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>FlexViT: A Flexible FPGA-based Accelerator for Edge Vision Transformers</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2606.31938<br><strong>分类:</strong> cs.AR, cs.CV, cs.DC, cs.LG<br><strong>发布时间:</strong> 2026-06-30</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hubert Dymarkowski, Xingjian Fu, Rappy Saha, Jude Haris, José Cano</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2606.31938">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2606.31938">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Deploying Vision Transformer (ViT) models on edge platforms remains challenging due to their high computational demands and the architectural heterogeneity of modern hybrid ViT models, which incorporate both fully connected and convolutional layers. This heterogeneity leads to significant variation in tensor shapes, requiring flexible and efficient FPGA-based acceleration. In this paper, we present FlexViT, a reconfigurable FPGA accelerator for efficient ViT inference on resource-constrained edge devices. Built on the SECDA-TFLite framework, FlexViT employs a hardware-software co-design approach that maps both fully connected and convolutional layers onto a unified high-throughput INT8 GEMM engine using a runtime im2col transformation. To efficiently support diverse layer configurations, we propose a dual-mode dataflow that dynamically switches between input and weight reuse by reconfiguring the compute array at runtime. We further introduce a depth-first tiling strategy that completes accumulation in a single pass, eliminating off-chip partial-sum transfers and reducing memory bandwidth requirements. We implement FlexViT on a PYNQ-Z2 FPGA and evaluate it across a representative set of ViT models. FlexViT achieves up to 2.74x speedup on accelerator-executed layers, translating into up to 1.40x end-to-end speedup compared to CPU-only execution. The code is available at: <a href="https://github.com/gicLAB/FlexViT">https://github.com/gicLAB/FlexViT</a></p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2606.31938" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
