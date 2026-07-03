@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TUDUM: A Turkish-Thinking Reasoning Pipeline for Qwen3.5-27B - arXiv 2607.01927 论文总结">
+    <title>TUDUM: A Turkish-Thinking Reasoning Pipeline for Qwen3.5-27B | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>TUDUM: A Turkish-Thinking Reasoning Pipeline for Qwen3.5-27B</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.01927<br><strong>分类:</strong> cs.CL, cs.AI<br><strong>发布时间:</strong> 2026-07-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Baran Bingol, Bahaeddin Turkoglu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.01927">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.01927">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>This paper presents TUDUM (Türkçe Düşünen Üretken Model), a project pipeline for adapting a Qwen-family 27B thinking model toward Turkish reasoning. The central problem is not only to answer Turkish prompts in Turkish, but to make the explicit reasoning trace itself Turkish. A thinking model may translate a Turkish prompt into an English-centered internal or visible scratchpad, solve the problem mostly in English, and only localize the final answer. TUDUM instead treats the generated &lt;think&gt;...&lt;/think&gt; block as a trainable behavior. The pipeline starts from the project base checkpoint unsloth/Qwen3.5-27B, applies supervised fine-tuning (SFT) on 15,991 Turkish reasoning examples using LoRA adapters, and then applies GRPO-family reinforcement learning on a proxy-filtered Turkish mathematics environment. The results are mixed. SFT made the model shorter and more consistently Turkish in its reasoning behavior, with large reductions in average response length and thinking exhaustion, but reduced benchmark accuracy. RL recovered some mathematical performance, especially AIME24 at the best early checkpoint, yet did not uniformly improve all benchmarks and did not exceed the base model on the reported Macro-6 average. The contribution is therefore best framed as a technically honest Turkish-thinking reasoning pipeline and evaluation, not as a claim of state-of-the-art Turkish reasoning. The released step-50 model is publicly available.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.01927" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

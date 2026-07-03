@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dendritic In-Context Learning in a Single-Layer Spiking Neural Network - arXiv 2607.02283 论文总结">
+    <title>Dendritic In-Context Learning in a Single-Layer Spiking Neural Network | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Dendritic In-Context Learning in a Single-Layer Spiking Neural Network</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.02283<br><strong>分类:</strong> cs.NE, cs.LG<br><strong>发布时间:</strong> 2026-07-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Juwei Shen, Yujie Wu, Changwen Chen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.02283">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.02283">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>In-context learning (ICL) operates via implicit gradient descent embedded in the forward pass of modern AI architectures -- Transformers, Mamba, state-space models, and MLPs. Capturing this capability in biologically plausible Spiking Neural Networks (SNNs) has remained an open challenge: existing SNNs fail the Garg-2022 benchmark at non-trivial task dimensions. We trace this failure to a structural assumption: prior SNN designs route adaptation through inference-time synaptic plasticity, viewing the dendritic compartment as a passive conduit for error or teacher signals. We challenge this assumption. The subthreshold dynamics of a single dendritic compartment already implement a complete online learning algorithm. By treating the compartment as the computational substrate rather than a passive conduit, we propose DendriCL -- a single-layer compartmental spiking architecture whose apical recurrence is structurally identical to leaky online Widrow-Hoff LMS. This dynamics-only update collapses the architectural depth required for general-purpose ICL to a single layer. DendriCL is uniquely seed-stable at super-dimensional Garg-2022 ICL -- where dense Transformers exhibit grokking-style instability and fail past moderate task dimension -- and a linear probe recovers the reference online-LMS trajectory directly from the apical membrane at R^2 = 0.93, showing the algorithm is structurally embedded in the dynamics rather than implicitly discovered during training. Taken together, ICL requires neither attention, depth, nor inference-time plasticity: a single compartment with online-LMS dynamics is sufficient.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.02283" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

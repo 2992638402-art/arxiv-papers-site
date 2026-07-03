@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SAMoR: Motion Modelling for Articulated Objects of Any Skeleton and Topology - arXiv 2607.02148 论文总结">
+    <title>SAMoR: Motion Modelling for Articulated Objects of Any Skeleton and Topology | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SAMoR: Motion Modelling for Articulated Objects of Any Skeleton and Topology</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.02148<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-07-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yuhao Zhang, Gerard Pons-Moll, Tolga Birdal</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.02148">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.02148">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Modeling motion for articulated objects of arbitrary skeleton topology remains difficult: existing motion generators target a fixed human skeleton, and prior adaptations either fail to share a vocabulary across rigs or discard motion detail through global pooling. Our key observation is that while joint-level motion does not correspond cleanly across species, motion of functional joint groups does: a human arm, a wolf foreleg, and a bird wing share motion structure despite differing joint counts and connectivity, a correspondence that joint names (e.g., &quot;forearm&quot;, &quot;wing_L1&quot;) partially expose even when topology does not. We introduce SAMoR (Skeleton-Aware Motion Representation for Articulated Objects), a cross-topology motion representation that encodes each motion segment as a small fixed number ($K=8$) of part tokens shared across arbitrary skeletons. A graph-transformer encoder consumes per-joint motion features, kinematic graph structure, and joint-name embeddings, then compresses them into part-level tokens via cross-attention pooling and residual vector quantization, yielding a discrete motion codebook shared across rigs. To keep the part queries from collapsing into redundant global representations, we introduce a topology-agnostic attention supervision loss, with joint-name dropout to reduce over-reliance on text labels. We curate a heterogeneous corpus from HumanML3D, Truebones Zoo, and animated Objaverse-XL assets, and evaluate SAMoR on held-out characters with unseen skeletons. It supports accurate reconstruction and cross-topology transfer, and enables text-conditioned generation and part-wise editing via a MaskGIT token generator. SAMoR reaches $2.75 \times 10^{-2}$ normalized MPJPE on cross-topology reconstruction, $5.8\times$ below the strongest adapted variable-$J$ tokenizer baseline, while remaining competitive with fixed-skeleton specialists on HumanML3D.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.02148" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

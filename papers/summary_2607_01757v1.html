@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DL-VINS-Factory: A Modular Framework for Learned Visual Front-Ends in Visual-Inertial SLAM - arXiv 2607.01757 论文总结">
+    <title>DL-VINS-Factory: A Modular Framework for Learned Visual Front-Ends in Visual-Inertial SLAM | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>DL-VINS-Factory: A Modular Framework for Learned Visual Front-Ends in Visual-Inertial SLAM</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.01757<br><strong>分类:</strong> cs.CV, cs.RO<br><strong>发布时间:</strong> 2026-07-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Shoon Kit Lim, Melissa Jia Ying Chong, Ting Yang Ling</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.01757">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.01757">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Deep-learning features excel in visual matching, yet their practical value in tightly coupled visual-inertial SLAM (VI-SLAM) remains insufficiently characterized. We present DL-VINS-Factory, a unified framework that integrates learned feature extractors (ALIKED, RaCo, SuperPoint, XFeat) with either Lucas--Kanade (LK) optical-flow tracking or LightGlue (LG) descriptor matching. All front-ends share a sliding-window Ceres back-end, with optional AnyLoc DINOv2-VLAD loop closure, and 4-DoF pose-graph optimization. We benchmark the system across the four datasets covering indoor, unstructured outdoor, aggressive-motion, and visually degraded conditions. Results show that learned front-ends are viable for real-time embedded VI-SLAM, but are not universally superior to classical tracking. Relative to the corresponding GFTT+LK baseline, ALIKED+LG reduces EuRoC ATE by $5%$ in monocular odometry and by $7%$ in stereo with loop-closure. On NTU-VIRAL, where aggressive aerial motion increases inter-frame viewpoint change, ALIKED+LG stereo reduces loop-closed ATE by $12%$. In Botanic Garden dataset, optical-flow tracking remains preferable, but learned keypoints still improve over the baseline GFTT, in which SuperPoint+LK reduces grayscale camera ATE by $29%$, while RaCo+LK reduces RGB camera ATE by $38%$. On SubT-MRS, learned front-ends display varying degree of improvement based on individual cases. With TensorRT acceleration on a Jetson AGX Orin, all valid configurations run in real time between $29$--$47$ FPS in monocular mode and $18$--$33$ FPS in stereo mode for the EuRoC and NTU-VIRAL datasets. AnyLoc further confirms roughly $2$--$7\times$ more valid loops than BRIEF+DBoW2. The implementation is open-sourced at <a href="https://github.com/limshoonkit/DL-VINS-Factory-ROS2/">https://github.com/limshoonkit/DL-VINS-Factory-ROS2/</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.01757" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
