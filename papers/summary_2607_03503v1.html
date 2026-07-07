@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Near-Linear-Time Solver for Graph $p$-Laplacian Semi-Supervised Learning via Continuation in $p$ - arXiv 2607.03503 论文总结">
+    <title>A Near-Linear-Time Solver for Graph $p$-Laplacian Semi-Supervised Learning via Continuation in $p$ | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>A Near-Linear-Time Solver for Graph $p$-Laplacian Semi-Supervised Learning via Continuation in $p$</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.03503<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-07-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Oren E. Livne</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.03503">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.03503">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Graph-based semi-supervised learning (SSL) propagates a few labels over a similarity graph by minimizing a Dirichlet-type energy. The standard quadratic ($p=2$) energy reduces to a single graph-Laplacian solve, but it degenerates exactly where SSL is most useful when labels are scarce: gathering more unlabeled data drives the $p=2$ estimate to a near-constant function whenever $d\ge2$ (Nadler-Srebro-Zhou). Well-posedness requires the nonlinear $p$-Laplacian energy with $p&gt;d$. Existing solvers reduce this to a sequence of weighted Laplacian solves, but their reference implementations use a direct sparse factorization or ichol-preconditioned CG instead. Plugging a near-linear Laplacian solver is not straightforward: at large $p$ the conductance weights degenerate near flat-gradient edges, making the system nearly singular and causing stagnation without a damped outer iteration. We close this gap. Recasting $p$-Laplacian SSL as a source-form nonlinear Laplacian flow $Bρ_p(B^\top x)=b$ and solving by damped chord-Newton continuation in $p$, every linearized system stays well-conditioned and can be delegated to a near-linear Laplacian engine. On size-scaled graph families the wall-clock is empirically $m^{0.96}$-$m^{1.02}$ per family (approximate Cholesky default), and a pooled fit across 228 SuiteSparse graphs gives $m^{1.19}$ vs.\ $m^{1.45}$ for direct factorization; the solver handles a $6.8\times10^7$-edge social network in minutes. Memory is the binding constraint: Cholesky fill reaches $10$-$280\times$ the graph nonzeros vs.\ our $O(m)$ hierarchy. Against the released FCL solver we are $1.5$-$14\times$ faster at matched accuracy. On MNIST $10$-NN, $p=3$ scores $64%$ at one label per class vs.\ $36%$ for $p=2$. Code: <a href="https://github.com/orenlivne/np">https://github.com/orenlivne/np</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.03503" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

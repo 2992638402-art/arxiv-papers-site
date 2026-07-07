@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="How Much of the Routing Gap Is Real? Decomposing the Router-to-Oracle Gap into Reproducible Specialist Advantage and Single-Draw Label Noise - arXiv 2607.03436 论文总结">
+    <title>How Much of the Routing Gap Is Real? Decomposing the Router-to-Oracle Gap into Reproducible Specialist Advantage and Single-Draw Label Noise | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>How Much of the Routing Gap Is Real? Decomposing the Router-to-Oracle Gap into Reproducible Specialist Advantage and Single-Draw Label Noise</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.03436<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-07-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Teng-Ruei Chen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.03436">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.03436">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Routing among large language models (LLMs) promises better quality at lower cost, motivated by the reported gap between learned routers and a per-instance oracle. But that oracle is computed from a single correctness label per (query, model), so under stochastic decoding it is one Bernoulli draw, not a reproducible property. We recast the question structurally: the expected per-instance oracle decomposes as $O^{\exp}=O^{\mathrm{repro}}+Δ$, into reproducible single-commit headroom $O^{\mathrm{repro}}$ and a non-negative single-commit selection floor $Δ$. Our main result is a recoverability asymmetry: this floor is closed by no single-commit router, yet is recovered by test-time sampling -- best-of-$K$ on the committed model, at the oracle&#39;s own budget, dominates the independent-pool single-draw oracle. The cap needs no cross-model independence; we prove it with the exact decomposition and noise-share bounds that shrink as the budget grows. The procedure adds no new router, only resampling. The floor&#39;s magnitude is a prospective, conservative localization, not an audit: our primary target LLMRouterBench (33 models, 391,645 instances) defines its oracle as a per-query union over single $T=0.2$ generations -- by construction a union of stochastic single draws. Since $O^{\mathrm{repro}}$ is non-identifiable from the released $k=1$ matrix, we estimate the noise share by fresh $k\ge20$ resampling under one-sided, dependence- and guessing-floor-corrected bounds, recasting &#39;model-recall failure&#39; as thin-support union inflation. On a controlled open-model re-generation, single-draw noise is a substantial minority of the gap -- larger on an unsaturated benchmark, approaching half on the hardest queries where no model is reliable -- while the majority remains recoverable specialist advantage. We release a multi-sample oracle evaluation protocol for routing benchmarks.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.03436" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
