@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bridging Diffusion Pruning and Step Distillation with Teacher-Aligned Repair - arXiv 2607.06335 论文总结">
+    <title>Bridging Diffusion Pruning and Step Distillation with Teacher-Aligned Repair | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Bridging Diffusion Pruning and Step Distillation with Teacher-Aligned Repair</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.06335<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-07-07</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jincheng Ying, Li Wenlin, Minghui Xu, Yinhao Xiao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.06335">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.06335">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Diffusion models generate high-quality images, but their inference cost comes from two sources: large denoising networks and repeated denoising steps. Existing compression pipelines usually attack these costs separately. Pruning reduces the network, but most pruning methods still rely on a long post-pruning retraining stage to recover a many-step sampler. Step distillation reduces the number of denoising steps, but it usually assumes a student that can already follow the teacher well enough to receive useful distillation gradients. This paper asks whether post-pruning retraining can be replaced by step distillation. We find that the direct replacement fails: after pruning an EDM2-XS teacher, starting SiDA from the pruned checkpoint produces unusable samples. We introduce a short teacher-alignment repair stage as a bridge between pruning and step distillation. The bridge matches the pruned generator to the teacher on noisy real-image latents, then hands the repaired checkpoint to one-step distillation. On ImageNet-512, the original EDM2-XS baseline uses 124.713M parameters and 63 network evaluations, reaching an FID of 3.53. With a suitable distillation objective, our 20% pruned one-step generator uses 98.826M parameters and one network evaluation, reaching an FID of 3.12. With 30% pruning, the model uses 88.029M parameters and one network evaluation, with an FID of 4.26.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.06335" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

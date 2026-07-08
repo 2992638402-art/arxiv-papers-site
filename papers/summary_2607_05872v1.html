@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="No Subspace to Track: Non-Identifiability and Optimizer State in Low-Rank Training - arXiv 2607.05872 论文总结">
+    <title>No Subspace to Track: Non-Identifiability and Optimizer State in Low-Rank Training | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>No Subspace to Track: Non-Identifiability and Optimizer State in Low-Rank Training</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.05872<br><strong>分类:</strong> cs.LG, math.OC, stat.ML<br><strong>发布时间:</strong> 2026-07-07</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Noel Thomas</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.05872">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.05872">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Memory-efficient optimizers such as GaLore train large language models by projecting gradients onto a rank-r subspace recomputed every T steps, assuming this subspace is a slowly drifting object that can be tracked. We show that beyond a small reproducible core, there is no such object. Two estimates of the top-r subspace computed at the same step from disjoint minibatches disagree as much as estimates computed T steps apart (0.73 vs 0.74 of the maximal chordal distance sqrt(2r), at Pythia-160M with r=128): the apparent rotation at each refresh is dominated by estimator noise. This holds across four model families in three architecture classes from 70M to 6.9B parameters, strengthening with scale, and more weakly in a vision transformer. Only ~39 of 128 directions are reproducible across minibatches, and averaging cannot recover the rest: under N-fold averaging the gradient&#39;s spectral tail shrinks as N^(-1/4) rather than the N^(-1/2) of pure noise, so no averaging budget makes the subspace well defined. What helps instead follows from treating each refresh as a change of coordinates for Adam&#39;s state. Carrying the second moment blindly is provably about (r-k*)/2 worse than the best rotation-blind estimator, while the first moment transports exactly through the rotation, the optimal linear map under isotropic gradients and the rule LDAdam uses. At 1B over 40k steps (3 seeds), full LDAdam reaches 18.7 perplexity at beta2=0.999, beating untransported GaLore after its best beta2 fix (19.3); shortening the second-moment memory to beta2=0.99 helps the refreshing optimizers, though for canonical GaLore the effect is small and a full-rank control reverses it. One measurable fact, subspace non-identifiability, clarifies why GaLore works, which patches work, and what to check before trusting a low-rank assumption: the reproducible rank k*.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.05872" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

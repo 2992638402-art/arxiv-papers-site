@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning Only What Valid Adapters Can Express: Subspace-Constrained Adaptation Against Fine-Tuning Poisoning - arXiv 2607.05300 论文总结">
+    <title>Learning Only What Valid Adapters Can Express: Subspace-Constrained Adaptation Against Fine-Tuning Poisoning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Learning Only What Valid Adapters Can Express: Subspace-Constrained Adaptation Against Fine-Tuning Poisoning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.05300<br><strong>分类:</strong> cs.LG, cs.CR<br><strong>发布时间:</strong> 2026-07-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Fabien Polly</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.05300">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.05300">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Parameter-efficient fine-tuning still leaves a broad space of behavior-changing updates reachable, so a poisoned objective can be represented and optimized. We study an alternative: adaptation constrained to the subspace estimated from a trusted pool of existing task adapters. On flan-t5-large with 196 public LoRA adapters, we show that (1) the functionally relevant content of an adapter lies in a low-dimensional shared subspace, 30 to 38 percent of its weight norm being redundant under the evaluated task distributions; (2) gradient adaptation restricted to 128 coordinates on this subspace matches full LoRA fine-tuning on clean classification data, while under targeted label inversion LoRA collapses to 3-26 percent exact match and the constrained learner keeps 62-96 percent on the tasks the pool covers; (3) the constrained learner cannot fit corrupted data, its adaptation loss separating clean from garbage by two orders of magnitude (120x), an out-of-distribution signal without an extra detector; and (4) against an adaptive backdoor attacker who optimizes within the subspace, the attack is blocked (8 percent success versus 100 for LoRA) on the task where its target behavior is unlike anything in the pool, and only partially blocked (85 percent) when the target coincides with a common pool behavior. On these two tasks the outcome is consistent with how close the target is to the pool&#39;s directions, which suggests but does not establish a pool-relative boundary. The mechanism trades peak plasticity for these properties: on tasks the pool covers poorly, unconstrained fine-tuning wins, and the protection assumes the pool itself is trusted. Code and data are public.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.05300" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
