@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LayerNorm as Implicit Gain Control in Looped Transformers - arXiv 2607.10681 论文总结">
+    <title>LayerNorm as Implicit Gain Control in Looped Transformers | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>LayerNorm as Implicit Gain Control in Looped Transformers</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.10681<br><strong>分类:</strong> cs.LG, cs.NE<br><strong>发布时间:</strong> 2026-07-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Matthias M. M. Buehlmaier</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.10681">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.10681">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>In pre-LayerNorm looped transformers, LayerNorm inside the recurrent block acts as an implicit gain controller: by coupling the block&#39;s local Lipschitz constant inversely to the activation scale, it renders the recurrence Jacobian non-normal -- asymptotically contractive at every verified fixed point even where its operator norm exceeds 1 -- so the true stability budget is the spectral margin, not an operator-norm bound. That margin depletes as the carry $ρ\to 1$, and a minority of initializations never converge to a fixed point at all, so the diagonal carry constraint $ρ(\bar{A}) &lt; 1$ is necessary but not sufficient for convergence of the full recurrence. Training experiments across six tasks, including a controlled ablation, reveal that the linear carry is not the depth-memory mechanism: gradient descent routes memory through the block&#39;s more expressive nonlinear recurrence and leaves the stability-constrained carry at rest -- the carry&#39;s role is stabilization, not memory. We characterize the boundary of this claim: on tasks with axis-aligned per-channel structure, gradient descent does recruit the carry. All results are derived analytically and verified in a from-scratch, CPU-scale implementation; verification at larger scale is needed.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.10681" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

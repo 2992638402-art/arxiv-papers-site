@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diversify Diffusion with Temperature Sampling and Variance-Corrective Time Shifting - arXiv 2607.10853 论文总结">
+    <title>Diversify Diffusion with Temperature Sampling and Variance-Corrective Time Shifting | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Diversify Diffusion with Temperature Sampling and Variance-Corrective Time Shifting</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.10853<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-07-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Peizhuo Li, Emre Aksan, Alexandru-Eugen Ichim, Thabo Beeler, Olga Sorkine-Hornung</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.10853">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.10853">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Diffusion models faithfully reproduce their training distribution, but also inherit its imbalances and leave rare or under-represented modes hard to reach. A natural inference-time remedy is to sample from the high-temperature target $p^{(γ)}_0(x) \propto p_0(x)^γ$ for $0 &lt; γ&lt; 1$, which flattens dominant modes and lifts rare ones. However, naive score scaling while correctly reweighting modes also inflates the per-mode variance, breaking the reverse diffusion process and degrading sample quality. We introduce variance-corrective time shifting, a training-free fix that queries the network at a shifted timestep and scales the resulting score by $γ$, canceling the variance inflation while preserving the mode reweighting. The correction turns simple temperature sampling into a practical diversity knob for pretrained diffusion and flow-matching backbones with no retraining, and we demonstrate consistent gains at minimal cost to sample quality and condition fidelity across DiT, Stable Diffusion and Motion Diffusion models. We further show that the timing of the temperature intervention enables coarse-to-fine control: high-noise stages drive compositional diversity across modes, while low-noise stages drive local appearance variation under a fixed composition.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.10853" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

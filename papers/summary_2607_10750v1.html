@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Filtering Harmful Actions Isn't Enough: Phantom Transfer in Agentic SDF - arXiv 2607.10750 论文总结">
+    <title>Filtering Harmful Actions Isn't Enough: Phantom Transfer in Agentic SDF | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Filtering Harmful Actions Isn&#39;t Enough: Phantom Transfer in Agentic SDF</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.10750<br><strong>分类:</strong> cs.AI, cs.LG<br><strong>发布时间:</strong> 2026-07-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Chinmayi Dixit</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.10750">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.10750">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Synthetic data is widely used to train large language models because it is inexpensive to generate and easy to control. As models are increasingly deployed as agents, synthetic trajectories are likely to become an important source of training data for agentic behavior. We investigate the effects of training on synthetic agentic trajectories containing adversarial interactions, including actions such as terminating another agents process, lowering its scheduling priority, or accessing resources without authorization. We finetune Llama 3.3 70B Instruct on these trajectories, generated to approximate reinforcement learning rollouts, and evaluate the resulting models on Anthropics Agentic Misalignment suite and Apollos in context scheming scenarios. Finetuning on these trajectories consistently increases misaligned behavior. Leaking rises by roughly a factor of five over the baseline, 4.6% to 24.9%. This increase survives the removal of every adversarial action from the trajectories. Finetuning on structurally comparable trajectories generated benign from the start produce a substantially smaller effect, 15.5%. These results indicate that the misaligned disposition is introduced during the generation process and encoded diffusely throughout the trajectory, rather than being localized to the harmful actions themselves. The effect also depends on the generating model. Benign trajectories produced by Gemini 2.5 Flash induce slightly higher leaking rates than trajectories generated from identical tasks by Claude 3.7 Sonnet. In contrast, broad safety benchmarks degrade similarly across all finetuned models and therefore fail to distinguish these effects. Our results suggest that action level filtering is insufficient to ensure the safety of synthetic agentic training data and that dispositions introduced by the generating model can survive semantic inspection.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.10750" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

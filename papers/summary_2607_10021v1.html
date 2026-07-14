@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Symbolic Neural CPU for Quantization-Simulated Writeback and Interpretable Program Execution - arXiv 2607.10021 论文总结">
+    <title>A Symbolic Neural CPU for Quantization-Simulated Writeback and Interpretable Program Execution | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>A Symbolic Neural CPU for Quantization-Simulated Writeback and Interpretable Program Execution</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.10021<br><strong>分类:</strong> cs.AI, cs.AR, cs.LG, cs.NE<br><strong>发布时间:</strong> 2026-07-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jose Luis Lima de Jesus Silva</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.10021">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.10021">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Neural networks can learn algorithmic input-output mappings, but trusting a learned executor requires more than a correct final answer because the state transitions that produce it are usually hidden. To make those transitions visible, we introduce a trace-supervised symbolic neural CPU, a factorized learned execution architecture that combines recurrent control, an explicit operation router over a fixed differentiable arithmetic-logic unit bank, destination-masked register writeback, complete trajectory supervision and matched fixed-point replay. The model exposes the selected operation, source and destination registers, register trajectory, memory signals and writeback semantics at every step. On the principal 16-wide benchmark, the non-quantized executor reproduces reference execution exactly, while the eight-bit quantization-simulated executor preserves the symbolic operation path through programs of 1,000 instructions. When the same execution is evaluated against a matched fixed-point replay, the residual numerical drift disappears, showing that it comes from a mismatch between continuous and low-precision reference semantics rather than from execution failure. We compare recurrent, Transformer, temporal-convolution, temporal graph-inspired and state-space controllers, and the ablations show that operation-gate supervision is necessary for an inspectable execution path. Hidden-opcode memory-pressure tasks expose the remaining limits in delayed state use and temporal binding. We also extend the interface with ValueMemory, hybrid adaptive leaky integrate-and-fire controllers, candidate-constrained symbolic control trained through behaviour cloning and actor-critic reinforcement learning, and an RV32I base-integer semantic bridge. Together, these results establish a trace-verifiable framework for interpretable, low-precision and controllable neural execution.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.10021" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
