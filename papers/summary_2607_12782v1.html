@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MBTI: A Multi-Branch Efficient Fine-Tuning Framework for Hyperspectral Image Classification with Foundation Models - arXiv 2607.12782 论文总结">
+    <title>MBTI: A Multi-Branch Efficient Fine-Tuning Framework for Hyperspectral Image Classification with Foundation Models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>MBTI: A Multi-Branch Efficient Fine-Tuning Framework for Hyperspectral Image Classification with Foundation Models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.12782<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-07-14</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Mingzhen Xu, Haonan Guo, Di Wang, Yinghua Qu, Zhiliang Zhou, Lei Zhang, Huiwen Yao, Rui Zhao, Fengxiang Wang, Gang Wan, Bo Du, Liangpei Zhang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.12782">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.12782">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Hyperspectral foundation models learn transferable spectral-spatial representations from large-scale unlabeled data. They provide an effective paradigm for adapting to downstream hyperspectral image (HSI) classification tasks with limited labeled samples. However, spectral band configurations vary substantially across sensors, which makes direct model transfer difficult. Existing adaptation strategies often compress, select, or reshape the original spectra to match model-specific input requirements. These operations may discard useful spectral information and weaken local spectral continuity. To address this problem, we propose MBTI, a Multi-Branch efficient fine-tuning framework for Hyperspectral Image classification. MBTI adapts hyperspectral foundation models to downstream classification tasks while preserving full-band spectral information. First, we introduce a spectral-continuity-preserving multi-branch preprocessing strategy. The original HSI is divided into multiple continuous spectral subsets, and a band reuse mechanism is used when the remaining bands cannot form a complete branch. This avoids invalid padding and unnecessary spectral loss. Second, independent Low-Rank Adaptation (LoRA) modules are inserted into each branch. They enable different spectral intervals to learn task-specific discriminative features while keeping most pre-trained parameters frozen. Finally, a multi-branch channel attention fusion module adaptively recalibrates and integrates features from all spectral branches. Experiments on three public hyperspectral datasets show that MBTI achieves competitive and superior performance compared with representative classification methods. Under the final rank-8 configuration, only about 2.33%--2.36% of the parameters are trainable. The code will be available at <a href="https://github.com/Azhenmiddleblock/MBTI/tree/main">https://github.com/Azhenmiddleblock/MBTI/tree/main</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.12782" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

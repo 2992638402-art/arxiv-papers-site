@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encoder-Side Neuron Identification and Amplification for Acoustic Perception in Large Audio-Language Models - arXiv 2607.11801 论文总结">
+    <title>Encoder-Side Neuron Identification and Amplification for Acoustic Perception in Large Audio-Language Models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Encoder-Side Neuron Identification and Amplification for Acoustic Perception in Large Audio-Language Models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.11801<br><strong>分类:</strong> cs.SD, cs.AI<br><strong>发布时间:</strong> 2026-07-13</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yu-Han Huang, Chih-Kai Yang, Ke-Han Lu, An-Yu Cheng, Hung-yi Lee</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.11801">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.11801">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Large audio-language models (LALMs) often underperform on fine-grained, non-semantic attributes of speech, such as a speaker&#39;s emotion, despite strong performance on speech content. Improving this without the cost of retraining calls for an effective inference-time intervention, yet most existing methods intervene only after the audio encoder and operate at a relatively coarse granularity. The encoder itself, where acoustic information is first extracted from the waveform, remains largely unexplored, especially at the level of individual neurons. We introduce IAAN, Identifying and Amplifying Acoustic Neurons, a training-free and label-free method that scores each feed-forward neuron in the audio encoder by contrasting its activation on the real waveform with that on a noise reference lacking the real audio&#39;s acoustic information. IAAN then amplifies a small set of the highest-scoring neurons at inference. Across ten non-semantic speech attributes, IAAN improves average accuracy by 25.7 points on Audio-Flamingo-3, 21.4 on Qwen2.5-Omni, and 9.7 on Kimi-Audio. It also improves a model already explicitly fine-tuned to prioritize acoustic evidence. In controlled comparisons, both the encoder locus and neuron-level selectivity prove necessary for this gain. Intervening after the encoder, at the decoding side or inside the language model, yields little to no improvement, or even deteriorates accuracy. The improvement also depends on which specific neurons are amplified, not merely on their number, confirming that IAAN&#39;s acoustic score succeeds in identifying the neurons that matter. These results show that a small, precisely targeted intervention inside the audio encoder is an effective and largely untapped way to strengthen the acoustic understanding of LALMs, opening a new direction for inference-time methods that improve acoustic perception through neuron-level access to the encoder.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.11801" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

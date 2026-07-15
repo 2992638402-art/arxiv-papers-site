@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Markov Chain Monte Carlo with Diffusion Paths - arXiv 2607.11631 论文总结">
+    <title>Markov Chain Monte Carlo with Diffusion Paths | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Markov Chain Monte Carlo with Diffusion Paths</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.11631<br><strong>分类:</strong> stat.CO, stat.ML<br><strong>发布时间:</strong> 2026-07-13</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Han Chen, Sifan Liu, Jun Yang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.11631">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.11631">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Sampling from multimodal distributions is a longstanding challenge for classical local Markov chain Monte Carlo (MCMC) methods. A popular remedy is to introduce a sequence of intermediate distributions that interpolate between the target and a simpler reference. The classical choice, tempering, raises the density to a power, but distorts the relative weights of asymmetric modes and can lead to poor mixing. We instead propose interpolating along the diffusion path, the marginals of a noising diffusion process that carries the target toward a Gaussian. This path preserves the relative weights of the modes and enjoys favorable mixing properties, which we make precise through a spectral-gap analysis of the corresponding ideal transition kernel. Sampling along the path requires its intermediate scores, which can be estimated from the unnormalized target through variational approaches, yielding only an approximate sampler. To remove the resulting bias, we introduce the Metropolis-adjusted diffusion path (MAD-Path) sampler, which corrects the diffusion-path proposal in an augmented path space and leaves the target invariant regardless of the accuracy of the learned score or the discretization error. We further quantify how these two errors affect the acceptance probability, providing guidance for practical tuning. Experiments on a range of Bayesian posteriors show that MAD-Path improves global exploration and mode-weight estimation relative to tempering-based MCMC methods and unadjusted diffusion samplers.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.11631" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

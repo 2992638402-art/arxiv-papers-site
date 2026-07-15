@@ -1,0 +1,146 @@
+{
+  "date": "2026-07-15",
+  "papers": [
+    {
+      "id": "2607.11643v1",
+      "title": "Xiaomi-Robotics-U0: Unified Embodied Synthesis with World Foundation Model",
+      "summary": "Recent foundation image and video generation models offer strong generalization and controllability, but their direct application to embodied scenarios is limited by requirements for multi-view consistency, geometric coherence, and robot embodiment constraints. Existing methods typically adapt foundation models with limited robot data, often sacrificing visual knowledge acquired during large-scale pre-training. We present Xiaomi-Robotics-U0, a 38-billion-parameter multimodal autoregressive model for unified embodied synthesis. It treats embodied generation as an extension of foundation image and video generation and jointly optimizes text-to-image generation, image editing, embodied scene generation, embodied transfer, and embodied video generation. This unified framework preserves the generalization of the pre-trained world foundation model while adapting it to embodied settings. Xiaomi-Robotics-U0 is the first model to support high-quality multi-view scene generation across multiple robot embodiments and to introduce structured, controllable embodied transfer for fine-grained editing while preserving multi-view consistency and interaction dynamics. It achieves state-of-the-art results on single-step and sequential generation tasks, outperforming GPT-Image-2.0 in human evaluations of embodied scene generation and transfer, ranking first on World Arena for embodied video generation, and improving the out-of-distribution success rate of pi_0.5 from 36.9% to 63.2% on challenging real-world manipulation tasks. These results show that foundation world models can serve both as embodied world models and scalable data engines for embodied intelligence. Code and checkpoints are available at https://robotics.xiaomi.com/xiaomi-robotics-u0.html.",
+      "authors": [
+        "Xinghang Li",
+        "Jun Guo",
+        "Qiwei Li",
+        "Long Qian",
+        "Hang Lai",
+        "Yueze Wang",
+        "Hongyu Yan",
+        "Jiahang Cao",
+        "Xi Chen",
+        "Jingen Qu",
+        "Jiaxi Song",
+        "Nan Sun",
+        "Hanye Zhao",
+        "Futeng Liu",
+        "Wanli Peng",
+        "Heyun Wang",
+        "Yunhong Wang",
+        "Caoyu Xia",
+        "Jack Zhao",
+        "Diyun Xiang",
+        "Hangjun Ye",
+        "Heng Qu",
+        "Huaping Liu",
+        "Jason Li"
+      ],
+      "published": "2026-07-13T14:57:58Z",
+      "updated": "2026-07-13T14:57:58Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.11643v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2607.12894v1",
+      "title": "Hy-Embodied-VLM-1.0: Efficient Physical-World Agents",
+      "summary": "Building capable embodied agents requires not only multimodal perception and understanding, but also agentic capabilities for reasoning about actions, adapting to evolving situations, and interacting with the physical world. In this report, we introduce Hy-Embodied-VLM-1.0, an efficient and powerful embodied foundation model specifically designed for embodied agents operating in the physical world. To cultivate such capabilities from the pre-training stage onward, we define an action-centric capability taxonomy comprising three progressive dimensions: Action-Relevant State Understanding, Action-Transition Reasoning, and Sequential and Adaptive Reasoning. Guided by this taxonomy, we develop a systematic data pipeline and curate data mixtures spanning both pre-training and post-training. To deliver strong physical-world understanding and interaction capabilities while supporting latency-sensitive deployment, we build our model on the Hy3-A3B language backbone and the Hy-ViT2 vision encoder. Its efficient Mixture-of-Experts architecture combines strong model capacity with high inference efficiency. We evaluate Hy-Embodied-VLM-1.0 on a comprehensive suite of 38 benchmarks covering embodied perception, physical-world understanding, and embodied reasoning. The model achieves the best performance among similarly sized models on 19 of the 38 benchmarks and substantially outperforms strong competitors, including Qwen3.6-A3B and Cosmos 3. Compared with the previous-generation Hy-Embodied-0.5 MoT-2B, Hy-Embodied-VLM-1.0 improves average performance by 8.4%. Despite activating only 3B parameters, it achieves performance close to that of the previous-generation model with 32B activated parameters. Beyond static benchmark evaluation, Hy-Embodied-VLM-1.0 also demonstrates strong performance on embodied agentic tasks requiring multi-turn interaction and long-horizon reasoning.",
+      "authors": [
+        "Ziyi Wang",
+        "Xumin Yu",
+        "Yongming Rao",
+        "Yonggen Ling",
+        "Yunheng Li",
+        "Oran Wang",
+        "Mingqi Gao",
+        "Yuchen Zhou",
+        "Yves Liang",
+        "Zuyan Liu",
+        "Yani Zhang",
+        "Rui Huang",
+        "Xiaoran Xu",
+        "Bowen Yuan",
+        "Yifu Yuan",
+        "Xu Tan",
+        "He Zhang",
+        "Yufei Huang",
+        "Shenghao Zhang",
+        "Hongsheng Wu",
+        "Han Hu",
+        "Zhengyou Zhang"
+      ],
+      "published": "2026-07-14T15:34:17Z",
+      "updated": "2026-07-14T15:34:17Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.12894v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.11744v1",
+      "title": "Multi-Agent Reinforcement Learning for C-V2X RAT Selection",
+      "summary": "Vehicles are increasingly equipped with advanced V2X communication capabilities. While early V2X apps utilized services such as Cooperative Awareness Messages, recent developments have allowed more advanced applications including cooperative driving, shared perception, and sensor-sharing services. The broader mix of applications leads to heterogeneous requirements for latency and reliability. At the same time multiple communication technologies for V2X are available with pros and cons. Hybrid V2X communication can exploit the distinct advantages at the right moment to fulfill the requirements of the applications. This work studies the decision problem between cellular Uu link, NR-V2X PC5 sidelink, and the simultaneous use of both channels. We address this problem by using the multi-agent reinforcement learning algorithm MAPPO and compare it to five baselines consisting of a deep reinforcement learning (DRL) approach, a static decision tree approach and static channel selection strategies. The methods are evaluated in an urban scenario and with a set of selected communication use cases. The evaluation results show that when compared to the DRL approach, the on-time delivery ratio improves from 0.508 to 0.535 in a single-controlled-vehicle setting and from 0.548 to 0.567 when all vehicles follow the learned policy and reduces the training time by half. The gains result mainly from the advanced applications scenarios, as opposed to scenarios involving exclusively CAM messaging. This indicates future applications will benefit from such adaptive communication strategies and that multi-agent modelling is useful for addressing the underlying decision problem.",
+      "authors": [
+        "Moritz Schaffenroth",
+        "Uwe Kölbel",
+        "Heike Lepke",
+        "Alexander Prinz",
+        "Alfred Höß"
+      ],
+      "published": "2026-07-13T16:03:56Z",
+      "updated": "2026-07-13T16:03:56Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.11744v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2607.11250v1",
+      "title": "Multi-Agent LLMs Fail to Explore Each Other",
+      "summary": "Exploration is essential for reliable autonomy in multi-agent systems, yet it remains unclear whether large language model (LLM) agents can explore effectively when interacting with one another. We show that modern LLM agents fail to do so, often exhibiting myopic and polarized interaction patterns that lead to suboptimal coordination and increased regret. We formalize this challenge as the Multi-Agent Exploration problem, modeling it as a partially observable stochastic game (POSG) problem in which agents must probe peers to infer their capabilities and identify effective interaction strategies. To address this, we introduce Multi- Agent Contextual Exploration (MACE), a lightweight framework that explicitly promotes exploration through structured peer selection. Across both contextual and parametric diversity settings, MACE substantially improves exploration behavior and downstream task performance. We further show theoretically that the value of exploration increases with agent diversity. Overall, our results highlight a fundamental limitation of current LLM agents and underscore the importance of explicitly guided exploration for reliable multi-agent autonomy. Code will be released in https://github.com/deeplearning-wisc/mace",
+      "authors": [
+        "Hyeong Kyu Choi",
+        "Jiatong Li",
+        "Wendi Li",
+        "Xin Eric Wang",
+        "Sharon Li"
+      ],
+      "published": "2026-07-13T08:34:05Z",
+      "updated": "2026-07-13T08:34:05Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.11250v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2607.11689v1",
+      "title": "From World Action Models to Embodied Brains: A Roadmap for Open-World Physical Intelligence",
+      "summary": "Artificial general intelligence ultimately requires agents that can reason and act in the physical world. Action models, vision-language-action policies, and world models have advanced this goal, while World Action Models (WAMs) are particularly promising because they connect candidate interventions with predicted consequences. However, progress remains fragmented: models use incompatible action spaces and prediction targets, datasets and tasks follow different conventions, and runtime systems expose limited interfaces for reuse and evaluation. We review the evolution toward WAMs and organize these limitations into three coupled gaps: model roles and representations, objectives and standardization, and system composition. Building on this analysis, we propose a co-evolution roadmap for physical intelligence centered on the \\emph{embodied brain}, a long-term model target for integrating multimodal context, comparing candidate interventions, and issuing state-transition or capability requests rather than direct actuator commands. WAMs provide promising prototypes for its predictive functions, while a physical harness grounds model outputs through tools, controllers, verification, and trace logging. Shared contracts align heterogeneous models, data, tasks, and embodiments, and closed-loop post-training converts verified interaction into reusable experience. Together, these components define a modular physical-intelligence stack for adaptive and self-improving embodied agents.",
+      "authors": [
+        "Yuanzhi Liang",
+        "Xufeng Zhan",
+        "Haibin Huang",
+        "Chi Zhang",
+        "Xuelong Li"
+      ],
+      "published": "2026-07-13T15:22:56Z",
+      "updated": "2026-07-13T15:22:56Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.11689v1.pdf",
+      "category": "robotics"
+    }
+  ],
+  "ids": [
+    "2607.11643v1",
+    "2607.12894v1",
+    "2607.11744v1",
+    "2607.11250v1",
+    "2607.11689v1"
+  ]
+}
