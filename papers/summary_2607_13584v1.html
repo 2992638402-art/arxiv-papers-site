@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning - arXiv 2607.13584 论文总结">
+    <title>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Visual Place Recognition Using Rate-Encoded Spiking Neural Networks with Discrete STDP Learning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.13584<br><strong>分类:</strong> cs.NE, cs.CV, cs.RO<br><strong>发布时间:</strong> 2026-07-15</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Altzi Tsanko, Oikonomou Katerina Maria, Antonios Gasteratos</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.13584">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.13584">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Spiking Neural Networks (SNNs) trained through unsupervised Spike-Timing-Dependent Plasticity (STDP) have been explored as solutions to visual loop closure problems, driven by the prospect of efficient on-device inference on neuromorphic devices. State-of-the-art STDP-based models deliver high classification accuracy but fail to reach the high Recall at 100% Precision (R@100P) needed for reliable autonomous navigation. We present a discrete, tensor-native implementation of the STDP-based SNN-VPR pipeline using PyTorch with snnTorch and evaluate it on a 100-place Nordland dataset using 15 independently-trained networks. The contribution of three decisions in the implementation is investigated. First, we show how to perform neuron assignment with a closed-form, deterministic tensor pipeline and show that it provides significantly higher R@100P than a standard argmax procedure. However, some of this gain comes from implementation differences compared to prior continuous-time models, which we measure independently. Second, ablation in isolation shows that state reset after each query helps improve R@100P regardless of the way neurons are assigned. Third, velocity-compensated sliding window aggregation over k consecutive frames reaches R@100P = 100.00% at k = 5 for constant-velocity traversal and an additional 0.20 ms latency. Taken together, these findings show the impact of inference stage design decisions in STDP-based SNN-VPR on recall precision, although the separate contribution of each mechanism and implementation differences is only partially disentangled and needs further examination.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.13584" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
