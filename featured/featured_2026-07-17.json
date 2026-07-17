@@ -1,0 +1,128 @@
+{
+  "date": "2026-07-17",
+  "papers": [
+    {
+      "id": "2607.15095v1",
+      "title": "Digital Pantheon: Simulating and Auditing Coalition Formation with LLM Agents",
+      "summary": "The formation of political coalitions is a complex negotiation driven by both concrete policy objectives and deep-seated ideological convictions. While Large Language Models (LLMs) open new avenues for computational political science, the neutrality and helpfulness biases instilled by Reinforcement Learning from Human Feedback (RLHF) prevent them from sustaining steadfast partisan behaviour. We present a multi-agent framework that reconciles factual grounding with ideological alignment by combining Supervised Fine-Tuning (SFT), Direct Preference Optimization (DPO), and Retrieval-Augmented Generation (RAG): DPO instils aggressive party-specific personas, while a per-party RAG pipeline keeps each agent bounded to its official manifesto. We operationalize the framework on the 2019 Flemish election, deploying the partisan agents in a hub-and-spoke negotiation arbitrated by a formateur. To make the emergent negotiation interpretable, we introduce a Multi-Layered Information Lineage Topology (MILT) that traces every clause in the final agreement back to its manifesto origin and classifies it into five provenance states, a Coalition Influence Score (CIS) that aggregates these traceable contributions to identify which party shaped the agreement, and a real-world grounding pass that benchmarks each simulated provision against the historically adopted coalition agreement. Across three independent simulations the framework yields a stable winner and ranking (N-VA ahead of CD\\&amp;V and Open Vld), and manifesto-anchored lineage reliably predicts real-world materialization whereas hallucinated content does not. The result is a transparent, scalable testbed for the ex-ante exploration of party compatibility and formateur-mediated compromise.",
+      "authors": [
+        "Dylan Van Mulders",
+        "Matthias Bogaert",
+        "Dirk Van den Poel"
+      ],
+      "published": "2026-07-16T15:08:29Z",
+      "updated": "2026-07-16T15:08:29Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.15095v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.14178v1",
+      "title": "ReasFlow: Assisting Reasoning-Centric Scientific Discovery in Applied Mathematics via a Knowledge-Based Multi-Agent System",
+      "summary": "Recent advances in Large Language Models have fueled autonomous AI agents capable of tackling complex scientific tasks, yet existing automated research systems remain predominantly focused on empirically driven domains with quantitative benchmarks, leaving theory-driven discovery, particularly in mathematically grounded disciplines requiring rigorous proofs and synthesis of domain knowledge, largely underexplored. Key challenges include the difficulty of verifying theoretical reasoning at scale, insufficient reasoning ability for autonomous frontier exploration, and a scarcity of procedural heuristics in the literature. We introduce ReasFlow, an end-to-end autonomous agent system for reasoning-centric scientific discovery that operationalizes a collaborative paradigm where the human expert acts as Principal Investigator while the agent executes rigorous derivations as a capable graduate student. ReasFlow incorporates (i) a robust internal verification loop that audits logical coherence and corrects fundamental errors prior to human inspection, and (ii) an automated knowledge retrieval and self-improvement mechanism that proactively surfaces both declarative facts and overlooked procedural heuristics, substantially reducing expert intervention. The system unifies literature synthesis, algorithm design, theorem proving, experimentation, and manuscript preparation in a single system. Deployed to autonomously generate five complete research papers with rigorous theoretical and empirical content from minimal prompts, ReasFlow consistently achieves the highest evaluation scores among state-of-the-art open-access baselines under a curated LLM-based review rubric. ReasFlow is publicly accessible via the ReasLab platform, providing a collaborative workspace for AI-assisted theoretical research. Github repo: https://github.com/ReasLab/ReasFlow.git.",
+      "authors": [
+        "Yutong He",
+        "Daibo Li",
+        "Guohong Li",
+        "Jiahe Geng",
+        "Zhengyang Huang",
+        "Can Ren",
+        "Zekun Zhang",
+        "Yifan Liu",
+        "Shuchen Zhu",
+        "Hengrui Zhang",
+        "Boao Kong",
+        "Ming Sun",
+        "Shu Li",
+        "Chenyi Li",
+        "Jiang Hu",
+        "Kun Yuan",
+        "Zaiwen Wen",
+        "Pingwen Zhang"
+      ],
+      "published": "2026-07-15T13:27:20Z",
+      "updated": "2026-07-15T13:27:20Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.14178v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2607.14777v1",
+      "title": "SEED: Self-Evolving On-Policy Distillation for Agentic Reinforcement Learning",
+      "summary": "Large language models are increasingly trained as interactive agents for long-horizon tasks involving multi-turn interaction, tool use, and environment feedback. Outcome-based reinforcement learning (RL) provides a practical optimization paradigm, but its sparse trajectory-level rewards offer limited guidance on intermediate decisions, leaving a supervision gap between episode-level outcomes and token-level policy learning. We propose SEED (SElf-Evolving On-Policy Distillation), a self-evolving framework that converts completed on-policy trajectories into training-time hindsight skills and distills their behavioral effect back into the policy model. SEED first fine-tunes the policy to analyze completed trajectories and generate natural-language skills that capture reusable workflows, decisive observations, or failure-avoidance rules. During RL, the current policy both collects trajectories and serves as the analyzer that extracts hindsight skills from them. Policy updates therefore improve subsequent decision making and skill analysis together, allowing hindsight supervision to evolve with the policy. SEED then re-scores the sampled actions under ordinary and skill-augmented contexts, converting the skill-induced probability shift into a dense token-level on-policy distillation signal. This signal is jointly optimized with outcome-based RL, keeping the auxiliary supervision aligned with the current trajectory distribution. Extensive experiments on text-based and vision-based agentic tasks show that SEED consistently improves performance and sample efficiency, exhibiting robust generalization to unseen scenarios. Our code is available at https://github.com/jinyangwu/SEED.",
+      "authors": [
+        "Jinyang Wu",
+        "Shuo Yang",
+        "Zhengxi Lu",
+        "Fan Zhang",
+        "Yuhao Shen",
+        "Lang Feng",
+        "Haoran Luo",
+        "Zheng Lian",
+        "Shuai Zhang",
+        "Zhengqi Wen",
+        "Jianhua Tao"
+      ],
+      "published": "2026-07-16T09:57:18Z",
+      "updated": "2026-07-16T09:57:18Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.14777v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.15176v1",
+      "title": "Benchmarking Multimodal Large Language Models for Scientific Visualization Literacy",
+      "summary": "Multimodal large language models (MLLMs) are increasingly used to interpret visualizations, yet current evaluations remain largely chart-centric and provide limited evidence of understanding of scientific visualization (SciVis). We benchmark six MLLMs on the scientific visualization literacy assessment test, a standardized SciVis literacy assessment comprising 49 items based on 18 scientific visualizations and illustrations, spanning 8 techniques and 11 task types. We evaluate three closed-source and three open-source models under a closed-world protocol and compare their performance using data from 485 human participants. Results show that current MLLMs do not exhibit uniform SciVis literacy. Gemini is the strongest model overall, exceeding the human mean across the evaluated subsets, whereas the open-source models remain below the human baseline. Performance is highly uneven across techniques and tasks: models perform best on scientific illustration, search, and spatial understanding, but struggle on texture-based and integration-based visualizations and on quantitative estimation. Error analysis reveals recurring failures in fine-grained quantitative estimation, flow-direction interpretation, and grounded encoding interpretation. These findings position SciVis literacy as a necessary benchmark dimension for evaluating multimodal AI systems. Our code and model outputs are publicly available at https://github.com/patdmp/mllm-scivis-lit-benchmark.",
+      "authors": [
+        "Patrick Phuoc Do",
+        "Chau M. Ta",
+        "Chaoli Wang"
+      ],
+      "published": "2026-07-16T16:29:34Z",
+      "updated": "2026-07-16T16:29:34Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL",
+        "cs.HC"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.15176v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.15065v1",
+      "title": "DriftWorld: Fast World Modeling through Drifting",
+      "summary": "Predictive world models enable robots to plan by imagining the outcomes of their actions, but their value for control hinges on generating many rollouts quickly. This creates a bottleneck for diffusion-based world models: multistep sampling makes each rollout expensive, limiting large-scale action search at inference time. We introduce DriftWorld, an action-conditioned world model based on drifting generative models. Rather than denoising iteratively at inference, DriftWorld learns an action-conditioned drift during training, allowing it to generate future frames from the current observation and a candidate action sequence in a single forward pass at 30+ fps, which is 17x faster on average than diffusion based baselines. We evaluate DriftWorld on standard vision-based robotic manipulation benchmarks, including Bridge-V2, RT-1, Language Table, Push-T, and Robomimic. By producing rollouts that are both accurate and fast, DriftWorld achieves state-of-the-art decision-making performance with far less inference time than diffusion-based world model baselines. Beyond online control, DriftWorld can also serve as an offline simulator for ranking real-world robot policies, with rollout-based scores correlating with ground truth at up to 0.99. These results show that drifting models are a strong fit for robot world modeling, where fast, high-quality imagination directly supports planning and policy evaluation.",
+      "authors": [
+        "Susie Lu",
+        "Haonan Chen",
+        "Weirui Ye",
+        "Yilun Du"
+      ],
+      "published": "2026-07-16T14:37:43Z",
+      "updated": "2026-07-16T14:37:43Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.15065v1.pdf",
+      "category": "robotics"
+    }
+  ],
+  "ids": [
+    "2607.15095v1",
+    "2607.14178v1",
+    "2607.14777v1",
+    "2607.15176v1",
+    "2607.15065v1"
+  ]
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DINE: Distance Is Not Enough -- Learning Global Deformation Priors for Robust Soft-Tissue Point Cloud Registration - arXiv 2607.14946 论文总结">
+    <title>DINE: Distance Is Not Enough -- Learning Global Deformation Priors for Robust Soft-Tissue Point Cloud Registration | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>DINE: Distance Is Not Enough -- Learning Global Deformation Priors for Robust Soft-Tissue Point Cloud Registration</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.14946<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-07-16</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Sara Monji-Azad, Rohit Beer, Marvin Kinz, Claudia Scherl, Jürgen Hesser</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.14946">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.14946">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Non-rigid point cloud registration is central to soft-tissue shape analysis, but large deformations, noise, and outliers make correspondence estimation challenging. Most learning-based methods rely on local objectives such as Chamfer distance, which encourage point-wise proximity but do not constrain the global plausibility of the predicted deformation field. We address this limitation with DINE, a maximum a posteriori framework that augments distance-based registration with a learned statistical prior over displacement vector fields. DINE is applied to two registration backbones, Robust-DefReg and DefTransNet, using a two-stage strategy: a first-stage model is trained with Chamfer distance, its predicted deformation fields are used to estimate a prior, and the model is then refined with a combined distance and negative log-prior objective. We compare a full-field PCA Gaussian prior with a per-vector normalizing-flow prior. Experiments on DeformedTissue and SynBench show lower mean Chamfer distance under deformation and corruption. On DeformedTissue, DINE-PCA reduces Chamfer distance by approximately 27--69% relative to the corresponding Stage-1 backbone across deformation levels, and improves robustness by up to 66% for outliers and 83% for Gaussian noise. On SynBench, improvements are modest at the smallest deformation levels and reach approximately 59--79% from moderate to severe deformation. These results suggest that global deformation plausibility is an important constraint for reliable soft-tissue point cloud registration. (The code will be published soon.)</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.14946" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parallel gradient boosting for flexible estimation of conditional distributions - arXiv 2607.13550 论文总结">
+    <title>Parallel gradient boosting for flexible estimation of conditional distributions | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Parallel gradient boosting for flexible estimation of conditional distributions</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.13550<br><strong>分类:</strong> stat.ML, cs.LG<br><strong>发布时间:</strong> 2026-07-15</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Rémy Chapelle, Nicolas Vayatis, Bruno Falissard, Mohammed Sedki</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.13550">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.13550">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Boosting is one of the most successful learning techniques for standard classification and regression tasks. Its extension to multi-output prediction problems has found an increasing number of applications in recent years. Among them is the prediction of entire conditional distributions rather than single functionals, which can often be framed as a multi-output regression problem, for example multiple quantile regression. Addressing such problems with classical implementations of boosting is computationally challenging, because usually one base model is trained for each target at every iteration. More efficient variants of boosting have been proposed to speed up training, but they tend to be tied to specific loss functions and classes of base learners, usually decision trees. In this work, we study a modification of the gradient boosting algorithm, which we call parallel gradient boosting, designed to circumvent all these limitations. The core idea is to use a common descent direction for all training observations. By doing so, only one base model is needed at each iteration, regardless of the number of targets, which allows for considerable performance gains. We establish sufficient conditions for the convergence of the algorithm, whose practical use is introduced via the multiple quantile regression setting. We show that in such a setting, it provides predictions of similar quality to state-of-the-art boosting libraries such as XGBoost, while being faster by several orders of magnitude. Then, we evaluate the properties of the resulting conditional distribution estimator, which is shown empirically to outperform other nonparametric and semiparametric estimators, especially in high-dimensional settings and in the presence of mixed and/or missing covariates.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.13550" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
