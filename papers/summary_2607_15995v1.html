@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CanonicalPhys: Pose-Robust Remote Photoplethysmography via Canonical-Space Priors - arXiv 2607.15995 论文总结">
+    <title>CanonicalPhys: Pose-Robust Remote Photoplethysmography via Canonical-Space Priors | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>CanonicalPhys: Pose-Robust Remote Photoplethysmography via Canonical-Space Priors</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.15995<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-07-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hui Wei, Seyedata Jodeiri Seyedian, Xiaobai Li, Guoying Zhao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.15995">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.15995">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Deep remote photoplethysmography (rPPG) attains sub-bpm heart-rate error on frontal, stationary faces yet degrades sharply under head pose: on MMPD, the state-of-the-art FactorizePhys backbone&#39;s MAE grows $1.60\times$ from frontal ($|\text{yaw}|{&lt;}15^\circ$) to large-yaw ($|\text{yaw}|{\geq}45^\circ$) frames. We argue that pose is a \emph{coordinate-structural} nuisance rather than a data-augmentation problem: in image coordinates the same pixel maps to different anatomy at different poses, blocking three priors otherwise natural for rPPG, namely the dichromatic reflection model, pulse-phase invariance across skin regions, and the POS/CHROM chromaticity projection, each of which presumes a stable anatomy-to-pixel mapping. We introduce \textbf{CanonicalPhys}, which prepends a differentiable four-point homography that fixes four facial anchors at canonical positions; in this canonical frame the three priors become expressible as a per-pixel Lambertian weight, a cross-ROI temporal consistency loss, and knowledge distillation from windowed POS, none of which adds trainable parameters over the backbone. At an identical parameter count, CanonicalPhys reduces MMPD&#39;s frontal-to-large-yaw MAE degradation from $1.60\times$ to $1.33\times$ and flattens the mild-yaw bin from $1.32\times$ to $1.07\times$ (across CanonicalPhys variants), with matched cross-dataset MAE reductions of up to $32%$ on pose-rich targets. Code: <a href="https://github.com/infraface/CanonicalPhys">https://github.com/infraface/CanonicalPhys</a></p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.15995" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
