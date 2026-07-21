@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="The generator is the tracker: Multi-object tracking by painting persistent identity colours - arXiv 2607.17120 论文总结">
+    <title>The generator is the tracker: Multi-object tracking by painting persistent identity colours | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>The generator is the tracker: Multi-object tracking by painting persistent identity colours</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.17120<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-07-19</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Haiyu Yang, Miel Hostens</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.17120">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.17120">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Multi-object tracking (MOT) is conventionally decomposed into detection followed by association, with object identity maintained as external state: track buffers, motion models, and appearance embeddings. We ask whether a video generator can maintain that state in pixels. We fine-tune a 22B text-to-video diffusion model (LTX-2.3) with a lightweight in-context LoRA to translate an RGB clip into an ID-map clip, a video in which every person is painted a flat, distinct color that persists over time: same color, same identity. Long videos are generated as chained windows, where each window is conditioned on the cleaned tail of the previous one. A brief continuation fine-tune teaches the model to extend a given coloring, after which identity flows through the chain with no tracker, no motion model, and no re-identification module. On the DanceTrack test server, our system, to our knowledge the first generative tracker evaluated there and the only entry with no detector and no tracking stack, reaches 40.3 HOTA. This is well below today&#39;s specialist state of the art (&gt;=70 HOTA), but with a unique, inverted error profile: its association score (AssA 44.1) exceeds every tracker of the original benchmark suite while detection remains the sole deficit. Controlled comparisons show the mechanism matters: the same generated windows linked by classical post-hoc association score 2x worse (18.2 HOTA), and frame-to-frame IoU association fragments tracks that the generator&#39;s colors keep whole. On 383 mined occlusion events, the generator re-acquires identities after gaps at a 42% conditional rate where appearance-embedding baselines score zero, including gaps longer than its temporal context, evidence that the generator&#39;s color assignment functions as an emergent re-identification signal. We release code, checkpoints, and the full pre-registered experimental log.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.17120" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
