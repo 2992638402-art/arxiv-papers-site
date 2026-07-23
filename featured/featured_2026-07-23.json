@@ -1,0 +1,120 @@
+{
+  "date": "2026-07-23",
+  "papers": [
+    {
+      "id": "2607.20357v1",
+      "title": "Look Less, Think Faster: Joint Token-Compute Adaptation for Multimodal LLMs",
+      "summary": "Multimodal Large Language Models (MLLMs) have recently demonstrated strong performance across vision-language tasks. However, their high inference cost, arising from both the large number of input visual tokens and the heavy computation of the large language model (LLM), remains a key barrier to practical deployment. Recent work attempts to reduce the cost by adaptively optimizing individual dimensions, e.g., pruning redundant visual tokens or skipping LLM layers and heads. Nonetheless, prior approaches typically treat these dimensions independently and overlook a fundamental coupling: the available compute resources must be dynamically allocated across all dimensions based on the input content. To bridge the gap, we propose SmartVL, a unified adaptive inference framework that jointly controls vision token number and model compute capability in response to varying input contents and compute budgets. SmartVL introduces a vision-side token controller that dynamically selects informative visual tokens and an LLM-side compute controller that adaptively adjusts LLM computation. Importantly, these controllers are trained to coordinate with each other so that the overall inference cost satisfies a target budget. To allow this joint scheduling, we connect the controllers using a shared budget encoding and leverage a differentiable latency estimator for end-to-end training. This design enables SmartVL to learn cross-stage allocation strategies that adapt to both input complexity and runtime compute constraints. Experiments across multiple MLLM benchmarks demonstrate that, with joint scheduling, SmartVL consistently outperforms prior adaptive methods and achieves superior accuracy-efficiency Pareto frontiers. Project page: https://www.schaterji.io/publications/2026/jointtokencompute.",
+      "authors": [
+        "Pengcheng Wang",
+        "Zhiquan Wang",
+        "Jayoung Lee",
+        "Zhuoyan Xu",
+        "Ran Xu",
+        "Saurabh Bagchi",
+        "Yin Li",
+        "Somali Chaterji"
+      ],
+      "published": "2026-07-22T16:43:27Z",
+      "updated": "2026-07-22T16:43:27Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.20357v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.20284v1",
+      "title": "Multimodal Large Language Models for Remote Sensing Image Understanding: Domain-Specific or General-Purpose?",
+      "summary": "The rapid development of multimodal large language models (MLLMs) has introduced a flexible paradigm for remote sensing image scene understanding (RSISU), enabling natural-language interaction with remote sensing imagery. However, a systematic understanding of the capability boundaries, cross-task generalization, and task-specific limitations of existing remote sensing MLLMs (RS-MLLMs) is still lacking. This paper presents a systematic survey and diagnostic evaluation of MLLMs for RSISU. We review the technical evolution of RS-MLLMs, focusing on model design, multimodal learning, training data, and downstream capabilities. We further compare RS-MLLMs with general-purpose computer vision MLLMs (CV-MLLMs) across diverse RSISU tasks and benchmarks. RS-MLLMs remain competitive in domain-specific settings, particularly remote sensing visual grounding and high-resolution visual question answering. More notably, general-purpose CV-MLLMs can match or even outperform these specialized models on several RSISU tasks without remote sensing-specific fine-tuning. These findings demonstrate the strong transferability of general-purpose CV-MLLMs and show that current RS-MLLMs do not consistently outperform them across diverse RSISU tasks. Current MLLMs also face limitations in spatial and relational reasoning, fine-grained visual understanding, instruction diversity, and generalization across heterogeneous task formats. Based on these findings, we outline future directions toward reliable evaluation, multimodal and high-resolution reasoning, efficient deployment, and tool-augmented remote sensing agents. This survey provides a systematic reference for developing robust, generalizable, and practical MLLMs for RSISU.",
+      "authors": [
+        "Qiwei Ma",
+        "Chunping Qiu",
+        "Xinjun Cheng",
+        "Xiaoyu Zhang",
+        "Puhong Duan",
+        "Ke Yang",
+        "Xudong Kang",
+        "Shutao Li"
+      ],
+      "published": "2026-07-22T15:30:08Z",
+      "updated": "2026-07-22T15:30:08Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.20284v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.19219v1",
+      "title": "Beyond Score Prediction: LLM-Based Essay Scoring and Feedback Generation via Reinforcement Learning with Rubric Rewards",
+      "summary": "Large language models (LLMs) have been widely applied to automated essay scoring (AES) and automated feedback generation (AFG). However, existing studies rely primarily on prompt engineering or supervised fine-tuning, while systematic research on reinforcement learning (RL) post-training and automated evaluation of feedback quality remains limited. We propose RLAES, a unified LLM framework that jointly optimizes essay scoring and feedback generation through RL. To make feedback quality measurable, interpretable, and usable for training, we introduce Rubric-based Feedback Evaluation (RFE), an essay-grounded feedback evaluation framework comprising 166 fine-grained binary rubric items and an LLM-as-judge. Building on RFE, we propose Adaptive Gated Feedback Optimization (AGFO), which activates rubric-based feedback rewards on demand during RL, reducing evaluation overhead while improving feedback quality. We also propose Adjacent Contrastive Reasoning (ACR) to improve ordinal score calibration by explicitly contrasting adjacent score levels. Experimental results show that the RFE framework captures essay-feedback consistency, exhibits strong pairwise discriminative power, and closely aligns with expert preferences. On the ASAP benchmark, RLAES-AGFO achieves the best scoring performance among LLM-based methods (QWK = 0.803), while maintaining feedback quality comparable to GPT-5.5 and avoiding the feedback degradation observed under score-only RL. Code and datasets are publicly available at https://github.com/hellomuyi/RLAES.",
+      "authors": [
+        "Xuefeng Jin",
+        "Jiashuo Zhang",
+        "Teng Cao",
+        "Bin Yang"
+      ],
+      "published": "2026-07-21T15:49:02Z",
+      "updated": "2026-07-21T15:49:02Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.19219v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.19261v1",
+      "title": "PathAgentBench: Benchmarking Evidence-Seeking Vision-Language Models on Whole-Slide Pathology Image",
+      "summary": "Whole-slide image (WSI) diagnosis requires identifying diagnostically relevant regions, examining them across magnifications, and integrating multi-scale evidence. However, most existing pathology benchmarks evaluate models on pre-cropped patches or pre-extracted slide features, leaving their ability to acquire evidence directly from gigapixel WSIs largely untested. We introduce PathAgentBench, a benchmark for evaluating evidence-seeking vision-language models (VLMs) across four complementary capabilities: image-to-text matching for evidence interpretation, text-to-image retrieval for evidence verification, diagnostic-region localization for evidence acquisition, and multi-scale reasoning for evidence integration. The benchmark is organized as a diagnostic tree that links nested regions across magnifications with scale-specific findings and path-level diagnoses. It contains 1,822 TCGA WSIs and 17,135 diagnostic paths annotated by ten board-certified pathologists. An additional private cohort of 190 breast cancer WSIs with detailed annotations is used to evaluate autonomous whole-slide exploration. We evaluate 20 general-purpose, medical, and pathology-specialized models. Leading open-weight models achieve over 93% accuracy in multi-scale reasoning and over 50% accuracy in both cross-modal matching tasks. In contrast, diagnostic-region localization remains challenging: the best text-guided mean intersection-over-union is below 0.09, underperforming a simple center-based heuristic. During autonomous exploration, the unconditional hit rate decreases from 0.522 at low magnification to 0.185 at intermediate magnification and 0.020 at high magnification. These results reveal a pronounced gap between reasoning over curated evidence and acquiring that evidence directly from WSIs. PathAgentBench provides a unified framework for measuring and improving evidence-seeking pathology models.",
+      "authors": [
+        "Dankai Liao",
+        "Tianyi Zhang",
+        "Yufeng Wu",
+        "Xinyue Zhang",
+        "Qiaochu Xue",
+        "Zeyu Liu",
+        "Dachun Zhao",
+        "Linghan Cai",
+        "Yueming Jin"
+      ],
+      "published": "2026-07-21T16:33:44Z",
+      "updated": "2026-07-21T16:33:44Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.19261v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.19344v1",
+      "title": "Appearance Pointers -- Multimodal Region Control of Diffusion Transformers",
+      "summary": "Controllable image generation remains challenging for creative professionals, who often require precise regional control over materials, object identities, and spatial arrangements that cannot be reliably achieved through text prompting alone. Diffusion Transformers (DiTs) can natively ingest heterogeneous tokens stemming from texts and images, but they lack mechanisms for determining where and how these tokens should influence the output. We introduce appearance pointers, compact tokens that guide DiTs toward the correct appearance cues at the correct spatial locations by aligning text or image inputs with user-specified masks. Appearance pointers are produced by a region correspondence network and refined through a spatial aggregation mechanism, enabling the model to handle multiple regional descriptions without significantly increasing token load. Our approach introduces the first modality-agnostic interface for localized multimodal control in a DiT without retraining the base model from scratch. Across a range of metrics, our single model reaches or surpasses the performance of modality-specific state of the art methods, offering a simple and extensible path toward precise, region-aware, multimodal guidance in generative image synthesis.",
+      "authors": [
+        "Rahul Sajnani",
+        "Yulia Gryaditskaya",
+        "Radomír Měch",
+        "Srinath Sridhar",
+        "Matheus Gadelha"
+      ],
+      "published": "2026-07-21T17:59:12Z",
+      "updated": "2026-07-21T17:59:12Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.GR"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.19344v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2607.20357v1",
+    "2607.20284v1",
+    "2607.19219v1",
+    "2607.19261v1",
+    "2607.19344v1"
+  ]
+}
