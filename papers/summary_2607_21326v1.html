@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SlerpFlow: Spherical Trajectory Correction for Rectified Flow Inversion - arXiv 2607.21326 论文总结">
+    <title>SlerpFlow: Spherical Trajectory Correction for Rectified Flow Inversion | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SlerpFlow: Spherical Trajectory Correction for Rectified Flow Inversion</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.21326<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-07-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Wenbin Duan, Yan Shu, Zhuoyuan Fu, Fangmin Zhao, Yan Li, Yaru Zhao, Binyang Li</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.21326">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.21326">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Rectified-flow-based diffusion transformers, particularly FLUX, have demonstrated outstanding performance in high-quality image generation. However, achieving fast and accurate inversion--transforming images back to latent noise for faithful reconstruction and editing--remains a challenging bottleneck due to the discretization errors of linear solvers. This paper introduces SlerpFlow, a straightforward yet highly effective zero-shot approach that unlocks the full potential of FLUX for high-fidelity inversion and editing. Unlike existing approaches (e.g., RF-Solver) that rely on complex numerical approximations such as high-order Taylor expansions to correct trajectory errors, we present a geometric view based on the Manifold Hypothesis: the empirically observed trajectory curvature is not a numerical artifact, but rather serves as a necessary &quot;centripetal force&quot; that constrains the flow to remain on the data manifold. Guided by this insight, SlerpFlow integrates Spherical Linear Interpolation (Slerp) to rectify flow velocity directions on the hypersphere, strictly adhering to the intrinsic curvature of the latent space. Crucially, by caching the corrected velocity for subsequent steps, SlerpFlow achieves high-precision inversion while maintaining the computational efficiency of a first-order Euler solver. Extensive experiments on FLUX-based reconstruction and editing tasks demonstrate that SlerpFlow improves reconstruction fidelity and achieves stronger semantic alignment in editing without requiring additional training. Code is available at <a href="https://github.com/0answer0/SlerpFlow">https://github.com/0answer0/SlerpFlow</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.21326" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
