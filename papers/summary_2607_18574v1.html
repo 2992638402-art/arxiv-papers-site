@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conditioned Direct Feedback Alignment via Activity and Error Geometry - arXiv 2607.18574 论文总结">
+    <title>Conditioned Direct Feedback Alignment via Activity and Error Geometry | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Conditioned Direct Feedback Alignment via Activity and Error Geometry</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.18574<br><strong>分类:</strong> cs.LG, cs.NE, q-bio.NC<br><strong>发布时间:</strong> 2026-07-20</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Houman Safaai, Varun Reddy, Bernardo L. Sabatini</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.18574">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.18574">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Direct feedback alignment (DFA) trains hidden layers with fixed random projections of the output error, avoiding the transposed-weight backward pass of backpropagation (BP). We study a failure mode of DFA training that is distinct from feedback quality: the local weight update is calculated by an outer product, so anisotropy can enter through either its presynaptic-activity factor or its local-error factor. Our analyses with controlled synthetic regimes isolate the first failure mode and show an approximately 40-percentage-point activity-conditioning gain when high-variance directions contain task-irrelevant nuisance. Three clean confirmations isolate a different regime: error conditioning improves raw DFA by 1.77--7.53 percentage points, and combining independently selected activity and error factors adds 0.40--0.90 points over activity conditioning. The signs hold for tanh/one-vs-rest MNIST and preregistered Fashion-MNIST, and replicate on eight fresh seeds in a ReLU/softmax MNIST model. This factorization yields a symmetric block-local family of normalized DFA (nDFA): activity nDFA right-preconditions by an inverse activity second moment, error nDFA left-preconditions by an inverse local-error second moment, and K-nDFA applies both factors with separately tuned damping. A linearized post-alignment calculation gives an exact input-side spectral identity and a Kronecker-factor motivation for the two-sided rule, whereas norm matching rules out a scalar step-size explanation. The error factor is fragile when under-damped, BatchNorm is a strong activity-side alternative, and convnet gains remain partial. We therefore frame conditioned DFA as a factor-level study of when local outer-product rules fail, not as a general replacement for BP or a solution to all-layer convolutional credit assignment.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.18574" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
