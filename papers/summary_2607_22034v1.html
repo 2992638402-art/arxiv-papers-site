@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Small Vision-Language Models Know When They Are Wrong But Cannot Say So: A Two-Model Study of Stated versus Internal Confidence Under Realistic Image Degradation - arXiv 2607.22034 论文总结">
+    <title>Small Vision-Language Models Know When They Are Wrong But Cannot Say So: A Two-Model Study of Stated versus Internal Confidence Under Realistic Image Degradation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Small Vision-Language Models Know When They Are Wrong But Cannot Say So: A Two-Model Study of Stated versus Internal Confidence Under Realistic Image Degradation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.22034<br><strong>分类:</strong> cs.CV, cs.CL, cs.LG<br><strong>发布时间:</strong> 2026-07-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> M M Asif Ferdous</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.22034">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.22034">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Vision-language models (VLMs) are increasingly deployed on consumer hardware where input images are degraded by compression, camera shake, and poor lighting. In such settings, a reliable uncertainty signal matters more than raw accuracy, because it determines when a system should defer rather than answer. We evaluate two small open-weight VLMs -- Qwen2-VL-2B-Instruct and SmolVLM-Instruct -- across six realistic photographic degradations at three severity levels, comparing two confidence signals: the confidence the model states in natural language, and the model&#39;s own mean token probability over its generated answer. Across 3,800 predictions, we find a large and consistent gap. Verbalized confidence in Qwen2-VL is almost constant (mean 0.87-0.90 across all conditions) and detects its own errors at chance level (AUROC 0.39-0.75, typically ~0.50), while internal token probability from the same model separates correct from incorrect answers with AUROC 0.92-0.99. In SmolVLM, verbalized confidence proved largely unobtainable: across three prompt templates, only one of five pilot attempts produced a parseable confidence value, while internal probability again yielded above-chance error detection (AUROC 0.54-0.92). Both models fail in the same place: under severe underexposure, accuracy collapses (0.99-&gt;0.22 for Qwen2-VL, 0.97-&gt;0.42 for SmolVLM) while both confidence signals barely move, and internal error-detection falls to chance. We conclude that small VLMs encode usable self-knowledge that their verbalized output does not express, that internal probability is therefore the better deferral signal in constrained deployment, and that neither signal should be trusted under severe low-light conditions.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.22034" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
