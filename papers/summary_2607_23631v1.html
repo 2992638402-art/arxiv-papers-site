@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PathSelect: Sequential Token Selection for Whole Slide Pathology - arXiv 2607.23631 论文总结">
+    <title>PathSelect: Sequential Token Selection for Whole Slide Pathology | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>PathSelect: Sequential Token Selection for Whole Slide Pathology</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.23631<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-07-26</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jingzhi Chen, Landi He, Zehong Chen, Peihang Wu, Lijian Xu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.23631">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.23631">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Gigapixel Whole-Slide Images (WSIs) present a fundamental computational bottleneck for vision-language models (VLMs) due to extreme sequence lengths. Existing approaches predominantly rely on spatial sampling or training-free pruning, which risk diluting weak but informative signals, leading to the loss of critical diagnostic evidence due to the spatially diffuse nature of pathological cues. We reformulate WSI token pruning as a sequential selection process, enabling the model to autonomously learn an optimal routing strategy rather than relying on static heuristics. We herein propose a decoupled routing framework integrated as an active plugin into the fully pre-trained SlideChat base model, leaving both the slide encoder and large language model frozen. To provide continuous gradients for the non-differentiable pruning operation during training, we introduce PathSelect. PathSelect employs a variance-preserving noise gate to modulate each patch&#39;s information flow via a differentiable Soft Top-K operator, paired with a diagonal-attention Denoiser that recovers the perturbed representations without semantic leakage. At inference, the PathSelect module is entirely detached. Relying solely on the trained Scorer, a deterministic Hard Top-K operator executes adaptive, data-dependent trajectory termination, significantly accelerating downstream generative processing with exceptionally low sequential token selection latency. Driven by an empirical average of only 44.86 tokens under a maximum constraint of K = 128, our framework achieves 74.00% overall accuracy on SlideBench (TCGA), representing an approximate 36.6x spatial token reduction relative to the uncompressed baseline average while consistently outperforming sampling-based counterparts.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.23631" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

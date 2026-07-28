@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LA-RL: Label-Aware Self-Reflection for Reinforcement Learning in Information Extraction - arXiv 2607.23420 论文总结">
+    <title>LA-RL: Label-Aware Self-Reflection for Reinforcement Learning in Information Extraction | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>LA-RL: Label-Aware Self-Reflection for Reinforcement Learning in Information Extraction</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.23420<br><strong>分类:</strong> cs.CL<br><strong>发布时间:</strong> 2026-07-26</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xiao You, Tianwei Yan, Zixu Shan, Longyu Du, Shan Zhao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.23420">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.23420">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Large language models show strong promise for information extraction (IE), but existing reflection-based correction methods are often misaligned with structured extraction outputs. Free-form self-reflection can flag an error, yet it rarely identifies whether the failure is a missing span, wrong label, boundary mismatch, invalid relation type, or reversed argument order. We introduce LA-RL (Label-Aware Reflective Reinforcement Learning), an outcome-supervised framework that guides IE self-correction with task-grounded diagnostic labels. A single backbone first predicts an extraction, diagnoses task-specific error labels, and then revises its output conditioned on the diagnosis. Training starts from diagnostic data labeled by an annotation model for cold-start supervised fine-tuning and proceeds through two GRPO stages that reward final extraction quality, format validity, and first-pass correctness, without a process reward model. Experiments on named entity recognition, relation extraction, and event extraction show consistent same-backbone gains over SFT, including 6.83 average F1 on SciER relation extraction, about 20 F1 on out-of-distribution relation extraction, and 14.80 trigger F1 plus 17.50 argument F1 on DuEE1.0. Ablations show that reflection structure is task-sensitive: stronger constraints benefit relation extraction, whereas named entity recognition needs less restrictive correction under domain shift.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.23420" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
