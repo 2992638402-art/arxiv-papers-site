@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AngelSpec: Towards Real-World High Performance Inference with Speculative Decoding - arXiv 2607.25852 论文总结">
+    <title>AngelSpec: Towards Real-World High Performance Inference with Speculative Decoding | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>AngelSpec: Towards Real-World High Performance Inference with Speculative Decoding</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.25852<br><strong>分类:</strong> cs.CL<br><strong>发布时间:</strong> 2026-07-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hong Liu, Rui Cen, Junhan Shi, Guangshuo Qin, Jiebin Zhang, Tianyu Liu, Runzhi Fan, Guoliang Zhao, Ruobing Xie, Kai Zhang, Song Liu, Guanghua Yu, Jianchen Zhu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.25852">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.25852">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Speculative decoding accelerates large language model inference without changing the target distribution, but no single drafting structure performs best across real-world workloads. Autoregressive multi-token prediction (MTP) is a lightweight, stable proposal mechanism, whereas block-parallel diffusion amortizes drafting latency over much longer candidate sequences; the better choice depends strongly on the output distribution. We present AngelSpec, a unified training framework for MTP and block-parallel speculative decoding that addresses this heterogeneity at three levels. At the training level, rather than fitting one universal drafter to a uniform data mixture, we co-specialize structure and data: the MTP drafter is trained on diverse conversational data for high-entropy open-ended chat, and the block-diffusion drafter on code and mathematics data for longer predictable continuations. At the architecture level, we propose DFly, a block-diffusion framework combining a hybrid target-conditioning backbone with a predecessor-conditioned autoregressive head, improving target-feature utilization and intra-block dependency modeling while keeping generation parallel. At the inference level, both acceptance length and verification cost vary with domain, request, online load, and hardware, so DFly treats verification as a shared batch-level resource: it reallocates compute toward high-confidence prefixes across requests and combines expected utility with a profiled cost model to adapt verification depth online. Across the Hy3 series, DFly raises the average accepted length on Hy3-A21B by roughly 30% and attains the highest average throughput at every tested concurrency from 4 to 64, a 1.98-2.40x speedup over autoregressive decoding and 10.5-11.8% higher throughput than DFlash. We release AngelSpec to support training and extending these methods.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.25852" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

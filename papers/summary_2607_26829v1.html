@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BATS: Resource-Efficient Volumetric Segmentation with Boundary-Aware Mixed-Resolution Tokens - arXiv 2607.26829 论文总结">
+    <title>BATS: Resource-Efficient Volumetric Segmentation with Boundary-Aware Mixed-Resolution Tokens | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>BATS: Resource-Efficient Volumetric Segmentation with Boundary-Aware Mixed-Resolution Tokens</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.26829<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-07-29</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> David Hagerman, Roman Naeem, Fredrik Kahl</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.26829">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.26829">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Many high-performing volumetric segmentation models maintain dense multi-scale feature maps, leading to high activation memory and inference cost. We present BATS (Boundary-Aware Token Selection), a 3D medical image segmentation architecture that concentrates fine-resolution processing near predicted class boundaries. A dense boundary predictor identifies where additional resolution is needed, while a fine-first context cascade constructs an input-dependent mixed-resolution hierarchy. Homogeneous regions are represented coarsely, with finer tokens retained around boundaries, thin structures, and small targets. The sparse hierarchy is refined and rasterised into a dense segmentation. BATS predicts boundary relevance independently at every resolution level, preventing an erroneous coarse-scale decision from suppressing fine-scale evidence. Parent cluster attention further injects hierarchical ancestor tokens into local attention neighbourhoods, providing cross-scale context without dense multi-scale feature maps or cross-scale neighbour search. We evaluate BATS on five public CT and MRI datasets using the standardised nnU-Net Revisited protocol. BATS achieves the highest LiTS Dice among the compared methods and averages within 0.37 Dice points of the strongest dense baseline, MedNeXt-L, across the five datasets. Relative to MedNeXt-L, it reduces peak allocated GPU memory by more than 53% on KiTS, LiTS, and BraTS. Inference is up to 30% faster on KiTS and LiTS, which retain fewer tokens, but slower on the more token-dense BraTS. Mixed-resolution processing therefore provides consistent memory savings, while runtime and accuracy gains depend on dataset boundary density.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.26829" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+{
+  "date": "2026-07-30",
+  "papers": [
+    {
+      "id": "2607.26336v1",
+      "title": "Learning Implicit Causal World Models from Multi-Agent Demonstrations",
+      "summary": "In model-based reinforcement learning, world models exist as internal simulators, but their training often conflates statistical correlations with causal mechanisms. This problem is exacerbated in multi-agent systems where physical transitions are intertwined with strategic agent intents, causing world models to fail under distribution shift. We introduce Implicit Causal World Models to recover environmental dynamics from offline demonstrations without requiring pre-defined causal graphs. By incorporating policy variance, we render world models discoverable via the sequential backdoor condition. Evaluations across coordination tasks (Two-Door, Navigation, and Giveway) demonstrate that these models provide interpretable causal representations under both full and partial observability, with model accuracy scaling directly with interventional strength.",
+      "authors": [
+        "Jasorsi Ghosh"
+      ],
+      "published": "2026-07-28T23:18:38Z",
+      "updated": "2026-07-28T23:18:38Z",
+      "categories": [
+        "cs.LG",
+        "cs.MA",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.26336v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2607.26885v1",
+      "title": "SCALPEL: Semantic Cross-modal Alignment via LLM-Powered Encoder Learning for Medical Vision-Language Representation",
+      "summary": "Vision-language pre-training (VLP) serves as a cornerstone for medical multimodal representation learning. However, existing medical VLP frameworks are often constrained by the limited context windows and shallow representational capacities of lightweight text encoders when processing lengthy, terminology-dense clinical reports. While integrating medical large language models (LLMs) offers unprecedented clinical reasoning capabilities, it introduces three major bottlenecks: (i) the anisotropic representational collapse of generative LLMs under standard contrastive objectives, (ii) the prohibitive memory overhead of joint end-to-end training with large batch sizes, and (iii) the medical hallucinations induced by vanilla contrastive losses that ignore fine-grained anatomical laterality and negation modifiers. To address these challenges, we propose \\textbf{SCALPEL}, a \\textbf{S}emantic \\textbf{C}ross-modal \\textbf{A}lignment framework via \\textbf{L}LM-\\textbf{P}owered \\textbf{E}ncoder \\textbf{L}earning. First, Clinical Report Contrastive fine-tuning converts a generative LLM into an isotropic encoder via domain-specific clinical text adaptation. Second, an asymmetric alignment strategy leverages offline feature caching to enable efficient training. Critically, we formulate an Anatomy-Negation Aware Objective that explicitly penalizes mismatched image-text pairs involving laterality confusion or false negations. Extensive experiments across MIMIC-CXR, CheXpert, and IU X-Ray benchmarks demonstrate that SCALPEL achieves state-of-the-art performance in cross-modal retrieval, zero-shot disease classification and medical visual question answering.",
+      "authors": [
+        "Yunzhan Fu",
+        "Enyu Bao",
+        "Xiangyu Shen",
+        "Yihao Wu",
+        "Chunbo Jiang",
+        "Fangli Guan",
+        "Liqi Yan"
+      ],
+      "published": "2026-07-29T13:12:32Z",
+      "updated": "2026-07-29T13:12:32Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.26885v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.25947v1",
+      "title": "A Cost-Effective Multimodal LLM Reasoning Framework for Question Answering over Irregular Clinical Time Series",
+      "summary": "Question answering (QA) over irregular clinical time series (ICTS) plays a pivotal role in a wide range of healthcare applications. Although recent multimodal time-series large language models (LLMs) have shown considerable promise in general-purpose time-series QA, they remain poorly equipped to model the sparsity, asynchrony, and irregular sampling patterns of clinical observations. To fill this gap, we propose ClinPRISM, a cost-effective multimodal LLM reasoning framework for question answering over ICTS data. First, we devise an irregularity-aware multi-scale encoder to capture sparse clinical evidence at diverse temporal scales. Then, we propose a temporal evidence distiller to integrate representations across these scales and compress them into a small number of LLM-compatible tokens. Moreover, we introduce a progressive alignment strategy that sequentially aligns the irregular trajectories with the LLM's textual embedding space. To facilitate training, we construct 30,000 clinical time series paired with multi-scale descriptions, together with 41,000 instruction-tuning instances spanning 11 tasks. Using a 4-billion-parameter LLM backbone, ClinPRISM achieves state-of-the-art performance on the held-out evaluation benchmark while using only 16 time-series tokens and achieving an average inference latency of 0.15 seconds per question.",
+      "authors": [
+        "Frank Nie",
+        "Ethan B Liu",
+        "Yuan Zhu",
+        "Wei Fan",
+        "Jindong Han"
+      ],
+      "published": "2026-07-28T16:33:41Z",
+      "updated": "2026-07-28T16:33:41Z",
+      "categories": [
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.25947v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2607.27017v1",
+      "title": "What Can Latent World Models Know? Physical Parameter Identifiability in Multimodal Predictive Representations",
+      "summary": "A central premise of latent world models is that predicting the future forces a representation to internalize the physics of its environment. Which physical quantities does a trained latent actually contain, and what decides this? We answer with controlled interventions in POKEWORLD, an interactive environment whose visually identical objects hide mass, drag, and contact stiffness. A certificate-gated protocol first certifies each parameter as recoverable from raw observations, then measures whether it enters the latent, so a null result can be attributed to the objective rather than to the environment. The resulting identifiability map has two organizing mechanisms and one frontier. Inputs limit what can be known, while prediction targets decide what is retained. Stiffness enters the latent only when touch is forecast ($R^2=0.50$, compared with $-0.02$ when the same signal is merely fused into the input), and under single-step prediction a vision-only latent discards even perfectly visible object state. Drag marks the frontier. It carries a recoverability certificate of 0.89 yet plateaus near 0.13 under every deterministic prediction objective we test, while a supervised head on the same trunk reaches 0.45. Parameters whose readout is slow and ratio-type under the sensed coordinates fall outside what these objectives acquire. On RH20T, an input-target factorial across scaling curves reproduces both mechanisms across two robots and 4,258 episodes. Every arm missing information or prediction pressure stays flat over a fivefold data range, and only the full multimodal objective forecasts force beyond a persistence baseline, with held-out gains that grow with scale. Objective structure determines which physical parameters a latent acquires, and additional data improves only the parameters it already acquires.",
+      "authors": [
+        "Kaizhen Tan",
+        "Xin Xu",
+        "Siru Tao",
+        "Hanzhe Hong",
+        "Yang Feng",
+        "Heqing Du"
+      ],
+      "published": "2026-07-29T15:15:30Z",
+      "updated": "2026-07-29T15:15:30Z",
+      "categories": [
+        "cs.LG",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.27017v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2607.26991v1",
+      "title": "RL$^2$-VLA: Adaptive RL Latent Compositional Steering with Test-Time Scaling for Vision-Language-Action Models",
+      "summary": "Despite the impressive visuomotor capabilities enabled by Vision-Language-Action (VLA) models, their performance often degrades on challenging and out-of-domain tasks. Recent test-time steering and scaling methods improve performance without extensive data collection and retraining, but action samples often remain concentrated around similar behaviors and therefore inherit correlated failure modes. Moreover, existing methods apply the same intervention strategy at every timestep, regardless of whether the base policy is already likely to succeed. To address these limitations, we introduce $RL^2$, an adaptive inference-time steering framework that leverages Reinforcement Learning on VLA Latents. First, we train a lightweight offline RL policy conditioned on expressive latents extracted from the VLA action expert and compose its flow velocity with that of the frozen VLA during inference. This compositional steering strategy combines the behavioral priors of large-scale imitation learning with the action diversity induced by offline RL beyond dominant demonstration modes. We further discover that inference-time steering follows fundamentally different scaling laws under success and failure states, revealing that action diversity is most beneficial when the base VLA is likely to fail, but can unnecessarily perturb already-accurate actions when success is likely. Building on this insight, $RL^2$ activates compositional steering only when failure is predicted. Across the SIMPLER and PolaRiS benchmarks, $RL^2$ improves success rates by up to +17.3% in out-of-domain settings, while ablations and scaling studies demonstrate the importance of latent representations and RL training. Finally, real-world experiments demonstrate that these gains transfer beyond simulation, establishing $RL^2$ as a practical and modular steering framework for VLA deployment.",
+      "authors": [
+        "Derek Ming Siang Tan",
+        "Shailesh Shailesh",
+        "Srikrishna Iyer",
+        "William Wei Jie Teo",
+        "Yuanliang Ju",
+        "Qiao Gu",
+        "Guillaume Sartoretti"
+      ],
+      "published": "2026-07-29T14:49:56Z",
+      "updated": "2026-07-29T14:49:56Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2607.26991v1.pdf",
+      "category": "robotics"
+    }
+  ],
+  "ids": [
+    "2607.26336v1",
+    "2607.26885v1",
+    "2607.25947v1",
+    "2607.27017v1",
+    "2607.26991v1"
+  ]
+}

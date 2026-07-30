@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SciFigAlign: Scoring Scientific Figures by Fine-tuned Alignment of Visuals with Manuscript Evidence - arXiv 2607.27066 论文总结">
+    <title>SciFigAlign: Scoring Scientific Figures by Fine-tuned Alignment of Visuals with Manuscript Evidence | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SciFigAlign: Scoring Scientific Figures by Fine-tuned Alignment of Visuals with Manuscript Evidence</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2607.27066<br><strong>分类:</strong> cs.CV, cs.AI<br><strong>发布时间:</strong> 2026-07-29</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Chuanzhi Xu, Zihan Deng, Huiqi Liang, Chengkun Yue, Zhanlin Cui, Pengfei Ye, Weidong Cai</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2607.27066">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2607.27066">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Scientific figure assessment in peer review differs fundamentally from general image quality evaluation: a figure must be visually legible, faithfully support the manuscript&#39;s claims, and communicate evidence with a clear visual hierarchy. However, if we apply traditional image assessment methods to scientific figure quality assessment, limitations emerge: classic IQA models capture perceptual quality or aesthetics but cannot judge whether a figure serves the paper&#39;s scientific argument; CLIP-based methods assess generic image-text correspondence, yet lack understanding of manuscript context; and zero-shot LLM/VLM judges, when repurposed for figure scoring, often yield overly concentrated scores with limited fusion of visual and textual evidence. We introduce an annotated dataset of 3,857 scientific figures from peer-reviewed conference papers, each rated along four peer-review-oriented dimensions: Clarity, Relevance, Informativeness, and Structure. We propose SciFigAlign, a fine-tuned multimodal scorer that grounds figure quality assessment in manuscript evidence. Given a figure crop, caption, citing paragraphs, and light paper context, SciFigAlign fine-tunes CLIP and SciBERT end-to-end with per-modality cross-attention and CubeMLP fusion, jointly optimizing SmoothL1 regression with a within-paper ranking hinge loss. Under paper-level splits, SciFigAlign achieves a macro MAE of 0.3524 and a within-paper pairwise accuracy of 81.64% on the test set with n = 396, a 59% relative error reduction over the best LLM-as-judge baseline with MAE 0.864. Ablations confirm that manuscript-grounded inputs, citing-context denoising, and ranking supervision are all critical, showing that scientific figure assessment requires learned alignment between visual content and manuscript evidence rather than prompting alone, even with state-of-the-art VLMs.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2607.27066" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
