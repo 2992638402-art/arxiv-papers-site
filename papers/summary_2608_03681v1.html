@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Keep the Needle, Prune the Haystack: Defect-Preserving Token Pruning for Efficient Zero-Shot Anomaly Detection - arXiv 2608.03681 论文总结">
+    <title>Keep the Needle, Prune the Haystack: Defect-Preserving Token Pruning for Efficient Zero-Shot Anomaly Detection | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Keep the Needle, Prune the Haystack: Defect-Preserving Token Pruning for Efficient Zero-Shot Anomaly Detection</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.03681<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-08-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yanning Hou, Jingyuan Zhang, Xiaoyun Wang, Qixiang Ma, Sihang Zhou, Ke Xu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.03681">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.03681">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Zero-shot visual anomaly detection has achieved remarkable progress, with recent vision-only approaches further improving performance while simplifying the inference pipeline. However, existing methods typically perform dense computation over all images and spatial tokens, despite the fact that normal samples dominate real-world scenarios and anomalies usually occupy only small regions. Token pruning offers a promising solution, but introduces an asymmetric pruning risk in anomaly detection: retaining normal tokens mainly incurs redundant computation, whereas removing anomalous tokens may eliminate the only evidence for detection and localization. This risk is particularly severe in early layers, where pruning provides the greatest computational benefit but anomaly semantics remain unreliable. We propose KeepAD, a defect-preserving token pruning framework that formulates token selection as high-recall, anomaly-aware routing. In shallow layers, KeepAD combines coverage-preserving selection over local $2\times2$ patch neighborhoods with deterministic anomaly rescue to reduce the risk of discarding subtle defects. In deeper layers, frozen normal and abnormal prototypes guide pruning under an image-adaptive token budget, aggressively removing low-risk normal tokens while preserving local anomaly evidence. Dense-to-sparse self-distillation further supervises early token routing without introducing additional inference overhead. Experiments on six industrial and seven medical zero-shot anomaly detection benchmarks show that KeepAD reduces the token retention ratio to below $20%$, while limiting the average degradation in image-level and pixel-level AUROC to within $2.7$ percentage points. At the most aggressive operating point, KeepAD achieves a $7.9\times$ speedup over the strongest CLIP-based baseline.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.03681" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

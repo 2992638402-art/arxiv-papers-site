@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SABRE: A Multi-Agent Approach for Selecting Out-of-Distribution Detectors Under a Budget - arXiv 2608.02959 论文总结">
+    <title>SABRE: A Multi-Agent Approach for Selecting Out-of-Distribution Detectors Under a Budget | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SABRE: A Multi-Agent Approach for Selecting Out-of-Distribution Detectors Under a Budget</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.02959<br><strong>分类:</strong> cs.MA<br><strong>发布时间:</strong> 2026-08-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Mary Wisell, Salimeh Sekeh</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.02959">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.02959">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Post-hoc out-of-distribution (OOD) detection for vision-language models assumes that a detector chosen on a benchmark stays reliable once deployed. We show this fails across domains: on a single frozen encoder, a detector that leads in one domain can invert in another, scoring in-distribution inputs as more anomalous than genuine outliers, and the best detector changes from domain to domain, so no fixed choice is reliable throughout. We introduce SABRE (Selective Agentic Budgeted Reliability Ensemble,) which replaces this fixed choice with per-regime selection at inference. Three language-model agents reason over a library of post-hoc detectors under a bounded query budget: a Selector chooses which detector to consult next, a Reporter consolidates the evidence for each input, and an Analyst calibrates detector reliability on a small labeled sample held out from the deployment domain and disjoint from the test data, weighting selection and aggregation without ever observing a scored input&#39;s label. The library includes four multimodal density detectors we propose. Inferring the operating regime from data, SABRE tracks the strongest detector in each domain without prior knowledge of it, recovering reliable detection where a conventional detector inverts and converging to that detector where it is sound. A component analysis shows the agents are complementary: the Reporter&#39;s feedback yields consistent gains, and the Analyst&#39;s calibration is decisive against inversion, ruling out unreliable detectors so that aggregation no longer cancels the sound ones. Since no fixed rule can be trusted across domains, reliability must be established at deployment rather than assumed from a benchmark, and SABRE shows this can be done automatically.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.02959" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

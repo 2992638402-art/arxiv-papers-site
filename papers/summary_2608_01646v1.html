@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spike-HTR: Spiking Neural Transformer for Handwritten Text Recognition - arXiv 2608.01646 论文总结">
+    <title>Spike-HTR: Spiking Neural Transformer for Handwritten Text Recognition | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Spike-HTR: Spiking Neural Transformer for Handwritten Text Recognition</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.01646<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-08-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xiubo Liang, Jinxing Han, Yuke Li, Haoqi Zhu, Yu Zhao, Hongzhi Wang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.01646">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.01646">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Handwritten Text Recognition (HTR) is computationally imbalanced in two ways: most image pixels are background, and many width-axis sequence positions are blank-dominated. This creates a mismatch for Spiking Neural Networks (SNNs): handwriting is observed as a static image, whereas spiking computation unfolds over timesteps. We propose Spike-HTR, a hybrid spiking recognizer that controls both the number of spiking steps and the number of width positions processed by the deep sequence mixer. To make a static image suitable for short-horizon spiking inference, InkCoder converts it into a coarse-to-fine input stream, where early steps cover broad stroke regions and later steps emphasize sharper stroke details. To reduce sequence computation, a CTC-guided length reducer keeps likely character or uncertain positions and compresses long blank-dominated stretches before deep mixing. With $T{=}2$, Spike-HTR trains only on target data, decodes without language models or lexicons, and reaches validation/test CERs of 3.5/5.4, 2.3/2.5, and 4.2/3.9 on IAM, LAM, and READ2016. Codes are available at <a href="https://github.com/QomolangmaH/SpikeHTR">https://github.com/QomolangmaH/SpikeHTR</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.01646" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

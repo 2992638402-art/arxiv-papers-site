@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CMuon: Accelerating and Stabilizing Diffusion Transformer Training via Chunked Momentum Orthogonalization - arXiv 2608.02502 论文总结">
+    <title>CMuon: Accelerating and Stabilizing Diffusion Transformer Training via Chunked Momentum Orthogonalization | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>CMuon: Accelerating and Stabilizing Diffusion Transformer Training via Chunked Momentum Orthogonalization</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.02502<br><strong>分类:</strong> cs.AI<br><strong>发布时间:</strong> 2026-08-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Chuyan Chen, Peng Sun, Kun Yuan</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.02502">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.02502">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Diffusion Transformers (DiTs) have achieved state-of-the-art (SOTA) performance in visual generative modeling, yet their training remains computationally prohibitive. While the recently proposed Momentum Orthogonalization (Muon) optimizer offers a promising alternative to AdamW, its direct application to DiTs yields suboptimal late-stage convergence. In this paper, we identify the root cause of this bottleneck: standard DiT architectures fuse functionally distinct weights (e.g., within AdaLN and QKV layers) into unified tensors for computational efficiency. Applying Muon to these fused tensors inadvertently induces implicit subspace coupling, which distorts update directions and degrades global optimization. To address this, we introduce Chunked Muon (CMuon), a simple yet highly effective strategy that partitions these matrices into independent sub-components prior to orthogonalization. Extensive experiments demonstrate that a 675M-parameter DiT trained with CMuon achieves a FID of 1.18 on ImageNet 256 in just 200 epochs. This represents more than a 2x training speedup over AdamW, while effectively overcoming the late-stage convergence plateaus of vanilla Muon.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.02502" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

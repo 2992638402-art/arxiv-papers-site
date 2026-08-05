@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ParEvalLayer: When Partial LLM-Agent Evaluations Support a Decision - arXiv 2608.02444 论文总结">
+    <title>ParEvalLayer: When Partial LLM-Agent Evaluations Support a Decision | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>ParEvalLayer: When Partial LLM-Agent Evaluations Support a Decision</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.02444<br><strong>分类:</strong> cs.AI<br><strong>发布时间:</strong> 2026-08-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Wei-Jung Huang, Bonan Shen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.02444">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.02444">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>LLM-agent evaluations often produce task outcomes long before the full benchmark run is complete. A partial score is tempting to report, but it does not show whether the observed tasks support the same conclusion as the completed evaluation. Early tasks can omit important parts of a benchmark, running cheaper tasks first can distort the observed sample, and a rule that decides only easy pairs can appear accurate while leaving many comparisons unresolved. We introduce ParEvalLayer, a decision layer that reads paired outcomes for two agent systems and a comparison policy chosen in advance. For each partial run, it records whether the tested agent system is better by the required amount, is not better by that amount, needs more evidence, or should abstain. We evaluate ParEvalLayer by replaying completed public benchmark data as if each evaluation had stopped earlier. At each point, ParEvalLayer applies the policy using only the outcomes observed so far; if it reaches one of the two comparison judgments, we check whether that judgment matches the completed data for the same system pair. With the main comparison rule, three of the public benchmarks reach the same decision as the completed evaluation after observing only 15% to 25% of task outcomes. Other benchmarks require more task outcomes. This variation shows why a partial score alone is not enough: reports should also state the decision rule and how many comparisons remain without a decision.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.02444" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

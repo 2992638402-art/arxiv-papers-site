@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GraspMeanFlow: SE(3)-Equivariant MeanFlow for Few-Step 6-DoF Grasp Generation - arXiv 2608.03295 论文总结">
+    <title>GraspMeanFlow: SE(3)-Equivariant MeanFlow for Few-Step 6-DoF Grasp Generation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>GraspMeanFlow: SE(3)-Equivariant MeanFlow for Few-Step 6-DoF Grasp Generation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.03295<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-08-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jiyong Kwon, Yikun Bai, Amirhossein Mollaali, Guang Lin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.03295">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.03295">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Recent data-driven methods for synthesizing 6-DoF grasp poses use generative models to learn complex grasp pose distributions and generate diverse candidate poses. In particular, SE(3)-equivariant flow-based models generate grasp poses that transform consistently with object rotations and translations. However, these methods sample by iterative numerical integration, requiring tens of function evaluations per grasp and limiting their use in real-time manipulation. We propose GraspMeanFlow, an SE(3)-equivariant MeanFlow framework for few-step 6-DoF grasp generation. Our method learns the average velocity over a finite time interval, defined through the time-ordered exponential so that it reproduces exactly the rigid-body displacement accumulated over that interval. We prove that a point-cloud-conditioned distribution transported by an equivariant average-velocity flow map remains invariant, so equivariance is retained under few-step sampling, and we condition the field on a pair of times by lifting both to equivariant vectors, leaving the backbone otherwise unchanged. For stable training, we pair a flow-matching boundary term with either of two consistency terms: the differential MeanFlow identity, whose target requires a Jacobian-vector product, or an equivalent semigroup loss that avoids it. Experiments on ACRONYM show that a single function evaluation of GraspMeanFlow reaches the EMD that an iterative SE(3) flow model needs five steps to approach, that a second instantiation of the same framework improves grasp success by up to 24.3 points in the few-step regime, and that both generate grasp distributions transforming exactly with the object.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.03295" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

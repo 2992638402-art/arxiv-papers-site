@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TDVR: Joint Text Disambiguation and Viewpoint Reasoning for Zero-Shot 3D Visual Grounding - arXiv 2608.03763 论文总结">
+    <title>TDVR: Joint Text Disambiguation and Viewpoint Reasoning for Zero-Shot 3D Visual Grounding | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>TDVR: Joint Text Disambiguation and Viewpoint Reasoning for Zero-Shot 3D Visual Grounding</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.03763<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-08-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Qingxi Du, Junbo Wang, Yuke Li, Yining Zhu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.03763">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.03763">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Zero-shot 3D visual grounding aims to localize specific objects based on textual descriptions and 3D visual input. However, the effectiveness of existing methods is significantly hindered by the ambiguous query text and deficient viewpoints. To address these issues, we propose TDVR, a training-free reasoning framework that disambiguates the input text and infers accurate viewpoints for zero-shot 3D visual grounding. First, we construct semantic 3D scene graph from the detected instances in the 3D point cloud. Subsequently, we put the original query, appearance and spatial relationship descriptions into the LLM for fusion, thereby disambiguating the initial input. We leverage chain-of-thought reasoning to generate the structured representation of disambiguated query. Then taking the scene graph and structured query as input, we get the optimal view via viewpoint reasoning to solve the problem of missing viewpoints during grounding. Based on the obtained optimal viewpoint, we further discriminate the distracting objects, enabling the model with the ability to distinguish similar instances. After that, we match the category text and appearance images with the query by computing the similarity of feature vectors. Finally, the target object was identified by integrating the viewpoint score, confusion score, category score, and appearance score. Compared with previous methods, our TDVR has stronger capabilities in viewpoint reasoning, similar object discrimination, and ambiguous query understanding. Experimental results on the public ScanRefer dataset show that our method outperforms the existing state-of-the-art methods by 15.25% and 14.46% in <a href="mailto:Acc@0.25">Acc@0.25</a> and <a href="mailto:Acc@0.5">Acc@0.5</a> respectively, demonstrating the effectiveness of our TDVR in addressing ambiguous query text and deficient viewpoints.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.03763" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,113 @@
+{
+  "date": "2026-08-05",
+  "papers": [
+    {
+      "id": "2608.03502v1",
+      "title": "Hybrid LLM-Augmented Reinforcement Learning Agents for Complex Sequential Decision Tasks",
+      "summary": "Large Language Models (LLMs) have recently shown strong capabilities in reasoning, planning, and tool-use, enabling new forms of autonomous agents. However, LLM-based agents struggle with long-horizon sequential decision tasks that require precise action optimization and environment interaction. Reinforcement Learning (RL), while effective for sequential control, often lacks the high-level abstraction and task decomposition abilities needed for complex scenarios. This paper introduces an LLM-Augmented Reinforcement Learning Agent that integrates LLM-driven planning with RL-based action optimization. The proposed architecture leverages the LLM to generate subgoals, structured plans, and contextual guidance, while the RL agent refines low-level actions through interaction with the environment. Experiments on sequential decision tasks demonstrate improved sample efficiency, higher success rates, and more coherent action trajectories compared to RL-only and LLM-only baselines. This hybrid paradigm highlights a promising direction for building more capable autonomous systems.",
+      "authors": [
+        "Christophe D. Hounwanou",
+        "John Emeka Eze",
+        "Yaé Ulrich Gaba"
+      ],
+      "published": "2026-08-04T11:44:07Z",
+      "updated": "2026-08-04T11:44:07Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.03502v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2608.03648v1",
+      "title": "Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate",
+      "summary": "Multi-Agent Debate (MAD) improves the reasoning performance of Large Language Models (LLMs) through multi-round interaction. However, LLMs in MAD are highly susceptible to blind conformity. Existing individual evaluation methods, typically based on confidence or perplexity, fail to reflect the correctness of reasoning and may even exacerbate blind conformity. To address this, we shift the perspective from individual evaluation to group interaction. We define mutual referencing among LLMs as \\textbf{Debate Relationships} and recognize that regulating these relationships is the key to mitigating blind conformity. In this paper, we propose a novel framework for \\textbf{D}ynamically r\\textbf{E}gulating deb\\textbf{A}te \\textbf{R}elationships (DEAR) from the group perspective. At first, DEAR quantifies consensus and divergence as \\textit{group evidence} to capture the debate state. Then, DEAR operates through three stages: 1) What: perceiving group consultation tendency and uncertainty; 2) Who: introducing a Selection RL-Agent to dynamically select reference peers; and 3) How: adopting a Behavior RL-Agent to adaptively adjust generation behaviors. Notably, we formulate the execution of the two RL-Agents as a sequential decision-making process, jointly optimizing via multi-agent reinforcement learning. Extensive experiments demonstrate that DEAR achieves superior performance while significantly reducing token consumption.",
+      "authors": [
+        "Hao Wu",
+        "Shoucheng Song",
+        "Chang Yao",
+        "Haoyu Wang",
+        "Huaiyu Wan",
+        "Youfang Lin",
+        "Kai Lv"
+      ],
+      "published": "2026-08-04T13:31:24Z",
+      "updated": "2026-08-04T13:31:24Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.03648v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.02827v1",
+      "title": "Emergence of Biased Consensus in Multi-Agent LLM Debates",
+      "summary": "Multi-agent LLM debates achieve strong performance on decision-making tasks as well as problem-solving benchmarks, yet their safety and fairness risks remain poorly understood. Notably, interaction can amplify the biases of single LLMs, raising concerns for real-world deployment. We identify the emergence of collective (often biased) norms in multi-agent LLM debates and show that noise (e.g., LLM sampling temperature) is a key driver. To explain this, we propose an analytical framework drawing on physics-inspired theoretical models of social dynamics. We predict a phase transition to collective bias when conformity surpasses a critical threshold given the LLMs' initial bias and debate noise. We test the theoretical predictions through controlled experiments and observe a finite-size crossover consistent with an underlying phase transition. We further find that agent heterogeneity suppresses emergence by smoothing (rounding) this transition. Finally, we show that these insights generalize to realistic decision-making tasks, including investment decisions and LLM-as-a-judge evaluation.",
+      "authors": [
+        "Maya Okawa"
+      ],
+      "published": "2026-08-03T19:40:49Z",
+      "updated": "2026-08-03T19:40:49Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.02827v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.03421v1",
+      "title": "When Truth Is Distributed: Misinformation Derails Collective Fact Recovery in LLM-Based Multi-Agent Systems",
+      "summary": "LLM-based multi-agent systems promise effective collaborative reasoning, but communication may amplify local errors into collective risks. Existing evaluations emphasize final outcomes, leaving the reliability and propagation dynamics of distributed information aggregation unclear. We introduce Hi-Agreement, a controlled evaluation framework that strictly pairs all-honest collaboration with controlled deception by a key evidence holder and analyzes the aggregation process through multi-stage voting, testimony adoption, and evidence-root lineage propagation. Using 120 five-agent object-movement environments where partial observations jointly determine a unique endpoint, we evaluate 3 homogeneous LLM-based multi-agent systems. Across these paired conditions, aggregate truth recovery falls from 72.50% to 14.17%, with significant declines for every system. Process tracing and exit ablations show that a single false testimony is adopted more readily than truthful testimony, propagates to higher orders, and persists through honest agents after the deceiver exits. Observers without first-hand evidence suppress incorrect consensus but do not improve truth recovery. Together, these findings reveal both the fragility of distributed fact recovery and its underlying mechanism: false evidence gains collective influence through its adoption and continued propagation by other agents after entering communication.",
+      "authors": [
+        "Chenfei Yan",
+        "Zeyang Yue",
+        "Feifei Zhao",
+        "Erliang Lin",
+        "Lu Jia",
+        "Haibo Tong",
+        "Mingyang Lyu",
+        "Chengyi Sun",
+        "Yi Zeng"
+      ],
+      "published": "2026-08-04T10:12:54Z",
+      "updated": "2026-08-04T10:12:54Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.03421v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.02508v1",
+      "title": "RoMeRL: Balancing Feedback Coverage and the Memory-Reward Trap in Self-Evolving Agent Memory via Reduced-Order Utility States",
+      "summary": "Learning-based memory systems for self-evolving LLM agents face two tightly coupled challenges. First, trajectory-indexed utilities grow with the interaction history, thereby dispersing limited feedback over an ever-expanding state space. Second, because trajectory-level rewards are jointly assigned to co-retrieved memories, irrelevant experiences may receive misleading utility updates and consequently enter the memory-reward trap. To address these challenges, we introduce Reduced-Order Memory Reinforcement Learning (RoMeRL), which represents the growing trajectory-indexed utility space using a fixed-dimensional per-task memory state factorized by outcome polarity and memory dynamics. RoMeRL incorporates new experiences through a fixed set of semantic coordinates whose contents are updated or replaced over time, thereby concentrating feedback over a bounded utility support. Theoretically, we show that this reduced-order parameterization increases the average feedback received by each utility coordinate and characterize the steady-state occupancy of erroneous coordinates under a generic coordinate-transition model. Empirically, across ALFWorld and LifelongAgentBench, RoMeRL improves task performance, reduces the Cold-Q ratio by 80.0%, increases feedback density by approximately 6.0 times, reduces the maintained memory size by 84.4%, and cuts LLM calls by 21.1%. These results show that reduced-order utility states support efficient self-evolving agent memory while limiting persistent reward contamination. Code is available at: https://github.com/YOUNG-fnxm/RoMeRL",
+      "authors": [
+        "Yi Yang",
+        "Zhennan Chen",
+        "Yihong Zhuang",
+        "Tiehan Fan",
+        "Yinan Chen",
+        "Jian Li",
+        "Jian Yang",
+        "Ying Tai"
+      ],
+      "published": "2026-08-03T17:07:50Z",
+      "updated": "2026-08-03T17:07:50Z",
+      "categories": [
+        "cs.LG",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.02508v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2608.03502v1",
+    "2608.03648v1",
+    "2608.02827v1",
+    "2608.03421v1",
+    "2608.02508v1"
+  ]
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GORDON: Graph-based Object-centric Rewards for Decomposition of Long-Horizon Manipulation - arXiv 2608.03753 论文总结">
+    <title>GORDON: Graph-based Object-centric Rewards for Decomposition of Long-Horizon Manipulation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>GORDON: Graph-based Object-centric Rewards for Decomposition of Long-Horizon Manipulation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.03753<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-08-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Andrea Protopapa, Davide Buoso, Francesca Pistilli, Georgia Chalvatzaki, Giuseppe Averta</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.03753">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.03753">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Learning long-horizon manipulation skills with reinforcement learning remains challenging due to the complexity of reward design, the limited guidance of sparse rewards, and the high cost of manual subtask annotation. Visual demonstrations can provide supervision for reward learning, but rewards learned from raw pixels can be brittle and sensitive to visual variation, background appearance, and robot motion. In this work, we propose GORDON, a graph-based object-centric reward learning framework that learns dense rewards from action-free video demonstrations. Each visual scene is represented as a graph of detected objects and spatial relations, and a graph neural network is trained in a self-supervised manner to embed these graphs into a task-aligned latent space. To align the representation with semantic task progress, we introduce an activity-aware weighted pooling mechanism that emphasizes task-relevant objects while masking robot-dominated motion. The dense reward is then computed as distances in the learned latent space of the current state to demonstrated goal configurations, providing a measure of task progress. In long-horizon tasks, the temporal profile of this reward reveals stage-wise object-state transitions, enabling automatic subtask discovery without manual segmentation. The discovered segments are then used to train subtask-specific rewards and specialized policies that are composed sequentially. Experiments on seven manipulation tasks on MAGICAL and ManiSkill3 benchmarks show that our object-centric reward improves reinforcement learning in short-horizon settings and enables successful policy learning in complex long-horizon tasks through automatic decomposition, achieving an average success rate of 74.4% across the long-horizon tasks (on average approximately +35 p.p. vs. best learned baseline and approximately +25 p.p. vs. oracle).</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.03753" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="GVCCTurbo: Rate-Compute Quality Scheduling for Codebook Driven Generative Compression - arXiv 2608.03517 论文总结">
+    <title>GVCCTurbo: Rate-Compute Quality Scheduling for Codebook Driven Generative Compression | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>GVCCTurbo: Rate-Compute Quality Scheduling for Codebook Driven Generative Compression</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.03517<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-08-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ziyue Zeng, Dingjie Peng, Xun Su, Hiroshi Watanabe</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.03517">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.03517">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Codebook-driven generative compression uses a pretrained image or video generator as a zero-shot visual prior and transmits compact codebook indices to guide reconstruction at ultra-low bitrate. Current codecs tie each finite-rate correction to a fresh prior evaluation, so shortening the sampler also removes correction slots that carry target-dependent information. We propose GVCCTurbo, a BPP-driven scheduler that separates expensive prior refreshes from codebook corrections: after calibrating an atom-count operating point and skip-gap ratio once per protocol, it maps a target codebook-payload bitrate to a trajectory length and refresh period, making BPP a schedule input instead of a fixed consequence of sampler length. The same endpoint-prediction and finite-rate steering interface covers GVCC-style rectified-flow video and DDCM-style diffusion image compression, preserving zero-training deployment and compatibility with future distilled priors. Native 1080p curves position the complete zero-shot codec in the ultra-low-bitrate regime. In a controlled 720p Wan-GVCC study, the scheduler cuts prior evaluations from 20 to 9 for a $\sim!44%$ measured decoding-time reduction shared across the whole schedule family, at a small shared LPIPS cost on high-motion content; within that family, uniform refresh thinning (pure-skip) is a boundary point, and the BPP-aware interior point trades $2.9%$ fewer codebook-payload bits for consistently higher PSNR at comparable LPIPS. These results support BPP-to-compute scheduling as a controllable extension of sampler-length tuning, without requiring the allocated point to dominate every boundary point.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.03517" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
