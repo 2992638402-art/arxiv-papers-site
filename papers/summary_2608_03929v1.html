@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latent Reward Registers for Diffusion Preference Alignment - arXiv 2608.03929 论文总结">
+    <title>Latent Reward Registers for Diffusion Preference Alignment | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Latent Reward Registers for Diffusion Preference Alignment</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.03929<br><strong>分类:</strong> cs.LG, cs.CV<br><strong>发布时间:</strong> 2026-08-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yuanshen Guan, Zipeng Feng, Zhiwei Xiong, Peiqin Sun</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.03929">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.03929">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Aligning diffusion models with human preferences usually relies on a sparse terminal reward evaluated on the final generated samples, presenting a severe temporal credit-assignment challenge across the multi-step denoising process. We propose Latent Reward Registers, a mechanism that estimates terminal preference directly from intermediate noisy latents by prepending learnable, position-free register tokens to the input sequence of a frozen Diffusion Transformer (DiT). This independent readout mechanism extracts latent reward evidence without altering the generator&#39;s hidden states or velocity field. The resulting dense, differentiable reward signal throughout the full denoising process facilitates two alignment strategies. For training, Reward-Gradient On-Policy Distillation (RG-OPD) distills reward-guided updates along on-policy trajectories, bypassing the computationally expensive rollouts of standard policy gradients. For inference, Reward-Guided Sampling (RGS) steers trajectories via magnitude-matched reward gradients without parameter updates. Empirically, at high noise levels (u = 0.8), the registers reach the highest pairwise accuracy among the evaluated latent reward models. Furthermore, RG-OPD outperforms online reinforcement learning baselines while reducing GPU hours by up to 33x, and RGS establishes a new state-of-the-art among training-free methods, strictly enhancing both alignment and perceptual metrics. Code and weights are available at <a href="https://github.com/Guanys-dar/latent-reward-register">https://github.com/Guanys-dar/latent-reward-register</a></p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.03929" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

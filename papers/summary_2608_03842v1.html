@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sensitivity, Causality, and Repair Dissociate: A Layer-Wise Analysis of Perturbation Robustness and Its Scaling - arXiv 2608.03842 论文总结">
+    <title>Sensitivity, Causality, and Repair Dissociate: A Layer-Wise Analysis of Perturbation Robustness and Its Scaling | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Sensitivity, Causality, and Repair Dissociate: A Layer-Wise Analysis of Perturbation Robustness and Its Scaling</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.03842<br><strong>分类:</strong> cs.CL, cs.LG<br><strong>发布时间:</strong> 2026-08-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Nathan Labiosa, David Buff, Ena Nayak, Erica Donno</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.03842">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.03842">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>When a language model fails on surface-perturbed input (typos, OCR noise, homophones), &quot;which layer is responsible&quot; has three natural operationalizations: where representations diverge most (sensitivity), where restoring clean activations recovers the prediction (causality), and where a small adapter can repair the damage (compensatory capacity) - and we show these three layer maps dissociate. Across a five-model panel we identify two propagation regimes - spike-and-suppress (Phi-3.5, Gemma-2-9B) and late-accumulation (Llama-3, Mistral, Qwen2.5-7B) - and on the two models meeting an 80% identity-patch gate, sensitivity and causality are anti-correlated (rho = -0.72 to -0.88). Within-family scaling on Qwen2.5 (1.5B to 14B) shows the late-accumulation signature strengthening monotonically with scale, corroborated on a second family. We propose cascade disruption as the mechanism behind the dissociation: adapters placed at causally implicated early layers break intact downstream computation, making diagnostic-flagged sites the worst adapter placements. A fixed-harness layer sweep across four models (3.8-8B) confirms the core prediction on chain-of-thought GSM8K - the flagged sites are the most damaging adapter windows on every adjudicable model - and is sign-consistent but strongly attenuated on a multiple-choice control, consistent with damage that compounds with generation length. The sweep yields practical guidance: a training-free LRD pre-screen and a default-deepest placement rule, though absolute gains over no-adapter baselines remain small. Finally, apparent gains from a representation-stability loss reverse under an adequate generation budget - truncated chain-of-thought had been scored as empty - a methodological warning for any intervention evaluated on chain-of-thought tasks.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.03842" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

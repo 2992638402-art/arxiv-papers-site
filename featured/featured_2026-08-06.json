@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-06",
+  "papers": [
+    {
+      "id": "2608.03979v1",
+      "title": "Video-DeepResearch: Towards the Next-Generation Multimodal Deepresearch Agent",
+      "summary": "We introduce Video-DeepResearch (Video-DR), extending multimodal agents from static images to continuous video streams, a setting that demands dense spatiotemporal grounding coupled with open-web exploration. Preliminary evaluations reveal two critical bottlenecks in current models: (1) modality bias, where agents bypass visual tools in favor of textual search, and (2) parametric knowledge leakage, where models rely on internal memory rather than genuine tool-augmented execution. To address these challenges, we propose Video-DR, featuring a decoupled perception-exploration pipeline with stage-wise tool unlocking that compels exhaustive cross-frame visual grounding prior to web retrieval. Our framework adopts a two-stage training recipe: supervised fine-tuning followed by Group Relative Policy Optimization (GRPO), enabling autonomous exploration that breaks the imitation-learning ceiling. Furthermore, we curate Video-DR-Bench, a human-AI collaborative benchmark comprising 200 complex, multi-hop VQA instances. Empirical results demonstrate that our Video-DeepResearch-35B-A3B establishes a new state-of-the-art of 64.0% average accuracy, surpassing proprietary Claude-4.5-Sonnet (59.0%) by 5.0 points and significantly outperforming GPT-5 (52.5%) and Gemini 2.5 Pro (57.5%). The 30B-A3B variant achieves 59.3%, competitive with Claude-4.5-Sonnet and demonstrating the effectiveness of our training paradigm even at compact scale. Code: https://github.com/Osilly/Vision-DeepResearch.",
+      "authors": [
+        "Zhen Fang",
+        "Yu Zeng",
+        "Wenxuan Huang",
+        "Yiming Zhao",
+        "Shiting Huang",
+        "Tianfei Ren",
+        "Qi Lu",
+        "Qingnan Ren",
+        "Qisheng Su",
+        "Lionel Z. Wang",
+        "Qingyu Yin",
+        "Shuang Chen",
+        "Zehui Chen",
+        "Lin Chen",
+        "Zhenfei Yin",
+        "Yao Hu",
+        "Shaohui Lin",
+        "Wanli Ouyang",
+        "Shaosheng Cao",
+        "Feng Zhao"
+      ],
+      "published": "2026-08-04T17:45:16Z",
+      "updated": "2026-08-04T17:45:16Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.03979v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2608.03502v1",
+      "title": "Hybrid LLM-Augmented Reinforcement Learning Agents for Complex Sequential Decision Tasks",
+      "summary": "Large Language Models (LLMs) have recently shown strong capabilities in reasoning, planning, and tool-use, enabling new forms of autonomous agents. However, LLM-based agents struggle with long-horizon sequential decision tasks that require precise action optimization and environment interaction. Reinforcement Learning (RL), while effective for sequential control, often lacks the high-level abstraction and task decomposition abilities needed for complex scenarios. This paper introduces an LLM-Augmented Reinforcement Learning Agent that integrates LLM-driven planning with RL-based action optimization. The proposed architecture leverages the LLM to generate subgoals, structured plans, and contextual guidance, while the RL agent refines low-level actions through interaction with the environment. Experiments on sequential decision tasks demonstrate improved sample efficiency, higher success rates, and more coherent action trajectories compared to RL-only and LLM-only baselines. This hybrid paradigm highlights a promising direction for building more capable autonomous systems.",
+      "authors": [
+        "Christophe D. Hounwanou",
+        "John Emeka Eze",
+        "Yaé Ulrich Gaba"
+      ],
+      "published": "2026-08-04T11:44:07Z",
+      "updated": "2026-08-04T11:44:07Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.03502v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2608.03833v1",
+      "title": "History Matters: Meta-policy Delegation with Heterogeneous Multi-agent Reinforcement Learning",
+      "summary": "AI agents are expected to play an increasingly important role in future decision-making systems. In this paper, we consider collaborative systems composed of heterogeneous multi-agent systems (MAS), where their members have different capabilities and operating costs. We study how agents can delegate tasks to one another so that certain research tasks can be completed effectively under resource-constrained scenarios. We first develop a multi-agent reinforcement learning-based (MARL) delegation training that enables agents to make sequential delegation decisions while minimizing the total execution cost. We then extend this approach to MARL with prescribed delegation topologies. Furthermore, we introduce two new frameworks for collaboration and delegation in multi-agent systems. The first framework proposes that an agent's policy depends not only on the current state of the underlying Markov decision process but also on the interaction history, including previous joint actions. This history-dependent formulation can improve coordination even in fully observable environments, where conventional MARL methods typically restrict policies to depend only on the current state. The second framework proposes a novel, potentially multi-dimensional monetary mechanism to facilitate the collaboration and delegation for MAS.",
+      "authors": [
+        "Ziqing Lu",
+        "Avinash Reddy Mudireddy",
+        "Sarra Alqahtani",
+        "Weiyu Xu"
+      ],
+      "published": "2026-08-04T15:39:40Z",
+      "updated": "2026-08-04T15:39:40Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.03833v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.03648v1",
+      "title": "Group Perspective Matters: Regulating Debate Relationships Can Mitigate Blind Conformity in Multi-Agent Debate",
+      "summary": "Multi-Agent Debate (MAD) improves the reasoning performance of Large Language Models (LLMs) through multi-round interaction. However, LLMs in MAD are highly susceptible to blind conformity. Existing individual evaluation methods, typically based on confidence or perplexity, fail to reflect the correctness of reasoning and may even exacerbate blind conformity. To address this, we shift the perspective from individual evaluation to group interaction. We define mutual referencing among LLMs as \\textbf{Debate Relationships} and recognize that regulating these relationships is the key to mitigating blind conformity. In this paper, we propose a novel framework for \\textbf{D}ynamically r\\textbf{E}gulating deb\\textbf{A}te \\textbf{R}elationships (DEAR) from the group perspective. At first, DEAR quantifies consensus and divergence as \\textit{group evidence} to capture the debate state. Then, DEAR operates through three stages: 1) What: perceiving group consultation tendency and uncertainty; 2) Who: introducing a Selection RL-Agent to dynamically select reference peers; and 3) How: adopting a Behavior RL-Agent to adaptively adjust generation behaviors. Notably, we formulate the execution of the two RL-Agents as a sequential decision-making process, jointly optimizing via multi-agent reinforcement learning. Extensive experiments demonstrate that DEAR achieves superior performance while significantly reducing token consumption.",
+      "authors": [
+        "Hao Wu",
+        "Shoucheng Song",
+        "Chang Yao",
+        "Haoyu Wang",
+        "Huaiyu Wan",
+        "Youfang Lin",
+        "Kai Lv"
+      ],
+      "published": "2026-08-04T13:31:24Z",
+      "updated": "2026-08-04T13:31:24Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.03648v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.02827v1",
+      "title": "Emergence of Biased Consensus in Multi-Agent LLM Debates",
+      "summary": "Multi-agent LLM debates achieve strong performance on decision-making tasks as well as problem-solving benchmarks, yet their safety and fairness risks remain poorly understood. Notably, interaction can amplify the biases of single LLMs, raising concerns for real-world deployment. We identify the emergence of collective (often biased) norms in multi-agent LLM debates and show that noise (e.g., LLM sampling temperature) is a key driver. To explain this, we propose an analytical framework drawing on physics-inspired theoretical models of social dynamics. We predict a phase transition to collective bias when conformity surpasses a critical threshold given the LLMs' initial bias and debate noise. We test the theoretical predictions through controlled experiments and observe a finite-size crossover consistent with an underlying phase transition. We further find that agent heterogeneity suppresses emergence by smoothing (rounding) this transition. Finally, we show that these insights generalize to realistic decision-making tasks, including investment decisions and LLM-as-a-judge evaluation.",
+      "authors": [
+        "Maya Okawa"
+      ],
+      "published": "2026-08-03T19:40:49Z",
+      "updated": "2026-08-03T19:40:49Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.02827v1.pdf",
+      "category": "other"
+    }
+  ],
+  "ids": [
+    "2608.03979v1",
+    "2608.03502v1",
+    "2608.03833v1",
+    "2608.03648v1",
+    "2608.02827v1"
+  ]
+}

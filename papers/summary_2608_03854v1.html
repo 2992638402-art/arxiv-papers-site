@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quantization Effects on Biomedical LLM Reliability - arXiv 2608.03854 论文总结">
+    <title>Quantization Effects on Biomedical LLM Reliability | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Quantization Effects on Biomedical LLM Reliability</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.03854<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-08-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Anton Rasmussen, Hong Qin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.03854">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.03854">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>When decoder language models are used as classifiers, predicted class probabilities depend on implementation choices, including the prompt template, verbalizer (label-to-token mapping), and scoring rule, that are rarely treated as experimental variables. We present a controlled evaluation of three Mistral-7B variants (Base, BioMistral, and Instruct) on PubMed RCT sentence classification (n=2000) under FP16, INT8, and INT4 precision using four answer-text prompt templates. Our primary finding is that the probability extraction protocol dominates apparent calibration. Switching from summed to mean token log-likelihood scoring reverses the calibration ranking between models: BioMistral average expected calibration error increases from 0.097 to 0.289, whereas Instruct decreases from 0.237 to 0.096, while accuracy changes by less than 1 percentage point for the specialized models but 4-6 percentage points for the base model. Prompt template choice produces accuracy differences of 7-24 percentage points, comparable to or larger than model-level effects. On one template, BioMistral outperforms Instruct although the overall mean favors Instruct by only 1.3 percentage points. For BioMistral and Instruct, INT8 quantization changes accuracy and F1 by only 1-2 percentage points relative to FP16, whereas the base model shows larger INT8 effects on some templates (up to +4.2 percentage points). INT4 produces heterogeneous but non-catastrophic effects. Temperature scaling reduces expected calibration error under summed scoring for both models but only for that scoring rule. A fine-tuned PubMedBERT reference achieves 82.7% accuracy but uses about 176000 labeled training examples, precluding direct comparison. These results demonstrate that prompt template design and scoring normalization are first-order experimental decisions when evaluating decoder language model calibration.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.03854" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
