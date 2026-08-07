@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Canonical Joint Energy-Based Model on CIFAR-10: failure modes and practical indistinguishability of Predictor-Corrector and SGLD samplers - arXiv 2608.05025 论文总结">
+    <title>Canonical Joint Energy-Based Model on CIFAR-10: failure modes and practical indistinguishability of Predictor-Corrector and SGLD samplers | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Canonical Joint Energy-Based Model on CIFAR-10: failure modes and practical indistinguishability of Predictor-Corrector and SGLD samplers</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.05025<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-08-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Dmytro Knopov</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.05025">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.05025">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Joint Energy-Based Models (JEM) unify classification and generation within a single network and support out-of-distribution (OOD) detection. Canonical JEM training relies on stochastic gradient Langevin dynamics (SGLD); a theoretically motivated alternative, the Predictor-Corrector (PC) sampler, has not previously undergone a systematic replication test on the canonical model. We reproduce canonical JEM on WideResNet-28-10 without normalisation layers on two independent runs and test whether PC retains its theoretical advantage without an annealed noise schedule, across three protocols: PC replacing SGLD throughout the roughly 130 training epochs; cold-start generation (FID); and refinement-style multi-OOD detection (AUROC). The reconstruction reaches 92.88% test accuracy and buffer-FID 44.46 (canonical: 92.9% and 38.40). We document two failure modes: catastrophic late-training divergence via the canonical outlier-buffer mechanism (both SGLD runs and, with the same signature, both PC runs), and run-dependent SVHN OOD-discrimination dynamics. No method-level advantage of PC over SGLD is observed on any protocol: at inference the absolute AUROC difference stays below 0.007 across all ten checkpoint-OOD pairs and the FID difference below 0.5; on the training protocol a hierarchical seed-by-image bootstrap gives a 95% confidence interval on the macro-averaged AUROC difference that contains zero, while a seed-level equivalence test with two runs per method cannot establish formal equivalence. The data are consistent both with equivalence and with a small directional effect. This practical indistinguishability is theoretically expected: under fixed noise the PC predictor step degenerates by construction, so its guarantees do not transfer to canonical JEM.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.05025" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

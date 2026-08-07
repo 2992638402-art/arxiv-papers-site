@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning from Failures: Retrieval-Centric CoT via Hard Negatives for Unified Multimodal Retrieval - arXiv 2608.06060 论文总结">
+    <title>Learning from Failures: Retrieval-Centric CoT via Hard Negatives for Unified Multimodal Retrieval | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Learning from Failures: Retrieval-Centric CoT via Hard Negatives for Unified Multimodal Retrieval</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.06060<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-08-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Zelong Sun, Jun Wang, Kaicheng Yang, Tiancheng Gu, Ziyong Feng, Zhiwu Lu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.06060">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.06060">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Unified multimodal retrieval aims to identify candidates that satisfy complex user intent expressed through heterogeneous inputs. Although Large Vision-Language Model (LVLM)-based retrievers are efficient and scalable, directly encoding raw multimodal inputs often misses fine-grained discriminative cues, leading to confusion among semantically similar candidates. Recent methods mitigate this limitation by generating Chain-of-Thought (CoT) rationales to enrich the query representation. However, such reasoning is typically derived from the query alone: it explains what the query describes, but not what the retriever misunderstands. We argue that effective retrieval reasoning should instead be conditioned on retrieval feedback. Based on this insight, we introduce UniME-R1, an embedder-adviser framework that learns to reason over initially retrieved candidates and generate Retrieval-Centric Chain-of-Thought (RC-CoT). The adviser analyzes candidates individually to identify the discriminative cues confused by the embedder. If the target appears in the initial top-k set, UniME-R1 directly reranks the candidates; otherwise, it generates RC-CoT to refine the retrieval direction and performs full-corpus re-retrieval with a dual-mode embedder. To train the framework, we mine hard negatives to simulate realistic retrieval failures, jointly optimize direct retrieval and RC-CoT-augmented retrieval, and align the adviser with retrieval outcomes through supervised learning and retrieval-oriented reinforcement learning. Extensive experiments on MMEB-V2 and a diverse set of general multimodal retrieval benchmarks demonstrate that UniME-R1 consistently improves retrieval performance over strong baselines.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.06060" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

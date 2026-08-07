@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Marginal Matching Does Not License Factorized Sampling: Auditing Conditional Style Leakage in Factorized Generative Models - arXiv 2608.05243 论文总结">
+    <title>Marginal Matching Does Not License Factorized Sampling: Auditing Conditional Style Leakage in Factorized Generative Models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Marginal Matching Does Not License Factorized Sampling: Auditing Conditional Style Leakage in Factorized Generative Models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.05243<br><strong>分类:</strong> cs.LG, cs.AI, stat.ML<br><strong>发布时间:</strong> 2026-08-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Duong Bach, Hai Nguyen Hong, Cuong Do</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.05243">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.05243">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Factorized generative models commonly regularize a latent style variable z_s by matching its marginal distribution to a fixed Gaussian prior and interpret this as evidence that the style representation is independent of class information. We show that this interpretation is incorrect. Matching only the marginal distribution places no constraint on the class-conditional distributions, allowing the latent style to remain highly predictive of the label despite appearing perfectly Gaussian in aggregate. We derive an exact decomposition showing that this mismatch is one of four conditions required for factorized sampling, and demonstrate that eliminating it is necessary but not sufficient to obtain the intended factorization. Empirically, our case-study model and four representative latent baselines achieve near-zero global MMD while still allowing a linear probe to recover class labels with 74%--100% accuracy (10% chance level). Our model reaches 99.15% clustering accuracy, whereas externally evaluated class-conditional generation succeeds only 16% of the time. This leakage remains under six independent perturbations involving model capacity, curriculum, prior geometry, and supervision across two datasets. Four mitigation strategies reduce probe accuracy to 21%--46%, although they leave within-class dependence largely unchanged. A post-hoc conditional prior improves externally evaluated class generation to 0.97 on MNIST without retraining but reaches only 0.41 on CIFAR-10, while an empirical style bank achieves 0.88 on CIFAR-10. These results demonstrate that no divergence computed solely on the marginal distribution of the style latent can certify independence from class labels, and that reporting marginal statistics alone does not verify the property commonly claimed in factorized generative models.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.05243" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ASGE-RR: Agentic Service Graph Embedding with Revisable Reservations for Dynamic AI-Agent Calls - arXiv 2608.06033 论文总结">
+    <title>ASGE-RR: Agentic Service Graph Embedding with Revisable Reservations for Dynamic AI-Agent Calls | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>ASGE-RR: Agentic Service Graph Embedding with Revisable Reservations for Dynamic AI-Agent Calls</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.06033<br><strong>分类:</strong> cs.MA, cs.PF<br><strong>发布时间:</strong> 2026-08-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Trond Vatten, Yuming Jiang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.06033">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.06033">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>AI-agent workflows often involve remote calls to models, memory stores, and tools distributed across a network. As execution progresses, these dependency calls collectively form an agentic service graph (ASG). Unlike traditional service requests, many dependency calls are revealed only at runtime. Consequently, allocating resources to a currently visible call may consume capacity later needed by a call from a higher-value workflow. We formulate this challenge as Agentic Service Graph Embedding (ASGE), an online network-control problem that maps runtime-revealed workflow calls to service replicas and network paths under capacity, cost and deadline constraints. We present ASGE-RR, an online ASGE controller with revisable reservations. ASGE-RR protects capacity for likely future calls while enforcing the constraints. ASGE-RR evaluates candidate replica-and-path mappings against predicted workflow continuations and updates reservations as new execution information becomes available. We evaluate ASGE-RR using OpenHands and GPT Researcher workflows executed with gpt-5.6-luna and replayed over in two complementary experimental environments, a controlled Docker testbed and a WAN testbed. The investigation shows that all the evaluated AI-agent tasks expose at least one runtime-revealed dependency call that can be steered before connection establishment. Exploiting this control point, even though the experimental environments are small-scale, ASGE-RR already demonstrates noticeable potential: It completes (up to) 10% more workflow value than a same-information rolling-horizon controller and a current-call steering controller on the WAN testbed. The results suggest that runtime-revealed workflow structure creates a new network control opportunity: protecting resources for likely future calls allows more AI-agent workflows to finish in time.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.06033" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
