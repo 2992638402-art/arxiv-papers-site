@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hierarchical Fast--Slow ReAct Agent for Zero-Shot Object-Goal Navigation - arXiv 2608.09816 论文总结">
+    <title>Hierarchical Fast--Slow ReAct Agent for Zero-Shot Object-Goal Navigation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Hierarchical Fast--Slow ReAct Agent for Zero-Shot Object-Goal Navigation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.09816<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-08-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Zhaochen Lan, Zhi Yang, Yuxiang Fu, Mengxiang Lin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.09816">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.09816">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Zero-shot object-goal navigation (ZSON) requires a robot to find a named object category in a building it has never entered. The prevailing approach scores frontiers with a vision--language \emph{value map}: every decision is another argmax over the map as it currently stands, and the evidence behind that score is discarded the moment it is taken. Systems that place a large vision--language model inside the perception--action loop typically query it on a fixed schedule from the current view alone; a room the robot walked through minutes earlier is never reconsidered, and a failed call has no defined fallback. We turn what the robot has already seen into the object of deliberation. Our hierarchical fast--slow agent leaves the value-map controller running at every step and writes a \emph{coordinate-anchored memory} as it moves: a semantic grid of room types and confirmed object instances, together with a bounded store of pose-tagged keyframes. A VLM screens each candidate detection before it is written. A deliberative layer reads this memory in a bounded reason--retrieve--act loop. It wakes on structural events the reactive layer computes, reasons first over text, and recalls a first-person view only for candidates that text alone cannot separate. Per-invocation and per-run caps bound its calls, a call-free first tier resolves the most frequent stall, and any failure returns control to the reactive controller. Our system reaches 68.75% SR on HM3D v1 \texttt{val} and 47.29% on MP3D \texttt{val}, the highest success rate among the zero-shot methods compared here. Choosing among far frontiers by argmax instead of deliberating costs 3.40 SR points in a paired comparison over all 2000 HM3D episodes (95% CI [1.70, 5.05]); deliberating over every frontier does not recover them.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.09816" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

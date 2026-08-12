@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="From Diagnosis to Correction: Benchmarking and Improving Real-World Table Parsing - arXiv 2608.09842 论文总结">
+    <title>From Diagnosis to Correction: Benchmarking and Improving Real-World Table Parsing | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>From Diagnosis to Correction: Benchmarking and Improving Real-World Table Parsing</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.09842<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-08-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jutao Xiao, Yuan Qu, Dongsheng Ma, Fan Wu, Tianyao He, Weihong Li, Jie Yang, Yu Qiao, Bin Wang, Conghui He</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.09842">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.09842">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Recent document parsers achieve table TEDS scores above 93 on OmniDocBench v1.6, yet community feedback and our audit reveal persistent failures on complex real-world tables. To quantify this gap, we introduce TableParseMap, a diagnostic benchmark of 916 real-world tables organized into five challenging scenarios and nine failure types. The strongest evaluated parser achieves only 85.03 TEDS, showing that aggregate benchmark scores conceal substantial weaknesses. Our analysis attributes these failures to three complementary limitations: large tables exceed the reliable processing scale of a single pass, weak or ambiguous visual cues hinder structure perception, and the reconstructed table may remain visually inconsistent with the image. We therefore propose DEC (Decompose--Enhance--Correct), a visual-consistency-guided agentic framework that improves frozen table parsers without retraining. DEC uses a general VLM as the controller: Decompose partitions large tables along structure-aware boundaries, Enhance exposes weak visual evidence and reparses transformed views, and Correct diagnoses and repairs residual errors. A Visual Consistency Gate (VC-Gate) selectively triggers intervention, while a Visual Consistency Ranker (VC-Ranker) verifies candidate updates and supports rollback without ground-truth HTML at inference time. We further derive a 1,977-table Consensus-Hard Set from 4,556 candidates through offline metrics and cross-model consensus. Across three frozen parsers, DEC improves TEDS by 1.57 points on average; on TableParseMap, gains reach 1.89 points overall, 2.62 on structural errors, and 5.66 on large tables.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.09842" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

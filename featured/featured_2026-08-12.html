@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2026-08-12 arXiv 每日精选 TOP 5 论文">
+    <title>每日精选 TOP 5 | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">2026-08-12 精选 TOP 5</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="#" class="active">⭐ 精选论文</a></li>
+            <li><a href="../all-papers.html">📚 全部论文</a></li>
+            <li><a href="https://github.com/2992638402-art/arxiv-papers-site" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>🌟 arXiv 每日精选 TOP 5 - 2026-08-12</h1>
+<blockquote>
+<p>从 150+ 篇最新论文中精选出 5 篇最有价值的研究</p>
+</blockquote>
+<hr>
+<h2>1. World Tokens: Enhancing Embodied Policies with Training-Time World Modeling</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2608.09730">2608.09730</a>
+<strong>分类:</strong> cs.CV
+<strong>作者:</strong> Qu Tang, Benhui Zhuang, Bo Yuan, Xue Yu, Longteng Guo et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Vision-language-action (VLA) models are a widely adopted paradigm for embodied policies. They excel at efficient closed-loop control but do not explicitly model how physical scenes evolve as a task unfolds. Recently emerging world-action models (WAMs) leverage pretrained video world models to capture spatiotemporal evolution, yet retaining future generation or a large video backbone in the control loop substantially increases inference cost. We introduce World Tokens, an embodied policy architecture built around a World Adapter that bridges visual-language understanding, world-dynamics modeling, and action generation. It uses world modeling during training to enhance the action policy while preserving efficient deployment. Specifically, the World Adapter transforms VLM features into a fixed set of world tokens, which condition a jointly fine-tuned future-video denoiser and simultaneously serve as the action expert&#39;s sole visual-language context. This shared conditioning allows gradients from future-video denoising to directly shape the representation used for action prediction, while exclusive routing prevents the policy from bypassing that representation. At deployment, the world-model branch is removed, leaving only the VLM, World Adapter, and action expert, with no online video-model inference. With a 2B backbone and no embodied action pretraining, World Tokens is highly competitive on LIBERO, attains the best reported averages on SIMPLER, substantially improves real-world R1 Pro success over a matched action-only baseline, and generates each action chunk at VLA-level latency.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2608.09730">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2608.09730">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>2. Social Gym and SPaRTan: Benchmarking and Improving LLM Social Reasoning via Multi-Agent Game Tournaments</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2608.09128">2608.09128</a>
+<strong>分类:</strong> cs.CL, cs.AI, cs.MA
+<strong>作者:</strong> Keyu He, Xuhui Zhou, Maarten Sap</p>
+<h3>📄 论文摘要</h3>
+<p>LLM agents are increasingly deployed in multi-agent social settings where they must cooperate, negotiate, and adapt to other agents. Measuring and improving these social skills is hard because, unlike math or logic, social interaction offers no objective ground truth: evaluations fall back on LLM judges, which are costly, subjective, and noisy, and models get no reliable signal to learn from. To address both, we first introduce Social Gym, an environment of 21 multi-agent social games (e.g., Werewolves, Resistance, Spyfall) whose rule-decided outcomes make agent performance verifiable and objective, with an Elo tournament that produces a cross-game leaderboard. Benchmarking experiments show that while GPT-5-mini tops the leaderboard, no model excels at all games uniformly or in all game roles, pointing to limitations of social reasoning. Motivated by this, we additionally propose SPaRTan (Self-Play and Reflect-Transfer), a training-free self-improvement loop: a model plays a game, reflects on its trajectories and their outcomes to produce a transferable playbook, and applies that playbook in subsequent games. Our results show that SPaRTan playbooks help GPT-5-mini agents level their performance on weaker roles, but largely do not improve Qwen3-32B&#39;s performance. Together, Social Gym and SPaRTan offer a reproducible, verifiable foundation for measuring and improving LLM social reasoning without weight updates.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2608.09128">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2608.09128">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>3. SocialFiVis: A Visual Analytics Sandbox for LLM-Grounded Multi-Agent Simulation in Social Finance</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2608.08497">2608.08497</a>
+<strong>分类:</strong> cs.HC, cs.MA, cs.SI
+<strong>作者:</strong> Yi-Fan Cao, Qing Shi, Liangwei Wang, Leo Yu-Ho Lo, Lin Chen et al.</p>
+<h3>📄 论文摘要</h3>
+<p>The emergence of social finance (SocialFi) transforms online communities into complex socio-economic systems. Within these spaces, collective decisions shape a &quot;digital commons&quot; characterized by social capital (e.g., community trust) and financial health (e.g., market liquidity). Governing such hybrid ecosystems is challenging because real-world interventions are costly and irreversible. While counterfactual simulation is essential for exploring alternative governance strategies, existing approaches fail to capture the non-linear interplay between governance rules, individual behaviors, and emergent economic outcomes. To systematically unpack this complexity, we operationalize the Institutional Analysis and Development (IAD) framework as our theoretical foundation, synthesizing prior literature with insights from formative expert interviews. Built on this framework, we present SocialFiVis, an IAD-embedded visual analytics sandbox. It introduces a robust model to quantify the dual-track digital commons, coupled with a two-phase simulation engine. This engine combines LLM-derived personas with a mechanism-guided Perception-Reasoning-Action (PRA) runtime to simulate heterogeneous, context-aware agents empirically grounded in the retained messaging cohort. A hierarchical multi-view interface with interpretable reasoning pathways enables community operators to explore counterfactual policies and trace system-level outcomes back to individual behavioral rationales. We evaluate SocialFiVis through two case studies, a user study, and follow-up interviews. Results demonstrate that SocialFiVis supports fine-grained behavioral attribution and helps explain emergent phenomena such as the structural decoupling of social capital and the resilience of messaging members under localized governance shocks.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2608.08497">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2608.08497">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>4. Efficient Real-World Online Reinforcement Learning for Robot Manipulation via Centralized Training and Critic Decomposition</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2608.09762">2608.09762</a>
+<strong>分类:</strong> cs.RO
+<strong>作者:</strong> Changhao Li, Yifang Zhang, Heng Zhang, Davide Torielli, Damiano Gasperini et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Real-world online reinforcement learning (RL) provides a promising approach for training robotic manipulation policies directly in the physical world, avoiding the sim-to-real gap and enabling continuous policy refinement through human-in-the-loop interaction. Recent methods have demonstrated sample-efficient learning through human intervention but remain limited to small randomization ranges and encounter challenges with the non-stationarity induced by concurrently training multiple agents. To address these limitations, we introduce a unified framework that combines centralized training with decentralized execution (CTDE) and a Hybrid Reward Architecture (HRA). This enables multiple actors to share a centralized multi-head critic. The critic is decomposed into task and grasp heads, corresponding to the sparse task reward and a potential-based grasping reward, respectively. We accordingly reformulate the critic and actor objectives to exploit the decomposed Q-values while explicitly accounting for the categorical action distribution of the discrete gripper policy. Experimental results demonstrate that the proposed framework substantially improves both sample efficiency and policy performance. We validate our approach on two robotic arms and a simulated humanoid robot across tennis ball and banana pick-and-place, pot reset, and simulated block relocation tasks under dimension-wise domain randomization, approximately 5-25x larger than those considered in prior work. Compared with a state-of-the-art baseline, our method improves the success rate from 60% to 80% on tennis ball pick-and-place, from 60% to 90% on banana pick-and-place, and from 25% to 95% on simulated block relocation, while also successfully accomplishing a task where the baseline consistently fails. Videos and more details are available at our project website: <a href="https://hil-harc.github.io/">https://hil-harc.github.io/</a>.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2608.09762">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2608.09762">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>5. Decentralized Multi-Agent Urban Traffic Management via Spatio-Temporal Mobility Profile Planning</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2608.08035">2608.08035</a>
+<strong>分类:</strong> cs.MA, cs.NI
+<strong>作者:</strong> Lorenzo Mario Amorosa, Lorenzo Farina, Vittorio Todisco, Alessandro Bazzi</p>
+<h3>📄 论文摘要</h3>
+<p>As modern cities face increasingly severe traffic congestion, connected and autonomous vehicles (CAVs) have emerged as a crucial enabling technology for next-generation intelligent traffic management. However, fully realizing this potential is hindered by the limitations of current paradigms. Existing approaches typically optimize localized interactions rather than system-wide efficiency, incur severe communication overhead, or lack the deterministic guarantees required for safe kinematic execution. Furthermore, current multi-agent adaptations are frequently restricted to small predefined scenarios, failing to scale across large and complex urban networks. To bridge this gap, this paper introduces VeloCity, a decentralized multi-agent spatio-temporal mobility profile planning framework designed for CAVs operating in arbitrary urban areas. To minimize vehicles&#39; travel times, VeloCity distributes mobility profile optimization directly to individual CAVs. Vehicles query a localized traffic coordinator for a reservation table, independently compute their fastest conflict-free mobility profile, and reserve their requested space-time slots back with the coordinator. By natively adapting to any arbitrary road topology, the framework manages highly irregular urban areas without requiring scenario-specific tuning, all while guaranteeing collision-free and physically executable vehicle trajectories. Extensive simulations across four large-scale real-world urban maps (Tokyo, Manhattan, Rome, and Bologna) demonstrate the framework&#39;s scalability. Compared to established state-of-the-art models, VeloCity yields drastically lower travel times, tightly bounds delay variance, and successfully prevents congestion gridlocks even under extremely high vehicular densities.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2608.08035">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2608.08035">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>生成时间:</strong> 2026/8/12 09:02:11</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="../all-papers.html" class="btn">浏览全部 150 篇 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
