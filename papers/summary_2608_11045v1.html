@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization - arXiv 2608.11045 论文总结">
+    <title>ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>ReRound: Reconstructive Rounding to Resolve Midpoint Ambiguity in Calibration-Free LLM Quantization</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.11045<br><strong>分类:</strong> cs.LG, cs.CL<br><strong>发布时间:</strong> 2026-08-11</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> He-Yen Hsieh, H. T. Kung</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.11045">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.11045">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>ReRound (Reconstructive Rounding) is a post-training quantization method that addresses the midpoint ambiguity inherent in standard round-to-nearest (RTN) schemes when quantizing weights near the centers of quantization intervals. Starting from a pretrained LLM, ReRound trains a conditional diffusion model to produce continuous reconstructions of low-bit weights for the LLM. These reconstructed weights act as a guidance signal to disambiguate the rounding direction of weights located close to interval midpoints. To integrate this reconstruction-guided rounding with conventional RTN, ReRound introduces a tolerance metric measuring how far the quantized weight (not the final quantized integer) is away from the midpoint: quantized weights within a tolerance region around midpoints are quantized using diffusion-based reconstructions, whereas weights closer to quantization boundaries are quantized with RTN. By sweeping the tolerance parameter, ReRound generates multiple candidate quantized integer weight matrices and selects the de-quantized weight matrix candidate whose leading singular values most closely match those of the original full-precision weights. This selected candidate determines the tolerance parameter ReRound uses. ReRound is particularly effective for smaller LLMs. Across a range of such models, it consistently outperforms standard RTN for 3-bit and 4-bit weight quantization. ReRound achieves superior accuracy compared to an extensive set of calibration-free methods, remains competitive with calibration-dependent approaches, and operates entirely offline, introducing no additional overhead during low-bit inference. The ReRound strategy represents a new approach for low-bit quantization. The method applies to AI models beyond LLMs. This paper focuses on its applications to small LLMs.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.11045" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

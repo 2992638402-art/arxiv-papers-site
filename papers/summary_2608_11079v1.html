@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SkillZip: Evaluation-Free Skill Compression for Self-Evolving Agents by Discovering Reusable Structure - arXiv 2608.11079 论文总结">
+    <title>SkillZip: Evaluation-Free Skill Compression for Self-Evolving Agents by Discovering Reusable Structure | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SkillZip: Evaluation-Free Skill Compression for Self-Evolving Agents by Discovering Reusable Structure</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.11079<br><strong>分类:</strong> cs.AI<br><strong>发布时间:</strong> 2026-08-11</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xiaofan Bai, Hongqiang Lin, Chao Liu, Yantao Zhang, Xuan Jin, Xipeng Cao, Yuhong Li</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.11079">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.11079">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Self-evolving agents accumulate reusable skills by appending successful procedures and failure fixes. Over time, the same requirement is often restated in several branches, examples, and warnings, while common action sequences are copied rather than reused. The resulting skill becomes expensive to inject and difficult to maintain. Generic prompt compression is ill-suited to this setting because a skill is not a flat passage: its name and description define when it applies, its workflow controls execution, its tool and output contracts constrain validity, and rare exceptions may remain essential even when no sampled task activates them. Evaluation-guided compression can test these behaviors, but it introduces rollouts, cost, and dependence on the compression-time evaluation set. We present SkillZip, an evaluation-free method that compresses a skill by finding its shortest faithful structural explanation. The intuition is explain once, reference many: state a repeated rule once at the scope where it applies, factor a repeated action sequence into a shared procedure, and keep only the differences as explicit exceptions. We formalize this intuition as a typed minimum description-length objective over a skill contract and a residual, subject to a hard coverage constraint for every extracted trigger, workflow edge, tool requirement, obligation, and output field. The formulation provides simple sharing thresholds, preserves unique rare rules by construction, and supports efficient local updates. SkillZip has a one-shot mode with one structured extraction call and deterministic optimization, and a continual Zip-on-Write mode that integrates each self-evolution patch without replaying tasks or reparsing the full history. Through comprehensive experimental evaluations, we demonstrate the effectiveness and superiority of SkillZip in compression performance, generalizability, and cost overhead.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.11079" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
