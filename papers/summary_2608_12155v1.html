@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Understanding Why Foundation Models Work for Diffusion-Generated Image Detection - arXiv 2608.12155 论文总结">
+    <title>Understanding Why Foundation Models Work for Diffusion-Generated Image Detection | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Understanding Why Foundation Models Work for Diffusion-Generated Image Detection</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.12155<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-08-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Davide Cozzolino, Giovanni Poggi, Luisa Verdoliva</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.12155">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.12155">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Vision foundation models have recently emerged as powerful feature extractors for detecting AI-generated images, achieving strong generalization across generators and robustness to common image degradations. However, the reason behind their effectiveness is poorly understood. In this work, we investigate what cues are exploited by foundation-model-based detectors to distinguish real images from diffusion-generated ones. To this end, we design an ad hoc analysis protocol based on DDIM inversion. Given a real image we generate a sequence of synthetic copies by changing the depth of DDIM inversion. Even though most copies are semantically identical to the real reference, the detector score varies significantly across them due to subtle traces introduced by the diffusion synthesis, showing that its decision is not primarily driven by semantic failures. Through a frequency-swapping analysis, we further reveal that the discriminative cues exploited by the detectors are mainly localized in the low-to-mid frequency range, rather than only in the high-frequency range, as is the case for artifacts commonly associated with generative models. Finally, a latent-space analysis shows that regenerated images exhibit reduced variance and effective dimensionality, indicating that diffusion models do not fully reproduce the variability of real data. Overall, our results suggest that foundation-model-based detectors succeed by capturing non-semantic low-to-mid frequency distributional discrepancies between real and diffusion-generated images. These findings provide new insight into the robustness and generalization of such detectors and suggest directions for more interpretable forensic methods.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.12155" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
