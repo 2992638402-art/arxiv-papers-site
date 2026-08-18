@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reducing ANN-SNN Conversion Error via Residual Membrane Potential Alignment - arXiv 2608.13952 论文总结">
+    <title>Reducing ANN-SNN Conversion Error via Residual Membrane Potential Alignment | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Reducing ANN-SNN Conversion Error via Residual Membrane Potential Alignment</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.13952<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-08-14</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Zirui Chen, Zihan Huang, Tong Bu, Jianhao Ding, Yiting Dong, Zhaofei Yu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.13952">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.13952">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Spiking Neural Networks (SNNs) serve as core architectures for neuromorphic computing thanks to event-driven operation and ultra-low power consumption. Direct SNN training is hindered by non-differentiable spikes that induce vanishing gradients and unstable optimization. ANN-SNN conversion circumvents such issues by reusing well-trained ANN weights for low-latency, energy-efficient inference. Nevertheless, existing conversion schemes suffer from severe accuracy drops at small timesteps, large inference delays and cumulative quantization errors, even with marginal performance loss at large $T$. To address these limitations, we first analyze flaws of conventional conversion pipelines from residual membrane potential statistics and propose a novel conversion strategy combining dynamic initial potential tuning and feature enhancement. We then introduce a regularization loss $\mathcal{L}_{\mathrm{RMPD}}$ to adapt initial potential of IF neurons and mitigate systematic truncation bias from boundary aggregation. A dedicated SCR-Conv2d competitive refinement layer with grouped convolution is further built to sharpen feature discrimination, eliminate redundant spikes and stabilize encoding under tiny time windows. Integrated with the state-of-the-art QCFS baseline, our approach delivers consistent low-latency performance gains and generalizes to ReLU CNNs, ANN Transformers, and multi-threshold SNN variants. Evaluations on CIFAR-10, CIFAR-100 and ImageNet verify prominent accuracy improvements at $T=2,4,8$, with negligible extra computation overhead. This work offers an effective conversion paradigm to facilitate real-world SNN deployment on neuromorphic chips.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.13952" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
