@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cross-Entropy Risk Estimation for Language Models: Inconsistency Must Be Dense, and the Holdout Method Is No Exception - arXiv 2608.15798 论文总结">
+    <title>Cross-Entropy Risk Estimation for Language Models: Inconsistency Must Be Dense, and the Holdout Method Is No Exception | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Cross-Entropy Risk Estimation for Language Models: Inconsistency Must Be Dense, and the Holdout Method Is No Exception</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.15798<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-08-16</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hanti Lin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.15798">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.15798">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Language models are compared by their held-out per-token cross-entropy risk---the quantity scaling laws are fitted to. We show that it cannot be consistently estimated. Consistency, or convergence to the estimand, is defined relative to a \emph{possible state of the world}: a pair consisting of a data-generating distribution and a model we turn out to train. Quantifying over models as well as data-generating mechanisms is essential, because what decides whether a model&#39;s risk is estimable is a tail property of the distribution its weights induce, which no sample reveals. The per-token cross-entropy risk is hard to estimate because of a topological fact: among the possible states, finite risk and infinite risk each lie arbitrarily close to every instance of the other. Consequently no estimator---not merely the holdout average---is consistent at every state at which the risk is defined. Worse, inconsistent estimation persists under both bounding the expected sequence length and restricting to full-support models; and in that restricted setting the states at which inconsistency occurs are even dense. Two interesting ways out are identified, and neither is free. Way out 1: using a bounded context window, we can floor a model&#39;s next-token probabilities, making its risk finite exactly when the data-generating distribution has finite expected sequence length---a new, statistical rationale for a choice that was made on computational grounds, though the assumption it substitutes is itself beyond the reach of any test. Way out 2: reporting the risk only when it falls below a threshold fixed in advance restores consistency, at no cost to what model selection actually requires---but we need to recognize that the goal of estimation is revised.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.15798" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

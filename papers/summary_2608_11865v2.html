@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Lapis: Laplacian Spiking Attention via First-Spike Timing and Membrane Leakage - arXiv 2608.11865 论文总结">
+    <title>Lapis: Laplacian Spiking Attention via First-Spike Timing and Membrane Leakage | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Lapis: Laplacian Spiking Attention via First-Spike Timing and Membrane Leakage</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.11865<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-08-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Kaiwen Tang, Jiaqi Zheng, Zixuan Zhu, Yiqun Wang, Zhanglu Yan, Weng-Fai Wong</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.11865">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.11865">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Self-attention has become central to spiking vision transformers, yet its query-key scoring is still largely inherited from dense networks. Existing spiking variants either simplify dot product scoring or replace it with discrete operators, but spike timing, the native variable of a spiking network, does not directly define how tokens are related. We propose Lapis, a spiking attention mechanism that scores each token pair by the L1 distance between its query and key first-spike latency vectors under time-to-first-spike coding, and maps this distance to an affinity through a Laplacian kernel. The kernel&#39;s exponential decay matches the impulse response of a leaky integrate-and-fire membrane, so the accumulated latency difference determines the decay of a membrane trace, while row normalization reduces to a bit shift under power-of-two rounding. Scoring therefore needs only subtraction, absolute value, and accumulation, and removes all multiplication between query and key channels. Under a matched backbone and training schedule, Lapis reaches 96.56% top-1 accuracy on CIFAR-10, within 0.53 points of dot-product scoring. On ImageNet-1K, it reduces the estimated arithmetic energy of the attention path by 14.5x relative to dense dot-product attention. The deployed 6-bit model attains 83.25% top-1 accuracy at an estimated arithmetic energy of 3.28mJ per image.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.11865" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
