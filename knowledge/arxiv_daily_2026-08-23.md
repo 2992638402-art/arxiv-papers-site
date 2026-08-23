@@ -1,0 +1,1818 @@
+# arXiv AI 每日精选 - 2026-08-23
+
+> 今日为您精选 150 篇高质量 AI/ML 论文
+
+## 📊 今日概览
+
+
+### 1. RoMAN-Flow: Taming Autoregressive Normalizing Flows for Offline Reinforcement Learning in Robotic Manipulation
+
+**arXiv:** [2608.20208](https://arxiv.org/abs/2608.20208)
+**分类:** robotics | cs.CV
+
+**核心内容:** Offline reinforcement learning improves robotic policies using previously collected data without further environment interaction. Yet prevalent diffusion- and flow-matching robot policies lack tractab...
+
+[查看详细总结 →](summary_2608_20208v1.html)
+
+---
+
+
+### 2. Towards general embodied intelligence: integrating large language models, knowledge bases, and reasoning capabilities to build the next generation of AI agents
+
+**arXiv:** [2608.19794](https://arxiv.org/abs/2608.19794)
+**分类:** robotics | cs.AI, cs.RO
+
+**核心内容:** The convergence of large language models (LLMs), structured knowledge bases (KBs), and reasoning ability (RA) presents a promising trajectory toward general embodied intelligence (GEI). This paper rev...
+
+[查看详细总结 →](summary_2608_19794v1.html)
+
+---
+
+
+### 3. Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design
+
+**arXiv:** [2608.20099](https://arxiv.org/abs/2608.20099)
+**分类:** multimodal | cs.MA, cs.CL, cs.LG
+
+**核心内容:** LLM-based Multi-Agent Systems (MAS) achieve strong performance on complex reasoning tasks by coordinating multiple agents, but at the cost of substantial token consumption. Recent work on automatic to...
+
+[查看详细总结 →](summary_2608_20099v1.html)
+
+---
+
+
+### 4. Rule-Compliant Visual Spatial Planning for Multimodal Large Language Models
+
+**arXiv:** [2608.20237](https://arxiv.org/abs/2608.20237)
+**分类:** multimodal | cs.AI
+
+**核心内容:** Multimodal large language models (MLLMs) combine linguistic reasoning with visual perception, yet their ability to perform visual spatial planning under explicit or previously unseen rule constraints ...
+
+[查看详细总结 →](summary_2608_20237v1.html)
+
+---
+
+
+### 5. HiTac-WAM: A Hierarchical Tactile World Action Model for Contact-Rich Robot Manipulation
+
+**arXiv:** [2608.19574](https://arxiv.org/abs/2608.19574)
+**分类:** robotics | cs.RO
+
+**核心内容:** World action models jointly predict future visual observations and actions, whereas existing tactile-aware variants typically represent future touch as an image or latent stream without modeling the p...
+
+[查看详细总结 →](summary_2608_19574v1.html)
+
+---
+
+
+### 6. Task-CoEvolve: Efficient Harness Optimization via Adaptive Validation Task Selection
+
+**arXiv:** [2608.20169](https://arxiv.org/abs/2608.20169)
+**分类:** multimodal | cs.CL, cs.AI, cs.LG
+
+**核心内容:** We present a novel approach to efficient LLM agent harness optimization through adaptive validation task selection. Harness optimization iteratively rewrites the harness code based on validation perfo...
+
+[查看详细总结 →](summary_2608_20169v1.html)
+
+---
+
+
+### 7. Continuous-Time Reinforcement Learning for Controlled Hawkes Jump-Diffusions
+
+**arXiv:** [2608.19151](https://arxiv.org/abs/2608.19151)
+**分类:** ml-theory | cs.LG, math.OC, stat.ML
+
+**核心内容:** We study stochastic control of multivariate Hawkes-driven stochastic differential equations with machine learning algorithms in a non-Markovian setting. Due to the path dependence of the memory of the...
+
+[查看详细总结 →](summary_2608_19151v1.html)
+
+---
+
+
+### 8. G-CARL: Grounded Checklist-Aligned Reward Learning for Patient-Oriented Medical Report Interpretation
+
+**arXiv:** [2608.20331](https://arxiv.org/abs/2608.20331)
+**分类:** multimodal | cs.CL, cs.AI, cs.CV
+
+**核心内容:** Personalized interpretation of medical reports has emerged as an increasingly important need among patients. Addressing this need requires both evidence-grounded medical factuality and context-depende...
+
+[查看详细总结 →](summary_2608_20331v1.html)
+
+---
+
+
+### 9. Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving
+
+**arXiv:** [2608.20129](https://arxiv.org/abs/2608.20129)
+**分类:** multimodal | cs.MA, cs.CL, cs.CV
+
+**核心内容:** Autonomous vehicles require robust perception and decision-making capabilities to operate in diverse and unseen scenarios. While reinforcement learning and rule-based methods can provide effective con...
+
+[查看详细总结 →](summary_2608_20129v1.html)
+
+---
+
+
+### 10. World-Model-Grounded LLM Planning for AUV and ASV Navigation Near Offshore Wind Farms
+
+**arXiv:** [2608.19661](https://arxiv.org/abs/2608.19661)
+**分类:** robotics | cs.RO
+
+**核心内容:** Large language models can turn a natural-language mission into a sequence of robot actions, but they do not have a sense of physics: they cannot judge how long a command should run, or whether it will...
+
+[查看详细总结 →](summary_2608_19661v1.html)
+
+---
+
+
+### 11. Discrete Diffusion Inference-Time Control with Nested Sequential Monte Carlo
+
+**arXiv:** [2608.20123](https://arxiv.org/abs/2608.20123)
+**分类:** ml-theory | stat.ML, cs.LG
+
+**核心内容:** We study inference-time control for text generation in discrete diffusion language models, where the goal is to steer sampling toward sequence-level rewards without retraining. Prior work in this doma...
+
+[查看详细总结 →](summary_2608_20123v1.html)
+
+---
+
+
+### 12. Swift-Image: Exploring the Performance Frontier of Compact Unified Image Generation Models
+
+**arXiv:** [2608.20334](https://arxiv.org/abs/2608.20334)
+**分类:** multimodal | cs.CV
+
+**核心内容:** We present Swift-Image, a compact unified model for text-to-image generation, single-image editing, and multi-image editing. Our goal is to explore how far a relatively small visual generator can be p...
+
+[查看详细总结 →](summary_2608_20334v1.html)
+
+---
+
+
+### 13. DentAgent: Evidence-Centric Multi-Agent Coordination for Multimodal Dental Reasoning
+
+**arXiv:** [2608.18878](https://arxiv.org/abs/2608.18878)
+**分类:** multimodal | cs.AI, cs.MA
+
+**核心内容:** Oral diseases affect billions of people worldwide, underscoring a pressing need for accurate and reliable dental assessment that integrates heterogeneous evidence from domain knowledge, radiographs, i...
+
+[查看详细总结 →](summary_2608_18878v1.html)
+
+---
+
+
+### 14. CentaurBench: Benchmarking LLM Capabilities on Augmenting vs. Automating Real-World Work Tasks
+
+**arXiv:** [2608.18554](https://arxiv.org/abs/2608.18554)
+**分类:** ml-theory | cs.CY, cs.AI, cs.MA, econ.GN
+
+**核心内容:** Most LLM benchmarks rank models on their ability to automate work tasks. In practice, however, models are often used to assist other (human or LLM) agents. The question that drives model selection is ...
+
+[查看详细总结 →](summary_2608_18554v1.html)
+
+---
+
+
+### 15. A Locally Deployable Tool-Grounded LLM Multi-agent Framework for Automating Methane Emission Analysis and Reporting
+
+**arXiv:** [2608.18473](https://arxiv.org/abs/2608.18473)
+**分类:** other | cs.MA
+
+**核心内容:** Methane field monitoring requires the integration of sampling design, meteorological interpretation, sensor processing, plume analysis, visualization, and reporting, but these steps are often distribu...
+
+[查看详细总结 →](summary_2608_18473v1.html)
+
+---
+
+
+### 16. Offline Multi-Agent Reinforcement Learning with a Physics-Informed World Model for Cooperative Mixed Traffic Control
+
+**arXiv:** [2608.17739](https://arxiv.org/abs/2608.17739)
+**分类:** other | cs.MA
+
+**核心内容:** This study investigates cooperative control of connected and automated vehicles (CAVs) at partially observable highway bottlenecks in mixed traffic, aiming to mitigate congestion without relying on co...
+
+[查看详细总结 →](summary_2608_17739v1.html)
+
+---
+
+
+### 17. MemTrapBench: Benchmarking Cognitive Traps in LLM Memory Use
+
+**arXiv:** [2608.20202](https://arxiv.org/abs/2608.20202)
+**分类:** multimodal | cs.AI, cs.CL, cs.CY, cs.DB, cs.LG
+
+**核心内容:** Memory has become a key component of large language models, enabling them to retain information and learn from long-term interactions. However, existing memory benchmarks mainly evaluate whether infor...
+
+[查看详细总结 →](summary_2608_20202v1.html)
+
+---
+
+
+### 18. DreamHand: Repurposing Video Diffusion Models for Occlusion-Robust Egocentric 3D Hand Motion Recovery
+
+**arXiv:** [2608.20308](https://arxiv.org/abs/2608.20308)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Egocentric video offers scalable manipulation data for embodied AI, yet recovering metric 3D hand trajectories remains challenging due to severe object occlusion and frequent out-of-sight gaps. Existi...
+
+[查看详细总结 →](summary_2608_20308v1.html)
+
+---
+
+
+### 19. DECOWAM: Decoupled Whole-Body World-Action Model for Legged Mobile Manipulation
+
+**arXiv:** [2608.20114](https://arxiv.org/abs/2608.20114)
+**分类:** robotics | cs.AI, cs.RO
+
+**核心内容:** Mobile manipulation requires a robot to predict how locomotion and arm motion jointly alter future observations and control. Existing world-action models, developed largely for fixed-base platforms, d...
+
+[查看详细总结 →](summary_2608_20114v1.html)
+
+---
+
+
+### 20. What Matters for Latent Actions in Robot Learning
+
+**arXiv:** [2608.19613](https://arxiv.org/abs/2608.19613)
+**分类:** robotics | cs.RO, cs.CV
+
+**核心内容:** Latent Action Models (LAMs) have emerged as a promising paradigm for enabling robot learning to leverage large-scale unlabeled videos through latent actions that serve as compact surrogates for physic...
+
+[查看详细总结 →](summary_2608_19613v1.html)
+
+---
+
+
+### 21. Let's Scale Step by Step: Compute-Efficient Hyperparameter Transfer for Large-Scale Mixture-of-Experts
+
+**arXiv:** [2608.20061](https://arxiv.org/abs/2608.20061)
+**分类:** multimodal | cs.LG, cs.AI, cs.CL
+
+**核心内容:** Mixture-of-Experts (MoE) architectures significantly expand model capacity without a proportional increase in computational cost. However, optimizing their hyperparameters---particularly the learning ...
+
+[查看详细总结 →](summary_2608_20061v1.html)
+
+---
+
+
+### 22. ATLAS: Scaffold-Free Algorithm Synthesis by LLMs via Embedding-Guided Quality-Diversity Search
+
+**arXiv:** [2608.15546](https://arxiv.org/abs/2608.15546)
+**分类:** ml-theory | cs.AI, cs.NE
+
+**核心内容:** Most LLM-based automated algorithm design methods optimize a designated component within a human-specified scaffold, fixing overall organization and component interactions. We present ATLAS, an embedd...
+
+[查看详细总结 →](summary_2608_15546v2.html)
+
+---
+
+
+### 23. Improved Confidence Estimates for Black-Box Large Language Models
+
+**arXiv:** [2608.19323](https://arxiv.org/abs/2608.19323)
+**分类:** multimodal | cs.LG, cs.AI, stat.ML
+
+**核心内容:** Uncertainty quantification (UQ) is essential for the safe deployment of large language models (LLMs). Existing methods, from verbalized confidence to ones requiring multiple generations, are often zer...
+
+[查看详细总结 →](summary_2608_19323v1.html)
+
+---
+
+
+### 24. Feature Evolution and Migration during Vision Transformer Training
+
+**arXiv:** [2608.20134](https://arxiv.org/abs/2608.20134)
+**分类:** multimodal | cs.CV, cs.LG
+
+**核心内容:** We present a novel view on feature evolution in Vision Transformers (ViTs) by visualizing the training process over two dimensions -- network depth (layer) and training time (epochs). We employ Sparse...
+
+[查看详细总结 →](summary_2608_20134v1.html)
+
+---
+
+
+### 25. When Text and Numbers Disagree: Evidence Arbitration in Large Language Models
+
+**arXiv:** [2608.20116](https://arxiv.org/abs/2608.20116)
+**分类:** multimodal | cs.CL
+
+**核心内容:** Large language models (LLMs) are increasingly used in settings where textual summaries, numerical observations, and external tool outputs may provide conflicting evidence. We study how LLMs arbitrate ...
+
+[查看详细总结 →](summary_2608_20116v1.html)
+
+---
+
+
+### 26. Robust Incomplete Multimodal Sentiment Analysis via Iterative Proxy Correction
+
+**arXiv:** [2608.19971](https://arxiv.org/abs/2608.19971)
+**分类:** multimodal | cs.CL
+
+**核心内容:** Multimodal sentiment analysis aims to infer affective states by integrating language, visual, and acoustic cues. However, real-world multimodal inputs are often incomplete or corrupted, which can weak...
+
+[查看详细总结 →](summary_2608_19971v1.html)
+
+---
+
+
+### 27. Dynamic Gated Cross-Modal Fusion with Sarcastic-aware Contrastive Regularization for Multimodal Sarcasm Detection
+
+**arXiv:** [2608.19942](https://arxiv.org/abs/2608.19942)
+**分类:** multimodal | cs.CL
+
+**核心内容:** Multimodal sarcasm detection aims to identify sarcastic intent from multimodal content, where inconsistencies between literal meaning and contextual cues often signal irony. This task has attracted in...
+
+[查看详细总结 →](summary_2608_19942v1.html)
+
+---
+
+
+### 28. WithEveryone: Unified Planning and Identity Grounding for Group Image Generation
+
+**arXiv:** [2608.20336](https://arxiv.org/abs/2608.20336)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Identity-preserving image generation becomes increasingly unreliable when a scene must contain many specified people. Beyond retaining each identity, the model must bind every reference to a distinct ...
+
+[查看详细总结 →](summary_2608_20336v1.html)
+
+---
+
+
+### 29. Inter-X++: A Comprehensive Benchmark for Multimodal Human-Human Interaction Analysis
+
+**arXiv:** [2608.20312](https://arxiv.org/abs/2608.20312)
+**分类:** multimodal | cs.CV
+
+**核心内容:** The capability to perceive and synthesize human-human interactions is fundamental to developing intelligent digital human systems. However, existing datasets and modeling approaches are fundamentally ...
+
+[查看详细总结 →](summary_2608_20312v1.html)
+
+---
+
+
+### 30. Towards Surgical World-Action Modeling: A Preliminary Joint Visual-Trajectory Forecasting for Surgical Motion Planning
+
+**arXiv:** [2608.20284](https://arxiv.org/abs/2608.20284)
+**分类:** robotics | cs.CV, cs.RO
+
+**核心内容:** Reliable surgical planning requires models to anticipate not only how instruments will move, but also how the operative visual state will evolve together with such motion. Existing approaches typicall...
+
+[查看详细总结 →](summary_2608_20284v1.html)
+
+---
+
+
+### 31. Towards Professional Tennis Styles for Humanoid Robots with Adaptive Motion Planning and Tracking
+
+**arXiv:** [2608.20087](https://arxiv.org/abs/2608.20087)
+**分类:** robotics | cs.RO, cs.AI
+
+**核心内容:** Humanoid robots have recently demonstrated promising capabilities in real-world ball sports. However, achieving professional motion styles while maintaining strong task performance remains challenging...
+
+[查看详细总结 →](summary_2608_20087v1.html)
+
+---
+
+
+### 32. GOAG: Generative and Object-Agnostic Grasp Planner for Dexterous Robotic Manipulation
+
+**arXiv:** [2608.19759](https://arxiv.org/abs/2608.19759)
+**分类:** robotics | cs.RO, cs.AI
+
+**核心内容:** Multifingered grasping is a crucial robotic skill, but current deep-learning grasp planners often struggle to generalize to new objects because they are trained on limited, object-specific datasets. W...
+
+[查看详细总结 →](summary_2608_19759v1.html)
+
+---
+
+
+### 33. Bayesian Partner Modelling enables Adaptive Replanning for LLM Coordination
+
+**arXiv:** [2608.18490](https://arxiv.org/abs/2608.18490)
+**分类:** other | cs.MA
+
+**核心内容:** Multi-agent Large Language Model (LLM) systems often struggle to collaborate with new teammates whose strategies shift mid-task. Because agents execute multi-step or temporally extended skills, they f...
+
+[查看详细总结 →](summary_2608_18490v1.html)
+
+---
+
+
+### 34. FormalTCS: Benchmarking End-to-End Frontier Formal Theoretical Computer Science Research of Large Language Models
+
+**arXiv:** [2608.20153](https://arxiv.org/abs/2608.20153)
+**分类:** multimodal | cs.CL
+
+**核心内容:** Large language models (LLMs) have shown growing potential for automated theoretical computer science (TCS) research, yet existing benchmarks remain far from realistic research settings. We introduce \...
+
+[查看详细总结 →](summary_2608_20153v1.html)
+
+---
+
+
+### 35. Task-Aware Harness Provisioning for LLM Agents in Mission-Critical Infrastructure Operations
+
+**arXiv:** [2608.17433](https://arxiv.org/abs/2608.17433)
+**分类:** multimodal | cs.AI, cs.MA
+
+**核心内容:** LLM agents have been widely adopted to operate mission-critical infrastructure (MCI). These agents normally rely on a harness that determines what information they can access, which tools they can use...
+
+[查看详细总结 →](summary_2608_17433v1.html)
+
+---
+
+
+### 36. Pandora's AI Model Routing Box: Efficient Allocation with Costly Value Estimation
+
+**arXiv:** [2608.20316](https://arxiv.org/abs/2608.20316)
+**分类:** ml-theory | cs.AI
+
+**核心内容:** Heterogeneous AI systems composed of multiple models, architectures, harnesses, or inference-time settings can improve quality and efficiency by routing queries to the specialist who can answer most e...
+
+[查看详细总结 →](summary_2608_20316v1.html)
+
+---
+
+
+### 37. MidTool: Mid-training Data Synthesis for Agentic Tool Use
+
+**arXiv:** [2608.20314](https://arxiv.org/abs/2608.20314)
+**分类:** ml-theory | cs.AI
+
+**核心内容:** Mid-training is increasingly recognized as a critical stage for shaping the capabilities of large language models. Recent work has shown that targeted mid-training can strengthen reasoning-intensive a...
+
+[查看详细总结 →](summary_2608_20314v1.html)
+
+---
+
+
+### 38. Break It Down, Pass It On: Cross-Task Skill Transfer in LLM Agents
+
+**arXiv:** [2608.20274](https://arxiv.org/abs/2608.20274)
+**分类:** multimodal | cs.AI, cs.CL
+
+**核心内容:** Large language model (LLM) agents can induce skills from completed tasks and reuse them later to grow more capable with experience. In practice, induced skills may transfer unreliably and can even har...
+
+[查看详细总结 →](summary_2608_20274v1.html)
+
+---
+
+
+### 39. Explainable Transformer Models for Clinical Prediction Tasks on Structured Electronic Health Records
+
+**arXiv:** [2608.20315](https://arxiv.org/abs/2608.20315)
+**分类:** ml-theory | cs.LG
+
+**核心内容:** Predictive models over structured electronic health records (EHRs) remain central to machine learning for healthcare, but few have jointly emphasized quantitative laboratory information and interpreta...
+
+[查看详细总结 →](summary_2608_20315v1.html)
+
+---
+
+
+### 40. ConceptGuard: Benchmarking Context-Sensitive Unlearning in Large Language Models
+
+**arXiv:** [2608.20338](https://arxiv.org/abs/2608.20338)
+**分类:** multimodal | cs.CL
+
+**核心内容:** Large Language Models (LLMs) increasingly require selective removal of harmful or sensitive knowledge, called unlearning, yet existing methods and benchmarks fail to evaluate this capability completel...
+
+[查看详细总结 →](summary_2608_20338v1.html)
+
+---
+
+
+### 41. HealMed: Multilingual Evaluation of Large Language Models in Medicine
+
+**arXiv:** [2608.19981](https://arxiv.org/abs/2608.19981)
+**分类:** multimodal | cs.CL
+
+**核心内容:** We present HealMed, an expert-reviewed benchmark for multilingual evaluation of large language models in medicine. HealMed contains 1,000 examples in each of nine languages, drawn from nine datasets a...
+
+[查看详细总结 →](summary_2608_19981v1.html)
+
+---
+
+
+### 42. Evidence-Gated Task and Motion Planning with Vision-Language Models
+
+**arXiv:** [2608.20084](https://arxiv.org/abs/2608.20084)
+**分类:** robotics | cs.RO, cs.AI
+
+**核心内容:** Robots executing long-horizon manipulation tasks from natural-language instructions must reason about both semantic task structure and geometric feasibility. However, under partial observability, the ...
+
+[查看详细总结 →](summary_2608_20084v1.html)
+
+---
+
+
+### 43. Chameleon: An Adaptive AI-Driven Honeypot Architecture Using Threat-Calibrated Particle Swarm Optimization and Semantic Deception Rapidly-Exploring Random Trees
+
+**arXiv:** [2608.15407](https://arxiv.org/abs/2608.15407)
+**分类:** ml-theory | cs.CR, cs.AI, cs.NE
+
+**核心内容:** An invariant behavioral profile is the defining vulnerability of traditional honeypot installations: a skilled adversary can confirm the presence of a deception environment within only a few diagnosti...
+
+[查看详细总结 →](summary_2608_15407v1.html)
+
+---
+
+
+### 44. Diffusion Models for High-Dimensional Clustered Data: Intrinsic-Dimension Adaptivity via Bayesian Classification
+
+**arXiv:** [2608.19067](https://arxiv.org/abs/2608.19067)
+**分类:** ml-theory | stat.ML, cs.LG, math.ST
+
+**核心内容:** The empirical success of diffusion models in generative modelling has motivated theoretical work, including quantitative error bounds and qualitative analyses that characterise the different phases of...
+
+[查看详细总结 →](summary_2608_19067v1.html)
+
+---
+
+
+### 45. Catching the Rug: Early Prediction of Fraudulent Memecoins on Solana via Machine Learning
+
+**arXiv:** [2608.20271](https://arxiv.org/abs/2608.20271)
+**分类:** ml-theory | cs.AI, cs.DC
+
+**核心内容:** The rapid proliferation of memecoins on blockchain platforms has increased the risk of fraudulent activities, particularly rug pulls. While previous studies have focused on Ethereum-based tokens, this...
+
+[查看详细总结 →](summary_2608_20271v1.html)
+
+---
+
+
+### 46. Exact Algebraic Computation of Learning Coefficients for Two-Dimensional Singular Models
+
+**arXiv:** [2608.20183](https://arxiv.org/abs/2608.20183)
+**分类:** ml-theory | cs.LG, cs.SC, math.AG, stat.ML
+
+**核心内容:** Classical information criteria such as the Bayesian Information Criterion (BIC) rely on regularity assumptions that break down for singular models, leading to incorrect model selection in settings suc...
+
+[查看详细总结 →](summary_2608_20183v1.html)
+
+---
+
+
+### 47. Orthogonal JEPA: Factorized Predictive States for Latent World Models
+
+**arXiv:** [2608.20065](https://arxiv.org/abs/2608.20065)
+**分类:** ml-theory | cs.LG
+
+**核心内容:** World models construct latent states that support prediction, planning, and reasoning about an underlying system. Joint-embedding predictive architectures (JEPAs) offer a direct way to learn such stat...
+
+[查看详细总结 →](summary_2608_20065v1.html)
+
+---
+
+
+### 48. Procedural Content Metageneration via Program Search and Continual Abstraction Discovery
+
+**arXiv:** [2608.17947](https://arxiv.org/abs/2608.17947)
+**分类:** ml-theory | cs.AI, cs.LG, cs.NE
+
+**核心内容:** Large language models can generate executable programs, which makes it possible to search directly over procedural content generators rather than individual levels. We study this approach in Sokoban, ...
+
+[查看详细总结 →](summary_2608_17947v1.html)
+
+---
+
+
+### 49. Automating Parent Selection Configuration in Genetic Programming with Agentic AI
+
+**arXiv:** [2608.17172](https://arxiv.org/abs/2608.17172)
+**分类:** other | cs.NE
+
+**核心内容:** We investigate whether agentic artificial intelligence can automate parts of the process of designing genetic programming systems by introducing an agentic framework that identifies and implements par...
+
+[查看详细总结 →](summary_2608_17172v1.html)
+
+---
+
+
+### 50. When Do LLM Agents Help? Deadline-Aware Mixed-Criticality Task Scheduling at the Autonomous-Vehicle Edge
+
+**arXiv:** [2608.19557](https://arxiv.org/abs/2608.19557)
+**分类:** other | cs.DC, cs.MA
+
+**核心内容:** Autonomous vehicles offload latency-sensitive perception tasks to nearby mobile edge computing (MEC) servers, where a missed safety-critical task is unsafe rather than merely degraded. Large language ...
+
+[查看详细总结 →](summary_2608_19557v1.html)
+
+---
+
+
+### 51. AI4AI-Bench: Benchmarking LLM Agents in Algorithmic Design for Recursive Self-Improvement
+
+**arXiv:** [2608.20318](https://arxiv.org/abs/2608.20318)
+**分类:** multimodal | cs.AI, cs.CL, cs.LG
+
+**核心内容:** Recursive self-improvement (RSI) asks whether an AI system can improve the process that produces AI systems, so that the next system inherits the improvement. That process is the training algorithm: a...
+
+[查看详细总结 →](summary_2608_20318v1.html)
+
+---
+
+
+### 52. Unwarping the Lens: A Physics-Grounded Approach to Video Glasses Removal
+
+**arXiv:** [2608.20212](https://arxiv.org/abs/2608.20212)
+**分类:** multimodal | cs.CV
+
+**核心内容:** High-fidelity removal of eyeglasses from video is a major challenge in facial attribute editing, as the underlying facial geometry is often obscured by complex refractive distortions and view-dependen...
+
+[查看详细总结 →](summary_2608_20212v1.html)
+
+---
+
+
+### 53. Planning-Oriented End-to-End Autonomous Driving: Architectures, Evaluation, and Emerging Paradigms
+
+**arXiv:** [2608.20111](https://arxiv.org/abs/2608.20111)
+**分类:** robotics | cs.RO, cs.ET
+
+**核心内容:** End-to-end autonomous driving has evolved from camera-to-control regression toward planning-oriented systems that use structured representations, trajectory-level outputs, and increasingly realistic e...
+
+[查看详细总结 →](summary_2608_20111v1.html)
+
+---
+
+
+### 54. Calming Robot Pitches? Exploring the Influence of Robot Voice Pitch on Children's Stress Levels
+
+**arXiv:** [2608.19826](https://arxiv.org/abs/2608.19826)
+**分类:** robotics | cs.HC, cs.RO
+
+**核心内容:** This study examined whether variations in robot speech pitch influence children's stress levels during a robot-guided game. Although lower-pitched voices have been shown to facilitate stress regulatio...
+
+[查看详细总结 →](summary_2608_19826v1.html)
+
+---
+
+
+### 55. OrthoSkillVLA: Continual Skill Learning via Gradient-Informed Skill Subspace Adaptation
+
+**arXiv:** [2608.19589](https://arxiv.org/abs/2608.19589)
+**分类:** robotics | cs.RO, cs.CV
+
+**核心内容:** Pretrained Vision-Language-Action models provide a strong foundation for robot learning, but sequentially adapting them to diverse skills can perturb the representations and velocity mappings used by ...
+
+[查看详细总结 →](summary_2608_19589v1.html)
+
+---
+
+
+### 56. An Evidence-Grounded Multi-Agent System for High-Level Bio-Robot Design
+
+**arXiv:** [2608.19699](https://arxiv.org/abs/2608.19699)
+**分类:** robotics | cs.MA
+
+**核心内容:** In this paper, a bio-robot is an engineered living or biohybrid system in which living cells perform one or more core functions, such as sensing, information processing, actuation or output. We focus ...
+
+[查看详细总结 →](summary_2608_19699v1.html)
+
+---
+
+
+### 57. Contracting for LLM Delegation: Moral Hazard in Technology and Effort Choice
+
+**arXiv:** [2608.18232](https://arxiv.org/abs/2608.18232)
+**分类:** other | cs.MA
+
+**核心内容:** We extend the standard Principal-Agent framework to scenarios where the Agent selects from a suite of technologies, each characterized by a distinct cost-capability profile. This framework is increasi...
+
+[查看详细总结 →](summary_2608_18232v1.html)
+
+---
+
+
+### 58. Emergence of cooperation: A reputation-modulated reinforcement learning
+
+**arXiv:** [2608.20016](https://arxiv.org/abs/2608.20016)
+**分类:** other | physics.soc-ph, cond-mat.dis-nn, nlin.AO, q-bio.PE, stat.ML
+
+**核心内容:** Reputation is widely recognized as a key mechanism for sustaining cooperation. However, most existing game-theoretic models treat reputation primarily as an external factor that modulates payoffs, int...
+
+[查看详细总结 →](summary_2608_20016v1.html)
+
+---
+
+
+### 59. An Agentic Approach for Active Data Collection, Travel Behavior Modeling, and Weather-Sensitive Demand Prediction
+
+**arXiv:** [2608.20320](https://arxiv.org/abs/2608.20320)
+**分类:** multimodal | cs.AI, cs.CL
+
+**核心内容:** Travel behavior research increasingly combines digital data collection with predictive modeling, yet these stages are often developed and evaluated separately. This study proposes a three-agent workfl...
+
+[查看详细总结 →](summary_2608_20320v1.html)
+
+---
+
+
+### 60. InsufficiencyBench: Evaluating LLM legal advice on underspecified user queries
+
+**arXiv:** [2608.20220](https://arxiv.org/abs/2608.20220)
+**分类:** ml-theory | cs.AI
+
+**核心内容:** Legal AI systems are increasingly used to answer legal questions, yet existing benchmarks assume queries arrive fully specified. In practice, users omit facts that materially determine the legal outco...
+
+[查看详细总结 →](summary_2608_20220v1.html)
+
+---
+
+
+### 61. Which Eviction Policy Should an LLM Cache Use? A Systematic Study Across Workloads, Capacities, and Encoders
+
+**arXiv:** [2608.20280](https://arxiv.org/abs/2608.20280)
+**分类:** ml-theory | cs.DB, cs.LG
+
+**核心内容:** Semantic caches reuse an LLM response when the incoming query embedding lies near a cached query, but proposed eviction policies have rarely been compared under one protocol. Using CLEVER, we evaluate...
+
+[查看详细总结 →](summary_2608_20280v1.html)
+
+---
+
+
+### 62. Decoding silent reading from non-invasive EEG
+
+**arXiv:** [2608.20186](https://arxiv.org/abs/2608.20186)
+**分类:** ml-theory | cs.LG, q-bio.NC
+
+**核心内容:** Non-invasive decoding of inner speech faces a fundamental data problem: a corpus pairing brain activity with a person's spontaneous inner monologue cannot be collected, and the available proxy paradig...
+
+[查看详细总结 →](summary_2608_20186v1.html)
+
+---
+
+
+### 63. OenoBench: A Wine-Domain Benchmark for Knowledge-Grounded Evaluation of Large Language Models
+
+**arXiv:** [2608.20106](https://arxiv.org/abs/2608.20106)
+**分类:** multimodal | cs.CL
+
+**核心内容:** We introduce OenoBench, a wine-domain knowledge benchmark of 3,266 multiple-choice questions across six pillars (regions, grape varieties, viticulture, winemaking, producers, business) and four diffic...
+
+[查看详细总结 →](summary_2608_20106v1.html)
+
+---
+
+
+### 64. Learning Hierarchical Skill Policies with Offline Quality-Diversity Reinforcement Learning
+
+**arXiv:** [2608.19684](https://arxiv.org/abs/2608.19684)
+**分类:** robotics | cs.AI, cs.LG, cs.RO
+
+**核心内容:** Recent studies investigate how to leverage pre-collected datasets to improve the policy performance and sample efficiency of RL. One promising approach to achieve this goal is to employ a two-stage st...
+
+[查看详细总结 →](summary_2608_19684v1.html)
+
+---
+
+
+### 65. ContractScrub: A benchmark for final review of legal contracts
+
+**arXiv:** [2608.20204](https://arxiv.org/abs/2608.20204)
+**分类:** multimodal | cs.AI, cs.CL
+
+**核心内容:** Legal work, with its heavy reliance on processing large amounts of text, is often considered one of the domains most exposed to the use of LLMs. Contract ``scrubbing,'' the final review of transaction...
+
+[查看详细总结 →](summary_2608_20204v1.html)
+
+---
+
+
+### 66. Natural Language Code Retrieval for 1C:Enterprise: An Open Benchmark and Efficient Bi-Encoder
+
+**arXiv:** [2608.19957](https://arxiv.org/abs/2608.19957)
+**分类:** multimodal | cs.CL
+
+**核心内容:** Natural language code retrieval is a rapidly evolving task in computer science. However, the 1C:Enterprise ecosystem combines Russian syntax with highly domain-specific terminology, for which open dat...
+
+[查看详细总结 →](summary_2608_19957v1.html)
+
+---
+
+
+### 67. DPC-Net: Dual-Prior Collaborative Network for All-in-One Image Restoration
+
+**arXiv:** [2608.20141](https://arxiv.org/abs/2608.20141)
+**分类:** multimodal | cs.CV
+
+**核心内容:** All-in-One Image Restoration (AiOIR) aims to handle diverse degradations within a unified model. However, existing methods often overlook image semantics in degradation modeling and lack low-level vis...
+
+[查看详细总结 →](summary_2608_20141v1.html)
+
+---
+
+
+### 68. ID-VTG: Image-Disambiguated Video Temporal Grounding
+
+**arXiv:** [2608.20127](https://arxiv.org/abs/2608.20127)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Video Temporal Grounding (VTG) faces significant challenges when natural language queries must distinguish between multiple events involving visually similar entities, particularly when relying on fin...
+
+[查看详细总结 →](summary_2608_20127v1.html)
+
+---
+
+
+### 69. ArmorOCR: Grounded Adversarial Visual Perception via Observation-Transferred Self-Distillation
+
+**arXiv:** [2608.20122](https://arxiv.org/abs/2608.20122)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Large multimodal models (LMMs) have demonstrated strong OCR recognition capabilities, yet remain vulnerable to adversarial visual text that is readable to humans but challenging for models to localize...
+
+[查看详细总结 →](summary_2608_20122v1.html)
+
+---
+
+
+### 70. Learning Highly Dynamic Skills Transition for Quadruped Jumping Through Constrained Space
+
+**arXiv:** [2608.19977](https://arxiv.org/abs/2608.19977)
+**分类:** robotics | cs.RO
+
+**核心内容:** Although legged animals are capable of performing explosive motions while traversing confined spaces, replicating this behavior in quadrupedal robots has been a longstanding challenge. Here, we propos...
+
+[查看详细总结 →](summary_2608_19977v1.html)
+
+---
+
+
+### 71. MILD: Tractable Terrain Modeling for Learning Improved Bipedal Locomotion on Deformable Surfaces
+
+**arXiv:** [2608.19955](https://arxiv.org/abs/2608.19955)
+**分类:** robotics | cs.RO
+
+**核心内容:** Enabling robots to walk on yielding terrain is vital for applications ranging from disaster response to planetary exploration. While bipedal robots hold immense potential, their locomotion on deformab...
+
+[查看详细总结 →](summary_2608_19955v1.html)
+
+---
+
+
+### 72. Magnetically Self-Sealed MR Haptic Actuator With PWM-Based Excitation and High-Fidelity Torque Control
+
+**arXiv:** [2608.19635](https://arxiv.org/abs/2608.19635)
+**分类:** robotics | cs.RO, eess.SY
+
+**核心内容:** Accurate and stable torque rendering is essential for safe and perceptive human--machine interaction. Magnetorheological fluid (MRF)-based actuators offer a compact and rapidly controllable solution f...
+
+[查看详细总结 →](summary_2608_19635v1.html)
+
+---
+
+
+### 73. DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents
+
+**arXiv:** [2608.18524](https://arxiv.org/abs/2608.18524)
+**分类:** multimodal | cs.CL, cs.AI, cs.LG, cs.MA
+
+**核心内容:** Equipping Large Language Models (LLMs) with multi-turn tool-calling capabilities is essential for building autonomous agents. However, progress is fundamentally limited by the reliance on full-length ...
+
+[查看详细总结 →](summary_2608_18524v1.html)
+
+---
+
+
+### 74. AutoResearch: Insight In, Hallucination Out
+
+**arXiv:** [2608.17906](https://arxiv.org/abs/2608.17906)
+**分类:** ml-theory | cs.AI, cs.MA
+
+**核心内容:** Autonomous research systems are increasingly capable of executing long research workflows, yet automation alone does not ensure that the resulting process remains scientifically grounded. We introduce...
+
+[查看详细总结 →](summary_2608_17906v1.html)
+
+---
+
+
+### 75. Quantum Gaussian processes for prediction of channel observations
+
+**arXiv:** [2608.19306](https://arxiv.org/abs/2608.19306)
+**分类:** ml-theory | quant-ph, cs.LG, stat.ML
+
+**核心内容:** Given a set of input states, we consider the task of predicting the expectation value of a Pauli observable at the output of an unknown quantum evolution, using only a limited number of measurements. ...
+
+[查看详细总结 →](summary_2608_19306v1.html)
+
+---
+
+
+### 76. A Unifying Relational Perspective on Expressive Lottery Tickets
+
+**arXiv:** [2608.18819](https://arxiv.org/abs/2608.18819)
+**分类:** ml-theory | cs.LG, stat.ML
+
+**核心内容:** Graph neural networks (GNNs) are widely used, but how parameter sparsity affects the expressivity of relational (RGNNs) and temporal (TGNNs) variants is poorly understood. The Strong Expressive Lotter...
+
+[查看详细总结 →](summary_2608_18819v1.html)
+
+---
+
+
+### 77. Mental Model Management: An Operator-Based Framework for LLM Memory
+
+**arXiv:** [2608.15451](https://arxiv.org/abs/2608.15451)
+**分类:** ml-theory | cs.AI, cs.NE
+
+**核心内容:** Large language models process large amounts of information but usually lack an explicit mechanism for maintaining compact and evolving conceptual representations. We introduce Mental Model Management ...
+
+[查看详细总结 →](summary_2608_15451v1.html)
+
+---
+
+
+### 78. V-REX: Efficient Specialist VLM Training for Veterinary X-Rays
+
+**arXiv:** [2608.20069](https://arxiv.org/abs/2608.20069)
+**分类:** multimodal | cs.CV
+
+**核心内容:** While generalist VLMs are expensive to train, creating domain experts is widely assumed to require fine-tuning increasingly large foundation models. We show that, in veterinary radiology, this assumpt...
+
+[查看详细总结 →](summary_2608_20069v1.html)
+
+---
+
+
+### 79. PVRA: A Pointwise Key-point Voting Framework for Robotic Assembly
+
+**arXiv:** [2608.19968](https://arxiv.org/abs/2608.19968)
+**分类:** robotics | cs.RO, cs.CV
+
+**核心内容:** Modern computer vision has enabled partial autonomy in robotic assembly manipulation. However, performing autonomous manipulation of a progressive assembly demands a more specific set of skills, in ad...
+
+[查看详细总结 →](summary_2608_19968v1.html)
+
+---
+
+
+### 80. Prompt-Conditioned Channel Attention for Hierarchical Feature Modulation toward Anatomy-Agnostic Segmentation
+
+**arXiv:** [2608.20229](https://arxiv.org/abs/2608.20229)
+**分类:** multimodal | cs.CV, cs.AI
+
+**核心内容:** Anatomically plausible segmentation remains challenging because of low contrast, ambiguous boundaries, and modality-specific artifacts. Interactive segmentation has emerged as a promising strategy to ...
+
+[查看详细总结 →](summary_2608_20229v1.html)
+
+---
+
+
+### 81. Keeping the Franka Emika Panda alive: a ROS 2 stack with a reliable position interface
+
+**arXiv:** [2608.19740](https://arxiv.org/abs/2608.19740)
+**分类:** robotics | cs.RO
+
+**核心内容:** This paper presents an open-source software stack that restores ROS 2 support for the Franka Emika Panda robot while resolving the long-standing unreliability of its external position control interfac...
+
+[查看详细总结 →](summary_2608_19740v1.html)
+
+---
+
+
+### 82. Accelerated Genetic Programming Hyper-Heuristics for Simulation-Based Scheduling via Agentic AI
+
+**arXiv:** [2608.19487](https://arxiv.org/abs/2608.19487)
+**分类:** ml-theory | cs.SE, cs.AI, cs.NE
+
+**核心内容:** Python is widely used in scientific research because it enables rapid development and provides rich ecosystems for data analysis, artificial intelligence (AI), and machine learning. However, customize...
+
+[查看详细总结 →](summary_2608_19487v1.html)
+
+---
+
+
+### 83. Computational Prosopography across a Millennium: Mathematically Oriented Lineages Traced from the Fields Medalists
+
+**arXiv:** [2608.17915](https://arxiv.org/abs/2608.17915)
+**分类:** other | physics.soc-ph, cs.DL, cs.NE
+
+**核心内容:** We reconstruct the mentor--student network through which documented scholarly training passed across roughly nine centuries, and subject both the network and the means of reconstructing it to source c...
+
+[查看详细总结 →](summary_2608_17915v1.html)
+
+---
+
+
+### 84. Evolving Executable Pipeline Programs for AutoML with Language Models
+
+**arXiv:** [2608.16416](https://arxiv.org/abs/2608.16416)
+**分类:** multimodal | cs.LG, cs.NE
+
+**核心内容:** Automated machine learning (AutoML) systems search for pipelines within a space of preprocessing operators, learners, and hyper-parameters specified in advance: they can select and tune known componen...
+
+[查看详细总结 →](summary_2608_16416v1.html)
+
+---
+
+
+### 85. The Evaluation Context Protocol (ECP): A Portable Contract for AI Agent Evaluation
+
+**arXiv:** [2608.19263](https://arxiv.org/abs/2608.19263)
+**分类:** other | cs.SE, cs.MA
+
+**核心内容:** The evolution of artificial intelligence has necessitated a fundamental shift from evaluating isolated Large Language Models (LLMs) to assessing autonomous agentic architectures. This paper explores t...
+
+[查看详细总结 →](summary_2608_19263v1.html)
+
+---
+
+
+### 86. Learning how to Forget: Fine-tuning for Long-Context Sparse Attention
+
+**arXiv:** [2608.19920](https://arxiv.org/abs/2608.19920)
+**分类:** multimodal | cs.CL
+
+**核心内容:** A lot of prior work addressed key-value (KV) cache selection and compression by sparse attention to enable long-context inference for transformer language models without excessive hardware budgets. We...
+
+[查看详细总结 →](summary_2608_19920v1.html)
+
+---
+
+
+### 87. Inducing Task Models from Computer-Use Traces
+
+**arXiv:** [2608.20319](https://arxiv.org/abs/2608.20319)
+**分类:** multimodal | cs.CL, cs.AI
+
+**核心内容:** Naturalistic computer-use traces, passively recorded screenshots and mouse or keyboard actions, are a valuable resource for deriving symbolic, auditable, and reusable models of how everyday work is do...
+
+[查看详细总结 →](summary_2608_20319v1.html)
+
+---
+
+
+### 88. Inject, Align, Recover: Staged Post-Training for Retrieval-Free Document Knowledge Internalization
+
+**arXiv:** [2608.20281](https://arxiv.org/abs/2608.20281)
+**分类:** multimodal | cs.CL, cs.AI
+
+**核心内容:** Large language models often fail to answer questions about a bounded document collection when the source documents are not retrieved at inference time. We study this setting as document knowledge inte...
+
+[查看详细总结 →](summary_2608_20281v1.html)
+
+---
+
+
+### 89. Auditing Cross-Lingual Fairness in Language Model Watermarking
+
+**arXiv:** [2608.20047](https://arxiv.org/abs/2608.20047)
+**分类:** multimodal | cs.CL, cs.CR, cs.LG
+
+**核心内容:** Watermarking schemes for large language model output are evaluated almost exclusively on English text using each scheme's detection threshold and a narrow set of quality measurements. Multilingual dep...
+
+[查看详细总结 →](summary_2608_20047v1.html)
+
+---
+
+
+### 90. 4DAnyone: Create Anyone in 4D from a Casual Monocular Video
+
+**arXiv:** [2608.20335](https://arxiv.org/abs/2608.20335)
+**分类:** multimodal | cs.CV
+
+**核心内容:** We present 4DAnyone, a framework for reconstructing 4D humans from an uncalibrated monocular video by generating reconstruction-grade multiview-consistent videos and lifting them into 4D Gaussian Spla...
+
+[查看详细总结 →](summary_2608_20335v1.html)
+
+---
+
+
+### 91. Artificial Intelligence for Workflow Analysis in Colorectal Surgery: A Multicentric, Cross-Procedural Development and Generalization Study
+
+**arXiv:** [2608.20154](https://arxiv.org/abs/2608.20154)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Minimally invasive colorectal surgeries (MIS-CRS) are characterised by significant variability and inconsistent outcomes. ColoWorkflow, a tool for the video-based assessment (VBA) of MIS-CRS workflow,...
+
+[查看详细总结 →](summary_2608_20154v1.html)
+
+---
+
+
+### 92. Video2DoorTraversal: Push Door Traversal via Simulated Door Twins
+
+**arXiv:** [2608.20251](https://arxiv.org/abs/2608.20251)
+**分类:** robotics | cs.RO
+
+**核心内容:** Door opening and traversal is a long-horizon loco-manipulation task that requires precise handle interaction and coordinated base-arm control. We present Video2DoorTraversal, a single-video real-to-si...
+
+[查看详细总结 →](summary_2608_20251v1.html)
+
+---
+
+
+### 93. SafeBranch: Branch-Pair Safety Alignment for Embodied Agents
+
+**arXiv:** [2608.19729](https://arxiv.org/abs/2608.19729)
+**分类:** robotics | cs.AI, cs.CV, cs.RO
+
+**核心内容:** Vision-language-model-based embodied agents can complete instructed tasks but often violate safety constraints in the process, a problem recently framed as interactive safety. Training such agents to ...
+
+[查看详细总结 →](summary_2608_19729v1.html)
+
+---
+
+
+### 94. GEAR: Generative Expansion and Real Anchoring for Two-Stage Distillation of Tabular Foundation Models
+
+**arXiv:** [2608.18849](https://arxiv.org/abs/2608.18849)
+**分类:** ml-theory | cs.LG, stat.ME, stat.ML
+
+**核心内容:** Tabular foundation models (TFMs) achieve strong performance through in-context learning, but context-dependent inference imposes substantial latency and memory costs, hindering large-scale deployment....
+
+[查看详细总结 →](summary_2608_18849v1.html)
+
+---
+
+
+### 95. Learning When to Think: Adaptive Reasoning for Test-Time Compute Allocation
+
+**arXiv:** [2608.20256](https://arxiv.org/abs/2608.20256)
+**分类:** ml-theory | cs.AI
+
+**核心内容:** Reasoning language models trained with reinforcement learning typically operate under a fixed token budget rather than an explicitly adaptive one, which can lead to over-computation on easy problems a...
+
+[查看详细总结 →](summary_2608_20256v1.html)
+
+---
+
+
+### 96. Daedalus-150M: A Convolution-Attention Hybrid Designed for CPU Inference
+
+**arXiv:** [2608.20210](https://arxiv.org/abs/2608.20210)
+**分类:** multimodal | cs.IR, cs.AI, cs.CL, cs.LG
+
+**核心内容:** Small language models are usually built like large ones and then squeezed onto a CPU afterwards. We did the opposite: we fixed the target first, one user, one token at a time, 4-bit weights, ordinary ...
+
+[查看详细总结 →](summary_2608_20210v1.html)
+
+---
+
+
+### 97. G3Ego: Gaze-Guided Graphs for Egocentric Action Understanding
+
+**arXiv:** [2608.20157](https://arxiv.org/abs/2608.20157)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Egocentric action understanding is often addressed using large video models pretrained on extensive exocentric datasets. However, many first-person actions depend on a small number of hand-object inte...
+
+[查看详细总结 →](summary_2608_20157v1.html)
+
+---
+
+
+### 98. BeyondMasks: Evaluating Causal and Physical Consistency in Video Object Removal
+
+**arXiv:** [2608.20107](https://arxiv.org/abs/2608.20107)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Recent advances in generative video models have significantly improved visual realism in video object removal, yet evaluation protocols still focus on masked region fidelity, treating removal as local...
+
+[查看详细总结 →](summary_2608_20107v1.html)
+
+---
+
+
+### 99. A Layered Simplex Architecture for Large Alphabets
+
+**arXiv:** [2608.19908](https://arxiv.org/abs/2608.19908)
+**分类:** ml-theory | cs.IT, cs.LG, stat.ML
+
+**核心内容:** Probability estimation over large alphabets under log loss is a well-studied problem, with celebrated methods such as the Good-Turing estimator. We introduce and study a new Bayesian estimator with fo...
+
+[查看详细总结 →](summary_2608_19908v1.html)
+
+---
+
+
+### 100. Function-On-Function Regression Through Separable Neural Operators
+
+**arXiv:** [2608.19070](https://arxiv.org/abs/2608.19070)
+**分类:** other | math.ST, stat.ML
+
+**核心内容:** This paper investigates the estimation of the regression operator in function-on-function regression models. While traditional research has predominantly focused on linear models or their immediate no...
+
+[查看详细总结 →](summary_2608_19070v1.html)
+
+---
+
+
+### 101. Communication Reduction via Semantic-Based Encoding in DMPC Using LSTMs
+
+**arXiv:** [2608.17592](https://arxiv.org/abs/2608.17592)
+**分类:** robotics | eess.SY, cs.DC, cs.LG, cs.MA, cs.RO
+
+**核心内容:** The communication demands of distributed model prediction control (DMPC) can overwhelm even advanced wireless communication technologies as agents must exchange a significant amount of information at ...
+
+[查看详细总结 →](summary_2608_17592v1.html)
+
+---
+
+
+### 102. Distributional Extrapolation for Interactions
+
+**arXiv:** [2608.19849](https://arxiv.org/abs/2608.19849)
+**分类:** other | stat.ME, stat.ML
+
+**核心内容:** Predicting combinatorial effects from limited-range observations is a fundamental challenge in many scientific domains, including drug discovery and hyperparameter optimization. We study combinatorial...
+
+[查看详细总结 →](summary_2608_19849v1.html)
+
+---
+
+
+### 103. The Third Restructuring of Software Form: From the Three-Tier Architecture to Storage, Models, and Agents
+
+**arXiv:** [2608.20201](https://arxiv.org/abs/2608.20201)
+**分类:** ml-theory | cs.AI, cs.SE
+
+**核心内容:** Software form has undergone two paradigm shifts since its inception: Software 1.0, in which instructions determine behavior, and Software 2.0, in which data determines behavior (machine learning). Thi...
+
+[查看详细总结 →](summary_2608_20201v1.html)
+
+---
+
+
+### 104. A Standardized Framework for Machine Learning in Power System Protection
+
+**arXiv:** [2608.20181](https://arxiv.org/abs/2608.20181)
+**分类:** ml-theory | cs.LG, cs.AI, eess.SP
+
+**核心内容:** Studies of machine-learning-based power-system protection increasingly report near-perfect scores, yet the meaning of those scores depends strongly on the evaluation setting. Protection task, physical...
+
+[查看详细总结 →](summary_2608_20181v1.html)
+
+---
+
+
+### 105. $TCP_α$: Margin-Controlled Confidence estimation for reliable Music Information Retrieval
+
+**arXiv:** [2608.20326](https://arxiv.org/abs/2608.20326)
+**分类:** ml-theory | eess.AS, cs.LG
+
+**核心内容:** Deep neural networks are often overconfident, assigning high confidence even to incorrect predictions. Consequently, users lack a reliable signal for deciding when a prediction can be trusted. Post-ho...
+
+[查看详细总结 →](summary_2608_20326v1.html)
+
+---
+
+
+### 106. A comparison between ceiling-mounted FMCW, IR-UWB and Wi-Fi radar for in-bedroom human activity monitoring and sleep interruption detection
+
+**arXiv:** [2608.20322](https://arxiv.org/abs/2608.20322)
+**分类:** ml-theory | cs.LG
+
+**核心内容:** Despite their growing importance for contact-free radio frequency (RF) based healthcare monitoring, different radio technologies such as frequency-modulated continuous wave (FMCW) radar, impulse radio...
+
+[查看详细总结 →](summary_2608_20322v1.html)
+
+---
+
+
+### 107. Gravitational-wave parameter estimation with machine-learning generated surrogate waveforms
+
+**arXiv:** [2608.20222](https://arxiv.org/abs/2608.20222)
+**分类:** ml-theory | gr-qc, astro-ph.IM, cs.LG
+
+**核心内容:** The worldwide network of gravitational-wave detectors have detected more than 350 binary coalescence events till date. Future third-generation detectors, like Einstein telescope, are expected to detec...
+
+[查看详细总结 →](summary_2608_20222v1.html)
+
+---
+
+
+### 108. CalcSeg: Confidence-aware 3D Latent Context Curriculum Learning For Myocardial Scar Segmentation From Single-Stack LGE-CMRs
+
+**arXiv:** [2608.20305](https://arxiv.org/abs/2608.20305)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Myocardial scar segmentation from single-stack late gadolinium-enhanced cardiac magnetic resonance (LGE-CMR) imaging has been a longstanding and clinically important challenge, particularly in the pre...
+
+[查看详细总结 →](summary_2608_20305v1.html)
+
+---
+
+
+### 109. PelviNeXt: A Modality-Agnostic Hybrid Network for Pelvic Imaging in Women's Health
+
+**arXiv:** [2608.20144](https://arxiv.org/abs/2608.20144)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Women's health remains substantially under-resourced in medical imaging research, with pelvic pathologies such as polycystic ovary syndrome (PCOS) and pelvic fracture both suffering from a scarcity of...
+
+[查看详细总结 →](summary_2608_20144v1.html)
+
+---
+
+
+### 110. Flow Matching-Based PET Image Reconstruction
+
+**arXiv:** [2608.20112](https://arxiv.org/abs/2608.20112)
+**分类:** multimodal | eess.IV, cs.CV, physics.med-ph
+
+**核心内容:** Generative models have shown strong potential for positron emission tomography (PET) image reconstruction. Although diffusion model-based reconstruction methods have demonstrated promising performance...
+
+[查看详细总结 →](summary_2608_20112v1.html)
+
+---
+
+
+### 111. DART-S: Reachability-Audited Active-Suspension Preconditioning for Off-Road Vehicle Jumps
+
+**arXiv:** [2608.20275](https://arxiv.org/abs/2608.20275)
+**分类:** robotics | cs.RO
+
+**核心内容:** Airborne torque reaction cannot recover takeoff errors beyond the wheel angular-momentum budget. DART-S applies ramp-face suspension preconditioning to change pitch, pitch rate, and wheel spin before ...
+
+[查看详细总结 →](summary_2608_20275v1.html)
+
+---
+
+
+### 112. CoToGrasp: Contact-Topology-Conditioned Dexterous Grasp Synthesis via Canonical Workspace Learning
+
+**arXiv:** [2608.19776](https://arxiv.org/abs/2608.19776)
+**分类:** robotics | cs.RO, cs.AI
+
+**核心内容:** Current dexterous grasp planners primarily optimize for physical stability, focusing on whether an object can be grasped rather than how it should be grasped to support downstream functional tasks. Ho...
+
+[查看详细总结 →](summary_2608_19776v1.html)
+
+---
+
+
+### 113. The Forward-Backward Disconnect: State Dynamics, Credit Assignment, and Biological Grounding in Neural Computation
+
+**arXiv:** [2608.19995](https://arxiv.org/abs/2608.19995)
+**分类:** other | cs.NE
+
+**核心内容:** A recurring pattern in neural computation is the reintroduction of dynamical and biological structure into models originally simplified for scalable optimization. Early feedforward networks reduced bi...
+
+[查看详细总结 →](summary_2608_19995v1.html)
+
+---
+
+
+### 114. Low-Power, Neuromorphic, Acoustic Anomaly Detection for Persistent Machine Monitoring
+
+**arXiv:** [2608.18341](https://arxiv.org/abs/2608.18341)
+**分类:** ml-theory | cs.NE, cs.AI, cs.ET, cs.LG, cs.SD, eess.AS
+
+**核心内容:** Persistent acoustic monitoring can detect machine faults without physical contact, but always-on inference is constrained by power, latency, and deployment complexity. We demonstrate autoencoder-based...
+
+[查看详细总结 →](summary_2608_18341v1.html)
+
+---
+
+
+### 115. Drive, Pack, Fly: The Travelling Thief Problem with Drone
+
+**arXiv:** [2608.16435](https://arxiv.org/abs/2608.16435)
+**分类:** ml-theory | cs.AI, cs.NE, math.OC
+
+**核心内容:** In collection operations, accumulating payload progressively slows the vehicle, imposing a cumulative penalty on routing efficiency. An onboard drone can offset this penalty by retrieving outlying ite...
+
+[查看详细总结 →](summary_2608_16435v1.html)
+
+---
+
+
+### 116. Adaptive Protection for Evolutionary Feature Construction in Symbolic Regression with Application to Credit Classification
+
+**arXiv:** [2608.14209](https://arxiv.org/abs/2608.14209)
+**分类:** ml-theory | cs.LG, cs.NE
+
+**核心内容:** Evolutionary feature construction has shown strong promise in symbolic regression by automatically discovering informative transformations of input features that enhance a simple base learner. However...
+
+[查看详细总结 →](summary_2608_14209v1.html)
+
+---
+
+
+### 117. Optically Writable Atomic Vapor Memory as a Substrate for Optical Reservoir Computing
+
+**arXiv:** [2608.17807](https://arxiv.org/abs/2608.17807)
+**分类:** other | physics.atom-ph, cs.NE
+
+**核心内容:** We present an optical random access memory (ORAM) based on warm cesium (Cs) atomic vapor and demonstrate its operation as the physical substrate of a reservoir computer. Information is stored in the h...
+
+[查看详细总结 →](summary_2608_17807v1.html)
+
+---
+
+
+### 118. Sharper Regret Bounds for Time-Varying Gaussian Process Bandits with Constant Exploration
+
+**arXiv:** [2608.18863](https://arxiv.org/abs/2608.18863)
+**分类:** ml-theory | stat.ML, cs.LG
+
+**核心内容:** We study Bayesian optimization in a time-varying environment where the unknown reward function evolves according to a Gaussian process drift model. Existing GP-UCB analyses in this setting typically r...
+
+[查看详细总结 →](summary_2608_18863v1.html)
+
+---
+
+
+### 119. QUASAR: A Quantum-Classical Neural Network for SAR Satellite Physical-Layer Authentication
+
+**arXiv:** [2608.20240](https://arxiv.org/abs/2608.20240)
+**分类:** ml-theory | cs.AI, cs.CR
+
+**核心内容:** X-band SAR satellites (8-12 GHz) play a critical role in disaster response, environmental monitoring, and military intelligence. Yet, they lack robust physical-layer authentication (PLA), a security l...
+
+[查看详细总结 →](summary_2608_20240v1.html)
+
+---
+
+
+### 120. Electronic Navigational Chart Change Classification
+
+**arXiv:** [2608.20218](https://arxiv.org/abs/2608.20218)
+**分类:** ml-theory | cs.AI
+
+**核心内容:** Electronic Navigational Charts (ENCs) are geospatial vector datasets used in maritime navigation systems that represent hydrographic and navigational information such as depths, navigational aids, tra...
+
+[查看详细总结 →](summary_2608_20218v1.html)
+
+---
+
+
+### 121. Ask Self, Ask Others: Relation Is All You Need
+
+**arXiv:** [2608.20172](https://arxiv.org/abs/2608.20172)
+**分类:** ml-theory | cs.LG
+
+**核心内容:** Attention directly derives normalized information flow from pairwise scores. We introduce Relation, an alternative token-mixing primitive that first organizes pairwise evidence into explicit Self and ...
+
+[查看详细总结 →](summary_2608_20172v1.html)
+
+---
+
+
+### 122. SAE-Xplainers: Rule-Based Feature Interpretation for Extreme Earth Events
+
+**arXiv:** [2608.20117](https://arxiv.org/abs/2608.20117)
+**分类:** ml-theory | cs.LG
+
+**核心内容:** The emergence of large-scale Weather and Climate (W&amp;C) datasets offers new opportunities for modeling extreme Earth events (ExEE) and their impacts using deep learning. However, their adoption in ...
+
+[查看详细总结 →](summary_2608_20117v1.html)
+
+---
+
+
+### 123. Structured Affinity for Unsupervised Visual Class-Incremental Memory in Deep Artificial Immune Networks
+
+**arXiv:** [2608.20104](https://arxiv.org/abs/2608.20104)
+**分类:** multimodal | cs.CV, cs.AI, cs.LG
+
+**核心内容:** Artificial immune networks (AINs) are naturally memory-forming systems, but conventional visual AINs often rely on flattened vector affinity that ignores spatial structure. This paper studies whether ...
+
+[查看详细总结 →](summary_2608_20104v1.html)
+
+---
+
+
+### 124. Gravity-aware partially calibrated absolute pose estimation from affine- or rotation-covariant features
+
+**arXiv:** [2608.20056](https://arxiv.org/abs/2608.20056)
+**分类:** multimodal | cs.CV
+
+**核心内容:** Inertial measurement units (IMUs) are now standard in most consumer devices, such as smartphones, drones, and extended reality (XR) headsets. By fusing visual and inertial data, localization systems g...
+
+[查看详细总结 →](summary_2608_20056v1.html)
+
+---
+
+
+### 125. Petri Net Description of Biological Neural Circuits for Fast Hardware Prototyping
+
+**arXiv:** [2608.20147](https://arxiv.org/abs/2608.20147)
+**分类:** other | cs.NE
+
+**核心内容:** Current approaches to simulating biological neural circuits, whether on general-purpose hardware or dedicated neuromorphic platforms, remain constrained by fixed-timestep numerical integration, hardwa...
+
+[查看详细总结 →](summary_2608_20147v1.html)
+
+---
+
+
+### 126. SeisEvo: Evolution of Seismic Data Reconstruction Algorithms by Agents
+
+**arXiv:** [2608.18272](https://arxiv.org/abs/2608.18272)
+**分类:** ml-theory | physics.geo-ph, cs.AI, cs.NE, eess.SP
+
+**核心内容:** Classical seismic data reconstruction relies on manually designed structural priors and iterative operators, whose coupled design space is far larger than manual trial and error can explore systematic...
+
+[查看详细总结 →](summary_2608_18272v1.html)
+
+---
+
+
+### 127. Language models suffer from a curse of ambiguity
+
+**arXiv:** [2608.15448](https://arxiv.org/abs/2608.15448)
+**分类:** multimodal | cs.CL, cs.LG, cs.NE
+
+**核心内容:** Large language models increasingly rely on sampling as a driver of their own improvement, making the fidelity of their learned distributions more critical than ever. Yet, not all distributions are equ...
+
+[查看详细总结 →](summary_2608_15448v1.html)
+
+---
+
+
+### 128. The Influence of Agent Models on the Complexity of Bus Routing
+
+**arXiv:** [2608.17733](https://arxiv.org/abs/2608.17733)
+**分类:** other | cs.CC, cs.MA
+
+**核心内容:** In bus routing, the task is to plan a bus route in a network with several agents, each of whom wants to travel from a starting point to a destination. A bus route should account for several factors, i...
+
+[查看详细总结 →](summary_2608_17733v1.html)
+
+---
+
+
+### 129. A Causal Inference Approach for Evaluating Diagnostic Tests and AI-Enabled Medical Devices: From Effect Modification to Information-Augmented Decision-Making
+
+**arXiv:** [2608.19501](https://arxiv.org/abs/2608.19501)
+**分类:** other | stat.ME, stat.ML
+
+**核心内容:** Diagnostic medical tests and devices provide useful information for evaluating the potential benefits and risks of therapeutic treatments. However, unlike treatments, their impact on health outcomes i...
+
+[查看详细总结 →](summary_2608_19501v1.html)
+
+---
+
+
+### 130. External Sinkhole Attack Detection in Large-Scale WSNs Using Metaheuristic Feature Selection
+
+**arXiv:** [2608.15274](https://arxiv.org/abs/2608.15274)
+**分类:** other | cs.CR, cs.NE
+
+**核心内容:** Sinkhole attacks in large-scale wireless sensor networks (WSNs) pose a serious threat to network functionality. This paper presents a metaheuristic feature selection for sinkhole attack detection usin...
+
+[查看详细总结 →](summary_2608_15274v2.html)
+
+---
+
+
+### 131. Wave-Based Bilateral Teleoperation between Nonlinear Manipulators with Direct Contact Force Feedback
+
+**arXiv:** [2608.20043](https://arxiv.org/abs/2608.20043)
+**分类:** robotics | eess.SY, cs.RO, math.DS, math.OC
+
+**核心内容:** We study bilateral teleoperation between nonlinear, multi-DOF robotic manipulators in the presence of constant communication delays. Unlike classical wave-transformation architectures that transmit a ...
+
+[查看详细总结 →](summary_2608_20043v1.html)
+
+---
+
+
+### 132. SABET-QA: Temporal Knowledge Graph Question Answering
+
+**arXiv:** [2608.20083](https://arxiv.org/abs/2608.20083)
+**分类:** multimodal | cs.CL, cs.AI
+
+**核心内容:** Question Answering over Temporal Knowledge Graphs (TKGQA) requires reasoning over time-sensitive facts, yet existing embedding-based methods struggle with multi-step queries due to single-pass reasoni...
+
+[查看详细总结 →](summary_2608_20083v1.html)
+
+---
+
+
+### 133. Phantom Gains: Auditing Self-Improvement Against a Measured Null
+
+**arXiv:** [2608.20290](https://arxiv.org/abs/2608.20290)
+**分类:** multimodal | cs.AI, cs.CL
+
+**核心内容:** Whether a language model has improved itself is increasingly judged not by mean accuracy but by which individual problems it gains and loses. Tracking these transitions means differencing two noisy es...
+
+[查看详细总结 →](summary_2608_20290v1.html)
+
+---
+
+
+### 134. DICS: Data-Informed Centroid Splitting for Decision Tree Classifiers
+
+**arXiv:** [2608.20258](https://arxiv.org/abs/2608.20258)
+**分类:** ml-theory | cs.LG, stat.ML
+
+**核心内容:** Decision tree-based models are widely used in machine learning due to their interpretability and strong empirical performance. However, training decision trees can be computationally expensive, partic...
+
+[查看详细总结 →](summary_2608_20258v1.html)
+
+---
+
+
+### 135. Transfer Learning in Nonparametric Regression with Deep ReLU Networks
+
+**arXiv:** [2608.20255](https://arxiv.org/abs/2608.20255)
+**分类:** ml-theory | stat.ML, cs.LG, stat.ME
+
+**核心内容:** This paper develops a general transfer learning framework for nonparametric regression with data consisting of multiple groups. Under the assumption that groups share a common structure along with gro...
+
+[查看详细总结 →](summary_2608_20255v1.html)
+
+---
+
+
+### 136. Adaptive Memory and Reflection Multi-Agent System for Medical Question Answering
+
+**arXiv:** [2608.19029](https://arxiv.org/abs/2608.19029)
+**分类:** multimodal | cs.AI, cs.CL, cs.MA
+
+**核心内容:** Accurate and responsible medical question answering (QA) is important in healthcare, where complex cases require factual knowledge and nuanced reasoning. Existing medical QA systems, typically based o...
+
+[查看详细总结 →](summary_2608_19029v1.html)
+
+---
+
+
+### 137. Adaptive Incentive Design in Dynamic Principal-Agent Problem via Kernelized Bandits
+
+**arXiv:** [2608.17614](https://arxiv.org/abs/2608.17614)
+**分类:** other | cs.MA, eess.SY
+
+**核心内容:** We consider the dynamic principal-agent problem under asymmetric information, wherein a principal sequentially designs contracts to incentivize an agent with unknown preferences and hidden actions. A ...
+
+[查看详细总结 →](summary_2608_17614v1.html)
+
+---
+
+
+### 138. DeltaMomentum: A Key-Value based Anisotropic Momentum Update via Delta Rule
+
+**arXiv:** [2608.19491](https://arxiv.org/abs/2608.19491)
+**分类:** multimodal | cs.LG, cs.CL, math.OC, stat.ML
+
+**核心内容:** Most modern optimizers form their momentum as an exponential moving average (EMA) of past gradients, forgetting every direction at one fixed rate. However, the inputs a deep network sees during traini...
+
+[查看详细总结 →](summary_2608_19491v1.html)
+
+---
+
+
+### 139. Causal Generalization of Continuous Treatment Effects under Covariate Shift
+
+**arXiv:** [2608.19383](https://arxiv.org/abs/2608.19383)
+**分类:** other | stat.ME, stat.ML
+
+**核心内容:** Average dose-response functions are widely used to summarize causal effects of continuous treatments, but most existing methods assume that the observed sample represents the target population. We stu...
+
+[查看详细总结 →](summary_2608_19383v1.html)
+
+---
+
+
+### 140. Learning Random Geometric Graphs Drawn in Probabilistic Metric Spaces
+
+**arXiv:** [2608.19082](https://arxiv.org/abs/2608.19082)
+**分类:** ml-theory | stat.ML, cs.LG, stat.AP
+
+**核心内容:** We present a new data-driven learning of a Random Geometric Graph (RGG) of a multivariate dataset, where the graph is drawn in a probabilistic metric space. This graph learning works for generic datas...
+
+[查看详细总结 →](summary_2608_19082v1.html)
+
+---
+
+
+### 141. Robust Risk Under Evolving Uncertainty: A Wasserstein Counterpart of the Entropic Value-at-Risk
+
+**arXiv:** [2608.19073](https://arxiv.org/abs/2608.19073)
+**分类:** ml-theory | cs.AI, cs.LG, stat.ML
+
+**核心内容:** An agent still learning its environment should be cautious while ignorant and bold once confident. The entropic value-at-risk captures this through a robust-optimization identity---a confidence level ...
+
+[查看详细总结 →](summary_2608_19073v1.html)
+
+---
+
+
+### 142. Scalable Amortized Variational Inference for Non-Poisson Buy-'Til-You-Die Models
+
+**arXiv:** [2608.19022](https://arxiv.org/abs/2608.19022)
+**分类:** other | stat.AP, stat.ME, stat.ML
+
+**核心内容:** Despite the wide variety of existing Buy-`Til-You-Die (BTYD) models, nearly all rely upon the convenient assumption of transactions following a Poisson process. As modern customer bases grow larger an...
+
+[查看详细总结 →](summary_2608_19022v1.html)
+
+---
+
+
+### 143. Dynamic Structural Causal Modeling for Sleep
+
+**arXiv:** [2608.20285](https://arxiv.org/abs/2608.20285)
+**分类:** ml-theory | cs.LG
+
+**核心内容:** The causal dynamics of sleep-disordered breathing are complex and vary across patient populations, hindering the development of targeted interventions. We learn dynamic causal graphs of sleep-disorder...
+
+[查看详细总结 →](summary_2608_20285v1.html)
+
+---
+
+
+### 144. Model Predictive Supervisory Control for Hierarchical and Distributed UAS Traffic Management
+
+**arXiv:** [2608.18353](https://arxiv.org/abs/2608.18353)
+**分类:** other | eess.SY, cs.MA
+
+**核心内容:** This work proposes a hierarchical Model Predictive Supervisory Control (MPSC) framework for multi-agent systems with shared resources. MPSC integrates receding-horizon cost-optimal control with Superv...
+
+[查看详细总结 →](summary_2608_18353v1.html)
+
+---
+
+
+### 145. Spike-based Belief Propagation in Nonlinear Dynamical Systems
+
+**arXiv:** [2608.19907](https://arxiv.org/abs/2608.19907)
+**分类:** ml-theory | cs.AI, cs.LG, cs.NE, eess.SY
+
+**核心内容:** This paper presents a Bayesian control framework that integrates spike-based dynamics with probabilistic inference for adaptive control. Bayesian inference is widely regarded as a core computational p...
+
+[查看详细总结 →](summary_2608_19907v1.html)
+
+---
+
+
+### 146. Growth Without Us: Machine Consumers, Corporate Circularity, and the Decoupling of GDP from Humanity after AGI
+
+**arXiv:** [2608.20231](https://arxiv.org/abs/2608.20231)
+**分类:** robotics | physics.soc-ph, cs.AI, cs.CY
+
+**核心内容:** The standard objection to full automation is demand-side: if humans earn nothing, who buys the output? This confuses an accounting role with a biological species. We model a post-AGI economy in which ...
+
+[查看详细总结 →](summary_2608_20231v1.html)
+
+---
+
+
+### 147. Physical-Support Confidence Sets for Highly Coherent Dictionaries
+
+**arXiv:** [2608.20295](https://arxiv.org/abs/2608.20295)
+**分类:** ml-theory | cs.LG, eess.SP, math.ST
+
+**核心内容:** Sparse pursuit after dictionary learning can yield a precise atom support even when its physical interpretation is not justified by the calibration data, especially for highly coherent dictionaries wh...
+
+[查看详细总结 →](summary_2608_20295v1.html)
+
+---
+
+
+### 148. SAGE: Ergodic Control for Autonomous and Adaptive Inspection of Subsea Infrastructure
+
+**arXiv:** [2608.19671](https://arxiv.org/abs/2608.19671)
+**分类:** robotics | cs.RO
+
+**核心内容:** Subsea Christmas Trees (XTs) are underwater structures that use valves for directing oil flow, needing constant inspection. But not every valve carries the same risk at the same time: a valve with a s...
+
+[查看详细总结 →](summary_2608_19671v1.html)
+
+---
+
+
+### 149. Graphical Design of Interpretable Architectures
+
+**arXiv:** [2608.18936](https://arxiv.org/abs/2608.18936)
+**分类:** ml-theory | cs.LG, cs.AI, cs.NE
+
+**核心内容:** Designing, implementing, and comparing interpretable architectures requires a formal language to represent them. The most common representations fall short in one of two ways. Symbolic equations give ...
+
+[查看详细总结 →](summary_2608_18936v2.html)
+
+---
+
+
+### 150. Biological-Hybrid Intelligence: A Conceptual Framework for Distributed Biological--Artificial Computation
+
+**arXiv:** [2608.18748](https://arxiv.org/abs/2608.18748)
+**分类:** other | cs.NE, cs.ET
+
+**核心内容:** Biological and artificial systems offer complementary forms of adaptation, learning, and computation, with advances in in-vitro neurotechnology increasingly enabling bidirectional coupling between the...
+
+[查看详细总结 →](summary_2608_18748v1.html)
+
+---
+
+
+## 📈 分类统计
+
+- 🤖 机器人: 28 篇
+- 🎨 多模态: 54 篇
+- 🧮 机器学习理论: 46 篇
+- 🔬 其他: 22 篇
+
+---
+
+**生成时间:** 2026/8/23 08:41:40
+

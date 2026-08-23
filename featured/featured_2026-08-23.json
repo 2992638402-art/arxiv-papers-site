@@ -1,0 +1,112 @@
+{
+  "date": "2026-08-23",
+  "papers": [
+    {
+      "id": "2608.17739v1",
+      "title": "Offline Multi-Agent Reinforcement Learning with a Physics-Informed World Model for Cooperative Mixed Traffic Control",
+      "summary": "This study investigates cooperative control of connected and automated vehicles (CAVs) at partially observable highway bottlenecks in mixed traffic, aiming to mitigate congestion without relying on complete global traffic states or online trial-and-error. We propose a physics-informed world model-based offline multi-agent reinforcement learning framework that reconstructs a physically interpretable global traffic state from local CAV observation-action histories, with coupled macroscopic-microscopic traffic dynamics providing physics-based supervision. A probabilistic ensemble world model learns traffic-state transitions and system rewards, while model disagreement quantifies epistemic uncertainty. Multi-step imagined rollouts with pessimistic rewards and uncertainty-driven truncation are then used for offline policy learning. Experiments in a SUMO-based on-ramp bottleneck using approximately $1\\times10^6$ offline transitions show that physics supervision improves state reconstruction and world-model prediction accuracy.",
+      "authors": [
+        "Lu Liu",
+        "Chi Xie",
+        "Xi Xiong"
+      ],
+      "published": "2026-08-18T13:03:51Z",
+      "updated": "2026-08-18T13:03:51Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.17739v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.20129v1",
+      "title": "Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving",
+      "summary": "Autonomous vehicles require robust perception and decision-making capabilities to operate in diverse and unseen scenarios. While reinforcement learning and rule-based methods can provide effective control and safety mechanisms, their performance may degrade in situations requiring contextual reasoning. Large Language Models (LLMs) have demonstrated strong capabilities in understanding multimodal information and generating contextual reasoning, however, their use for direct vehicle control can introduce latency and hallucination risks. To address these limitations, a hybrid framework is proposed. This system uses an orchestrator to coordinate PPO-trained reinforcement learning and PID control, with LLM common-sense reasoning applied throughout the framework. LLM reasoning is further employed iteratively to refine the RL reward function for dynamic driving environments. The proposed framework is evaluated in highly randomized CARLA scenarios under diverse environmental and traffic conditions. The results demonstrate the potential of integrating LLM-based reasoning with conventional autonomous driving methods while retaining structured control and safety mechanism.",
+      "authors": [
+        "Mehdi Azarafza",
+        "Faezeh Pasandideh",
+        "Ali Ehteshami Bejnordi",
+        "Stefan Henkler",
+        "Achim Rettberg"
+      ],
+      "published": "2026-08-20T14:56:15Z",
+      "updated": "2026-08-20T14:56:15Z",
+      "categories": [
+        "cs.MA",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.20129v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2608.18473v1",
+      "title": "A Locally Deployable Tool-Grounded LLM Multi-agent Framework for Automating Methane Emission Analysis and Reporting",
+      "summary": "Methane field monitoring requires the integration of sampling design, meteorological interpretation, sensor processing, plume analysis, visualization, and reporting, but these steps are often distributed across separate expert-driven workflows. We developed a locally deployable, tool-grounded large language model (LLM) multi-agent framework for our low-cost methane sensing and field-monitoring campaigns. The framework uses LLM agents as workflow coordinators that link field measurements, meteorological data, deterministic sensor-processing routines, Gaussian plume inversion, and report generation, rather than directly estimating methane concentrations or emissions. Extensive field deployments across diverse real-world environments (e.g., wastewater treatment facilities, landfills, and oil and gas sites) demonstrate that our framework can achieve 92.0\\% accuracy in workflow routing and parameter extraction, 85.0\\% success in emission-rate estimation and plume prediction, and 95.0\\% success in generating editable reports under practical operating conditions. Compared with manual and general-purpose LLM-assisted workflows, it reduced workflow time from hours-level to minutes-level, lowered manual coordination and prompt-engineering requirements, and retained traceable plume-based outputs. In addition, most processing can be performed locally, reducing exposure of sensitive facility and field data to cloud services. These results indicate that tool-grounded LLM coordination can reduce the time, labor, usability, and data-security barriers of methane field monitoring.",
+      "authors": [
+        "Yang Yan",
+        "Zifan Zhou",
+        "Xuan Wang",
+        "Erum Hassan",
+        "Bilguunzaya Mijiddorj",
+        "Jie Cao",
+        "Bin Li",
+        "Binbin Weng"
+      ],
+      "published": "2026-08-19T02:58:12Z",
+      "updated": "2026-08-19T02:58:12Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.18473v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.19557v1",
+      "title": "When Do LLM Agents Help? Deadline-Aware Mixed-Criticality Task Scheduling at the Autonomous-Vehicle Edge",
+      "summary": "Autonomous vehicles offload latency-sensitive perception tasks to nearby mobile edge computing (MEC) servers, where a missed safety-critical task is unsafe rather than merely degraded. Large language models (LLMs) are increasingly proposed as adaptive, explainable schedulers, yet evidence of when they help is scarce. We study deadline-aware, mixed-criticality scheduling on heterogeneous MEC servers, where time-critical (TC) tasks must be protected at a controlled cost to best-effort traffic, and ask whether a multi-agent LLM control layer improves on a strong heuristic. We answer in two steps. First we build the heuristic: a windowed contract-net auction that orders each admission window time-critical-first by earliest deadline and places tasks by earliest-finish-time. Across 60 instances on three topologies and 15 baselines under an identical online constraint, it attains a TC completion rate of 0.902, above every baseline (Holm-corrected p &lt; 0.001; best baseline 0.838) and at 0.87 of a CP-SAT upper bound. Second, we add the LLM control plane. A controlled decomposition traces the scheduler's advantage to two ordinary factors, the batching horizon and time-critical-first ordering; the auction, the per-window LLM policy, and online adaptation add nothing while the load is stationary, where the heuristic is already near-optimal. Under a mid-run surge of safety-critical tasks the picture changes, and the LLM control plane gains significantly over both the static heuristic and the bandit. LLM orchestration therefore earns its cost only when non-stationarity opens headroom a fixed policy cannot use. We report control-plane latency and rationale, and release all code and seeded instances.",
+      "authors": [
+        "Reza Zakerian"
+      ],
+      "published": "2026-08-20T01:55:40Z",
+      "updated": "2026-08-20T01:55:40Z",
+      "categories": [
+        "cs.DC",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.19557v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.18878v1",
+      "title": "DentAgent: Evidence-Centric Multi-Agent Coordination for Multimodal Dental Reasoning",
+      "summary": "Oral diseases affect billions of people worldwide, underscoring a pressing need for accurate and reliable dental assessment that integrates heterogeneous evidence from domain knowledge, radiographs, intraoral photographs, and 3D dental data. Most existing dental AI systems remain modality- or task-specific. Although recent vision-language models support flexible dental question answering, directly generated response leaves evidence implicit and untraceable. To address these limitations, we introduce DentAgent, an evidence-centric multi-agent framework, in which the Orchestrator coordinate five specialized agents spanning various modalities. Each specialist utilizes domain tools to convert observations into structured evidence records. The Evidence Blackboard manages these records as a shared evidence state, tracking coverage, gaps, and conflicts before response generation. This standardized evidence representation integrates isolated dental capabilities into a unified agentic workflow. Across four benchmarks, DentAgent demonstrates leading performance, even surpassing the senior specialists by 17.3 percentage points on multi-label diagnosis, which supports its value for broadly applicable and traceable multimodal dental reasoning, and highlights its potential as a technical foundation for population oral health assessment and management.",
+      "authors": [
+        "Zijie Meng",
+        "Xiwei Dai",
+        "Yixuan Tang",
+        "Jin Hao",
+        "Yang Feng",
+        "Fudong Zhu",
+        "Xiaoqiang Liu",
+        "Shaosheng Cao",
+        "Zuozhu Liu"
+      ],
+      "published": "2026-08-19T12:58:03Z",
+      "updated": "2026-08-19T12:58:03Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.18878v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2608.17739v1",
+    "2608.20129v1",
+    "2608.18473v1",
+    "2608.19557v1",
+    "2608.18878v1"
+  ]
+}
