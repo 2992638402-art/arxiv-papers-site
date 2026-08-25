@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="When does fusing hand-crafted knowledge with learned representations pay? A cost-normalized benchmark of stacking, substitution, and interference - arXiv 2608.21098 论文总结">
+    <title>When does fusing hand-crafted knowledge with learned representations pay? A cost-normalized benchmark of stacking, substitution, and interference | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>When does fusing hand-crafted knowledge with learned representations pay? A cost-normalized benchmark of stacking, substitution, and interference</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.21098<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-08-21</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ahmad AlMughrabi, Albert Clop, Benjamin Busam, Ricardo Marques, Petia Radeva</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.21098">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.21098">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Fusing prior knowledge with data-driven learning is attractive where data is scarce, yet no controlled account says when it helps, is redundant, or harms. We benchmark one fixed hand-crafted knowledge source, a pinned bank of Gabor targets injected only during training at $\sim$2% overhead, against data-driven alternatives (SimCLR, SimSiam, DINO, ImageNet transfer, augmentation, learned teachers) under one frozen recipe with fixed subsets: 13 datasets, 9 backbones, 150 to 1.28M images, 32--224,px, 2.5M--86M parameters ($\computeCells$ classification configurations over $\computeRuns$ runs, plus segmentation and detection transplants). Across the training-time combinations we measure, three outcomes recur (decision-level fusion differs). Different-\emph{currency} sources can stack: the prior composes with DeiT augmentation on attention backbones and is worth $+26$ points to ViT-B/16 at $224$,px, $+6.7$ at twice that budget. Same-currency sources substitute: against effective self-supervised pretraining, the combination never usefully exceeds the better single source. Fusing at full strength into an already-informed initialization interferes in proportion to what it carries: ImageNet transfer, $-15$ to $-17$ points, removed by a weaker auxiliary weight. Frozen-feature diagnostics measured on each source alone separate these outcomes retrospectively but do not predict them: a rule built on them calls one of nine unseen pairs. At a practitioner&#39;s own label budget, the frozen-feature gain predicts the end-to-end gain to within $0.17$ points across 30 cells and seven datasets; the underlying decomposition, $Δ= G + \readout(\mathrm{base})$, holds in sign on $\auditRate%$ of testable cells and is called an unseen backbone family&#39;s feature gain in advance. The project page is <a href="https://amughrabi.github.io/MomentAux">https://amughrabi.github.io/MomentAux</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.21098" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
