@@ -1,0 +1,143 @@
+{
+  "date": "2026-08-26",
+  "papers": [
+    {
+      "id": "2608.20129v2",
+      "title": "Multi-Agent Orchestration with the Common-Sense Reasoning Capabilities of LLMs for Autonomous Driving",
+      "summary": "Autonomous vehicles require robust perception and decision-making capabilities to operate in diverse and unseen scenarios. While reinforcement learning and rule-based methods can provide effective control and safety mechanisms, their performance may degrade in situations requiring contextual reasoning. Large Language Models (LLMs) have demonstrated strong capabilities in understanding multimodal information and generating contextual reasoning, however, their use for direct vehicle control can introduce latency and hallucination risks. To address these limitations, a hybrid framework is proposed. This system uses an orchestrator to coordinate PPO-trained reinforcement learning and PID control, with LLM common-sense reasoning applied throughout the framework. LLM reasoning is further employed iteratively to refine the RL reward function for dynamic driving environments. The proposed framework is evaluated in highly randomized CARLA scenarios under diverse environmental and traffic conditions. The results demonstrate the potential of integrating LLM-based reasoning with conventional autonomous driving methods while retaining structured control and safety mechanism.",
+      "authors": [
+        "Mehdi Azarafza",
+        "Faezeh Pasandideh",
+        "Ali Ehteshami Bejnordi",
+        "Stefan Henkler",
+        "Achim Rettberg"
+      ],
+      "published": "2026-08-20T14:56:15Z",
+      "updated": "2026-08-22T14:10:14Z",
+      "categories": [
+        "cs.MA",
+        "cs.CL",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.20129v2.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2608.23145v1",
+      "title": "First Demonstration of Multi-Agent LLM System for Million-Scale Optical Link Management in Global Production AIDCs",
+      "summary": "We present the first LLM-powered multi-agent system for autonomous fault management across millions of optical links in production AIDCs. Refined via SFT and continuous memory evolution, it achieves 97.7% F1 and over 60% fault-incident reduction, outperforming SOTA LLMs on a ten-week field data evaluation.",
+      "authors": [
+        "Jingyi Su",
+        "Yihao Zhang",
+        "Dianxuan Fu",
+        "Leiyan Fei",
+        "Juan Wang",
+        "Mengfan Dai",
+        "Qing Liu",
+        "Xiong Wu",
+        "Yufeng Jiang",
+        "Cheng Chen",
+        "Bowen Zhang",
+        "Peilong Wang",
+        "Xi Chen",
+        "Zonglong He",
+        "Hongchen Yu",
+        "Zhicheng Ye",
+        "Weisheng Hu",
+        "Qunbi Zhuge"
+      ],
+      "published": "2026-08-24T11:50:19Z",
+      "updated": "2026-08-24T11:50:19Z",
+      "categories": [
+        "cs.MA",
+        "physics.optics"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.23145v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.20099v1",
+      "title": "Reward-Guided Autoregressive Graph Generation for Efficient Multi-Agent Communication Topology Design",
+      "summary": "LLM-based Multi-Agent Systems (MAS) achieve strong performance on complex reasoning tasks by coordinating multiple agents, but at the cost of substantial token consumption. Recent work on automatic topology design, ARG-Designer, has reframed this problem as autoregressive graph generation. However, its training objective provides no explicit incentive for the model to generate sparse and efficient topologies. We address this limitation by introducing a Reward-Guided Autoregressive Graph Generation (RGA-Designer) inspired by Reinforcement Learning from Human Feedback (RLHF). We train a reward model that jointly captures task correctness and structural compactness, and then fine-tune the pretrained graph generator using the reward model as feedback. Our method preserves task accuracy at the level of ARG-Designer while reducing token consumption by an average of 20.5%.",
+      "authors": [
+        "Poomphob Suwannapichat",
+        "Boonyarit Changaival",
+        "Caesar Wu",
+        "Pascal Bouvry"
+      ],
+      "published": "2026-08-20T14:32:01Z",
+      "updated": "2026-08-20T14:32:01Z",
+      "categories": [
+        "cs.MA",
+        "cs.CL",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.20099v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2608.22130v1",
+      "title": "PropUQ-MAS: Propagation-Aware Uncertainty Quantification for LLM Multi-Agent Systems",
+      "summary": "LLM-based multi-agent systems (MAS) solve complex tasks through communication among role-specialized agents. However, inter-agent dependencies introduce reliability risks beyond isolated agent failures. For instance, errors in intermediate messages could be inherited and amplified by downstream agents. Existing uncertainty quantification (UQ) methods mainly target isolated responses or single-agent reasoning, and therefore fail to capture uncertainty propagation in MAS. To this end, we propose PropUQ-MAS, an error propagation-aware UQ framework that represents MAS execution as a communication-structured graph and estimates each step's reliability by combining local uncertainty with uncertainty inherited from upstream messages. Extensive experiments demonstrate that PropUQ-MAS consistently improves UQ in MAS, with average relative gains of +6.10% in AUROC and +47.58% in PRR.",
+      "authors": [
+        "Yaokun Liu",
+        "Yifan Liu",
+        "Daniel Yue Zhang",
+        "Ruichen Yao",
+        "Zelin Li",
+        "Dong Wang"
+      ],
+      "published": "2026-08-22T23:07:39Z",
+      "updated": "2026-08-22T23:07:39Z",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.22130v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2608.23329v1",
+      "title": "Thinking Beyond Videos: Unifying Video Reasoning and Deep Research for Open-World Video Agents",
+      "summary": "Open-world video understanding often requires a model to locate sparse visual evidence and acquire external knowledge that is absent from the video and its parametric memory. While Thinking-with-Videos enables active temporal perception and Deep Research supports multi-step information seeking, the two capabilities are typically developed in isolation. We introduce VideoRover, a unified Video Deep Research framework that iteratively coordinates video cropping, multimodal search, and webpage browsing. Given a video-question pair, VideoRover uses each tool result to select the next action, so localized video clips guide external retrieval and retrieved evidence triggers further video inspection and verification. To develop this capability, we construct an automated data curation pipeline, producing 26K verified SFT trajectories and 3K challenging RL instances. We also introduce VideoRover-Bench, a benchmark stratified by video duration and research difficulty. Experiments on VideoDR and VideoRover-Bench show that our VideoRover-8B-RL achieves performance comparable to proprietary models in the direct-answer setting without tool use while outperforming larger open-source models equipped with the same tool suite. Ablation studies and training dynamics further validate the complementary roles of active video grounding, external retrieval, and long-horizon reinforcement learning.",
+      "authors": [
+        "Wenqi Liu",
+        "Shijie Ma",
+        "Yunxiao Wang",
+        "Meng Liu",
+        "Qile Su",
+        "Han Liu",
+        "Bohan Hou",
+        "Xuanyu Zheng",
+        "Changyi Liu",
+        "Tianke Zhang",
+        "Haonan Fan",
+        "Kaiyu Jiang",
+        "Yingxin Li",
+        "Jiankang Chen",
+        "Xu Wang",
+        "Bin Wen",
+        "Tingting Gao",
+        "Han Li",
+        "Jianhua Yin",
+        "Yinwei Wei",
+        "Xuemeng Song"
+      ],
+      "published": "2026-08-24T14:42:23Z",
+      "updated": "2026-08-24T14:42:23Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.23329v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2608.20129v2",
+    "2608.23145v1",
+    "2608.20099v1",
+    "2608.22130v1",
+    "2608.23329v1"
+  ]
+}

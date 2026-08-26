@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JANUS: Online Jacobian-Aligned Infill for Black-Box Optimization - arXiv 2608.22862 论文总结">
+    <title>JANUS: Online Jacobian-Aligned Infill for Black-Box Optimization | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>JANUS: Online Jacobian-Aligned Infill for Black-Box Optimization</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.22862<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-08-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hongyuan Yu, Pufan Xu, Jiaojiao Yi, Yiding Tian, Mingrui Sun, Jiayuan Lu, Changyuan Wen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.22862">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.22862">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Population optimizers such as CMA-ES, DE, and multi-objective evolutionary algorithms drive search mainly through selection signals that are scalar or rank based: such a signal indicates that one candidate outperforms another, but not the local direction responsible for the improvement. JANUS (\emph{Jacobian-Aligned Newton-Unified Search}) is a plug-and-play infill module that extracts this missing local geometric signal without replacing the host optimizer. It estimates a local Jacobian from the recent evaluation trace; the same Jacobian yields both a damped Gauss--Newton exploitation candidate and a trace-preserving exploration metric, reserving a fraction of the host&#39;s per-generation candidate slots for geometry-guided infill rather than spending evaluations on top of the host&#39;s budget. Unlike MetaBBO methods, JANUS needs no offline training or task distribution, estimating this geometry on the fly from the current run alone, while the host keeps full control of selection, survival, covariance adaptation, and step-size control. Under same-protocol comparisons, JANUS improves the CMA-ES host on \textbf{11--15/16} BBOB functions across $d\in{30,100,500}$. It also attains the best mean error on \textbf{13 of the 16} functions at $d{=}500$ in the complete NN-BBO/MetaBBO baseline comparison, with no training cost, and yields a $936\times$ geometric-mean improvement over the host on a $d{=}1000$ BBOB subset. On structured and multi-objective tasks, JANUS gives the best mean cost on 1135-dimensional UAV path planning ($-12.8%$ vs.\ the strongest baseline), and it improves SMS-EMOA/AGE-MOEA2 hosts on 12/38 multi-objective tasks with zero significant regressions. Code is available at <a href="https://github.com/hongyuanyu/JANUS">https://github.com/hongyuanyu/JANUS</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.22862" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
