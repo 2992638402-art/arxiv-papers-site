@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Group-Shared Low-Rank Approximation for Mobile-Efficient Pointwise Convolutions in Large-Kernel CNNs - arXiv 2608.26069 论文总结">
+    <title>Group-Shared Low-Rank Approximation for Mobile-Efficient Pointwise Convolutions in Large-Kernel CNNs | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Group-Shared Low-Rank Approximation for Mobile-Efficient Pointwise Convolutions in Large-Kernel CNNs</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.26069<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-08-26</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hao Luo, Yiting Yang, Wenyi Zhao, Man Jiang, Zhijun Lin, Ghulam Mohiuddin, Ting Jiang, Kunming Luo, Zihao Zhang, Qingsen Yan, Guoqing Wang, Wei Dong, Peng Wang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.26069">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.26069">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Large-kernel Convolutional Neural Networks (CNNs) deliver remarkable performance in vision tasks by significantly expanding receptive fields, yet their quadratic parameter growth critically impedes storage-efficient edge deployment. While existing efficient architectures adopt parameter-efficient depthwise separable convolution backbones that leverage techniques like low-rank approximation and weight sharing to compress depthwise convolutions, we identify a critical oversight: pointwise convolutions dominate parameter volume (&gt;87% in models like RepLKNet-31B) and constitute the primary deployment bottleneck on resource-constrained edge devices. This results in prohibitive storage costs and severe memory-loading constraints on resource-limited devices (e.g., smartphones with 4-12 GB Random Access Memory (RAM)). To overcome this, we propose Channel Group-Shared (CGS) low-rank approximation, a novel Singular Value Decomposition (SVD)-based parameter-sharing strategy. CGS constructs a structured low-rank paradigm isomorphic to SVD decomposition, comprising shared (high-parameter-cost) down/up-projection matrices across channel groups within a layer and channel-group-specific (low-parameter-cost) scalable diagonal matrices. This group-sharing design achieves significant parameter reduction. Extensive experiments demonstrate that large-kernel CNNs (RepLKNet, ConvNeXt, SLaK) enhanced with CGS strike an empirically favorable balance between competitive performance and substantially reduced storage costs. Crucially, by alleviating storage constraints, reducing memory bandwidth pressure during loading, and minimizing model loading latency, CGS enables the feasible deployment of pre-trained large-kernel CNN models on edge devices, thereby bridging the gap between high-performance vision models and practical edge deployment.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.26069" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

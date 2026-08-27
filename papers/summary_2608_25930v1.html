@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Controlling for Omitted Variable Bias in Deep Neural Networks - arXiv 2608.25930 论文总结">
+    <title>Controlling for Omitted Variable Bias in Deep Neural Networks | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Controlling for Omitted Variable Bias in Deep Neural Networks</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.25930<br><strong>分类:</strong> stat.ME, cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-08-26</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Manuel Pfeuffer, Roshan Prakash Rane, Kerstin Ritter, Sonja Greven</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.25930">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.25930">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Control variables are widely used in statistical modelling to account for omitted variable bias of known confounders. However, they have largely been underexplored in deep learning. This is surprising, given that deep learning models encode image-inferable covariates, such as demographic variables, into their predictions when these covariates are correlated with the outcome---a form of omitted variable bias referred to as &#39;shortcut learning&#39;. While many existing confound-control or fairness methods try to restrict the correlation of such covariates with model predictions, we show that this fails to correct for omitted variable bias. We therefore propose a control variable approach for deep learning models, based on generalised additive modelling of the effects of model inputs and covariates. As flexible additive models can suffer from concurvity, we introduce an estimation procedure that refits the final layer of a pre-trained network to include covariate effects, using cross-fitting with ridge penalisation. We show how these effects can be orthogonalised with respect to covariates to exclude their mediated effects and that model predictions can be marginalised over the covariate distribution to control for their effect. This yields unbiased, interpretable predictions and offers flexibility to model the desired effects depending on the scientific or fairness objective. We verify our approach using simulated images, and demonstrate consistent estimation of true effects. Existing methods either require more data or fail to recover the true effects. We apply our method to real neuroimaging data with experimentally induced confounding, where it recovers prediction performance to near the level of a model trained on unconfounded data. Code is available at <a href="https://github.com/mpff/cocodeel">https://github.com/mpff/cocodeel</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.25930" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
