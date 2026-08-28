@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Temporal Sensitivity Analysis of Tessera Embeddings - arXiv 2608.27175 论文总结">
+    <title>Temporal Sensitivity Analysis of Tessera Embeddings | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Temporal Sensitivity Analysis of Tessera Embeddings</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.27175<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-08-27</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Julia Guerrero-Viu, Alex López-Cifuentes, Ignacio Pérez-Villar, Fabio Pacifici</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.27175">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.27175">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Many Earth Observation applications need land-use/land-cover maps that are both precise and frequently updated, yet the strongest Earth Observation foundation models build their embeddings from a full year of observations. We present a controlled study of the temporal sensitivity of Tessera, one of these leading foundation models, for land-use/land-cover mapping. Keeping the encoder frozen, we recompute its embeddings over varying observation windows, from a full year down to a single day. We use them as inputs to a linear probe and a UNet segmentation head, benchmarking both of them against from-scratch networks on LUCAS, DynamicEarthNet, and PASTIS-R datasets. We show that the value of the embeddings is task-dependent. Where classes are separated by phenology, as for the crop types of PASTIS-R, they reach a mean Intersection-over-Union of $58.3$, about $46%$ above the best from-scratch model. Where classes are temporally stable (e.g., forests in DynamicEarthNet and LUCAS), embedding-based and from-scratch models match only under full supervision. On both datasets, Tessera embeddings remain markedly more label-efficient. Degradation under shorter temporal windows is gradual and class-dependent. Contracting the window from one year to one month costs $39%$ of the segmentation accuracy on PASTIS-R but only $5%$ on DynamicEarthNet. Single-day embeddings still classify land cover in LUCAS at $3.4$ times the chance level. Our study shows that temporal coverage is therefore a tunable cost rather than a fixed prerequisite, opening regimes such as near-real-time mapping and faster land-use/land-cover refresh cycles.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.27175" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

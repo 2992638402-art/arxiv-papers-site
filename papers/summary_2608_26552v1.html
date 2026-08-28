@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hadamard Flattening and Gaussian Pooling Sketch for Least Squares with Coordinate-wise Guarantee - arXiv 2608.26552 论文总结">
+    <title>Hadamard Flattening and Gaussian Pooling Sketch for Least Squares with Coordinate-wise Guarantee | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Hadamard Flattening and Gaussian Pooling Sketch for Least Squares with Coordinate-wise Guarantee</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.26552<br><strong>分类:</strong> cs.DS, cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-08-27</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Zhao Song, Lichen Zhang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.26552">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.26552">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Randomized sketch-and-solve algorithms accelerate overconstrained $\ell_2$ regression by replacing the input with a smaller problem. Standard subspace embeddings guarantee that the cost of the regression is nearly preserved, but coordinate-wise accuracy of the solution is more delicate: we want the solution vector itself to be close to the optimal solution in $\ell_\infty$ norm. In particular, we want to find a vector $x&#39;\in \mathbb{R}^d$ such that $|x&#39;-x^*|<em>\infty\leq \fracε{\sqrt d}\cdot |Ax^\star-b|<em>2\cdot |A^\dagger|</em>{\rm op}$. Price, Song and Woodruff initiated the study of this problem and showed that the subsampled randomized Hadamard transform (SRHT) with $O(ε^{-2} d^{1+Θ(\sqrt{\log\log n/\log d})})$ rows achieves this guarantee. A subsequent work of Song, Ye, Yin and Zhang claimed to improve the row count to $O(ε^{-2}d\log^3 n)$. Unfortunately, their proof relies on an independence assumption that does not hold in general, and we exhibit an explicit instance on which it fails. To achieve a truly nearly-linear-in-$d$ row count, we introduce a new fast, dense randomized transform, which combines a randomized Hadamard flattening, a random permutation, and balanced, disjoint Gaussian pooling. Conditioned on the Hadamard-and-permutation stage, the sketched problem becomes an exact Gaussian regression in which the noise is independent of the entire sketched design; this conditional independence is exactly what the earlier argument was missing. Our sketch yields the $\ell</em>\infty$ guarantee with $m=O(ε^{-2}d\log d)$ rows, uses one Hadamard pass with a padded internal dimension $N=\widetilde{O}(n+ε^{-2}d^3)$, and is efficient to apply: the sketched pair $(SA, Sb)$ can be computed in $O(Nd\log N)=\widetilde{O}(nd+ε^{-2}d^4)$ time.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.26552" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
