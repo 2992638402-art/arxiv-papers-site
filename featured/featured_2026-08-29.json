@@ -1,0 +1,120 @@
+{
+  "date": "2026-08-29",
+  "papers": [
+    {
+      "id": "2608.25992v1",
+      "title": "ProgRouter: Online Progress-Guided Orchestration for Multi-Agent LLM Workflows under Quality-Cost Tradeoffs",
+      "summary": "Multi-agent large language model (LLM) workflows have emerged as a powerful paradigm for solving complex, open-ended tasks through collaborative reasoning among specialized LLM agents, but they incur substantial operating costs due to repeated LLM invocations and long-horizon context accumulation. Existing cascade routing methods make one-shot, query-level decisions and cannot adapt to the dynamic, state-dependent nature of multi-step workflows, in which the right LLM at each step depends on evolving task progress, remaining task difficulty, and cost-efficiency requirements. We present ProgRouter, an online progress-guided routing framework that adaptively selects LLM agents across workflow steps to preserve task-solving quality while adhering to time and cost budgets. ProgRouter introduces a multi-view task progress scorer that combines coarse workflow outcome regimes with fine-grained signals on subtask completion, progress trends, and workflow state quality. Then, a dual-path task progress predictor and an adaptive meta-gating mechanism estimate the progress gain for each candidate routed LLM. ProgRouter makes online step-wise routing decisions that balance progress gain, task time budgets, and long-term operating cost efficiency. Experiments on HumanEval Plus, MBPP, MATH-500, and ASQA, spanning agentic code generation, mathematical reasoning, and retrieval-augmented long-form question answering, demonstrate that ProgRouter reduces the operating cost relative to key baselines while maintaining strong task-solving performance.",
+      "authors": [
+        "Songyuan Li",
+        "Ahmed M. Abdelmoniem",
+        "Shiqiang Wang"
+      ],
+      "published": "2026-08-26T16:42:02Z",
+      "updated": "2026-08-26T16:42:02Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.25992v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2608.27406v1",
+      "title": "CLAP: Cross-Embodiment Video World Models are Zero-Shot Physical Simulators",
+      "summary": "State-of-the-art action-conditioned video models are typically restricted to a single robot embodiment, preventing them from leveraging the vast corpus of heterogeneous video data that contains rich signals for learning generalizable physics. To bridge this gap, we introduce CLAP, a framework for cross-embodiment action-conditioned video generation capable of being trained on diverse, internet-scale videos across human and robotic agents. CLAP is grounded in the insight that universal physical laws govern spatiotemporal dynamics regardless of the actor. However, cross-embodiment learning is non-trivial because action representations vary sharply across robot platforms and are typically absent in human videos. CLAP addresses this fundamental challenge through the following core contributions. First, CLAP reconciles disparate action spaces using end-effector poses, language instructions, and latent actions. Second, to resolve their individual limitations, CLAP introduces a curriculum-based cross-embodiment learning recipe that first learns foundational physical priors across unlabeled video data using latent actions and subsequently grounds them in end-effector action spaces for zero-shot deployment to real-world tasks. Crucially, CLAP approaches or surpasses state-of-the-art single-embodiment video models in challenging environments like DROID. These performance advantages compound via few-shot adaptation to establish a novel paradigm for training single-embodiment video world models. Ultimately, CLAP delivers the most comprehensive suite of action-conditioned video world models to date - spanning diverse action-conditioning spaces (end-effector, language, and latent) and robot morphologies (including cross-embodiment, DROID, Bridge, bimanual YAM robots, and G1 humanoids). We open-source all code and models. Project Website at https://omni-clap.github.io .",
+      "authors": [
+        "Kechen Liu",
+        "Ola Shorinwa"
+      ],
+      "published": "2026-08-27T17:35:10Z",
+      "updated": "2026-08-27T17:35:10Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.27406v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2608.27073v1",
+      "title": "SpatialCrafter: Single Image World Modeling with Generative 3D Proxies",
+      "summary": "Explorable image-to-scene generation is essential for applications in gaming, robotics, and virtual reality. Existing methods based on video diffusion model (VDM) commonly rely on incomplete conditioning signals such as sparse point clouds or 2D panoramas, leading to stochastic hallucinations, long-term drifts and suboptimal 3D consistency. We present SpatialCrafter, a novel two-stage framework that addresses these issues by introducing a global 3D proxy for high-fidelity image-to-scene generation. Specifically, we decompose the generation process into global proxy generation and appearance refinement. For proxy generation, we propose a Point-anchored Sparse Structure~(PaSS) Flow module that predicts a spatially aligned and geometrically consistent 3D proxy. For appearance refinement, we re-frame the VDM as a Generative Deferred Refiner which synthesizes high-frequency photorealistic details upon proxy-defined scene geometry. To better integrate the proxy with the pre-trained VDM, we introduce Parallel Geometry Injection and Proxy-Aware Corruption training strategies, which improve robustness to proxy artifacts without disrupting the pretrained generative manifold. Furthermore, as no suitable dataset exists for this explorable scene generation task, we construct a new large-scale dataset of 115K scenes. To the best of our knowledge, it is the first hybrid dataset for image-to-scene generation. Extensive experiments on both synthetic and real-world datasets show that SpatialCrafter outperforms state-of-the-art methods, mitigates long-term drift, and remains robust and consistent under rapid camera motion and extreme viewpoint changes. Code, models, and the newly constructed dataset will be publicly released. See more at https://fangchuan.github.io/SpatialCrafter/.",
+      "authors": [
+        "Chuan Fang",
+        "Lingteng Qiu",
+        "Yixun Liang",
+        "Rui Chen",
+        "Kunming Luo",
+        "Zhaohua Zheng",
+        "Tongyuan Bai",
+        "Feipeng Tian",
+        "Zilong Dong",
+        "Zihan Zhou",
+        "Ping Tan"
+      ],
+      "published": "2026-08-27T12:58:37Z",
+      "updated": "2026-08-27T12:58:37Z",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.27073v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2608.27338v1",
+      "title": "One Model, Many Minds: Unlocking Multi-Agent Synergy in a Single Agent via Mixture of Roles",
+      "summary": "Specializing Large Language Models (LLMs) toward distinct abilities underpins successes ranging from personalized assistants to multi-agent systems (MAS). Single-agent paradigms rely on pre-defined personas or steering vectors to induce specialization, yet they impose a single fixed specialization that fails to adapt to diverse queries. Conversely, MAS achieves dynamic multi-perspective problem solving by orchestrating agents with distinct text-based roles, but fusing these specializations requires multi-turn interactions that inflate context length and inference cost. To address these limitations, we propose Mixture of Roles (MoRe), which adaptively composes multiple specializations into a single steering vector for single-turn inference. Specifically, MoRe learns a diversified codeboox of steering vectors, each of which encodes a latent role. A query-aware router dynamically fuses the codebook into a steering vector that encompasses multiple roles. By steering the backbone LLM with the composed vector, MoRe enables multi-perspective specialization in a single-agent, single-turn inference process. The proposed MoRe can be efficiently trained via a three-stage SFT curriculum and GRPO post-training, while the backbone LLM remains frozen. Experiments across reasoning and personality benchmarks show that MoRe outperforms single-agent baselines by 2.2% on average, and achieves performance on par with MAS while reducing token cost by 20x.",
+      "authors": [
+        "Zhichen Zeng",
+        "Huiyuan Chen",
+        "Jingru Cheng",
+        "Juan Zha",
+        "Ming Liu",
+        "Ying Chen",
+        "Xiyuan Yang",
+        "Chaosheng Dong",
+        "Haiyang Zhang",
+        "Hanghang Tong"
+      ],
+      "published": "2026-08-27T16:40:28Z",
+      "updated": "2026-08-27T16:40:28Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.27338v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2608.26849v1",
+      "title": "LiveSim: Simulating Environment-Shaped Users in Multi-Agent Live-Stream Ecosystems",
+      "summary": "User behavior simulation with large language models~(LLMs) is increasingly used to support multi-agent ecosystem simulation. Existing simulators typically rely on static user profiles inferred from historical observations, which become inadequate in socially intensive environments such as live streaming where interaction dynamics continuously reshape user behavior. We propose \\textbf{LiveSim}, an LLM-based framework for live-stream ecosystem simulation. It represents users as editable behavioral hypotheses and progressively refines them through trajectory-grounded interactions, where discrepancies between simulated and observed trajectories reveal missing environmental shaping effects. These signals are further extracted as transferable environment-behavior patterns and accumulated in a collective behavioral memory to improve user-level behavioral fidelity and support ecosystem-level simulation. Experiments on real-world live-stream risk-control data validate the effectiveness of LiveSim in improving user-level behavioral fidelity and enabling ecosystem-level analysis of risk evolution and platform intervention effects.",
+      "authors": [
+        "Jiaqi Xu",
+        "Yiran Qiao",
+        "Jing Chen",
+        "Qiwei Zhong",
+        "Xiang Ao",
+        "Xueqi Cheng"
+      ],
+      "published": "2026-08-27T09:16:29Z",
+      "updated": "2026-08-27T09:16:29Z",
+      "categories": [
+        "cs.AI",
+        "cs.CY",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2608.26849v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2608.25992v1",
+    "2608.27406v1",
+    "2608.27073v1",
+    "2608.27338v1",
+    "2608.26849v1"
+  ]
+}
