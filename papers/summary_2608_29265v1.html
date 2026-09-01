@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Signed random Fourier features for fast density estimation with indefinite kernels - arXiv 2608.29265 论文总结">
+    <title>Signed random Fourier features for fast density estimation with indefinite kernels | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Signed random Fourier features for fast density estimation with indefinite kernels</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2608.29265<br><strong>分类:</strong> stat.CO, cs.LG, math.PR, stat.ML<br><strong>发布时间:</strong> 2026-08-29</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xie Wang, Nicolas Langrené, Wen Chen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2608.29265">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2608.29265">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Kernel density estimation (KDE) is one of the most fundamental statistical estimators of density functions. Its direct implementation on a dataset of $N$ points incurs an $\mathcal{O}(N^{2})$ computational cost, which is prohibitive for large-scale datasets. Kernel approximation techniques can be applied to bring the computational cost down to $\mathcal{O}(N)$. The random Fourier features (RFF) technique, based on sampling from the spectral density of the kernel function, has become popular to speed up kernel estimators for machine learning applications. Unfortunately, it is restricted to positive definite kernels, while the majority of kernel functions popular in KDE, such as the parabolic kernel, do not satisfy this property. To overcome this limitation, this article introduces the signed random Fourier features (SRFF) technique. It is a generalization of RFF compatible with indefinite kernels whose inverse Fourier transform is absolutely integrable. The motivation for introducing this method is to speed up KDE in the case of multivariate compact kernels, which are generally not positive definite. We detail how to implement SRFF for both product kernels and isotropic kernels. For the class of Kuttner-Golubov kernels $K(\boldsymbol{x}<em>{i},\boldsymbol{x}</em>{j})=(1-\left\Vert \boldsymbol{x}<em>{i}-\boldsymbol{x}</em>{j}\right\Vert ^α)^β\mathbf{1}<em>{{\left\Vert \boldsymbol{x}</em>{i}-\boldsymbol{x}<em>{j}\right\Vert \leq1}}$ where $\boldsymbol{x}</em>{i}\in\mathbb{R}^{d}$, $\boldsymbol{x}_{j}\in\mathbb{R}^{d}$, $α&gt;0$, $β&gt;0$, which includes the triangular, parabolic, biweight, triweight, and other kernel functions of interest for KDE as particular examples, we provide an explicit acceptance-rejection algorithm to sample from its signed spectral density. Our numerical tests on a dataset of one million points confirm the computational efficiency and accuracy of SRFF for large-scale KDE.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2608.29265" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
