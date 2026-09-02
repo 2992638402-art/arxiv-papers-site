@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Behavior--Realization Separation for Constrained Physical Human--Robot Interaction - arXiv 2609.00669 论文总结">
+    <title>Behavior--Realization Separation for Constrained Physical Human--Robot Interaction | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Behavior--Realization Separation for Constrained Physical Human--Robot Interaction</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.00669<br><strong>分类:</strong> cs.RO, eess.SY<br><strong>发布时间:</strong> 2026-09-01</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yongyan Cao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.00669">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.00669">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Physical human--robot interaction software often couples desired-behavior specification with constrained realization; we treat these as separate layers. A \emph{behavior layer} supplies a desired contact-port acceleration $a_k^{\mathrm{id}}=f_θ(e_k,\dot e_k,F_{h,k})$. A \emph{realization layer} converts it into constrained robot commands and reports total desired-versus-realized acceleration error instead of hiding it in saturation. A same-objective unconstrained counterfactual separates regularization from constraint intervention, while plant data expose model error. This paper implements a receding-horizon quadratic program realizing memoryless affine behaviors. Changing the behavior modifies objective coefficients through $(C_θ,G_θ)$ while the robot-command variable and feasible set remain unchanged. A planar study instantiates impedance and admittance; the same running layer accepts an impedance--admittance--impedance reassignment without reconstruction, under its existing rate limit. On a torque-controlled 7-DOF Franka FR3 in MuJoCo, the runtime freezes task-space dynamics per solve and enforces torque feasibility across its horizon. Under a sustained 20<del>N push, it holds a slack-relaxed workspace boundary to within approximately 0.1--0.2</del>mm, versus 4.4<del>cm (impedance) and 4.7</del>cm (admittance) overshoot from instantaneous clipping. A derated actuator budget then activates the torque constraint: horizon-wide enforcement keeps its frozen-model plan feasible to $2.1\times10^{-4}$<del>N$\cdot$m, whereas a first-step-only ablation plans up to 11.329</del>N$\cdot$m beyond budget; on the executed nonlinear plant, where both share the same local-model error, the gap is smaller but still favors horizon-wide enforcement (0.161 vs.\ 0.380~N$\cdot$m). These results are a focused proof of behavior--realization separation.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.00669" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
