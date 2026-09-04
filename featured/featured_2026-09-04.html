@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2026-09-04 arXiv 每日精选 TOP 5 论文">
+    <title>每日精选 TOP 5 | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">2026-09-04 精选 TOP 5</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="#" class="active">⭐ 精选论文</a></li>
+            <li><a href="../all-papers.html">📚 全部论文</a></li>
+            <li><a href="https://github.com/2992638402-art/arxiv-papers-site" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>🌟 arXiv 每日精选 TOP 5 - 2026-09-04</h1>
+<blockquote>
+<p>从 150+ 篇最新论文中精选出 5 篇最有价值的研究</p>
+</blockquote>
+<hr>
+<h2>1. ArcticSwarm: Deferring Early Consensus in Long-Horizon Multi-Agent Research</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.01870">2609.01870</a>
+<strong>分类:</strong> cs.MA
+<strong>作者:</strong> Soyoung Yoon, Boyi Liu, Yite Wang, Ruofan Wu, Canwen Xu et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Multi-agent systems have shown strong performance in domains with reliable verifiers such as coding, where multi-parallel candidate generation selected by a verifier is effective. However, such pipelines would not generalize to open-ended, long-horizon research tasks without a verifier. While majority voting or self-consistency is often used to reach consensus as a proxy verifier, parallel agents repeatedly explore the same evidence, while access to peers&#39; partial findings cause search to converge on an early candidate before alternatives are tested. We present ArcticSwarm, a multi-agent research architecture that separates evidence gathering from evidence integration. Subagents publish findings to a shared bulletin board, while gated isolation lets selected search tasks maintain their own prior, preventing early consensus. Structured review at three commitment boundaries enforce only confident candidates to be propagated. As a result, ArcticSwarm reaches 82.6% on the full BrowseComp-Plus set with the open-weight Qwen 3.5-27B model, compared with 78.8% without gated isolation and 74.5% additionally with structured review disabled, outperforming aligned baseline MiroFlow runs (70.6%). Extending to live-web BrowseComp, ArcticSwarm reaches 73.6% with GPT-5, which is well above the reported provider system (54.9%) and MiroFlow (63.4%). Overall, the results show that restricting peer reads during evidence gathering and strengthening commitment boundaries before a hypothesis is shared can broaden search and improve long-horizon multi-agent deep research.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.01870">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.01870">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>2. Codebook Agent: Amortized Topology Design for LLM Multi-Agent Systems</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.02264">2609.02264</a>
+<strong>分类:</strong> cs.AI, cs.LG, cs.MA
+<strong>作者:</strong> Jinxi Yu, Yubei Li, Eric Hanchen Jiang, Zhi Zhang, Dong Liu et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Adapting the communication topology of an LLM multi-agent system to each query improves both accuracy and efficiency, yet current designers treat this as conditional graph generation: a variational, autoregressive, or diffusion decoder searches the $N \times N$ adjacency space, and a graph-network proxy trained on utility and a structural cost such as edge count ranks the sampled candidates. We argue that this formulation is misaligned with the problem. Empirically, topologies that survive a reward filter collapse to about six distinct graphs even when the codebook capacity grows from 8 to 64; edge count is negatively correlated with measured token consumption (Pearson $r \approx -0.4$), so sparsifying the graph makes inference more expensive; and a message-passing scorer over agent-profile nodes is adjacency-invariant whenever agents share a profile---the default configuration of published benchmarks---so it cannot rank candidates at all in that regime. These three facts motivate Codebook Agent: a vector-quantized autoencoder compresses successful topologies into a query-independent 16-entry codebook; a reward-weighted MLP maps the query embedding to a distribution over codes; and an MLP proxy that reads the flattened adjacency, regressed on measured utility and per-task normalized token cost, reranks the top decoded candidates in a single batched forward pass. With no iterative search and no message passing at test time, Codebook Agent is the most accurate method on all six benchmarks we compare (84.6 average against 83.0 for the strongest prior designer), emits a topology in 2.4 ms, and uses 21.9--33.2% fewer LLM tokens.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.02264">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.02264">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>3. Toward Unified Robot Learning: Bridging Representation, Vision-Language-Action, and World Models</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.03927">2609.03927</a>
+<strong>分类:</strong> cs.RO
+<strong>作者:</strong> Shaunak A. Mehta, Ananya Hazarika, Haochen Zhang, Fan Yang, Ryo Moriyama et al.</p>
+<h3>📄 论文摘要</h3>
+<p>For robots to operate reliably in real-world environments, they need to perceive their surroundings, act, and reason about the consequences of those actions. Rapid progress in the domains of representation learning, VLA models, and world models has significantly enhanced the capabilities of robot learning systems, enabling robots to work in increasingly complex environments. However, these paradigms are typically developed in isolation, resulting in fragmented systems that struggle with generalization, long-horizon temporal reasoning and planning, and deployment in unstructured environments. In this survey, we present a unified perspective on robot learning by organizing the existing methods along three complementary axes: understanding through representation learning, acting through VLA models, and reasoning through world models. We introduce a structured taxonomy that captures key design choices in environment representation, policy learning, and predictive modeling, and summarize the recent progress in these domains. Beyond classifying the existing works, we analyze how these components interact, discuss common limitations, and highlight emerging trends towards more integrated systems. Through this lens, we identify the challenges in the domain of robot learning, including uncertainty quantification, out-of-distribution generalization, cross-embodiment transfer, long-context understanding, and long-horizon planning. We argue that these challenges arise not only from limitations within individual components but also from the lack of integration across perception, action, and reasoning. Building on this analysis, we outline future directions towards unified, physically grounded, and probabilistic robot learning to develop robust robotic systems that maintain consistent internal representations and support decision making over extended interactions in real-world environments.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.03927">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.03927">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>4. SV-WAM: An Efficient Surround-View World-Action Model for End-to-End Autonomous Driving</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.03602">2609.03602</a>
+<strong>分类:</strong> cs.CV, cs.RO
+<strong>作者:</strong> Jinyang Wang, Shiwei Li, Junjian Wang, Zhiqiang Deng, Jianbin Gao et al.</p>
+<h3>📄 论文摘要</h3>
+<p>World models (WMs) have demonstrated strong potential for end-to-end autonomous driving by learning predictive representations of future scene dynamics. However, generating future videos during inference introduces substantial computational overhead, leading many recent driving WMs to adopt a single front camera as input for efficient deployment. This design restricts spatial coverage in safety-critical maneuvers such as lane changes, merges, and turns. To address this limitation, we propose SV-WAM, a surround-view world-action model (WAM) that preserves full six-camera observations while maintaining efficient inference. SV-WAM leverages future-video prediction as dense training supervision for action learning within a shared generative model, rather than as an inference-time output. At the core of this design is an action-centered causal mask that prevents action tokens from attending to future-video tokens during joint action-video denoising. Consequently, the video branch can be discarded at deployment, enabling efficient action-only planning. Furthermore, we introduce a differentiable drivable-area compliance regularizer that penalizes vehicle-footprint corners approaching or crossing drivable boundaries, improving planning safety and boundary awareness. Extensive experiments on the closed-loop NAVSIMv2 benchmark and the open-loop nuScenes benchmark demonstrate that SV-WAM achieves state-of-the-art planning performance with low inference latency and competitive zero-shot transfer capability.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.03602">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.03602">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>5. Rethinking World Models for Safety-Critical Embodied Systems</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.03774">2609.03774</a>
+<strong>分类:</strong> cs.AI, cs.RO
+<strong>作者:</strong> Kailang Ma, Heye Huang, Inhi Kim, Kitae Jang</p>
+<h3>📄 论文摘要</h3>
+<p>World models have progressed from compact latent dynamics to generative, controllable, and interactive simulators of embodied environments. However, high predictive likelihood and visual fidelity do not necessarily ensure that a model preserves the evidence required for safe decision-making. This perspective identifies three structural mismatches in current world modeling: likelihood versus risk, prediction versus intervention, and finite-horizon prediction versus accumulated consequences. We propose the Risk-Informed World Model (RIWM) as a decision-centric research direction for safety-critical embodied systems. RIWM organizes world modeling around consequences, intervention, epistemic uncertainty, and recoverability, and integrates four interdependent capabilities: decision-relevant representation, counterfactual reasoning, safety-critical episodic memory, and runtime safety assurance. It distinguishes physical, social, and operational consequences while using epistemic uncertainty to qualify the evidence supporting action. We further discuss open challenges in identifying consequential futures, validating counterfactual reasoning, maintaining revisable safety memories, translating learned consequences into executable constraints, and determining when evidence is sufficient to act. This perspective argues that future world models should move beyond predicting likely futures toward identifying which futures matter, revising judgments through experience, and recognizing when to act, revise, sense, defer, or abstain.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.03774">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.03774">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>生成时间:</strong> 2026/9/4 09:58:53</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="../all-papers.html" class="btn">浏览全部 150 篇 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

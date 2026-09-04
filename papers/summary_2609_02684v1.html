@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="H3DNAS: Hardware-Aware ONNX-Native 3D Point Cloud Model Compression - arXiv 2609.02684 论文总结">
+    <title>H3DNAS: Hardware-Aware ONNX-Native 3D Point Cloud Model Compression | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>H3DNAS: Hardware-Aware ONNX-Native 3D Point Cloud Model Compression</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.02684<br><strong>分类:</strong> cs.LG, cs.AR, cs.NE<br><strong>发布时间:</strong> 2026-09-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Anchit Mulye, Rhythm Baghel, Sujay Kumar Ingle, Hardik Jain</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.02684">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.02684">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Deploying 3D point cloud models on edge hardware such as the NVIDIA Jetson Orin Nano is severely constrained by compute and memory budgets. Existing compression methods require access to the model&#39;s original source code, rendering them inapplicable to the Open Neural Network Exchange (ONNX) binaries commonly distributed by vendors and model repositories. We present \textbf{H3DNAS}, a hardware-aware model compression framework that operates directly on ONNX computational graphs without requiring original source code, architecture class definition, or gradient access during search. H3DNAS makes three contributions: (1) a \textbf{Channel Dependency Graph (CDG)} that classifies ONNX operators into four constraint classes and formally establishes that the free parameter fraction $ρ_f$ is topological invariant, a provable compression ceiling computable in $\mathcal{O}(|V|+|E|)$; (2) a \textbf{Two-Stage Hierarchical Search} that prunes candidate architectures by $L_1$-importance channel selection, ranks them by output fidelity as a zero-shot label-free proxy, and applies GhostConv structural mutation to Pareto-optimal candidates; and (3) the \textbf{first source-code-free compression pipeline for 3D point cloud models}, operating entirely via ONNX graph surgery with no original architecture definition required. On ModelNet40, H3DNAS reduces the number of parameters in PointNet, PointNet++, and PointMLP by $65.5%$, $43.2%$, and $49.1%$, respectively, while achieving $1.99\times$, $1.29\times$, and $1.67\times$ inference speedups with negligible loss in accuracy. The source code is publicly available\footnote{<a href="https://github.com/ClarityLab-Org/h3dnas%7D">https://github.com/ClarityLab-Org/h3dnas}</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.02684" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
