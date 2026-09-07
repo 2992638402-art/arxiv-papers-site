@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An Analysis of Self-supervised Pre-training with Dependent Samples - arXiv 2609.05031 论文总结">
+    <title>An Analysis of Self-supervised Pre-training with Dependent Samples | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>An Analysis of Self-supervised Pre-training with Dependent Samples</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.05031<br><strong>分类:</strong> stat.ML, cs.LG<br><strong>发布时间:</strong> 2026-09-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Maximilian Fleissner, Debarghya Ghoshdastidar, Samory Kpotufe</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.05031">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.05031">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Self-supervised learning relies on so-called data augmentations $φ(x)$ of unlabeled datapoints $x$ --- for example, masking random pixels in an image $x$ --- that should leave the label of $x$ invariant and are often used to learn a lower-complexity invariant subspace $\cal V$ for downstream tasks. In practice, such augmentations ${ φ_l(x_i) }$ are pooled together to learn $\cal V$, despite obvious inter-dependencies between different augmentations $φ_l(x), φ_k(x)$ of the same datapoint $x$. However, theoretical works on the subject typically consider procedures that avoid such dependencies, and are therefore limited to operate on smaller subsets of independent data. We show in this work that pooling augmentations together, despite inter-dependencies, is a better alternative than the baseline of partitioning the data into subsets of independent data. More precisely, in the context of estimating $\cal V$, the statistical estimation error bounds for pooling are never worse than the partitioning baseline, and in some cases --- such as masking or noise injection-based augmentations over a shallow neural network --- naive pooling leads to faster rates in terms of the number of augmentations. The benefits of pooling are particularly prominent when the correlations between different augmentations $φ_l(x), φ_k(x)$ have mild effects on estimation or help decrease the estimation variance. The analysis, therefore, yields new insights into the success of pooling augmented samples in self-supervised pre-training, and provides an intuition behind the practical preference towards using many augmentations.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.05031" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

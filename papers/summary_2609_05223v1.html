@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FedDRAW: Federated Dual Reputation Annealing Weighting for Heterogeneous Multi-Institutional Chest Radiograph Classification - arXiv 2609.05223 论文总结">
+    <title>FedDRAW: Federated Dual Reputation Annealing Weighting for Heterogeneous Multi-Institutional Chest Radiograph Classification | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>FedDRAW: Federated Dual Reputation Annealing Weighting for Heterogeneous Multi-Institutional Chest Radiograph Classification</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.05223<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-09-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Maryam Moradpour, Anne-Christin Hauschild</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.05223">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.05223">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Artificial intelligence models are promising for medical diagnosis, but they require large numbers of unbiased data, which in medicine are distributed across hospitals and cannot be centralized to protect patient privacy. Federated Learning (FL) addresses this, since hospitals train one shared diagnostic model while patient data remain local. Training proceeds in communication rounds, in which each hospital trains the shared model locally and returns it to the server for merging by weighted average. This aggregation weight determines whose institutional knowledge shapes the result. Federated averaging (FedAvg) sets it in proportion to local sample count, so a small but informative hospital is permanently assigned a small influence, andl argest clients could dominate the global model even when they are less informative. We propose Federated Dual Reputation Annealing Weighting (FedDRAW), a server-side aggregation method that combines a data-size prior with the cosine similarity between client and global parameters under two coupled annealing schedules. An inner schedule shifts client reputation from the size prior towards similarity. An outer, deferred annealing schedule on the softmax inverse temperature keeps the weighting selective in the early and middle rounds and relaxes it to uniformity at convergence. We evaluate FedDRAW on 12 simulated client-partition scenarios of two chest radiograph datasets (CheXpert and ChestMNIST), against seven federated baselines under identical local training settings. FedDRAW achieved the highest average rank among all eight methods under both AUC and the geometric mean (GM) of sensitivity and specificity, which a Friedman test with Nemenyi post-hoc analysis confirmed to be a statistically significant difference between the methods. Scheduling two signals, rather than fixing the weights by sample count alone, could enable less biased diagnostic models.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.05223" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

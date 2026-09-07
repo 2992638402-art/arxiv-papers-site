@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2026-09-07 arXiv 每日精选 TOP 5 论文">
+    <title>每日精选 TOP 5 | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">2026-09-07 精选 TOP 5</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="#" class="active">⭐ 精选论文</a></li>
+            <li><a href="../all-papers.html">📚 全部论文</a></li>
+            <li><a href="https://github.com/2992638402-art/arxiv-papers-site" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>🌟 arXiv 每日精选 TOP 5 - 2026-09-07</h1>
+<blockquote>
+<p>从 150+ 篇最新论文中精选出 5 篇最有价值的研究</p>
+</blockquote>
+<hr>
+<h2>1. First Things First: Teaching LLM-Based Agents to Prioritize Must-Haves before Nice-to-Haves</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.05224">2609.05224</a>
+<strong>分类:</strong> cs.CV
+<strong>作者:</strong> Tianjie Ju, Xinyue Xu, Wanxuan Sun, Lingxiao Diao, Gongshen Liu et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Recent progress in multimodal large language models (MLLMs) has fueled significant enthusiasm in their potential to act as autonomous agents for real-world tasks. However, scenarios requiring agents to fulfill users&#39; complex, structured requirements remain largely underexplored. In this work, we examine reasoning tasks under three distinct requirement scenarios: (i) Must-have requirements uniquely determine a unique feasible solution; (ii) Multiple answers satisfy the must-have requirements and are prioritized via the nice-to-have requirements; and (iii) No candidate solution satisfies the must-have requirements, in which case the agent should abstain from generating a response. We evaluate state-of-the-art MLLMs on 3,649 carefully constructed problems that reflect realistic service scenarios, including e-commerce, booking, and map-based or ride-hailing. Our evaluation reveals that existing MLLMs exhibit catastrophic failures in all scenarios. They frequently misinterpret task requirements, violate must-have requirements, and produce invalid solutions. To address this critical gap, we propose First Things First Reinforcement Learning FTF-rl that explicitly optimizes reasoning over multi-priority user requirements. Experimental results show that our method substantially improves the task success rate compared to strong baselines. Moreover, FTF-rl yields general effectiveness on popular logical and mathematical reasoning tasks, including LogicVista, MathVision, and InfoQA. Our findings suggest that enhancing requirement-aware reasoning capability provides a simple yet effective pathway to improve generalization of MLLM agents. Code and dataset are available at <a href="https://github.com/claire62/FTF-RL">https://github.com/claire62/FTF-RL</a>.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.05224">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.05224">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>2. SENTINEL-RL: Offloading Topological Reasoning from LLM Agents in the Security Operations Center</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.04159">2609.04159</a>
+<strong>分类:</strong> cs.CR, cs.AI
+<strong>作者:</strong> Uday Vallabhaneni, Cassie L. Cagwin, David J. Wild</p>
+<h3>📄 论文摘要</h3>
+<p>Large language model (LLM) agents are increasingly proposed as autonomous SOC analysts, but two limitations make them unreliable at enterprise scale: a finite context window cannot hold a multi-thousand-host authentication graph, and free-form generation offers no guarantee that a recommended containment action is consistent with the topology it operates on. We present Sentinel-RL, an agentic-SOC architecture that decouples topological reasoning from semantic reasoning: a heterogeneous graph attention encoder summarizes the live authentication subgraph into a fixed-dimensional state, a Proximal Policy Optimization (PPO) policy maps this state to a constrained set of investigative actions, and an LLM agent loop is restricted to consuming the policy&#39;s recommendations and producing analyst-readable narratives gated by a critic. We instantiate the system on the LANL Comprehensive, Multi-Source Cyber-Security Events dataset and the Indiana University Quartz HPC cluster, reporting four results: (i) a two-phase CREATE ingestion pattern loads a 24M-edge authentication subgraph into Neo4j in 14.2 minutes on a single 32-core node, roughly 24x faster than the canonical MERGE-based pipeline; (ii) a sliding-window alert engine reliably trips a 25-event/10-second threshold in &lt;=2.5 s across 50 trials; (iii) PPO training over 200 iterations converges to a mean episodic return of 8.74+/-0.31, with held-out precision of 0.91 and recall of 0.87 on labeled red-team events; and (iv) the integrated containment loop completes a full detect-investigate-recommend-human-approve cycle in a median of 6.3 s. We contribute a reusable engineering pattern (the hot-node deadlock workaround), a portable HPC deployment pattern (anchor-node co-location), and an enterprise-readiness analysis covering false-positive economics, reversibility guarantees, audit compliance, and the human-approval boundary.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.04159">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.04159">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>3. Online Change-point Detection for Cooperative Multi-Agent Reinforcement Learning</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.05298">2609.05298</a>
+<strong>分类:</strong> cs.MA, cs.LG
+<strong>作者:</strong> Fatemeh Saberi Khomami, Julita Vassileva</p>
+<h3>📄 论文摘要</h3>
+<p>Cooperative multi-agent reinforcement learning (MARL) systems rely on past experience for learning coordinated behaviour, but this experience may become unreliable if the environment or task objective changes during training. In such cases, agents first need a way to recognize that the situation has changed before deciding how to adapt. This paper studies online change-point detection for cooperative MARL using reward-derived signals. We propose \emph{Patterns of Past Rewards} (PPR), a lightweight algorithm-agnostic detector that smooths agents&#39; return streams, highlights recent changes, and applies a statistical drift detector to flag significant shifts. We evaluate PPR in a custom Speaker-Listener environment based on the Multi-Agent Particle Environment under two controlled non-stationarity scenarios. Our results show a trade-off between detection speed and alarm stability. A smoothed-return baseline detects earlier but produces many repeated alarms. In contrast, applying the detector directly to raw returns often misses the shift. PPR offers a more balanced approach by limiting redundant detections while still identifying the controlled shifts. These findings highlight PPR as a lightweight, reward-based monitoring tool that enables cooperative MARL systems to reliably identify major changes during training.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.05298">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.05298">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>4. Codebook Agent: Amortized Topology Design for LLM Multi-Agent Systems</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.02264">2609.02264</a>
+<strong>分类:</strong> cs.AI, cs.LG, cs.MA
+<strong>作者:</strong> Jinxi Yu, Yubei Li, Eric Hanchen Jiang, Zhi Zhang, Dong Liu et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Adapting the communication topology of an LLM multi-agent system to each query improves both accuracy and efficiency, yet current designers treat this as conditional graph generation: a variational, autoregressive, or diffusion decoder searches the $N \times N$ adjacency space, and a graph-network proxy trained on utility and a structural cost such as edge count ranks the sampled candidates. We argue that this formulation is misaligned with the problem. Empirically, topologies that survive a reward filter collapse to about six distinct graphs even when the codebook capacity grows from 8 to 64; edge count is negatively correlated with measured token consumption (Pearson $r \approx -0.4$), so sparsifying the graph makes inference more expensive; and a message-passing scorer over agent-profile nodes is adjacency-invariant whenever agents share a profile---the default configuration of published benchmarks---so it cannot rank candidates at all in that regime. These three facts motivate Codebook Agent: a vector-quantized autoencoder compresses successful topologies into a query-independent 16-entry codebook; a reward-weighted MLP maps the query embedding to a distribution over codes; and an MLP proxy that reads the flattened adjacency, regressed on measured utility and per-task normalized token cost, reranks the top decoded candidates in a single batched forward pass. With no iterative search and no message passing at test time, Codebook Agent is the most accurate method on all six benchmarks we compare (84.6 average against 83.0 for the strongest prior designer), emits a topology in 2.4 ms, and uses 21.9--33.2% fewer LLM tokens.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.02264">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.02264">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>5. CoLMIN: LLM-based Multi-Decision Path Negotiation for Cooperative Autonomous Driving</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2609.04807">2609.04807</a>
+<strong>分类:</strong> cs.RO, cs.CV
+<strong>作者:</strong> Zhe Huang, Zhaoxin Fan, Shuo Wang, Wenjun Wu, Xuan Zhao et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Multi-vehicle cooperative autonomous driving enhances the safety and reliability of autonomous driving systems through information sharing among connected vehicles, demonstrating significant potential for improving traffic safety. LLM-based approaches leverage strong reasoning capabilities of LLMs to enable effective inter-vehicle negotiation and improve cooperative driving performance. However, driving decisions in complex traffic scenarios are inherently multi-solution in nature. As a result, existing negotiation-based methods often converge prematurely to suboptimal solutions, hindering consensus formation and limiting the practical deployment of cooperative autonomous driving systems. To address this challenge, we propose CoLMIN, the LLM-based multi-decision path negotiation framework for cooperative autonomous driving, achieving stable decision consensus through multi-decision path negotiation and reflective reasoning. To achieve stable and high-quality consensus in cooperative autonomous driving, CoLMIN consists of three key components: (i) an LLM-based Multi-Intent Negotiation module (LMin), which adopts a Negotiator-Evaluator paradigm and generates multiple candidate driving intentions for joint evaluation; (ii) an Evaluation-based Shallow Reflection Module (ESRM), which analyzes negotiation outcomes and provides feedback to guide subsequent negotiations, thereby accelerating consensus formation; and (iii) an LLM-based Deep Reflection Module (LDRM), which performs long-term reflection over negotiation histories to mitigate cognitive fixation and prevent the system from converging to suboptimal solutions. Experimental results in the CARLA simulation environment demonstrate that CoLMIN significantly outperforms existing methods in challenging interactive driving scenarios.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2609.04807">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2609.04807">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>生成时间:</strong> 2026/9/7 09:44:46</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="../all-papers.html" class="btn">浏览全部 150 篇 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
