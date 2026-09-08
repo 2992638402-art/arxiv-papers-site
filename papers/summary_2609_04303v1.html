@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Abstraction Agent - arXiv 2609.04303 论文总结">
+    <title>Abstraction Agent | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Abstraction Agent</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.04303<br><strong>分类:</strong> cs.MA, cs.AI, cs.CL, cs.GT<br><strong>发布时间:</strong> 2026-09-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Boning Li, Longbo Huang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.04303">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.04303">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Information abstraction, which groups strategically similar private states into a tractable number of buckets, is essential for scaling game-solving algorithms to large imperfect-information games. Constructing effective abstractions, however, has traditionally required domain-specific evaluators such as hand-strength calculators or equity estimators, which demand expert knowledge and engineering effort and are unavailable for most less-studied games. We propose the Abstraction Agent, a zero-shot pipeline that uses a large language model (LLM) to discover continuous strategic features from a natural-language game description, score private states on these features, and cluster them into abstraction buckets, without any game-specific evaluator, training data, or game-tree traversal during abstraction construction. The pipeline runs in four phases: feature discovery with calibration anchors, batched private-state scoring, correlation-based feature selection, and $k$-means clustering. The resulting abstractions reduce lifted-strategy exploitability by up to 62% relative to an expected-hand-strength baseline on heads-up no-limit Texas hold&#39;em (HUNL) turn endgames, and beat a scalar rank baseline at every granularity on ROVER Trials, an original game absent from any pretraining corpus. Beyond these quantitative benchmarks, the pipeline transfers with unchanged prompts to four-card Pot-Limit Omaha, HUNL preflop and flop, and Riichi Mahjong, where the discovered features track each game&#39;s recognized strategic concepts. This is structured knowledge elicitation: converting implicit strategic knowledge in LLM parameters into explicit numerical features for downstream algorithmic computation. The code is available at <a href="https://github.com/lbn187/AbstractionAgent">https://github.com/lbn187/AbstractionAgent</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.04303" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
