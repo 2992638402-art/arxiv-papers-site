@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Selective Posterior Margin Regularization for Forward-Corrected Classification - arXiv 2609.05859 论文总结">
+    <title>Selective Posterior Margin Regularization for Forward-Corrected Classification | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Selective Posterior Margin Regularization for Forward-Corrected Classification</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.05859<br><strong>分类:</strong> cs.LG, cs.CV, stat.ML<br><strong>发布时间:</strong> 2026-09-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Zexing Zhang, Jichao Li, Tianyang Lei, XiongYi Lu, Yang Kewei</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.05859">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.05859">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Learning with class-conditional label noise often relies on a transition model from latent clean classes to observed annotations. Forward correction embeds this transition in the likelihood, yet finite-sample networks may still memorize corrupted labels. The corrected likelihood also induces a reverse posterior over the clean classes that could explain each annotation. When its leading class differs from the annotation, the model and transition matrix provide evidence against that annotation, but the leading alternatives can remain nearly tied. We introduce Selective Posterior Margin Regularization (SPMR), which preserves the Forward objective and converts this disagreement into a graded update on the clean classifier. SPMR selects the leading reverse-posterior class, scales a detached pairwise margin by the separation between the two leading posterior classes, and assigns correspondingly little influence to diffuse conflicts. The gap factorizes into transition- adjusted pairwise separation and the posterior mass carried by the leading pair. The active margin follows the locally minimum-norm logit direction that enlarges the selected pairwise margin. Across five known-transition benchmarks, SPMR improves full-length Forward by 2.5-7.0 percentage points and remains 0.7-2.5 percentage points above Forward with Mixup and early stopping. Matched interventions support distinct gains from the posterior-space coefficient, transition-adjusted target, and pairwise action. The same design transfers to estimated transitions, human annotations, architectural changes, and stronger Forward recipes. The formulation uses latent-class evidence already available inside Forward correction without promoting every posterior conflict to a corrected label.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.05859" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

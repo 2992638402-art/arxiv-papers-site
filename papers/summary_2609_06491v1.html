@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diffuse2Seg: Diffusion Models Can Segment Anything Without Supervision - arXiv 2609.06491 论文总结">
+    <title>Diffuse2Seg: Diffusion Models Can Segment Anything Without Supervision | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Diffuse2Seg: Diffusion Models Can Segment Anything Without Supervision</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.06491<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-09-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Christoph Hümmer, Joachim Sicking, Fabian Hüger, Hanno Gottschalk</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.06491">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.06491">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Open-world entity segmentation aims to predict masks for arbitrary objects across domains and at multiple granularities, from parts to whole objects. In this setting, SAM sets a strong standard: trained on SA-1B, comprising 11M images and over 1B carefully annotated masks, it achieves remarkable zero-shot performance. Collecting such labels is expensive and time-consuming, however, which limits how far this recipe can scale. Text-to-image diffusion models offer a way around this. Their intermediate features transfer well across perception tasks, and since object structure emerges as the model denoises a noise sample into an image conditioned on a text prompt, that structure is already encoded in these representations. They can therefore be exploited for open-world entity segmentation without retraining or supervision. Building on this observation, we introduce Diffuse2Seg, which repurposes generative diffusion models for automatic mask generation by propagating a grid of point prompts through their self-attention representations in an edge-preserving manner. Diffuse2Seg produces multi-granular instance masks and outperforms prior state-of-the-art label generators by 4.3-7.1 p.p. in AR_1000 across five domains. Training an instance segmentation model on these generated masks advances detector-free open-world segmentation by 7.4 and 7.7 p.p. on &quot;things&quot; and &quot;stuff+things&quot; datasets and surpasses the detector-based UnSAM on &quot;stuff+things&quot; by 2.1 p.p. in AR_1000. Finally, we show that a model trained on Diffuse2Seg labels provides a strong initialization for semi-supervised learning, outperforming its fully supervised counterpart with already 5k labeled images.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.06491" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

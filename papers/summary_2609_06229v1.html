@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SWE-Test: Benchmarking LLM Vulnerability Discovery via Input Prediction - arXiv 2609.06229 论文总结">
+    <title>SWE-Test: Benchmarking LLM Vulnerability Discovery via Input Prediction | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SWE-Test: Benchmarking LLM Vulnerability Discovery via Input Prediction</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.06229<br><strong>分类:</strong> cs.SE, cs.AI<br><strong>发布时间:</strong> 2026-09-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yuanxiang Shi, Jiayi Lin, Xuanyong Lin, Liangcai Su, Yeheng Duan, Wei Wang, Qi Han, Bing Zhao, Wei Hu, Xander Xu, Chenxiong Qian</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.06229">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.06229">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Vulnerability discovery is becoming an important ability of large language model (LLM) agents: agents that silently miss real defects leave critical software exposed. Rigorously measuring this ability is therefore urgent, but existing benchmarks are gameable through data contamination, score recall against an unknowable vulnerability set, often rely on synthetic bugs, and report a single end-to-end verdict that cannot localize where an agent fails. Vulnerability discovery is a composite ability: an agent must comprehend source code, infer input constraints, construct inputs, execute them, and iteratively correct from feedback. We recast its measurement as an input-prediction task with a closed, deterministic ground truth: using coverage-guided fuzzing, we mine deep target branches in real-world C/C++ programs and ask an agent to predict an input that drives execution to a given branch. This decomposes discovery into three task modes over 22 real-world C/C++ programs spanning 15 domains. Open-loop and Feedback-enabled share 60 fixed-target task instances across 16 of these codebases (13 domains), testing input construction without and with a distance oracle to isolate code comprehension from feedback-driven correction. Online Arena instead removes the predefined target and scores path exploration by coverage gain on a separate, partially overlapping pool of 11 programs; agents collectively confirmed 13 distinct bugs across six programs. Evaluating 15 default-effort model-scaffold configurations, the best reaches only 55.0% pass rate in the Feedback-enabled mode, and the mean across seven paired Claude Code configurations is 36.4% with feedback versus 19.3% without. Decomposing failures, we find constraint inference, not navigation, is the dominant bottleneck. We release SWE-Test with a turnkey evaluation environment.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.06229" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
