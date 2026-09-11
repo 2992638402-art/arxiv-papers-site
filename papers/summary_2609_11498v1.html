@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ActMap: Single-Pass Uncertainty Quantification from Generation-Time Activation Maps - arXiv 2609.11498 论文总结">
+    <title>ActMap: Single-Pass Uncertainty Quantification from Generation-Time Activation Maps | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>ActMap: Single-Pass Uncertainty Quantification from Generation-Time Activation Maps</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.11498<br><strong>分类:</strong> cs.AI<br><strong>发布时间:</strong> 2026-09-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jacopo Dardini, Roberta Calegari</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.11498">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.11498">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Practical uncertainty quantification (UQ) for large language models must decide, from a single generation, whether a specific answer should be trusted. Existing methods either sample multiple generations, read only output-token probabilities, or reduce the model&#39;s internal computation to a single hidden state. We introduce ActMap, a white-box representation that compresses the generation-time hidden- state trajectory (every layer, every generated token) into a fixed $12 \times 32 \times 128$ tensor of temporal-statistic channels that preserves structure across transformer depth and pooled hidden coordinates. The map is captured during the generation pass with no measurable overhead, has a fixed shape across model depths and hidden sizes, and occupies 96 KiB: a compact artifact that can be retained for audit-relevant generations and probed directly, with occlusion analysis localizing the classifier&#39;s signal to mid-depth regions of the map. A lightweight classifier, instantiated as a compact Vision Transformer, reads an estimated correctness probability from each map in a fraction of a millisecond; capacity-matched MLPs perform comparably, indicating the representation itself carries the result. Trained and evaluated in-domain on short-answer QA, direct- answer math, and summarization factuality with three instruction-tuned 7-8B models, ActMap consistently outperforms sampling, token-probability, attention, and embedding baselines, and matches ACT-ViT, a detector trained on dense activation tensors $67 \times$ larger, at essentially the same mean AUROC with lower calibration error on ten of twelve pairs. The resulting score supports abstention, routing, and selective verification from a single generation, making it a practical primitive for scalable oversight of deployed models.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.11498" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
