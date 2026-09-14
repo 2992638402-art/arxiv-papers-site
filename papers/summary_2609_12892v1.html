@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beyond Accuracy: Uncertainty-Guided Boundary Refinement for Reliable Biomedical Image Segmentation - arXiv 2609.12892 论文总结">
+    <title>Beyond Accuracy: Uncertainty-Guided Boundary Refinement for Reliable Biomedical Image Segmentation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Beyond Accuracy: Uncertainty-Guided Boundary Refinement for Reliable Biomedical Image Segmentation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.12892<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-09-11</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Anima Kujur</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.12892">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.12892">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Accurate biomedical image segmentation requires not only high global overlap but also reliable delineation of clinically meaningful boundaries. In blood-smear microscopy, cytoplasm and nucleus contours provide the structural basis for downstream morphology analysis; however, deep segmentation models may remain uncertain or overconfident near ambiguous boundary regions even when achieving strong Dice scores. This work proposes a Reliability-Aware Boundary Refinement Network (RABR-Net), a two-stage framework for trustworthy image segmentation. A strong UNet++ EfficientNet-B4 base segmenter first produces initial class probabilities and logits. Predictive entropy, test-time augmentation variance, margin uncertainty, probability gradients, and soft boundary cues are then combined into a boundary-aware reliability representation. This representation guides a gated residual refiner that selectively corrects uncertain boundary pixels while preserving confident regions of the base prediction. The framework is evaluated using overlap accuracy, class-wise Dice, Boundary Dice, HD95/ASSD, calibration, risk--coverage analysis, robustness under image perturbations, qualitative correction maps, and paired statistical testing. On the held-out test set, the proposed method improves Dice from 0.9602 to 0.9614, Boundary Dice from 0.3448 to 0.3611, and HD95 from 3.0354 to 2.8274 compared with the cached base prediction. Statistical analysis confirms significant improvements in Dice, Boundary Dice, and HD95. Qualitative results show that the learned gate concentrates around uncertain cytoplasm and nucleus boundaries, and correction maps confirm localized boundary refinement. Although calibration does not automatically improve after refinement, the proposed framework provides an interpretable and reliability-focused strategy for boundary-sensitive biomedical image segmentation.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.12892" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
