@@ -1,0 +1,129 @@
+{
+  "date": "2026-09-17",
+  "papers": [
+    {
+      "id": "2609.17320v1",
+      "title": "Emergence World: Adversarial Stress-Testing of Long-Horizon Multi-Agent Systems",
+      "summary": "As AI agents move from bounded tasks to persistent deployments, failures can propagate through memory, tools, other agents, and environmental state long after their interactions. This creates a safety regime that cannot be characterized by evaluating model responses in isolation. Emergence World, is a continuously running multi-agent environment for adversarial stress testing of long horizon autonomous systems. We ran eight parallel worlds of ten agents from identical starting conditions: seven homogeneous worlds powered by distinct frontier models and one mixed-model world. Across 16 days, the agents generated more than 850,000 LLM calls and nearly 50 billion tokens while pursuing goals, using/creating tools, maintaining persistent memory, and governing shared institutions. After operational state had accumulated, we delivered three controlled stress events through ordinary interaction surfaces: indirect prompt injection, misinformation, and exposure of private agent memories. No evaluated world achieved full resilience across all three events. Detection did not ensure containment: systems could recognize threats while still interacting with adversarial content, writing it into their own persistent memory, and acting on it up to 46 hours later. Persistent operation also exposed recurring tool errors, goal drift, language opacity, conformity despite private disagreement, and coordinated refusal of assigned work. The same model-persona pairing behaved substantially different in mixed and homogeneous populations. Our results suggest that model-level alignment is not compositional: individually capable and apparently safe agents can form systems with qualitatively different failure modes. As AI becomes persistent and interconnected, the frontier of safety therefore shifts from aligning models to engineering resilient autonomous systems.",
+      "authors": [
+        "Deepak Akkil",
+        "Tamer Abuelsaad",
+        "Karthik Vikram",
+        "Matthew Pace",
+        "Aditya Vempaty",
+        "Saahir Beotra",
+        "Ravi Kokku",
+        "Satya Nitta"
+      ],
+      "published": "2026-09-15T15:27:58Z",
+      "updated": "2026-09-15T15:27:58Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.17320v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2609.15938v1",
+      "title": "HypoEvolve: Genetic Algorithms Enable Multi-Agent LLMs to Discover Scientific Hypotheses",
+      "summary": "Scientific agents contribute to hypothesis discovery by synthesizing evidence, assessing proposals, and developing new explanations. Recent systems combine scientific agents with evolutionary search through critique, comparison, and revision. However, how different forms of agent collaboration affect hypothesis quality remains an open question. Answering this question requires separating the effects of agents' scientific capabilities from those of their collaboration. A framework must therefore preserve agents' scientific roles and support rules for combining, revising, and retaining hypotheses. Building on this view, we introduce HypoEvolve, which makes collaboration explicit through successive updates to a hypothesis population. Specifically, we propose a generational genetic algorithm to coordinate specialized large language model (LLM) agents that integrate mechanistic arguments, reconsider assumptions, and assess evidence and testability. Each generation specifies how scientific judgments and new proposals reshape the population, making collaboration effects on hypothesis quality directly testable. Moreover, we design our evaluation around scientifically meaningful hypotheses that explain how a proposed intervention could work. Drug repurposing links these explanations to target-level biological claims assessed against external evidence. Specifically, we adapt DepMap and Open Targets into complementary external measures grounded in experimental, genetic, and clinical evidence. Across 34 cancer types, HypoEvolve achieves the highest scores against six baselines on both measures. DepMap selectivity reaches 0.171, versus 0.115 for the strongest baseline. Gains over single-pass generation also generalize to held-out cancer types. HypoEvolve advances a vision of autonomous science in which AI research teams achieve a capacity for discovery beyond that of individual models.",
+      "authors": [
+        "Jieyuan Liu",
+        "Mengzhou Hu",
+        "Jefferson Chen",
+        "JungHo Kong",
+        "Pratibha Jagannatha",
+        "Yiming Gao",
+        "Dexter Pratt",
+        "Hsin-Yuan Lee",
+        "Zhiting Hu",
+        "Trey Ideker",
+        "Wei Wang",
+        "Eric P. Xing",
+        "Zhen Wang"
+      ],
+      "published": "2026-09-14T17:44:49Z",
+      "updated": "2026-09-14T17:44:49Z",
+      "categories": [
+        "cs.CL",
+        "cs.CE",
+        "cs.MA",
+        "cs.NE"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.15938v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2609.15361v1",
+      "title": "Robust and Efficient Communication for Multi-Agent Learning",
+      "summary": "Effective communication is a cornerstone of distributed intelligence in Multi-Agent Reinforcement Learning (MARL), yet ensuring that generated messages are both informative and robust to physical constraints remains a significant challenge. This paper introduces Multi-Agent Regularized Communication (MARC), a novel framework inspired by information-theoretic principles of conditional mutual information. MARC employs an attention-based architecture coupled with a unique message regularization mechanism designed to minimize uncertainty regarding future system states, thereby inducing the learning of highly representative communication protocols. Crucially, we evaluate MARC under stringent communication bottlenecks and lossy channels, simulating the real-world constraints of autonomous robotic networks and decentralized systems. Our results demonstrate that MARC significantly outperforms state-of-the-art methods in complex cooperative domains. Furthermore, we provide a deep analysis of message characteristics, proving that MARC maintains high operational performance even under significant data compression, offering a scalable path for deploying intelligent agents in resource-constrained environments.",
+      "authors": [
+        "Rafael Pina",
+        "Varuna De Silva",
+        "Corentin Artaud"
+      ],
+      "published": "2026-09-14T10:44:11Z",
+      "updated": "2026-09-14T10:44:11Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.15361v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2609.18326v1",
+      "title": "UAVs Meet Embodied Intelligence: Bridging Human Intents and Flying Dynamics Via Harnessing Physical-Digital AI Agents",
+      "summary": "Unmanned aerial vehicles (UAVs) extend embodied intelligence into continuous three-dimensional space, where perception, reasoning, physical embodiment, and action are tightly coupled through flight and environmental interaction. Recent advances in foundation models, world models, and AI agents are shifting UAV autonomy from task-specific perception and control toward systems that can interpret human intent, understand open environments, reason about physical consequences, and organize complex behaviors under embodiment and flight-dynamic constraints. We characterize this emerging paradigm as UAV embodied intelligence (UAV EI) and distinguish it from its system realization, the embodied-intelligent UAV (EI UAV). To provide a unified view of the field, we introduce a 5+5 framework that describes UAV EI through five capability dimensions and EI UAVs through five architectural layers spanning physical embodiment, general cognition, embodied skills, external interaction, and system harnessing. Based on this framework, we systematically review recent progress in embodied morphology, embodied perception, world models, embodied planning, vision-language navigation, embodied manipulation, and embodied collaboration. We further identify long-horizon autonomy, predictive physical reasoning, test-time skill acquisition, and autonomous capability evolution as key challenges toward more general aerial embodied intelligence. Finally, we argue that harnessing physical-digital AI agents, through persistent coupling of digital intelligence with physical sensing, dynamics, action, and feedback, provides a system-level pathway toward adaptive and continuously evolving UAV autonomy. Project resources are available at our project website and GitHub repository.",
+      "authors": [
+        "Yonglin Tian",
+        "Weiyi Wang",
+        "Houhua Lu",
+        "Xinyi Li",
+        "Yihao Wu",
+        "Jingyang Chen",
+        "Jianli Sun",
+        "Chengxiang Li",
+        "Yinuo Chen",
+        "Fei Lin",
+        "Tengchao Zhang",
+        "Jing Yang",
+        "Deyi Ji",
+        "Jian Di",
+        "Naiqi Wu",
+        "Yisheng Lv"
+      ],
+      "published": "2026-09-16T08:52:29Z",
+      "updated": "2026-09-16T08:52:29Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.18326v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2609.16986v1",
+      "title": "ToMAS: A Pilot Failure-Grounded Theory-of-Mind Benchmark from Multi-Agent LLM Failures",
+      "summary": "LLM-based multi-agent systems can fail even when communication succeeds because agents do not correctly track their peers' roles, knowledge, or intentions. We investigate whether such inter-agent misalignment cases, labelled FC2 in MAST-Data, can be converted into functional partner-state reasoning items. ToMAS applies four explicit convertibility criteria to diagnosed execution traces. A full conversion pass over 242 eligible non-AG2 training traces produced 39 CLEAN items. In an 18-trace reliability pilot, two annotators achieved 94.4% raw agreement and Cohen's kappa = 0.92. We then used the converted items as binary rewards in a small-scale GRPO feasibility experiment with Qwen2.5-1.5B. On a 28-item held-out Magentic GAIA diagnostic, every evaluated condition exceeded the ROUGE-L threshold on the same 2 of 28 items. Post-hoc adapter checks show why: under the learning rate used, the LoRA update remained numerically negligible (max abs Delta W about 7e-6), so all conditions decode identically to the untrained checkpoint. The experiment therefore does not show a training effect and cannot establish one; it reports an executable pipeline together with two limitations that any conclusive study must address: a provenance gap between the training and evaluation items, and lexical-overlap scoring. ToMAS provides a preliminary rubric and pipeline for converting diagnosed coordination failures into trainable partner-state reasoning items and identifies the requirements for a conclusive matched-domain evaluation.",
+      "authors": [
+        "Muhammad Ashar Ishfaq",
+        "Glaucia Melo"
+      ],
+      "published": "2026-09-15T11:01:30Z",
+      "updated": "2026-09-15T11:01:30Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.16986v1.pdf",
+      "category": "other"
+    }
+  ],
+  "ids": [
+    "2609.17320v1",
+    "2609.15938v1",
+    "2609.15361v1",
+    "2609.18326v1",
+    "2609.16986v1"
+  ]
+}

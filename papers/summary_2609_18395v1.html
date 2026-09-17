@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DetAug: Obstacle-Blind Trajectory Augmentation for Zero-shot Obstacle Avoidance - arXiv 2609.18395 论文总结">
+    <title>DetAug: Obstacle-Blind Trajectory Augmentation for Zero-shot Obstacle Avoidance | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>DetAug: Obstacle-Blind Trajectory Augmentation for Zero-shot Obstacle Avoidance</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.18395<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-09-16</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Reece O&#39;Mahoney, Moritz Zoellner, Ioannis Havoutis</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.18395">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.18395">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Policies for robotic manipulation are produced by training on large teleoperated datasets. These datasets typically consist of free-space trajectories, making them difficult to transfer to test-time environments with obstacles. Previous methods for closing this gap have largely fallen into two groups. Dataset augmentation addresses it at training time but needs obstacle geometry in advance, whereas steering an existing checkpoint at inference time avoids that requirement but is limited in flexibility. Our method draws from both areas without inheriting either drawback. DetAug applies an obstacle-blind augmentation scheme to the transit phases of a free-space dataset, leaving object interactions untouched, and records the augmentation parameters as an explicit conditioning label. At inference it samples a batch of labels and executes the trajectory with the lowest collision cost. On the SafeLIBERO benchmark DetAug achieves a collision-free success rate more than 20pp above the next best method, and selecting over the label space outperforms guidance on the same policy by 26pp. On real hardware, inference-time steering methods collapse on tasks requiring large detours, while DetAug matches or exceeds an obstacle-conditioned baseline without ever seeing obstacles in training.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.18395" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
