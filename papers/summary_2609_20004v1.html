@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EPIG-Tree: Compute-Optimal Branching for Gradient-Efficient Reinforcement Learning - arXiv 2609.20004 论文总结">
+    <title>EPIG-Tree: Compute-Optimal Branching for Gradient-Efficient Reinforcement Learning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>EPIG-Tree: Compute-Optimal Branching for Gradient-Efficient Reinforcement Learning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.20004<br><strong>分类:</strong> cs.LG, cs.AI<br><strong>发布时间:</strong> 2026-09-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Nikita Khomich, Leopold Hermansson, Ido Hakimi</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.20004">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.20004">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Reward-based reinforcement learning for language models, exemplified by Group Relative Policy Optimization (GRPO), collapses an entire stochastic trajectory into a single scalar reward. This is clean and scalable, but it explores and allocates reward inefficiently: a trajectory may contain many causal decisions, recovery attempts, and environment-randomness events, yet every token or action inherits one trajectory-level advantage. We study tree-based rollout construction as a compute-allocation problem for policy-gradient estimation. Our central claim is that branches should be placed not where the policy is merely uncertain, but where an additional branch most reduces uncertainty about the policy gradient per unit of compute. From a law-of-total-variance decomposition of the local policy-gradient random variable, we derive two allocation laws: new branches reduce decision uncertainty, while repeated suffix rollouts reduce continuation uncertainty. The resulting EPIG-Tree score allocates branches using the already computed rollouts. It estimates occupancy- and score-weighted value uncertainty, along with a suffix law $n_e \propto w_e |\nabla_θ\log π(a_e|h_e)| σ_e / \sqrt{c_e}$. Empirically, EPIG reduces gradient MSE in cloned-state control, winning in all nine dense continuous-control environments of a 13-environment sweep and recovering the reference gradient direction near-perfectly, and it improves frozen-LLM gradient calibration relative to entropy branching. In online single-turn math, tree-local credit beats flat GRPO, while branch placement is secondary to token-level credit assignment. In online multi-turn Wordle, EPIG attains the highest final win rate (0.850), overtaking flat GRPO, which saturates early at 0.790, and entropy branching as training proceeds, confirming that the gradient-estimation advantage transfers to a stateful, large-action setting.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.20004" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

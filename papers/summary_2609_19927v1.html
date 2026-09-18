@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DirtyMoCap: Robust Motion Capture from Unconstrained Markers - arXiv 2609.19927 论文总结">
+    <title>DirtyMoCap: Robust Motion Capture from Unconstrained Markers | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>DirtyMoCap: Robust Motion Capture from Unconstrained Markers</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.19927<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-09-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Long Wang, Shuting Zhao, Shen Yan, Siyuan Yu, Xiaoben Li, Zeyu Cai, Yumeng Hou, Yuliang Xiu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.19927">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.19927">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Optical motion capture delivers high-fidelity human motion, but its reliance on strict marker layouts and clean trajectories severely limits its real-world applicability. In practice, tracking systems frequently output unconstrained markers: sparse, noisy, and unordered point clouds with unknown or varying configurations. To bridge the gap between corrupted raw markers and parametric human models, we introduce DirtyMoCap, a robust, marker-layout-free framework. Our core insight is to map unordered marker observations to a fixed set of &quot;proxy anchors&quot; comprising skeletal joints and body surface points, which serve as a stable intermediate representation. We first initialize and track these anchors over long sequences using a recurrent sliding-window architecture. Then, a custom differentiable Gauss-Newton solver fits the SMPL-H model to the tracked anchors to recover full-body pose, translation, and shape. By explicitly deriving geometric residuals, our solver learns adaptive observation confidence, smoothness, and prior weights end-to-end, adapting dynamically to the reliability of the input data. Extensive experiments on diverse, noisy marker configurations demonstrate that DirtyMoCap successfully generalizes across arbitrary layouts using only a single trained model. It consistently outperforms state-of-the-art configuration-specific baselines in both joint and vertex reconstruction accuracy, while our custom CUDA solver achieves up to a 100x speedup over standard PyTorch implementations. We further apply DirtyMoCap to heterogeneous raw optical MoCap recordings of traditional Chinese martial arts, yielding a Kung Fu motion dataset of temporally coherent SMPL-H reconstructions. Code and data are available at <a href="https://wanglongzju.github.io/DirtyMoCap-Project-Page">https://wanglongzju.github.io/DirtyMoCap-Project-Page</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.19927" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

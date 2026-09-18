@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CARE-VI: Conservative Adaptive Reliability Estimation for Value Improvement in Off-Policy Actor-Critic Learning - arXiv 2609.20098 论文总结">
+    <title>CARE-VI: Conservative Adaptive Reliability Estimation for Value Improvement in Off-Policy Actor-Critic Learning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>CARE-VI: Conservative Adaptive Reliability Estimation for Value Improvement in Off-Policy Actor-Critic Learning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.20098<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-09-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xiang Zou, Shengzhu Shi, Junqi Gao, Zhichang Guo</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.20098">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.20098">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Reliable temporal-difference targets are central to off-policy actor-critic learning. Direct value improvement refines the next-state target with alternative actions, but the reliability of this refinement depends on how candidate actions are ranked, reviewed, and weighted. Noisy rankings may force premature candidate commitment, reusing selection scores may bias target valuation, and fixed enhancement weights may amplify weak evidence. To address these risks, we develop Conservative Adaptive Ranking and Screening (CARS), which retains an ordered candidate prefix within a preset budget and narrows it only when the observed boundary gap exceeds a disagreement-scaled uncertainty radius. Selector-Evaluator Value Assessment (SEVA) uses selector critics to order candidates and a separately parameterized evaluator critic to review the selected value, then caps the reviewed value at the selector reference. Dynamic Adaptive Risk-aware Enhancement (DARE) then regulates each residual correction using candidate reliability, the gap between selector and evaluator signals, and a finite stage factor. Together, CARS, SEVA, and DARE form CARE-VI, an evidence-regulated target construction framework that preserves the backbone interfaces for critic regression and actor updates. The analysis bounds the CARS boundary error, the SEVA selected-value overestimation, and the one-sided deviation of the DARE residual displacement from its population counterpart, and establishes fixed-policy recovery after the finite-stage perturbation ends. Experiments with SAC, TD3, and TD7 on four MuJoCo tasks show that CARE-VI achieves the highest mean return in all twelve settings. Grouped ablations and scalar diagnostics support the roles of the three components in improving target reliability.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.20098" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

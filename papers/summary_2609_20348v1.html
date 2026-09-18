@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EliGSiR: Continual RGB-D Mapping with Gaussian Splatting under Bounded Compute - arXiv 2609.20348 论文总结">
+    <title>EliGSiR: Continual RGB-D Mapping with Gaussian Splatting under Bounded Compute | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>EliGSiR: Continual RGB-D Mapping with Gaussian Splatting under Bounded Compute</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.20348<br><strong>分类:</strong> cs.CV, cs.RO<br><strong>发布时间:</strong> 2026-09-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Björn Ellensohn, Elmar Rueckert, Christian Rauch</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.20348">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.20348">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Conventional 3D Gaussian Splatting assumes a closed set of observations and long optimization schedules. Continual RGB-D mapping in contrast poses the problem that new observations arrive online, while previously reconstructed regions must be preserved. We present EliGSiR (Evidence-guided Load-adaptive Incremental Gaussian Splatting with Image Replay), a continual Gaussian mapper that controls how the available optimization budget is used as the reconstruction evolves. Map-Guided View Scheduling filters redundant incoming views and reconsiders retained views according to the current state of the map. Load-Adaptive Fidelity adjusts supervision resolution to the current mapping load instead of following a fixed resolution schedule. Targeted Geometry Growth separates depth supervision from Gaussian creation and adds geometric capacity only where repeated RGB-D observations indicate missing or misplaced structure. Together, these mechanisms adapt which views are optimized, how much image detail is used, and where the representation grows while mapping remains active. We evaluate EliGSiR on Replica, TUM RGB-D, ScanNet++, and real RGB-D sensor sequences, considering both the final reconstruction and the map available throughout acquisition. On TUM RGB-D fr3/long_office_household, EliGSiR reaches 21.52 dB with the same ground-truth mapping poses used by the controlled baselines, compared with 19.42 dB for SplaTAM. In the tracked-pose comparison, EliGSiR with live ORB-SLAM3 poses reaches 23.02 dB in 155.5 s, compared with 20.10 dB in 230.9 s for CaRtGS using its native tracker. We further evaluate reconstruction throughout acquisition and show how EliGSiR adaptive view scheduling, supervision fidelity, and geometry growth improve the use of the available mapping budget.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.20348" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
