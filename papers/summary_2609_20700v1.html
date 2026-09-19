@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Should This Case Be Adapted? Prediction Fragmentation Controls Test-Time Adaptation - arXiv 2609.20700 论文总结">
+    <title>Should This Case Be Adapted? Prediction Fragmentation Controls Test-Time Adaptation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Should This Case Be Adapted? Prediction Fragmentation Controls Test-Time Adaptation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.20700<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-09-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Lili Wang, Jing Li, Xiaowen Sun, Xiangyu Hu, Zhuangzhuang Gu, Jian Liu, Srihari Nelakuditi, Yan Tong</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.20700">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.20700">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Episodic test-time adaptation resets a frozen segmenter to source weights $M_0$ on each case and adapts for a fixed step count. A fixed horizon conflates a cohort-level question, how far to adapt, with an irreducibly per-case one, whether this case should be adapted at all. Cohort means hide that decision: on cross-vendor cardiac MRI the mean $Δ$Dice from adaptation is statistically indistinguishable from zero while 58.7% of cases are individually made worse. We quantify this harm as harmful accepted area (HA), the harmful fraction of the edited area a controller deploys. Held-out tuning gives a stronger baseline than a fixed horizon, but the budget it selects transfers on neither of the two main medical benchmarks, and no global budget can condition on the case. We show that prediction fragmentation---the disagreement geometry between $M_0$ and the adapted mask $M_k$---predicts HA with no labels or extra backward passes at decision time, comparably on three benchmarks (Spearman $ρ$ 0.50--0.60), at a quarter of gradient-norm&#39;s latency. A case-level router built on it cuts HA from 0.228 to 0.139 on a benchmark that took no part in its design, with the design frozen and only cut-points recalibrated there. On the cardiac benchmark the design was selected on, the router cuts HA from 0.129 to 0.013 at matched Dice and 1.10 deployed updates, against the retrospective-best budget found post hoc on evaluation labels, and reduces that 58.7% to 20.0%, an upper bound we quantify. Where the retained cases are not net-helped (as on prostate), the router still cuts HA but concedes accuracy, a boundary we report. Thresholds are fit once on a labeled split disjoint from evaluation; decisions use no labels or gradients. The template ports across architecture and domain (nnU-Net$\to$SegFormer, Cityscapes$\to$ACDC) with coordinate, thresholds and per-bucket actions instantiated per domain.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.20700" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

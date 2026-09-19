@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TraceFlow: Guiding Frozen Flow-Matching Robot Policies with Success and Failure Traces - arXiv 2609.20646 论文总结">
+    <title>TraceFlow: Guiding Frozen Flow-Matching Robot Policies with Success and Failure Traces | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>TraceFlow: Guiding Frozen Flow-Matching Robot Policies with Success and Failure Traces</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.20646<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-09-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jiaxuan Zhang, Ruizhe Liu, Yu Zhang, Yanchao Yang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.20646">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.20646">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A vision-language-action (VLA) policy with a flow-matching action expert generates each action chunk (a short command sequence) by integrating a learned velocity field; once its weights are fixed, the success or failure of an earlier rollout cannot change the chunk generated now. Concurrent test-time methods give a frozen policy such an input from retrieved successes, a learned critic, a verifier, or a dynamics model, but none uses the robot&#39;s own failed rollouts as negative evidence with nothing but a terminal outcome bit. We introduce TraceFlow, a progress-aligned guidance field that turns the action densities of retrieved successful and failed rollouts into a bounded correction to a frozen flow-matching action expert, using one terminal outcome bit per rollout and no other label. Its TraceBank stores traces, time-ordered state-action records with a terminal label, starts from the target-task training traces, and later admits the deployed robot&#39;s own rollouts. On an ordered real-robot packing task the base completes 21 of 50 trials in order, TraceFlow 39, and one stacking round without any weight update 47, with wrong-sequence episodes falling from 20 to 0. In simulation the gain is selective: with per-suite selected settings, TraceFlow raises RoboMemArena Sequence from 78.92% to 91.50% task success and Transferring from 54.41% to 62.00% at stacking round 2, leaves the 26-task aggregate unchanged, lowers Counting and Occlusion by 1.12 and 1.42 points, and changes LIBERO-Plus (Long) by +1.27 points (p = 0.0733). Stacking gains are finite, every branch peaking before round ten, and the bank&#39;s success-to-failure ratio predicts no retrieval allocation.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.20646" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
