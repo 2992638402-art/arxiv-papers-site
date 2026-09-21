@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detection is solved, delineation is not: what governs tooth segmentation on panoramic radiographs - arXiv 2609.21628 论文总结">
+    <title>Detection is solved, delineation is not: what governs tooth segmentation on panoramic radiographs | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Detection is solved, delineation is not: what governs tooth segmentation on panoramic radiographs</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.21628<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-09-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Muhammad Rehan, Moaz Amjad, Syed Danial Ahmed, Mariam Adnan, Haider Ali</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.21628">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.21628">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Automatic tooth segmentation and FDI numbering on panoramic radiographs underpins computer-assisted dental diagnosis, yet which factors govern performance remains unclear. We assemble a corpus of 1,422 panoramic radiographs containing 42,142 expert-delineated tooth polygons across the 32-class FDI taxonomy, annotated by 30 dental practitioners and independently reviewed by two others, and use it to isolate input resolution, architecture and anatomical priors under a single evaluation protocol. First, resolution dominates: across a controlled 640/1024/1280 ablation, mask mAP50-95 rises 0.656 -&gt; 0.710 -&gt; 0.717 while mAP50 stays flat at ~0.982. Both gains are significant under a paired bootstrap over images (p &lt; 0.001, p = 0.024); neither mAP50 change is distinguishable from zero. Added resolution buys boundary precision, not detection. Second, architecture is nearly irrelevant in-domain: a query-based transformer with 2.1x the parameters is statistically equivalent to a one-stage detector (95% CI [-0.0064, +0.0064]), only marginally better under domain shift, 5.5x slower on CPU and not executable under standard ONNX runtimes. Third, three targeted interventions fail: a LoRA-adapted self-supervised encoder underperforms, a promptable foundation segmenter degrades masks by 39%, and globally optimal anatomical label assignment yields +0.0007 despite correcting a constraint violated in 40% of out-of-domain predictions. Zero-shot transfer to an independent multi-centre cohort, verified overlap-free, costs 62% of mask mAP50-95 but only 18% of mAP50, reproducing the dissociation. Decomposing masks along the tooth axis localises the residual error to the apical third. Boundary precision is therefore the binding constraint, and effort is better directed at resolution and acquisition diversity than at architectural novelty.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.21628" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
