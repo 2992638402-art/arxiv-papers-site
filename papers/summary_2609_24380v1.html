@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Information-Time Proximal Policy Optimization - arXiv 2609.24380 论文总结">
+    <title>Information-Time Proximal Policy Optimization | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Information-Time Proximal Policy Optimization</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.24380<br><strong>分类:</strong> cs.LG, cs.AI<br><strong>发布时间:</strong> 2026-09-21</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yongcheng Zeng, Xinyu Cui, Yan Song, Guoqing Liu, Hongsheng Xin, Kaike Zhang, Cheng Deng, Kun Zhan, Jian Ying, Jian Zhao, Haifeng Zhang, Jun Wang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.24380">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.24380">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>RLVR has substantially improved the reasoning capabilities of LLMs. However, existing methods typically parameterize temporal progression in the Markov Decision Process by token-by-token generation, despite the highly non-uniform information flow along autoregressive trajectories. In this paper, we propose InfoPPO, which reparameterizes temporal progression using information density rather than raw token count. This reparameterization induces a common state-dependent structure for both temporal credit propagation and policy updates. InfoPPO restores the effectiveness of non-trivial discounting in long-horizon reasoning, retaining effective-horizon contraction while avoiding excessive attenuation of terminal supervision over long token sequences. Moreover, the information-time policy-improvement analysis naturally leads to a state-dependent update constraint, which we implement through adaptive clipping. By adapting the clipping threshold at each token position to the information density of its corresponding state, this mechanism enables more targeted policy updates while preserving proximal control. Theoretically, we extend performance-difference and policy-improvement analyses to the information-time MDP, deriving a policy-improvement lower bound when policy changes are regulated by information density. We further connect the general information-time analysis to practical LLM policy optimization by relating state-wise information density to local policy movement, while also providing theoretical grounding for the adaptive update mechanism. Experiments on Qwen3 models demonstrate consistent gains over competitive baselines across five challenging competition-style mathematical reasoning benchmarks. InfoPPO also maintains stable accuracy and response length across non-trivial discount settings under which token-time PPO deteriorates.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.24380" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

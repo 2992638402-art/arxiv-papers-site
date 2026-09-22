@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Co-occurrence Patterns of LoRA Adapters in Production Diffusion Model Inference Services - arXiv 2609.23321 论文总结">
+    <title>Co-occurrence Patterns of LoRA Adapters in Production Diffusion Model Inference Services | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Co-occurrence Patterns of LoRA Adapters in Production Diffusion Model Inference Services</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.23321<br><strong>分类:</strong> cs.DC, cs.AI, cs.LG<br><strong>发布时间:</strong> 2026-09-20</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Tao Zhang, Bin Liao, Tao Zhou, Yanping Liu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.23321">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.23321">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Low-rank adaptation (LoRA) has become a key technology for serving large-scale personalized large language models and diffusion models in the cloud. However, the co-occurrence patterns, resource contention relationships, and evolutionary regularities of adapters under production inference workloads have not been systematically or quantitatively studied. Based on GenTD26, Alibaba&#39;s production diffusion model inference dataset, this paper adopts a graph-theoretic framework to construct an adapter co-occurrence network and conducts a characterization from both static structure and dynamic evolution. Our main findings are as follows. (1) The co-occurrence network is extremely sparse, and adapter usage frequency follows a significant heavy-tailed distribution. (2) Introducing the first adapter incurs a 66.1% execution-latency overhead, with diminishing marginal costs afterwards. (3) Co-occurrence relationships are driven by base models: in 90.6% of multi-adapter requests, all adapters share the same dominant base model; 66.2% of significant co-occurrence edges connect same-model adapter pairs; and in 85.8% of multi-adapter requests, all adapter pairs form significant co-occurrence edges. (4) The adapter ecosystem exhibits a core-periphery bipolar structure, with a weekly Jaccard similarity of 0.696 at the model level and a churn rate of 54.5% for the top-10 hottest models within a 12-hour window. Based on these findings, we propose a preloading strategy built on top-k co-occurrence statistics; offline experiments show that it covers 81.0% of test-set co-occurrence pairs at k=3, and sensitivity analyses across frequency thresholds and time windows verify the robustness of the conclusions. These results provide a data-driven basis for cache preloading, adaptive scheduling, and GPU memory management in LoRA inference services.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.23321" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

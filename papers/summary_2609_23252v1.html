@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Robot World Models Are Not Invariant to How the Actions Are Written - arXiv 2609.23252 论文总结">
+    <title>Robot World Models Are Not Invariant to How the Actions Are Written | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Robot World Models Are Not Invariant to How the Actions Are Written</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.23252<br><strong>分类:</strong> cs.RO, cs.LG<br><strong>发布时间:</strong> 2026-09-19</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ahmed Karim, Leon Chlon</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.23252">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.23252">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A robot policy is trained with one of two action parameterizations: absolute joint targets, or deltas relative to the current state. The choice is a live engineering decision in robot learning, and a world model conditioned on actions inherits it silently. We show the inheritance is catastrophic. A latent dynamics model trained on one parameterization and handed the identical commanded trajectory written in the other collapses: retrieval degrades by 2.6-13.4x across three robot datasets and two morphologies, goal-conditioned action selection falls from 53% to 15%, and on PushT the two beliefs about the same future are near-orthogonal (cos = 0.067, worst case -0.377), so the predictor does not degrade gracefully, it answers a different question. This is not a distribution-shift artifact in the usual sense: the two encodings are mutually reconstructible at R^2 = 0.996 given the joint input, so no information is lost, and we give the test that separates a valid re-parameterization from a lossy summary or a sensor swap. The test rejected three of the four axes we proposed. The defect lives in the action channel, which the invariance literature for visual models does not examine: work there concerns crops, jitter and camera pose, while the parameterization of the commands goes unaudited. The repair is averaging over the two encodings, and where it goes matters. Averaging the objective restores task performance by itself; averaging the outputs, safe for probabilities by concavity, is not available for direction-valued prediction, where the normalized mean can score below every member of the orbit. What objective-averaging leaves behind is the tail: worst-case agreement stays at 0.78, a disagreement penalty closes it to 0.995, and over a latent rollout it is the difference between a worst case that erodes and one that holds. On PushT, averaging alone does not repair the axis.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.23252" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

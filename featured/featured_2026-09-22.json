@@ -1,0 +1,117 @@
+{
+  "date": "2026-09-22",
+  "papers": [
+    {
+      "id": "2609.23790v1",
+      "title": "Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows",
+      "summary": "Every node in a multi-agent large language model (LLM) workflow retrieves context from memory and injects it into its prompt, where those injected tokens are billed as input tokens at the same per-token price as the system prompt and the user query. Production observability tools report total token cost but do not separate the tokens a node generates from the tokens it is handed, so this component of the bill is invisible to the teams paying it. We introduce the Total Cost of Agency (TCA), a decomposition of multi-agent workflow cost into base prompt, inference, memory injection, miss penalty and context-accumulation components, and an exact attribution method: a two-pass, non-billable token count that measures injected tokens directly rather than estimating them from word-count proxies. On a 200-task enterprise benchmark executed against real model APIs, memory injection accounts for 13.6 percent of the variable cost a compile-time optimizer can act on, about 12 percent of the full billed cost, and its share rises from a structural zero at workflow depth one to 27.6 percent at depth six. Injected tokens grow linearly with depth over the measured range (R^2 = 0.9974, depths two through six); a quadratic fit yields a negative leading coefficient, so the data do not exhibit convex growth at these depths. We show the component is controllable at fixed model tier: reducing the retrieval window capacity from 32 to 2 entries lowers injected tokens by 28.7 percent with an accuracy change within seed-level variation. We report in full that our graph-rewriting transforms are approximately cost-neutral in isolation, that two of the five decomposition terms are zero by construction in this harness, and that total workflow cost is dominated by model tier assignment, which we hold fixed and treat as prior work. Prompt caching is not evaluated; all figures are for the uncached case.",
+      "authors": [
+        "Vivek Kumar Singh",
+        "Preeti Priyam",
+        "Gautam Bhowmick"
+      ],
+      "published": "2026-09-20T18:23:47Z",
+      "updated": "2026-09-20T18:23:47Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA",
+        "cs.PF"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.23790v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2609.23184v1",
+      "title": "CausalWM: Causal Chain-of-Thought Reasoning for Embodied World Model",
+      "summary": "Embodied world models learn to predict future physical dynamics from visual observations and control signals, where physical knowledge is implicitly entangled within latent representations. We introduce CausalWM, a 16B embodied world model that performs explicit causal chain-of-thought reasoning before future video prediction. CausalWM organizes useful variables into a reasoning trajectory, allowing the model to progressively capture causal dependencies underlying physical evolution. To train CausalWM, we collect 31K hours embodied data and develop a three-stage paradigm consisting of large-scale video pre-training, causal CoT mid-training, and multi-objective RL post-training. Despite using only a limited set of supervised CoT variables, CausalWM exhibits emergent in-context learning capabilities, enabling contextual visual feature guidance and efficient few-step generation. CausalWM achieves state-of-the-art performance across language-conditioned, action-conditioned, single-view and multi-view benchmarks, including Top-1 performance on TriWorldBench leaderboard.",
+      "authors": [
+        "Ziming Xu",
+        "Shuang Liang",
+        "Ruobing Han",
+        "Ziqiao Xi",
+        "Mingxing Rao",
+        "Kun Zhou",
+        "Zijun Zhang",
+        "Yuchen Yan",
+        "Yufan Wei",
+        "Junbo Huang",
+        "Yifei Shao",
+        "Fang Nan",
+        "Biwei Huang"
+      ],
+      "published": "2026-09-19T19:16:56Z",
+      "updated": "2026-09-19T19:16:56Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.23184v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2609.22971v1",
+      "title": "Automatic multimodal UX improvement recommendations from LLM agent user simulations",
+      "summary": "Evaluating user experience (UX) on live websites through user testing is expensive, subjective, and difficult to scale. LLM agents offer a promising route to automating UX testing by simulating realistic user behaviour. However, existing simulation approaches typically lack multimodality and require time-consuming manual review to extract actionable insights. We formalise UX improvement recommendation from simulation data as a structured natural language generation and ranking problem, and establish an evaluation protocol using expert annotation and LLM-as-a-Judge. We present AMUSER, a multimodal framework which simulates user behaviour and automatically generates prioritised UX improvement recommendations from resulting data. We evaluate AMUSER on commercial websites and show that its recommendations substantially outperform those from text-only simulation (NDCG@3 = 0.758 versus 0.359) at an 89% lower simulation cost. Our results suggest an asymmetric role of multimodality: visual access during simulation improves recommendations through richer traces, while providing visual inputs during recommendation generation can modestly degrade quality. We also discuss practical deployment lessons from applying AMUSER to commercial websites.",
+      "authors": [
+        "Anu Chowdhury",
+        "Bin Wu",
+        "Hossein A. Rahmani",
+        "Emine Yilmaz"
+      ],
+      "published": "2026-09-19T11:50:11Z",
+      "updated": "2026-09-19T11:50:11Z",
+      "categories": [
+        "cs.CL",
+        "cs.AI",
+        "cs.HC"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.22971v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2609.23118v1",
+      "title": "Verti-WM: A Physics-Aided Exteroceptive World Model for Off-Road Reinforcement Learning",
+      "summary": "Reinforcement learning for off-road navigation requires extensive vehicle-terrain interaction data, which are costly to collect in high-fidelity simulation. World models offer a promising alternative by replacing simulator roll-outs during policy optimization. However, an off-road world model must condition state transitions on exteroceptive terrain information, which proprioception alone does not provide. This challenge is further amplified by the need to model both rigid and deformable terrain, where data-driven and physics-based approaches offer complementary strengths. We propose Verti-WM, a physics-aided exteroceptive world model that recurrently fuses a frozen Transformer for rigid terrain and a neuro-symbolic terramechanics model for deformable terrain. Elevation and semantic observations queried from a supplied map at each predicted pose condition fusion, enabling six-degree-of-freedom rollouts for policy optimization without further simulator access. Verti-WM reduces prediction error by 34.6% and 21.7% over data-driven and physics-based baselines, respectively. Policies trained entirely within Verti-WM achieve comparable task success rates while reducing computation time by 23.6X relative to direct training in the high-fidelity simulator. We further validate Verti-WM using real-world data, enabling policy optimization within learned real-world kinodynamics and achieving a 80% success rate on the Verti-4-Wheeler platform, compared with 40% for direct sim-to-real transfer.",
+      "authors": [
+        "Chenhui Pan",
+        "Tong Xu",
+        "Xuesu Xiao"
+      ],
+      "published": "2026-09-19T16:43:32Z",
+      "updated": "2026-09-19T16:43:32Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.23118v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2609.23875v1",
+      "title": "VISTA: An Attention-Based Multi-Agent Reinforcement Learning Architecture for Space Situational Awareness Sensor Tasking",
+      "summary": "The rapid growth of resident space objects is increasing the complexity of space situational awareness sensor tasking, challenging classical optimization methods as they allocate finite, heterogeneous, and distributed sensing resources across ever-larger catalogues. Existing deep reinforcement learning approaches show promise in reduced settings, but fixed-dimensional state and action representations limit their ability to scale to large, dynamic catalogues and distributed sensing networks. We introduce VISTA (Variable-Entity Intelligent Sensor Tasking Architecture), a scalable deep reinforcement learning architecture for persistent uncertainty-driven catalogue maintenance across variable object populations and sensor configurations. VISTA combines physics- and mission-informed top-K retrieval with entity-centric attention, recurrent memory, and pointer-based action decoding, thereby keeping each agent's observation and action spaces independent of catalogue size. We evaluate VISTA across different scenarios, from fixed-size single-sensor benchmarks to large-scale space-based tasking and heterogeneous cooperative sensing. With 30 orbiting targets, VISTA recovers the catalogue 31.2% faster than the fixed-dimensional recurrent baseline. In the large-scale regime, VISTA reduces five-hour uncertainty by 97.5% relative to the strongest classical reference and by 99.3% relative to the recurrent learner. Zero-shot tests up to 20,000 objects reveal near-linear relations between sensing capacity, catalogue size, and recovery horizon. Learned policies also exhibit sensor modality adaptation and generalization to population and initial-uncertainty shifts. Together, these results demonstrate that VISTA provides a scalable framework for adaptive space situational awareness sensor tasking across large, distributed networks of heterogeneous ground- and space-based sensors.",
+      "authors": [
+        "Miguel Leiva-Vélez",
+        "Adalberto Claudio Quiros",
+        "Nicolas Gaston Rozado",
+        "Hodei Urrutxua",
+        "Víctor Rodríguez-Fernández"
+      ],
+      "published": "2026-09-20T21:20:49Z",
+      "updated": "2026-09-20T21:20:49Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MA",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.23875v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2609.23790v1",
+    "2609.23184v1",
+    "2609.22971v1",
+    "2609.23118v1",
+    "2609.23875v1"
+  ]
+}

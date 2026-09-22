@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows - arXiv 2609.23790 论文总结">
+    <title>Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.23790<br><strong>分类:</strong> cs.AI, cs.MA, cs.PF<br><strong>发布时间:</strong> 2026-09-20</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Vivek Kumar Singh, Preeti Priyam, Gautam Bhowmick</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.23790">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.23790">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Every node in a multi-agent large language model (LLM) workflow retrieves context from memory and injects it into its prompt, where those injected tokens are billed as input tokens at the same per-token price as the system prompt and the user query. Production observability tools report total token cost but do not separate the tokens a node generates from the tokens it is handed, so this component of the bill is invisible to the teams paying it. We introduce the Total Cost of Agency (TCA), a decomposition of multi-agent workflow cost into base prompt, inference, memory injection, miss penalty and context-accumulation components, and an exact attribution method: a two-pass, non-billable token count that measures injected tokens directly rather than estimating them from word-count proxies. On a 200-task enterprise benchmark executed against real model APIs, memory injection accounts for 13.6 percent of the variable cost a compile-time optimizer can act on, about 12 percent of the full billed cost, and its share rises from a structural zero at workflow depth one to 27.6 percent at depth six. Injected tokens grow linearly with depth over the measured range (R^2 = 0.9974, depths two through six); a quadratic fit yields a negative leading coefficient, so the data do not exhibit convex growth at these depths. We show the component is controllable at fixed model tier: reducing the retrieval window capacity from 32 to 2 entries lowers injected tokens by 28.7 percent with an accuracy change within seed-level variation. We report in full that our graph-rewriting transforms are approximately cost-neutral in isolation, that two of the five decomposition terms are zero by construction in this harness, and that total workflow cost is dominated by model tier assignment, which we hold fixed and treat as prior work. Prompt caching is not evaluated; all figures are for the uncached case.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.23790" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
