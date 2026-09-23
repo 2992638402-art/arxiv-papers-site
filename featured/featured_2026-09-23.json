@@ -1,0 +1,116 @@
+{
+  "date": "2026-09-23",
+  "papers": [
+    {
+      "id": "2609.25927v1",
+      "title": "Informed Masking: Structure-Aware Perturbation for Reinforcement Learning in Diffusion Large Language Models",
+      "summary": "Diffusion Large Language Models (dLLMs) have emerged as an efficient alternative to autoregressive models, yet aligning them via Reinforcement Learning (RL) requires likelihood surrogates estimated from masked reconstruction subproblems under a small Monte Carlo budget per rollout. Existing methods construct these subproblems by uniform random masking, leaving open the question of which subproblems to prioritize. We identify a systematic upstream/downstream structure in dLLM rollouts. Some tokens, when revealed, trigger large confidence changes in nearby undecoded positions; we call them upstream. Others induce only small local changes and are therefore downstream. We find masking downstream tokens yields substantially better-posed subproblems than masking upstream tokens, a phenomenon we term subproblem difficulty asymmetry. Based on the observation, we propose Informed Masking (IM), which derives a per-token priority score from the denoising trajectory at zero extra inference cost and biases mask sampling toward downstream tokens. IM is plug-and-play: when plugged into three state-of-the-art dLLM RL methods on LLaDA-8B-Instruct, it delivers up to 2.01%, 8.68%, and 5.77% relative average gains on math and planning benchmarks with improved training stability.",
+      "authors": [
+        "Xiaoyi Yu",
+        "Enver Sangineto",
+        "Pei Fu",
+        "Fiorenzo Parascandolo",
+        "Wenhui Tan",
+        "Ruikang Zhang",
+        "Rita Cucchiara",
+        "Ruihua Song",
+        "Jian Luan"
+      ],
+      "published": "2026-09-22T09:31:23Z",
+      "updated": "2026-09-22T09:31:23Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.25927v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2609.23790v1",
+      "title": "Total Cost of Agency: Exact Attribution of Memory Injection Cost in Multi-Agent LLM Workflows",
+      "summary": "Every node in a multi-agent large language model (LLM) workflow retrieves context from memory and injects it into its prompt, where those injected tokens are billed as input tokens at the same per-token price as the system prompt and the user query. Production observability tools report total token cost but do not separate the tokens a node generates from the tokens it is handed, so this component of the bill is invisible to the teams paying it. We introduce the Total Cost of Agency (TCA), a decomposition of multi-agent workflow cost into base prompt, inference, memory injection, miss penalty and context-accumulation components, and an exact attribution method: a two-pass, non-billable token count that measures injected tokens directly rather than estimating them from word-count proxies. On a 200-task enterprise benchmark executed against real model APIs, memory injection accounts for 13.6 percent of the variable cost a compile-time optimizer can act on, about 12 percent of the full billed cost, and its share rises from a structural zero at workflow depth one to 27.6 percent at depth six. Injected tokens grow linearly with depth over the measured range (R^2 = 0.9974, depths two through six); a quadratic fit yields a negative leading coefficient, so the data do not exhibit convex growth at these depths. We show the component is controllable at fixed model tier: reducing the retrieval window capacity from 32 to 2 entries lowers injected tokens by 28.7 percent with an accuracy change within seed-level variation. We report in full that our graph-rewriting transforms are approximately cost-neutral in isolation, that two of the five decomposition terms are zero by construction in this harness, and that total workflow cost is dominated by model tier assignment, which we hold fixed and treat as prior work. Prompt caching is not evaluated; all figures are for the uncached case.",
+      "authors": [
+        "Vivek Kumar Singh",
+        "Preeti Priyam",
+        "Gautam Bhowmick"
+      ],
+      "published": "2026-09-20T18:23:47Z",
+      "updated": "2026-09-20T18:23:47Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA",
+        "cs.PF"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.23790v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2609.26299v1",
+      "title": "ForeDrive: Foresight-Guided End-to-End Autonomous Driving with a Planning-Relevant Latent World Model",
+      "summary": "Existing latent world models are typically optimized for future predictability, yet the resulting representations are not necessarily useful for planning in autonomous driving. Predictions are commonly used for pretraining or auxiliary supervision rather than as direct conditioning signals for trajectory generation. We propose ForeDrive, which learns a planning-relevant latent representation and couples it asymmetrically to a Diffusion Transformer (DiT) planner. The planner consumes multi-horizon latent future representations learned with a JEPA-style world model; planning gradients update the shared online encoder, while stop-gradient routing trains the latent predictor with forecasting losses only. Because predicted futures have varying reliability across horizons and BEV trajectories are misaligned with image tokens, we use gated visual fusion, future-status injection, and Trajectory-Adaptive Bias (TAB) to inject future latents as guidance without overriding the current observation. Trained with pure imitation learning and using only the current front-view image as visual input at inference, ForeDrive attains 89.9 PDMS on NAVSIM v1 and 90.0 one-stage EPDMS on NAVSIM v2, without reinforcement learning or an external trajectory scorer.",
+      "authors": [
+        "Sinuo Wang",
+        "Zichong Gu",
+        "Yuhan Huang",
+        "Wenxin Wen",
+        "Xun Yang",
+        "Yiqing Zhang",
+        "Xingyu Zhang",
+        "Ningyu Che",
+        "Jie Ling",
+        "Qiankun Yu",
+        "Wei Liu",
+        "Jing Xu",
+        "Xinggang Wang"
+      ],
+      "published": "2026-09-22T12:11:18Z",
+      "updated": "2026-09-22T12:11:18Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.26299v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2609.25701v1",
+      "title": "Fully Byzantine-Resilient Multi-Agent Reinforcement Learning",
+      "summary": "We study distributed Byzantine-resilient actor-critic multi-agent reinforcement learning (AC-MARL), where agents collectively learn policies through local interactions. Existing methods guarantee convergence of the agents' parameters only to a neighborhood of the attack-free limit points, resulting in degraded performance. We propose Fully Resilient AC-MARL (FRAC-MARL), a decentralized method in which each agent leverages redundancy in two-hop messages to identify reliable messages. Under linear parameterizations of the value and team-reward functions and Byzantine edge attacks, where adversarial behavior is confined to the communication layer, we prove that agents' parameters converge almost surely to the same limit points as in the attack-free case over time-varying communication graphs. We introduce a novel topological condition for the convergence of our method, present a systematic method to construct such networks, and prove that this condition can be verified in polynomial time. Finally, we demonstrate our method on cooperative multi-robot formation control tasks.",
+      "authors": [
+        "Haejoon Lee",
+        "Dimitra Panagou"
+      ],
+      "published": "2026-09-22T05:09:10Z",
+      "updated": "2026-09-22T05:09:10Z",
+      "categories": [
+        "cs.LG",
+        "cs.MA",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.25701v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2609.25432v1",
+      "title": "Tipping Points in LLM-Based Multi-Agent Systems: Stance on Climate Change Action",
+      "summary": "Because significant action to counter global warming requires massive public support, it is important to understand the dynamics of public opinion on climate issues. Of special interest are social tipping points, as revealed by large-scale effects of small perturbations in individual behaviors. Agent-based models (ABM) are an effective computational tool for studying these matters, because they allow controlled and systematic exploration of the effects of interventions that may be infeasible in real-world social systems. Large language models (LLMs) have been used to endow model agents with the ability to communicate in natural language (rather than by exchanging predefined messages), as well as with personality (in the form of a narrative self and episodic memory). We leverage LLM-powered ABM to look for tipping points in the social dynamics of a micro-society in which some of the discussions are about climate change. Our agents' stance was defined by two variables: the strength of conviction about the urgency of climate action and the degree of trust in existing institutions. We quantified shifts in agents' \"beliefs\" by monitoring, across multiple rounds of conversations, (1) inter-agent distances in this two-dimensional stance space and (2) the patterns of discussion topics as modeled by Latent Dirichlet Allocation (LDA). Our findings to date suggest that significant abrupt changes in climate-change stance do occur in this simple model. We report a number of methodological lessons from this study, notably, the need to prevent LLM biases from interfering with the conversational dynamics and, more generally, to maintain agent personality and episodic memories of interactions in the face of such biases. Resolving these issues may allow for using ABM-derived insights in designing real-life interventions vis-a-vis climate change and other important societal challenges.",
+      "authors": [
+        "Astghik Altunyan",
+        "Shimon Edelman"
+      ],
+      "published": "2026-09-21T21:33:48Z",
+      "updated": "2026-09-21T21:33:48Z",
+      "categories": [
+        "cs.MA",
+        "cs.CY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.25432v1.pdf",
+      "category": "other"
+    }
+  ],
+  "ids": [
+    "2609.25927v1",
+    "2609.23790v1",
+    "2609.26299v1",
+    "2609.25701v1",
+    "2609.25432v1"
+  ]
+}
