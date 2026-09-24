@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Does Step Law Transfer to Small-Scale Language Models? An Empirical Recalibration Below 59M Parameters - arXiv 2609.27581 论文总结">
+    <title>Does Step Law Transfer to Small-Scale Language Models? An Empirical Recalibration Below 59M Parameters | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Does Step Law Transfer to Small-Scale Language Models? An Empirical Recalibration Below 59M Parameters</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.27581<br><strong>分类:</strong> cs.LG, cs.CL<br><strong>发布时间:</strong> 2026-09-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Egor Romanyukov, Timofey Novikov, Timur Shokarov, Elizaveta Zorkina, Anastasia Palienko, Stepan Dergachev</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.27581">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.27581">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Step Law gives power-law formulas for the optimal peak learning rate eta* and batch size B* when pre-training language models. It was calibrated on models between 59M and 1B parameters; the small-model regime N &lt; 59M was never tested empirically by its authors. This regime matters for single-GPU training, interpretability research, educational experiments, and settings where larger models are infeasible on memory or cost grounds. We test whether Step Law transfers to small language models. We consider three outcomes: H1, the original coefficients work directly; H2, the power-law form holds but with different coefficients; and H3, a power law does not describe the optima in this regime. All experiments use a single nanoGPT/TinyStories pipeline with a 2048-token BPE vocabulary, AdamW, and a warmup-cosine schedule. The optimum for each (N, D) cell is extracted from the loss surface L(eta, B) via a local quadratic approximation in log-log coordinates over the smoothed training loss. The final dataset contains 29 unique (N, D) cells and 935 analysis-ready runs. The main refit uses 25 cells (815 runs) in the working range 4 &lt;= D/N &lt;= 600. On the pooled data we accept H2: the functional form is preserved, but the coefficients differ from the original. We obtain eta*(N, D) = 0.0985 N^(-0.508) D^(0.238) (R^2 = 0.834) and B*(D) = 3.6 x 10^(-4) D^(0.931) (R^2 = 0.950). Step Law&#39;s structural claim that B* is independent of N is reproduced (p = 0.87), but the growth of B* with D is nearly twice as steep as in the original work. Direct transfer of Step Law systematically overestimates the optimal learning rate: the median ratio eta_SL / eta* is approximately 4.0x, with a range of 2.4x to 6.6x.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.27581" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

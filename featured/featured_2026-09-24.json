@@ -1,0 +1,124 @@
+{
+  "date": "2026-09-24",
+  "papers": [
+    {
+      "id": "2609.27717v1",
+      "title": "SkillGym: Internalizing Human Skills into LLMs for Real-World Problem Solving",
+      "summary": "Human-written agent skills encode rich workflows for real-world problem solving, but are typically used as external inference-time instructions rather than internalized as reusable model capabilities. We introduce \\texttt{SkillGym}, a framework that transforms these skills into executable, verifiable training environments for large language model agents. Its skill-to-task pipeline instantiates concrete tasks, verifies outcomes with code-based checkers, and assesses empirical skill dependence through contrastive executions. We construct and release 2,756 environments across 12 categories and collect 8,364 successful trajectories from multiple models and harnesses, averaging 49 tool calls and over 60k logged text tokens. These resources support supervised fine-tuning on verified workflows and reinforcement learning with outcome-based rewards. Under Claude Code, supervised fine-tuning improves Qwen3.5-35B-A3B by 199 Elo on GDPval-AA v2, 19.10 percentage points on Terminal-Bench 2.1, and 28.13 and 12.38 points on SkillsBench v1.1 with and without skills, respectively. Our 35B \\texttt{SkillGym-Agent} reaches 51.47\\% on skill-assisted SkillsBench, exceeding reported scores for Claude Sonnet 4.6, GPT-5.4 Mini, and DeepSeek V4 Pro. Without skills, it also surpasses skill-assisted bases under Codex and Claude Code, suggesting reusable procedural competence.",
+      "authors": [
+        "Zhilong Ge",
+        "Yuting Shao",
+        "Yutao Yang",
+        "Yuxuan Cai",
+        "Jie Zhou",
+        "Kai Chen",
+        "Bo Zhang",
+        "Qin Chen",
+        "Liang He"
+      ],
+      "published": "2026-09-23T11:35:34Z",
+      "updated": "2026-09-23T11:35:34Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.27717v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2609.25701v1",
+      "title": "Fully Byzantine-Resilient Multi-Agent Reinforcement Learning",
+      "summary": "We study distributed Byzantine-resilient actor-critic multi-agent reinforcement learning (AC-MARL), where agents collectively learn policies through local interactions. Existing methods guarantee convergence of the agents' parameters only to a neighborhood of the attack-free limit points, resulting in degraded performance. We propose Fully Resilient AC-MARL (FRAC-MARL), a decentralized method in which each agent leverages redundancy in two-hop messages to identify reliable messages. Under linear parameterizations of the value and team-reward functions and Byzantine edge attacks, where adversarial behavior is confined to the communication layer, we prove that agents' parameters converge almost surely to the same limit points as in the attack-free case over time-varying communication graphs. We introduce a novel topological condition for the convergence of our method, present a systematic method to construct such networks, and prove that this condition can be verified in polynomial time. Finally, we demonstrate our method on cooperative multi-robot formation control tasks.",
+      "authors": [
+        "Haejoon Lee",
+        "Dimitra Panagou"
+      ],
+      "published": "2026-09-22T05:09:10Z",
+      "updated": "2026-09-22T05:09:10Z",
+      "categories": [
+        "cs.LG",
+        "cs.MA",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.25701v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2609.25432v1",
+      "title": "Tipping Points in LLM-Based Multi-Agent Systems: Stance on Climate Change Action",
+      "summary": "Because significant action to counter global warming requires massive public support, it is important to understand the dynamics of public opinion on climate issues. Of special interest are social tipping points, as revealed by large-scale effects of small perturbations in individual behaviors. Agent-based models (ABM) are an effective computational tool for studying these matters, because they allow controlled and systematic exploration of the effects of interventions that may be infeasible in real-world social systems. Large language models (LLMs) have been used to endow model agents with the ability to communicate in natural language (rather than by exchanging predefined messages), as well as with personality (in the form of a narrative self and episodic memory). We leverage LLM-powered ABM to look for tipping points in the social dynamics of a micro-society in which some of the discussions are about climate change. Our agents' stance was defined by two variables: the strength of conviction about the urgency of climate action and the degree of trust in existing institutions. We quantified shifts in agents' \"beliefs\" by monitoring, across multiple rounds of conversations, (1) inter-agent distances in this two-dimensional stance space and (2) the patterns of discussion topics as modeled by Latent Dirichlet Allocation (LDA). Our findings to date suggest that significant abrupt changes in climate-change stance do occur in this simple model. We report a number of methodological lessons from this study, notably, the need to prevent LLM biases from interfering with the conversational dynamics and, more generally, to maintain agent personality and episodic memories of interactions in the face of such biases. Resolving these issues may allow for using ABM-derived insights in designing real-life interventions vis-a-vis climate change and other important societal challenges.",
+      "authors": [
+        "Astghik Altunyan",
+        "Shimon Edelman"
+      ],
+      "published": "2026-09-21T21:33:48Z",
+      "updated": "2026-09-21T21:33:48Z",
+      "categories": [
+        "cs.MA",
+        "cs.CY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.25432v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2609.27450v1",
+      "title": "BEE: Intervention-Adaptive Real-World Reinforcement Learning with Vision-Language-Action Models",
+      "summary": "Vision-language-action (VLA) models handle long-horizon manipulation, yet success hinges on a few precision-critical phases where millimeter-scale errors undo all prior progress. Online reinforcement learning (RL) can optimize exactly these actions, but free exploration is far too costly on real robots, which makes human corrections indispensable. However, existing online RL methods for VLAs either cannot incorporate such corrections or fold them into undifferentiated supervision. Yet human corrections are not uniformly noisy but reliable along some action dimensions and variable along others. Building on this, we introduce BEE, an intervention-adaptive framework for real-world RL on a frozen VLA that lets the policy go BEyond Expert imitation. We formulate human corrections not as actions to reproduce but as evidence about a constraint: a Correction Model predicts how a human would correct a given VLA proposal and how consistent the correction is along each action dimension. This predicted consistency sets the per-dimension tightness of a constraint on policy optimization. Where corrections are consistent the policy stays close to the human, and where they vary, the constraint relaxes. We evaluate BEE on three real-world manipulation tasks and one LIBERO-Pro simulation task at a matched online-data budget. BEE attains the highest success rate on every task, 91.2% on average against 57.5% for RLT and 42.1% for DSRL, and the lowest human intervention rate on all real-world tasks.",
+      "authors": [
+        "Weihui Zhao",
+        "Xiaohan Yan",
+        "Zunian Wan",
+        "Xuan Du",
+        "Zhaozhan Chi",
+        "Jianbo Mao",
+        "Ruipu Wu",
+        "Rushuai Yang",
+        "Houlin Li",
+        "Shukai Yang",
+        "Jing Wu",
+        "Yuxiang Yan",
+        "Yongcheng Liu",
+        "Chuankang Li",
+        "Guanghui Ren",
+        "Wei Shan",
+        "Maoqing Yao"
+      ],
+      "published": "2026-09-23T07:14:20Z",
+      "updated": "2026-09-23T07:14:20Z",
+      "categories": [
+        "cs.RO",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.27450v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2609.27572v1",
+      "title": "DCRL: Decoupling and Coupling Reinforcement Learning via Policy-Reward Manifold Alignment",
+      "summary": "Reinforcement learning (RL) has emerged as a key paradigm for improving the reasoning capabilities of large language models (LLMs). However, existing reward systems, such as rule-based and reward-model-based, often exhibit issues such as unstable optimization and reward hacking. In this work, we revisit the general reasoning of LLMs from a geometric perspective, conceptualizing it as a coupled manifold composed of three interdependent sub-manifolds: logical deduction, evaluation, and representation. Based on this perspective, response generation in RL can be interpreted as a decoupling process from the evaluation manifold, while reward estimation corresponds to a decoupling process from the logical deduction manifold. The limitations of rule-based and reward-model RL systems can be geometrically interpreted as the mismatch of policy-reward manifolds during RL process. To address the aforementioned misalignment, we propose Decoupling and Coupling Reinforcement Learning (DCRL) framework, which incorporates two key components: (1) a syllogistic logic-based prompt evolution mechanism that dynamically refines reward rubrics to enhance the expressiveness of the reward manifold; and (2) a policy-reward re-coupling mechanism that jointly updates the reward and policy models, ensuring consistent evaluation and mitigating manifold mismatch during training. Theoretical analysis and extensive experiments across multiple reasoning domains demonstrate that DCRL consistently outperforms both rule-based and reward-model baselines. Notably, a Qwen3-4B model trained under DCRL surpasses a Qwen3-32B baseline and approaches the performance of a Qwen3-235B model, highlighting superior effectiveness and generalization in RL.",
+      "authors": [
+        "Henan Sun",
+        "Zehua Li",
+        "Haitao Hu",
+        "Qifan Zhang",
+        "Jianfeng Zhang",
+        "Nuo Chen",
+        "Jia Li"
+      ],
+      "published": "2026-09-23T08:52:35Z",
+      "updated": "2026-09-23T08:52:35Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2609.27572v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2609.27717v1",
+    "2609.25701v1",
+    "2609.25432v1",
+    "2609.27450v1",
+    "2609.27572v1"
+  ]
+}

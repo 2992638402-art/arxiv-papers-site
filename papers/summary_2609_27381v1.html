@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CoPRE: Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms - arXiv 2609.27381 论文总结">
+    <title>CoPRE: Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>CoPRE: Improving Sensitivity in Proprioceptive Contact Detection for Low-Cost Robot Arms</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.27381<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-09-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yuxiao Zhu, Jinzhou Li, Yifei Dong, Muhammad Suhail, Chunyuan Yang, Xinyuan Luo, Haoyu Li, Boyuan Chen, Xianyi Cheng</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.27381">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.27381">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Contact detection during robotic manipulation allows robots to recognize unexpected contact and adapt their motion accordingly. However, in low-cost robot arms without dedicated force or tactile sensors, detecting weak contacts from proprioception is challenging because the resulting changes in joint-level proprioceptive signals can be small compared to normal variation and noise caused by robot motion itself. We introduce Contact-free Proprioceptive Response Estimation (CoPRE), improving proprioceptive contact detection sensitivity using only contact-free motion, without additional force sensors, contact labels, or analytical dynamics models. CoPRE estimate the expected joint torques under contact-free motion from proprioceptive state history and commanded motion, while removing recent observations that may already reflect contact. It then computes the residual between the expected and observed joint torque estimates, and maps this residual to a contact score using a noise-weighted Jacobian. Real-robot experiments on ARX Arm and Unitree G1 show that CoPRE achieves 74.1% and 82.2% recall on the tested contact trials, compared with 0%/0% on ARX and 16.3%/42.2% on G1 for the learned torque-prediction and inverse-dynamics baselines. CoPRE also reaches 90% detection rate for pushing force at 3.5 N on ARX and 5.5 N on G1. To demonstrate the downstream utility of our method, we implement belief-space manipulation planning for obstacle-aware object placement and book insertion where detected contacts update the spatial belief and enable the robot to retreat from blocked motions, adjust its pose, and retry. Project website at <a href="https://copre-arm.github.io">https://copre-arm.github.io</a></p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.27381" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
