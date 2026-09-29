@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EHRAdapt: Adapting Pretrained Language Models to Electronic Health Records with Semantic Priors for Rare Clinical Events - arXiv 2609.34007 论文总结">
+    <title>EHRAdapt: Adapting Pretrained Language Models to Electronic Health Records with Semantic Priors for Rare Clinical Events | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>EHRAdapt: Adapting Pretrained Language Models to Electronic Health Records with Semantic Priors for Rare Clinical Events</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.34007<br><strong>分类:</strong> cs.AI<br><strong>发布时间:</strong> 2026-09-27</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Andre R Goncalves, Vincent Liu, Priyadip Ray</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.34007">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.34007">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Electronic health records (EHRs) encode clinical histories as (time, modality, code) tuples, whereas pretrained language models expect text tokens. Serializing them as text inflates sequence length and redundantly encodes structure. We introduce EHRAdapt, an adapter that maps tuples directly into a frozen language model&#39;s embedding space. Modality receives a learned embedding, time gaps enter through learned attention biases, and event codes receive dedicated vectors. Learning event vectors is the central challenge: clinical vocabularies are long-tailed, leaving rare events too few observations for reliable estimates. EHRAdapt therefore represents each event vector as the sum of a semantic prior and an evidence residual. The prior is a frozen embedding of the event&#39;s clinical description from a biomedical language model trained on clinical ontologies, mapped into the model&#39;s input space by a shared learned projection, so it supplies clinical meaning even when observations are scarce. The residual, a learned low-rank event-specific correction, refines it as evidence accumulates. We run continued pretraining on about 4 million patients&#39; records with three frozen LLM backbones (OLMo2 1B, Llama3.2 1B, and OLMo2 7B), training only the adapter (0.1--0.6% of all parameters). The full adapter outperforms all ablations in held-out next-event prediction on every backbone. Removing the semantic pathway hurts rare events over ten times more than the most frequent ones, whereas removing the residual hurts overall prediction but improves it for the rarest events. On reportable infectious-disease and syndromic downstream classification tasks, EHRAdapt outperforms text-based LLM and count-based baselines, and both pathways improve rare-disease discrimination. The two pathways therefore play complementary roles, visible only when results are broken down by event frequency rather than averaged.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.34007" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

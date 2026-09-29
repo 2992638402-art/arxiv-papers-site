@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Validating Memory-Optimal Transformer Kernels on Real Hardware: From Formal Derivation to Measured Performance Across Two HPC Clusters - arXiv 2609.33916 论文总结">
+    <title>Validating Memory-Optimal Transformer Kernels on Real Hardware: From Formal Derivation to Measured Performance Across Two HPC Clusters | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Validating Memory-Optimal Transformer Kernels on Real Hardware: From Formal Derivation to Measured Performance Across Two HPC Clusters</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.33916<br><strong>分类:</strong> cs.DC, cs.AI<br><strong>发布时间:</strong> 2026-09-27</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Lenore M. Mullin, Gaetan Hains</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.33916">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.33916">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>We validate memory-optimal cost functions for transformer kernels derived via the Mathematics of Arrays (MoA). Companion Papers I-IV formally derive kernels for attention forward, backward, fused forward+backward, decode, and the complete block (RMSNorm, gated MLP) as a hardware-independent specification (DNF) transformed to a machine-specific realization (ONF) via gamma, with verification to machine precision against PyTorch. This paper checks those predictions against measured performance on two HPC clusters (Purdue Anvil, NCSA Delta) across CPU and GPU. Three results stand out. (1) We identify and fix a GPU regression: fusing forward+backward, proven to avoid materializing an O(n^2) intermediate, initially ran slower than naive on GPU due to atomic contention. Profiling confirmed 2.00x more atomic instructions; a targeted ONF rewrite reversed it, yielding up to 2.5x speedup. (2) Identical derivations produce markedly different real costs by topology: 535x NUMA-locality penalty on one cluster vs &lt;3x oversubscription on another, showing optimal deployment is a function of the machine&#39;s array structure. (3) We report a partially resolved anomaly: identical denotational computations run faster in C than Fortran on CPU but faster in Fortran than C on GPU, narrowed to one dominant kernel and one memory-latency stall mechanism (3.17x time gap matches 3.35x stall gap). We treat hardware-specific optimization as a routine ONF rewrite with fixed, verified DNF, a candidate methodology for scaling AI onto evolving hardware without re-deriving correctness.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.33916" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

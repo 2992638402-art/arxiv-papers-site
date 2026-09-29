@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows - arXiv 2609.32917 论文总结">
+    <title>Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Planner-as-Router: Joint Plan-Time Model Routing for Cost-Efficient Multi-Agent Workflows</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.32917<br><strong>分类:</strong> cs.AI, cs.CL, cs.MA<br><strong>发布时间:</strong> 2026-09-26</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Vivek Kumar Singh, Preeti Priyam, Gautam Bhowmick</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.32917">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.32917">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Running large language model (LLM) agents in production gets expensive fast. A frontier model (the largest, most capable tier) is accurate but can cost 25 times what a small model costs per token, and the gap compounds once a workflow chains several calls together. Planner-as-Router (PaR) attacks this from a different angle. Instead of leaving model-tier selection to some component downstream, it folds the choice into planning itself. As the planner breaks a query into subtasks, it also assigns each one a model size tier (small, mid, or frontier, ordered by capability and price), so the dependencies between subtasks are visible before any specialist runs. Unlike per-call routers such as cascade routing, which look at one node at a time, PaR sees the whole workflow up front and needs no separate router model or training data. We evaluate PaR with EntBench, a benchmark of 54 enterprise agentic tasks across seven classes, graded by actually running the generated Structured Query Language (SQL) and MongoDB queries against live databases. Over 1,157 evaluations spanning eight routers and three seeds, PaR stays on the observed cost-accuracy frontier. It matches a sink-frontier heuristic (frontier model on terminal nodes only) in accuracy at comparable cost and a faithful FrugalGPT cascade at lower cost, and cuts cost 44% against all-frontier routing while giving up 2.9 points of accuracy. Several accuracy gaps fall inside the plus-or-minus six-point confidence interval of a 54-task study, so we frame PaR&#39;s advantage as frontier position rather than a clean accuracy win. We also report a preliminary observation, not a validated result: a small pilot hints that cheap routing may carry a hidden compounding penalty on compositional workflows, which we frame as a hypothesis for future measurement. PaR, EntBench, and all evaluation code are open source.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.32917" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

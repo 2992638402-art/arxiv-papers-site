@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A packet-level digital hardware twin for commissioning megahertz diagnostic edge AI and plasma control system integration in tokamaks - arXiv 2609.33994 论文总结">
+    <title>A packet-level digital hardware twin for commissioning megahertz diagnostic edge AI and plasma control system integration in tokamaks | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>A packet-level digital hardware twin for commissioning megahertz diagnostic edge AI and plasma control system integration in tokamaks</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.33994<br><strong>分类:</strong> physics.plasm-ph, cs.AI<br><strong>发布时间:</strong> 2026-09-27</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Semin Joung, Abhilasha Dave, Luca Scomparin, Filipp Khabanov, Zheng Yan, Benedikt Geiger, George McKee, Ryan N. Coffee, David R. Smith</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.33994">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.33994">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>High-bandwidth plasma diagnostics increasingly provide inputs to machine learning and signal-processing algorithms intended for real-time tokamak control, but the complete path from diagnostic sampling to control-system handoff is difficult to commission because of their sampling rates. We develop a packet-level digital hardware twin for the megahertz diagnostic edge-AI architecture. The simulator represents a 64-channel, 1 MHz beam emission spectroscopy (BES) diagnostic embedded in a 96-channel dual-carrier acquisition system, two 48-channel streams with SPAD0 sample counters, 10 GbE Hardware UDP transport, packet loss and network jitter, FPGA parsing and dual-carrier alignment, causal preprocessing and edge inference, a compact Ethernet result packet, receiver-side shared state, and a 1 kHz PCS-like control cycle. Binary UDP payloads and PCAP files are generated rather than emulating transport only at the array level. With a baseline of 20 samples per packet, each carrier generates 50,000 packets s$^{-1}$ and 100 MB s$^{-1}$ of user payload. A 110 ms reference run produces 11,000 HUDP packets; an intentionally dropped 20-sample packet is detected by the sample-counter continuity logic and invalidates the two overlapping 128-sample inference windows without silent interpolation. For valid windows, the configured engineering latency model gives a median last-input-to-shared-memory latency of 91.6 us and a 99th percentile of 108.1 us. A separate operating-system loopback test sends binary FPGA-result datagrams through a UDP receiver into POSIX shared memory and preserves packet sequence and CRC for 20/20 packets. Interactive GUI interfaces expose timing, packetization, network faults, inference thresholds, and control-state inspection. The framework provides a reproducible environment for testing diagnostic-to-accelerator interfaces and fail-safe behavior for deployment on fusion devices.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.33994" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

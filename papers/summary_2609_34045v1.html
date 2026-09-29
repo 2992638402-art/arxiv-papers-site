@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kafila: Serving Large Language Models on a Trusted Set of Heterogeneous Commodity Machines - arXiv 2609.34045 论文总结">
+    <title>Kafila: Serving Large Language Models on a Trusted Set of Heterogeneous Commodity Machines | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Kafila: Serving Large Language Models on a Trusted Set of Heterogeneous Commodity Machines</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.34045<br><strong>分类:</strong> cs.DC, cs.LG<br><strong>发布时间:</strong> 2026-09-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Murtaza Rangwala, Richard O. Sinnott, Rajkumar Buyya</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.34045">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.34045">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Between them, the members of a research group or a circle of friends own several consumer computers, none large enough to run a capable large language model. Existing systems pool such capacity across open swarms anyone may join, which a group admitting only trusted machines cannot use. Bounding membership removes what they depend on: a swarm holds each part of the model on several peers and routes around a slow one. A bounded session must use every device it admits. Its pipeline advances at the pace of whichever device received a share it cannot serve quickly, so the division has to be right before serving begins. We propose Kafila, whose protocol assembles a ring from behind NATs, preferring direct paths and relaying where traversal fails, while its planner measures each device&#39;s memory bandwidth, capacity and reachability, divides the model exactly for a fixed ring order, and places the head, which holds the embedding and output projection, together with that division rather than beforehand. On machines with different capabilities across three fleets, from a shared LAN to five devices spanning two continents, Kafila shortens the slowest pipeline stage by up to $5.2\times$ against the even split of pipeline parallelism, as in GPipe, and up to $3\times$ against the memory-proportional split of personal-device inference, as in exo, keeps 75 to 87 per cent of the committed hardware doing work where those divisions fall below half, and serves a model no uniform split can place on the fleet at all. What that is worth to a user depends on how much of a token is computation rather than network. Where the members share a network the same division returns $1.56\times$ the throughput of a uniform split and $1.25\times$ of a memory-proportional one, and under four concurrent users that lead compounds to $3.2\times$ rather than fading, each user served at almost the rate of one.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.34045" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Same Winners, Different Success Rates: Evaluating How LLM Agents Recover from Failures - arXiv 2609.34215 论文总结">
+    <title>Same Winners, Different Success Rates: Evaluating How LLM Agents Recover from Failures | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Same Winners, Different Success Rates: Evaluating How LLM Agents Recover from Failures</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.34215<br><strong>分类:</strong> cs.AI, cs.LG, cs.MA<br><strong>发布时间:</strong> 2026-09-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Dong Xu, Zhangfan Yang, Jiantao Wu, Shipeng Zhang, Zexuan Zhu, Jiangqiang Li, Jun Zhang, Junkai Ji</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.34215">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.34215">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Evaluating how LLM agents recover from mid-task failures is central to deploying reliable agentic systems. Existing checkpoint-based benchmarks measure recovery by comparing which action is selected as best across independent runs, a quantity known as set agreement. However, set agreement is a purely ordinal measure that records which action wins without reflecting the absolute level of performance. When all actions fail, they tie at zero reward, and independent runs produce the same tied set with high probability, creating an illusion of stability that masks near-zero recovery success. We formalize this limitation through a set-path symmetry result, proving that for equal-cost Bernoulli actions the success probabilities (0.9, 0.8) and (0.2, 0.1) yield identical best-action-set distributions at every sample size. No procedure based solely on which action wins can distinguish these two regimes. We further prove that certifying exact population ties is impossible in finite time, and that the assignment of outcomes to checkpoints carries information beyond marginal outcome distributions. The pooled success probability is the missing scalar that resolves the ordinal ambiguity. Experiments on 864 frozen RecoveryBench episodes and two planning cohorts totaling 3,456 responses confirm the theoretical predictions. Agreement and held-out quality can move in opposite directions, and permuting checkpoint-to-action bindings changes 8 to 13 percent of cell-level conclusions. Based on these findings, we propose reporting four diagnostic quantities (agreement, all-zero fraction, held-out success, and pooled success) that expose this failure mode with no additional data collection.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.34215" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Uniform Race: Parameter-Free Approximate Rejection Sampling - arXiv 2609.34639 论文总结">
+    <title>Uniform Race: Parameter-Free Approximate Rejection Sampling | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Uniform Race: Parameter-Free Approximate Rejection Sampling</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2609.34639<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-09-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Seiyun Shin, Juhyeong Pang, Kwang-Sung Jun</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2609.34639">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2609.34639">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>We study approximate sampling: given $N$ independent samples from a proposal distribution $μ$, the goal is to select one whose distribution is close to a target $π$ specified only up to a normalizing constant. Block and Polyanskiy (2023) provide finite budget error bounds for approximate rejection sampling (RS) as a function of the acceptance threshold $M$. The threshold $M$ giving the smallest bound, however, depends on properties of $(π,μ)$ that are typically unavailable from the observed sample. This raises a natural question: Can one attain the best RS guarantee without taking $M$ as input? We answer affirmatively by proposing a parameter-free sampling algorithm called uniform race (UR), based on importance weights, which are ratios of target to proposal probabilities (or densities). It divides each observed weight by an independent uniform random variable to form a score and returns the candidate with the largest score. For every budget $N$, its total variation error satisfies the RS upper bound for every fixed threshold $M$ simultaneously, thereby achieving the best such bound in hindsight. We also characterize its output distribution conditional on the largest score, identifying when it is exactly the target $π$. Uniform race has no larger total variation error than a natural budget-calibrated RS derived from Rohatgi et al. (2025) and sampling importance resampling (SIR). In particular, we exhibit instances where UR&#39;s error is exponentially smaller in $N$ than that of either baseline. Furthermore, we establish conditions under which attaining this RS guarantee for every $(π,μ)$ uniquely determines the selection probabilities as those of UR. Finally, test-time scaling experiments on LLM math-reasoning tasks corroborate the theoretical comparisons and demonstrate that UR remains competitive in ground-truth accuracy without requiring threshold selection.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2609.34639" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
