@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parallel Time-Aligned Spiking Self-Attention for Consistent Integer-Valued Training and Spike-Driven Inference - arXiv 2610.03291 论文总结">
+    <title>Parallel Time-Aligned Spiking Self-Attention for Consistent Integer-Valued Training and Spike-Driven Inference | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Parallel Time-Aligned Spiking Self-Attention for Consistent Integer-Valued Training and Spike-Driven Inference</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.03291<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-10-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Peng Xue, Wei Fang, Kaiwei Che, Qingyan Meng, Zhengyu Ma, Yonghong Tian, Huihui Zhou</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.03291">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.03291">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Integer-valued leaky integrate-and-fire (I-LIF) neurons and spike firing approximation (SFA) reduce temporal training cost by representing spike trains as firing counts and normalized firing rates, respectively. However, applying spiking self-attention (SSA) directly to these compressed query, key, and value representations introduces cross-time interactions that are absent during spike-driven inference. We term this operator-level discrepancy Temporal Interaction Mismatch (TIM). We propose Parallel Time-Aligned Spiking Self-Attention (PT-SSA), which reconstructs consecutive virtual spike slices from either I-LIF counts or SFA firing rates, computes attention only between time-aligned slices in parallel, and sums the per-step outputs. To accommodate the reduced attention output scale under SFA, we further introduce Adaptive PT-SSA, which learns a positive per-block rescaling before the output SFA neuron to improve firing-level utilization. Experiments on CIFAR-10, CIFAR-100, and ImageNet-1K show that the proposed methods substantially reduce train--inference mismatch. On CIFAR-100 with I-LIF, PT-SSA reduces the mean Top-1 gap from 1.85 to 0.29 percentage points. On ImageNet-1K, Adaptive PT-SSA reduces the Top-1 gap from 27.78 to 0.06 percentage points and achieves 74.53% spike-driven Top-1 accuracy. A Triton-fused PT-SSA training kernel retains a $2.91\times$ throughput advantage over recurrent LIF SSA.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.03291" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

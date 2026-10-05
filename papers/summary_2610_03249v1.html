@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Self-Repairing Recurrent Ensembles for Real-Time Recovery from Distribution Shift - arXiv 2610.03249 论文总结">
+    <title>Self-Repairing Recurrent Ensembles for Real-Time Recovery from Distribution Shift | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Self-Repairing Recurrent Ensembles for Real-Time Recovery from Distribution Shift</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.03249<br><strong>分类:</strong> cs.NE, cs.RO, eess.SY<br><strong>发布时间:</strong> 2026-10-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Julian Lemmel, Pedro D. Wendel Garcia, Taisuke Kobayashi, Radu Grosu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.03249">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.03249">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Deploying a pretrained controller exposes it to conditions that are absent from its training data. Sensor drift, outright sensor failure and accumulating measurement noise all induce a distribution shift that can collapse an otherwise competent policy; typically at a point in time where no expert is available to supply corrective labels. We present a method that lets a policy recover from such shifts online and without supervision. Our controller is an ensemble of recurrent networks, each of which observes a randomly masked subset of the observation vector, and whose Gaussian outputs are combined through sequential Kalman fusion so that confident members dominate the consensus action. At deployment, we treat this consensus as a self-supervised label and fine-tune each member towards it, scaling each member&#39;s contribution proportional to the complement of its squared Kalman gain. Gradients are computed using RFLO, an efficient and biologically plausible approximation of Real-Time Recurrent Learning, so that a parameter update follows every environment step and the policy reacts to a shift as it unfolds. On a range of simulated continuous control tasks, our approach recovers close to the original performance after a sensor shift, while ensembles that see the full observation are unable to recover. The same framework subsumes fully online interactive imitation learning: when an expert is present, the consensus label is replaced by the expert action and the identical update rule refines the policy during teleoperation.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.03249" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

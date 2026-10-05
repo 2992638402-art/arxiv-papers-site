@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learning While Inferring: Local and Parallel Learning for Edge SNNs across Sensing Modalities - arXiv 2610.03149 论文总结">
+    <title>Learning While Inferring: Local and Parallel Learning for Edge SNNs across Sensing Modalities | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Learning While Inferring: Local and Parallel Learning for Edge SNNs across Sensing Modalities</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.03149<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-10-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yanxun Zhang, Yifei Wang, Changze Lv, Jingwen Xu, Yiyang Lu, Xiaohua Wang, Di Yu, Xin Du, Xiaoqing Zheng</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.03149">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.03149">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Edge intelligence requires models to sense continuously in real time and to keep adapting on-device, all under tight compute, energy, and memory budgets. Although spiking neural networks (SNNs) enable efficient event-driven inference, standard surrogate-gradient backpropagation (BP) serializes updates and blocks ongoing inference. We investigate Bidirectional Spike-Based Distillation (BSD) as an on-device learning principle that lets edge SNNs learn while inferring. BSD couples a stimulus-driven forward network with an independent target-driven reverse network and aligns their intermediate representations through local objectives. Because the two pathways have disjoint computation graphs until alignment, forward inference, reverse inference, and stage-wise updates can run concurrently. On 25 benchmarks spanning the five sensing modalities of SOUL, BSD stays within 3.8 percentage points of matched BP baselines on average, while only its forward branch is needed at deployment. The learned representations also transfer well to few-shot class-incremental learning without replaying past data. By removing the dense floating-point backward chain, BSD reduces the projected training latency to $0.72\times$ and the estimated training energy to $0.36\times$ that of BP.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.03149" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

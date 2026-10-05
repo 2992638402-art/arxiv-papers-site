@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Muon Learns Facts Better: Understanding the Role of Spectral Orthogonalization - arXiv 2610.02798 论文总结">
+    <title>Muon Learns Facts Better: Understanding the Role of Spectral Orthogonalization | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Muon Learns Facts Better: Understanding the Role of Spectral Orthogonalization</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.02798<br><strong>分类:</strong> cs.LG, math.OC, stat.ML<br><strong>发布时间:</strong> 2026-10-02</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xuheng Li, Qiwei Di, Yuan Cao, Quanquan Gu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.02798">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.02798">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>The Muon optimizer applies spectral orthogonalization to matrix-valued updates and has shown strong performance in large-scale neural network training, yet the mechanisms of this transformation in feature learning remain poorly understood. In this work, we investigate this question through a tractable factual-recall model, where a fact maps each subject-relation pair to an answer, and a linear transformer learns the subject- and relation-dependent information required to recover this mapping. The transformer is optimized with gradient flow (GF), spectral GF, or Sign GF, which are continuous-time limits of gradient descent, Muon, and Adam, respectively. Prior studies (Nichani et al., 2025) have shown that when the number of subjects exceeds the number of relations, GF learns relation-dependent information before subject-dependent information, producing a feature-separation phase during training. We characterize this separation with the learning times when the subject- and relation-dependent components of the prediction reach a target accuracy. With $S$ subjects and $R$ relations, GF has a learning-time ratio of $\widetildeΘ(\sqrt{S/R})$, whereas Spectral GF reduces this ratio to $\widetildeΘ(1)$. In addition, for fixed $S$ and $R$, the subject- and relation-dependent errors decay as $1/(T\log T)$ in training time $T$ under GF, but as $\exp(-\mathrm{poly}(T))$ under spectral GF. Finally, we show that GF and spectral GF are equivariant under orthogonal transformations of the token embeddings, whereas Sign GF is not: Different orthonormal embeddings can potentially produce no feature separation, a large feature-separation phase, or even a reversed learning order. These results provide a mechanistic view of how spectral orthogonalization can fundamentally reshape feature-learning dynamics.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.02798" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
