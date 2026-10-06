@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring - arXiv 2610.06744 论文总结">
+    <title>ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>ufakzeka-karar: An Open Turkish Typed-Decision Model with Order-Invariant Option Scoring</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.06744<br><strong>分类:</strong> cs.CL, cs.LG<br><strong>发布时间:</strong> 2026-10-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Sait Furkan Teke</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.06744">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.06744">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>ufakzeka-karar is an open Turkish decision model with 182,494,466 parameters. Given a Turkish text and questions of a fixed answer type (a choice, a level on an ordered scale, or yes or no), it returns a temperature-scaled probability for every option and an expected error that serves as a &quot;not sure&quot; signal, without generating text and in one CPU forward pass for up to ten options. Built on the lab&#39;s ufakzeka-1-base, its head scores each option blind to the others at shared positions, so the answer does not depend on option order. A sequential head trained with shuffled options was about as accurate but changed 2.3 to 2.8 percent of its answers when only the option order changed; REINFORCE lost 10.2 points (0.102) of macro F1 to cross-entropy. On the open set of HakemBench v1.0 (4,275 questions, 7 tracks) the released model ranks 7th of 16 rows with a composite of 0.660 (95% interval 0.642 to 0.677). Temperature scaling lowers calibration error (smooth ECE) on the development set but raises it on held-out support questions, from 0.027 to 0.045 for the first scored run, which never trained on them; the released model later trained on them, so its 0.036 to 0.064 is not an unseen-question test. The released model is the last of three runs scored on HakemBench, and its numbers are not blind. The second run&#39;s new training data was aimed at the first run&#39;s errors on the full test set in guardrails, moderation and customer support, and the released run was trained after the second run&#39;s guardrail results on the full test set were read, under a protocol fixed in writing before any of its data, code or runs. All its numbers come after these readings; its guardrail, moderation and customer support numbers carry the flag &quot;shaped by reading the test results&quot;. With every model scored on the other four tracks only, its composite is 0.678, 6th of 16. Weights and code are under Apache-2.0.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.06744" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

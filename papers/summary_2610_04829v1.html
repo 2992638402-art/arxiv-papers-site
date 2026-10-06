@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Viva La Vida: Verification and Accumulation Failures in Multi-Agent Proof Search - arXiv 2610.04829 论文总结">
+    <title>Viva La Vida: Verification and Accumulation Failures in Multi-Agent Proof Search | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Viva La Vida: Verification and Accumulation Failures in Multi-Agent Proof Search</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.04829<br><strong>分类:</strong> cs.CL, cs.AI, cs.MA<br><strong>发布时间:</strong> 2026-10-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Benji Xu, Ken Zheng, Noah Han</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.04829">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.04829">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>When an agentic prover works on an open problem, there is no proof assistant to fall back on: its verifier and lemma library are ultimately language models judging model outputs. We instrumented such a system end to end and analyzed $51{,}754$ traced observations across three full runs ($186$ hours, $$5{,}694$). We find three connected failure modes. First, the three-model verifier requires unanimity and treats parse or API failure as non-approval; in $10$ of $12$ verification events, one member returned no parseable output or an API error, making acceptance arithmetically impossible without surfacing an error. Second, when the ensemble did function, one verifier approved $3$ attempts that GPT rejected, each claiming to resolve the open problem; a single-verifier design would therefore have announced a solution three times. Third, because nothing could be approved, every review was a refutation, yet the lemma extractor mines reviews as well as proofs: $24$ of $93$ lemmas ($26%$) were extracted from rejected arguments with their refutational context removed. Taken together, these findings show that without external verification, supervision is itself a critical trust boundary: systems must distinguish abstention from rejection, preserve useful disagreement, and preserve the provenance and polarity of information before it becomes future context.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.04829" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

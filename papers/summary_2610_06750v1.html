@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Balancing Memory Pathways: Analyzing and Improving Memory Utilization in Hybrid LMs - arXiv 2610.06750 论文总结">
+    <title>Balancing Memory Pathways: Analyzing and Improving Memory Utilization in Hybrid LMs | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Balancing Memory Pathways: Analyzing and Improving Memory Utilization in Hybrid LMs</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.06750<br><strong>分类:</strong> cs.CL, cs.AI<br><strong>发布时间:</strong> 2026-10-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hyunji Lee, Joykirat Singh, Zaid Khan, Justin Chih-Yao Chen, Elias Stengel-Eskin, Alessandro Sordoni, Arman Cohan, Mohit Bansal</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.06750">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.06750">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Recurrent-attention hybrid language models (LMs), which interleave attention and recurrent layers, are increasingly used to combine the efficiency of the recurrent layers with the strong performance of attention layers. Prior work suggests that attention and recurrent layers offer complementary pathways to use past information: attention supports precise memory recall from earlier tokens, while recurrent layers support consolidation of disparate information over long contexts. However, we observe that simply having access to both pathways does not mean that hybrid LMs are effectively using them. We find that they rely substantially more on attention than on the recurrent state. Standard supervised fine-tuning improves overall performance but does not improve how the two memory pathways are coordinated: the model becomes more reliant on information propagated by attention layers, while its use of information propagated by recurrent layers remains limited. To encourage better coordination between the two memory pathways, we add an auxiliary loss that limits attention&#39;s access to earlier context while the recurrent state propagates through the full sequence. This objective encourages the model to retain and use information through the recurrent pathway alongside attention. It improves overall performance, with particularly strong gains on tasks involving longer contexts or requiring information aggregation, consistent with the strengths of recurrent layers observed in analysis. Crucially, this imbalance and the benefit of our auxiliary loss generalize: they apply to multiple recurrent-attention LMs in question-answering and agentic tasks, as well as to attention-based LMs that combine different forms of memory. Together, our findings show that simply providing multiple memory pathways does not ensure their effective use, and that targeted supervision is needed to better coordinate them.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.06750" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

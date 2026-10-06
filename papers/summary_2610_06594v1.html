@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges - arXiv 2610.06594 论文总结">
+    <title>VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>VGGT-Bridge: Beyond Sequential Pose Graphs via Coarse-Stride Skip Edges</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.06594<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-10-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Sungjae Choi, Hanna Bae, Sunghyun Baek, Junmo Kim</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.06594">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.06594">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Feed-forward visual geometry transformers such as VGGT reconstruct dense 3D structure from images in a single forward pass, simplifying multi-view 3D reconstruction. However, their quadratic attention complexity makes them difficult to scale to long sequences with thousands of frames. Chunk-and-align frameworks address this by splitting a long sequence into overlapping chunks and stitching their local reconstructions into a pose graph. Yet existing methods connect only sequentially adjacent chunks, so small per-frame errors accumulate along the chain into large-scale drift. To move beyond sequential edges, we propose VGGT-Bridge, which adds long-range skip edges that directly constrain non-adjacent chunks without retraining. By running VGGT on sparsely sampled coarse chunks, each coarse chunk bridges distant fine chunks into a single direct constraint. We further turn VGGT&#39;s first-frame scale bias into a drift correction by feeding selected coarse chunks in reverse, and a loop-aware policy keeps this reversal compatible with existing loop closures. VGGT-Bridge reduces ATE by 28.3% on KITTI Odometry, 18.8% on Virtual KITTI, and 10.0% on Waymo Open over the SwiftVGGT baseline, achieving the best performance among all chunk-and-align methods.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.06594" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Sharpen Without Search: On-Policy Distillation of Sequence-Level Power Distribution - arXiv 2610.06804 论文总结">
+    <title>Sharpen Without Search: On-Policy Distillation of Sequence-Level Power Distribution | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Sharpen Without Search: On-Policy Distillation of Sequence-Level Power Distribution</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.06804<br><strong>分类:</strong> cs.LG, cs.AI<br><strong>发布时间:</strong> 2026-10-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Erfan Baghaei Potraghloo, Seyedarmin Azizi, Arya Fayyazi, Saeid Shokoufa, Mehdi Kamal, Souvik Kundu, Massoud Pedram</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.06804">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.06804">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A language model can give a correct answer more probability than any single incorrect answer and still usually sample an incorrect one, because the incorrect answers together hold more probability. The power distribution raises each complete answer&#39;s probability to a power above one and renormalizes, shifting probability toward answers the model finds most likely (sharpening). Sampling from it improves reasoning without changing parameters, but needs many scored candidates per query. We show that a model can instead be trained to produce such answers in one generation. On-policy power distillation (OPPD) runs a sequential Monte Carlo sampler in which the model being trained generates candidates and a frozen teacher&#39;s power distribution weights them; the same probabilities weight each answer in a maximum-likelihood update. Training raises single-generation accuracy by up to 23.0 points on MATH500 and 27.3 on GSM8K over the untrained model at the same temperature, and one generation scores 2.4 and 3.5 points above published power sampling with 64 candidates, recovering 94 percent of the gain that 16 candidates give the untrained model. For context, against GRPO trained with verified rewards from the same checkpoint and budget, OPPD scores 3.8, 4.0 and 5.4 points higher on MATH500, GSM8K and AIME using no reference answers; the two are complementary, and OPPD applied after GRPO adds up to 9.3 points. Trained only on mathematics, OPPD raises HumanEval accuracy by up to 5.3 points. One loss coefficient moves the sharpening exponent the model absorbs between 1.19 and 2.02, against 1.14 for ordinary on-policy distillation, and it rises mostly on the model&#39;s own answers. Gains hold across model families and sizes, including a model already trained with verified rewards, where lowering the temperature gives nothing and OPPD adds 4.4 points on MATH500. Code: <a href="https://github.com/ArminAzizi98/OPPD">https://github.com/ArminAzizi98/OPPD</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.06804" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

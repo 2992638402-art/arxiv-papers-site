@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Video Encoders Built on Image Representations - arXiv 2610.06616 论文总结">
+    <title>Video Encoders Built on Image Representations | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Video Encoders Built on Image Representations</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.06616<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-10-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jusheng Zhang, Wenhao Wang, Longqi Cai, Liangzhe Yuan, Yuxiao Wang, Ming-Hsuan Yang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.06616">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.06616">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>The design of a video encoder determines when frames begin to interact and which frame-specific visual evidence remains accessible to the language model. Native video pathways couple neighboring frames during visual encoding, whereas image pathways preserve independently computed frame representations but incur a much larger visual-token cost when all image tokens are forwarded. We ask a basic question: whether a compact video encoder can instead be built on image representations. To answer this question, we separate three operations that are often coupled: per-frame representation, cross-frame token allocation, and temporal interaction. A frozen image encoder first produces frame-specific candidates. A question-aware selector then allocates a fixed token budget across frames using relevance, diversity, and cross-frame correspondence, after which a lightweight learned refiner reads neighboring-frame context and writes residual updates only to the retained anchors. This preserves source positions and keeps the visual output at the fixed budget. Across 13 benchmarks and three vision-language backbones, the resulting pathway matches full-image aggregate performance while using only about 28%-35% of its visual tokens. Specifically, on Qwen3-VL-8B, it achieves a 13-benchmark macro-average of 62.75 with 1,535 visual tokens, compared with 62.58 for the full Image pathway at 4,424 tokens and 59.49 for native Conv3D at 2,212 tokens. On Qwen3-VL-32B, it reaches a 13-benchmark macro-average of 66.28, compared with 66.09 for Image, while providing a 2.16x end-to-end speedup. These results show that compact video encoding does not require early temporal mixing: frame-specific evidence can be preserved first, allocated jointly, and temporally contextualized after selection.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.06616" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

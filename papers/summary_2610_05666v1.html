@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Scalar Communication via Random Direction Refreshing for Distributed Optimization - arXiv 2610.05666 论文总结">
+    <title>Scalar Communication via Random Direction Refreshing for Distributed Optimization | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Scalar Communication via Random Direction Refreshing for Distributed Optimization</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.05666<br><strong>分类:</strong> cs.MA<br><strong>发布时间:</strong> 2026-10-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Mohammadreza Rostami, Solmaz S. Kia</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.05666">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.05666">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Distributed optimization over networks requires agents to repeatedly exchange decision variables with their neighbors. When the decision dimension $d$ is large, these exchanges dominate the communication cost, which is critical for bandwidth-constrained agents. Existing remedies quantize or sparsify the exchanged vectors, yet each message still scales with $d$ and the compression error must be compensated by additional states. To address this limitation, we propose a scalar-communication mechanism in which every neighbor message carries a single real number regardless of $d$. Agents regenerate a common random direction from a shared seed, transmit only the inner product of their state with that direction, and act on the resulting rank-one surrogate of their neighbors&#39; states while retaining full local gradients. We develop and analyze the mechanism for an existing continuous-time distributed optimization algorithm. For strongly convex local costs with Lipschitz gradients, we show that the optimizer remains the unique consensus equilibrium, that a fixed direction admits spurious equilibria, and that refreshing the direction at a sufficiently high rate yields exponential mean-square and almost-sure convergence with constant gains and no residual error. The framework admits any isotropic fixed-norm direction distribution, including Rademacher, scaled-coordinate, and sphere-normalized Gaussian directions; all three attain lower fresh-encoding variance than unnormalized Gaussian directions. The effects of the direction distribution and the refresh interval are illustrated in~simulations.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.05666" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
