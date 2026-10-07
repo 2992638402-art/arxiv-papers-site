@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detecting a Shift Is Not Enough: Exact Minimax Limits of Linear Representation Repair - arXiv 2610.08069 论文总结">
+    <title>Detecting a Shift Is Not Enough: Exact Minimax Limits of Linear Representation Repair | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Detecting a Shift Is Not Enough: Exact Minimax Limits of Linear Representation Repair</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.08069<br><strong>分类:</strong> cs.LG, math.ST, stat.ML<br><strong>发布时间:</strong> 2026-10-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Anuar Aimoldin, Yankai Chen, Ayana Mussabayeva, Xue Liu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.08069">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.08069">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A mean shift between two data sources can be easy to detect but hard to remove without substantially changing their representations. We cast its removal as a statistical decision problem: from noisy differences between paired calibration measurements in $\mathbb{R}^d$, learn one linear map, applied to both sources under a hard distortion budget, that leaves as little of the shift as possible on fresh data. We derive the exact finite-sample minimax risk over all such maps, $(d-k) \mathbb{E}[1/(d+2J)]$ with $J\sim\mathrm{Pois}(κ/2)$, where the budget allows deleting $k$ directions and $κ$ is the calibration signal-to-noise ratio. Projecting out the mean calibration difference attains it without knowing $κ$ or the noise scale. This exposes a detection-repair gap: detecting the shift needs only $κ\gg\sqrt d$, whereas removing a fixed fraction of it at constant distortion needs $κ\asymp d$, as for estimating its direction. Standard linear concept erasers (MP, SAL, LEACE) remove the same calibration difference, so the formula gives, before fitting, exactly how much shift they leave on fresh data and how much calibration a target requires. The limit is robust: pairing keeps it exact for non-Gaussian shared content, the projection keeps its guarantee under anisotropic noise, and selective abstention cannot close the gap. On paired clinical and wearable sleep EEG, where differences between participants act as calibration noise, the formula predicts the device shift left in new participants, and more recordings per person soon stop helping. Together, these results tell whether a correction that falls short needs a better method, more recordings, or more participants.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.08069" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

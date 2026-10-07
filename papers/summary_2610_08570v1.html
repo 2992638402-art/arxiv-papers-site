@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Less Is More: A Leakage-Controlled Study of Dermoscopic Preprocessing for Joint Skin Lesion Classification and Segmentation with YOLO26 - arXiv 2610.08570 论文总结">
+    <title>Less Is More: A Leakage-Controlled Study of Dermoscopic Preprocessing for Joint Skin Lesion Classification and Segmentation with YOLO26 | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Less Is More: A Leakage-Controlled Study of Dermoscopic Preprocessing for Joint Skin Lesion Classification and Segmentation with YOLO26</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.08570<br><strong>分类:</strong> cs.LG, cs.CV<br><strong>发布时间:</strong> 2026-10-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Truong Viet Vu, Nguyen Chi Hai, Nguyen Phuc Nguyen, Ngo Hoang Tu, Vo Nguyen Quoc Bao, Nguyen Thai Anh</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.08570">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.08570">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Handcrafted preprocessing is widely employed in automated dermoscopic analysis to suppress imaging artifacts and enhance lesion visibility. Nevertheless, its actual contribution to modern real-time models remains unclear, particularly when evaluation protocols do not adequately control correlations among images of the same lesion. This study presents a leakage-controlled, lesion-disjoint evaluation of dermoscopic preprocessing and augmentation for joint multi-class lesion classification and instance segmentation using a fixed nano-scale YOLO26 segmentation model (YOLO26n-seg). From HAM10000 (10,015 images), quality control yields 10,013 valid image-mask pairs from 7,468 unique lesions, partitioned into mutually exclusive sets by lesion identity. With the architecture, resolution, training budget, and evaluation protocol held fixed, we compare minimally processed images plus online augmentation against offline class balancing, DullRazor-CLAHE preprocessing, and raw-processed hybrid views, over three random seeds. On the lesion-disjoint test set, the raw baseline achieves a mask mAP$_{50:95}$ of $0.5636 \pm 0.0234$, a Dice score of $0.9356 \pm 0.0024$, and a macro-F1 score of $0.6917 \pm 0.0202$. Offline augmentation does not improve the mean performance, while the combined and hybrid strategies reduce both class-aware segmentation and classification accuracy. At only 2.69 million parameters, the model runs at approximately 50 frames per second. Under a leakage-controlled, lesion-disjoint protocol with all non-input factors held fixed, minimally processed dermoscopic images combined with standard online augmentation deliver a better accuracy-efficiency trade-off than increasingly complex deterministic preprocessing, which yields no consistent joint benefit across three seeds on HAM10000.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.08570" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

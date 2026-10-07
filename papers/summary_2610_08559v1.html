@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latent space bias directions in LLMs capture confidence, not fairness - arXiv 2610.08559 论文总结">
+    <title>Latent space bias directions in LLMs capture confidence, not fairness | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Latent space bias directions in LLMs capture confidence, not fairness</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.08559<br><strong>分类:</strong> cs.CL, cs.AI, cs.LG<br><strong>发布时间:</strong> 2026-10-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Stephanie Buttigieg, Maeve Madigan, Parameswaran Kamalaruban, Stuart Burrell</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.08559">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.08559">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Activation steering has gained popularity as a lightweight inference-time debiasing technique for large language models. However, prior work reports that steering vectors generalise poorly, with unintended effects on model performance and limited transfer to new datasets. Our work analyses what the debiasing direction used for activation steering actually encodes, in order to shed light on its inconsistent performance. We study the linear debiasing direction obtained by contrasting the activations of anti-biased and biased prompts, and evaluate it as a steering intervention across bias and general knowledge benchmarks. We find that this direction is dominated by model confidence, pointing from regions of high to low-probability tokens in activation space rather than encoding a meaningful representation of model bias. Steering along it does reduce measured bias, but this is a consequence of reducing model confidence: on QA benchmarks we find that this steering drives the model to abstain from answering, with a side effect of improving fairness metrics. Our experiments show that model confidence is the dominant separating factor between biased and anti-biased prompts in hidden space, indicating that isolating a linear representation of bias which is disentangled from model confidence is difficult and steering-based debiasing results should be interpreted with care. In short, steering appears to reduce bias, not by correcting the model&#39;s underlying preferences, but by making it less confident, even on tasks unrelated to bias.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.08559" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

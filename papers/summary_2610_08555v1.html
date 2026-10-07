@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Towards Efficient Robotic Manipulation Models with Self-Recursive Pruning - arXiv 2610.08555 论文总结">
+    <title>Towards Efficient Robotic Manipulation Models with Self-Recursive Pruning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Towards Efficient Robotic Manipulation Models with Self-Recursive Pruning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.08555<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-10-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Zijia Chen, Yuenan Hou, Yu Li, Weijie Li, Li Liu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.08555">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.08555">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Network pruning can reduce parameter redundancy in robotic policies. However, generic pruning criteria are tailored for image recognition tasks and commonly designed to preserve weight magnitude, local reconstruction, or language-model likelihood rather than closed-loop action behavior. Directly applying these pruning algorithms to robotic tasks yields unsatisfactory performance. In this paper, we propose Loss-Conditioned Activation-Moment (LCAM) pruning, a training-free method for unstructured pruning of pre-trained robotic manipulation policies. Specifically, we first rank connections using row-normalized weight contribution, activation moments measured on calibration demonstrations, and the sensitivity of output directions to the action-prediction loss. We further design a self-recursive coarse-to-fine procedure: importance is recalibrated after each nested coarse pruning stage, while held-out offline action distortion guides fine-grained budget allocation after a sparsity knee. Our algorithm is free from costly recovery training and simulator rollouts after pruning. Experiments on three LIBERO suites with competitive robotic policies, together with evaluations on OpenVLA, show that LCAM attains competitive performance across a broad range of pruning ratios. Notably, on LIBERO-Object with OpenVLA, our LCAM achieves 84.0% success at 50% unstructured pruning, retaining over 90% of the dense policy&#39;s success rate. Promising results on real-world robotic ping pong further demonstrate the effectiveness of our pruning algorithm.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.08555" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

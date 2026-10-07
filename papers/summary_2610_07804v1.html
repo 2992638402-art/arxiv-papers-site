@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adaptive Mean Estimation by In-Context Learning: A Gradient-Flow Analysis - arXiv 2610.07804 论文总结">
+    <title>Adaptive Mean Estimation by In-Context Learning: A Gradient-Flow Analysis | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Adaptive Mean Estimation by In-Context Learning: A Gradient-Flow Analysis</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.07804<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-10-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Martin Eppert, Krishna Balasubramanian, Subhro Ghosh, Jason Klusowski, Yan Shuo Tan</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.07804">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.07804">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Prior Fitted Networks (PFNs) such as TabPFN now rival established statistical procedures across prediction and estimation tasks. A natural explanation is that PFNs have the property of statistical adaptivity, that is, they perform nearly as well as a method tailored to the true data-generating model for a heterogeneous set of models, while not being told which model the data comes from. We study how such adaptivity is learned in a controlled location-estimation problem. Each task is an unlabeled sample whose family is hidden: Gaussian data call for averaging, with error of order $n^{-1}$, whereas uniform data are best estimated from their extremes, at the faster rate $n^{-2}$. We also provide the example of a symmetric Gaussian mixture, for which a rate of $σ^2_n/n$ can be attained. On scalar inputs, softmax attention computes the derivative of the empirical cumulant-generating function. A single primitive therefore both supplies features that distinguish the families and forms estimators interpolating between the sample mean and the mid-range. We combine attention experts through either a softmax mixture of experts or a gated linear unit (GLU), and analyze stagewise gradient flow. With $\widetildeΩ(n^{1+ε})$ pretraining tasks, the learned estimator is asymptotically efficient on Gaussian tasks, within a factor $n^ε$ of the minimax rate on uniform tasks, and order-optimal on mixtures in a shrinking-variance regime. These guarantees extend to new locations and longer contexts. A risk decomposition separates expert error, routing error and normalization error, which clarifies the architectural contrast. Softmax gating enforces normalization and exact translation equivariance, whereas the GLU must learn it: its dynamics separate into fast bias removal followed by slow expert selection. End-to-end experiments recover the predicted specialization.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.07804" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
