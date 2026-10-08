@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs - arXiv 2610.10520 论文总结">
+    <title>Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Distilling Graph Geometry: Knowledge Gap from GNNs to MLPs</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.10520<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-10-07</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Zhewei Chen, Hao Zhu, Jiaojiao Jiang, Ahad N. Zehmakan</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.10520">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.10520">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>GNN-to-MLP distillation aims to retain the predictive accuracy of a message-passing teacher while deploying a graph-free MLP at inference. Existing methods mainly transfer node-wise predictions or use confidence-based reweighting, but they do not specify where the student should preserve the teacher&#39;s graph-induced geometry. We show that this omission leads to two spectral failure modes in the student&#39;s representation space. On sparse graphs, the student suffers from spectral underfit, missing high-energy teacher directions concentrated near boundary regions. On dense graphs, it suffers from spectral overfit, retaining spurious directions that the teacher has collapsed through aggregation. Motivated by an energy-weighted teacher-student alignment objective, we propose Graph Geometry-aware MLP (G^2MLP), a training-time distillation framework guided by Ollivier-Ricci curvature. Curvature identifies where the two spectral errors concentrate and is used to allocate supervision between prediction-level and representation-level alignment. The deployed model remains a standard MLP and requires no graph access at inference. Across node-classification benchmarks, G^2MLP consistently improves over graph-free distillation baselines, reduces the teacher-student rank gap in both regimes, and transfers without architectural changes to Graph Transformer teachers and link prediction.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.10520" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

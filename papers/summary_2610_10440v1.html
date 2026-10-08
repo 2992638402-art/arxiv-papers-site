@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seq-Flow: Efficient Probabilistic Forecasting with Self-Rollout Error Control - arXiv 2610.10440 论文总结">
+    <title>Seq-Flow: Efficient Probabilistic Forecasting with Self-Rollout Error Control | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Seq-Flow: Efficient Probabilistic Forecasting with Self-Rollout Error Control</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.10440<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-10-07</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yinan Huang, Shitij Govil, Bo Dai, Pan Li</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.10440">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.10440">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Many scientific forecasting tasks require updating a distribution over future trajectories as new observations arrive. Conventional diffusion and flow models generate each forecast from Gaussian noise, often at the cost of many sampling steps. Warm-start methods reuse earlier predictions to reduce this cost, but their models are not trained to perform the forecast update itself, which can compromise quality under few-step sampling. In this work, we introduce Seq-Flow, a conditional flow model whose ODE transports samples from the previous forecast distribution to the updated one. Because successive forecasts often differ only modestly, this transport starts from an informative distribution and can produce accurate updates with few flow evaluations. Recursive reuse also creates a challenge: errors in one forecast become errors in the initial states of subsequent flows. We address this with self-rollout training, in which a moving average copy of the model generates forecasts that initialize later training updates. Unlike self-forcing methods, which reuse generated outputs as conditioning context, Seq-Flow reuses them as the source of the next flow. Experiments On particle-accelerator beam spill forecasting show Seq-Flow reduces CRPS by 65% under a few-NFE sampling budget, while remaining competitive with strong baselines on fluid-dynamics forecasting tasks. Although trained on self-rollouts of at most four updates, Seq-Flow remains accurate over more than 400 consecutive updates. Our code is available at <a href="https://github.com/Graph-COM/Seq-Flow">https://github.com/Graph-COM/Seq-Flow</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.10440" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
