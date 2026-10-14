@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Elephant in the Fridge: Constant-Memory Frame Packing for Long Video Understanding - arXiv 2610.16118 论文总结">
+    <title>Elephant in the Fridge: Constant-Memory Frame Packing for Long Video Understanding | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Elephant in the Fridge: Constant-Memory Frame Packing for Long Video Understanding</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.16118<br><strong>分类:</strong> cs.CV, cs.LG, cs.MM<br><strong>发布时间:</strong> 2026-10-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Shuo Gao, Chenhao Zheng, Zhongzheng Ren</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.16118">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.16118">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Hour-long videos, streaming feeds, and movie-length content are pushing vision-language models (VLMs) past their breaking point -- the standard recipe of encoding each frame into visual tokens yields sequences that grow linearly with video length, causing prohibitive memory consumption and inference latency. Existing approaches, such as token reduction and keyframe selection, shorten the token sequence but leave the O(n) scaling intact, failing to resolve the fundamental bottleneck. We propose FramePack-U, a strikingly simple, training-free frame packing framework that compresses arbitrarily long videos into a fixed size visual representation at constant memory cost. FramePack-U requires no fine-tuning or architectural modification -- it plugs directly into off-the-shelf VLMs at inference time. Inspired by FramePack from the generation literature, we propose a content-aware compression strategy for visual understanding under a fixed token budget. Specifically, FramePack-U (1) scores each frame by its semantic similarity to the text prompt and ranks frames in a diversity-driven manner, and (2) packs the selected frames at varying resolutions into a fixed-length context window. This concentrates the memory budget on frames that are both instruction-relevant and visually diverse. While FramePack-U can in theory pack arbitrarily many frames into the fixed budget, we identify an empirical instantiation that generalizes robustly across settings. Extensive experiments on LongVideoBench, MLVU, and Video-MME show that FramePack-U consistently outperforms full-resolution baselines and prior token reduction and keyframe selection methods across diverse model families, parameter scales, and frame budgets. Notably, on Qwen3.5-35B-A3B with a 128-frame budget, FramePack-U yields gains of +12.9%, +10.6%, and +9.7% over the official model on the three benchmarks, respectively.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.16118" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

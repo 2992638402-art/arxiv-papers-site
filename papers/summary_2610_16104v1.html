@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SelectTTRL: Representation-Guided Data Selection for Efficient Test-Time Reinforcement Learning - arXiv 2610.16104 论文总结">
+    <title>SelectTTRL: Representation-Guided Data Selection for Efficient Test-Time Reinforcement Learning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SelectTTRL: Representation-Guided Data Selection for Efficient Test-Time Reinforcement Learning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.16104<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-10-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Yi Li, Linan Yue, Weibo Gao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.16104">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.16104">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Test-Time Reinforcement Learning (TTRL) enables large language models to adapt directly on unlabeled test problems by constructing pseudo-labels from multiple sampled responses. However, existing TTRL methods typically apply the same expensive sampling and optimization procedure to all test problems, despite substantial differences in their training utility. In this paper, we study whether such problems can be identified before costly test-time training, without access to ground-truth answers. We uncover a stable relationship between internal response representations and problem-level empirical accuracy. Specifically, we define COS as the cosine similarity between a model&#39;s response representation and a correctness-related direction constructed from an independent question-answering dataset. COS consistently correlates with problem solvability across different models, datasets, and experimental settings, and we further provide a theoretical analysis explaining this relationship. Building on this finding, we propose SelectTTRL, a representation-guided data selection method that ranks test problems using COS and applies TTRL only to a selected percentile interval. SelectTTRL leaves the standard TTRL pipeline unchanged for the selected problems, while avoiding unnecessary multi-response sampling and reinforcement learning updates on the remaining ones. Experiments across multiple reasoning benchmarks demonstrate that SelectTTRL substantially reduces test-time computation while maintaining or improving the performance of standard TTRL. Code is available at <a href="https://github.com/heyiliyi/SelectTTRL-public">https://github.com/heyiliyi/SelectTTRL-public</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.16104" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Barrier-Constrained Guidance For Real-time Asynchronous VLA Execution - arXiv 2610.14997 论文总结">
+    <title>Barrier-Constrained Guidance For Real-time Asynchronous VLA Execution | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Barrier-Constrained Guidance For Real-time Asynchronous VLA Execution</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.14997<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-10-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Wenbo Yu, Jifan Li, Wenke Xia, Yuchen Li, Yizhuo Zhang, Pei Ren, Zhengping Che, Di hu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.14997">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.14997">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>While asynchronous execution enables VLA models to operate in real-time environments by predicting the next chunk during execution, it inevitably introduces boundary misalignment with the committed action stream. Existing delay-aware solutions address this at the prohibitive cost of extensive retraining, architectural modifications, or fixed-prefix inpainting that inflates computation when low latency is vital. To address these problems, we propose FreeBar, a training-free real-time inference plugin that enables robust asynchronous execution with only marginal additional inference cost by casting chunk alignment in flow-based VLAs as barrier-guided action-space constraint. Specifically, FreeBar introduces a lightweight Control Barrier Function (CBF)-inspired consistency constraint between consecutive action chunks and solves the resulting correction in closed form, avoiding costly backpropagation through the VLA action head. By progressively tightening the consistency bound during generation, FreeBar aligns generated chunks with the committed execution stream while preserving early-stage generative and within-chunk future action flexibility,. Across Kinetix, RoboCasa, and diverse real-world robotic platforms with multiple VLA backbones, FreeBar improves success rates over naive asynchronous execution by 10%--15% on average, with larger gains in highly dynamic scenarios. It also preserves real-time computational efficiency, decreasing inference latency per action chunk over 45% than RTC. Additionally, as a universal plugin, FreeBar remains robust across distinct latency environments, base policies, and hyperparameter settings.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.14997" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CAG-WAM: Causal Action-Gain World Action Models for Robot Manipulation - arXiv 2610.14720 论文总结">
+    <title>CAG-WAM: Causal Action-Gain World Action Models for Robot Manipulation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>CAG-WAM: Causal Action-Gain World Action Models for Robot Manipulation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.14720<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-10-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Peizheng Guo, Cheng Zhang, Xingyu Zhang, Changwen Zheng, Wenwen Qiang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.14720">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.14720">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>World Action Models (WAMs) combine action generation with future prediction, allowing predicted futures to support action evaluation and robot decision making. However, the future associated with a candidate action may contain action-induced and environment-driven changes. Directly evaluating the predicted future may not fully characterize the future change associated with the candidate action. For example, a candidate action that worsens a favorable environmental future may still yield a favorable outcome, while one that improves an unfavorable environmental future may still yield an unfavorable outcome. To analyze this issue, we formulate a Structural Causal Model (SCM) for action evaluation in WAMs. The SCM formalizes how action-induced and environment-driven changes jointly shape future evaluation, and reveals a backdoor path through which environmental evolution can also affect the future evaluation associated with a candidate action. Intervention and backdoor adjustment account for this path, providing a causal basis for characterizing the future change associated with each candidate action. Based on this analysis, we propose Causal Action-Gain World Action Model (CAG-WAM). For each candidate action, CAG-WAM predicts an action-conditioned future and an environmental future under the same current observation, and defines their evaluation difference as causal action gain (CAG) for characterizing the future change associated with the candidate action. During training, we incorporate CAG into Group Relative Policy Optimization (GRPO) to guide robot policy learning. During inference, we evaluate the initial action with CAG and, when needed, revise it using predicted future information. Experiments on multiple benchmarks support the effectiveness of CAG-WAM.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.14720" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

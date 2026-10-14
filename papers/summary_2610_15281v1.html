@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Imperfect Verifiers, Exact Targets: Inference-Time Scaling for Continuous Generation - arXiv 2610.15281 论文总结">
+    <title>Imperfect Verifiers, Exact Targets: Inference-Time Scaling for Continuous Generation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Imperfect Verifiers, Exact Targets: Inference-Time Scaling for Continuous Generation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.15281<br><strong>分类:</strong> cs.LG, stat.CO, stat.ML<br><strong>发布时间:</strong> 2026-10-11</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Kijung Jeon, Molei Tao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.15281">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.15281">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Verifier-guided inference-time scaling uses additional computation to score intermediate states and steer generation toward better outputs. However, imperfect intermediate verifiers can distort sampling, and repeated refinement alone does not ensure recovery of the desired reward-tilted distribution. We introduce Continuous-State Verifier-Guided Backtracking (CS-VGB), an inference-time scaling method for sampling from reward-tilted distributions with continuous generative models through repeated denoising and renoising. With correctly paired denoising and renoising transitions, the stationary distribution of CS-VGB at the clean checkpoint equals the desired reward-tilted target, even when intermediate verifiers are inaccurate. Under stated regularity conditions, CS-VGB converges exponentially to the target despite verifier error, and the expected number of updates needed to reach a clean sample grows only linearly with the number of checkpoints. In analytically tractable settings, we empirically demonstrate that CS-VGB recovers the desired reward-tilted distribution despite verifier error, whereas the compared verifier-based sampling methods fail to recover the target under the same verifier errors. We also instantiate the framework with diffusion models and one-step stochastic posterior maps. Across prompt-guided ImageNet generation, facial-attribute generation on CelebA, and multi-robot planning, recurrent CS-VGB search improves reward and task success as inference budgets grow, with image-generation rewards continuing beyond the observed plateaus of denoising-only baselines.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.15281" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

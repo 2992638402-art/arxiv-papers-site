@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meaningful Moments: A Corpus of VLM-Derived Temporal Importance Labels for Video Action Recognition - arXiv 2610.16009 论文总结">
+    <title>Meaningful Moments: A Corpus of VLM-Derived Temporal Importance Labels for Video Action Recognition | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Meaningful Moments: A Corpus of VLM-Derived Temporal Importance Labels for Video Action Recognition</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.16009<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-10-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Cameron Keith, SouYoung Jin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.16009">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.16009">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Not every moment in a video is equally useful for recognizing an action. A few decisive moments often carry the evidence: the instant an object moves, the peak of a dive, or one object placed on another. Existing video datasets rarely provide large-scale, action-conditioned labels for which short segments carry that evidence. This work asks whether vision-language models can identify meaningful moments at scale and whether those labels improve action recognition.We introduce Meaningful Moments (MM), a corpus of about 4.58 million VLM-generated per-segment importance scores for nearly 500,000 class-labeled videos spanning Something-Something v2 (SSv2), Kinetics-400 (K400), and Diving-48 across 622 action classes. We freeze the action classifier and vary only temporal sampling. An alpha-parameterized comparison of importance-led selection against an importance-inverted control separates gains from the VLM signal from gains caused by variable-density sampling alone. Across all three datasets, VLM-derived importance is informative: at the hard-cut endpoint, keeping VLM-important segments outperforms keeping VLM-designated filler. Usefulness depends on class structure. On Diving-48, importance-led fast-forwarding preserves full-video recognition while the inverted control collapses by roughly 30 percentage points. On K400, hard-cut selection beats uniform sampling by 1.45 percentage points, rising to 2.05 under threshold selection. On SSv2, the labels carry signal but do not recover full-video performance. Direct scoring matches greedy removal within its noise floor at roughly 25 times fewer oracle calls, and a four-VLM cross-oracle study shows consistent downstream trends. We release the importance labels and evaluation protocol under CC-BY-4.0; SSv2 class strings remain under CC-BY-NC-4.0.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.16009" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Belief Embedding Tree Search - arXiv 2610.15046 论文总结">
+    <title>Belief Embedding Tree Search | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Belief Embedding Tree Search</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.15046<br><strong>分类:</strong> cs.AI, cs.LG<br><strong>发布时间:</strong> 2026-10-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Christopher Solinas, Radovan Haluška, Martin Schmid, Michael Buro, Nathan R. Sturtevant, Michael Bowling</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.15046">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.15046">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Beliefs in a Partially Observable Markov Decision Process (POMDP) are posterior distributions over the hidden state given the agent&#39;s history of actions and observations. They summarize everything the history says about the state, so planning in a POMDP is planning in a Markov decision process (MDP) over beliefs. Belief MDPs have continuous state spaces even for finite POMDPs, and exact planning in them is intractable in general. Planners must therefore approximate beliefs and estimate values. Monte Carlo planners do both inside a search tree, with an approximate belief at every node and a value estimate at every leaf. Approximations usually consist of sets of sampled states, with leaf values coming from rollouts, hand-designed bounds, or learned networks. Policies and values computed from these approximations are limited by their quality, and prior methods with learned networks rely on hand-chosen summaries of the sampled states. A belief representation should be computable from the parent node&#39;s representation through the POMDP&#39;s dynamics, let the search sample from it, and be learned so that it provides the information that policies and value functions need. We present Belief Embedding Tree Search (BETS), a Monte Carlo planner that meets these requirements by representing each node&#39;s belief with a generative distribution embedding (GDE) while updating it through the POMDP dynamics. BETS trains its belief model alongside its policy and value networks through experience, with the realized hidden state of the POMDP as the belief model&#39;s training target. We evaluate BETS on six configurations of RockSample, LightDark, and PocMan against BetaZero and three planners without learned components. BETS is competitive or leading on all six, while every baseline falls far behind on at least one. Where beliefs are highest-dimensional, it outperforms them by a large margin, even without search.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.15046" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Predicting how model propensities generalize out of distribution - arXiv 2610.14937 论文总结">
+    <title>Predicting how model propensities generalize out of distribution | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Predicting how model propensities generalize out of distribution</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.14937<br><strong>分类:</strong> cs.AI, cs.CL, stat.ML<br><strong>发布时间:</strong> 2026-10-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> June Hunter, Lily Wen, Owen Terry, Johannes Taraz, Ben Cohen, Niels Warncke</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.14937">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.14937">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>How do language models generalize from their training data? This is a central challenge for alignment: models reliably learn their training distribution given enough samples, but we want models that behave well when deployed in new contexts. We study out-of-distribution (OOD) generalization of propensities. Our central experiment uses a range of elicitation techniques -- system prompting, few-shot learning, SFT on reference answers, and GRPO -- to increase a target propensity in a model, then measures how it spills over onto others across the resulting cross-elicitation matrices. We find that spillover is highly correlated between models when the same elicitation technique is used, but our SFT and GRPO runs induce different spillover profiles. Elicitation of benign traits can sometimes generalize towards undesired traits, for example a model trained to claim that it is sentient often becomes more power-seeking. We further find that spillover partially resembles trait correlations found in humans and identify three clusters of traits that account for about half of the variance using exploratory factor analysis (EFA). Across many elicitation runs, we observe that models change in characteristic ways that don&#39;t depend on the targeted trait, a phenomenon we refer to as drift. Drift moves Qwen3.5-9B towards its base model. When investigating if LLMs are able to predict spillover, we find that Claude Opus 5.5 predicts spillover slightly better than the models themselves, but worse than data-driven approaches using alternative elicitation methods or models. Overall, no single dominant predictor emerges, and generalization remains hard to predict. Code and data are available at <a href="https://github.com/nielsrolf/propensity-spillover">https://github.com/nielsrolf/propensity-spillover</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.14937" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

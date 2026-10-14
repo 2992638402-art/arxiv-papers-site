@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-14",
+  "papers": [
+    {
+      "id": "2610.15038v1",
+      "title": "Training-Free Multi-Agent Cooperative Embodied Search from Uncertain Vision-Language Priors",
+      "summary": "Real-world Vision-Language Navigation (VLN) requires agents to act under partial observability, where map structure, semantic cues, and target locations may be incomplete or incorrectly inferred by foundation models. This paper presents a lightweight, training-free, and uncertainty-aware framework for cooperative multi-agent multi-target search in mapless environments. Instead of learning an end-to-end navigation policy, the framework separates high-level semantic reasoning from low-level execution through a scalable graph-optimization backbone. Multimodal Large Language Models (MLLMs) serve only as hypothesis generators, proposing semantic zones, target-location cues, and possible navigable connections. These outputs are treated as uncertain priors and further refined using online observations and graph-context evidence. Cooperative navigation is then formulated as a rolling-horizon multi-agent mixed-integer linear program with a lexicographic objective that first maximizes target-directed reward and then reduces travel distance, uncertain-edge use, and repeated visits. Experiments derived from 100 Matterport3D test cases show that the proposed framework improves target coverage and search efficiency over representative baseline methods, while shared information and joint planning enable more balanced workloads across agents. By operating on an abstract graph without relying on embodiment-specific policy parameters, the framework scales across varying numbers of agents and targets, generalizes to unseen environments, and accommodates different perception modules and low-level controllers without task-specific retraining.",
+      "authors": [
+        "Fan Pu",
+        "Keshu Wu",
+        "Jiwan Jiang",
+        "Shiyu Shen",
+        "Zhiwen Fan",
+        "Zhengzhong Tu",
+        "Jiachen Li",
+        "Yang Zhou"
+      ],
+      "published": "2026-10-10T16:22:39Z",
+      "updated": "2026-10-10T16:22:39Z",
+      "categories": [
+        "cs.RO",
+        "math.OC"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.15038v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2610.14903v1",
+      "title": "Conflict-Aware Autonomous Resource Orchestration for 5G Edge Slicing Using Multi-Agent Systems and LLMs",
+      "summary": "5G edge network slicing must reconcile two coupled requirements: understanding high-level operator intent and reallocating scarce computing and bandwidth resources under dynamic contention. Centralized optimization can face computational and responsiveness challenges under rapidly changing edge contention, and Multi-Agent System (MAS)-based auctions can support resource arbitration but still depend on operator-defined economic parameters and priorities. Embedding a Large Language Model (LLM) directly in a recurring control loop, by contrast, may introduce non-negligible inference latency and non-deterministic behavior. This paper proposes a two-timescale architecture that addresses this gap: an LLM-based Strategist translates natural-language network intents into economic policy parameters (budget, income, and bidding-aggressiveness) at the macro scale, while a deterministic, Vickrey-inspired second-price mechanism run by SPADE-based slice agents resolves recurring resource contention at the operational scale, with the resulting allocations enforced by patching Kubernetes CPU limits and Calico CNI bandwidth annotations directly on User Plane Function pods. We evaluate the architecture end-to-end on a real Kubernetes/Open5GS edge cluster across two complementary scenarios, each repeated 30 times: a Smart-City scenario, in which natural-language public-safety intents propagate into measurable changes in slice bids and bandwidth allocations within a few auction rounds, and a Hierarchical-slicing scenario, in which the mechanism provides priority-dependent resource and QoE differentiation, adapts to abrupt demand changes, and preserves configured minimum guarantees while maintaining near-complete allocation of the shared bandwidth pool.",
+      "authors": [
+        "Nathan R. Prediger",
+        "Rodrigo Moreira",
+        "Juliano Araujo Wickboldt",
+        "Tereza C. Carvalho",
+        "Pedro Oliveira",
+        "Paulo Novais",
+        "Flávio de Oliveira Silva"
+      ],
+      "published": "2026-10-10T13:24:22Z",
+      "updated": "2026-10-10T13:24:22Z",
+      "categories": [
+        "cs.NI",
+        "cs.DC",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.14903v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2610.14883v1",
+      "title": "MARL-BattleGrounds: A Novel JAX-native Benchmark for Heterogeneous and Competitive Multi-agent RL",
+      "summary": "We present MARL-BattleGrounds (MARL-BGs), an easy-to-use JAX-native benchmark for heterogeneous and competitive multi-agent reinforcement learning (MARL), designed to be sample-efficient, computationally efficient, and researcher-centric. MARL benchmarks are typically simple and efficient, like SMAX, where winning reduces to unit micromanagement, or rich and costly, like Dota 2. MARL-BGs fills this missing middle. Its first mode, Team Deathmatch, is a simultaneous turn-based game between two teams of five heterogeneous agents. The five classes have distinct basic, passive, and ultimate abilities designed to synergize with allies and counter enemies. Our 52 hand-designed maps with diverse obstacles include a 12-map curriculum and ten held-out validation and test maps. MARL-BGs provides two canonical evaluation modes. First, eight endgame scenarios form a hard generalization challenge: each asks a team to win an unseen, nearly lost position against a strong reactive controller within 5-10 ticks. Second, a monthly round-robin tournament retrains each submission on equal compute, plays it against every member of the current \"Big Nine\" field, and publishes the Elo results on the official leaderboard. All entrants are publicly released as downloadable opponents. MARL-BGs records 11,192 metrics per game in 28 topics. We also include three strong scripted opponents, an analytical replay viewer, and off-the-shelf tools for self-play, cross-play, curriculum learning, and zero-shot coordination evaluation. We even provide an API for LLM-based agents and use it to evaluate Qwen3.5-9B against our strongest policy. In our BattleClient, humans can play alongside or against any mix of policies, enabling human-AI evaluation. We benchmark MARL-BGs with six additional deep MARL baselines, which we release. On one RTX 5090 with 1,024 parallel games, the simulator runs 50,000 5v5 game steps per second.",
+      "authors": [
+        "Ulixes Tariq Hawili",
+        "Subramanian Ramamoorthy",
+        "Yoann Altmann",
+        "Ignacio Carlucho"
+      ],
+      "published": "2026-10-10T12:57:40Z",
+      "updated": "2026-10-10T12:57:40Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.14883v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2610.14800v1",
+      "title": "EAIR: Interaction Risks in Enterprise LLM Multi-Agent Systems",
+      "summary": "LLM agents increasingly divide enterprise work across roles with different goals, authority, access, and information. Because each agent often sees only a local snapshot of the enterprise workflow, locally reasonable actions can still violate organization-wide constraints (e.g., several service agents can each issue credit that is individually permitted while collectively exceeding a shared compensation cap). We introduce EAIR, the first framework for analyzing enterprise multi-agent interaction risks. We make four contributions. (1) We formalize enterprise interaction risk in terms of the organizational properties that workflow operations must preserve, and operationalize this formulation as a taxonomy of testable risks with explicit failure criteria and evidence requirements. (2) We build EAIR-Worlds, a suite of executable micro-worlds that instantiates selected risks as controlled, observable workflows with explicit roles, policies, permissions, source facts, and execution traces. (3) We develop a novel diagnosis-and-repair pipeline that uses the resulting execution traces to locate contributing interaction boundaries, guide targeted workflow repairs, and retest the repaired system. (4) Large-scale experiments show recurring interaction failures across the organizational properties studied. Together, EAIR is the first operational framework for diagnosing and mitigating enterprise multi-agent interaction failures.",
+      "authors": [
+        "Yuchen Ma",
+        "Swadheen Shukla",
+        "Paulo Salem",
+        "Yue Huang",
+        "Robert Sim",
+        "Stefan Feuerriegel",
+        "Michel Galley",
+        "Jianfeng Gao"
+      ],
+      "published": "2026-10-10T10:49:53Z",
+      "updated": "2026-10-10T10:49:53Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.14800v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2610.15224v1",
+      "title": "Persistent LLM Orchestration of Heterogeneous Robot Teams via Partial Delegation to Multi-Agent Protocols",
+      "summary": "Natural language specifications let non-expert users task robot teams, and large language models (LLMs) have recently proven effective at grounding such semantic specifications into plans for heterogeneous teams. Existing approaches assume missions that terminate and environments that, while unknown, do not change, but both assumptions fail in many emerging applications. For example, a disaster-response mission does not terminate, and its environment changes continuously as hazards spread and evacuees move. We identify three ways an LLM orchestrator breaks in this setting: its prompt grows without bound, its reasoning degrades as agents and targets accumulate, and it stops actively monitoring after covering the search space once. We build on the successful framework of grounded generative intelligence, and address each issue with a classical idea. A Markovian state summary, rebuilt from the semantic map at every invocation, replaces the growing interaction history. Partial delegation lets the orchestrator assign a subset of robots to an autonomous multi-agent protocol and reserve its reasoning for generating subtasks that require detailed parameters and careful ordering. Lastly, observation staleness, surfaced explicitly in the prompt, together with task-and event-triggered re-prompting, keeps the team vigilant. In a simulated urban search-and-rescue mission with spreading fire and moving evacuees, our framework rescues 98% of civilians versus 89% for the strongest baseline while using six times fewer tokens. Additional ablations isolate the contribution of each mechanism.",
+      "authors": [
+        "Maria G. Mendoza",
+        "Victoria M. Tuck",
+        "Zachary Ravichandran",
+        "Shankar Sastry",
+        "George J. Pappas"
+      ],
+      "published": "2026-10-10T23:32:04Z",
+      "updated": "2026-10-10T23:32:04Z",
+      "categories": [
+        "cs.MA",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.15224v1.pdf",
+      "category": "robotics"
+    }
+  ],
+  "ids": [
+    "2610.15038v1",
+    "2610.14903v1",
+    "2610.14883v1",
+    "2610.14800v1",
+    "2610.15224v1"
+  ]
+}
