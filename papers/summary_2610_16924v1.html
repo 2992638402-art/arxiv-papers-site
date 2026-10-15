@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="FidLIF: Parallel Training of High-Fidelity Spiking Neurons with Exact BPTT - arXiv 2610.16924 论文总结">
+    <title>FidLIF: Parallel Training of High-Fidelity Spiking Neurons with Exact BPTT | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>FidLIF: Parallel Training of High-Fidelity Spiking Neurons with Exact BPTT</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.16924<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-10-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Kaixiang He, Yujie Wu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.16924">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.16924">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Although spiking neural networks (SNNs) show promise in energy-efficient computing through event-driven computation and stateful temporal processing, their recurrent membrane dynamics render their training inherently sequential and inefficient for long sequences. Existing methods achieve full-sequence parallelism in SNNs through two main strategies: redesigning or approximating spiking dynamics to avoid reset-coupled temporal dependencies, or relying on iterative relaxed fixed-point solvers that suffer from excessive memory costs and iteration-dependent backward overhead. To address these limitations, we present FidLIF, a novel framework that reconciles the incremental update and hard-reset behavior of standard spiking LIF neurons with parallel forward propagation and BPTT-equivalent backward propagation. FidLIF iteratively recovers the full-sequence membrane-potential trajectory in parallel. By exploiting the lower bidiagonal structure induced by the local recurrence of LIF neurons, FidLIF formulates each forward trajectory correction and backward adjoint propagation as associative scans with an $O(\log T)$ temporal depth. This formulation also supports input-dependent neuronal parameters and allows the same neuron to perform full-sequence parallel training and incremental step-by-step inference at deployment. In our numerical convergence evaluation, FidLIF achieves a mean absolute error below $10^{-7}$ relative to the matched serial relaxed LIF dynamics, while yielding gradients numerically equivalent to exact BPTT. Our Triton implementation delivers favorable long-sequence latency and memory scaling, while achieving competitive performance on four sequential classification benchmarks. By reconciling parallel training with step-by-step execution, FidLIF enables high-fidelity spiking dynamics to benefit from parallel hardware without compromising incremental inference at deployment.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.16924" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
