@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Reinforcement learning on the EPRI AI-ccelerating Unit Commitment benchmark: diagnosing over-commitment and guiding MILP with learned policies - arXiv 2610.25544 论文总结">
+    <title>Reinforcement learning on the EPRI AI-ccelerating Unit Commitment benchmark: diagnosing over-commitment and guiding MILP with learned policies | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Reinforcement learning on the EPRI AI-ccelerating Unit Commitment benchmark: diagnosing over-commitment and guiding MILP with learned policies</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.25544<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-10-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Maharani Devira Pramita, Aidan O&#39;Sullivan</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.25544">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.25544">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Reinforcement learning (RL) is increasingly proposed as a fast solver for unit commitment (UC), but standalone agents remain far more expensive than mixed-integer linear programming (MILP). In the first study of RL on the 51-generator, 72-hour benchmark of the Electric Power Research Institute (EPRI) AI-ccelerating Unit Commitment competition, we trace this gap to the agents&#39; own exploration, close most of it, and show that the resulting policy can accelerate an exact solver. In every configuration tested, Proximal Policy Optimisation (PPO) and an action-branching Deep Q-Network (DQN) trained from scratch committed about twice the units of a thermal-only MILP optimum, at 39-64% higher cost, whereas a merit-order rule came within 1.6-7% (10-24% when unserved energy is priced). When each unit&#39;s decision is sampled independently, spare units insure against random de-commitments. Consistent with this, injecting exploration noise during fine-tuning enlarged a lean policy&#39;s fleet, a reward without shaping terms did not remove the over-commitment, and under their training noise the agents outperformed the rule subjected to comparable noise. Imitating the MILP solutions and fine-tuning conservatively brought PPO within 2.6% of the optimum, and these policies had the lowest penalised cost of any evaluated (about 5%). Fixing the fine-tuned policy&#39;s confident decisions made the MILP 3.8-8.5 times faster within 0.10-0.25% of the best solution, with a smaller worst case than an imitation-only policy fixing as many variables (1.1% against 8.9%). Because dispatch method and benchmark scope alone shift the reported optimality ratio by up to 3.6% and 9%, we propose a reporting protocol.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.25544" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

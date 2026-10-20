@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Statistical Viewpoint on Adam, Shampoo and Muon - arXiv 2610.24839 论文总结">
+    <title>A Statistical Viewpoint on Adam, Shampoo and Muon | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>A Statistical Viewpoint on Adam, Shampoo and Muon</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.24839<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-10-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Tetiana Parshakova, Robert M. Gower, Paulo Orenstein</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.24839">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.24839">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>We provide new statistical insights into designing stochastic optimization methods. By modeling the gradient via a normal distribution, we argue that the stochastic gradient should be whitened using its covariance. We give an online method for estimating the mean and variance of the gradients based on regularized likelihood or, equivalently, through a maximum a posteriori estimate. We then show how to use structured approximations to the covariance within this same framework, which includes diagonal and Kronecker-factored approximations. The diagonal approximation results in a method that is very closely related to Adam and performs as well in practice. The Kronecker approximation results in the new MN method, which is a variant of Shampoo and KL-Shampoo. We also recover Muon by applying this same statistical framework to the gradient direction rather than the full gradient. By combining this with a whitening step, we arrive at MN-Muon, a novel preconditioned version of Muon. Our experiments on GPT-2-type models at Chinchilla scale indicate that MND, the diagonal implementation of MN, outperforms both the Distributed Shampoo and the KL-Shampoo implementations in terms of stability, final validation loss and time taken. MND-Muon, the diagonal implementation of MN-Muon, improves on Muon in 21 of 24 paired GPT-small runs and achieves a lower best validation loss on GPT-medium, where it remains stable over the six tested learning rates. However, we found that NorMuon was comparable to MND-Muon and achieved a slightly lower validation loss on GPT-medium and at GPT-small batch 512 on FineWeb.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.24839" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

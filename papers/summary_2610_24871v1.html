@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bellman Language Models: Solving the Recurring Decisions of LLM Agents - arXiv 2610.24871 论文总结">
+    <title>Bellman Language Models: Solving the Recurring Decisions of LLM Agents | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Bellman Language Models: Solving the Recurring Decisions of LLM Agents</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.24871<br><strong>分类:</strong> cs.AI, cs.CL, cs.LG, eess.SY<br><strong>发布时间:</strong> 2026-10-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Adarsh Vatsa, William Eiers</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.24871">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.24871">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A general observation in agentic workflows, especially bounded ones, is that the decision space of the LLM, when we separate a decision from generation, starts approaching saturation: the agent meets the same states again and again, and after enough conversations it stops meeting new ones. LLMs generally don&#39;t treat these decisions as an optimization problem and instead re-derive them from their context/prompt on every turn. We show that treating decision making within reasonable bounds as an optimization problem, solving it once, and reusing the solved decisions can often make an agent faster, cheaper and more reliable. Our approach, which we call Discretize, Then Decide, starts from data such as the workflow&#39;s own logs or, when none exists, runs of the LLM agent itself. It reads each conversation into discrete states and estimates the probability of each outcome and the cost of each move, until no new states appear and the probabilities stop changing. It then solves the resulting Markov decision process. The solution runs as a controller around the model, sending moves whose content is fixed in the state, such as a tool call or a templated reply, and any state it hasn&#39;t seen is sent back to the LLM. We call an LLM run this way a Bellman language model (BLM), after Richard Bellman&#39;s equation for the best move in each state. On $τ^2$-bench telecom, the controller with no model solves 79% of tasks. As a BLM, Qwen3.8-27B, an open model, goes from 29% to 96% with 93% fewer model calls. For Claude Opus 5.5, which solves 96% of tasks on its own, running it as a BLM cuts model calls and cost per task by about 98% and lets it solve 2 more tasks. On InventoryBench, the solved policy with no model beats every published method. Where the hard part is writing content rather than choosing moves, such as resolving SymPy issues, few decisions can be solved in advance, and a BLM helps little.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.24871" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

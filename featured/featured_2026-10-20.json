@@ -1,0 +1,114 @@
+{
+  "date": "2026-10-20",
+  "papers": [
+    {
+      "id": "2610.25851v1",
+      "title": "Learning Who Talks to Whom: Role-Aware Communication Topology Scheduling for Efficient LLM Multi-Agent Collaboration",
+      "summary": "Multi-agent systems driven by large language models (LLMs) rely on structured communication topologies to facilitate information exchange and collaborative reasoning. However, effectively scheduling these topologies to dynamically determine who talks to whom and when to communicate remains a fundamental challenge in balancing collective reasoning performance against exponential token overhead. Existing topology scheduling approaches either enforce static communication graphs that cannot adapt to dynamic problem-solving states, or overlook agent role complementarity while failing to explicitly incorporate the synthesized graph structure into team-level decision evaluation. To tackle these limitations, we propose ACTS, a role-aware adaptive communication topology scheduling framework for efficient LLM multi-agent collaboration. Orchestrated within a Centralized Training with Decentralized Execution (CTDE) paradigm, ACTS introduces a novel dual-attention mechanism. Specifically, a Role-conditioned Relational Attention module dynamically selects variable-cardinality interaction partners based on agent roles and evolving execution states, while a Topological Attention Mixer explicitly embeds the directed communication topology into team value decomposition for precise credit assignment. Comprehensive evaluations across 9 challenging benchmarks covering code generation, multi-step reasoning, general knowledge, and competitive mathematics demonstrate that ACTS consistently outperforms state-of-the-art baselines, boosting average accuracy by up to 6.19 percentage points while reducing token consumption by over 15%. The project website is available at https://acts-mas.github.io/ACTS/.",
+      "authors": [
+        "Haibin Li",
+        "Wenya Yu",
+        "Xuefeng Jiang",
+        "Jia Li",
+        "Xiao Han",
+        "Shuai Su",
+        "Wei Wei"
+      ],
+      "published": "2026-10-19T06:07:25Z",
+      "updated": "2026-10-19T06:07:25Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.25851v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2610.25957v1",
+      "title": "Productive State-Space Exploration for Multi-turn RL in LLM Agents",
+      "summary": "Reinforcement Learning (RL) for Large Language Model (LLM) agents in multi-turn, long-horizon environments remains challenging due to inefficient action selection and repetitive behavioral patterns. In particular, agents often become trapped in high-confidence yet unproductive behaviors, repeatedly executing invalid actions or entering action loops that hinder task completion. We observe that these frequently violate environment preconditions, revealing a mismatch between the agent's representation of the internal state and the dynamics of the underlying environment. In addition, repetitive high-confidence actions lead to cyclical behaviors that provide little to no progress towards the goal. We argue that addressing these challenges requires more productive task-aligned exploration to improve the agent's understanding of environment dynamics. Motivated by intrinsic curiosity-driven exploration, we propose a conditional state-space exploration framework that balances task completion with intrinsic information-seeking behavior. Specifically, we introduce an intrinsic reward that penalizes actions whose observation duplicates prior state memory. This provides the benefit of reducing redundant behaviors and encouraging state-space coverage without relying on a general information-theoretic measure. Strong experimental results demonstrate that our approach substantially improves policy learning in multi-turn environments, mitigating invalid actions and repetitive loops.",
+      "authors": [
+        "Mohammed Haroon Dupty",
+        "Yong Liang Goh",
+        "Song Guo",
+        "Wee Sun Lee"
+      ],
+      "published": "2026-10-19T07:49:35Z",
+      "updated": "2026-10-19T07:49:35Z",
+      "categories": [
+        "cs.AI",
+        "cs.LG"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.25957v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2610.24845v1",
+      "title": "AgentSoV: Virtual Sensing for LLM Multi-Agent Systems via Stream of Variation",
+      "summary": "Large language model (LLM) multi-agent systems (MASs) solve complex tasks through interacting agents, yet their reliability is difficult to analyze because failures depend on both individual agents and how information and errors propagate across the system. Existing approaches largely treat this as post-hoc failure attribution, but do not provide a common model across heterogeneous MAS architectures or support broader analysis of information influence and observability. We introduce AgentSoV, a virtual-sensing framework that models MAS execution as a stochastic dynamic system through Stream of Variation (SoV). AgentSoV maps heterogeneous trajectories into diagnostic stages, constructs virtual measurements from observable outputs, and learns cross-stage variation propagation with a state-space model. Its representation is architecture-aware in stage dependencies yet architecture-agnostic in analytical language, supporting chain-structured, orchestration-based, and directed acyclic graph (DAG)-structured MASs. Without re-executing the MAS, AgentSoV supports three system-level analyses: failure attribution identifies where abnormal variation enters; stage-input influence quantifies how strongly intermediate inputs affect downstream outcomes; and virtual-sensor placement selects complementary observations under a monitoring budget. Experiments across multiple MAS architectures demonstrate a unified approach to fault localization, information influence, and observability. AgentSoV reframes agentic execution as a dynamic system to model rather than merely text to inspect, providing insights for MAS structure and component design.",
+      "authors": [
+        "Congjing Zhang",
+        "Siyuan Xu",
+        "Yunfei Bai",
+        "Ke Ren",
+        "Xiaoning Qian",
+        "Shuai Huang"
+      ],
+      "published": "2026-10-17T19:48:14Z",
+      "updated": "2026-10-17T19:48:14Z",
+      "categories": [
+        "cs.MA",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.24845v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2610.25748v1",
+      "title": "MAPS: A Multi-Agent Personalized Script-Driven Video Advertising System Enhanced by Reinforcement Learning",
+      "summary": "With the rapid growth of online video consumption, video advertising has become a dominant component of digital advertising. Most personalized video advertising systems follow a retrieval-based paradigm, which matches ad content with user preferences in a feature space and recommends the most similar candidates. However, since the candidate creatives are pre-produced, this paradigm limits the granularity of personalization and leads to performance disparities across diverse user groups. To address this limitation, we propose a multi-agent personalized script-driven video advertising system (MAPS). We design four collaborative agents that form a closed-loop pipeline of user profile modeling, script generation, video synthesis, and feedback-driven iterative refinement. To train the Scripter Agent, we develop a reinforcement learning framework equipped with a multi-dimensional reward function, which steers the agent toward producing scripts that simultaneously align with user content preferences and target product information. Extensive offline experiments on representative datasets demonstrate that our approach achieves encouraging performance in generating and integrating personalized creatives. Online A/B experiments in a specific scenario in the Kuaishou advertising system show that MAPS improves CTR by 2.87%, CVR by 2.74%, and ARPU by 9.85% over the generative baseline.",
+      "authors": [
+        "Zhongyu Wang",
+        "Chen Zuo",
+        "Qingxuan Sun",
+        "Jiayang Qiao",
+        "Qiuhao Qian",
+        "Songyan Cui",
+        "Guocheng Chen"
+      ],
+      "published": "2026-10-19T04:00:27Z",
+      "updated": "2026-10-19T04:00:27Z",
+      "categories": [
+        "cs.IR",
+        "cs.CV",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.25748v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2610.23820v1",
+      "title": "CocoRNA: Collective RNA Design with Cooperative Multi-agent Reinforcement Learning",
+      "summary": "Designing RNA sequences that reliably fold into specific secondary structures is essential for understanding their biological functions but remains a challenging computational problem. We propose CocoRNA, a cooperative multi-agent reinforcement learning framework for RNA inverse design. CocoRNA simplifies the design task by decomposing it into smaller sub-problems, each solved collaboratively by multiple agents. This approach reduces the complexity of the problem and improves the exploration of design policies. During training, a centralized critic uses global structural information to guide the agents, enabling them to jointly optimize their design strategies. As a result, CocoRNA learns high-quality RNA design policies that generalize effectively to unseen structures without additional training. Experiments on the Rfam dataset demonstrate that CocoRNA substantially outperforms state-of-the-art methods in both success rate and design speed. Further experiments on other biological sequence design tasks highlight the effectiveness and broad potential of CocoRNA for complex design tasks.",
+      "authors": [
+        "Tianmeng Hu",
+        "Biao Luo",
+        "Ke Li"
+      ],
+      "published": "2026-10-16T17:43:25Z",
+      "updated": "2026-10-16T17:43:25Z",
+      "categories": [
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.23820v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2610.25851v1",
+    "2610.25957v1",
+    "2610.24845v1",
+    "2610.25748v1",
+    "2610.23820v1"
+  ]
+}

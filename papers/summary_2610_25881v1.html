@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn the Interface, Not the Implementation: Output Representation Dominates Training Regime in LLM-Based RTL Generation - arXiv 2610.25881 论文总结">
+    <title>Learn the Interface, Not the Implementation: Output Representation Dominates Training Regime in LLM-Based RTL Generation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Learn the Interface, Not the Implementation: Output Representation Dominates Training Regime in LLM-Based RTL Generation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.25881<br><strong>分类:</strong> cs.LG, cs.AR<br><strong>发布时间:</strong> 2026-10-19</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Siddharth Patel, Vikram Singh, Siddharth Savyasachi Malu, Rohit Singh</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.25881">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.25881">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Large-language-model register-transfer-level (RTL) generation has concentrated on how to train the model: fine-tuning, continued pre-training, and reinforcement learning from a verifier. We argue this is the second-order question. On a bounded, formally specifiable task of generating single-error-correcting, double-error-detecting (SECDED) ECC memory wrappers, we hold the task, data, and correctness oracle fixed and vary two axes independently: the training regime (seven settings) and the output representation (four levels, from fully expanded flat Verilog to an eight-field configuration expanded by a deterministic generator). Because a reference generator exists, correctness is decided by formal equivalence over a design space of approximately ten million points, rather than sampled from a hand-written testbench. Two results follow. First, representation dominates: every representation close to raw RTL reaches a pass rate of at most 0.17, while the configuration reaches 0.83 with no training at all. Once the model emits the configuration, every training regime achieves a pass rate between 0.89 and 1.00. Second, raw RTL hits a hard output-length limit: a 512-bit design requires 44,237 tokens of flat Verilog compared with just 69 tokens for the configuration. Consequently, raw generation becomes infeasible above 32-bit data words rather than merely inaccurate. A model trained from scratch with fewer than 50 million parameters, combined with the verified generator, achieves 0.89 formal equivalence, compared with 1.00 for a 32-billion-parameter fine-tuned model, while using approximately 1600 times less inference energy per correct design. Inference energy also dominates amortized training energy. The lesson is to learn the interface, not the implementation.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.25881" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

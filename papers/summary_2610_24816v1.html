@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="First-Order LoRA Training with Phone NPUs - arXiv 2610.24816 论文总结">
+    <title>First-Order LoRA Training with Phone NPUs | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>First-Order LoRA Training with Phone NPUs</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.24816<br><strong>分类:</strong> cs.LG, cs.AI<br><strong>发布时间:</strong> 2026-10-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xu Zheng, Wei Cheng, Zhuomin Chen, Dongkuan Xu, Mo Sha, Jingchao Ni, Dongsheng Luo</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.24816">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.24816">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>On-device fine-tuning lets a large language model (LLM) learn from its user&#39;s private data without uploading it. Low-rank adaptation (LoRA) reduces the trainable parameters, but each first-order training step still multiplies by the frozen base-model weights during the forward pass, activation recomputation, and input-gradient computation. A phone&#39;s neural processing unit (NPU) already holds these weights for inference; using it for training also requires computing input gradients, which its inference interface does not support. We present a system that runs all three frozen-weight products on the NPU while keeping the training graph, adapters, and optimizer on the CPU. Its input-gradient kernels reuse the resident weight tiles and the forward dequantizer, avoiding a transposed weight copy and ensuring forward and backward use the same effective weights. To preserve usable gradients, the system selects precision by gradient sensitivity and applies a per-row range guard for half-precision (FP16) outputs. Its runtime fuses the remaining CPU operators and overlaps NPU execution with adapter computation, while resumable execution and thermal pacing let training proceed as a background job. We evaluate it on two Qualcomm Snapdragon platforms using four LLMs from the Qwen and Llama families. Our workloads cover nightly personalization with labels supplied on the phone and the public LaMP-2 benchmark; comparisons include an optimized CPU trainer, a phone-GPU trainer, forward-only training, and GPU-trained references.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.24816" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Residual-Guided Adaptive Tucker Rank Allocation for Parameter-Efficient MCI Conversion Prediction - arXiv 2610.25873 论文总结">
+    <title>Residual-Guided Adaptive Tucker Rank Allocation for Parameter-Efficient MCI Conversion Prediction | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Residual-Guided Adaptive Tucker Rank Allocation for Parameter-Efficient MCI Conversion Prediction</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.25873<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-10-19</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Guanghua He, Hancan Zhu, Gaohang Yu, An Zhang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.25873">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.25873">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Allocating limited trainable capacity across convolutional layers is a central challenge in parameter-efficient fine-tuning (PEFT) of pretrained three-dimensional (3D) networks. We propose Residual-Guided Adaptive Tucker Rank Allocation, which jointly selects input- and output-channel ranks under a fixed adapter-parameter budget while preserving the spatial kernel modes. To guide rank selection, we learn task-specific proxy updates from downstream training data and approximate them using candidate Tucker rank pairs. A perturbation analysis bounds the output discrepancy between the fixed proxy network and its Tucker approximation in terms of layerwise reconstruction residuals, motivating residual-based allocation. We normalize each squared residual by the corresponding proxy-update energy to compare relative approximation errors across layers. Dynamic programming minimizes their sum under a global budget constraint that accounts for both channel factors and the Tucker core. This yields a globally optimal allocation over the specified candidate rank pairs. We evaluate the method on the Alzheimer&#39;s Disease Neuroimaging Initiative (ADNI) cohort for predicting conversion from mild cognitive impairment to Alzheimer&#39;s disease within 36 months, using hippocampal segmentation pretraining. Across five random seeds, the proposed method achieves a mean area under the receiver operating characteristic curve (AUC) of 0.7706, compared with 0.7239 for fixed-ratio Tucker adaptation and 0.7430 for full fine-tuning. The total number of trainable parameters is limited to approximately 0.618 million, accounting for only 1.45% of the full model. Adaptive Tucker rank allocation thus provides an effective approach to parameter-efficient transfer learning in 3D medical imaging.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.25873" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
