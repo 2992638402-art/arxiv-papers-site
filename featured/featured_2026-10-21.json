@@ -1,0 +1,117 @@
+{
+  "date": "2026-10-21",
+  "papers": [
+    {
+      "id": "2610.25851v1",
+      "title": "Learning Who Talks to Whom: Role-Aware Communication Topology Scheduling for Efficient LLM Multi-Agent Collaboration",
+      "summary": "Multi-agent systems driven by large language models (LLMs) rely on structured communication topologies to facilitate information exchange and collaborative reasoning. However, effectively scheduling these topologies to dynamically determine who talks to whom and when to communicate remains a fundamental challenge in balancing collective reasoning performance against exponential token overhead. Existing topology scheduling approaches either enforce static communication graphs that cannot adapt to dynamic problem-solving states, or overlook agent role complementarity while failing to explicitly incorporate the synthesized graph structure into team-level decision evaluation. To tackle these limitations, we propose ACTS, a role-aware adaptive communication topology scheduling framework for efficient LLM multi-agent collaboration. Orchestrated within a Centralized Training with Decentralized Execution (CTDE) paradigm, ACTS introduces a novel dual-attention mechanism. Specifically, a Role-conditioned Relational Attention module dynamically selects variable-cardinality interaction partners based on agent roles and evolving execution states, while a Topological Attention Mixer explicitly embeds the directed communication topology into team value decomposition for precise credit assignment. Comprehensive evaluations across 9 challenging benchmarks covering code generation, multi-step reasoning, general knowledge, and competitive mathematics demonstrate that ACTS consistently outperforms state-of-the-art baselines, boosting average accuracy by up to 6.19 percentage points while reducing token consumption by over 15%. The project website is available at https://acts-mas.github.io/ACTS/.",
+      "authors": [
+        "Haibin Li",
+        "Wenya Yu",
+        "Xuefeng Jiang",
+        "Jia Li",
+        "Xiao Han",
+        "Shuai Su",
+        "Wei Wei"
+      ],
+      "published": "2026-10-19T06:07:25Z",
+      "updated": "2026-10-19T06:07:25Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.25851v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2610.27782v1",
+      "title": "RoboJudge: Multimodal Language Models as Judges for Embodied Video Generation",
+      "summary": "Video generation models are promising foundations for embodied world models, but only if their generated rollouts are physically valid and faithful to task instructions. Multimodal large language models (MLLMs) are increasingly used to judge these properties, yet their agreement with human judgments on embodied videos has not been systematically evaluated. To address this gap, we introduce RoboJudge-Bench, a benchmark for evaluating MLLMs as judges of embodied video generation. The benchmark measures two fundamental dimensions, Physical Adherence and Instruction Alignment, across 800 human-annotated videos from 8 source corpora and 10 video generators, spanning grippers, human hands, and dexterous hands. Experiments reveal uneven alignment between existing judges and human ratings: general-purpose MLLMs show lower agreement on physical adherence, while specialized video judges designed for general-domain physical reasoning do not consistently transfer to embodied scenarios. Motivated by these findings, we construct RoboJudge-Train, comprising 12K videos annotated with 25K human-verified scores and model-assisted rationales for Physical Adherence and Instruction Alignment. We fine-tune a 9B MLLM on this dataset with supervised learning followed by reinforcement learning, yielding RoboJudge-9B. Among the model judges evaluated on RoboJudge-Bench, RoboJudge-9B achieves the highest overall agreement, reaching a Pearson correlation of 0.719 with a statistically significant 0.089 gain over Gemini-3.7-Flash, the best-performing proprietary baseline in our evaluation. Training on RoboJudge-Train also yields gains on external benchmarks, including VideoPhy2 and Physion-Eval. We further use RoboJudge-9B as a downstream evaluator to benchmark video generation models according to Physical Adherence and Instruction Alignment.",
+      "authors": [
+        "Siyuan Ma",
+        "Yu Qi",
+        "Cheng Ye",
+        "Ruotian Peng",
+        "Xinyi Xu",
+        "Zitiantao Lin",
+        "Zedong Cai",
+        "Yijian Huang",
+        "Weiyang Liu",
+        "Siyuan Wang",
+        "Yandong Wen"
+      ],
+      "published": "2026-10-20T07:48:41Z",
+      "updated": "2026-10-20T07:48:41Z",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.27782v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2610.26359v1",
+      "title": "Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements",
+      "summary": "Embodied agents are increasingly capable of perceiving, planning, and acting autonomously in dynamic environments, demonstrating strong performance on complex cooperative tasks. Recent advances typically assume that cooperative tasks are known in advance. In real-world applications, however, hidden-cooperation tasks are more common: the need for cooperation only becomes apparent after an agent observes and interacts with task-related targets. In this paper, we first present HiddenCoop, a benchmark for effectively evaluating agent cooperation in hidden-cooperation tasks. We further propose Discovery-Probability Graph Planning (DPGP), a method for enabling effective agent cooperation in such tasks. At the core of DPGP is a discovery-probability graph that encodes the probability distribution over the number and locations of task-related targets, facilitating effective and efficient information exchange among agents. A search algorithm is then used to derive action plans that minimize expected costs. Experiments show that DPGP achieves cooperative-task success rates of 99.3% on C-WAH and 58.3% on TDW-MAT, surpassing all compared baselines, while also reducing overall embodied execution time and substantially lowering LLM token usage. Our code is available at https://github.com/hnu-vis/DPGP.",
+      "authors": [
+        "Zihuang Cai",
+        "Changjian Chen",
+        "Zhuo Tang",
+        "Chang Tang",
+        "Kenli Li"
+      ],
+      "published": "2026-10-19T13:20:42Z",
+      "updated": "2026-10-19T13:20:42Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.26359v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2610.26369v1",
+      "title": "Autonomous intelligence for mining productivity: a multi-agent AI approach to operational value creation",
+      "summary": "Integrated Remote Operation Centres (IROCs) are emerging as the architectural frontier of Industry 4.0 for capital-intensive sectors such as mining, oil and gas, and energy. Yet two intertwined gaps constrain their evolution towards full autonomy. First, no integrated agentic architecture has been proposed for mining IROCs that orchestrates Supervisory Control and Data Acquisition systems, digital twins, predictive analytics and human-machine interfaces under safety-critical constraints. Second, no evaluation framework jointly addresses the real-time, Health-Safety-Environment, regulatory-auditability and cost-per-decision requirements that govern industrial agentic deployments. This paper makes four contributions. It synthesises industry needs and quantified gains documented in analogous industries that motivate an agentic approach to mining IROCs. It introduces EI2ROC, a three-tier multi-agent architecture combining a Large Language Model orchestrator with specialised monitoring and production-capacityprediction agents communicating through a Model Context Protocol-style tool interface. It provides a critical review of agentic evaluation along six orthogonal dimensions and identifies the industrial blind spot of current benchmarks. Finally, it proposes a multi-dimensional benchmarking framework for industrial agentic AI comprising scenario library, harness, metrics and humancalibration protocol. The paper states explicitly which components are implemented in the current prototype, which belong to the proposed reference design and which remain future work, and reports preliminary cost and latency observations from an operating site. Together, EI2ROC and the benchmarking framework constitute a methodological blueprint transferable across CAPEX intensive industries.",
+      "authors": [
+        "N Guerin",
+        "A Dehoux",
+        "M Nakhla"
+      ],
+      "published": "2026-10-19T13:24:44Z",
+      "updated": "2026-10-19T13:24:44Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.26369v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2610.24845v1",
+      "title": "AgentSoV: Virtual Sensing for LLM Multi-Agent Systems via Stream of Variation",
+      "summary": "Large language model (LLM) multi-agent systems (MASs) solve complex tasks through interacting agents, yet their reliability is difficult to analyze because failures depend on both individual agents and how information and errors propagate across the system. Existing approaches largely treat this as post-hoc failure attribution, but do not provide a common model across heterogeneous MAS architectures or support broader analysis of information influence and observability. We introduce AgentSoV, a virtual-sensing framework that models MAS execution as a stochastic dynamic system through Stream of Variation (SoV). AgentSoV maps heterogeneous trajectories into diagnostic stages, constructs virtual measurements from observable outputs, and learns cross-stage variation propagation with a state-space model. Its representation is architecture-aware in stage dependencies yet architecture-agnostic in analytical language, supporting chain-structured, orchestration-based, and directed acyclic graph (DAG)-structured MASs. Without re-executing the MAS, AgentSoV supports three system-level analyses: failure attribution identifies where abnormal variation enters; stage-input influence quantifies how strongly intermediate inputs affect downstream outcomes; and virtual-sensor placement selects complementary observations under a monitoring budget. Experiments across multiple MAS architectures demonstrate a unified approach to fault localization, information influence, and observability. AgentSoV reframes agentic execution as a dynamic system to model rather than merely text to inspect, providing insights for MAS structure and component design.",
+      "authors": [
+        "Congjing Zhang",
+        "Siyuan Xu",
+        "Yunfei Bai",
+        "Ke Ren",
+        "Xiaoning Qian",
+        "Shuai Huang"
+      ],
+      "published": "2026-10-17T19:48:14Z",
+      "updated": "2026-10-17T19:48:14Z",
+      "categories": [
+        "cs.MA",
+        "eess.SY"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.24845v1.pdf",
+      "category": "other"
+    }
+  ],
+  "ids": [
+    "2610.25851v1",
+    "2610.27782v1",
+    "2610.26359v1",
+    "2610.26369v1",
+    "2610.24845v1"
+  ]
+}
