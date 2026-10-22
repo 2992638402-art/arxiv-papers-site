@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Approximate Solomonoff Induction: On the Robustness of Learned Universal Predictors - arXiv 2610.29289 论文总结">
+    <title>Approximate Solomonoff Induction: On the Robustness of Learned Universal Predictors | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Approximate Solomonoff Induction: On the Robustness of Learned Universal Predictors</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.29289<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-10-21</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Qian Li, Shang-Hua Teng</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.29289">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.29289">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Why large language models trained via log-loss minimization over massive and diverse datasets exhibit broad capabilities and generalizable skills is not yet fully understood. Grau-Moya et al. (ICML 2024) offer a conceptual explanation through the lens of meta-learning: if sequence-generating environments $ν$ are drawn from a prior $w_ν$, minimizing population log-loss recovers the corresponding Bayesian mixture predictor $ξ=\sum_νw_νν$. In the idealized limit in which $w$ is a universal prior, the optimal predictor corresponds to Solomonoff universal induction. Practical machine learning algorithms, however, generally produce only \emph{approximately} optimal predictors. This raises a natural question: \emph{Does the prediction performance remain robust under approximation}? In this paper, we first provide a tight bound on the worst-case effect of approximation on prediction error. We show any predictor $ρ$ satisfying $D_{KL}(ξ|ρ)\leq η$ retains bounded cumulative-expected-squared prediction error. However, while the Bayesian mixture predictor $ξ$ has error $O(\log(1/w_μ))$ in an environment $μ$, we establish a tight $Θ(η/w_μ)$ bound on the excess error of $ρ$ relative to $ξ$. Thus, approximation can substantially degrade performance in environments assigned small prior probability. In sharp contrast, when environments are averaged according to prior $w$, we prove that the excess prediction error is only $O(η)$. Furthermore, we establish a distribution-shift theorem for dominated shifts from a training prior $w$ to a test prior $w&#39;$, interpolating our average-case and worst-case guarantees. Finally, we extend our robustness analysis to a finite-sampling setting relevant to learning universal predictors with neural networks and Transformers, where $D_{KL}(ξ|ρ)$ could be unbounded. [For the full abstract, see the paper.]</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.29289" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

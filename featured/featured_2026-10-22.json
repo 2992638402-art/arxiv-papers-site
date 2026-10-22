@@ -1,0 +1,120 @@
+{
+  "date": "2026-10-22",
+  "papers": [
+    {
+      "id": "2610.29408v1",
+      "title": "LiveAct: Towards Real-Time Multi-Agent World Models with Heterogeneous Action Interfaces",
+      "summary": "Interactive video world models predict how an environment evolves under user actions, but most existing systems assume one controlled agent and one task-specific action interface. We study multi-agent video world modeling, where one model generates a joint visual future for multiple controlled agents while interpreting heterogeneous controls ranging from binary game buttons to continuous robot commands. This task presents two complementary challenges. First, every agent-indexed action stream must control its intended visual entity independently. Second, the model must adapt the meaning of each control variable across different tasks, where the same tensor dimension may denote an attack, steering command, or robot command. We introduce LiveAct, centered on a Heterogeneous Action Interface (HAI) whose two components mirror this decomposition. To support independent control, Agent-Aware Spatial Modulation uses language-driven spatial gates and agent-specific attention to bind each action stream to its intended visual agent. To accommodate heterogeneous controls, Schema-Guided Action Adaptation describes each control variable in language and modulates its semantic token with the synchronized numerical value. We further transfer the complete interface to a blockwise causal generator through teacher forcing and rollout-aware distribution matching, enabling efficient streaming generation while retaining agent-specific control and action semantics. We instantiate the formulation on six multi-agent sources spanning games and multi-robot manipulation, and evaluate visual quality, action following, agent attribution, and latency. Across games and robot manipulation, LiveAct reaches 0.898 and 0.942 agent-attribution accuracy without agent locations or identity crops, and the causal generator attains 17.70 FPS at $512\\times 448$.",
+      "authors": [
+        "Xinyu Wang",
+        "Huafeng Shi",
+        "Yue Ma",
+        "Zijie Meng",
+        "Teng Xi",
+        "Yuzhuo Chen",
+        "Yucheng Wang",
+        "Ruicheng Zhang",
+        "Guoxin Zhang",
+        "Pengfei Wan",
+        "Xiu Li",
+        "Fangneng Zhan"
+      ],
+      "published": "2026-10-21T08:34:03Z",
+      "updated": "2026-10-21T08:34:03Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.29408v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2610.28907v1",
+      "title": "JaxMARL-BC: Multi-Agent Reinforcement Learning for Macroeconomic Modelling, in Seconds",
+      "summary": "Multi-agent reinforcement learning (MARL) offers a principled way of populating simulated economies with many heterogeneous decision makers. Its adoption, pioneered in finance, has nonetheless been slow in macroeconomics because of two main limitations: the lack of a shared frame of reference connecting MARL systems to dynamic stochastic general equilibrium (DSGE) models the profession already trusts, and the very long training times. The first limitation was recently addressed by the Multi-Agent Reinforcement Learning Business Cycle (MARL-BC), which places deep RL households in a real business cycle economy and reduces to classic DSGE models in specific limits. Here we address the second limitation. We present JaxMARL-BC, a JAX-accelerated simulator that trains MARL-BC economies in seconds (between 75x and 724x faster than the reference implementation), and scales to 200,000 independent learning households. We verify its correctness against the known DSGE limits, characterise its scaling through a simple cost law, and demonstrate its value by a proof-of-concept calibration of an extended model with heterogeneous returns on capital, in a two-hour experiment that would previously have taken over a month. We release JaxMARL-BC as open source.",
+      "authors": [
+        "Daniele Montagnani",
+        "Andrea Coletta",
+        "Antonietta Mira",
+        "Aldo Glielmo"
+      ],
+      "published": "2026-10-20T20:35:44Z",
+      "updated": "2026-10-20T20:35:44Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.LG",
+        "econ.GN"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.28907v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2610.26359v1",
+      "title": "Discovery-Probability Graph Planning for Embodied Agents in Tasks with Hidden Cooperation Requirements",
+      "summary": "Embodied agents are increasingly capable of perceiving, planning, and acting autonomously in dynamic environments, demonstrating strong performance on complex cooperative tasks. Recent advances typically assume that cooperative tasks are known in advance. In real-world applications, however, hidden-cooperation tasks are more common: the need for cooperation only becomes apparent after an agent observes and interacts with task-related targets. In this paper, we first present HiddenCoop, a benchmark for effectively evaluating agent cooperation in hidden-cooperation tasks. We further propose Discovery-Probability Graph Planning (DPGP), a method for enabling effective agent cooperation in such tasks. At the core of DPGP is a discovery-probability graph that encodes the probability distribution over the number and locations of task-related targets, facilitating effective and efficient information exchange among agents. A search algorithm is then used to derive action plans that minimize expected costs. Experiments show that DPGP achieves cooperative-task success rates of 99.3% on C-WAH and 58.3% on TDW-MAT, surpassing all compared baselines, while also reducing overall embodied execution time and substantially lowering LLM token usage. Our code is available at https://github.com/hnu-vis/DPGP.",
+      "authors": [
+        "Zihuang Cai",
+        "Changjian Chen",
+        "Zhuo Tang",
+        "Chang Tang",
+        "Kenli Li"
+      ],
+      "published": "2026-10-19T13:20:42Z",
+      "updated": "2026-10-19T13:20:42Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.26359v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2610.28397v1",
+      "title": "MAS-Guard: Unified Guardrails from Individual Agents to Multi-Agent LLM Systems",
+      "summary": "Agentic AI extends large language models (LLMs) from generating responses to planning and executing complex workflows, substantially expanding their utility while exposing applications to unsafe actions, information leakage, and adversarial manipulation. Multi-agent systems further expand these capabilities through specialization and collaboration, but distributed authority, heterogeneous roles, and opaque or potentially compromised participants make safeguarding even more challenging. Existing defenses address important individual threats but provide fragmented coverage across local execution, system-level interactions, and enforcement mechanisms. We introduce MAS-Guard, a unified framework that closes this gap for safeguarding single- and multi-agent AI applications containing both instrumentable and opaque agents. Within instrumentable agents, the proposed local Agent Guardrail (A-Guard) layer applies task-specific experts to assess agentic events. At the system level, developer-owned Agent Charters and a Control Plane combine deterministic structural checks of routes, agent capabilities, and message formats with semantic assessments of roles and message content. These complementary layers enable enforcement through a shared set of interventions: allow, reflection, confirmation, and block. Evaluated across six benchmarks covering diverse single- and multi-agent scenarios with three agent LLMs from different providers, MAS-Guard reduces the overall attack success rate by 71.5-86.3% relative to unguarded agents, while meeting the utility reference criterion on benign tasks.",
+      "authors": [
+        "Mohammad Kachuee",
+        "Phu Mon Htut",
+        "Sheng Li",
+        "Nikolaos Pappas",
+        "Miguel Ballesteros Martinez",
+        "Yassine Benajiba",
+        "Sujith Ravi",
+        "Dan Roth"
+      ],
+      "published": "2026-10-20T15:44:37Z",
+      "updated": "2026-10-20T15:44:37Z",
+      "categories": [
+        "cs.CR",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.28397v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2610.26369v1",
+      "title": "Autonomous intelligence for mining productivity: a multi-agent AI approach to operational value creation",
+      "summary": "Integrated Remote Operation Centres (IROCs) are emerging as the architectural frontier of Industry 4.0 for capital-intensive sectors such as mining, oil and gas, and energy. Yet two intertwined gaps constrain their evolution towards full autonomy. First, no integrated agentic architecture has been proposed for mining IROCs that orchestrates Supervisory Control and Data Acquisition systems, digital twins, predictive analytics and human-machine interfaces under safety-critical constraints. Second, no evaluation framework jointly addresses the real-time, Health-Safety-Environment, regulatory-auditability and cost-per-decision requirements that govern industrial agentic deployments. This paper makes four contributions. It synthesises industry needs and quantified gains documented in analogous industries that motivate an agentic approach to mining IROCs. It introduces EI2ROC, a three-tier multi-agent architecture combining a Large Language Model orchestrator with specialised monitoring and production-capacityprediction agents communicating through a Model Context Protocol-style tool interface. It provides a critical review of agentic evaluation along six orthogonal dimensions and identifies the industrial blind spot of current benchmarks. Finally, it proposes a multi-dimensional benchmarking framework for industrial agentic AI comprising scenario library, harness, metrics and humancalibration protocol. The paper states explicitly which components are implemented in the current prototype, which belong to the proposed reference design and which remain future work, and reports preliminary cost and latency observations from an operating site. Together, EI2ROC and the benchmarking framework constitute a methodological blueprint transferable across CAPEX intensive industries.",
+      "authors": [
+        "N Guerin",
+        "A Dehoux",
+        "M Nakhla"
+      ],
+      "published": "2026-10-19T13:24:44Z",
+      "updated": "2026-10-19T13:24:44Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.26369v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2610.29408v1",
+    "2610.28907v1",
+    "2610.26359v1",
+    "2610.28397v1",
+    "2610.26369v1"
+  ]
+}

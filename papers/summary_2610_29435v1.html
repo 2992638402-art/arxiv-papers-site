@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Events, Not Pixels: Where World Models Get the Return Wrong - arXiv 2610.29435 论文总结">
+    <title>Events, Not Pixels: Where World Models Get the Return Wrong | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Events, Not Pixels: Where World Models Get the Return Wrong</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.29435<br><strong>分类:</strong> cs.AI<br><strong>发布时间:</strong> 2026-10-21</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Haoyue Liu, Xiaoying Tang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.29435">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.29435">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>World models are increasingly used for planning, where a planner ranks candidate actions by returns imagined by the model. However, these models are judged mainly by how well they render frames, even though a visually faithful rollout can still assign the wrong return. To identify where this mismatch arises, we introduce a transition-level diagnostic that replaces imagined transitions with real ones and measures the reduction in return error against a budget-matched random control. Our analysis yields two findings. (1) Event transitions, the few steps where a reward is earned or an episode ends, are rendered as well as other steps (median pixel-error ratio 0.85), yet restoring them removes a median of 70% of the return error. In contrast, restoring transitions with the largest MSE, SSIM or LPIPS error removes less than a random choice. Across the 44 Atari-100k model--collection pairs that pass our reliability checks, including three released families, event patches outperform random patches in 39 (sign test p=1.4 x 10^{-7}), with a median gain of +44 percentage points. (2) The remaining error is structured: a complementary patch separates errors at true events from those elsewhere, while an eight-step timing tolerance recovers few events missed by our deterministic models. This structure also guides repair: a rule recorded before four repair outcomes were known predicts when a diffusion model repairs these failures. Event patches improve plan ranking, and the same concentration appears on control tasks with rare reward events.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.29435" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
