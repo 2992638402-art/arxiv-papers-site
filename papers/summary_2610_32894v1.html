@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LoCA: Enabling Multi-Modality in Geospatial Location Encoders - arXiv 2610.32894 论文总结">
+    <title>LoCA: Enabling Multi-Modality in Geospatial Location Encoders | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>LoCA: Enabling Multi-Modality in Geospatial Location Encoders</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.32894<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-10-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Panagiotis Koromilas, Eleanna Vali, Diogenis Antonopoulos, Eleni Saka, Dimitris Christofis, Nikolaos Ioannis Bountos, Konstantin Klemmer, Ioannis Papoutsis, Yannis Panagakis, Mihalis A. Nicolaou</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.32894">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.32894">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Location encoders map geographic coordinates to high-dimensional descriptors through contrastive alignment with paired Earth Observation imagery. We prove that this construction is structurally limited: any Lipschitz location encoder produces an output of intrinsic dimension at most 2, regardless of architecture or bandwidth, which forces the contrastive loss to strictly exceed its asymptotic optimum. Empirically, joint training also collapses the encoder&#39;s embedding covariance to low rank. Although dimension-limited, current location encoders sidestep this spectral collapse by training against a frozen image encoder, which we reinterpret as a covariance regularizer that supplies a high-rank target for the location encoder to fold onto. However, extending this approach to multimodal inputs is challenging, as location encoders should simultaneously map a single location to multiple, potentially incompatible, descriptors. We identify two requirements a regularizer must satisfy for location encoding in multimodal regimes: co-alignment across modalities, since adapters alone cannot align independently pretrained encoders; and high effective rank, since the location encoder inherits its target&#39;s spectrum. We propose LoCA (Location Contrastive Alignment), a two-stage pipeline that satisfies both. Stage 1 jointly trains Sentinel-1 and Sentinel-2 encoders with contrastive learning, producing a co-aligned, high-rank multimodal target. Stage 2 freezes the image encoders and trains a location and a tabular metadata encoder as projection adapters with multi-view contrastive learning. Against five state-of-the-art encoders on 17 tasks ranging from land cover and wildfire forecasting to geophysical, socio-economic, biodiversity and climate applications, LoCA achieves the most task wins, is the only model to outperform every other on a majority of tasks, and wins 68.8% of all per-task comparisons.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.32894" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

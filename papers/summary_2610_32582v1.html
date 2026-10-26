@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System - arXiv 2610.32582 论文总结">
+    <title>Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Batched NN 4D-Var: a performant hybrid model framework for the Integrated Forecasting System</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.32582<br><strong>分类:</strong> stat.ML, cs.LG<br><strong>发布时间:</strong> 2026-10-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Alban Farchi, Marcin Chrust, Massimo Bonavita, Marc Bocquet, Wei Pan, Patrick Laloyaux</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.32582">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.32582">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Hybrid forecasting systems combining machine learning and numerical weather prediction offer a promising route toward improved forecast skill while preserving physical consistency. In this study, we investigate online learning of state-dependent model-error corrections within the Integrated Forecasting System using 4D-Var. Building on previous work, we represent model error using a neural network embedded within the forecast model and trained from observations through the data assimilation cycle. First, we introduce a targeted variant of neural-network 4D-Var in which only the neural-network parameters are estimated, while the atmospheric state is provided by a precomputed analysis. We then propose a batched extension that processes assimilation windows in random order and averages parameter increments over multiple windows, drawing inspiration from mini-batch stochastic optimization. Experiments are conducted with the Integrated Forecasting System of the European Centre for Medium-Range Weather Forecasts at an intermediate resolution. Sequential online learning substantially improves forecasts within the training period, with error reductions exceeding 10%in some cases. However, these improvements fail to generalize to unseen data. In contrast, the proposed batched formulation produces hybrid models that consistently improve forecast skill in out-of-sample experiments. Larger batch sizes accelerate convergence and improve robustness by reducing the noise of parameter updates. Diagnostics further show that the online-trained corrections preserve realistic forecast variability and do not improve skill through artificial smoothing. These results demonstrate that the formulation of the online learning problem is critical for generalisation and establish batched online training as a promising framework for hybrid machine-learning/data-assimilation systems.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.32582" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

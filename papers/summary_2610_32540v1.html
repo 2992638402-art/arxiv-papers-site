@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="StarRTT: An End-to-End Real-Time Framework for Blind Zone-Free RTT Prediction in Starlink LEO Satellite Networks - arXiv 2610.32540 论文总结">
+    <title>StarRTT: An End-to-End Real-Time Framework for Blind Zone-Free RTT Prediction in Starlink LEO Satellite Networks | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>StarRTT: An End-to-End Real-Time Framework for Blind Zone-Free RTT Prediction in Starlink LEO Satellite Networks</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.32540<br><strong>分类:</strong> cs.IT, cs.AI<br><strong>发布时间:</strong> 2026-10-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jaeyong Lee, Seongjin Jeong, Yusang Park, Hyunho Hwang, Sangmin Han, Wonjae Shin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.32540">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.32540">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Low Earth Orbit (LEO) satellite mega-constellations such as Starlink require frequent handovers due to high orbital velocities, resulting in substantial Round-Trip Time (RTT) fluctuations. Accurate RTT prediction can mitigate these fluctuations, yet it fundamentally relies on continuously updated serving- satellite information. Existing serving-satellite identification methods typically complete identification only at the end of each scheduling cycle, creating an identification blind zone that limits real-time prediction. To overcome this limitation, we develop StarRTT, an end-to-end real-time framework that eliminates the blind zone by integrating per-second serving-satellite identification with RTT prediction. Within this framework, we propose Real-Time Long Short-Term Memory (RT-LSTM), an LSTM-based RTT prediction model designed to capture both non-stationary RTT evolution and time-varying geometric relationships among the serving satellite, user terminal, and gateways. Specifically, a historical LSTM encodes historical RTT observations and real-time serving-satellite and gateway-relative features, while a future LSTM processes Two-Line Element (TLE)-propagated future features of the identified serving satellite up to the next scheduling instant. Under strict real-time back-testing, RT-LSTM achieves a Mean Absolute Error (MAE) of 1.405 ms averaged over all 15 prediction horizons and 15 reference time-slot indices, reducing the error by 4.3 %, 11.6 %, and 22.1 % compared with the existing baseline models, LSTM, StarNet, and Attention-based Spatiotemporal Model (ASTM), respectively. Notably, the reduction over LSTM reaches 12.5 % at the scheduling instant, highlighting the benefit of real-time serving-satellite information when recent RTT observations are limited.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.32540" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

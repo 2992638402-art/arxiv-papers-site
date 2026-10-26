@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trajectory Matching: Discrete Flow Matching with Structured Actions - arXiv 2610.32602 论文总结">
+    <title>Trajectory Matching: Discrete Flow Matching with Structured Actions | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Trajectory Matching: Discrete Flow Matching with Structured Actions</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.32602<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-10-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Niklas Kemper, Marten Lienen, David Lüdke, Stephan Günnemann</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.32602">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.32602">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>The natural units of structured discrete generation are often not independent single-component edits but richer actions: attaching a fragment to a molecule, inserting a node together with an incident edge, or growing a hierarchy by adding a child. Yet most existing discrete flow matching methods (DFM) are restricted to independent component-wise edits over fixed-size states. This restriction stems from endpoint conditioning: endpoints fix the source and target during training but not the action sequence between them, making tractable conditional rates hard to define for complex actions that cannot be factorized component-wise. We propose trajectory matching, which conditions the flow on a full sequence of actions connecting the endpoints. This yields principled, simulation-free training targets for user-defined action spaces, including actions that change state size, modify multiple components, or depend on earlier actions. We prove that the resulting objective recovers the marginal flow and that trajectory matching strictly subsumes factorized DFM, while additionally capturing actions with prerequisite structure such as hierarchy growth or fragment-based molecule generation. Empirically, on tree and molecular graph generation, trajectory matching with domain-aligned actions matches or surpasses factorized DFM baselines (lifting MOSES validity from 92.8% to 99.2%) and transfers without retraining to substructure extension and linking. Trajectory matching enlarges the design space of discrete flow matching by turning the action vocabulary into a modeling choice. An interactive explanation of trajectory matching is available at <a href="https://niklaskemper.com/blog/trajectory-matching/">https://niklaskemper.com/blog/trajectory-matching/</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.32602" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
