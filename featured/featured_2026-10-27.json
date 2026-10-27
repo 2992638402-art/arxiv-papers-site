@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-27",
+  "papers": [
+    {
+      "id": "2610.34564v1",
+      "title": "FlockWorld: Toward Population-Scale Multi-Agent Video World Models through Artificial Life Simulation",
+      "summary": "Most action-conditioned video world models remain limited to a single player, while existing multiplayer models support only small, fixed groups of agents. We introduce FlockWorld, an artificial-life environment built on Reynolds's Boids algorithm for studying population-scale multi-agent video world models. Specifically, FlockWorld renders synchronized egocentric crops, assigns distinct colors to preserve camera-agent identity across views, exposes rule-derived accelerations as actions, and lets the number of camera agents be configured independently of the size of the surrounding population. We further introduce FlockDiT, an action-conditioned latent diffusion transformer trained with flow matching on FlockWorld data to jointly generate synchronized egocentric videos for multiple agents. Our results suggest that joint generation benefits agent detection at density-matched settings and that diffusion forcing improves rollout fidelity. Together, FlockWorld and FlockDiT provide a controlled testbed for multi-agent video generation.",
+      "authors": [
+        "Meryem Koksal",
+        "Yunzhe Wang",
+        "Volkan Ustun"
+      ],
+      "published": "2026-10-25T21:07:26Z",
+      "updated": "2026-10-25T21:07:26Z",
+      "categories": [
+        "cs.CV",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.34564v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2610.33966v1",
+      "title": "InteractiveWorld: A Verifiable Human-Centric Environment for Building Better Interactive MLLM Assistants",
+      "summary": "People have long dreamed of an assistant that is always there to guide them and remind what they forget, from new dishes to lost keys. Powered by multimodal large language models (MLLMs), egocentric AI assistants on wearable devices are bringing this dream within reach: they see what the user sees and give instructions for user's physical work when necessary. However, testing such assistance is challenging and usually requires real people. The expensive and rare real interaction data leaves a key question unanswered: Can today's MLLMs truly help people in physical world? To answer this question, we propose InteractiveWorld, the first verifiable environment for closed-loop interaction between human and AI assistant. Unlike existing robot-centric simulators, InteractiveWorld lets the assistant guide a human agent who observes the scene, understands instructions, and acts independently. It thus realistically simulates how AI assistant collaborates with human: the assistant instructs, the human acts, and the environment executes actions and updates what they see next. Building on it, we introduce InteractiveBench, the first dynamic benchmark for egocentric AI assistants, with 120 multi-turn tasks across six categories. In each task, the assistant guides the human in real time, and every instruction shapes the outcome, which is scored by verifiable, state-based rewards. Experiments with 12 frontier MLLMs show they are still far from reliable assistants. Even the strongest model, Claude Fable 5.1, achieves at most 20% and 25% on long-horizon Guidance and Planning tasks, respectively. Overall, our work offers a verifiable platform and a rigorous evaluation set, laying a solid foundation for research on interactive MLLM assistants that truly help people in the physical world.",
+      "authors": [
+        "Qinsi Wang",
+        "Wei Wen",
+        "Chong Zhou",
+        "Saksham Suri",
+        "Zechun Liu",
+        "Lemeng Wu",
+        "Hai Helen Li",
+        "Yiran Chen",
+        "Raghuraman Krishnamoorthi",
+        "Qi Qian"
+      ],
+      "published": "2026-10-25T00:44:29Z",
+      "updated": "2026-10-25T00:44:29Z",
+      "categories": [
+        "cs.HC",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.33966v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2610.35044v1",
+      "title": "DriveUniTok: A Unified Multimodal Tokenizer for Driving World-Action Models",
+      "summary": "World models are emerging as a fundamental component of policy learning for real-world agents, enabling agents to predict future world states and plan actions within a learned representation of the dynamic environment. Existing approaches, however, often model appearance, metric geometry represented by projected LiDAR depth, and ego motion either partially or independently, overlooking the fact that these modalities are different projections of a shared underlying world state. This separation can lead to information loss and cross-modal inconsistency, ultimately limiting downstream performance. Motivated by this unified view of the world, we propose DriveUniTok, a unified multimodal tokenizer for driving world-action models (WAMs) that encodes these modalities in a single decodable continuous latent. We freeze DriveUniTok and adapt a pretrained diffusion model, DriveUniWAM, to predict future unified latents; the tokenizer then decodes them into future appearance, projected LiDAR depth, and ego trajectories. Experiments on NAVSIM demonstrate that our unified design achieves better future prediction and planning performance at lower downstream computational cost than separate-stream alternatives. With reinforcement learning post-training, DriveUniWAM achieves a PDMS of 91.54, reaching state-of-the-art performance among the evaluated WAM-based planners.",
+      "authors": [
+        "Jingbo Xu",
+        "Hanchao Leng",
+        "JiaHui Huang",
+        "Hanbing Li",
+        "Jingwei Zhao",
+        "Kuiyuan Yang",
+        "Chen Gao",
+        "Guang Chen",
+        "Hangjun Ye",
+        "Yong Li"
+      ],
+      "published": "2026-10-26T08:55:30Z",
+      "updated": "2026-10-26T08:55:30Z",
+      "categories": [
+        "cs.CV",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.35044v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2610.34836v1",
+      "title": "Collective Emergent Alignment: Measuring and Amplifying Interaction-Induced Reasoning Alignment in Multi-Agent LLMs",
+      "summary": "Multi-agent large language model (LLM) systems can exhibit emergent behaviors through interaction, yet whether a similar phenomenon exists for reasoning alignment remains largely unexplored. We study whether agent interaction produces additional reference-grounded reasoning alignment beyond matched individual self-refinement, and introduce REMAP (Reference-Entailment-Matrix for Agentic Process), a framework that quantifies this effect through Semantic Coverage and interaction-specific alignment gains. Across diverse model families and two multi-hop reasoning benchmarks, we observe broadly positive interaction gains, particularly on reasoning content that depends on integrating evidence distributed across agents. These gains are consistently associated with independently measured peer-information recovery, while further analysis reveals composition-dependent heterogeneity effects and asymmetric information transfer across agent capability levels. Motivated by these findings, we further introduce a fact-level multi-agent communication framework that replaces full reasoning-trace exchange with compact, gap-aware, and selectively routed information. Our experiments show that compact fact exchange improves reasoning alignment and task performance while reducing communication overhead, whereas more selective communication exposes a trade-off between acquiring distributed information, retaining local content, and communication efficiency. Overall, our results show that collective emergent alignment can be quantified, linked to information-transfer patterns, and used to guide more effective multi-agent communication.",
+      "authors": [
+        "Boxuan Wang",
+        "Zhuoyun Li",
+        "Sarvapali D. Ramchurn",
+        "Xiaowei Huang",
+        "Yi Dong"
+      ],
+      "published": "2026-10-26T04:31:56Z",
+      "updated": "2026-10-26T04:31:56Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.34836v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2610.33282v1",
+      "title": "Estimation of Propagated Risk in LLM-based Multi-Agent Systems",
+      "summary": "Large Language Model (LLM) based multi-agent systems introduce a distinctive reliability challenge in which actions taken by upstream agents can affect the correctness of downstream agents. While prior work has investigated error propagation and developed methods for estimating uncertainty inherited from upstream agents, existing approaches do not explicitly model how realized sender-receiver interactions contribute to downstream error risk under different sender correctness states. In this work, we study agent-level error-risk estimation from multi-agent execution traces. We propose Interaction-Effect Propagation (IE-Prop), an interaction-conditioned model that learns separate effects for correct and incorrect upstream agents. For each sender-receiver interaction, the model combines these conditional effects using the sender's estimated error risk, and recursively propagates the resulting risk estimates through the execution graph. We evaluate our approach across three multi-agent architectures and three benchmarks. Across all evaluated architectures, our approach raises the final-node AUROC over the established baseline by approximately 0.05 points on average. Furthermore, tracking risk across multiple agent steps contributes a distinct +0.03 AUROC gain in sequential systems. These results show that realized inter-agent interactions provide predictive information beyond receiver-local evidence, while the value of multi-step risk tracking depends on the system's information-flow structure.",
+      "authors": [
+        "Shreyan Ganguly",
+        "Souradeep Chattopadhyay",
+        "Qisai Liu",
+        "Soumik Sarkar"
+      ],
+      "published": "2026-10-23T20:46:33Z",
+      "updated": "2026-10-23T20:46:33Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2610.33282v1.pdf",
+      "category": "ml-theory"
+    }
+  ],
+  "ids": [
+    "2610.34564v1",
+    "2610.33966v1",
+    "2610.35044v1",
+    "2610.34836v1",
+    "2610.33282v1"
+  ]
+}

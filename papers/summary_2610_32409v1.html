@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PAFS: Perturbation-Aware Firing Scaffolds for Robust Event-Based SNNs - arXiv 2610.32409 论文总结">
+    <title>PAFS: Perturbation-Aware Firing Scaffolds for Robust Event-Based SNNs | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>PAFS: Perturbation-Aware Firing Scaffolds for Robust Event-Based SNNs</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.32409<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-10-23</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ning Liu, Jun Sun, Hao Guo, Sen Shen, Xiangfei Yang, Jie Yang, Lan Wu, Shangke Lyu, Thomas Bräunl</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.32409">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.32409">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Event-based spiking neural networks (SNNs) encode information through temporal firing dynamics, but the same stateful computation makes their predictions sensitive to event loss, timestamp jitter, and speed variation. These perturbations alter evidence accumulation, yet late-layer firing trajectories can retain error-diagnostic structure that is absent from the final logits alone. We introduce Perturbation-Aware Firing Scaffolds (PAFS), a labeled post-training calibration method that exploits this structure without updating the pretrained backbone. PAFS associates standardized late-layer leaky integrate-and-fire trajectories with the class-probability residuals of an Adapter anchor, then applies singular value decomposition to extract compact residual-aligned channel directions. At inference, firing trajectories from the same backbone pass are projected onto this fixed low-rank scaffold and combined with anchor statistics to predict a residual logit correction. Across four matched dataset-backbone settings spanning three event datasets and two spiking Transformer architectures, PAFS improves corrupted-average and worst-condition accuracy over the corresponding Adapter anchors, with maximum gains of 3.06 and 3.65 percentage points. In the DailyAction-DVS/Spikingformer setting, the added trainable parameters amount to approximately 0.34% of the frozen backbone.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.32409" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

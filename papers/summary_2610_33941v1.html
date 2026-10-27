@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TurboWAM: Learning What Matters for Fast World Action Models - arXiv 2610.33941 论文总结">
+    <title>TurboWAM: Learning What Matters for Fast World Action Models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>TurboWAM: Learning What Matters for Fast World Action Models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.33941<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-10-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Guile Wu, Shuangzhi Li, Xingxin Chen, Chengjie Huang, Sam Hosseini, Tongtong Cao, Yingxue Zhang, Dongfeng Bai</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.33941">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.33941">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>World action models have demonstrated promising performance in robot policy learning, yet their high inference latency remains a critical bottleneck for real-world deployment. Recent approaches have sought to improve inference efficiency by reducing test-time future-frame imagination or accelerating action prediction. However, these methods often leverage representations from all video world model layers without explicitly considering their varying relevance to action prediction, leading to redundant computation and suboptimal representation utilization. In this work, we propose TurboWAM, a fast world action model that efficiently aggregates structured world representations conditioned on action predictions. Specifically, TurboWAM introduces a structured world representation aggregation module that adaptively fuses representations from different world model layers according to their relevance to the evolving action denoising state. Furthermore, TurboWAM employs a structured action supervision mechanism that adaptively modulates gradients from action supervision across different world model layers during backward propagation, facilitating world representation learning. During inference, by reducing the number of world model layers executed and caching relevant representations across action denoising steps, TurboWAM substantially reduces computational overhead. Extensive experiments on multiple robot manipulation benchmarks demonstrate that TurboWAM achieves low inference latency while maintaining competitive task success rates compared with state-of-the-art methods.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.33941" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

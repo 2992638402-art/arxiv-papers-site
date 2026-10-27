@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MTA-Zero: Self-Improving Multimodal Deep Search via Online QA-Solver Co-training - arXiv 2610.33799 论文总结">
+    <title>MTA-Zero: Self-Improving Multimodal Deep Search via Online QA-Solver Co-training | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>MTA-Zero: Self-Improving Multimodal Deep Search via Online QA-Solver Co-training</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.33799<br><strong>分类:</strong> cs.CL<br><strong>发布时间:</strong> 2026-10-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xiangyu Peng, Jiaxin Zhang, An Yan, Yu Li, Ran Xu, Zeyuan Chen, Chien-Sheng Wu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.33799">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.33799">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Multimodal large language models (MLLMs) have become strong visual reasoners, yet remain limited in open-world, multi-step search that requires grounding images, selecting tools, and integrating web evidence. Existing approaches typically construct and filter fixed offline corpora whose question distributions cannot adapt as the target deep-search agent improves. Building on MTA-Agent&#39;s image-grounded QA construction, we present MTA-Zero, an online multimodal QA-Solver co-training framework for self-improving multimodal deep-search agents that requires no precomputed multi-hop corpus. Starting from image-grounded VQA seed contexts, a trainable QA Generator retrieves evidence and constructs verified multi-hop questions online. A separate deep-search Solver then selects tools, gathers evidence, and answers the generated questions. To focus generation on the Solver&#39;s learning frontier, we derive a Goldilocks reward for the QA Generator from the Solver&#39;s group-wise rollout success rate: questions solved by all rollouts or by none receive zero reward, whereas questions near the current frontier are favored. We optimize the two policies independently with GRPO, without sharing parameters or gradients. Across six multimodal deep-search benchmarks, MTA-Zero improves a Qwen3-VL-8B Solver from 36.91% to 51.58% mean accuracy and achieves performance comparable to GPT-5 under the same agent workflow. The same framework also improves a newer Qwen3.6-27B Solver by 10.82 points. These results show that verified online question generation provides a policy-specific curriculum for continually improving multimodal deep-search agents.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.33799" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
