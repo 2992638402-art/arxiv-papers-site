@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Routed Continual Learning - arXiv 2610.38796 论文总结">
+    <title>Routed Continual Learning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Routed Continual Learning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.38796<br><strong>分类:</strong> cs.LG, cs.MA<br><strong>发布时间:</strong> 2026-10-28</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Michael Philip, Mahesh Balakrishnan, David Geraghty, David Mao, Vidhya Venkat, Ilya Mironov</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.38796">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.38796">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Agents deployed at scale repeatedly encounter related problems, and it is natural to let them learn from each other&#39;s experience rather than starting over each time. Unfortunately, there is no single way to retain that experience that works well across settings, and no way to know in advance which future problems a given experience will help with. A global history preserves every detail but becomes expensive and mixes together experience that may not belong together; compressing that history into one fixed representation limits the cost but can throw away valuable details. We introduce Routed Continual Learning (Routed CL), an architecture that decides how to partition and retain experience. Past trajectories are grouped into clusters, each of which maintains state using one memory system from a fixed library. Before each run, an LLM-based router either reuses an existing cluster or creates a new one, basing its decision on the problem statement, memory system descriptions, and cluster summaries. We also introduce Context Memory Adapter, which mediates between the memory system and the agentic loop. We evaluate the architecture on a heterogeneous stream that interleaves 301 instances from the six CL-Bench tasks with 97 banking instances from $τ^3$-Bench. Across four language models and five matched rollouts, Routed Continual Learning raises normalized reward over a single global in-context learning (ICL) history by 15-30% of the maximum attainable normalized reward, achieves higher mean normalized reward than ICL-only clustering, and reduces estimated API cost by 65-72% relative to Global ICL. These results support approaching continual learning as a routing problem that chooses both a learning mechanism and a state cluster rather than committing to one representation globally.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.38796" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

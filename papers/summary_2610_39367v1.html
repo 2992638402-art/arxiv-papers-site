@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Utility-WAM: Correcting Future-Induced Action Changes - arXiv 2610.39367 论文总结">
+    <title>Utility-WAM: Correcting Future-Induced Action Changes | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Utility-WAM: Correcting Future-Induced Action Changes</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.39367<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-10-29</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Feihong Zhang, Xi Lin, Yulong Shi, Zuxing Lu, Yanghong Mei, Zhaopeng Gu, Tingyu Yuan, Zihao Liang, Yinuo Wang, Zhaowen Li</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.39367">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.39367">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>World Action Models (WAMs) can condition robot actions on generated visual futures, but this additional context is neither cost-free nor uniformly beneficial. We examine what a predicted future actually changes: the action delta $Δa$ between the future-conditioned and future-free execution paths of the same model. Under a shared WAM checkpoint, this delta barely shifts average benchmark success ($+0.8$ points on LIBERO, $-0.8$ on RoboTwin<del>2.0), while generating visual futures increases inference latency by 1.7--1.9$\times$. These aggregate metrics conceal a concentrated failure mode that we term \emph{future-induced negative transfer}: while predictive deltas benefit long-horizon tasks ($+2.4$ points on LIBERO-Long) and remain negligible on most routine manipulations, they induce severe degradation on precision tasks---with \emph{Press Stapler} and \emph{Place Can Basket} losing 54.0 and 34.0 points, recurring as top failure modes across independently trained WAM variants. We introduce \textbf{Utility-WAM} for in-place correction of future-conditioned control. Its primary learning component is a residual adapter that repairs future-induced velocity deltas under a frozen shared WAM by aligning them with ground-truth dynamic guidance and penalizing excess error beyond the future-free baseline. The adapter selectively eliminates the majority of severe task drops (reducing losses to 6.0 and 14.0 points) while preserving long-horizon foresight. To eliminate superfluous video computation, a lightweight pre-generation gate reuses counterfactual action outcomes to selectively bypass video generation on 75.5% of RoboTwin queries, cutting latency by 38% while improving average success to 93.3% on RoboTwin</del>2.0 and 98.9% on LIBERO. On physical bimanual manipulation across three real-world tasks, Utility-WAM succeeds in 53 of 60 trials, compared to 43 for FAST-WAM.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.39367" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

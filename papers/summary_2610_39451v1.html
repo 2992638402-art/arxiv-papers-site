@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Smooth Action Chunking Via Movement-Primitive Representations for Imitation Learning - arXiv 2610.39451 论文总结">
+    <title>Smooth Action Chunking Via Movement-Primitive Representations for Imitation Learning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Smooth Action Chunking Via Movement-Primitive Representations for Imitation Learning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2610.39451<br><strong>分类:</strong> cs.LG, cs.RO<br><strong>发布时间:</strong> 2026-10-29</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Shota Nomura, Takayuki Osa, Yasuhiro Kato, Kazuki Ota, Naoki Shitanda, Tatsuya Harada</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2610.39451">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2610.39451">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Imitation learning has become a widely adopted approach for vision-based robot policies, owing to its conceptual simplicity, scalability, and ability to leverage large-scale datasets. As these policies have grown more capable, action chunking has become their standard interface. At each decision step the policy outputs several future actions at once. Backbones from diffusion policies to large vision-language-action models all share it. Whatever backbone produces the chunk, its temporal structure is learned only implicitly. The commanded trajectory is therefore jerky both within a chunk and between successive chunks. On real hardware this appears as visible vibration and as repeated saturation of the follower&#39;s velocity limit. We address this issue by incorporating a movement-primitive-based trajectory representation into action chunking. Specifically, a trajectory segment is represented as a linear combination of smooth basis functions, yielding smooth trajectories by construction while leaving the policy architecture, training objective, and inference procedure unchanged. The same representation also yields a closed-form, inference-time correction for the second source of jerk. We condition the predicted coefficients so that the new chunk passes through a via-point at the previous chunk&#39;s last commanded action. This correction needs no retraining and, unlike asynchronous Real-Time Chunking, applies to policies queried in one shot. We instantiate it on a one-shot (ACT) and an iterative (DiT) backbone and evaluate in simulation and on a real bimanual ALOHA platform. The representation lowers within-chunk jerk by an order of magnitude on the one-shot backbone and by 2.4 times on the iterative one, with task success statistically non-inferior. The conditioning then removes 73-84% of the boundary discontinuity, at negligible per-step cost.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2610.39451" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
