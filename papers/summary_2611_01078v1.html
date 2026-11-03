@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CuPH: Parallel Cubical Persistent Homology via Level-Synchronous Component Tracking - arXiv 2611.01078 论文总结">
+    <title>CuPH: Parallel Cubical Persistent Homology via Level-Synchronous Component Tracking | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>CuPH: Parallel Cubical Persistent Homology via Level-Synchronous Component Tracking</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.01078<br><strong>分类:</strong> cs.CV, cs.CG, cs.DC<br><strong>发布时间:</strong> 2026-10-31</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Guangyu Meng, Pengfei Gu, Erin Wolf Chambers, Danny Z. Chen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.01078">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.01078">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Persistent homology (PH) is a mathematically principled multi-scale topological descriptor of shape and connectivity in data. It is widely applied in image classification, segmentation, and shape analysis across medical and aerial imaging, providing structural information that pixel-wise deep learning may overlook. Standard cubical PH decomposes an image into cubical cells (vertices, edges, and squares) and reduces them sequentially in filtration order. This sequential reduction has $Θ(n)$ parallel depth for an $n$-pixel image, limiting within-image GPU parallelism and constraining its use in topology-aware deep learning. We introduce CuPH, a GPU-based parallel algorithm for computing cubical PH on 2D images that operates directly on pixels rather than cubical cells. CuPH buckets pixels by filtration values, activates them with a level-synchronous sweep, and tracks connected components with a lock-free union-find method. We prove that CuPH produces persistence diagrams identical to standard cubical PH on integer inputs, with a stability bound for floating-point inputs. CuPH reduces parallel depth from $Θ(n)$ to $O(L\log n)$ for an image with $L$ intensity levels. We implement the level sweep as a single CUDA kernel, eliminating cross-level kernel-launch overhead. Empirically, CuPH is $18.6$--$99.6\times$ faster than the existing GPU baseline (CMP). As a drop-in PH backend, CuPH accelerates topology-aware classification ($4.2$--$16.7\times$) and segmentation ($8.3$--$44\times$) while preserving accuracy. It also enables computing full-image PH losses on high-resolution images, improving segmentation Dice by $2.2$--$4.6$ points over patch-local PH baselines and accelerating training by $25$--$31\times$.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.01078" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

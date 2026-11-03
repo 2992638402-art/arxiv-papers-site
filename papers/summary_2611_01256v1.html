@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LoRAForge: Co-Designing Post-Hoc Compression and Execution for Efficient Multi-LoRA Serving - arXiv 2611.01256 论文总结">
+    <title>LoRAForge: Co-Designing Post-Hoc Compression and Execution for Efficient Multi-LoRA Serving | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>LoRAForge: Co-Designing Post-Hoc Compression and Execution for Efficient Multi-LoRA Serving</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.01256<br><strong>分类:</strong> cs.LG, cs.AI<br><strong>发布时间:</strong> 2026-10-31</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Shenghui Li, Thiemo Voigt</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.01256">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.01256">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Multi-LoRA serving allows many task-specific adapters to share a common base model, but scaling to large adapter fleets introduces substantial storage, loading, and execution overheads. Post-hoc compression can reduce the memory footprint of trained LoRA adapters, yet smaller ranks do not automatically translate into faster serving. For instance, padding, factor access, and generic kernels can obscure the retained low-rank structure, while independently recompressing thousands of modules also incurs significant preparation overhead. We present LoRAForge, a system connecting batched factor construction to rank-specialized execution through an explicit retained-rank representation. It supports two allocation policies: uniform retention ratios (LoRAForge-U) and spectral-energy budget allocation (LoRAForge-S). Both share FlashTSQR factor construction and the same serving backend. FlashTSQR exploits parallelism across modules and row tiles, accelerating factor construction by up to $2.28\times$ over matched library QR. In a fixed-work Qwen control, the shared runtime adds $1.17$--$1.22\times$ throughput across both compressed policies, with negligible gains on original adapters. Across 85 trained open-weighted Qwen and Llama adapters, the spectral policy&#39;s floored quality configuration retains about 7.7% of adapter parameters with fleet-average score drops of at most 1.2 points on a 0--100 scale. The same rank-floored $1/12$ spectral exports achieve substantial token-throughput gains on both AMD and NVIDIA GPUs.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.01256" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

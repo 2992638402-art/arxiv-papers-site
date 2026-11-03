@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Control Barrier Functions for Safety-Aware Latent-Space Motion Planning - arXiv 2611.01814 论文总结">
+    <title>Control Barrier Functions for Safety-Aware Latent-Space Motion Planning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Control Barrier Functions for Safety-Aware Latent-Space Motion Planning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.01814<br><strong>分类:</strong> cs.RO, cs.AI<br><strong>发布时间:</strong> 2026-11-01</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Chandrakiran Ravula, Siddhanth Ramesh</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.01814">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.01814">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Latent-space path planning (LSPP) compresses the configuration space of a robotic manipulator into a compact, differentiable manifold learned by a variational autoencoder, enabling fast gradient-based planning without explicit inverse kinematics. Existing LSPP frameworks enforce obstacle avoidance with a binary collision classifier, whose saturated gradients near obstacle boundaries and lack of temporal structure cause the optimizer to stall and provide no forward-invariance guarantee. We replace the classifier with a neural control barrier function (CBF) learned directly in the latent space. The barrier is trained with a three-term objective that combines safe and unsafe sign constraints with a discrete-time decrease condition evaluated on transitions of an obstacle-blind nominal planner, and it is enforced at planning time by a closed-form, first-order correction that projects each goal-directed latent step back onto the CBF constraint. On a 7-DoF Franka Panda manipulator, the CBF planner achieves a 75.6% success rate on a fixed-obstacle task, 12.0 percentage points above the best of 35 tuned classifier configurations, and 83.8% on a multi-position task. A sweep of the decay rate $α$ characterizes the safety--performance trade-off, with the best operating points in $α\in [0.10, 0.20]$. In a fully general random-obstacle setting, success drops to 33.0%, which we trace to covariate shift between the obstacle-blind training transitions and the states visited by the corrected planner.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.01814" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

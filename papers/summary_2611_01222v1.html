@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Modeling Fat-shift for Improved Head Segmentation from MRI Scans using a Probabilistic Model - arXiv 2611.01222 论文总结">
+    <title>Modeling Fat-shift for Improved Head Segmentation from MRI Scans using a Probabilistic Model | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Modeling Fat-shift for Improved Head Segmentation from MRI Scans using a Probabilistic Model</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.01222<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-10-31</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Merle Diedrichsen, Koen Van Leemput, Douglas N. Greve, Oula Puonti, Axel Thielscher</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.01222">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.01222">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Personalized computational head models for biophysical simulations rely on accurate whole-head segmentations from T1-weighted (T1w) magnetic resonance imaging (MRI) scans. While T1w scans provide excellent contrast for intracranial anatomy, extracerebral tissues have partly almost no signal (compact bone) and also suffer from the so-called chemical shift artifact, which affects the fatty tissues in MRI and causes them to spatially shift in the frequency encoding direction of the scan. This artifact occurs primarily in two structures of the head: the spongy bone, a fatty compartment inside the compact bone, and the subcutaneous fat, located directly underneath the skin. The frequency-encoding direction is often set in the superior-inferior direction, causing the fatty tissues to shift down and, as a result, making the skull appear thinner than it actually is. Existing segmentation methods do not model this artifact, consequently leading to inaccurate labeling of the skull and scalp, which introduces a bias in biophysical simulations. The direction and magnitude of the fat-shift can be determined from the scan parameters, thus making it possible to explicitly model the shift and to recover the correct anatomy. This study introduces a probabilistic model that uses variational inference to segment head and brain structures from a T1w scan while accounting for the fat-shift artifact. The proposed Fat-shift-informed Label Optimization of the Whole head (FLOW) method reconstructs extracerebral anatomy more accurately than a fat-shift-agnostic segmentation approach while maintaining high segmentation accuracy in all other structures. FLOW-based fat-shift corrected segmentations significantly reduce bias in electric field simulations compared to a segmentation method that does not model the shift.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.01222" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
