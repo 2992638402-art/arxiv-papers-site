@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Universal Raw-IQ Radar Encoder for Cross-Sensor Human Sensing - arXiv 2611.04534 论文总结">
+    <title>A Universal Raw-IQ Radar Encoder for Cross-Sensor Human Sensing | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>A Universal Raw-IQ Radar Encoder for Cross-Sensor Human Sensing</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.04534<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-11-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jonas Leo Mueller, Dario Zanca, Sebastian Hoefler, Jan Petermann, Thomas Altstidl, Naga Venkata Sai Jitin Jami, Emmanuelle Salin, Bjoern M. Eskofier</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.04534">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.04534">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Radar-based human sensing typically relies on end-to-end task-specific models trained on hand-chosen signal projections, which generalize poorly across unseen users, tasks, and hardware. We argue that the dominant signal processing choice, the micro-Doppler spectrogram, is a poor starting point for transfer because it keeps the Doppler axis, which carrier frequency rescales, and discards the angular axis, which carrier frequency leaves unchanged. We instead pretrain a convolutional beta-VAE without labels on clutter-removed raw radar measurements from four platforms spanning 60 and 77 GHz and 4 to 12 virtual antennas, aligned by a unified spectral interpolation grid. For every downstream benchmark the encoder stays frozen, and only a small supervised temporal classifier is trained on its embeddings. We compare against supervised models trained end to end on each benchmark and a pretrained radar foundation model across ten settings covering activity, gesture, sign-language, and gait recognition. When the test users and the radar are seen during training, our encoder is best on all five benchmarks. For users never seen in training, it leads on three of four benchmarks, by 4.8 to 23.2 points. On subject-disjoint gait recognition, it is best for each of the four held-out subjects and 8.3 points above the strongest baseline on average, even though its pretraining excluded every recording of this radar. Excluding the test radar from pretraining costs at most 5.3 points on any benchmark. Code is available at <a href="https://github.com/jonasmueler/UniversalRadarEncoder_WACV">https://github.com/jonasmueler/UniversalRadarEncoder_WACV</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.04534" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

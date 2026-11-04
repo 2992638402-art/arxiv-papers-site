@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Predicting Void Points in Self-Occluding Forest Volumes - arXiv 2611.04548 论文总结">
+    <title>Predicting Void Points in Self-Occluding Forest Volumes | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Predicting Void Points in Self-Occluding Forest Volumes</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.04548<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-11-03</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Benjamin Bachmayr, Mohamed Youssef, Oliver Bimber</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.04548">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.04548">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Synthetic Aperture Imaging (SAI) enables drones to observe forest canopies by warping and averaging multiple displaced views at a common depth. However, occlusion is suppressed rather than eliminated, causing poorly observed regions to appear occupied and leading to systematic biomass overestimation. The Deep Forest project cannot distinguish reconstruction artifacts from real vegetation because its training data relies on measured reflectance points, excluding empty space and preventing the network from learning explicit occupancy boundaries. This thesis addresses the problem by modifying training labels rather than the imaging process. Each simulated scene is rendered twice: as a 9x9 grid of top-down captures for focal-stack generation and as 550 depth-clipped slabs derived from scene geometry to provide occupancy labels, explicitly representing void space as a negative class. A Gazebo pipeline generates procedural forest stands containing 80-200 trees across three species. A pretrained Pix2Pix model translates rendered RGB images into a synthetic near-infrared band, and Light Field Rendering produces aligned focal stacks of 550 planes across three channels. Four architectures were evaluated on a held-out scene. The plain 2D U-Net achieved an IoU of 0.6290, outperforming the volumetric 3D U-Net (0.5707). Established reconstruction methods performed substantially worse: COLMAP achieved 0.3446 and DepthAnything3 0.2959, both after their respective optimal dilation sweeps. An RGB-input variant of the volumetric architecture achieved the highest IoU of 0.6514 without dilation or per-scene calibration. These results highlight the limitations of conventional reconstruction methods, which recover visible surfaces but struggle to infer occupancy within closed canopies.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.04548" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

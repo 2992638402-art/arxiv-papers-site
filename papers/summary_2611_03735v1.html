@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HyVox: Rethinking Low-Power Voice Intelligence towards Neuromorphic-von Neumann Edge Computing - arXiv 2611.03735 论文总结">
+    <title>HyVox: Rethinking Low-Power Voice Intelligence towards Neuromorphic-von Neumann Edge Computing | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>HyVox: Rethinking Low-Power Voice Intelligence towards Neuromorphic-von Neumann Edge Computing</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.03735<br><strong>分类:</strong> cs.NE, cs.AI, cs.LG, cs.SD<br><strong>发布时间:</strong> 2026-11-01</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Snehasis Addy, Eduardo Calle Ortiz, Prashant Shenoy, Phuc Nguyen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.03735">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.03735">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>We present HyVox, a hybrid neuromorphic--von Neumann system for low-energy open-set speaker identification under tight energy budgets. HyVox splits the workload at the speaker embedding. A neuromorphic processor embeds the speech with sparse, event-driven computation, and a von Neumann microcontroller holds the speaker gallery and makes every decision: it scores queries by cosine similarity, rejects unknown speakers, and enrolls new users by writing a prototype, with no weight update. On the neuromorphic processor, a hierarchical temporal abstraction (HTA) SNN backbone learns a synaptic time constant per leaky integrate-and-fire (LIF) neuron, allocating 832 neurons across fast, medium, and slow timescales. A 32-neuron spiking embedding extractor (SEE), pretrained on episodes that each enroll new speakers and reject outsiders, turns the backbone output into an embedding for speakers unseen in training; its 32 spike counts are the only interface between the two processors. To fit the chip&#39;s synapse and integer budgets, we compress the backbone 6.5x to 29.0k synapses, train it for integer bit-shift dynamics, and fine-tune it with chip-accurate spiking training (CAST). CAST trains through a differentiable replica of the chip&#39;s integer neuron update, derived from its cycle-accurate simulator, so that gradient descent optimizes the exact weights and thresholds the chip runs; it doubles the top-1 accuracy of the mapped backbone on unseen speakers. On 20 Common Voice households of unseen speakers, HyVox reaches 99.6% top-1 and 5.5% rejection EER with 2 members and 94.9% and 13.2% with 20, and the network deployed on the neuromorphic chip matches its trained model. Each inference on a 3-s window takes 0.96 s and 1.63 mJ of dynamic energy, 42% lower latency than the fastest embedded ANN baseline and 13.5x less dynamic and 5.8x less total energy than the most energy-efficient one.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.03735" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
