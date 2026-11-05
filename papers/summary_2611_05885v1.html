@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Does RRT* Work on Uneven Terrain Meshes? - arXiv 2611.05885 论文总结">
+    <title>Does RRT* Work on Uneven Terrain Meshes? | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Does RRT* Work on Uneven Terrain Meshes?</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.05885<br><strong>分类:</strong> cs.RO, cs.CG<br><strong>发布时间:</strong> 2026-11-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Otobong Jerome, Tiago Nascimento</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.05885">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.05885">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>The optimal rapidly exploring random tree (RRT*) is proven asymptotically optimal on open subsets of Euclidean space with straight-line local planning. We ask whether it works on a triangle-mesh terrain, a two-dimensional surface in R^3. First, the original RRT* cannot run on a mesh: the surface has zero volume, so uniform sampling never hits it, no clearance ball fits in it, and chords across a fold leave it. Second, the surface reformulation we call Mesh RRT*, with its naive edge, the chord costed by its length, solved every run on heightfields with slopes up to 75 degrees but minimises the wrong objective: its cost, the straight-line length of a polyline whose vertices lie on the surface while its segments may leave it by a tolerance tau, is the length of no route on the surface and lies strictly below the geodesic length on any curved mesh. In numeric simulation and after 30,000 iterations the reported cost is on average up to 2.7% below the exact geodesic, a cost no path attains, and the returned route on average 0.1-0.5% longer than it. Rewiring keeps the biased edges, the bias decays only linearly with the step on polyhedral surfaces, and shrinking tau trades bias for connectivity. Third, replacing each chord by a path on the surface above it, built from projected points joined across the mesh edges they straddle and costed by its own length, makes every edge cost the exact length of a feasible path; with no other change the exact length of the returned routes is on average within 0.07-0.16% of the geodesic at every roughness tested, two to 3.4 times closer than with chords on the rougher terrains. The planner is in MeshNav3D 0.2.0 (release pending).</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.05885" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
