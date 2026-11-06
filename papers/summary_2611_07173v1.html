@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ShapleyOG: Fast Adaptive Shapley Value Estimation with Odd Gaussian Processes - arXiv 2611.07173 论文总结">
+    <title>ShapleyOG: Fast Adaptive Shapley Value Estimation with Odd Gaussian Processes | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>ShapleyOG: Fast Adaptive Shapley Value Estimation with Odd Gaussian Processes</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.07173<br><strong>分类:</strong> stat.ML, cs.LG<br><strong>发布时间:</strong> 2026-11-04</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> David Rundel, R. Teal Witter, Santo M. A. R. Thies, Matthias Feurer, Fabian Fumagalli, Bernd Bischl</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.07173">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.07173">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Shapley values are a central tool for attribution in machine learning. Since their exact computation requires evaluating the cooperative game to be explained on exponentially many player coalitions, they are typically estimated from a limited number of evaluations. Recently, ShaplEIG has shown that adaptively selecting the coalitions to evaluate substantially improves sample efficiency over classical estimators. This, however, comes at the cost of a sequential procedure that, in every iteration, refits a Gaussian process surrogate of the game and selects the coalition with the largest expected information gain about the Shapley values. The resulting computational overhead limits its applicability to costly games with low evaluation budgets. We present fast adaptive Shapley value estimation with Odd Gaussian Processes (ShapleyOG) to overcome this limitation. ShapleyOG leverages the fact that Shapley values depend only on the odd component of the game, and we show that under paired sampling a Gaussian process surrogate on this component alone yields the same Shapley value posterior and coalition selection criterion from half as many observations. Moreover, ShapleyOG refits the surrogate only on a sparse schedule and efficiently updates the selection criterion in between, and it extends quadrature-based computation schemes to the prior covariance of the Shapley values, which allows for exact or cheaper approximate computation. In extensive experiments on diverse games, ShapleyOG matches the estimation accuracy of ShaplEIG while reducing its overhead by up to three orders of magnitude. As a result, it outperforms state-of-the-art non-adaptive estimators at equal total computation time already when a single evaluation takes a tenth of a second and a budget of a few thousand evaluations suffices, thereby widening the regime in which adaptive coalition selection is applicable and pays off.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.07173" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

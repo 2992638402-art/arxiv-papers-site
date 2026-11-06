@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="DISCERN: Distributional Synthetic Replay for Retain-Free Incremental Machine Unlearning - arXiv 2611.07892 论文总结">
+    <title>DISCERN: Distributional Synthetic Replay for Retain-Free Incremental Machine Unlearning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>DISCERN: Distributional Synthetic Replay for Retain-Free Incremental Machine Unlearning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.07892<br><strong>分类:</strong> cs.LG, cs.AI<br><strong>发布时间:</strong> 2026-11-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Nicolás Segura-Kunsagi, Juan Luis Suárez-Díaz, Iván Sevillano-García, Francisco Herrera</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.07892">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.07892">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Machine unlearning aims to remove the influence of specific training data from a trained model without retraining from scratch. In real deployments, however, deletion requests arrive over time, calling for incremental class unlearning (ICU): classes are removed sequentially, previously forgotten knowledge must remain forgotten, and the remaining classes must be preserved. We present DIstributional SynthetiC rEplay for Retain-free iNcremental unlearning (DISCERN), an intervention-based class unlearning method that replaces access to the retain set with synthetic embeddings sampled from per-class parametric distributions. Unlike prototype-based replay, which assumes an isotropic Gaussian around each class centroid, DISCERN fits Euclidean (Gaussian, Laplace, Student&#39;s $t$) and directional (von Mises--Fisher, Fisher--Bingham) families to each class and selects among them through statistical tests and, when none of them accepts, cross-validated log-likelihood. This design is motivated by the architecture-dependent latent geometry: transformer embeddings lie approximately on a hypersphere and concentrate around class directions, unlike those of convolutional networks. We evaluate DISCERN against seven retain-free baselines on MNIST, CIFAR-10, and CIFAR-100 with two convolutional and two transformer backbones, under single-class, multi-class, and incremental unlearning. DISCERN is competitive when classes are removed at once and is the most stable method in ICU on transformers: on ViT-B/16, after 20 sequential deletions it retains a harmonic mean of $0.797$, whereas the strongest method in the simultaneous setting drops from $0.918$ to $0.048$. A paired ablation shows that per-class distribution selection substantially reduces the resurfacing of previously forgotten classes, acting as a stabilizer of accumulated forgetting rather than a uniform improvement.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.07892" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

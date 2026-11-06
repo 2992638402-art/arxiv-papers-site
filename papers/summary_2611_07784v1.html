@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EnergyBench: a live, gate-aligned benchmark of day-ahead forecasts for European power markets - arXiv 2611.07784 论文总结">
+    <title>EnergyBench: a live, gate-aligned benchmark of day-ahead forecasts for European power markets | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>EnergyBench: a live, gate-aligned benchmark of day-ahead forecasts for European power markets</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.07784<br><strong>分类:</strong> cs.LG, eess.SY<br><strong>发布时间:</strong> 2026-11-05</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Evgenii Genov, Ander Martinez Alonso, Christoph Bergmeir</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.07784">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.07784">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Energy forecasting models are usually compared on backtests and fixed public datasets. Backtests can use data that did not yet exist when the forecast would have been made, and a fixed test set, reused across studies and possibly contained in the pretraining data of foundation models, invites overfitting to the benchmark. EnergyBench evaluates every entry live instead. Each day at 11:30 CET/CEST, thirty minutes before the day-ahead (SDAC) gate closes, every model forecasts the next day&#39;s price, wind and solar generation and load on the 15-minute grid for six bidding zones (BE, NL, FR, DE-LU, DK1, DK2). Unlike existing live benchmarks, EnergyBench runs the models itself, on one information set that it freezes at the cut-off and publishes, including three numerical weather prediction models, so that foundation models can be compared with and without the same weather covariates under the actual market deadline. Errors are pooled per series against a seasonal-naive baseline, and models are ranked by a Bradley-Terry rating on the Elo scale with a day-bootstrap interval. The field spans baselines, linear and gradient-boosted models on the frozen weather, eighteen time-series foundation models from eleven families, ensembles, and the grid operators&#39; own forecasts. Over the first thirty-two live days, the covariates reduced the error of each of the ten foundation models run with and without them by 37-51% on matched races (64-73% on wind, 48-61% on solar). Used zero-shot, these models match or outperform a LightGBM model trained on the same covariates. Model size, from 3M to 331M parameters, has a much smaller effect, and median ensembles of the covariate models rank highest. The grid operators&#39; pre-gate forecasts remain ahead on wind and solar, where the best single foundation models have 16-22% more error; on load the gap is 4-6%, within the intervals.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.07784" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
