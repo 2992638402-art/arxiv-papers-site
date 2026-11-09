@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Concordance-Optimal Continuous Music Emotion Estimation: Variance Decomposition, Dual-Branch Temporal Fusion, and Conformal Prediction Intervals - arXiv 2611.08966 论文总结">
+    <title>Concordance-Optimal Continuous Music Emotion Estimation: Variance Decomposition, Dual-Branch Temporal Fusion, and Conformal Prediction Intervals | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Concordance-Optimal Continuous Music Emotion Estimation: Variance Decomposition, Dual-Branch Temporal Fusion, and Conformal Prediction Intervals</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.08966<br><strong>分类:</strong> cs.SD, cs.LG<br><strong>发布时间:</strong> 2026-11-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Mohammad Faraz Akhtar, Aditya Parashar, Ayush Jain, Madhur Gupta, Ritesh Kumar, Soubhik Chakraborty</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.08966">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.08966">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Continuous music emotion recognition (MER) estimates how Arousal and Valence evolve within a song, yet the field&#39;s standard metric, pooled frame-level correlation, is dominated by between-song differences and cannot distinguish a model that tracks emotional dynamics from one that only ranks songs by their average level. We decompose annotation variance into between- and within-song components and show that mean squared error (MSE) targets the former, while windowed Lin&#39;s concordance correlation coefficient (CCC = $r \cdot C_b$) targets the latter by penalising the variance compression MSE induces. A single weight $λ$ controls the trade-off: on 1,764 DEAM songs, raising $λ$ from 0 to 1 lowers pooled Arousal $r$ from 0.843 to 0.810 while raising mean within-song $r$ from 0.204 to 0.368. Building on this objective, we present MMAS (Multimodal Music Analysis System), an open-source model that predicts Arousal and Valence every 0.5 s from raw audio. It fuses frozen MERT-v1-95M embeddings with ten symbolic features from automatic transcription through a dual-branch temporal convolutional network with cross-modal attention. Because both branches are audio-derived, one model trains jointly on DEAM and PMEmo without domain conditioning. Under song-grouped 5-fold cross-validation (2,531 songs), pooled $r$ reaches 0.801/0.685 (Arousal/Valence) on DEAM and 0.742/0.746 on PMEmo. Against a ridge baseline on identical features, within-song Arousal $r$ roughly triples (0.344 vs. 0.125; $n = 353$ songs, Wilcoxon $p = 1.7 \times 10^{-21}$, $d = 0.56$). Complete transcription failure costs at most 0.04 pooled $r$. Split-conformal intervals attain 93.7% (Arousal) and 90.0% (Valence) marginal coverage at a 95% target, with the shortfall traced to within-song dependence. MMAS is released as a pip-installable package.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.08966" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Geometry-Aware Score-Repellent Monte Carlo - arXiv 2611.08909 论文总结">
+    <title>Geometry-Aware Score-Repellent Monte Carlo | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Geometry-Aware Score-Repellent Monte Carlo</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.08909<br><strong>分类:</strong> stat.ML, cs.LG<br><strong>发布时间:</strong> 2026-11-06</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jie Hu, Lingyun Chen, Do Young Eun</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.08909">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.08909">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>The recently proposed Score-Repellent Monte Carlo (SRMC) method improves MCMC sampling by tilting the target density $π$ in $\mathbb{R}^d$ with the factor $\exp(-α,θ_n^\top s(x))$, where the score function $s(x) = \nabla_x \log π(x)$, and $θ_n$ is the score average from past samples. However, a single scalar repellence strength $α\ge0$ cannot handle both the steep and the flat directions in anisotropic energy landscapes at once. We introduce \emph{Geometry-Aware SRMC} (GA-SRMC), which generalizes the Euclidean alignment to $θ^\top M s(x)$ for any symmetric positive-definite matrix $M$. A stochastic-approximation central limit theorem under a trace constraint on $M$ identifies the trace-normalized inverse Fisher $M_{\rm opt}\propto S^{-1}$ as the unique minimizer of the worst-direction covariance bound, elevating the Fisher information $S=\text{Cov}<em>π(s,s)$ from a proposal-side preconditioner (e.g., FisherMALA, natural gradient) to the bound-optimal repulsion-side matrix, with a single online estimate $\widehat S_n$ serving both roles at no additional computational cost. The full-Fisher online metric $M_n$ converges almost surely to $M</em>{\rm opt}$ and satisfies a CLT, providing a theoretical guarantee for the online implementation of the GA-SRMC framework. On an $8$-target simulation spanning the condition number $κ\in[1.3,100]$ and dimension $d\in[2,785]$, GA-SRMC dominates SRMC in ESS by $\boldsymbol{4.3\times}$ on anisotropic Gaussian ($κ=100$) and $\boldsymbol{6.8\times}$ on MNIST under the MALA baseline, by $\boldsymbol{16\text{--}32%}$ on three well-conditioned logistic-regression posteriors, and by up to $\boldsymbol{+48%}$ under FisherMALA; gains peak on the most anisotropic targets, and posterior-mean MSE is lower than with SRMC in all $16$ full-Fisher implementations.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.08909" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
