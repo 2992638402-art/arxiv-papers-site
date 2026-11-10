@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Network Contention State Aware Dynamic Optimizer for Accelerator Collective Communication Libraries - arXiv 2611.10984 论文总结">
+    <title>Network Contention State Aware Dynamic Optimizer for Accelerator Collective Communication Libraries | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Network Contention State Aware Dynamic Optimizer for Accelerator Collective Communication Libraries</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.10984<br><strong>分类:</strong> cs.DC, cs.LG, cs.MA<br><strong>发布时间:</strong> 2026-11-07</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Rajat Bisht, Tevfik Kosar, Anthony Skjellum, Gene Cooperman, MD S Q Zulkar Nine</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.10984">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.10984">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Collective Communication Libraries (CCL) are critical for large-scale distributed AI/ML training, yet their configurations are determined by static heuristics that do not account for real-time network conditions. Our empirical study shows that these heuristics perform near-optimally in contention-free environments, but degrade substantially under background traffic. To address this, we present a cooperative multi-agent run-time optimizer for accelerator collective communication. Our approach employs a two-agent architecture: (i) detector- a Long Short Term Memory(LSTM) recurring neural network fed classifier head with a sequential probability ratio test that distinguishes sustained contention from transient spikes; and (ii) selector- a configuration selector built on a Dueling Double DQN (D3QN) with Conservative Q-Learning that adapts configuration parameters in response. We implemented this dynamic tuner over NCCL, a widely used CCL developed by NVIDIA. When evaluated on Chameleon Cloud&#39;s isolated bare-metal cluster, this dynamic tuning approach reduces AllReduce latency by 36% over NCCL and 32% over a fully converged AutoCCL. We further evaluated it across six real AI workloads spanning convolutional networks, transformers, and recommendation architectures. Our multi-agent tuner approach delivers up to 65% speedups on Delta cluster with NVIDIA A100 GPUs and Slingshot-11 fabric internode connectivity.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.10984" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

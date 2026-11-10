@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Matchability-Aware Conformal Prediction for Open-Ended Language Model Generation - arXiv 2611.10738 论文总结">
+    <title>Matchability-Aware Conformal Prediction for Open-Ended Language Model Generation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Matchability-Aware Conformal Prediction for Open-Ended Language Model Generation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.10738<br><strong>分类:</strong> stat.ML, cs.CL, cs.LG, stat.ME<br><strong>发布时间:</strong> 2026-11-07</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ilia Azizi</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.10738">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.10738">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Large language models (LLMs) often do not produce calibrated uncertainty estimates for their answers. We propose CAELUM, a framework that builds semantic prediction sets while separating aleatoric from epistemic uncertainty. CAELUM samples answers using an ensemble of clarification prompts, clusters them by semantic equivalence, and estimates the aleatoric and epistemic components via kernel-based von Neumann entropy before calibrating nonconformity scores with split conformal prediction. We use a weight $w_λ(x)=1+U_{\mathrm{ale}}(x)+λ,U_{\mathrm{epi}}(x)$ to control for the contribution of the epistemic uncertainty of each instance and fit a coefficient $λ^\star$ to minimize prediction set size. When the objective is nonflat and selection is stable across splits, $λ^\star$ could be a diagnostic, where large values may indicate epistemic dominance (retrieve, abstain) and $λ^\star\to 0$ aleatoric dominance (clarify). For individual queries, a log ratio $R(x)$ compares the weighted epistemic component with the aleatoric component. Theoretically, we demonstrate that the coverage is capped by matchability, the fraction of items whose reference answer appears in any sampled cluster. Empirically, this matchability can be predicted from the original question features using a lightweight classifier. We use those predictions to define a stratum and derive a conformal coverage bound within it. Across 30 LLM and dataset combinations (4-32B), mean coverage is 0.74 in the learned stratum versus 0.65 overall, averaged over the 78 evaluations using the learned classifier. Project page: <a href="https://unco3892.github.io/caelum/">https://unco3892.github.io/caelum/</a></p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.10738" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

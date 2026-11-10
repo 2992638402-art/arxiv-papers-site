@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SWHForest: A Structural Curation and Search Layer for Large-Scale Code Corpora - arXiv 2611.11439 论文总结">
+    <title>SWHForest: A Structural Curation and Search Layer for Large-Scale Code Corpora | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SWHForest: A Structural Curation and Search Layer for Large-Scale Code Corpora</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.11439<br><strong>分类:</strong> cs.SE, cs.LG<br><strong>发布时间:</strong> 2026-11-08</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Federico Pennino, Andrea Gurioli, Maurizio Gabbrielli, Paolo Ferragina</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.11439">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.11439">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Pre-training code language models relies on massive code corpora usually streamed over the internet. However, researchers rarely need a multi-terabyte archive in its entirety; instead, their workflow centers on curated subsets: selecting well-documented files, filtering out repetitive boilerplate, auditing for benchmark contamination, or retrieving specific code patterns. Yet, because modern corpora are typically published as file pointers and basic attributes rather than source text, no general structural layer exists to select which files to download: curating a subset requires downloading and parsing millions of files first just to discard most of them. We present SWHForest, an open-source framework and public dataset that provides this missing structural layer for any pointer-based corpus without redistributing source code. A single pass over the archive parses each file into an AST and immediately discards the source text, keeping only its structural summary. Queried locally or exposed by archive providers as a server-side filtering API, SWHForest selects matching files first (via SQL or index intersection) and downloads only surviving candidates. Across the ten largest languages of Stack-Edu (52.1M unique files, 341M definitions), SWHForest answers curation queries in milliseconds while cutting downloads by 46-72%, reducing live structural searches from hours of per-language streaming to seconds or minutes.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.11439" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
