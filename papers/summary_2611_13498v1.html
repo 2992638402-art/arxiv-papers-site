@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Evaluating Compositional Generalization in Transformers: The Role of Composition Equivalence and Module Coverage - arXiv 2611.13498 论文总结">
+    <title>Evaluating Compositional Generalization in Transformers: The Role of Composition Equivalence and Module Coverage | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Evaluating Compositional Generalization in Transformers: The Role of Composition Equivalence and Module Coverage</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.13498<br><strong>分类:</strong> cs.LG, cs.CL<br><strong>发布时间:</strong> 2026-11-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Purva Pruthi, Andrew Yuan, Alexander D&#39;Amour, David Jensen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.13498">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.13498">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Compositional generalization is an important form of out-of-distribution generalization, defined as the ability to train on some combinations of modules (e.g., functions such as sort, filter) and then generalize to unseen combinations. Despite substantial empirical work evaluating compositional generalization in transformers, findings have been inconsistent because evaluations were often conducted on a limited set of train-test splits, defined in an ad hoc manner. Through a systematic evaluation, we identify two key aspects of the train-test distribution that strongly affect performance: composition equivalence and module coverage. We show that the apparent performance of direct models (trained only on final outputs) results primarily from exploiting composition equivalences, meaning different sequences of modules that reduce to identical end-to-end functions. When benchmarks eliminate these equivalences, performance drops significantly, showing their inability to generalize to compositions of known modules that produce novel end-to-end functions. We further demonstrate that performance degrades monotonically as module coverage shifts increase (when modules appear in different contexts between train and test), affecting both direct and step-by-step models (trained on intermediate and final outputs). These findings have concrete implications for benchmark design: benchmarks that include compositional equivalences can lead to significant overestimation of the generalization abilities of direct models, and benchmarks that include both module coverage violations and compositional equivalences can exacerbate shortcut learning. As a case study, we demonstrate the role of compositional equivalence on the generalization performance of the pre-trained model Llama3-8B on the code-output prediction task in the coding benchmark LiveCodeBench.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.13498" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

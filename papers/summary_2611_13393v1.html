@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Plumbline: When the Loss Lies, Validating LLM Training Correctly - arXiv 2611.13393 论文总结">
+    <title>Plumbline: When the Loss Lies, Validating LLM Training Correctly | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Plumbline: When the Loss Lies, Validating LLM Training Correctly</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.13393<br><strong>分类:</strong> cs.DC, cs.LG<br><strong>发布时间:</strong> 2026-11-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ruochen Wen, Hongyang Wang, Siwei Li, Wenbo Chen, Xian Li, Jingguo Liu, Leo Fan, Yiming Yan, Qian Qu, Zheshen Wang, Benoit Dumoulin</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.13393">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.13393">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Correctness is a prerequisite for training large language models (LLMs) at scale, yet it is hard to ensure: a fault can sit in any part of a run, and how it shows differs across frameworks and the libraries they depend on. Some failures are loud and some are silent, and both take time to detect and trace. A single fault can waste a long run: the run crashes late, or the model scores lower only at the final evaluation. We present Plumbline, a correctness validation system for LLM training, used in production at Amazon. Plumbline checks each part of the training lifecycle, from the data a run trains on to the model it serves, down to the new layers each model brings and up to whole runs. Its diagnosis reuses these checks to trace failures to their root causes. Both rest on a systematic correctness methodology designed to carry across models and frameworks. Plumbline supports two agentic use cases: Day-0 onboarding, which validates the training of a newly released model before teams rely on it, and root-cause tracing of training failures. Across 3 frameworks and 5 models, it found 61 problems, 32 of them silent. Of these, 42 are fixed or reported upstream, 8 of them first raised by us. We further group the 61 into seven failure patterns that show where training breaks, and report how problems recur across frameworks and models.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.13393" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

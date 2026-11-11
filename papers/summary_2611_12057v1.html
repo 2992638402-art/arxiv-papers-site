@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="AscendMOEA: An Ascend NPU-Accelerated Platform for Tensorized Multi-Objective Evolutionary Algorithms - arXiv 2611.12057 论文总结">
+    <title>AscendMOEA: An Ascend NPU-Accelerated Platform for Tensorized Multi-Objective Evolutionary Algorithms | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>AscendMOEA: An Ascend NPU-Accelerated Platform for Tensorized Multi-Objective Evolutionary Algorithms</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.12057<br><strong>分类:</strong> cs.NE<br><strong>发布时间:</strong> 2026-11-09</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Qianlong Dang, Zhiyang Zhang, Baosheng Li, Tianqing Zhu, Junhu Ruan</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.12057">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.12057">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Multi-objective evolutionary optimization increasingly involves large populations, expensive problem evaluations, and diverse algorithmic structures. These workloads expose the limited parallelism of loop-based implementations, while rewrites for accelerator execution can alter selection order, tie handling, and population updates. AscendMOEA is presented as a scalable platform that executes multi-objective evolutionary algorithms (MOEAs) on Huawei Ascend neural processing units (NPUs) and conventional central processing units (CPUs). The platform represents the decision vectors, objectives, constraints, and auxiliary states as tensors and provides reusable interfaces for algorithms, problems, population operators, quality indicators, monitoring, and repeated experiments. Dense computations are executed in batches, such as dominance, distance, variation, and problem-evaluation calculations. Short recurrences with causal dependencies retain their prescribed order and consume precomputed tensor results, which preserves the behavior of the original algorithms. AscendMOEA contains 18 algorithms, 155 benchmark and application problems, 19 public operator interfaces, and 11 quality indicators. Experiments on eight Ascend NPUs and 192 physical CPU cores evaluate operator throughput, end-to-end runtime, memory consumption, numerical agreement, and implementation ablation. Tensorized operators obtain a median acceleration of 1.58 times on the NPU. At large population scales, complete algorithms achieve a median acceleration of 5.76 times while retaining the recorded quality indicators. Moreover, the results identify the workload scale and ordered computation that determine whether accelerator execution is beneficial. AscendMOEA is open-sourced at <a href="https://github.com/dqlme/AscendMOEA">https://github.com/dqlme/AscendMOEA</a>.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.12057" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

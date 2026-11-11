@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bursts That Outlast Themselves: Persistent Degradation in Prefix-Cached Agent Serving - arXiv 2611.13412 论文总结">
+    <title>Bursts That Outlast Themselves: Persistent Degradation in Prefix-Cached Agent Serving | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Bursts That Outlast Themselves: Persistent Degradation in Prefix-Cached Agent Serving</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.13412<br><strong>分类:</strong> cs.DC, cs.AI, cs.LG<br><strong>发布时间:</strong> 2026-11-10</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Wen Huang, Jack Liu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.13412">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.13412">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>LLM agents drive inference engines with closed-loop sessions whose context grows every turn, and serving them economically depends on prefix caching: a hit costs an incremental prefill of about a thousand tokens, a miss recomputes a 10--40K-token context. We show that this makes prefix-cached agent serving metastable. With an identical base workload, a few minutes of extra arrivals leaves a vLLM server in a degraded regime--a ~10% hit ratio, about half the throughput, and a backlog that grows for the remaining 70 minutes--while its no-burst twin stays healthy (9 of 12 pairs; none in the reverse direction). The regime appears at loads the cache-warm server sustains, is absent without prefix caching, and also appears with Qwen3-32B on SWE-bench agent trace shapes and on SGLang, which tolerates larger triggers. Slower service keeps more sessions in the system, their working set outgrows the KV pool, and every turn becomes a recomputation; a first-order workload-balance condition, calibrated independently, brackets when the regime can drain. Getting out is the harder problem: throttling new admissions recovered 1 of 7 matched collapsed runs, while suspending admitted sessions against a capacity-based limit recovered all of them within minutes. A CPU offload tier delays the collapse but does not prevent it. A budgeter that bounds the resident KV demand of active sessions to the pool, with thresholds that need no per-workload tuning, prevented the failure in every run we tested.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.13412" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

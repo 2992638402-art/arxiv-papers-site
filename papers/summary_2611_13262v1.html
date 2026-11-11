@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adaptive Residual Quantization for Memory-Efficient Temporal Action Segmentation - arXiv 2611.13262 论文总结">
+    <title>Adaptive Residual Quantization for Memory-Efficient Temporal Action Segmentation | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Adaptive Residual Quantization for Memory-Efficient Temporal Action Segmentation</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.13262<br><strong>分类:</strong> cs.CV, cs.AI<br><strong>发布时间:</strong> 2026-11-09</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Gerard Donahue, Guven Gergerli, Ayush Gupta, Reza Ghoddoosian, Enna Sachdeva, Faizan Siddiqui</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.13262">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.13262">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Temporal action segmentation (TAS) is commonly trained on large banks of pre-extracted frame features, but storing and replaying those features becomes a practical bottleneck for long-form video, especially in incremental TAS where past-task data must remain available to mitigate catastrophic forgetting. Recent TAS replay and condensation methods reduce this burden, but they rely on dense frame-wise annotations and allocate storage through fixed segment-level structures, limiting their flexibility for long procedural videos whose frame complexity varies substantially over time. We introduce Adaptive Residual-Quantized Variational AutoEncoder (ARQ-VAE), a compact and label-free memory representation for TAS features that learns a discrete residual quantization of frame-level video features and then adaptively truncates the residual chain on a per-frame basis, retaining only the residual prefix that best reconstructs each frame feature. This yields a practical compact feature memory that does not depend on frame-wise labels and can therefore support multiple TAS settings with the same stored representation, while a lightweight fine-tuning stage further improves reconstruction quality for the truncated codes that are actually retained. Across standard TAS benchmarks, ARQ-VAE achieves a substantially improved storage-performance trade-off over prior replay and condensation baselines. On Breakfast, our final representation reduces training-set storage from 28 GB for the original I3D feature bank to 10 MB while retaining strong downstream segmentation performance; with ASFormer, it achieves 71.5 Edit and 51.2 F1@50 in the supervised setting. We further show that the same label-free memory remains effective for incremental and unsupervised TAS. We position ARQ-VAE as a practical memory representation for TAS and a promising direction for broader dataset condensation applications.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.13262" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
