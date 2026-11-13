@@ -1,0 +1,112 @@
+{
+  "date": "2026-11-13",
+  "papers": [
+    {
+      "id": "2611.12269v1",
+      "title": "Agent4Crypto: A Dual-Reflective and Market-Feedback-Aligned LLM-Based Multi-Agent System for Cryptocurrency Trading",
+      "summary": "Cryptocurrency markets provide a natural testbed for autonomous AI agents because they are digital-native, high-frequency, and machine-speed environments, yet existing methods often struggle with non-stationary market regimes, opaque decisions, and fixed aggregation rules. In this paper, we propose Agent4Crypto, a dual-reflective and market-feedback-aligned multi-agent system. The framework coordinates specialized agents for data collection, analysis, risk assessment, reflection, and trading, synthesizing heterogeneous signals from prices, indicators, news, and charts in an interpretable decision pipeline. Our central design is a trader-centric decision mechanism: three style-specific trader agents, Aggressive, Neutral, and Conservative, generate candidate actions and natural-language rationales from the same market context, while their influence is learned rather than manually fixed. A PPO-based gating policy dynamically allocates trader weights through a dual-reflective feedback process. One reflection stream evaluates post-trade decision quality from realized portfolio outcomes and distills reusable lessons into a Financial ReasoningBank for retrieval in subsequent trader prompts, while the other estimates trader-level counterfactual contribution, indicating which style has recently aligned better with market movements. The PPO state combines Counterfactual Contribution Memory with market features, previous trader weights, and current trader actions, so trader influence adapts across bull, sideways, and bear regimes. Experiments on BTC, ETH, and XRP show that Agent4Crypto improves total return and Sharpe ratio over traditional strategies, machine learning and reinforcement learning baselines, and existing LLM-based trading systems, demonstrating the value of interpretable trader competition and market-feedback-driven adaptation in volatile cryptocurrency markets.",
+      "authors": [
+        "Guangyan Gan",
+        "Jiahao Li",
+        "Jiashun Wang",
+        "Lin William Cong"
+      ],
+      "published": "2026-11-09T11:57:33Z",
+      "updated": "2026-11-09T11:57:33Z",
+      "categories": [
+        "cs.MA",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.12269v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2611.14963v1",
+      "title": "GHA-SmellFix: Taking Action with Agentic LLMs for Detecting and Refactoring GitHub Actions Workflow Smells",
+      "summary": "Continuous integration and continuous delivery workflows are key artifacts in software projects. In GitHub Actions, they encode build, test, release, deployment, and security automation in YAML. These workflows contain configuration smells affecting security, reliability, maintainability, or operational stability. Existing approaches are mostly rule-based, with rules hard to create and evolve, and typically report findings without fixes. Agentic LLM pipelines can combine contextual detection, transformation selection, and patch generation. Specialized agents can gate refactoring on positive detection verdicts, potentially avoiding unnecessary changes, but it is unclear whether decomposition improves effectiveness or mainly changes overhead. We present GHA-SmellFix, an agentic LLM pipeline for detecting and refactoring GitHub Actions workflow smells. We compare two designs: Joint, where one agent detects and refactors, and Decomposed, where separate agents detect and then refactor. We operationalize 19 smells from an existing catalog with explicit detection criteria, refactoring expectations, exclusion rules, and safety checks, and curate a ground truth of 1,710 (workflow, smell) pairs. We evaluate the designs with four LLMs (GPT-5.4-nano, Gemini 3.5 Flash, Claude Haiku 4.5, and DeepSeek V4 Flash) on 570 sampled pairs. Results show that decomposition does not universally improve patch quality; its main benefit is controlling when patch generation is attempted. It helps models prone to missing smells and can reduce overhead by gating patches. Once a smell is correctly detected, clean refactoring is generally effective, making detection the main end-to-end bottleneck. However, false positives can trigger unnecessary edits to execution-relevant constructs. Practical CI/CD agents thus need reliable abstention and construct-aware validation alongside patch generation.",
+      "authors": [
+        "Anderson Uchôa",
+        "Jhefferson Souza",
+        "Emanuel Ávila",
+        "Gabriel Silva",
+        "Kevin Lira",
+        "Hui Sun",
+        "Nelson Araújo",
+        "Arthur Cordeiro",
+        "Rohit Gheyi",
+        "Wesley Assunção"
+      ],
+      "published": "2026-11-11T03:16:33Z",
+      "updated": "2026-11-11T03:16:33Z",
+      "categories": [
+        "cs.SE",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.14963v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2611.15058v1",
+      "title": "FIBER: Bayesian Fusion of Fast-DetectGPT and IRT-Informed Detector Evidence for LLM-Generated Text Detection",
+      "summary": "Detecting large language model (LLM)-generated text remains challenging under domain and generator shifts. Supervised detectors may generalize poorly, while zero-shot methods often rely on individual statistical signals without leveraging historical detector behavior. We propose FIBER (Fast-DetectGPT with IRT-informed Bayesian Evidence Recalibration), which integrates continuous Fast-DetectGPT scores with auxiliary detector outputs through Bayesian evidence fusion. Item response theory (IRT) models historical detector-correctness patterns, providing class-conditional detector-output likelihoods through marginalization over latent text representations. These likelihoods are combined with Fast-DetectGPT score densities and a historical class prior for prediction. When historical Fast-DetectGPT scores are unavailable, a variant called FIBER-Stream estimates class-specific score distributions from an unlabeled batch. On a 32,000-text multi-domain benchmark, FIBER achieves the highest accuracy (0.620) and improves mean AUC over Fast-DetectGPT (0.664 versus 0.600) under five-fold cross-validation. FIBER also consistently improves AUC across four individual domains. Under out-of-distribution transfer, FIBER-Stream achieved an AUC of 0.911, compared with 0.889 for FIBER and 0.922 for Fast-DetectGPT alone. These results demonstrate the potential of integrating complementary detector evidence and historical information to improve detection performance across heterogeneous settings.",
+      "authors": [
+        "Yan Li",
+        "Guangsheng Bao",
+        "Zhipeng Chen",
+        "Guandong Zhang",
+        "Yanbin Zhao"
+      ],
+      "published": "2026-11-11T05:31:56Z",
+      "updated": "2026-11-11T05:31:56Z",
+      "categories": [
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.15058v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2611.15521v1",
+      "title": "DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration",
+      "summary": "Emerging personal AI agents raise fundamental scalability and privacy concerns for centralized multi-agent systems (MASs), which rely on a global orchestrator with broad access to agents, resources, and communication. In decentralized environments, global visibility is unavailable. Agents need to proactively discover non-local resources (e.g. tools, skills), and collaborate with other agents to solve tasks. We study decentralized multi-agent collaboration under graph-constrained communication, a natural reflection of human structures. Each agent observes only its local state and can interact only with neighboring agents. We introduce a benchmark with synthetic scalable distributed tool calling with 100K+ tools. Our experiments reveal that recent LLM agents struggle to discover non-local relevant resources and collaborate in decentralized setting. Moreover, standard reinforcement learning fails to reliably overcome this limitation, suggesting that decentralized MAS needs more explicit harness mechanisms for effective collaboration, even using SOTA LLMs. We then present a strong baseline \\textbf{GraphHarness}, combining topology-aware warmup with self-improving LLM-based routing. Results show that GraphHarness substantially improves task success (+48.5) and produces higher quality collaboration (+30.6), while using fewer costs (+34.0) than baselines.",
+      "authors": [
+        "Jiali Cheng",
+        "Oleg Rokhlenko",
+        "Joo-Kyung Kim",
+        "Hadi Amiri",
+        "Xingzhi Guo"
+      ],
+      "published": "2026-11-11T14:13:26Z",
+      "updated": "2026-11-11T14:13:26Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI",
+        "cs.CL"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.15521v1.pdf",
+      "category": "multimodal"
+    },
+    {
+      "id": "2611.14242v1",
+      "title": "PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles",
+      "summary": "As large language models power autonomous agents, understanding how they collaborate and where they fail becomes critical. We introduce PARLEY, an extensible platform for studying LLM agent collaboration through four asymmetric puzzle tasks grounded in cognitive psychology (referential communication, joint coordination, perspective-taking, and spatial reasoning). GPT-4o agent pairs succeeded in 60.5% of conversations (N=400, 100 per task), with task-level variation (34-80%) reflecting distinct collaborative demands. From these conversations, we derived the data-driven PAC taxonomy: six failure types organized into Perception (visual interpretation and spatial reasoning), Adaptation (progress tracking and feedback integration), and Coordination (verification and grounding). Failure to incorporate external feedback was a critical indicator of unsuccessful collaboration, with agents repeatedly applying unsuccessful strategies. We also show that a taxonomy-guided intervention (N=200) improved average task success to 70.5%. These results demonstrate how PARLEY can be used to derive meaningful, data-driven insights that can in turn lead to improved agentic collaboration.",
+      "authors": [
+        "Javier Hernandez",
+        "Andrew D. Wilson"
+      ],
+      "published": "2026-11-10T15:54:12Z",
+      "updated": "2026-11-10T15:54:12Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.14242v1.pdf",
+      "category": "other"
+    }
+  ],
+  "ids": [
+    "2611.12269v1",
+    "2611.14963v1",
+    "2611.15058v1",
+    "2611.15521v1",
+    "2611.14242v1"
+  ]
+}

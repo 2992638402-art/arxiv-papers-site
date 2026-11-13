@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Overcoming the Resolution Limit: Significance-Aware Regularization for Intersectional Fairness - arXiv 2611.15427 论文总结">
+    <title>Overcoming the Resolution Limit: Significance-Aware Regularization for Intersectional Fairness | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Overcoming the Resolution Limit: Significance-Aware Regularization for Intersectional Fairness</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.15427<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-11-11</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Antonio Ferrara, André Panisson, Francesco Cozzi, Alan Perotti, Francesco Bonchi</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.15427">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.15427">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Intersectional fairness requires evaluating models across fine-grained subgroups. However, as group definitions become more granular, the sample size per subgroup shrinks, causing fairness estimates to become increasingly unstable. Existing in-processing methods are certainty-blind: they penalize observed disparities without distinguishing statistically certified unfairness from sampling noise. This leads to fairness overfitting, where models sacrifice utility to &quot;fix&quot; spurious disparities in sparse regimes. To address this, we introduce the significant-excess metric family, a continuous, uncertainty-aware fairness score that measures only the portion of a subgroup&#39;s disparity exceeding what sampling variation can explain at a specific confidence level. Building on this metric, we propose SAFER (Significance-Aware Fairness Regularizer), a differentiable in-processing method that gates fairness penalties using a soft-count likelihood-ratio evidence statistic. SAFER satisfies a provable safety property: when every subgroup disparity lies well below the gate threshold, the unconstrained optimum is nearly stationary for SAFER. At that optimum, the back-propagated contribution of its significance-gated component is exponentially small, and the additional fairness contribution comes from a small ungated term with a fixed weight. Mechanism ablations across three benchmark datasets and purpose-built stress variants show that removing any component of SAFER (threshold smoothing, the significance gate, or a dense-tail term) produces the failure the theory predicts on at least one stress variant. In sparse intersectional settings, SAFER achieves a better fairness-utility Pareto frontier than the baseline methods, and it preserves utility when certified unfairness is absent.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.15427" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
