@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="2026-11-14 arXiv 每日精选 TOP 5 论文">
+    <title>每日精选 TOP 5 | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">2026-11-14 精选 TOP 5</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="#" class="active">⭐ 精选论文</a></li>
+            <li><a href="../all-papers.html">📚 全部论文</a></li>
+            <li><a href="https://github.com/2992638402-art/arxiv-papers-site" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>🌟 arXiv 每日精选 TOP 5 - 2026-11-14</h1>
+<blockquote>
+<p>从 150+ 篇最新论文中精选出 5 篇最有价值的研究</p>
+</blockquote>
+<hr>
+<h2>1. Gradient-Aware AI Agents for Autonomous Turbulence Model Discovery via Differentiable CFD</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2611.16082">2611.16082</a>
+<strong>分类:</strong> physics.flu-dyn, cs.LG, cs.MA, physics.comp-ph
+<strong>作者:</strong> Yi Liu, Xiantao Fan, Mingqi Xu, Jian-Xun Wang</p>
+<h3>📄 论文摘要</h3>
+<p>Turbulence modeling relies on human choices of closure form, physical inputs, and tunable parameters. Training closures a posteriori is efficient only with gradients through long chaotic rollouts, which few solvers provide. Most a posteriori approaches therefore resort to gradient-free optimization, and nearly all fix the closure form in advance, learning only its parameters. In this work, we introduce a gradient-aware agentic framework that poses closure discovery as a bilevel problem: a multi-agent large language model (LLM) system searches over closure forms, while a GPU-native differentiable computational fluid dynamics (CFD) solver supplies gradients, making differentiable a posteriori learning an action of the autonomous AI agent. For each proposal, the agents construct a differentiable training program by embedding the analytical, neural, or hybrid closure in the solver, implementing a differentiable objective, and validating the gradient path. They then decide whether to evaluate the closure, compute its parameter sensitivities, or train it a posteriori, select the optimization settings, and revise subsequent proposals using the simulation outcomes and returned gradients. Truncated-horizon gradients make this training usable under chaotic dynamics for closures with tens of thousands of parameters. Demonstrations include dissipation-law and subgrid-scale closure discovery in two-dimensional turbulence and wall-model discovery for large-eddy simulation of three-dimensional channel flow. With gradient-based training, the agent recovers reference coefficients that forward evaluation alone does not reach within the same budget, and autonomously discovers and trains analytical and neural closures that improve agreement with the targeted reference statistics. These results demonstrate the feasibility of end-to-end autonomous turbulence model development in time-resolved flows.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2611.16082">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2611.16082">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>2. GHA-SmellFix: Taking Action with Agentic LLMs for Detecting and Refactoring GitHub Actions Workflow Smells</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2611.14963">2611.14963</a>
+<strong>分类:</strong> cs.SE, cs.MA
+<strong>作者:</strong> Anderson Uchôa, Jhefferson Souza, Emanuel Ávila, Gabriel Silva, Kevin Lira et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Continuous integration and continuous delivery workflows are key artifacts in software projects. In GitHub Actions, they encode build, test, release, deployment, and security automation in YAML. These workflows contain configuration smells affecting security, reliability, maintainability, or operational stability. Existing approaches are mostly rule-based, with rules hard to create and evolve, and typically report findings without fixes. Agentic LLM pipelines can combine contextual detection, transformation selection, and patch generation. Specialized agents can gate refactoring on positive detection verdicts, potentially avoiding unnecessary changes, but it is unclear whether decomposition improves effectiveness or mainly changes overhead. We present GHA-SmellFix, an agentic LLM pipeline for detecting and refactoring GitHub Actions workflow smells. We compare two designs: Joint, where one agent detects and refactors, and Decomposed, where separate agents detect and then refactor. We operationalize 19 smells from an existing catalog with explicit detection criteria, refactoring expectations, exclusion rules, and safety checks, and curate a ground truth of 1,710 (workflow, smell) pairs. We evaluate the designs with four LLMs (GPT-5.4-nano, Gemini 3.5 Flash, Claude Haiku 4.5, and DeepSeek V4 Flash) on 570 sampled pairs. Results show that decomposition does not universally improve patch quality; its main benefit is controlling when patch generation is attempted. It helps models prone to missing smells and can reduce overhead by gating patches. Once a smell is correctly detected, clean refactoring is generally effective, making detection the main end-to-end bottleneck. However, false positives can trigger unnecessary edits to execution-relevant constructs. Practical CI/CD agents thus need reliable abstention and construct-aware validation alongside patch generation.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2611.14963">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2611.14963">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>3. DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2611.15521">2611.15521</a>
+<strong>分类:</strong> cs.MA, cs.AI, cs.CL
+<strong>作者:</strong> Jiali Cheng, Oleg Rokhlenko, Joo-Kyung Kim, Hadi Amiri, Xingzhi Guo</p>
+<h3>📄 论文摘要</h3>
+<p>Emerging personal AI agents raise fundamental scalability and privacy concerns for centralized multi-agent systems (MASs), which rely on a global orchestrator with broad access to agents, resources, and communication. In decentralized environments, global visibility is unavailable. Agents need to proactively discover non-local resources (e.g. tools, skills), and collaborate with other agents to solve tasks. We study decentralized multi-agent collaboration under graph-constrained communication, a natural reflection of human structures. Each agent observes only its local state and can interact only with neighboring agents. We introduce a benchmark with synthetic scalable distributed tool calling with 100K+ tools. Our experiments reveal that recent LLM agents struggle to discover non-local relevant resources and collaborate in decentralized setting. Moreover, standard reinforcement learning fails to reliably overcome this limitation, suggesting that decentralized MAS needs more explicit harness mechanisms for effective collaboration, even using SOTA LLMs. We then present a strong baseline \textbf{GraphHarness}, combining topology-aware warmup with self-improving LLM-based routing. Results show that GraphHarness substantially improves task success (+48.5) and produces higher quality collaboration (+30.6), while using fewer costs (+34.0) than baselines.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2611.15521">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2611.15521">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>4. PARLEY: Evaluating LLM Collaboration Through Cooperative Asymmetric Puzzles</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2611.14242">2611.14242</a>
+<strong>分类:</strong> cs.MA
+<strong>作者:</strong> Javier Hernandez, Andrew D. Wilson</p>
+<h3>📄 论文摘要</h3>
+<p>As large language models power autonomous agents, understanding how they collaborate and where they fail becomes critical. We introduce PARLEY, an extensible platform for studying LLM agent collaboration through four asymmetric puzzle tasks grounded in cognitive psychology (referential communication, joint coordination, perspective-taking, and spatial reasoning). GPT-4o agent pairs succeeded in 60.5% of conversations (N=400, 100 per task), with task-level variation (34-80%) reflecting distinct collaborative demands. From these conversations, we derived the data-driven PAC taxonomy: six failure types organized into Perception (visual interpretation and spatial reasoning), Adaptation (progress tracking and feedback integration), and Coordination (verification and grounding). Failure to incorporate external feedback was a critical indicator of unsuccessful collaboration, with agents repeatedly applying unsuccessful strategies. We also show that a taxonomy-guided intervention (N=200) improved average task success to 70.5%. These results demonstrate how PARLEY can be used to derive meaningful, data-driven insights that can in turn lead to improved agentic collaboration.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2611.14242">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2611.14242">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<h2>5. From Delegation to Coordination: Learning Efficient Multi-Agent Deep Research</h2>
+<p><strong>arXiv:</strong> <a href="https://arxiv.org/abs/2611.17041">2611.17041</a>
+<strong>分类:</strong> cs.MA, cs.AI
+<strong>作者:</strong> Yuyang Wu, Yang Liu, Zequn Xie, Junjie Wang, Dan Yang et al.</p>
+<h3>📄 论文摘要</h3>
+<p>Multi-agent deep-research systems use delegation to parallelize search and keep long tool traces out of the main agent&#39;s context. Yet delegation helps only when task allocation and subtask execution are coordinated: the main agent must issue useful subtasks, while subagents must return reliable evidence. Existing training either optimizes only the main agent or broadcasts the same team advantage to all agents, which can reward misleading subagent reports and penalize useful ones. We introduce LEAD-RL (Learning Effective Agent Delegation with Reinforcement Learning), a joint main-agent-subagent training framework with contribution-aware credit assignment. A training-time rubric evaluates the research utility of each subagent report and gates its inherited team advantage, while final-answer correctness remains the only team reward; no token, step, or speedup reward is used. Across five benchmarks and two model families, LEAD-RL improves answer quality. On BrowseComp, it improves accuracy by 2.49 percentage points and reduces critical-path cost by 24.5% over joint training with shared team credit. During validation, accuracy increases by 6.78 points at approximately constant critical-path cost. These results show that contribution-aware credit assignment improves the quality-efficiency trade-off of multi-agent deep research.</p>
+<h3>🔗 资源链接</h3>
+<ul>
+<li><a href="https://arxiv.org/abs/2611.17041">arXiv 原文</a></li>
+<li><a href="https://arxiv.org/pdf/2611.17041">PDF 下载</a></li>
+</ul>
+<h3>🤖 AI 深度解读</h3>
+<blockquote>
+<p>⏳ AI 总结生成中...</p>
+<p>充值 Anthropic API 后，这里将显示 Claude AI 生成的深度解读，包括：</p>
+<ul>
+<li>TL;DR（核心要点）</li>
+<li>核心创新点</li>
+<li>技术细节分析</li>
+<li>实践启示</li>
+<li>相关工作对比</li>
+</ul>
+</blockquote>
+<hr>
+<p><strong>生成时间:</strong> 2026/11/14 11:59:04</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="../all-papers.html" class="btn">浏览全部 150 篇 →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

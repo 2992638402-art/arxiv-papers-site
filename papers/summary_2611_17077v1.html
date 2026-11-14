@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="SALT: State-Aligned Low-Rank Transfer for Single-Temporal Cross-Dataset Structural Localization in Remote Sensing - arXiv 2611.17077 论文总结">
+    <title>SALT: State-Aligned Low-Rank Transfer for Single-Temporal Cross-Dataset Structural Localization in Remote Sensing | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>SALT: State-Aligned Low-Rank Transfer for Single-Temporal Cross-Dataset Structural Localization in Remote Sensing</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.17077<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-11-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Aggelos Psiris, Georgios Angelidis, Giorgos Sfikas, Maria Vakalopoulou, Thomas Lagkas, Panagiotis Sarigiannidis, Georgios Th. Papadopoulos</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.17077">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.17077">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Change detection in remote sensing conventionally relies on spatially aligned bi-temporal imagery, which may be unavailable or unreliable in practical scenarios. Recent single-temporal approaches address this limitation by learning structural evidence, such as building regions, from a labeled source dataset and transferring it to unseen target imagery using only the current image. However, adaptation to the source dataset can over-specialize pretrained features and reduce their cross-dataset generalization, a risk that this paper argues is higher when the feature adaptation is parameterized independently of the states used for prediction. To address this issue, the current study introduces SALT, a State-Aligned Low-Rank Transfer framework. SALT keeps a DINOv3 backbone frozen and learns negative and positive structural states that both score each patch and, through State-Aligned Low-Rank Adaptation (SALA), span the rank-2 subspace in which patch features are corrected. Directional State Alignment supervises these corrections to raise the evidence of positive patches and lower that of negative ones, while Geometry Preservation limits changes to the pairwise relations among pretrained patch features. Experiments on LEVIR-CD and the WHU aerial building dataset show that, at the pixel level and in both transfer directions, SALT outperforms four baselines reproduced under a common source-only protocol, improving over the strongest reproduced baselines by 9.45 and 5.79 points in pixel-level AP and by 27.69 and 14.25 points in IoU (LEVIR-CD to WHU and WHU to LEVIR-CD, respectively), with only 0.068M trainable parameters and 40.2 ms per image. In order to facilitate reproducibility and further research, the source code of SALT is available at <a href="https://github.com/gthpapadopoulos/SALT">https://github.com/gthpapadopoulos/SALT</a></p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.17077" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

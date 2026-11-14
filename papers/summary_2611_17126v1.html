@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="STeP-C: Real-Time Neural Compression for Distributed Fiber-Optic Sensing at Scale - arXiv 2611.17126 论文总结">
+    <title>STeP-C: Real-Time Neural Compression for Distributed Fiber-Optic Sensing at Scale | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>STeP-C: Real-Time Neural Compression for Distributed Fiber-Optic Sensing at Scale</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.17126<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-11-12</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Tingfeng Li, Ming-Fang Huang, Shaobo Han, Yue Tian</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.17126">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.17126">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Distributed fiber-optic sensing (DFOS) technologies such as Distributed Acoustic Sensing (DAS) generate continuous, high-resolution spatio-temporal data at rates exceeding hundreds of megabytes per second, creating severe challenges for real-time storage and transmission. While neural compression methods can achieve strong rate-distortion performance on sensing data, prior approaches either require per-segment retraining incompatible with streaming, or have only been validated offline. None have been demonstrated end-to-end on a continuously streaming DAS acquisition system at scale. We present STeP-C (Spatio-Temporal Predictive Compression), a neural compression framework that decouples spatial encoding, temporal prediction, and entropy-optimized residual coding, trained end-to-end with a rate-distortion objective motivated by conditional entropy reduction. Critically, we identify entropy coding as the dominant bottleneck for streaming deployment. We address it through GPU-side symbol computation, cached probability tables, and parallel GIL-free arithmetic coding, together with FP16 inference and batched entropy coding, enabling a full real-time pipeline built around a GPU ring buffer. We validate this pipeline on a live DAS testbed, achieving a 98.85% file size reduction at 31.04 dB full-band PSNR and an average throughput of 535 MB/s, exceeding the 324 MB/s requirement for 1 kHz, 81 km DAS streams. We further show that STeP-C substantially outperforms conventional codecs at practical streaming bitrates, can be applied to unseen channel ranges within the same acquisition system without retraining, and largely maintains downstream detector consistency, with 96.62% high-confidence class agreement and 100% Jaccard similarity on detected event types.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.17126" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
