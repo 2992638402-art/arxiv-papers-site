@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RaFL: An Empirical Study of Random Filter Losses for Image Reconstruction - arXiv 2611.17707 论文总结">
+    <title>RaFL: An Empirical Study of Random Filter Losses for Image Reconstruction | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>RaFL: An Empirical Study of Random Filter Losses for Image Reconstruction</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.17707<br><strong>分类:</strong> cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-11-13</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ruibo Wang, Fengbei Liu, Aleksei Tiulpin, Mert R. Sabuncu, Heejong Kim</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.17707">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.17707">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Pixel losses train image reconstruction networks toward a point statistic of the target distribution, often averaging away fine textures under uncertainty. Perceptual losses alleviate this issue using pretrained features, but those features are inherently domain-specific. We study a random filter loss (RaFL) that compares prediction and target through filters with random weights, avoiding both pretrained features and task-specific loss engineering. RaFL combines random convolutions, random Fourier features, and random wavelet filters, automatically balancing their contributions through gradient-norm matching, eliminating manual loss-weight tuning and grid search. We systematically investigate three design choices: filter family, weight resampling schedule, and weight initialization. Based on validation PSNR and stability across random seeds, we select the configuration that uses all three filter families, redraws filters every optimization step, and employs Gaussian initialization. We evaluate RaFL on three 2D and two 3D image reconstruction tasks. RaFL outperforms a pixel loss on three tasks and matches it on two, and demonstrates stable performance across random seeds on all five tasks. RaFL adds less than 2% to the backbone&#39;s forward FLOPs and no inference cost, requiring $182\times$ fewer loss FLOPs than a VGG19 perceptual loss. These findings suggest that RaFL is a simple, tuning-free, and domain-agnostic loss objective for 2D and 3D image reconstruction.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.17707" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

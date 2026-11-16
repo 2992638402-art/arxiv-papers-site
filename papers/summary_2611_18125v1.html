@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Efficient Poincaré Convolutions through Patch-Statistics Factorization - arXiv 2611.18125 论文总结">
+    <title>Efficient Poincaré Convolutions through Patch-Statistics Factorization | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Efficient Poincaré Convolutions through Patch-Statistics Factorization</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.18125<br><strong>分类:</strong> cs.LG, cs.NE<br><strong>发布时间:</strong> 2026-11-13</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Lukáš Jochymek, Markéta Vašinková, Petr Gajdoš</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.18125">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.18125">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Published implementations of the Poincaré convolution in Hyperbolic Neural Networks++ (HNN++) map every overlapping image patch to the Poincaré ball before evaluating its score. We show that the clipped score depends on each patch only through two statistics, its squared norm and its inner products with the filters, which a native convolution and a single-channel box filter compute directly. The factorized layer therefore evaluates the specified score exactly, without constructing ball-valued patches, and its single-precision outputs and gradients agree with double-precision evaluations at least as closely as those of the explicit reference. On an RTX A6000 under two versions of JAX, complete training updates of a Poincaré U-Net and a Poincaré ResNet-20 are 1.5 to 1.8 times faster than the faster of two explicit implementations that map patches to the ball (1.2 to 1.4 times against an explicit implementation that skips this mapping); on a V100, the gain over the gather-based one persists as the ResNet-20 is widened eightfold. In 15 paired training runs per task, updates are 2.0 and 1.8 times faster than a reference that follows the published execution order, with no consistent change in final segmentation or classification quality, and peak memory falls by 38 to 55% in a U-Net scaling study. Replacing the convolutions of the official PyTorch Hyperbolic U-Net makes its training step 1.4 times faster with half the memory. Evaluating an existing layer from its patch statistics thus makes Poincaré convolutional networks cheaper to train in the tested models and software stacks.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.18125" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
