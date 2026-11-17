@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bioformer-RetroMAE: retrieval-oriented pretraining of a compact biomedical language model for literature search - arXiv 2611.19862 论文总结">
+    <title>Bioformer-RetroMAE: retrieval-oriented pretraining of a compact biomedical language model for literature search | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Bioformer-RetroMAE: retrieval-oriented pretraining of a compact biomedical language model for literature search</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.19862<br><strong>分类:</strong> cs.CL<br><strong>发布时间:</strong> 2026-11-15</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jialu Li, Li Fang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.19862">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.19862">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Dense retrieval is increasingly used for biomedical literature search and retrieval-augmented generation (RAG). Most biomedical bi-encoders are built on BERTBase-sized encoders pretrained with masked language modeling (MLM). These encoders are costly for corpus-scale indexing and latency-sensitive query encoding, and MLM does not explicitly train the [CLS] vector that a bi-encoder uses to represent a whole text. We present Bioformer-RetroMAE, a compact (43M-parameter) retrieval-oriented biomedical encoder obtained by continually pretraining Bioformer8L} with RetroMAE on approximately 32 million PubMed titles and abstracts. After bi-encoder fine-tuning with BM25 hard negatives, we evaluated it on BioASQ Task 12B test questions by retrieving from all PubMed abstracts. Bioformer-RetroMAE outperformed BioBERT and PubMedBERT bi-encoders fine-tuned under identical settings on all metrics, despite having about 40% of their parameters and producing 512-dimensional rather than 768-dimensional vectors. Compared with PubMedBERT, it improved mean average precision (MAP) by 37.0% and Recall@100 by 29.1%. Compared with the original Bioformer8L}, RetroMAE pretraining improved MAP by 53.6% and Recall@100 by 32.8% without changing model size or inference cost. In hybrid retrieval, fusing Bioformer-RetroMAE with BM25 through weighted reciprocal rank fusion improved MAP and NDCG@10 over BM25 alone by 4.9% and 4.6%, respectively, larger gains than those obtained by fusing BM25 with PubMedBERT or BioBERT.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.19862" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

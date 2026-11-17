@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Does Learning Order Explain Forgetting? The Lie Bracket as an Early-Warning Signal for Catastrophic Forgetting Without Old Data - arXiv 2611.20087 论文总结">
+    <title>Does Learning Order Explain Forgetting? The Lie Bracket as an Early-Warning Signal for Catastrophic Forgetting Without Old Data | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Does Learning Order Explain Forgetting? The Lie Bracket as an Early-Warning Signal for Catastrophic Forgetting Without Old Data</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.20087<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-11-15</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ephraim Kofi Ayi Kwapong</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.20087">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.20087">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A network trained on task A and then task B ends at different weights than one trained on B and then A. To leading order this gap is set by the Lie bracket of the two tasks&#39; gradient fields, and Dherin (2023) conjectured that a non-vanishing bracket may be linked to catastrophic forgetting. I test this conjecture empirically. Across Split MNIST, Split Fashion-MNIST and Split CIFAR-10, the forgetting of A is almost exactly the difference in A&#39;s loss between the two training orders (Spearman rho = 0.96-1.00). I then ask whether the bracket can predict that forgetting early in training on B and without any of A&#39;s data, using only a small summary stored when A finishes: its gradient and its top 20 Hessian eigenpairs. When the old task is well learned and forgetting is slow (task-incremental), this stored bracket ranks forgetting with rho = 0.70-0.81, against 0.33-0.58 for the penalty of Elastic Weight Consolidation, and matches or exceeds re-evaluating A on its own data. When forgetting is fast (domain-incremental), the stored summary goes stale and the EWC penalty is as good or better. The bracket fails outright when the old task is only half learned; I trace this to a residual gradient on A an order of magnitude larger, which makes first-order (slope) damage matter. The bracket is therefore a useful early-warning signal for the quiet kind of forgetting, under a clear condition.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.20087" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

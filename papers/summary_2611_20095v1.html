@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="High-Throughput Serving of Nemotron 3.5 Transcribe with Regime-Aware Megakernels and Kernel Fusion - arXiv 2611.20095 论文总结">
+    <title>High-Throughput Serving of Nemotron 3.5 Transcribe with Regime-Aware Megakernels and Kernel Fusion | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>High-Throughput Serving of Nemotron 3.5 Transcribe with Regime-Aware Megakernels and Kernel Fusion</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.20095<br><strong>分类:</strong> cs.PF, cs.DC, cs.LG, eess.AS<br><strong>发布时间:</strong> 2026-11-15</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Aditya Chatterjee, Sanjay Singh Chauhan, Mayank Jain, Arushi Dhingra, Sahin Chowdhury, Rahul Mittal</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.20095">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.20095">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Nemotron 3.5 Transcribe ranks first among open-weight models on the Hugging Face Open ASR leaderboards. Serving it efficiently takes more than fast operators: continuous batching changes the amount and mix of work at every iteration, and the best fusion granularity changes with it. We present a serving engine that, for every pass, chooses between persistent megakernels and chains of fused kernels at crossovers measured offline. On an H100 SXM GPU, throughput of our accuracy-preserving serving peaks at 4,345x real time, 1.39x the peak of tuned vLLM, and is up to 4.39x faster at low concurrency; on B200 it peaks at 6,367x, 1.64x vLLM at the highest concurrency we measured. Word error rate (WER) is 1.91 to 1.93% against 1.88 to 1.93% for vLLM. Within a 400 ms budget for p95 end-to-end completion time, it serves 8x as many concurrent requests. Choosing per pass beats either level alone: 23% higher throughput than always using megakernels at 128 concurrent requests, and 9% higher than always using fused kernels at 8. Opt-in switches, including greedy MoE layer skipping, add 13 to 16% throughput on B200 for offline jobs that can accept higher WER.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.20095" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

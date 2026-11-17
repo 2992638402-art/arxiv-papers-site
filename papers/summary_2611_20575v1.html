@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PerturbJEPA: Joint-Embedding Predictive Learning of Cellular Perturbation Responses - arXiv 2611.20575 论文总结">
+    <title>PerturbJEPA: Joint-Embedding Predictive Learning of Cellular Perturbation Responses | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>PerturbJEPA: Joint-Embedding Predictive Learning of Cellular Perturbation Responses</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.20575<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-11-16</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jiangshuan Pang, Youzhe He, Yiting Deng, Wangyang Tang, Huinan Xu, Qi Lu, Shiping Liu, Zhenkun Zhuang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.20575">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.20575">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Identifying the drug and dose that produced a cellular response requires preserving treatment effects within each cellular background. A joint-embedding predictor can match its targets while ignoring the intervention if its encoder preserves differences across backgrounds but erases differences between treated and control populations within each one. We call this failure interventional contrast collapse. PerturbJEPA encodes the difference in mean gene expression between treated and control populations as an effect vector. It aligns the displacement between their latent centroids with this vector and regularizes the vectors to preserve variation across population pairs. We show that the measured displacements cannot all coincide within a batch when effect-vector variation exceeds the root-mean-square alignment error. Trained with separate drug and dose ranking objectives, the model predicts candidate responses from a common control population and matches them to the observed response without cell pairing or expression reconstruction. We evaluate 3,592 Tahoe-100M queries on held-out combinations of known interventions and cellular backgrounds, each with over 700 drug-dose candidates in a fixed, background-specific catalog. PerturbJEPA achieves 91.46% macro joint drug-dose Recall@1, exceeding STATE by 3.40 percentage points (95% drug-cluster bootstrap interval of 1.72 to 5.07 points). Controlled diagnostics show that treatment-control differences can shrink even when representations remain globally dispersed. With the drug ranking objective fixed, adding effect-vector regularization to alignment raises joint Recall@1 from 18.57% to 87.47%.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.20575" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

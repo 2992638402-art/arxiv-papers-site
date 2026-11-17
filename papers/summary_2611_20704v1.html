@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="QASK-Edit: Adaptive Sparse Attention Across Queries and Key Sources for Efficient Video Editing - arXiv 2611.20704 论文总结">
+    <title>QASK-Edit: Adaptive Sparse Attention Across Queries and Key Sources for Efficient Video Editing | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>QASK-Edit: Adaptive Sparse Attention Across Queries and Key Sources for Efficient Video Editing</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.20704<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-11-16</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hengrui Liu, Wenbo Xu, Ziqi Sheng, Wei lu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.20704">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.20704">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Diffusion Transformers (DiTs) have achieved strong performance in generation based video editing, but suffer from high inference latency due to the long token sequences formed by conditioning inputs and generated videos. Although training-free sparse attention reduces this cost, existing methods typically apply a fixed retention ratio or a single threshold shared across all tokens. In this work, we view video editing as conditional generation and identify a key insight: attention demand varies significantly both across different key sources (e.g., source videos, reference images, audio, text, and generated videos) and across queries within each source. Motivated by this, we propose QASK-Edit (Query-Adaptive Sparsity over Key Sources for Video Editing), a training-free sparse attention framework that allocates computation independently for each query and key source. Specifically, for each query, QASK-Edit considers both the attention mass and approximation risk of each block. It then evaluates candidate routing thresholds against each key source&#39;s risk budget, choosing exact computation or approximations to dynamically adjust sparsity for each query. Extensive experiments on three video editing models demonstrate that QASK-Edit achieves up to $1.46\times$ end-to-end speedup over dense attention pipeline while preserving both editing quality and unedited region fidelity. Furthermore, QASK-Edit generalizes directly to Reference-to-Video generation, delivering up to $1.36\times$ speedup while maintaining generation quality.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.20704" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

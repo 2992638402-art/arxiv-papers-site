@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NoLBERT-Calls: Reading Earnings Calls Without Hindsight - arXiv 2611.19849 论文总结">
+    <title>NoLBERT-Calls: Reading Earnings Calls Without Hindsight | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>NoLBERT-Calls: Reading Earnings Calls Without Hindsight</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.19849<br><strong>分类:</strong> cs.CL, cs.IR, cs.LG, q-fin.GN<br><strong>发布时间:</strong> 2026-11-15</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Kevin Foley, Jonathan Hartadi, Shivesh Prakash, Hino Wirachapong Suwanphibun, Swapnil Vatsal</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.19849">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.19849">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Language models are now a standard tool for measuring what managers say on earnings calls, but the encoders behind these measures were usually pretrained on text from the same years a backtest covers. Holding out a test period does not remove that hindsight, because it sits in the features. We adapt NoLBERT, an encoder pretrained only on text published between 1976 and 1995, to earnings calls without letting it read anything dated after 31 December 2023. The calls supply the training signal themselves: every analyst question is followed by management&#39;s answer, and the model learns to pick that answer out from the other answers of the same call. We test on every US call from January 2025 to October 2026 (20,323 calls, 254,575 questions) and make every modeling choice on calls from 2024. The adapted model, NoLBERT-Calls-2023, ranks the true answer first for 78.0% of questions (95% interval 77.8-78.2; chance 8.0%), against 26.3% before adaptation. It is 1.0 point ahead of a call-adapted ChronoBERT, 3.4 points ahead of a call-adapted FinBERT, and 18.7 and 19.8 points ahead of the best off-the-shelf retriever and BM25. A year-by-year test over 2013-2026 finds no look-ahead premium: relative to a model adapted only through 2012, the released model does no better on the years it was trained on than on years it never saw. The price of the cutoff is compute: under one shared 150-minute recipe NoLBERT adapts least well of four encoders, and its lead comes from a longer, staged adaptation of about 13 GPU-hours.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.19849" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

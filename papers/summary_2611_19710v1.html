@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Joint Learning of Factual and Counterfactual Worlds for Causal Prior-data Fitted Networks - arXiv 2611.19710 论文总结">
+    <title>Joint Learning of Factual and Counterfactual Worlds for Causal Prior-data Fitted Networks | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Joint Learning of Factual and Counterfactual Worlds for Causal Prior-data Fitted Networks</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.19710<br><strong>分类:</strong> stat.ML, cs.AI, cs.LG<br><strong>发布时间:</strong> 2026-11-15</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Furkan Danisman, Luke Zhang, Zhijing Jin, Dehan Kong</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.19710">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.19710">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Estimating treatment effects is central to science across many disciplines and requires counterfactual reasoning about alternative worlds. In the real world, however, each unit reveals its outcome only under the factual world. Thus, the factual and counterfactual outcomes can never be jointly learned by any model trained on real data. The problem is therefore tractable only in synthetic settings, where both worlds can be generated. Recent progress on prior-data fitted networks (PFNs) has shown that models pre-trained purely on synthetic data can transfer to real-world prediction. This paradigm has since carried over to causal effect estimation. Despite this fully synthetic setup, existing causal PFNs carry the real-world constraint into their training objective, confining learning to a single world&#39;s outcome per unit. The dependence between the two worlds is thereby lost, and the density of the treatment effect relies by default on independence, which is implausible in practice. We therefore propose joint learning, a training setup in which a causal PFN learns the joint distribution of the factual and counterfactual outcomes of each unit. From the joint distribution, we obtain both the response and the individual treatment effect densities, and at inference, we apply optimal transport across units to obtain an approximation of the average treatment effect density. Ours is therefore the first causal PFN approach to provide all three densities together while accounting for the cross-world dependence. We apply joint learning and optimal transport to existing causal PFNs and evaluate it across semi-synthetic, synthetic, and real benchmarks spanning diverse causal scenarios. The jointly trained models significantly improve upon their baselines in point estimation and uncertainty quantification in most settings, indicating that joint learning is a preferable training setup for causal PFNs.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.19710" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
