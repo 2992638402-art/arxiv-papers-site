@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Transfer Once, Ask Locally: Compact Audio-Visual Memory for On-Device Question Answering - arXiv 2611.23085 论文总结">
+    <title>Transfer Once, Ask Locally: Compact Audio-Visual Memory for On-Device Question Answering | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Transfer Once, Ask Locally: Compact Audio-Visual Memory for On-Device Question Answering</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.23085<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-11-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Qitong Wang, Jihui Jin, Divya Kothandaraman, Vishnu Raj, Christopher Rasmussen</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.23085">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.23085">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Audio-visual question answering on lightweight user devices requires balancing speed, memory usage, privacy, and communication. One approach is to run audio-visual encoders on a server and a lightweight language decoder on the user device, keeping questions local while offloading media encoding. However, transferring and processing the full multimodal representation remains costly. We propose a training-free, query-agnostic token pruning framework that constructs a compact, reusable memory before transmission. We define video spatio-temporal blocks and aligned audio windows as players and estimate their importance through Monte Carlo Shapley valuation. We use an embedding coverage objective that combines query-independent utility with cross-modal redundancy calibration and rewards unimodal diversity through marginal coverage gains. We retain the original token embeddings of high-scoring players under a limited token budget and transfer the resulting memory once for reuse across subsequent local questions. Experiments on Video-MME, Daily-Omni, and Video-Holmes using video-SALMONN 2+ (3B) and video-SALMONN 2 Pro (4B) show that our method achieves the best or tied-best QA accuracy among the compared compression methods across all evaluated settings. On Daily-Omni with video-SALMONN 2+ (3B) at 80% pruning, our method improves accuracy by 12.86--14.62 percentage points over these methods while achieving the lowest device-side LLM prefill and decoding latency, with up to $1.92\times$ decoding speedup at comparable embedding memory usage.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.23085" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

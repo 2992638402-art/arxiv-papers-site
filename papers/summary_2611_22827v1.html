@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Compact and Decodable Electrocardiogram Text for Large Language Models - arXiv 2611.22827 论文总结">
+    <title>Compact and Decodable Electrocardiogram Text for Large Language Models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Compact and Decodable Electrocardiogram Text for Large Language Models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.22827<br><strong>分类:</strong> cs.CL<br><strong>发布时间:</strong> 2026-11-17</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Elif Dorukbaşı, İlker Türker</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.22827">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.22827">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>When a twelve-lead electrocardiogram is written as text for a large language model, the number of tokens has to be balanced against the information lost through compression. This paper presents a deterministic encoding that writes eight independent leads as amplitude letters and exact time gaps and recovers the remaining four limb leads algebraically. The key points are selected with a cardiac-cycle-dependent tolerance, the amplitudes are parameterized by a 26-letter logarithmic codebook learned from a training set, and a 10-step tolerance schedule keeps all records within a fixed token budget. The encoding was applied to 21,388 records from the public PTB-XL database and evaluated using an exact decode-and-re-encode round trip, waveform reconstruction error, and a paired comparison of convolutional classifiers trained with 5 different seeds on signals from the original and decoded databases. All records were contained in 4,080 tokens (average: 2,866 tokens, 64.3% fewer than a per-sample transcription), and all stored lead strings were exactly reproduced. The average correlation between the decoded and reference signals was 0.982. The macro-averaged area under the receiver operating characteristic curve was 0.9167 for the reference signals and 0.9157 for the decoded signals (paired difference -0.0010; 95% patient-level bootstrap interval, -0.0028 to 0.0007), within the pre-specified non-inferiority margin of -0.010; this is not a confirmatory result, because the test fold had been used during encoder development. The diagnostic content of a compact text can therefore be preserved, while the language model&#39;s ability to read the text is yet another matter.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.22827" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

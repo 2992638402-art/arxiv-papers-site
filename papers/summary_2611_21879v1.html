@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adaptive Memory for Online Reinforcement Learning under Sparse Model Changes - arXiv 2611.21879 论文总结">
+    <title>Adaptive Memory for Online Reinforcement Learning under Sparse Model Changes | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Adaptive Memory for Online Reinforcement Learning under Sparse Model Changes</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.21879<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-11-16</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Sreejeet Maity, Sukanya Modak, Leonardo F. Toso</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.21879">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.21879">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>We study the discounted reinforcement learning (RL) problem in a setting where the underlying environment changes between deployments. Each deployment provides $H$ observations from a fixed MDP. The reward function and transition kernel are fixed within each deployment. Across deployments, at most an $ε&gt;0$ fraction of the reward and transition kernel entries may change. In this setting, learning each model to deploy from scratch may discard useful observations from past deployments, whereas pooling all past observations can bias the estimates of entries that have already changed. We then propose an algorithm that for each state and action pair, selects how much history to reuse to estimate the reward and probabilities of the next state. We start with observations from the current deployment and add earlier deployment observations one at a time, the most recent first. After each addition, we check whether a single average reward agrees with the estimates from all histories considered until that point. We apply the same check to the distribution of next states. For each estimate, we leverage the last history that passes these aforementioned checks. The optimal control policy is then computed on top of the fitted MDP. We characterize the average gap between the optimal return and the return of the learner&#39;s policies over a finite number of deployments. We demonstrate that when $0&lt; |S|��\leq 2$, with $|S|$ being the cardinality of the state space, our algorithm needs only the observations from the most recent $O(1/ε)$ deployments, and achieves a long-run average gap of at most $\widetilde{O}(\sqrt{ε/H})$.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.21879" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
