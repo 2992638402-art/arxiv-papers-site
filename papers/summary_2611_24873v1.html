@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TangentPDE: Learning Local Operator Responses with Sparse Finite-Difference Supervision - arXiv 2611.24873 论文总结">
+    <title>TangentPDE: Learning Local Operator Responses with Sparse Finite-Difference Supervision | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>TangentPDE: Learning Local Operator Responses with Sparse Finite-Difference Supervision</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.24873<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-11-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xinjian Xie, Ruxuan Chen, Jiashu Li, Tianyu Gao, Ye Wei</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.24873">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.24873">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Neural PDE operators are often optimized through state reconstruction, which largely constrains operator values at observed inputs but does not fully characterize their sensitivity to local perturbations. A more faithful approximation of operator behavior requires not only accurate state predictions, but also correct variations along local perturbation directions. We present TangentPDE, which uses finite differences to approximate directional derivatives and constructs task-relevant finite-step responses from the state outputs of a reference solver at sparse paired inputs. Its objective jointly constrains state fidelity, response-direction alignment, and response-magnitude calibration, thereby learning both operator values and their local variations. Because the response labels are constructed solely from state outputs at paired inputs, the method requires neither explicit derivative labels, linearized or adjoint PDE solves, nor full Jacobians, and remains applicable to nonlinear solvers without derivative interfaces. Building on this, we additionally propose a selectively executed adaptation mechanism to strengthen local operator representations under finite-difference supervision. Budget-matched and correspondence-perturbed controls isolate the effect of relational supervision from improvements attributable to additional state observations or increased data volume. Designed as a plug-and-play training framework, TangentPDE integrates with diverse neural-operator backbones. Across four PDE systems and 20 task-backbone settings, TangentPDE lowers the three-seed mean state error in 18 settings and the corresponding Rollout@20 error in 18, while intrinsic finite-step response gains are strongest on DiffReact and remain task- and backbone-dependent elsewhere.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.24873" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

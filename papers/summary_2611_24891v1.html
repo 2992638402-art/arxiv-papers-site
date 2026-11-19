@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity - arXiv 2611.24891 论文总结">
+    <title>Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Cap-and-Track: Optimizing LLM Inference Request Dispatch Across Shifting Capacity</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.24891<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-11-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Benjamin Novotny, Doug Szeto, Chang Wang, Shicheng Chen, George Zhihua Yuan, Bob Kamma, Michael Ge, John Xin Zhou, Andrea Olgiati</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.24891">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.24891">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A fixed dispatch rate for LLM inference becomes stale as serving fleets resize and request sizes change. Generative output length is unknown at admission, and shared provider pools can lose capacity. We present Cap-and-Track, a design for asynchronous inference across provider capacity and internal GPUs. Meta&#39;s traffic shaper implements Cap-and-Track for post and live-video understanding. Refusals signal the backend&#39;s current admission ceiling. Durable priority queues hold excess work outside execution, including refused requests for retry. Cap is a fail-fast admission check at the saturated resource that refuses work before a long wait. Using only those refusals, the Track dispatcher probes upward and backs off. It follows the ceiling without output-length prediction or a fleet-level rate to retune. In a concurrent same-traffic production A/B, the shaper ran per-replica Cap plus Track. It served a classifier on 43% fewer H100s than its queued, fixed-rate precursor, though lower-priority work waited longer at backfill peaks. In steady-capacity real-engine replay, Track ran within 1% of the goodput of a fixed rate tuned above measured capacity, with about a quarter of that rate&#39;s refusal share. The shaper carries more than 300 million online requests and hundreds of terabytes of media a day. During a backfill, it handled 1.1 billion requests in its busiest 24 hours. Lessons include keeping queues inside inference engines just long enough to fill batches, steering dispatch by capacity refusals alone, keeping dispatch stateful, and sizing fleets by how long low-priority work can wait.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.24891" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="When to Refine: Selective Search for Frozen Visual World Models - arXiv 2611.24470 论文总结">
+    <title>When to Refine: Selective Search for Frozen Visual World Models | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>When to Refine: Selective Search for Frozen Visual World Models</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.24470<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-11-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jingni Huang</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.24470">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.24470">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Planning with a visual world model requires deciding both which actions to execute and how long to search for them. We introduce Selective CEM Refinement (SCR), a learned rule for deciding whether to continue cross-entropy method (CEM) search with a frozen LeWorldModel. After five it- erations, the gate measures how far the mean first action chunk has moved, how much the mean terminal cost of elite plans has fallen, and how widely their first chunks vary. It returns the current plan for execution or continues the same search for ten more iterations. The gate requires no addi- tional world-model rollout. On 16 PushT scenes evaluated with two planning seeds, SCR succeeded in 25 of 32 trials, compared with 28 of 32 for fixed 15-iteration search (Fixed-15). All 25 SCR suc- cesses occurred in trials that Fixed-15 also solved, yield- ing 89.29% paired success retention. Across complete episodes, including replanning, SCR evaluated 23.81% fewer candidate plans and reduced mean controller time per eight-environment batch by 17.22%. Its observed suc- cess rate was 5.36 percentage points above an analytic mix- ture of the two fixed-depth controllers at the same expected candidate workload, although the difference changed sign across planning seeds. Compared with gating only at the initial solve under the same random-draw padding proto- col, gating again at replanning produced nine additional early exits. This reduced total candidate evaluations by 15.79%, while successes fell from 27 to 25.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.24470" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

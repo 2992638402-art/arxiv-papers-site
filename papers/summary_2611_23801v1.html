@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Improved Leverage Score Sampling for Constrained Active Linear Regression - arXiv 2611.23801 论文总结">
+    <title>Improved Leverage Score Sampling for Constrained Active Linear Regression | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Improved Leverage Score Sampling for Constrained Active Linear Regression</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.23801<br><strong>分类:</strong> stat.ML, cs.LG, math.NA<br><strong>发布时间:</strong> 2026-11-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Aarshvi Gajjar, Syamantak Kumar, Aditya Makkar, Christopher Musco, Joey Zhou</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.23801">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.23801">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>In this paper we study active learning for constrained linear regression. Given a design matrix $A\in\mathbb{R}^{n\times d}$, a constraint set $C\subseteq\mathbb{R}^d$, and query access to $b\in\mathbb{R}^n$, we seek an approximate solution to $\min_{x\in C}|Ax-b|<em>2^2$ using as few queries as possible. This problem arises in many scientific and engineering applications, and randomized leverage score sampling provides a powerful method to solve it. However, existing leverage score methods ignore the constraint or encode it through ridge regularization, suffering unfavorable query complexity for anisotropic constraint sets. We propose ellipsoid-regularized leverage scores, where we approximate the constraint set by an outer ellipsoid and use its shape matrix to bias sampling toward directions that matter under the constraint geometry. We prove that the query complexity is governed by an anisotropic effective dimension $d</em>{\text{eff}}(C)\le d$. With appropriate parameters, $O(d_{\text{eff}}(C)\log d/\varepsilon^2)$ queries suffice to return a point in $C$ with objective value at most $(1+\varepsilon)$ times the optimum. This bound can substantially improve on the standard leverage-score bound, since anisotropic constraints can make $d_{\text{eff}}(C)$ much smaller than $d$. For convex constraints, we improve the dependence on $\varepsilon$ from $1/\varepsilon^2$ to $1/\varepsilon$. We also prove two lower bounds: first, the $d/\varepsilon^2$ dependence is unavoidable without convexity assumptions on $C$, and second, in some regimes, the effective dimension dependence $d_{\mathrm{eff}}(C)/\varepsilon$ is necessary for ellipsoidal constraints. Experiments on synthetic regression problems and a parametric heat conduction problem show lower regression error than standard baselines for similar query budget.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.23801" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

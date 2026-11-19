@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Risk-Controlled Correction for Frozen Multimodal Models under Missing Modalities - arXiv 2611.23886 论文总结">
+    <title>Risk-Controlled Correction for Frozen Multimodal Models under Missing Modalities | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Risk-Controlled Correction for Frozen Multimodal Models under Missing Modalities</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.23886<br><strong>分类:</strong> cs.AI, stat.ML<br><strong>发布时间:</strong> 2026-11-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Hoang Pham Cong, Long D. Nguyen, Ho Viet Duc Luong, Nguyen Tran Minh Nhat, Binh P. Nguyen, Huynh Thi Thanh Binh</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.23886">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.23886">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>A deployed multimodal predictor may face missing modalities after its weights can no longer be changed. This raises a question that training-time repair does not answer: what part of the resulting error is still correctable from the information that remains? We show that this part is characterized by the Bayes gap, the difference between the model&#39;s prediction and the Bayes prediction given the observed modalities. For cross-entropy and squared error, excess risk measures this gap in the geometry of the loss; ambiguity in the observed modalities cannot be removed. Thus, a badly degraded prediction is not necessarily a correctable one. Estimating the Bayes prediction normally requires labels. However, when a model observing more modalities is conditionally correct, averaging its outputs conditional on the remaining modalities recovers this target without retrieval labels; with the same fixed blend and neighbors, it is no worse in expected cross-entropy or Brier risk than averaging hard labels. Some such assumption is unavoidable: otherwise the target is not identifiable from unlabeled data alone. GUARD (Gated Utility-Aware Recalibration for Deployment) leaves the deployed predictor unchanged. It estimates a candidate correction by retrieval, learns from deployment-matched labeled data when correction is likely to help, and calibrates a threshold on a held-out split by conformal risk control. Under exchangeability, the marginal probability that GUARD applies a correction whose loss increase exceeds a prescribed tolerance is bounded by a preset level, regardless of the learned score. In controlled experiments, correction gain follows headroom rather than raw error; across nine frozen model-dataset pairs spanning six domains, GUARD retains most of blanket correction&#39;s gain within harm budgets that blanket correction often exceeds.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.23886" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

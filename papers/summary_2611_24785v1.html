@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Read Together, Answer Apart: How Earlier Questions Help Vision-Language Models Look - arXiv 2611.24785 论文总结">
+    <title>Read Together, Answer Apart: How Earlier Questions Help Vision-Language Models Look | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Read Together, Answer Apart: How Earlier Questions Help Vision-Language Models Look</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.24785<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-11-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Xinyi Guo, Kaile Huang, Xitong Ling, Mingyi He, Chende Zheng, Jianyu Xu, Chao He, Dongqing Song</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.24785">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.24785">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Vision-language models (VLMs) are often asked several questions about the same image in a single prompt (co-asking), yet existing evaluations report conflicting accuracy gains and hallucinations at the prompt level without tracking how individual answers change. By pairing each question&#39;s single-question and co-asked answers across 22 open-weight VLMs (1B-35B), we find that erratic net shifts reflect two opposing effects: on Densely Captioned Images (DCI), every model repairs 15.4%-29.8% of its single-question errors under co-asking, while the share of correct answers turned wrong falls from 30.8% on weaker models to 4.7% on stronger ones. Across all 14 models supporting custom attention masks, we show through attention readouts and layer-window interventions that earlier same-image questions read visual information into their question tokens in the early-to-middle layers during prefill, helping later questions concentrate image attention onto their queried targets. This visual help accumulates across the scene even across non-overlapping regions, whereas blocking earlier questions from attending to the image lowers both target localization and accuracy in all 14 models. While cross-question help is established during shared question reading, part of the co-asking damage enters later during answer decoding when the decoder attends to other question stems. We therefore introduce Read Together, Answer Apart, a training-free decoding mask that keeps shared prefill intact and isolates each answer from other stems, improving co-asking accuracy on 12 of 14 models on DCI (up to +4.71 percentage points, closing 70% of the pooled gap to asking alone) and on 10, 8, and 5 of the 14 models on WebUI, FinTabNet, and GQA (up to +11.4, +5.3, and +1.1 points).</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.24785" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

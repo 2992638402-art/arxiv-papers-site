@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs - arXiv 2611.24846 论文总结">
+    <title>Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Atomic MathReasoner: Instance-Level Composition of Atomic Reasoning Skills for Mathematical LLMs</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.24846<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-11-18</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jiashu Li, Tianyu Gao, Qinglong Liu, Jinping Wang, Ye Wei, Zhiqiang Gao</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.24846">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.24846">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Most existing approaches enhance mathematical reasoning in large language models (LLMs) as a monolithic capability, despite the fact that different mathematical problems require different reasoning skills. Recent work has explored a more fine-grained perspective by decomposing mathematical reasoning into atomic skills and developing specialized modules for individual capabilities. However, how to effectively utilize these atomic abilities remains underexplored. To address this challenge, we propose Atomic MathReasoner (AMR), an instance-level framework for composing atomic reasoning skills. AMR first trains a library of capability-specific LoRA experts and performs gradient-free optimization over held-out validation subsets to discover a diverse set of low-loss composition prototypes. It evaluates the preference of each prototype using the token-level negative log-likelihood of reference solutions, filters ambiguous assignments through a confidence margin, and distills the resulting pseudo-labels into a lightweight router. During inference, the router selects an appropriate composition prototype for each problem, enabling problem-specific utilization of atomic skills without costly online optimization. Experiments on the AtomicMath benchmark across general and mathematics-specialized LLMs demonstrate consistent improvements. On Qwen2.5-Math-Instruct-7B, AMR increases average field accuracy from 64.4% to 68.1% at Level 1 and from 59.3% to 63.7% at Level 2, while improving average logical reasoning performance from 39.4% to 46.8%. These results demonstrate that effectively composing specialized atomic skills provides a promising approach to strengthening mathematical reasoning in LLMs.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.24846" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

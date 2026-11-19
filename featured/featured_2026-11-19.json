@@ -1,0 +1,118 @@
+{
+  "date": "2026-11-19",
+  "papers": [
+    {
+      "id": "2611.24836v1",
+      "title": "DiWALI: Diffusion Policy Learning in World Models via Latent Action Inference from Human and Robot Play",
+      "summary": "Learning robot manipulation is constrained by the availability of action-labeled robot data, for both imitation and world models. Humans can demonstrate skills in seconds, but their demonstrations lack the required robot actions. We introduce DiWALI, a framework that learns and improves diffusion policies within a world model trained on human and robot play. DiWALI infers latent actions from consecutive frames using an inverse dynamics model, enabling world model training without action labels, and grounds them in robot commands through a decoder trained separately on robot play. Skill policies are trained over latent actions from action-free human demonstrations and improved with reinforcement learning in imagination. On the CALVIN benchmark, DiWALI policies trained solely from human demonstrations substantially outperform baselines trained with robot demonstrations. Incorporating human play into the world model training also yields stronger policies after fine-tuning than using the same amount of robot play alone. Experiments on a physical robot show that skills learned primarily from human demonstrations are further improved in imagination with a world model trained on human and robot play. Together, these results demonstrate that human experience can support both manipulation skill acquisition and subsequent policy improvement, reducing reliance on action-labeled robot data. Videos, dataset and code are available at https://diwali.cs.uni-freiburg.de.",
+      "authors": [
+        "Akshay L Chandra",
+        "Iman Nematollahi",
+        "Lingyue Zhao",
+        "Daria Kulikova",
+        "Angela P. Schoellig",
+        "Fabien Despinoy",
+        "Abhinav Valada"
+      ],
+      "published": "2026-11-18T18:03:14Z",
+      "updated": "2026-11-18T18:03:14Z",
+      "categories": [
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.24836v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2611.23909v1",
+      "title": "CoSlice: Coordinated Multi-Agent Reinforcement Learning for 5G Network Slicing Allocation",
+      "summary": "Radio Access Network (RAN) slicing is a shared resource allocation problem: each slice seeks to satisfy its Service Level Agreement (SLA) with minimal radio-resource consumption, while all slices compete for a limited resource budget. This creates both an intra-slice trade-off between SLA assurance and resource efficiency and an inter-slice conflict over shared resources, calling for specialized yet coordinated control. In this work, we present CoSlice, a coordinated multi-agent reinforcement learning framework for inter-slice physical resource block allocation in Open Radio Access Network (O-RAN). CoSlice uses preference-conditioned slice agents for fast resource allocation and an LLM-based coordinator to adapt their objectives using global network observations at a slower timescale. We formulate the problem as a multi-objective partially observable stochastic game (mo-POSG), establish the existence of a Preference Correlated Equilibrium, and derive a sublinear regret bound for the learning procedure. We implement the algorithm by using a two-stage training procedure that consists of multi-objective pretraining and joint optimization. We build a network slicing evaluation environment using ORANSlice and its radio-frequency simulator (RFsim), supporting realistic protocol-stack execution and application traffic across multiple slices. Experimental results show that CoSlice reduces both average and tail SLA violations compared with other centralized and multi-agent baselines under diverse slice workloads.",
+      "authors": [
+        "Pengxin Wang",
+        "Nakjung Choi",
+        "Jingdi Chen"
+      ],
+      "published": "2026-11-18T06:00:04Z",
+      "updated": "2026-11-18T06:00:04Z",
+      "categories": [
+        "cs.NI",
+        "cs.LG",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.23909v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2611.24940v1",
+      "title": "$Z$-sight: Unifying Vision-Language-Action and Latent World Modeling",
+      "summary": "We introduce $Z$-sight, a unified robot foundation model that couples vision-language-action (VLA) and generative latent world modeling. Video-based world action models (WAMs) show the value of joint future-and-action generation for control, yet inherit the heavy cost of video generators. Recent latent-space policies avoid pixel generation, yet typically align intermediate features or rely on frozen target encoders, decoupling future prediction from the VLM's native feature space. $Z$-sight instead predicts the future directly in the visual token space in which its VLM perceives the present. Coupling a foresight expert and a continuous action expert with the VLM in a mixture-of-transformers, $Z$-sight jointly denoises future spatial tokens and actions at inference without pixel reconstruction or external encoders. Trained on human video and robot trajectories, $Z$-sight achieves 81.9% success on SIMPLE (+9.6 points over the strongest baseline) and 73.3% across six Unitree G1 tasks (+20.0 points) at 110 ms per chunk, while remaining competitive on tabletop benchmarks.",
+      "authors": [
+        "Junjie Ye",
+        "Yiqi Zhao",
+        "Muchen Xu",
+        "Celina Shiyu Wang",
+        "Hao Dong",
+        "Ruohai Ge",
+        "Rong Xue",
+        "Benjamin J Kolligs",
+        "Aditya Dutt",
+        "Sasanka Nagavalli",
+        "Nassim A. Samad",
+        "Gaurav S. Sukhatme",
+        "Jyotirmoy V. Deshmukh",
+        "Yue Wang",
+        "Yuliang Guo"
+      ],
+      "published": "2026-11-18T18:59:38Z",
+      "updated": "2026-11-18T18:59:38Z",
+      "categories": [
+        "cs.RO",
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.24940v1.pdf",
+      "category": "robotics"
+    },
+    {
+      "id": "2611.24406v1",
+      "title": "CaDO: Formal Verification-Guided Multi-Agent Framework for Causal Dataset Repair and Generation",
+      "summary": "High-quality causal reasoning datasets are essential for developing models with reliable causal understanding, particularly in specialized domains. However, existing datasets frequently suffer from incorrect annotations and structural imbalances, which can lead to biased predictions and limited generalization. To address this issue, we propose CaDO (Causal-Engine-Guided Multi-Agent Data Optimization), a multi-agent framework for automated diagnosis and repair of causal reasoning datasets. Our framework consists of three key stages: formal causal reasoning, multi-level diagnosis, and automated data repair and generation. First, a Formalizer Agent translates natural language questions into formal causal queries to minimize semantic deviations and make retrieval and verification more explicit and tractable. Second, a dual-level diagnosis mechanism employs independent Critic Agents to identify sample-level errors while analyzing query-type coverage and label distributions to detect dataset-level structural imbalances. Finally, the framework employs reusable repair operators grounded in formal causal semantics to correct erroneous samples, while Explorer and Expander Agent collaboratively produce diverse and semantically consistent new samples. Experimental results show that CaDO significantly outperforms the strongest of five data cleaning baselines in 16 out of 18 experimental settings, improving downstream model accuracy by up to 9.1%. Moreover, at least 95% of the samples flagged by CaDO are defective, and on CLadder, CaDO incorrectly modifies 92.2% fewer correct labels than an LLM-based judge, demonstrating its effectiveness and reliability. Our code and data are publicly available at https://github.com/thisissyu/cado.",
+      "authors": [
+        "Songli Yu",
+        "Qi Luo"
+      ],
+      "published": "2026-11-18T13:36:40Z",
+      "updated": "2026-11-18T13:36:40Z",
+      "categories": [
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.24406v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2611.24840v1",
+      "title": "Does the Action Matter? Probing Action-Conditioned Semantic Forecasting as a World Model for Autonomous Driving",
+      "summary": "World models are increasingly used in autonomous driving to predict how a scene evolves under the ego vehicle's actions, supporting counterfactual reasoning and model-based planning. However, existing evaluations focus on prediction fidelity and planning performance, and rarely verify that the predictions depend on the conditioning action. In this paper, we study action dependence in action-conditioned semantic forecasting, which predicts future semantic segmentation from past segmentations and the ego action. We compare a forecaster with feature-wise and input-level action conditioning against an identical model without action input, and measure action dependence with test-time action interventions scored by standard segmentation metrics. The evaluation is validated in a synthetic environment with known action-dependent dynamics and applied to Cityscapes and BDD100K, both within each dataset and across the two vehicle platforms. Experiments show that the executed action improves mid-term mIoU by at most 2.5 points on Cityscapes and 0.6 points on BDD100K, whereas a wrong action reduces it by up to 23.2 and 7.0 points, below the model without action input. On real data, feature-wise conditioning depends 1.6 times more on the action than input-level conditioning at similar accuracy, whereas both depend on it equally in the synthetic environment, where the history does not determine the action. These results show that an accuracy gain indicates that a driving world model uses its action, but not how strongly its forecasts depend on it. Code is available at https://github.com/binayksingh/does-action-matter.",
+      "authors": [
+        "Binay Kumar Singh",
+        "Niels Da Vitoria Lobo"
+      ],
+      "published": "2026-11-18T18:06:20Z",
+      "updated": "2026-11-18T18:06:20Z",
+      "categories": [
+        "cs.CV",
+        "cs.AI",
+        "cs.LG",
+        "cs.RO"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.24840v1.pdf",
+      "category": "robotics"
+    }
+  ],
+  "ids": [
+    "2611.24836v1",
+    "2611.23909v1",
+    "2611.24940v1",
+    "2611.24406v1",
+    "2611.24840v1"
+  ]
+}
