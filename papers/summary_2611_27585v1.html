@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leakage-Free Is Not Confounder-Free: What a Patient-Level Split Cannot Certify About a Medical Imaging Benchmark - arXiv 2611.27585 论文总结">
+    <title>Leakage-Free Is Not Confounder-Free: What a Patient-Level Split Cannot Certify About a Medical Imaging Benchmark | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Leakage-Free Is Not Confounder-Free: What a Patient-Level Split Cannot Certify About a Medical Imaging Benchmark</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.27585<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-11-20</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ignazio Gallo, Mattia Gatti, Leonardo Sgroi, Darwin Castillo, Yuliana Jiménez-Gaona, Nicola Landro</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.27585">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.27585">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Patient-level splitting is the standard safeguard against subject leakage in medical imaging evaluation, but it cannot remove a confounder that every fold inherits: an acquisition variable aligned with the diagnosis across the whole cohort. We present a five-question audit of a candidate confounder: how well it predicts the diagnosis, whether it can be decoded from the images, whether diagnostic scores depend on it, whether the image adds predictive value beyond it and how much discrimination survives once it is controlled. We apply it to DMR-IR, the public dataset on which most machine-learning results in breast thermography rest. On 236 patients under a strict patient-disjoint protocol, the acquisition date alone predicts malignancy at AUROC 0.980, above the best of nine imaging arms (0.949), because benign and malignant patients were recruited in different years. The acquisition year is decodable from the pixels among patients who share a diagnosis, largely through a global thermal offset outside the breast, yet only one arm, the one pooling every frame of a visit, demonstrably carries it into its diagnostic score. No arm improves on the date on paired folds, and once the date is controlled, discrimination either collapses or survives only on comparisons the benchmark cannot attribute. The dataset contains only eight cross-label same-date pairs, from ten patients, which limits reliable evaluation within recorded acquisition-date groups. A second, independently acquired cohort, whose dominant channel is patient age, returns the same audit outcome from a different confounder. Mitigation may suppress such a confounder, but without cross-label acquisition support no evaluation on the benchmark can certify that what remains is pathology.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.27585" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

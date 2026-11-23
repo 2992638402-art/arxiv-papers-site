@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ranking-Preserving Coreset Selection for Efficient Evolutionary Hyperparameter Optimization - arXiv 2611.27959 论文总结">
+    <title>Ranking-Preserving Coreset Selection for Efficient Evolutionary Hyperparameter Optimization | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Ranking-Preserving Coreset Selection for Efficient Evolutionary Hyperparameter Optimization</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.27959<br><strong>分类:</strong> cs.LG<br><strong>发布时间:</strong> 2026-11-20</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Mamoona Tasadduq, Maryam Bashir</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.27959">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.27959">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Hyperparameter optimization (HPO) is essential for high predictive performance, but its computational cost becomes prohibitive when candidate configurations require repeated training on large datasets. This paper proposes a ranking-preserving coreset (RPC) selection framework for accelerating evolutionary HPO. The method constructs a compact coreset that preserves the relative ranking of hyperparameter configurations observed on the full training data. Coreset selection is formulated as an evolutionary optimization problem that maximizes Spearman rank correlation between full-data and subset-based configuration rankings while penalizing subset size. The selected coreset is then used for HPO with three evolutionary algorithms: Genetic Algorithm (GA), Cross-generational elitist Selection, Heterogeneous Recombination and Cataclysmic Mutation (CHC), and Particle Swarm Optimization (PSO). Experiments on seven tabular, two text, and two image benchmark datasets show that RPC substantially reduces HPO time while maintaining test accuracy comparable to full-dataset HPO across decision tree, text classification, and image classification tasks. Across datasets and optimizers, HPO-stage speedups range from approximately 1.14x to 8.80x, while the one-time coreset construction cost is accounted for separately through end-to-end runtime and break-even analysis. On 20 held-out configurations excluded from coreset construction, RPC achieves higher ranking correlation than same-size random sampling on 8 of 11 datasets (dataset-level Wilcoxon signed-rank test, p = 0.014). These results show that ranking preservation extends beyond the configurations used during selection. The one-time construction cost can be amortized when the coreset is reused across HPO runs.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.27959" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

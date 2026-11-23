@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Beyond Resolution: Inference-Time Parameterized Temporal Consistency in Generative Regional Climate Downscaling - arXiv 2611.27641 论文总结">
+    <title>Beyond Resolution: Inference-Time Parameterized Temporal Consistency in Generative Regional Climate Downscaling | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Beyond Resolution: Inference-Time Parameterized Temporal Consistency in Generative Regional Climate Downscaling</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.27641<br><strong>分类:</strong> physics.ao-ph, cs.CV, cs.LG<br><strong>发布时间:</strong> 2026-11-20</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Luca Glawion, Julius Polz, Harald Kunstmann, Benjamin Fersch, Patrick Ludwig, Antonio Sánchez-Benítez, Christian Chwala</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.27641">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.27641">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>GCM-to-RCM downscaling emulation is dominated by generative diffusion models, but most existing work evaluates skill only per timestep, treating each field as an independent snapshot. This leaves open whether generated sequences are temporally coherent or merely independently plausible, a gap that matters increasingly for sub-daily resolutions since downstream impacts depend on accumulation and persistence, not just on isolated states. This study asks whether autoregressive conditioning can deliver coherent rollouts without error accumulation and ensemble-spread collapse, and whether a single model can expose the resulting coherence-diversity trade-off as a controllable inference choice rather than a fixed design commitment. We introduce a noise-conditioned teacher-forcing training scheme conditioning a diffusion U-Net downscaling model on a noised previous high-resolution state, so the trained model interpolates continuously between autoregressive (AR) and per-timestep independent (PTI) sampling via one noise parameter. We apply the scheme to an hourly, European-domain historical simulation downscaling AWI-CM1 (1$^\circ$) with ICON (0.11$^\circ$, regridded to 0.25$^\circ$) for precipitation and 2-meter temperature. The noise parameter traces a smooth interpolation between ICON&#39;s autocorrelation and PTI generation. AR rollouts of up to six months show no progressive degradation, with ensemble spread contracting only slightly within the first 24 hours. In contrast, the same architecture trained on noise-free previous states diverges. For precipitation PTI underestimates maxima by up to 2x in daily aggregations, while AR tracks ICON&#39;s maxima closely. For temperature, differences between modes are negligible. These results show that in diffusion downscaling temporal consistency can be achieved architecture-agnostically and offered as a controllable, not fixed, inference choice.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.27641" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
