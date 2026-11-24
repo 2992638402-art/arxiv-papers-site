@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rollout Scheduling for Chaotic Neural ODEs: Coverage Gains, Computational Cost, and Predictive Accuracy - arXiv 2611.28192 论文总结">
+    <title>Rollout Scheduling for Chaotic Neural ODEs: Coverage Gains, Computational Cost, and Predictive Accuracy | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Rollout Scheduling for Chaotic Neural ODEs: Coverage Gains, Computational Cost, and Predictive Accuracy</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.28192<br><strong>分类:</strong> stat.ML, cs.LG, cs.NE, math.DS<br><strong>发布时间:</strong> 2026-11-20</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Ajith Nayanananda, Xuping Xie</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.28192">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.28192">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Training Neural Ordinary Differential Equations (Neural ODEs) on chaotic systems is difficult because small changes in model parameters can lead to rapidly growing differences in predictions. A rollout is a trajectory predicted by the model. Choosing its length from a single global Lyapunov time overlooks differences in local instability. We study rollout scheduling for training on one contiguous rollout per sampled state, asking whether adapting its length to local instability improves prediction. We find the schedule that uses the most trajectory data under an instability budget, a limit on how much instability any one rollout may accumulate. Under stated assumptions, we bound the resulting coverage gain and the coverage lost when the instability estimates are in error. Numerical checks illustrate the theory. Training experiments on Lorenz-63, Lorenz-96, and Kuramoto--Sivashinsky compare adaptive and constant schedules at the same instability budgets and maximum rollout lengths. The budgets are computed from the true system&#39;s finite-time Lyapunov exponents. Across the tested settings, adaptive schedules increase trajectory coverage at additional computational cost, without showing a consistent improvement in prediction accuracy. On Lorenz-63, limiting adaptive rollouts to the horizon used to estimate instability improves prediction at the larger budgets. On Kuramoto--Sivashinsky, most configurations provide useful short-time predictions, while all tested long rollouts eventually fail. These findings show why coverage, prediction accuracy, and long-time behavior need separate evaluation, and why instability estimates should be checked over the windows used in training.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.28192" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
