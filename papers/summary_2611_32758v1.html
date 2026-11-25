@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Low-Power Spiking Neural Network Acceleration with Differential Time Representation: A Modular Hardware Framework - arXiv 2611.32758 论文总结">
+    <title>Low-Power Spiking Neural Network Acceleration with Differential Time Representation: A Modular Hardware Framework | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Low-Power Spiking Neural Network Acceleration with Differential Time Representation: A Modular Hardware Framework</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.32758<br><strong>分类:</strong> cs.NE, eess.SP<br><strong>发布时间:</strong> 2026-11-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Daniel Windhager, Lothar Ratschbacher, Bernhard A. Moser, Michael Lunglmayr</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.32758">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.32758">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Spiking Neural Networks (SNNs) offer promising energy efficiency, making them well suited for energy-constrained applications. Much of their energy savings stems from the sparse encoding of spike trains. We show that spike trains can be represented more efficiently using Differential Time Representation (DTR), which requires fewer bits than Address-Event Representation (AER) or equidistantly sampled 1-bit spike trains. To support multiple input spike trains, we provide a rigorous proof that DTR sequences can be merged with low complexity. We also provide a set of modular hardware streaming components using this representation that can be flexibly connected to construct custom accelerator architectures for specific SNNs. Tailoring the hardware architecture to the selected SNN is streamlined by a Python framework combining the modular hardware components into a full SNN implementation. We use the framework to generate three accelerators for the Spiking Heidelberg Digits (SHD), Spiking Speech Commands (SSC), and PSMNIST benchmarks, each in a throughput-optimized parallel variant and a resource-reduced time-multiplexed variant. We report results for FPGA and ASIC implementations, the latter synthesized with a fully open-source flow targeting the predictive ASAP7 PDK. On the SHD dataset, the ASIC implementation reaches 92.46% classification accuracy, while sustaining $\approx{}$12,027 inferences per second at 20.37$μ$J per inference, exceeding the neuromorphic Loihi processor by 109$\times$ in throughput and 1.8$\times$ in energy efficiency. The corresponding FPGA implementation achieves $\approx{}$6,023 inferences per second without using DSP blocks. Across all three datasets, the synthesized ASICs reduce energy per inference by 27-37$\times$ relative to their FPGA counterparts, demonstrating that competitive SNN accelerators can be realized entirely within an open-source design flow.</p>
+<h2>🏷️ 标签</h2>
+<p><code>AI</code> <code>机器学习</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.32758" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

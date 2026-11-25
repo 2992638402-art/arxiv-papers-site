@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Training Lightweight Gaze Models without Target Gaze Annotation: What Makes a Good Teacher? - arXiv 2611.33014 论文总结">
+    <title>Training Lightweight Gaze Models without Target Gaze Annotation: What Makes a Good Teacher? | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Training Lightweight Gaze Models without Target Gaze Annotation: What Makes a Good Teacher?</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.33014<br><strong>分类:</strong> cs.CV<br><strong>发布时间:</strong> 2026-11-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Scott J. Lewis, Di Fu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.33014">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.33014">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Model-generated labels offer a scalable route to training lightweight vision models, but what makes a model a good teacher, and can we tell before training a student? We study this in gaze target estimation, where interactive robots need models that are both accurate and efficient. In a controlled comparison of eleven supervision conditions, we vary only the source of gaze-point labels, keeping the student, training protocol and 361k training samples fixed, across three video datasets, two student sizes and three seeds; every student is evaluated against human annotation. Three findings emerge. First, imperfect model-generated labels can replace human annotation: Gaze-LLE, never trained on the target datasets&#39; gaze annotation, trains students that match annotation-trained ones on ViT-Tiny and are significantly more accurate on ViT-Small (average distance error 0.187 vs 0.196), and the ViT-Tiny student runs 32$\times$ faster than its teacher on a laptop CPU. Second, apparent competence can conceal unreliable supervision: given another person&#39;s face centre in the prompt, InternVL3 and Qwen3-VL return it on 93.4% and 81.1% of test samples, and a copy-the-coordinate baseline matches InternVL3&#39;s labels and students. Without that coordinate, both models fall far behind the specialist. Third, good teachers can be identified before training: validation label error ranks student test error (Spearman&#39;s $ρ= 0.91$), and ten annotated clips single out the two specialist teachers in 95% of draws. These findings give practical principles for assessing supervision, exposing shortcuts and selecting teachers for lightweight models.</p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.33014" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

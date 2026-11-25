@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Semidefinite Programming for Cold-Start GNSS Doppler-Based Alignment: A Comparison with Nonlinear Least Squares - arXiv 2611.32715 论文总结">
+    <title>Semidefinite Programming for Cold-Start GNSS Doppler-Based Alignment: A Comparison with Nonlinear Least Squares | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Semidefinite Programming for Cold-Start GNSS Doppler-Based Alignment: A Comparison with Nonlinear Least Squares</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.32715<br><strong>分类:</strong> cs.RO<br><strong>发布时间:</strong> 2026-11-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Baoshan Song</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.32715">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.32715">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Initial attitude alignment between local navigation frames and the Earth-centered Earth-fixed (ECEF) frame is a critical prerequisite for multi-sensor integrated navigation, such as Global Navigation Satellite System (GNSS)/inertial/odometry fusion, before global and local measurements can be jointly processed. While GNSS Doppler-based alignment eliminates the need for carrier-phase ambiguity resolution or multi-antenna hardware, solving this non-convex problem via local nonlinear least squares (NLS) suffers from local minima, whereas direct semidefinite programming (SDP) relaxation incurs high latency and omits local covariance outputs. This study systematically compares NLS and SDP on a unified maximum-likelihood Doppler objective across Monte Carlo simulations and three real-world driving datasets. We demonstrate that attaching a modular dual SDP certifier to a standard manifold NLS solver recovers the global accuracy of direct SDP within 0.001 degrees, reduces real-world 95th-percentile yaw errors from over 86 degrees down to 2.88 degrees to 4.70 degrees, and cuts median solve times by up to an order of magnitude while preserving native Jacobian covariances. We conclude that candidate-driven certification bridges local estimation and global optimization due to two structural advantages: (1) our theoretical comparison reveals that SDP relaxation enlarges the feasible region while preserving the lifted cost, allowing Lagrangian duality to verify whether a fixed NLS candidate attains the global lower bound without invoking a full SDP solver, and (2) the candidate-driven architecture acts as a non-intrusive module that plugs directly into existing navigation pipelines without replacing the local estimator, preserving native tangent-space covariance outputs and low typical latency.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器人</code> <code>控制</code> <code>具身智能</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.32715" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+{
+  "date": "2026-11-25",
+  "papers": [
+    {
+      "id": "2611.32645v1",
+      "title": "TeamFlowRL: Online Policy Optimization of Decentralized Flow Policies for Multi-Agent Coordination",
+      "summary": "Complex cooperative tasks require coordinated multi-agent behavior. Offline generative policies learn expressive cooperative behaviors from trajectories but remain limited by fixed datasets. Online reinforcement learning can improve them through environment interaction. However, fine-tuning flow policies is difficult because action likelihoods are hard to compute. We propose TeamFlowRL, a two-stage framework that pretrains multi-agent flow policies offline and fine-tunes them online. We formulate team policy optimization over the complete denoising trajectories of decentralized flow policies, avoiding intractable action likelihoods. The resulting objective weights each agent's trajectory ratio with a shared team advantage and clips each ratio separately, aligning local policy updates with the common team return. Across 51 paired configurations in seven simulation groups, TeamFlowRL improves every offline initialization, with a 47.3% average gain in normalized score. It also achieves 33.1% higher average success under exploration noise than Gaussian-policy fine-tuning across 6 bimanual tasks.",
+      "authors": [
+        "Guowei Zou",
+        "Beiwen Zhang",
+        "Haitao Wang",
+        "Hong Hong",
+        "Zhiquan Chen",
+        "Hejun Wu"
+      ],
+      "published": "2026-11-24T14:04:38Z",
+      "updated": "2026-11-24T14:04:38Z",
+      "categories": [
+        "cs.LG",
+        "cs.AI",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.32645v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2611.31063v1",
+      "title": "From Local Errors to System Failures: Modeling and Benchmarking Error Propagation in Multi-Agent LLM Systems",
+      "summary": "In multi-agent systems (MAS) built on large language models (LLMs), errors can propagate through intermediate messages and compromise final answers. However, outcome-based evaluation obscures how agents amplify, attenuate, or correct these errors. We propose Response-Aware Error Propagation among Agents (REPA), a structural model that connects measured local responses to system-level error propagation. REPA separately estimates input assembly and agent processing across multiple error channels, while theoretical analysis relates local modeling errors to endpoint prediction error. Experiments span three Qwen base models, six MAS workflows, and ten knowledge and reasoning settings in ErrPropBench-10. REPA achieves a mean condition-level Spearman correlation of 0.84 across base models, compared with 0.47 for direct regression. Controlled experiments also demonstrate its utility for targeted recovery. REPA-guided retrieval-augmented generation (RAG) improves accuracy over no retrieval by an average of 19 percentage points with 16% additional tokens. By linking local agent behavior to system susceptibility, REPA provides an interpretable foundation for studying error propagation and developing targeted optimization in MAS.",
+      "authors": [
+        "Wenlong Yu",
+        "Bingxu Lu",
+        "Qilong Wang",
+        "Qinghua Hu",
+        "Qianru Sun"
+      ],
+      "published": "2026-11-23T17:20:43Z",
+      "updated": "2026-11-23T17:20:43Z",
+      "categories": [
+        "cs.MA",
+        "cs.AI"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.31063v1.pdf",
+      "category": "ml-theory"
+    },
+    {
+      "id": "2611.32606v1",
+      "title": "Recursive Collective Intelligence: Emergence on an Equal-Budget Ladder in Multi-Agent LLM Systems",
+      "summary": "Large language models increasingly work as teams of agents, and a team is expected to solve problems beyond the reach of any single member. Most evaluations credit a team for outperforming a single agent, without accounting for the additional computation: a team may consume many times the tokens of one agent, and a plain vote over independent answers already explains most of the reported gain. Two questions therefore remain open: When does interaction itself make a group smarter, and can a group improve its next generation by learning from its own work? We answer both with the equal-budget ladder, which grades a group against independent agents at three levels: outperforming a single agent, a compute-matched majority vote, and compute-matched pass@n. On this ladder we define Recursive Collective Intelligence (RCI) as a group whose own output, without a teacher or external labels, makes its next generation smarter at equal cost. Three findings follow. First, interaction improves collective intelligence when it moves information across agents: forwarding split facts lifts groups above pass@n at three model scales, by about a third at 27B. Second, organization emerges spontaneously: identical 27B agents form hubs and improve accuracy by 18 percentage points; encoding their organization in a prompt enables them to reach level 3 at less than half the token budget in a descriptive comparison. Third, groups recursively improve themselves: Two label-free generations progressively climb the ladder, the second 9B generation surpassing both pass@$n$ and a control trained on base-model turns; on PlanBench, HiddenBench and Hanabi, each generation outperforms its predecessor on unseen problems for four to six generations. A group therefore outperforms its members when it forwards useful information more efficiently than it spends tokens on coordination, and learns to do so from its own work.",
+      "authors": [
+        "Lixuan He",
+        "Shengqu Cai",
+        "Fang Wu",
+        "Shikang Zheng",
+        "Liwei Jiang",
+        "Manling Li",
+        "Yi Ma",
+        "Li Fei-Fei",
+        "Leonidas Guibas",
+        "Gordon Wetzstein",
+        "Yejin Choi",
+        "Yining Hong"
+      ],
+      "published": "2026-11-24T13:37:54Z",
+      "updated": "2026-11-24T13:37:54Z",
+      "categories": [
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.32606v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2611.31876v1",
+      "title": "AgentDRC: Multi-Agent Algorithms for Spatially-Aware Automated DRC Correction",
+      "summary": "Design Rule Checking (DRC) error fixing remains a time-consuming bottleneck in physical design, often requiring manual intervention despite advanced EDA optimizations. Existing LLM-agent approaches fall short due to redundant contextual shapes, limited spatial reasoning over raw coordinates, and inefficient flat layout representations. We propose AgentDRC, which formulates iterative DRC correction as a multi-agent algorithm and introduces a spatial-aware verification and correction algorithm that reconstructs structured spatial relations among critical shapes and validates fixes through geometric and semantic constraint checking. The system coordinates four specialized agents to perceive multi-level, multi-modal geometric features, filter irrelevant shapes, and iteratively correct violations. Experiments show that AgentDRC achieves up to 30.4% pass@1 and 55.7% pass@5 on challenging violations, with 13.8% pass@5 improvement over the best baseline. We will open-source all code and benchmark tasks upon acceptance.",
+      "authors": [
+        "Pengju Liu",
+        "Nuo Xu",
+        "Winso Chen",
+        "Peijun Li",
+        "Yang",
+        "Zhao",
+        "Yu Cao",
+        "Caiwen Ding"
+      ],
+      "published": "2026-11-24T03:30:08Z",
+      "updated": "2026-11-24T03:30:08Z",
+      "categories": [
+        "cs.AR",
+        "cs.MA"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.31876v1.pdf",
+      "category": "other"
+    },
+    {
+      "id": "2611.33145v1",
+      "title": "Lost on Campus: Evaluating Embodied Spatial Reasoning of Vision-Language Models in the Wild",
+      "summary": "Embodied Spatial Reasoning (ESR) is central to deploying Vision-Language Models (VLMs) in real-world embodied tasks, yet remains inadequately evaluated. Existing benchmarks primarily assess spatial reasoning in static images or synthetic indoor environments, where semantic shortcuts often suffice, making it difficult to faithfully evaluate spatial reasoning capabilities in the wild. In light of this, we present Lost on Campus, a benchmark for evaluating ESR in large-scale real-world outdoor 3D environments reconstructed by 3D Gaussian Splatting. Our benchmark introduces a unified reasoning-action evaluation framework that seamlessly integrates diagnostic QA for isolated reasoning with closed-loop interactive navigation for active reasoning under multimodal instructions. To enable fine-grained diagnosis, we evaluate six capability aspects of ESR: action grounding, spatial foresight, metric awareness, goal-directed planning, ego-allocentric localization, and spatio-temporal consistency. Extensive experiments reveal that: (i) Compared to indoor settings, real-world outdoor environments impose substantially higher demands on spatial reasoning, where existing models exhibit poor performance; (ii) VLMs still struggle with fine-grained visual alignment, with failures in spatial foresight and ego-allocentric localization emerging as primary bottlenecks; (iii) Improving multimodal interaction capabilities and long-term spatial reasoning is crucial for advancing embodied intelligence. These findings highlight that faithful evaluation of ESR demands benchmarks tightly coupling perception, reasoning and action within realistic and continuous environments.",
+      "authors": [
+        "Zehan Zheng",
+        "Yanyuan Chen",
+        "Deming Li",
+        "Yutao Tang",
+        "Jianwen Xie",
+        "Alan Yuille",
+        "Jieneng Chen",
+        "Cheng Peng"
+      ],
+      "published": "2026-11-24T18:57:48Z",
+      "updated": "2026-11-24T18:57:48Z",
+      "categories": [
+        "cs.CV"
+      ],
+      "pdfUrl": "http://arxiv.org/pdf/2611.33145v1.pdf",
+      "category": "multimodal"
+    }
+  ],
+  "ids": [
+    "2611.32645v1",
+    "2611.31063v1",
+    "2611.32606v1",
+    "2611.31876v1",
+    "2611.33145v1"
+  ]
+}

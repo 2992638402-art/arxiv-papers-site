@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fresh Keys, Stale Secrets: Numeric Leakage across Linked LLM Prompts - arXiv 2611.32864 论文总结">
+    <title>Fresh Keys, Stale Secrets: Numeric Leakage across Linked LLM Prompts | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Fresh Keys, Stale Secrets: Numeric Leakage across Linked LLM Prompts</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.32864<br><strong>分类:</strong> cs.CR, cs.CL<br><strong>发布时间:</strong> 2026-11-24</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Jian Li, Qinglin Zhao, Shuoyao Wang, Jincheng Cai, Zhifeng Hao, Naiqi Wu</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.32864">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.32864">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Small businesses repeatedly ask cloud language models about the same confidential prices, unit costs and margins. Numeric prompt disguises for such numbers are evaluated one prompt at a time, but a provider sees a firm&#39;s history, in which each fresh secret gives a new, independent view of the same numbers. Since real costs are not public, we measure on synthetic firms with known values how much an honest-but-curious provider recovers when it knows the disguise algorithm, holds sector-level price and margin statistics, and links a firm&#39;s queries. In one prompt, per-field scaling, a fixed-axis instantiation of Zhang et al.&#39;s order-preserving substitution and Pr$\varepsilon\varepsilon$mpt&#39;s released sanitizer keep the attacker&#39;s margin-hit advantage over a prior-only guess between -0.6 and +4.4 percentage points. After 16 linked queries with fresh secrets, every disguise we test (Pr$\varepsilon\varepsilon$mpt at $\varepsilon\geq 0.5$) has a target recovered significantly more often: under the order-preserving substitution, margin recovery rises from 25.0% to 59.4%. The same attacker recovers 29.4 percentage points more margins with fresh maps than with one reused map. Theory explains the contrast: one reused secret bounds all queries by a single full-precision view of the fields shown, whereas fresh scaling keys are identifiable. Except for Pr$\varepsilon\varepsilon$mpt at $\varepsilon=0.5$, the gains persist when the attacker&#39;s prior comes from another population model and when values drift by up to 5% between queries; on our firms, whose prose cues are weak, reading the prose with a language model adds at most 2.5 points. Code and data: <a href="https://github.com/Jamli58/fresh-keys-stale-secrets">https://github.com/Jamli58/fresh-keys-stale-secrets</a></p>
+<h2>🏷️ 标签</h2>
+<p><code>多模态</code> <code>视觉语言</code> <code>VLM</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.32864" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
