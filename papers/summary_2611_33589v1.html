@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Amortizing Exact Orthogonality: Drift-Triggered Restoration for Orthogonal Fine-Tuning - arXiv 2611.33589 论文总结">
+    <title>Amortizing Exact Orthogonality: Drift-Triggered Restoration for Orthogonal Fine-Tuning | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>Amortizing Exact Orthogonality: Drift-Triggered Restoration for Orthogonal Fine-Tuning</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.33589<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-11-25</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Lanxin Zhao, Xiaoyu Li, Dai Shi, Junbin Gao, Andi Han</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.33589">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.33589">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Orthogonal finetuning (OFT) adapts a pretrained weight by an orthogonal transform and preserves its singular values and row angles, but existing methods construct an exact or approximate orthogonal transform at every optimization step. We measure how far a transform $A$ is from orthogonal by its orthogonality defect $|A^\top A-I|_2$. For OFTv2, which truncates a Cayley-Neumann series, we show that the truncation order does not determine the defect. At its default order, block defects in checkpoints from the reference implementation span five orders of magnitude. We propose Restarted Tangent Orthogonal Finetuning (RTOFT), which uses the first-order update $W(I+S)$ of a weight $W$ with a skew-symmetric $S$ and restores exact orthogonality by a polar decomposition only when the drift $|S|_2$ reaches a tolerance $τ$. The defect of $I+S$ is exactly $|S|_2^2$. Therefore, reading the drift after every update and restoring before the next forward pass guarantees a defect of at most $τ^2$ in every forward pass, independently of the loss, data, model, and optimizer. A final restoration makes the returned transform exactly orthogonal. On GLUE, RTOFT reduces the training time of block-diagonal, subspace, and butterfly parameterizations from $1.10$-$1.58\times$ to $0.97$-$1.13\times$ that of LoRA, and its block-diagonal version exceeds LoRA by $1.98\pm0.39$ points on the six-task average over five seeds. At $τ=0.10$, the largest drift read during training stays between $0.10$ and $0.12$ across DeBERTaV3, Qwen, and diffusion models, whereas it ranges from $0.17$ to $1.65$ when restoring once per epoch. In all seven settings of our ablation, the tangent update is worse without restoration than with it, and restoring after every step yields no measurable accuracy gain over restoring at the tolerance and costs $4.5$-$27.5%$ more per step.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.33589" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CondUQ: Calibrated Conditional Uncertainty Quantification Using Distribution Matching - arXiv 2611.33939 论文总结">
+    <title>CondUQ: Calibrated Conditional Uncertainty Quantification Using Distribution Matching | arXiv AI 论文每日精选</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>📚 arXiv AI 论文每日精选</h1>
+            <p class="subtitle">精选 AI/ML 前沿论文，深度解读，助你把握研究动态</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="../index.html">🏠 首页</a></li>
+            <li><a href="../daily/2026-02-28.html">📅 每日总结</a></li>
+            <li><a href="#categories">🏷️ 分类浏览</a></li>
+            <li><a href="https://github.com" target="_blank">💻 GitHub</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="paper-content">
+            <h1>CondUQ: Calibrated Conditional Uncertainty Quantification Using Distribution Matching</h1>
+<blockquote>
+<p><strong>arXiv ID:</strong> 2611.33939<br><strong>分类:</strong> cs.LG, stat.ML<br><strong>发布时间:</strong> 2026-11-25</p>
+</blockquote>
+<h2>📄 论文信息</h2>
+<ul>
+<li><strong>作者:</strong> Shizhuang Wang, Tianhao Wang, Xingqun Zhan</li>
+<li><strong>PDF:</strong> <a href="https://arxiv.org/pdf/2611.33939">下载</a></li>
+<li><strong>arXiv 链接:</strong> <a href="https://arxiv.org/abs/2611.33939">查看</a></li>
+</ul>
+<h2>📝 摘要</h2>
+<p>Many applications, especially reliability- and safety-critical ones, require accurate uncertainty quantification for the outputs of model- or learning-based measurement, estimation, and prediction systems. The errors of such systems often vary with factors such as input quality and operating conditions, and thus cannot be accurately described by a single Gaussian model. Although Gaussian mixture models and calibrated quantiles can approximate such error distributions, their unconditional forms do not capture how the error behavior depends on these factors. Hence, we propose condUQ, an approach that conditions error models on observable factors for enabling accurate and reliable uncertainty quantification. condUQ is built on top of an existing system without modifying it and applies even when the system is a black box. First, condUQ maps the observable factors to a latent quality index (QI) such that errors sharing the same QI follow a common, approximately Gaussian conditional distribution. The QI predictor is trained end-to-end with a distribution-matching objective, without requiring quality labels. Second, for each QI, a Gaussian error model is then fitted and calibrated on a large held-out dataset. condUQ is demonstrated on three examples: (a) GPS multipath errors conditioned on satellite elevation and signal strength, (b) relative attitude errors of a transformer-based visual relative pose regression model conditioned on its internal features of the image pairs, and (c) prediction errors of a world model conditioned on the input observations and actions. In all three examples, condUQ substantially reduces the discrepancy between the modeled and empirical error distributions compared with a single global model. Moreover, the learned QIs reveal how the underlying factors affect the error characteristics in a manner consistent with physical principles.</p>
+<h2>🏷️ 标签</h2>
+<p><code>机器学习</code> <code>理论</code> <code>优化</code></p>
+<hr>
+<p><strong>注意：</strong> 本总结基于 arXiv 原始摘要。AI 深度解读正在生成中...</p>
+
+        </div>
+
+        <div style="margin-top: 2rem; text-align: center;">
+            <a href="../index.html" class="btn btn-secondary">← 返回首页</a>
+            <a href="https://arxiv.org/abs/2611.33939" class="btn" target="_blank">📄 查看 arXiv 原文</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2026 arXiv AI 论文每日精选 | 数据来源：<a href="https://arxiv.org" target="_blank">arXiv.org</a></p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+</body>
+</html>
